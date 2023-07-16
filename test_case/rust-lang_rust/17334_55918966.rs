@@ -1,0 +1,18 @@
+
+test btree::map::bench::find_rand_100                      ... bench:        70 ns/iter (+/- 5)
+test btree::map::bench::find_rand_10_000                   ... bench:       151 ns/iter (+/- 6)
+test btree::map::bench::find_seq_100                       ... bench:        82 ns/iter (+/- 1)
+test btree::map::bench::find_seq_10_000                    ... bench:       103 ns/iter (+/- 1)
+test btree::map::bench::insert_rand_100                    ... bench:       183 ns/iter (+/- 2)
+test btree::map::bench::insert_rand_10_000                 ... bench:       435 ns/iter (+/- 13)
+test btree::map::bench::insert_seq_100                     ... bench:       331 ns/iter (+/- 10)
+test btree::map::bench::insert_seq_10_000                  ... bench:       391 ns/iter (+/- 14)
+
+test treemap::bench::find_rand_100                         ... bench:        74 ns/iter (+/- 4)
+test treemap::bench::find_rand_10_000                      ... bench:       164 ns/iter (+/- 7)
+test treemap::bench::find_seq_100                          ... bench:        76 ns/iter (+/- 2)
+test treemap::bench::find_seq_10_000                       ... bench:       115 ns/iter (+/- 1)
+test treemap::bench::insert_rand_100                       ... bench:       109 ns/iter (+/- 3)
+test treemap::bench::insert_rand_10_000                    ... bench:       991 ns/iter (+/- 19)
+test treemap::bench::insert_seq_100                        ... bench:       491 ns/iter (+/- 21)
+test treemap::bench::insert_seq_10_000                     ... bench:       829 ns/iter (+/- 24)

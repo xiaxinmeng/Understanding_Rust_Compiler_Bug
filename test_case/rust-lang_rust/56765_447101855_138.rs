@@ -1,0 +1,1 @@
+\nconst A: i32 = 42;\nstatic X: i32 = A;\nconst Y: i32 = A;\n

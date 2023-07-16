@@ -1,0 +1,3 @@
+
+let additional_columns = ....
+format!(r# {additional_columns}", additional_columns = additional_columns)

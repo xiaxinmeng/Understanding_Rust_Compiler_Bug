@@ -1,0 +1,1 @@
+the trait `std::ops::FnMut<(usize,)>` is not implemented for `dyn Callback<T1, Output = ()>` 

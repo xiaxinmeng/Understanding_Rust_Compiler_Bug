@@ -1,0 +1,3 @@
+
+| arg | { ...
+        ^ where this brace is from the macro

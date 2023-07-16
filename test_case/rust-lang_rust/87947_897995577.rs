@@ -1,0 +1,5 @@
+
+error: could not compile `myapp`
+
+Caused by:
+  process didn't exit successfully: `rustc --crate-name myapp --edition=2018 src/main.rs --error-format=json --json=diagnostic-rendered-ansi --crate-type bin --emit=dep-info,link -C opt-level=3 -C embed-bitcode=no -C debuginfo=2 -C no-prepopulate-passes --cfg 'feature="allocator-jemalloc"' --cfg 'feature="build-mode-pyoxidizer-exe"' --cfg 'feature="default"' -C metadata=d92e577e2d36bc93 -C extra-filename=-d92e577e2d36bc93 --out-dir /home/gps/tmp/myapp/target/release/deps -L dependency=/home/gps/tmp/myapp/target/release/deps --extern pyembed=/home/gps/tmp/myapp/target/release/deps/libpyembed-846f76a23fec60bf.rlib -C link-args=-Wl,-export-dynamic -L native=/tmp/pyoxidizer-build-exe-packaging7UiBSc -L native=/home/gps/.cache/pyoxidizer/python_distributions/python.343e2d349779/python/build/lib -L native=/home/gps/tmp/myapp/build/x86_64-unknown-linux-gnu/release/resources -L native=/home/gps/tmp/myapp/target/release/build/jemalloc-sys-e62986af855335b6/out/build/lib -L native=/home/gps/.pyenv/versions/3.9.6/lib` (signal: 11, SIGSEGV: invalid memory reference)

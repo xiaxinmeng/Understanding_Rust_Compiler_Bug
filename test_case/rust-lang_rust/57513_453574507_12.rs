@@ -1,0 +1,1 @@
+\n\nRemember: you can't use a function call inside a const's initialization\nexpression! However, you can totally use it anywhere else:\n\n

@@ -1,0 +1,1 @@
+((self as isize).wrapping_add(offset * (size_of::<T>() as isize)) as *const T)

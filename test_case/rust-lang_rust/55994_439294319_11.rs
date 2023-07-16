@@ -1,0 +1,1 @@
+\nfn main() {\n    let _: Box<dyn std::io::Read + Send + Sync>;\n}\n

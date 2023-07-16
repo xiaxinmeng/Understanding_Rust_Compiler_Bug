@@ -1,0 +1,1 @@
+compile_fail,E0401\nfn foo<T>(x: T) {\n    type MaybeT = Option<T>;\n    // ...\n}\n

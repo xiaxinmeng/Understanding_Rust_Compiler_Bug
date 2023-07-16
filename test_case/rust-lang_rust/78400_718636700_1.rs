@@ -1,0 +1,3 @@
+rust
+#[doc = "hello
+second"]

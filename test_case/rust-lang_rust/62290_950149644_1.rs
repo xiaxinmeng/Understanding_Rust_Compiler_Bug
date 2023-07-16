@@ -1,0 +1,2 @@
+rust
+async move | _ | { /* ... */ } 

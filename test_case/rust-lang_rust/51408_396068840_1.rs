@@ -1,0 +1,34 @@
+
+thread 'main' panicked at 'explicit panic', src/main.rs:2:5
+stack backtrace:
+   0: std::sys::unix::backtrace::tracing::imp::unwind_backtrace
+             at libstd/sys/unix/backtrace/tracing/gcc_s.rs:49
+   1: std::sys_common::backtrace::print
+             at libstd/sys_common/backtrace.rs:71
+             at libstd/sys_common/backtrace.rs:59
+   2: std::panicking::default_hook::{{closure}}
+             at libstd/panicking.rs:211
+   3: std::panicking::default_hook
+             at libstd/panicking.rs:227
+   4: std::panicking::rust_panic_with_hook
+             at libstd/panicking.rs:511
+   5: std::panicking::begin_panic
+             at /checkout/src/libstd/panicking.rs:445
+   6: foo::main
+             at src/main.rs:2
+   7: std::rt::lang_start::{{closure}}
+             at /checkout/src/libstd/rt.rs:74
+   8: std::panicking::try::do_call
+             at libstd/rt.rs:59
+             at libstd/panicking.rs:310
+   9: __rust_maybe_catch_panic
+             at libpanic_unwind/lib.rs:105
+  10: std::rt::lang_start_internal
+             at libstd/panicking.rs:289
+             at libstd/panic.rs:374
+             at libstd/rt.rs:58
+  11: std::rt::lang_start
+             at /checkout/src/libstd/rt.rs:74
+  12: main
+  13: __libc_start_main
+  14: _start

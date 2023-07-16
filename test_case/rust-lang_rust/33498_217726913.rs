@@ -1,0 +1,36 @@
+
+   1:     0x7f0731595330 - sys::backtrace::tracing::imp::write::h3675b4f0ca767761Xcv
+   2:     0x7f073159e68b - panicking::default_handler::_$u7b$$u7b$closure$u7d$$u7d$::closure.44519
+   3:     0x7f073159e1e3 - panicking::default_handler::h18faf4fbd296d909lSz
+   4:     0x7f07315629ac - sys_common::unwind::begin_unwind_inner::hfb5d07d6e405c6bbg1t
+   5:     0x7f072d3882e7 - sys_common::unwind::begin_unwind::h16961614959476379273
+   6:     0x7f072d388115 - errors::Handler::bug::ha494dd661f95af4aJTd
+   7:     0x7f072e8186ac - session::Session::bug::h42482270ede2f70dAnt
+   8:     0x7f072fb6c40a - trans::_match::compile_submatch_continue::h4d6caf7565396624C4M
+   9:     0x7f072fb6828b - trans::_match::compile_submatch::hceb2a6dee08762ef2YM
+  10:     0x7f072fb6a399 - trans::_match::compile_submatch_continue::h4d6caf7565396624C4M
+  11:     0x7f072fb6828b - trans::_match::compile_submatch::hceb2a6dee08762ef2YM
+  12:     0x7f072fb6f9a3 - trans::_match::trans_match_inner::h24a90c2c25ff28a19yN
+  13:     0x7f072fb331a4 - trans::expr::trans_rvalue_dps_unadjusted::h2d372f8621d2fbb1yVE
+  14:     0x7f072faa1361 - trans::expr::trans_into::h7652c0f3c8b5cd0cZND
+  15:     0x7f072fa9d96d - trans::controlflow::trans_block::hde5006322ab6cf144ry
+  16:     0x7f072fa9bfde - trans::base::trans_closure::hba0c0872f549ec52KOj
+  17:     0x7f072fa9e32c - trans::base::trans_fn::hed9c6073728147b7TZj
+  18:     0x7f072faa2bd2 - trans::base::trans_item::h6acb22e4cadb1a91Xnk
+  19:     0x7f072fac076b - trans::base::TransItemsWithinModVisitor<'a, 'tcx>.Visitor<'v>::visit_item::h17401197a5140e35bol
+  20:     0x7f072faade4b - trans::base::trans_crate::he0efa1d5417c3e0bB7k
+  21:     0x7f0731acad84 - driver::phase_4_translate_to_llvm::h6b8ee7bea6f9aad8O1a
+  22:     0x7f0731ac958c - driver::compile_input::_$u7b$$u7b$closure$u7d$$u7d$::closure.29535
+  23:     0x7f0731ac5e57 - driver::phase_3_run_analysis_passes::_$u7b$$u7b$closure$u7d$$u7d$::closure.28550
+  24:     0x7f0731abfc04 - middle::ty::context::ctxt<'tcx>::create_and_enter::h16192426302205697189
+  25:     0x7f0731abc6ef - driver::phase_3_run_analysis_passes::h10920926650053012691
+  26:     0x7f0731a8fa15 - driver::compile_input::h7ae6a86e23de0774Hca
+  27:     0x7f0731a7eb47 - run_compiler::hb0408bcf47642fe6mPc
+  28:     0x7f0731a7c2c1 - sys_common::unwind::try::try_fn::h7614151098073783683
+  29:     0x7f0731592d1b - __rust_try
+  30:     0x7f073158b1fd - sys_common::unwind::inner_try::hadd81c754a64f07ciYt
+  31:     0x7f0731a7cb10 - boxed::F.FnBox<A>::call_box::h18261575856772421581
+  32:     0x7f073159cc59 - sys::thread::Thread::new::thread_start::h9bc812305b5e01feFPy
+  33:     0x7f072a866473 - start_thread
+  34:     0x7f0731214acc - clone
+  35:                0x0 - <unknown>

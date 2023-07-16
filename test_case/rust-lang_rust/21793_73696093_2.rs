@@ -1,0 +1,9 @@
+
+error: the trait `core::marker::Sync` is not implemented for type `Bar` because ...
+// code snippet/span of call site
+error: ... it is not implemented for type `Vec<Foo>` stored in field `z` because ...
+// code snippet/span of Bar::z
+error: ... it is not implemented for type `Foo` because ...
+// code snippet/span of the Foo in Vec<Foo>
+error: ... it is not implemented for type `Sender` stored in field `x`.
+// code snippet/span of Foo::x

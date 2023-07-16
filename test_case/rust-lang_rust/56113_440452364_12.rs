@@ -1,0 +1,21 @@
+\n"},"level":"error","spans":[{"file_name":"/checkout/src/test/ui/borrowck/borrowck-closures-two-mut.rs","byte_start":1569,"byte_end":1571,"line_start":51,"line_end":51,"column_start":24,"column_end":26,"is_primary":false,"text":[{"text":"    let c1 = to_fn_mut(|| x = 5);","highlight_start":24,"highlight_end":26}],"label":"first mutable borrow occurs here","suggested_replacement":null,"suggestion_applicability":null,"expansion":null},{"file_name":"/checkout/src/test/ui/borrowck/borrowck-closures-two-mut.rs","byte_start":1603,"byte_end":1605,"line_start":52,"line_end":52,"column_start":24,"column_end":26,"is_primary":true,"text":[{"text":"    lprimary":false,"text":[{"text":"    let c1 = to_fn_mut(|| set(&mut *x.f));","highlight_start":24,"highlight_end":26}],"label":"first mutable borrow occurs here","suggested_replacement":null,"suggestion_applicability":null,"expansion":null},{"file_name":"/checkout/src/test/ui/borrowck/borrowck-closures-two-mut.rs","byte_start":1976,"byte_end":1978,"line_start":65,"line_end":65,"column_start":24,"column_end":26,"is_primary":true,"text":[{"text":"    let c2 = to_fn_mut(|| set(&mut *x.f));","highlight_start":24,"highlight_end":26}],"label":"second mutable borrow occurs here","suggested_replacement":null,"suggestion_applicability":null,"expansion":null},{"file_name":"/checkout/src/test/ui/borrowck/borrowck-closures-two-mut.rs","byte_start":1946,"byte_end":1947,"line_start":64,"line_end":64,"column_start":37,"column_end":38,"is_primary":false,"text":[{"text":"    let c1 = to_fn_mut(|| set(&mut *x.f));","highlight_start":37,"highlight_end":38}],"label":"first borrow occurs due to use of `x` in closure","suggested_replacement":null,"suggestion_applicability":null,"expansion":null},{"file_name":"/checkout/src/test/ui/borrowck/borrowck-closures-two-mut.rs","byte_start":1989,"byte_end":1990,"line_start":65,"line_end":65,"column_start":37,"column_end":38,"is_primary":false,"text":[{"text":"    let c2 = to_fn_mut(|| set(&mut *x.f));","highlight_start":37,"highlight_end":38}],"label":"second borrow occurs due to use of `x` in closure","suggested_replacement":null,"suggestion_applicability":null,"expansion":null},{"file_name":"/checkout/src/test/ui/borrowck/borrowck-closures-two-mut.rs","byte_start":2124,"byte_end":2126,"line_start":68,"liner iteration of loop
+[00:48:22] 341 
+[00:48:22] 342 error[E0502]: cannot borrow `*block.current` as immutable because it is also borrowed as mutable
+[00:48:22] 
+[00:48:22] 
+[00:48:22] The actual stderr differed from the expected stderr.
+[00:48:22] The actual stderr differed from the expected stderr.
+[00:48:22] Actual stderr saved to /checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/borrowck/borrowck-describe-lvalue.mir/borrowck-describe-lvalue.mir.stderr
+[00:48:22] To update references, rerun the tests and pass the `--bless` flag
+[00:48:22] To only update this specific test, also pass `--test-args borrowck/borrowck-describe-lvalue.rs`
+[00:48:22] 
+[00:48:22] error in revision `mir`: 1 errors occurred comparing output.
+[00:48:22] status: exit code: 1
+[00:48:22] command: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "/checkout/src/test/ui/borrowck/borrowck-describe-lvalue.rs" "--target=x86_64-unknown-linux-gnu" "--cfg" "mir" "--error-format" "json" "-Zui-testing" "-C" "prefer-dynamic" "-o" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/borrowck/borrowck-describe-lvalue.mir/a" "-Crpath" "-O" "-Zunstable-options" "-Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "-Z" "borrowck=mir" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/borrowck/borrowck-describe-lvalue.mir/auxiliary" "-A" "unused"
+[00:48:22] ------------------------------------------
+[00:48:22] 
+[00:48:22] ------------------------------------------
+[00:48:22] stderr:
+[00:48:22] stderr:
+[00:48:22] ------------------------------------------
+[00:48:22] {"message":"cannot borrow `x` as mutable more than once at a time","code":{"code":"E0499","explanation":"\nA variable was borrowed as mutable more than once. Erroneous code example:\n\n

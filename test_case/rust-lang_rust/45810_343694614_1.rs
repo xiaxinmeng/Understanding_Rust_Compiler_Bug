@@ -1,0 +1,31 @@
+
+failures:
+    net::tcp::tests::clone_accept_concurrent
+    net::tcp::tests::clone_accept_smoke
+    net::tcp::tests::clone_while_reading
+    net::tcp::tests::close_read_wakes_up
+    net::tcp::tests::close_readwrite_smoke
+    net::tcp::tests::connect_loopback
+    net::tcp::tests::double_bind
+    net::tcp::tests::fast_rebind
+    net::tcp::tests::multiple_connect_interleaved_greedy_schedule
+    net::tcp::tests::multiple_connect_interleaved_lazy_schedule
+    net::tcp::tests::multiple_connect_serial
+    net::tcp::tests::partial_read
+    net::tcp::tests::peek
+    net::tcp::tests::read_eof
+    net::tcp::tests::shutdown_smoke
+    net::tcp::tests::smoke_test
+    net::tcp::tests::socket_and_peer_name
+    net::tcp::tests::tcp_clone_smoke
+    net::tcp::tests::tcp_clone_two_read
+    net::tcp::tests::tcp_clone_two_write
+    net::tcp::tests::write_close
+    net::udp::tests::connect_send_peek_recv
+    net::udp::tests::peek_from
+    net::udp::tests::set_nonblocking
+    net::udp::tests::socket_name_ip4
+    net::udp::tests::socket_smoke_test_ip4
+    net::udp::tests::udp_clone_smoke
+    net::udp::tests::udp_clone_two_read
+    net::udp::tests::udp_clone_two_write

@@ -1,0 +1,1 @@
+\n\nPlease verify you didn't misspell the type/module's name or remove/rename the\nduplicated one. Example:\n\n

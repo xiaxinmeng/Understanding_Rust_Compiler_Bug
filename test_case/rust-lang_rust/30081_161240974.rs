@@ -1,0 +1,31 @@
+
+   text    data     bss     dec     hex filename
+   9021   38039       8   47068    b7dc libarena-71b07a99.so
+  32907   12731       4   45642    b24a libflate-71b07a99.so
+  19346   40102       8   59456    e840 libfmt_macros-71b07a99.so
+  60612   69884       4  130500   1fdc4 libgetopts-71b07a99.so
+  12470   47663       8   60141    eaed libgraphviz-71b07a99.so
+  25720   23692      24   49436    c11c liblog-71b07a99.so
+  49696  103757       8  153461   25775 librbml-71b07a99.so
+3326326 3204586      32 6530944  63a780 librustc-71b07a99.so
+ 216406   87608       8  304022   4a396 librustc_back-71b07a99.so
+ 303578  176852       4  480434   754b2 librustc_borrowck-71b07a99.so
+  18669  148090       4  166763   28b6b librustc_data_structures-71b07a99.so
+1914982  121522      12 2036516  1f1324 librustc_driver-71b07a99.so
+ 730220 1487287      16 2217523  21d633 librustc_front-71b07a99.so
+ 259036   65615       8  324659   4f433 librustc_lint-71b07a99.so
+29220031        1896283  105744 31222058        1dc692a librustc_llvm-71b07a99.so
+1555916  217260       4 1773180  1b0e7c librustc_metadata-71b07a99.so
+ 420615  164949       8  585572   8ef64 librustc_mir-71b07a99.so
+ 927001   39807       8  966816   ec0a0 librustc_platform_intrinsics-71b07a99.so
+  39483   11805       8   51296    c860 librustc_plugin-71b07a99.so
+  89501   21744       8  111253   1b295 librustc_privacy-71b07a99.so
+ 408297  163572       4  571873   8b9e1 librustc_resolve-71b07a99.so
+2255972  712481      12 2968465  2d4b91 librustc_trans-71b07a99.so
+1733482  559332       4 2292818  22fc52 librustc_typeck-71b07a99.so
+3183929  702455      24 3886408  3b4d48 librustdoc-71b07a99.so
+ 162448  496300      16  658764   a0d4c libserialize-71b07a99.so
+1625883 1808437    5912 3440232  347e68 libstd-71b07a99.so
+3993545 3045683      24 7039252  6b6914 libsyntax-71b07a99.so
+ 139879   87268       4  227151   3774f libterm-71b07a99.so
+ 215919  126614      16  342549   53a15 libtest-71b07a99.so

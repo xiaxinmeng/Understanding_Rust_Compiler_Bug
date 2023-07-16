@@ -1,0 +1,2 @@
+ rust
+let chan = channel();

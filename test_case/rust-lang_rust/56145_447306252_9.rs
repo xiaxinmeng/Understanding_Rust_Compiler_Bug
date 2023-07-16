@@ -1,0 +1,1 @@
+ignore (cannot-doctest-multicrate-project)\nstruct MyType2;\nimpl<T> ForeignTrait2<T, MyType<T>> for MyType2 { } // error\n

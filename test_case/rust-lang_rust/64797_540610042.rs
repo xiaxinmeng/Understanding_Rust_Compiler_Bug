@@ -1,0 +1,2 @@
+rust
+cfg(MyEnum::MaybeNonExistent)

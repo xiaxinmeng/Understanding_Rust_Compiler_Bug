@@ -1,0 +1,2 @@
+
+$ rustc -g hello.rs

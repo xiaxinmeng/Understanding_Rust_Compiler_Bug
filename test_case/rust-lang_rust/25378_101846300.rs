@@ -1,0 +1,2 @@
+ haskell
+abs :: a -> a 

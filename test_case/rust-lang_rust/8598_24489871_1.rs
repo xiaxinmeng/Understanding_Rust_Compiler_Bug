@@ -1,0 +1,4 @@
+ C
+#if (_WIN32_WINNT >= 0x0500)
+#define FILE_FLAG_FIRST_PIPE_INSTANCE 524288
+#endif

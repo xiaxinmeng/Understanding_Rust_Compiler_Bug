@@ -1,0 +1,26 @@
+
+make-prepare                	  57.37
+stage0-test                 	  16.22
+stage0-rustc                	1056.71
+llvm                        	2806.33
+stage0-trans-llvm           	 253.79
+llvm-emscripten             	1502.33
+stage0-trans-emscripten     	 157.92
+stage1-std                  	  86.20
+stage1-test                 	  17.20
+stage1-rustc                	1123.67
+stage1-trans-llvm           	 244.76
+stage1-trans-emscripten     	 154.39
+stage0-unstable-book-gen    	  70.34
+stage0-rustbook             	 200.93
+stage2-std                  	  77.77
+stage2-rustdoc              	 183.81
+doc/std                     	  80.91
+doc/std                     	  81.21
+doc/compiler                	  39.68
+stage2-error_index_generator	   3.92
+stage0-fabricate            	 110.32
+stage2-test                 	  17.97
+stage2-cargo                	 587.95
+stage2-rustfmt              	 233.20
+stage2-cargo-fmt            	 265.80

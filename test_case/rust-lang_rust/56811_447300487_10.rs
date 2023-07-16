@@ -1,0 +1,1 @@
+\nfn main() {\n r by limiting the scope of the borrow:\n\n

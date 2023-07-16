@@ -1,0 +1,6 @@
+rust
+asm!(
+   // intel asm…
+   ".att_syntax", "my one instruction in at&t syntax", ".intel_syntax",
+   // intel asm again…
+);

@@ -1,0 +1,24 @@
+plain
+   Compiling sysinfo v0.26.7
+error: could not compile `bootstrap`
+
+Caused by:
+  process didn't exit successfully: `/Users/runner/work/rust/rust/build/x86_64-apple-darwin/stage0/bin/rustc --crate-name bootstrap --edition=2021 lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C split-debuginfo=unpacked -C debuginfo=1 --cfg 'feature="build-metrics"' --cfg 'feature="sysinfo"' -C metadata=a93843710546b921 -C extra-filename=-a93843710546b921 --out-dir /Users/runner/work/rust/rust/build/bootstrap/debug/deps -C incremental=/Users/runner/work/rust/rust/build/bootstrap/debug/incremental -L dependency=/Users/runner/work/rust/rust/build/bootstrap/debug/deps --extern build_helper=/Users/runner/work/rust/rust/build/bootstrap/debug/deps/libbuild_helper-9d2bc277721db64f.rmeta --extern cc=/Users/runner/work/rust/rust/build/bootstrap/debug/deps/libcc-49bfe8c7d867fb37.rmeta --extern cmake=/Users/runner/work/rust/rust/build/bootstrap/debug/deps/libcmake-89997d098798ab5e.rmeta --extern fd_lock=/Users/runner/work/rust/rust/build/bootstrap/debug/deps/libfd_lock-d352b88169ae9b78.rmeta --extern filetime=/Users/runner/work/rust/rust/build/bootstrap/debug/deps/libfiletime-dfad8c62ded938a8.rmeta --extern getopts=/Users/runner/work/rust/rust/build/bootstrap/debug/deps/libgetopts-919ee0a0aa1476b8.rmeta --extern hex=/Users/runner/work/rust/rust/build/bootstrap/debug/deps/libhex-236ab3c1bfe4e4f1.rmeta --extern ignore=/Users/runner/work/rust/rust/build/bootstrap/debug/deps/libignore-a7771d5b7aea3d15.rmeta --extern libc=/Users/runner/work/rust/rust/build/bootstrap/debug/deps/liblibc-44c5b86cce046821.rmeta --extern object=/Users/runner/work/rust/rust/build/bootstrap/debug/deps/libobject-311d048112783467.rmeta --extern once_cell=/Users/runner/work/rust/rust/build/bootstrap/debug/deps/libonce_cell-fb2de34fe0557dc6.rmeta --extern opener=/Users/runner/work/rust/rust/build/bootstrap/debug/deps/libopener-0eab13e0ca8f31ca.rmeta --extern serde=/Users/runner/work/rust/rust/build/bootstrap/debug/deps/libserde-d05a262813607a2d.rmeta --extern serde_derive=/Users/runner/work/rust/rust/build/bootstrap/debug/deps/libserde_derive-2aab301c883d1ded.dylib --extern serde_json=/Users/runner/work/rust/rust/build/bootstrap/debug/deps/libserde_json-0a148363995afa96.rmeta --extern sha2=/Users/runner/work/rust/rust/build/bootstrap/debug/deps/libsha2-7b55139cb79fb0aa.rmeta --extern sysinfo=/Users/runner/work/rust/rust/build/bootstrap/debug/deps/libsysinfo-c6ae361f7ec35ee4.rlib --extern tar=/Users/runner/work/rust/rust/build/bootstrap/debug/deps/libtar-8a82ba23634473a9.rmeta --extern toml=/Users/runner/work/rust/rust/build/bootstrap/debug/deps/libtoml-e06787ff05533496.rmeta --extern walkdir=/Users/runner/work/rust/rust/build/bootstrap/debug/deps/libwalkdir-d7f1d54c877394c7.rmeta --extern xz2=/Users/runner/work/rust/rust/build/bootstrap/debug/deps/libxz2-a46d8b83251c0877.rmeta -Wrust_2018_idioms -Wunused_lifetimes -Dwarnings -L native=/usr/local/Cellar/xz/5.4.1/lib` (signal: 11, SIGSEGV: invalid memory reference)
+Build completed unsuccessfully in 0:01:03
+make: *** [prepare] Error 1
+Command failed. Attempt 2/5:
+Building bootstrap
+---
+[RUSTC-TIMING] maplit test:false 0.158
+[RUSTC-TIMING] tinyvec test:false 3.045
+   Compiling getrandom v0.2.8
+[RUSTC-TIMING] getrandom test:false 0.074
+rustc exited with signal: 11 (SIGSEGV)
+error: could not compile `getrandom`
+Caused by:
+Caused by:
+  process didn't exit successfully: `/Users/runner/work/rust/rust/build/bootstrap/debug/rustc --crate-name getrandom --edition=2018 /Users/runner/.cargo/registry/src/index.crates.io-6f17d22bba15001f/getrandom-0.2.8/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=0 -C debug-assertions=off --cfg 'feature="std"' -Zunstable-options --check-cfg 'values(feature, "compiler_builtins", "core", "custom", "js", "js-sys", "rdrand", "rustc-dep-of-std", "std", "test-in-browser", "wasm-bindgen")' --check-cfg 'names()' --check-cfg 'values()' -C metadata=f766d2e2836dc94c -C extra-filename=-f766d2e2836dc94c --out-dir /Users/runner/work/rust/rust/build/x86_64-apple-darwin/stage0-bootstrap-tools/release/deps -L dependency=/Users/runner/work/rust/rust/build/x86_64-apple-darwin/stage0-bootstrap-tools/release/deps --extern cfg_if=/Users/runner/work/rust/rust/build/x86_64-apple-darwin/stage0-bootstrap-tools/release/deps/libcfg_if-fba5cb65ecfbce1a.rmeta --extern libc=/Users/runner/work/rust/rust/build/x86_64-apple-darwin/stage0-bootstrap-tools/release/deps/liblibc-0ee6d37c7da666ea.rmeta --cap-lints allow -Z binary-dep-depinfo` (exit status: 254)
+[RUSTC-TIMING] humantime test:false 1.207
+[RUSTC-TIMING] ucd_trie test:false 1.754
+[RUSTC-TIMING] libc test:false 3.925
+[RUSTC-TIMING] fastrand test:false 1.129

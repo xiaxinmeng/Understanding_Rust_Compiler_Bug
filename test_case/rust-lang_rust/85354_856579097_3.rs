@@ -1,0 +1,1 @@
+rustc -O lib.rs --crate-type=lib -C target-cpu=native --emit asm -o lib_native_asm.s

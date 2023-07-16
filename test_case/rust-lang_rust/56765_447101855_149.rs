@@ -1,0 +1,1 @@
+\nconst FOO: Option<u8> = Some(1); // enum constructor\nstruct Bar {x: u8}\nconst BAR: Bar = Bar {x: 1}; // struct constructor\n

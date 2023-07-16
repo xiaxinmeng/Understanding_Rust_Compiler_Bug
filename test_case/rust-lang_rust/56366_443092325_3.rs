@@ -1,0 +1,1 @@
+compile_fail,E0392\nenum Foo<T> {\n    Bar,\n}\n

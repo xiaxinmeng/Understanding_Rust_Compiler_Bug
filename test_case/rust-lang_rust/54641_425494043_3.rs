@@ -1,0 +1,1 @@
+\n\nHere, the problem is that a reference type like `&'a T` is only valid\nif all the data in T outlives the lifetime `'a`. But this impl as written\nis applicable to any lifetime `'a` and any type `T` -- we have no guarantee\nthat `T` outlives `'a`. To fix this, you can add a where clause like\n`where T: 'a`.\n\n

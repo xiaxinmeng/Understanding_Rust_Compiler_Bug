@@ -1,0 +1,2 @@
+ rust
+let x = 'ab';

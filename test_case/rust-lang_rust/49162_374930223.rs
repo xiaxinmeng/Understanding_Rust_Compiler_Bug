@@ -1,0 +1,12 @@
+
+error[E0580]: main does not have a valid return type
+  --> $DIR/termination-trait-main-wrong-type.rs:11:14
+   |
+LL | fn main() -> char { //~ ERROR
+   |              ^^^^ `main` can only return types that implement `std::process::Termination`
+   |
+   = help: consider using `()`, or a `Result`
+
+error: aborting due to previous error
+
+For more information about this error, try `rustc --explain E0580`.

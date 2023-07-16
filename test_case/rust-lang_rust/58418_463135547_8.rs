@@ -1,0 +1,1 @@
+\n\nTo work around this, it can be covered with a local type, `MyType`:\n\n

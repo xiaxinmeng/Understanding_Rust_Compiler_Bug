@@ -1,0 +1,3 @@
+ini
+[commands]
+bash=python

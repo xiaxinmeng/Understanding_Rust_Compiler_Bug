@@ -1,0 +1,1 @@
+\n\nIn here, `y` is dropped at the end of the inner scope, but it is borrowed by\n`x` until the `println`. To fix the previous example, just remove the scope\nso that `y` isn't dropped until after the println\n\n

@@ -1,0 +1,1 @@
+\n\nOnly functions and methods can be called using `()`. Example:\n\n

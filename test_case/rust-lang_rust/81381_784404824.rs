@@ -1,0 +1,16 @@
+
+-- Native target architecture is X86
+-- Threads enabled.
+-- Doxygen disabled.
+-- Go bindings disabled.
+-- Ninja version: 1.10.2
+-- Could NOT find OCaml (missing: OCAMLFIND OCAML_VERSION OCAML_STDLIB_PATH)
+-- OCaml bindings disabled.
+-- Could NOT find Python module pygments
+-- Could NOT find Python module pygments.lexers.c_cpp
+-- Could NOT find Python module yaml
+-- LLVM host triple: x86_64-pc-windows-msvc
+-- LLVM default target triple: x86_64-pc-windows-msvc
+-- Using Release VC++ CRT: MT <--------------
+-- Looking for os_signpost_interval_begin
+-- Looking for os_signpost_interval_begin - not found

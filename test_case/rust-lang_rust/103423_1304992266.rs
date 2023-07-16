@@ -1,0 +1,30 @@
+
+error: internal compiler error: no errors encountered even though `delay_span_bug` issued
+
+error: internal compiler error: broken MIR in DefId(0:345 ~ tower[5c59]::balance::pool::{impl#3}::build) (CanonicalUserTypeAnnotation { user_ty: Canonical { max_universe: U0, variables: [CanonicalVarInfo { kind: Ty(General(U0)) }, CanonicalVarInfo { kind: Ty(General(U0)) }, CanonicalVarInfo { kind: Ty(General(U0)) }, CanonicalVarInfo { kind: Ty(General(U0)) }], value: TypeOf(DefId(0:232 ~ tower[5c59]::balance::p2c::service::{impl#1}::new), UserSubsts { substs: [^0, ^1], user_self_ty: Some(UserSelfTy { impl_def_id: DefId(0:229 ~ tower[5c59]::balance::p2c::service::{impl#1}), self_ty: balance::p2c::service::Balance<^2, ^3> }) }) }, span: /Users/skyzh/.cargo/registry/src/github.com-1ecc6299db9ec823/tower-0.4.13/src/balance/pool/mod.rs:293:22: 293:34 (#0), inferred_ty: fn(std::pin::Pin<std::boxed::Box<balance::pool::PoolDiscoverer<MS, Target, Request>>>) -> balance::p2c::service::Balance<std::pin::Pin<std::boxed::Box<balance::pool::PoolDiscoverer<MS, Target, Request>>>, Request> {balance::p2c::service::Balance::<std::pin::Pin<std::boxed::Box<balance::pool::PoolDiscoverer<MS, Target, Request>>>, Request>::new} }): bad user type AscribeUserType(fn(std::pin::Pin<std::boxed::Box<balance::pool::PoolDiscoverer<MS, Target, Request>>>) -> balance::p2c::service::Balance<std::pin::Pin<std::boxed::Box<balance::pool::PoolDiscoverer<MS, Target, Request>>>, Request> {balance::p2c::service::Balance::<std::pin::Pin<std::boxed::Box<balance::pool::PoolDiscoverer<MS, Target, Request>>>, Request>::new}, DefId(0:232 ~ tower[5c59]::balance::p2c::service::{impl#1}::new) UserSubsts { substs: [_, _], user_self_ty: Some(UserSelfTy { impl_def_id: DefId(0:229 ~ tower[5c59]::balance::p2c::service::{impl#1}), self_ty: balance::p2c::service::Balance<_, _> }) }, type_of=fn(D) -> balance::p2c::service::Balance<D, Req> {balance::p2c::service::Balance::<D, Req>::new}): NoSolution
+  |
+  = note: delayed at compiler/rustc_borrowck/src/type_check/mod.rs:1087:25
+
+thread 'rustc' panicked at 'Box<dyn Any>', compiler/rustc_errors/src/lib.rs:1492:13
+stack backtrace:
+   0:        0x10176f684 - <std::sys_common::backtrace::_print::DisplayBacktrace as core::fmt::Display>::fmt::he789f67fc8a9da2e
+   1:        0x1017b9cc0 - core::fmt::write::hb75a06449ee96023
+   2:        0x101762624 - std::io::Write::write_fmt::ha537d648dc10faf4
+   3:        0x101771f00 - std::panicking::default_hook::{{closure}}::h45c334da6e00df74
+   4:        0x101771c24 - std::panicking::default_hook::he75f84e78540a10b
+   5:        0x1095e8ed4 - rustc_driver[5fd5b6a976810624]::DEFAULT_HOOK::{closure#0}::{closure#0}
+   6:        0x1017725c4 - std::panicking::rust_panic_with_hook::hc9e333328e5dabc1
+   7:        0x10d513510 - std[f4aea6da87cbc21a]::panicking::begin_panic::<rustc_errors[974c83b77345286b]::ExplicitBug>::{closure#0}
+   8:        0x10d512c68 - std[f4aea6da87cbc21a]::sys_common::backtrace::__rust_end_short_backtrace::<std[f4aea6da87cbc21a]::panicking::begin_panic<rustc_errors[974c83b77345286b]::ExplicitBug>::{closure#0}, !>
+   9:        0x10d80100c - std[f4aea6da87cbc21a]::panicking::begin_panic::<rustc_errors[974c83b77345286b]::ExplicitBug>
+  10:        0x10d50aa10 - std[f4aea6da87cbc21a]::panic::panic_any::<rustc_errors[974c83b77345286b]::ExplicitBug>
+  11:        0x10d50d514 - <rustc_errors[974c83b77345286b]::HandlerInner as core[8fcc4ba27723b755]::ops::drop::Drop>::drop
+  12:        0x109614758 - core[8fcc4ba27723b755]::ptr::drop_in_place::<rustc_session[757ea4cf3b0505ee]::parse::ParseSess>
+  13:        0x109617924 - <alloc[22030d15cd77a433]::rc::Rc<rustc_session[757ea4cf3b0505ee]::session::Session> as core[8fcc4ba27723b755]::ops::drop::Drop>::drop
+  14:        0x109600288 - core[8fcc4ba27723b755]::ptr::drop_in_place::<rustc_interface[d91932c246e86ebf]::interface::Compiler>
+  15:        0x1096049e4 - rustc_interface[d91932c246e86ebf]::interface::create_compiler_and_run::<core[8fcc4ba27723b755]::result::Result<(), rustc_errors[974c83b77345286b]::ErrorGuaranteed>, rustc_driver[5fd5b6a976810624]::run_compiler::{closure#1}>
+  16:        0x109653a2c - <scoped_tls[83b560d220a84d07]::ScopedKey<rustc_span[9c8359ef8e7c8b3c]::SessionGlobals>>::set::<rustc_interface[d91932c246e86ebf]::interface::run_compiler<core[8fcc4ba27723b755]::result::Result<(), rustc_errors[974c83b77345286b]::ErrorGuaranteed>, rustc_driver[5fd5b6a976810624]::run_compiler::{closure#1}>::{closure#0}, core[8fcc4ba27723b755]::result::Result<(), rustc_errors[974c83b77345286b]::ErrorGuaranteed>>
+  17:        0x10961d6c4 - std[f4aea6da87cbc21a]::sys_common::backtrace::__rust_begin_short_backtrace::<rustc_interface[d91932c246e86ebf]::util::run_in_thread_pool_with_globals<rustc_interface[d91932c246e86ebf]::interface::run_compiler<core[8fcc4ba27723b755]::result::Result<(), rustc_errors[974c83b77345286b]::ErrorGuaranteed>, rustc_driver[5fd5b6a976810624]::run_compiler::{closure#1}>::{closure#0}, core[8fcc4ba27723b755]::result::Result<(), rustc_errors[974c83b77345286b]::ErrorGuaranteed>>::{closure#0}, core[8fcc4ba27723b755]::result::Result<(), rustc_errors[974c83b77345286b]::ErrorGuaranteed>>
+  18:        0x109620548 - <<std[f4aea6da87cbc21a]::thread::Builder>::spawn_unchecked_<rustc_interface[d91932c246e86ebf]::util::run_in_thread_pool_with_globals<rustc_interface[d91932c246e86ebf]::interface::run_compiler<core[8fcc4ba27723b755]::result::Result<(), rustc_errors[974c83b77345286b]::ErrorGuaranteed>, rustc_driver[5fd5b6a976810624]::run_compiler::{closure#1}>::{closure#0}, core[8fcc4ba27723b755]::result::Result<(), rustc_errors[974c83b77345286b]::ErrorGuaranteed>>::{closure#0}, core[8fcc4ba27723b755]::result::Result<(), rustc_errors[974c83b77345286b]::ErrorGuaranteed>>::{closure#1} as core[8fcc4ba27723b755]::ops::function::FnOnce<()>>::call_once::{shim:vtable#0}
+  19:        0x10177a460 - std::sys::unix::thread::Thread::new::thread_start::haf69ac0ebc3abb55
+  20:        0x1ad21206c - __pthread_deallocate

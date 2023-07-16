@@ -1,0 +1,1 @@
+compile_fail,E0597\n# fn foo() -> i32 { 22 }\n# fn bar(x: &i32) -> &i32 { x }\nlet p = {\n  let tmp = foo(); // the temporary\n  bar(&tmp)\n}; // <-- tmp is freed as we exit this block\nlet q = p;\n

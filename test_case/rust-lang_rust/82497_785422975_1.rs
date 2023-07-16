@@ -1,0 +1,13 @@
+compile_fail,E0412
+- impl Something {} // error: type name `Something` is not in scope
+- // or:
+- 
+- trait Foo {
+- trait Foo {
+-     fn bar(N); // error: type name `N` is not in scope
+- 
+- // or:
+- 
+- 
+- fn foo(x: T) {} // type name `T` is not in scope
+- 

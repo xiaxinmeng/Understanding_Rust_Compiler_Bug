@@ -1,0 +1,1 @@
+\n\ns the item.\n    }\n}\n\nlet foo = inner::Foo;\ninner::call_method(&foo); // And since the function is public, we can call the\n                          // method through it.\n

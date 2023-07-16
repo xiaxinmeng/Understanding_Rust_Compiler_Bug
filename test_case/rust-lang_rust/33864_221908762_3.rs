@@ -1,0 +1,1 @@
+text\n<std macros>:5:8: 6:42 error: mismatched types:\n expected `()`,\n     found `core::result::Result<_, _>`\n (expected (),\n     found enum `core::result::Result`) [E0308]\n

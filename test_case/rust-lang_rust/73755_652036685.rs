@@ -1,0 +1,1 @@
+rustc -C target-feature=+multivalue --target=wasm32-unknown-unknown {input}

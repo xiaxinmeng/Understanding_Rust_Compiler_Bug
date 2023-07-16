@@ -1,0 +1,2 @@
+rust
+asm!("some assembly")

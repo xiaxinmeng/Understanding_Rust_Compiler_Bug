@@ -1,0 +1,1 @@
+compile_fail,E0225\nfn main() {\n    let _: Box<dyn std::io::Read + std::io::Write>;\n}\n

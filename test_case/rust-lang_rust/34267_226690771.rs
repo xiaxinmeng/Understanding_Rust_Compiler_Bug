@@ -1,0 +1,5 @@
+
+extern "foo" {}
+
+fn main() {
+}

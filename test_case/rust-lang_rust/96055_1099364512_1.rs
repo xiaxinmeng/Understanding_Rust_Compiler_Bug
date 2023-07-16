@@ -1,0 +1,9 @@
+
+> rustc 1.59.0 (9d1b2106e 2022-02-23)
+> binary: rustc
+> commit-hash: 9d1b2106e23b1abd32fce1f17267604a5102f57a
+> commit-date: 2022-02-23
+> host: x86_64-pc-windows-msvc
+> release: 1.59.0
+> LLVM version: 13.0.0
+> 

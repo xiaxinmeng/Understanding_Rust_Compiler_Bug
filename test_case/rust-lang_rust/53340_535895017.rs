@@ -1,0 +1,18 @@
+
+packed12le : 1.24.1  BASE 3.67
+packed12le : 1.25.0  FAIL 5.09 (+38%)
+packed12le : 1.26.2  FAIL 5.19 (+41%)
+packed12le : 1.27.2  FAIL 5.10 (+38%)
+packed12le : 1.28.0  FAIL 5.15 (+40%)
+packed12le : 1.29.2  FAIL 5.24 (+42%)
+packed12le : 1.30.1  FAIL 5.10 (+38%)
+packed12le : 1.31.1  FAIL 5.27 (+43%)
+packed12le : 1.32.0  FAIL 5.16 (+40%)
+packed12le : 1.33.0  FAIL 5.19 (+41%)
+packed12le : 1.34.2  FAIL 5.35 (+45%)
+packed12le : 1.35.0  FAIL 5.18 (+41%)
+packed12le : 1.36.0  FAIL 5.20 (+41%)
+packed12le : 1.37.0  FAIL 5.11 (+39%)
+packed12le : 1.38.0  FAIL 4.50 (+22%)
+packed12le : beta    FAIL 4.50 (+22%)
+packed12le : nightly FAIL 4.48 (+22%)

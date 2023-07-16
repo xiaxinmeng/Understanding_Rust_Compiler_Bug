@@ -1,0 +1,4 @@
+ asm
+sti:
+    sti
+    ret

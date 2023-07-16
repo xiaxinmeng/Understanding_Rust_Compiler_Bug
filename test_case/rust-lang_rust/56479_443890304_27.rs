@@ -1,0 +1,2 @@
+\nstruct Fowed value does not live long enough\n   |                 |\n   |                 type annotation requires that `x` is borrowed for `'static`\nLL | }\n   | - `x` dropped here while still borrowed\n\n"}
+[00:48:48] {"message":"`x` does not live long enough","code":{"code":"E0597","explanation":"\nThis error occurs because a borrow was made inside a variable which has a\ngreater lifetime than the borrowed one.\n\nExample of erroneous code:\n\n

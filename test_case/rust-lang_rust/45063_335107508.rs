@@ -1,0 +1,2 @@
+
+[01:26:08] thread '<unnamed>' panicked at 'output doesn't contain `APPVEYOR_REPO_COMMIT_MESSAGE_EXTENDED=incr.comp.: Bring back output of -Zincremental-info.\n\nThis got kind lost during the transition to red/green.\n\nI also switched back from `eprintln!()` to `println!()` since the former never actually produced any output. I suspect this has to do with `libterm` somehow monopolizing `stderr`.\n\nI added some statistical output for the dependency graph (example from regex crate):\n

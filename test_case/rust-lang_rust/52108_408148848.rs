@@ -1,0 +1,1 @@
+sed -i 's/-Cdebuginfo=2/-Cdebuginfo=2 -C llvm-args=-mxgot/' src/bootstrap/bootstrap.py

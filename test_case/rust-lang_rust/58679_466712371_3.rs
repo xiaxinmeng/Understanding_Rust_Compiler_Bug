@@ -1,0 +1,1 @@
+\n\nThis error may also commonly be found when working with unsafe code. For\nexample, when using raw pointers one may wish to specify the lifetime for\nwhich the pointed-at data is valid. An initial attempt (below) causes this\nerror:\n\n

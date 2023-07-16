@@ -1,0 +1,2 @@
+
+Platform::init::<P, D>()

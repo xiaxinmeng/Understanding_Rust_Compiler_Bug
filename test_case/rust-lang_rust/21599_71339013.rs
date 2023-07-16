@@ -1,0 +1,33 @@
+
+#0  0x00007ffff75a4a9e in rust_stack_exhausted () from /usr/lib/libstd-4e7c5e5c.so
+#1  0x00007ffff6daf2d1 in __morestack () from /usr/lib/librustc_trans-4e7c5e5c.so
+#2  0x00007ffff6c44afb in trans::common::erase_regions::h1897340133958074975 () from /usr/lib/librustc_trans-4e7c5e5c.so
+#3  0x00007ffff6c43e79 in trans::monomorphize::normalize_associated_type::h13331913048497014448 () from /usr/lib/librustc_trans-4e7c5e5c.so
+#4  0x00007ffff6d12601 in trans::base::decl_rust_fn::h0d9b25ac4d9ad3da12r () from /usr/lib/librustc_trans-4e7c5e5c.so
+#5  0x00007ffff6d244db in trans::base::register_fn::h30f94f1763494759FDu () from /usr/lib/librustc_trans-4e7c5e5c.so
+#6  0x00007ffff6c3f2d3 in trans::base::get_item_val::ha6e256745ba88016f0u () from /usr/lib/librustc_trans-4e7c5e5c.so
+#7  0x00007ffff6d24b36 in trans::base::create_entry_wrapper::create_entry_fn::h20ccd41c2d9748a5QRu () from /usr/lib/librustc_trans-4e7c5e5c.so
+#8  0x00007ffff6d23823 in trans::base::finish_register_fn::hb6e1021049970835hCu () from /usr/lib/librustc_trans-4e7c5e5c.so
+#9  0x00007ffff6d24525 in trans::base::register_fn::h30f94f1763494759FDu () from /usr/lib/librustc_trans-4e7c5e5c.so
+#10 0x00007ffff6c3f2d3 in trans::base::get_item_val::ha6e256745ba88016f0u () from /usr/lib/librustc_trans-4e7c5e5c.so
+#11 0x00007ffff6d24b36 in trans::base::create_entry_wrapper::create_entry_fn::h20ccd41c2d9748a5QRu () from /usr/lib/librustc_trans-4e7c5e5c.so
+#12 0x00007ffff6d23823 in trans::base::finish_register_fn::hb6e1021049970835hCu () from /usr/lib/librustc_trans-4e7c5e5c.so
+#13 0x00007ffff6d24525 in trans::base::register_fn::h30f94f1763494759FDu () from /usr/lib/librustc_trans-4e7c5e5c.so
+#14 0x00007ffff6c3f2d3 in trans::base::get_item_val::ha6e256745ba88016f0u () from /usr/lib/librustc_trans-4e7c5e5c.so
+#15 0x00007ffff6d24b36 in trans::base::create_entry_wrapper::create_entry_fn::h20ccd41c2d9748a5QRu () from /usr/lib/librustc_trans-4e7c5e5c.so
+…
+#11405 0x00007ffff6d24525 in trans::base::register_fn::h30f94f1763494759FDu () from /usr/lib/librustc_trans-4e7c5e5c.so
+#11406 0x00007ffff6c3f2d3 in trans::base::get_item_val::ha6e256745ba88016f0u () from /usr/lib/librustc_trans-4e7c5e5c.so
+#11407 0x00007ffff6c3c325 in trans::base::trans_item::hd3c6f46fbe0526db9vu () from /usr/lib/librustc_trans-4e7c5e5c.so
+#11408 0x00007ffff6d27bc9 in trans::base::trans_crate::h2ae8e61ccf7256ccjrv () from /usr/lib/librustc_trans-4e7c5e5c.so
+#11409 0x00007ffff7af9b44 in driver::phase_4_translate_to_llvm::h9a9812d78c6f6f7bSNa () from /usr/lib/librustc_driver-4e7c5e5c.so
+#11410 0x00007ffff7ad5af7 in driver::compile_input::hf24449271908df73Bba () from /usr/lib/librustc_driver-4e7c5e5c.so
+#11411 0x00007ffff7b98a5d in run_compiler::hd7bb31ad4d130831R8b () from /usr/lib/librustc_driver-4e7c5e5c.so
+#11412 0x00007ffff7b95dd9 in thunk::F.Invoke$LT$A$C$$u{20}R$GT$::invoke::h8032505569135520355 () from /usr/lib/librustc_driver-4e7c5e5c.so
+#11413 0x00007ffff7b94b7f in rt::unwind::try::try_fn::h5190150401514006474 () from /usr/lib/librustc_driver-4e7c5e5c.so
+#11414 0x00007ffff7611609 in rust_try_inner () from /usr/lib/libstd-4e7c5e5c.so
+#11415 0x00007ffff76115f6 in rust_try () from /usr/lib/libstd-4e7c5e5c.so
+#11416 0x00007ffff7b951d0 in thunk::F.Invoke$LT$A$C$$u{20}R$GT$::invoke::h18133957152747329837 () from /usr/lib/librustc_driver-4e7c5e5c.so
+#11417 0x00007ffff7593a96 in sys::thread::thread_start::h9000ab048e180f84aPw () from /usr/lib/libstd-4e7c5e5c.so
+#11418 0x00007ffff1808314 in start_thread () from /usr/lib/libpthread.so.0
+#11419 0x00007ffff71a924d in clone () from /usr/lib/libc.so.6

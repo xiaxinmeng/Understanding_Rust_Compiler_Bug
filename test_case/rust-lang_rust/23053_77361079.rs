@@ -1,0 +1,54 @@
+
+stack backtrace:
+   1:     0x7f9dbf019f1f - sys::backtrace::write::hf79a3da4fdecb8a0OBA
+   2:     0x7f9dbf044c32 - panicking::on_panic::h9f64f4c69e19f194hHJ
+   3:     0x7f9dbef79eda - rt::unwind::begin_unwind_inner::h37f4496c980fe936knJ
+   4:     0x7f9dbc3aaabd - rt::unwind::begin_unwind::h8320268356453106285
+   5:     0x7f9dbc3aaa63 - diagnostic::SpanHandler::span_bug::h83c8af232eaba6a9h0D
+   6:     0x7f9dbcc86ca3 - session::Session::span_bug::h857b2c7ae23c9286ISp
+   7:     0x7f9dbe7a480c - trans::debuginfo::scope_metadata::hac54dfdbdcd04cd9SjE
+   8:     0x7f9dbe6b7408 - trans::debuginfo::set_source_location::h1067a74086ed9dd48MD
+   9:     0x7f9dbe66be42 - trans::expr::trans_into::h95c6d2681fdd2548znh
+  10:     0x7f9dbe66c109 - trans::expr::trans_into::h95c6d2681fdd2548znh
+  11:     0x7f9dbe6ce67f - trans::expr::trans_uniq_expr::h5f082eea62818f84ukj
+  12:     0x7f9dbe6cf2ef - trans::expr::trans_unary::h4412379888608420Jgj
+  13:     0x7f9dbe6b980e - trans::expr::trans_unadjusted::hfd3a5e1b5cbe37d5z4h
+  14:     0x7f9dbe66c417 - trans::expr::trans_into::h95c6d2681fdd2548znh
+  15:     0x7f9dbe6ec6f9 - trans::expr::trans_adt::h1af69b9b4e52152aO6i
+  16:     0x7f9dbe6ef1af - trans::expr::trans_struct::closure.42069
+  17:     0x7f9dbe6d9016 - trans::expr::trans_struct::hcae8f9103f3460d5K2i
+  18:     0x7f9dbe6bb53d - trans::expr::trans_rvalue_dps_unadjusted::hd47de7ac66e018254zi
+  19:     0x7f9dbe66c3f6 - trans::expr::trans_into::h95c6d2681fdd2548znh
+  20:     0x7f9dbe66d227 - trans::controlflow::trans_block::h3e86dfa8c58560e6b5d
+  21:     0x7f9dbe744821 - trans::base::trans_closure::hab3cc3c679d5ff23Kkt
+  22:     0x7f9dbe655b08 - trans::base::trans_fn::he0569b8eb832adf9Dvt
+  23:     0x7f9dbe6575a0 - trans::monomorphize::monomorphic_fn::hc1b7393dd1dc77f1usd
+  24:     0x7f9dbe69ce4e - trans::callee::trans_fn_ref_with_substs::hd01acb4398310d154kg
+  25:     0x7f9dbe69b43e - trans::callee::trans_fn_ref::hb48e614c9b6dd9bcE9f
+  26:     0x7f9dbe69888d - trans::callee::trans::ha56f4fe94448e6baVYf
+  27:     0x7f9dbe6aefbb - trans::callee::trans_call_inner::h9722042290657949952
+  28:     0x7f9dbe6bb9e0 - trans::expr::trans_rvalue_dps_unadjusted::hd47de7ac66e018254zi
+  29:     0x7f9dbe66c3f6 - trans::expr::trans_into::h95c6d2681fdd2548znh
+  30:     0x7f9dbe6ec6f9 - trans::expr::trans_adt::h1af69b9b4e52152aO6i
+  31:     0x7f9dbe6ef1af - trans::expr::trans_struct::closure.42069
+  32:     0x7f9dbe6d9016 - trans::expr::trans_struct::hcae8f9103f3460d5K2i
+  33:     0x7f9dbe6bb53d - trans::expr::trans_rvalue_dps_unadjusted::hd47de7ac66e018254zi
+  34:     0x7f9dbe66c3f6 - trans::expr::trans_into::h95c6d2681fdd2548znh
+  35:     0x7f9dbe66d227 - trans::controlflow::trans_block::h3e86dfa8c58560e6b5d
+  36:     0x7f9dbe744821 - trans::base::trans_closure::hab3cc3c679d5ff23Kkt
+  37:     0x7f9dbe655b08 - trans::base::trans_fn::he0569b8eb832adf9Dvt
+  38:     0x7f9dbe652241 - trans::base::trans_item::h48fc370b7d259ac7vTt
+  39:     0x7f9dbe652078 - trans::base::trans_item::h48fc370b7d259ac7vTt
+  40:     0x7f9dbe74d7ec - trans::base::trans_crate::hc92be67ede893c70GPu
+  41:     0x7f9dbf652e83 - driver::phase_4_translate_to_llvm::h9904f5d5fc3fb761rNa
+  42:     0x7f9dbf62e83f - driver::compile_input::h3913ff7013f0c056Iba
+  43:     0x7f9dbf6f6cb7 - run_compiler::h28a4446bae1034e7H5b
+  44:     0x7f9dbf6f4829 - thunk::F.Invoke<A, R>::invoke::h6503055919709693733
+  45:     0x7f9dbf6f34a0 - rt::unwind::try::try_fn::h1384674024000742916
+  46:     0x7f9dbf0b4de8 - rust_try_inner
+  47:     0x7f9dbf0b4dd5 - rust_try
+  48:     0x7f9dbf6f3c3f - thunk::F.Invoke<A, R>::invoke::h5780663349966142752
+  49:     0x7f9dbf02f965 - sys::thread::thread_start::h4ab695857833a5dar8E
+  50:     0x7f9db8e8a181 - start_thread
+  51:     0x7f9dbebea47c - __clone
+  52:                0x0 - <unknown>

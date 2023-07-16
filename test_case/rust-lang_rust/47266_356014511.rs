@@ -1,0 +1,1 @@
+`RUSTFLAGS="-C remark=all -C debuginfo=2"

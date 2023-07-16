@@ -1,0 +1,1 @@
+\n\nFor more information on the rust ownership system, take a look at\nhttps://doc.rust-lang.org/stable/book/references-and-borrowing.html.\n"},"level":"error","spans":[{"file_name":"/checkout/src/test/ui/nll/get_default.rs","byte_start":1053,"byte_end":1056,"line_start":33,"limutable.\n\nExample of erroneous code:\n\n

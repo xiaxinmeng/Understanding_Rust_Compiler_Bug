@@ -1,0 +1,3 @@
+
+= warning: this was previously accepted by the compiler but is being phased out; it will become a hard error in a future release!
+= note: for more information, see issue #64266 <https://github.com/rust-lang/rust/issues/64266>

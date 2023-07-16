@@ -1,0 +1,1 @@
+\n"},"level":"error"!\nenum Foo {\n    Bar(u64),\n}\n

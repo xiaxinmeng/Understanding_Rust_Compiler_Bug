@@ -1,0 +1,1 @@
+\n\nMoving a member out of a mutably borrowed struct will also cause E0507 error:\n\n

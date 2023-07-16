@@ -1,0 +1,6 @@
+
+...
+/// functions from module 'control'
+#[path="/Users/andrew/workspace/flow/flowstdlib/src/control/mod.rs"]
+pub mod control;
+...

@@ -1,0 +1,3 @@
+
+ INFO (timestamp elided): rustc::traits::error_reporting: skipping ErrorDescriptor { predicate: Binder(TraitPredicate(<std::result::Result<[type error], ()> as std::marker::Sized>)), index: Some(3) } (implied by ErrorDescriptor { predicate: Binder(TraitPredicate(<[type error] as std::marker::Sized>)), index: Some(1) })
+ INFO (timestamp elided): rustc::traits::error_reporting: skipping ErrorDescriptor { predicate: Binder(TraitPredicate(<std::result::Result<(), [type error]> as std::marker::Sized>)), index: Some(2) } (implied by ErrorDescriptor { predicate: Binder(TraitPredicate(<[type error] as std::marker::Sized>)), index: Some(0) })

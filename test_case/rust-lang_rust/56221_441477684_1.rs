@@ -1,0 +1,1 @@
+\n\nThis error generally appears when two items with the same name are imported into\na module. Here, the `foo` functions are imported and reexported from the\n`collider` module and therefore, when we're using `collider::foo()`, both\nfunctions collide.\n\nTo solve this error, the best solution is generally to keep the path before the\nitem when using it. Example:\n\n

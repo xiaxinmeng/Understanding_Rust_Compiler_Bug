@@ -1,0 +1,3 @@
+
+make rustc-stage1 RUSTFLAGS=...
+make check-stage1-rpass

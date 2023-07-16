@@ -1,0 +1,2 @@
+sh
+exec python "$script" "$@"

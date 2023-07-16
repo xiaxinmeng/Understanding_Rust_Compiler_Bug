@@ -1,0 +1,1 @@
+\n\nBy default, variables in Rust are immutable. To fix this error, add the keyword\n`mut` after the keyword `let` when declaring the variable. For example:\n\n

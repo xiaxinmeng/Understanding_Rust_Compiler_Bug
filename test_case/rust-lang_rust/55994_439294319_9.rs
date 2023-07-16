@@ -1,0 +1,1 @@
+compile_fail,E0121\nfn foo() -> _ { 5 } // error, explicitly write out the return type instead\n\nstatic BAR: _ = \"test\"; // error, explicitly write out the type instead\n

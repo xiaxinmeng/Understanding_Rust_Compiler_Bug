@@ -1,0 +1,2 @@
+
+696412de7e4e119f8536686c643621115b90c775 is the first bad commit

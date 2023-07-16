@@ -1,0 +1,1 @@
+let _ = mc.cat_pattern(discr_place.clone(), &arm.pat, |place, pat| {

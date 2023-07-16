@@ -1,0 +1,4 @@
+
+~~~ {.rust}
+// some rust code
+~~~

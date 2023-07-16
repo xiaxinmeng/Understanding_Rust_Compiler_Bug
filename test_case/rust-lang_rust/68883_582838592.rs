@@ -1,0 +1,5 @@
+
+enum AddressType {
+    NONSTANDARD,
+    PUBKEY
+}

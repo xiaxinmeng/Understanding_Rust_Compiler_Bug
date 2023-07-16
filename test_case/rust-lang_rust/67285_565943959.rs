@@ -1,0 +1,35 @@
+plain
+2019-12-16T07:42:11.0298387Z do so (now or later) by using -b with the checkout command again. Example:
+2019-12-16T07:42:11.0298812Z 
+2019-12-16T07:42:11.0301717Z   git checkout -b <new-branch-name>
+2019-12-16T07:42:11.0301807Z 
+2019-12-16T07:42:11.0302750Z HEAD is now at 8c51da858 Auto merge of #67285 - ohadravid:indicate-origin-of-where-type-parameter, r=estebank
+2019-12-16T07:42:11.0699952Z ##[section]Starting: Setup environment
+2019-12-16T07:42:11.0809284Z ==============================================================================
+2019-12-16T07:42:11.0809379Z Task         : Bash
+2019-12-16T07:42:11.0809441Z Description  : Run a Bash script on macOS, Linux, or Windows
+---
+2019-12-16T07:42:13.6746111Z  async fn bar<T>() -> () {}
+2019-12-16T07:42:13.6746214Z  async fn foo() {
+2019-12-16T07:42:13.6746619Z (The
+2019-12-16T07:42:13.6746707Z ...
+2019-12-16T07:42:13.6746822Z 9 |     bar().await;
+2019-12-16T07:42:13.6747420Z A small side note: `Vec` and `slice` seem to resist this change, because querying `item_name()` panics, and `get_opt_name()` returns `None`.
+2019-12-16T07:42:13.6748180Z AGENT_DISABLELOGPLUGIN_TESTFILEPUBLISHERPLUGIN=true
+2019-12-16T07:42:13.6748284Z AGENT_DISABLELOGPLUGIN_TESTRESULTLOGPLUGIN=true
+2019-12-16T07:42:13.6748668Z AGENT_HOMEDIRECTORY=C:\agents\2.163.1
+2019-12-16T07:42:13.6748778Z AGENT_ID=509
+---
+2019-12-16T07:42:13.6762235Z BUILD_SOURCEBRANCHNAME=auto
+2019-12-16T07:42:13.6762634Z BUILD_SOURCESDIRECTORY=D:\a\1\s
+2019-12-16T07:42:13.6762748Z BUILD_SOURCEVERSION=8c51da8582a54d63bca13d59dc4817b02ab71aa9
+2019-12-16T07:42:13.6763306Z BUILD_SOURCEVERSIONAUTHOR=bors
+2019-12-16T07:42:13.6763996Z BUILD_SOURCEVERSIONMESSAGE=Auto merge of #67285 - ohadravid:indicate-origin-of-where-type-parameter, r=estebank
+2019-12-16T07:42:13.6764470Z BUILD_STAGINGDIRECTORY=D:\a\1\a
+2019-12-16T07:42:13.6764621Z Based on #65951 (which is not merge yet), fixes #67277.
+2019-12-16T07:42:13.6764828Z COBERTURA_HOME=C:\cobertura-2.1.1
+2019-12-16T07:42:13.6765255Z COMMONPROGRAMFILES=C:\Program Files\Common Files
+2019-12-16T07:42:13.6765374Z COMMON_TESTRESULTSDIRECTORY=D:\a\1\TestResults
+2019-12-16T07:42:13.6765788Z COMPUTERNAME=fv-az433
+---
+2019-12-16T07:42:13.6806353Z 

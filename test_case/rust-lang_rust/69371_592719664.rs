@@ -1,0 +1,20 @@
+
+"cc"
+...
+"-Wl,--start-group" "-Wl,-Bstatic"
+"/../libstd-187e8dd7e6289af3.rlib"
+"/../libpanic_unwind-168df06d56a5a3d6.rlib"
+"/../libhashbrown-b076add1ee432f68.rlib"
+"/../librustc_std_workspace_alloc-f915be2bd0932eb4.rlib"
+"/../libbacktrace-fb40584602c8c545.rlib"
+"/../libbacktrace_sys-51b5e864f7e6ff7e.rlib"
+"/../librustc_demangle-03e1b6fb00a62211.rlib"
+"/../libunwind-b614fe992130d55d.rlib"
+"/../libcfg_if-3c8c4d01b137f5ec.rlib"
+"/../liblibc-ff6dd83aac5b5d3e.rlib"
+"/../liballoc-46279441278e45f1.rlib"
+"/../librustc_std_workspace_core-ad9ca0851ac0bbb2.rlib"
+"/../libcore-b778ac4b32b54389.rlib"
+"-Wl,--end-group"
+"/../libcompiler_builtins-628ce6e3cec04e19.rlib"
+...

@@ -1,0 +1,5 @@
+\n\nDelete the offending feature attribute.\n"},"level":"error","spans":[{"file_name":"tests/ui/new_without_default.rs","byte_start":11,"byte_end":19,"line_start":1,"line_end":1,"column_start":12,"column_end":20,"is_primary":true,"text":[{"text":"#![feature(const_fn)]","highlight_start":12,"highlight_end":20}],"label":"feature has been removed","suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"split into finer-grained feature gates","code":null,"level":"note","spans":[],"children":[],"rendered":null}],"rendered":"error[E0557]: feature has been removed\n  --> tests/ui/new_without_default.rs:1:12\n   |\nLL | #![feature(const_fn)]\n   |            ^^^^^^^^ feature has been removed\n   |\n   = note: split into finer-grained feature gates\n\n"}
+{"message":"For more information about this error, try `rustc --explain E0557`.","code":null,"level":"failure-note","spans":[],"children":[],"rendered":"For more information about this error, try `rustc --explain E0557`.\n"}
+
+------------------------------------------
+

@@ -1,0 +1,6 @@
+rust
+static if N != 0 {
+    foo.as_chunks::<N>() // ...
+} else {
+    // ...
+}

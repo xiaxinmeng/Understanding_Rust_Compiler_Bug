@@ -1,0 +1,6 @@
+
+>adb shell /data/local/tmp/linker-deadlock 
+Locking g_dl_mutex...
+Spawning ps...
+dlsym'ing done
+[at this moment program hangs]

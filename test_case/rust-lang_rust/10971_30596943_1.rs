@@ -1,0 +1,3 @@
+
+gcc -fPIC -c lib.c -o lib_shared/lib.o & gcc -c lib.c -o lib_static/lib.o
+...

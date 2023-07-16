@@ -1,0 +1,11 @@
+
+[#0] 0x7ffff7d0bfe9 → __futex_abstimed_wait_common64(private=0x0, cancel=0x1, abstime=0x0, op=0x189, expected=0x0, futex_word=0x5555565fddf8)
+[#1] 0x7ffff7d0bfe9 → __futex_abstimed_wait_common(cancel=0x1, private=0x0, abstime=0x0, clockid=0x0, expected=0x0, futex_word=0x5555565fddf8)
+[#2] 0x7ffff7d0bfe9 → __GI___futex_abstimed_wait_cancelable64(futex_word=0x5555565fddf8, expected=0x0, clockid=0x0, abstime=0x0, private=0x0)
+[#3] 0x7ffff7d0e920 → __pthread_cond_wait_common(abstime=0x0, clockid=0x0, mutex=0x5555566dab50, cond=0x5555565fddd0)
+[#4] 0x7ffff7d0e920 → ___pthread_cond_wait(cond=0x5555565fddd0, mutex=0x5555566dab50)
+[#5] 0x555555ecec31 → jobserver::HelperState::for_each_request()
+[#6] 0x555555ecff1c → std::sys_common::backtrace::__rust_begin_short_backtrace()
+[#7] 0x555555ecf81a → core::ops::function::FnOnce::call_once{{vtable.shim}}()
+[#8] 0x555555f09fc3 → alloc::boxed::{impl#44}::call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>()
+[#9] 0x555555f09fc3 → alloc::boxed::{impl#44}::call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global>()

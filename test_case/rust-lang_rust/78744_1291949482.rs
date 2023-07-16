@@ -1,0 +1,3 @@
+
+> cargo contract build
+> 

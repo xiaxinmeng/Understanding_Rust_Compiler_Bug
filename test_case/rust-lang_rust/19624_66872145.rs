@@ -1,0 +1,6 @@
+
+error_codes! {
+...
+E0123, ERR_MISMATCHED_TYPES, "some detailed comments";
+...
+}

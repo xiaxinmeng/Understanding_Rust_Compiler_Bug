@@ -1,0 +1,2 @@
+
+DEBUG:rustc::traits::select: assembled 2 candidates for TraitObligationStack(Obligation(predicate=Binder(TraitPredicate(<std::vec::Vec<u32> as std::vec::SpecExtend<std::iter::Map<std::vec::IntoIter<u32>, [closure@not-a-recursion-error.rs:74:31: 76:10]>>>)),depth=0)): [ImplCandidate(DefId { krate: CrateNum(3), node: DefIndex(4218) => collections/92fdee2a092512a3f348f1bfb6992470::vec[0]::{{impl}}[28] }), ImplCandidate(DefId { krate: CrateNum(3), node: DefIndex(4231) => collections/92fdee2a092512a3f348f1bfb6992470::vec[0]::{{impl}}[29] })]

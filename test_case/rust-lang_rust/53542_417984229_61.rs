@@ -1,0 +1,1 @@
+\n\nA simple workaround is to use a helper method instead:\n\n

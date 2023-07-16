@@ -1,0 +1,6 @@
+
+memory allocation of 3357031879003488 bytes failed
+error: could not compile `fix50sp2`
+
+Caused by:
+  process didn't exit successfully: `rustc --crate-name fix50sp2 --edition=2018 /home/marco/.cargo/git/checkouts/serde_fix-8dbbdecc2774ced0/77dd8ea/fix50sp2/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts --crate-type lib --emit=dep-info,metadata,link -C embed-bitcode=no -C debuginfo=2 -C metadata=ed09c736436959db -C extra-filename=-ed09c736436959db --out-dir /home/marco/Progetti/therockfixer/target/debug/deps -L dependency=/home/marco/Progetti/therockfixer/target/debug/deps --extern fix_common=/home/marco/Progetti/therockfixer/target/debug/deps/libfix_common-8c1604d5a22c4f95.rmeta --extern fixt11=/home/marco/Progetti/therockfixer/target/debug/deps/libfixt11-5f2f118e94a7ecba.rmeta --extern serde=/home/marco/Progetti/therockfixer/target/debug/deps/libserde-1bc36b13d54a445b.rmeta --extern serde_fix=/home/marco/Progetti/therockfixer/target/debug/deps/libserde_fix-5ac183259d5eaa3a.rmeta --cap-lints allow` (signal: 6, SIGABRT: process abort signal)

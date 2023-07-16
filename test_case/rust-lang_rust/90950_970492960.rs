@@ -1,0 +1,1 @@
+the trait `for<'a> IsCovariant<'a>` is not implemented for `<_ as Yokeable<'a>>::Output

@@ -1,0 +1,81 @@
+text
+Auto-merging src/tools/clippy/clippy_lints/src/utils/mod.rs
+Auto-merging src/tools/clippy/clippy_lints/src/transmute.rs
+Auto-merging src/tools/clippy/clippy_lints/src/shadow.rs
+Auto-merging src/tools/clippy/clippy_lints/src/ranges.rs
+Auto-merging src/tools/clippy/clippy_lints/src/ptr.rs
+Auto-merging src/tools/clippy/clippy_lints/src/needless_pass_by_value.rs
+Auto-merging src/tools/clippy/clippy_lints/src/methods/mod.rs
+Auto-merging src/tools/clippy/clippy_lints/src/loops.rs
+Auto-merging src/tools/clippy/clippy_lints/src/functions.rs
+Auto-merging src/tools/clippy/clippy_lints/src/doc.rs
+Auto-merging src/tools/clippy/clippy_lints/src/derive.rs
+CONFLICT (content): Merge conflict in src/tools/clippy/clippy_lints/src/derive.rs
+Auto-merging src/tools/clippy/clippy_lints/src/default_trait_access.rs
+Auto-merging src/tools/clippy/clippy_lints/src/consts.rs
+Auto-merging src/tools/clippy/clippy_lints/src/bytecount.rs
+Auto-merging src/librustdoc/passes/collect_intra_doc_links.rs
+Auto-merging src/librustdoc/clean/utils.rs
+Auto-merging src/librustdoc/clean/mod.rs
+Auto-merging src/librustc_typeck/mem_categorization.rs
+Auto-merging src/librustc_typeck/lib.rs
+Auto-merging src/librustc_typeck/collect/type_of.rs
+CONFLICT (content): Merge conflict in src/librustc_typeck/collect/type_of.rs
+Auto-merging src/librustc_typeck/collect.rs
+Auto-merging src/librustc_typeck/coherence/inherent_impls.rs
+Auto-merging src/librustc_typeck/check/place_op.rs
+Auto-merging src/librustc_typeck/check/pat.rs
+Auto-merging src/librustc_typeck/check/mod.rs
+Auto-merging src/librustc_typeck/check/method/probe.rs
+Auto-merging src/librustc_typeck/check/dropck.rs
+Auto-merging src/librustc_typeck/check/demand.rs
+Auto-merging src/librustc_typeck/check/cast.rs
+Auto-merging src/librustc_typeck/astconv.rs
+Auto-merging src/librustc_ty/ty.rs
+Auto-merging src/librustc_traits/chalk/db.rs
+Auto-merging src/librustc_trait_selection/traits/select/mod.rs
+Auto-merging src/librustc_trait_selection/traits/query/normalize.rs
+CONFLICT (content): Merge conflict in src/librustc_trait_selection/traits/query/normalize.rs
+Auto-merging src/librustc_trait_selection/traits/project.rs
+CONFLICT (content): Merge conflict in src/librustc_trait_selection/traits/project.rs
+Auto-merging src/librustc_trait_selection/traits/error_reporting/suggestions.rs
+Auto-merging src/librustc_trait_selection/traits/auto_trait.rs
+Auto-merging src/librustc_save_analysis/lib.rs
+Auto-merging src/librustc_privacy/lib.rs
+Auto-merging src/librustc_passes/liveness.rs
+Auto-merging src/librustc_passes/dead.rs
+Auto-merging src/librustc_mir_build/build/mod.rs
+Auto-merging src/librustc_mir_build/build/matches/test.rs
+Auto-merging src/librustc_mir/transform/validate.rs
+Auto-merging src/librustc_mir/transform/rustc_peek.rs
+Auto-merging src/librustc_mir/transform/qualify_min_const_fn.rs
+Auto-merging src/librustc_mir/transform/promote_consts.rs
+Auto-merging src/librustc_mir/transform/const_prop.rs
+Auto-merging src/librustc_mir/transform/add_retag.rs
+Auto-merging src/librustc_mir/monomorphize/polymorphize.rs
+Auto-merging src/librustc_mir/interpret/validity.rs
+Auto-merging src/librustc_mir/interpret/place.rs
+Auto-merging src/librustc_mir/interpret/operand.rs
+Auto-merging src/librustc_mir/interpret/eval_context.rs
+Auto-merging src/librustc_mir/const_eval/eval_queries.rs
+Auto-merging src/librustc_mir/borrow_check/type_check/mod.rs
+Auto-merging src/librustc_mir/borrow_check/mod.rs
+Auto-merging src/librustc_mir/borrow_check/diagnostics/mod.rs
+Auto-merging src/librustc_middle/ty/print/pretty.rs
+Auto-merging src/librustc_middle/ty/mod.rs
+Auto-merging src/librustc_middle/ty/layout.rs
+Auto-merging src/librustc_middle/ty/context.rs
+Auto-merging src/librustc_middle/traits/query.rs
+Auto-merging src/librustc_metadata/rmeta/encoder.rs
+Auto-merging src/librustc_lint/unused.rs
+Auto-merging src/librustc_lint/types.rs
+Auto-merging src/librustc_lint/builtin.rs
+Auto-merging src/librustc_infer/infer/sub.rs
+Auto-merging src/librustc_infer/infer/nll_relate/mod.rs
+Auto-merging src/librustc_infer/infer/error_reporting/nice_region_error/static_impl_trait.rs
+Auto-merging src/librustc_codegen_ssa/mir/place.rs
+Auto-merging src/librustc_codegen_llvm/debuginfo/metadata.rs
+Auto-merging src/librustc_codegen_llvm/consts.rs
+Auto-merging src/librustc_codegen_llvm/builder.rs
+Automatic merge failed; fix conflicts and then commit the result.
+

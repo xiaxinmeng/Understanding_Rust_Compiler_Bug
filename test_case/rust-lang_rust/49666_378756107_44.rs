@@ -1,0 +1,1 @@
+\nuse std::cell::RefCell;\nuse std::rc::Rc;\n\nstruct MyStruct { s: u32 }\n\nfn main() {\n    let mut x = Rc::new(RefCell::new(MyStruct{ s: 5u32 }));\n    let y = x.clone();\n    x.borrow_mut().s = 6;\n    println!(\"{}\", x.borrow().s);\n}\n

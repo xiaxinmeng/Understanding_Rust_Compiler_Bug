@@ -1,0 +1,2 @@
+sh
+cargo +nightly build

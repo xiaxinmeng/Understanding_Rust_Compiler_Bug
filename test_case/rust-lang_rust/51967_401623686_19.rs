@@ -1,0 +1,1 @@
+\nfn Foo() -> u32 { 0 }\n\nlet f = Foo(); // ok!\n

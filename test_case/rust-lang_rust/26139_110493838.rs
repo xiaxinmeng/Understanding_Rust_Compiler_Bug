@@ -1,0 +1,4 @@
+ rust
+let consume = move || {
+    //...
+};

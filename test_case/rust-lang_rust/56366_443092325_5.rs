@@ -1,0 +1,1 @@
+\nenum Foo<T> {\n    Bar(T),\n}\n

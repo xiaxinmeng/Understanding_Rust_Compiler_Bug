@@ -1,0 +1,25 @@
+
+   Compiling playground v0.0.1 (/playground)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.69s
+     Running `target/debug/playground`
+
+0
+2098177
+4196354
+6294531
+8392708
+10490885
+12589062
+14687239
+16785416
+18883593
+20981770
+23079947
+25178124
+27276301
+29374478
+31472655
+33570832
+35669009
+37767186
+39865363

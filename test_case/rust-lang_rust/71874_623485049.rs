@@ -1,0 +1,1 @@
+rust ` on your code fence to get syntax coloring.

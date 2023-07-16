@@ -1,0 +1,1 @@
+\n\n`#[inline]` hints the compiler whether or not to attempt to inline a method or\nfunction. By default, the compiler does a pretty good job of figuring this out\nitself, but if you feel the need for annotations, `#[inline(always)]` and\n`#[inline(never)]` can override or

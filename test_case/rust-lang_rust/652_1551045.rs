@@ -1,0 +1,6 @@
+
+if check (is_else_expr(e)) {
+  ... build my expr_if ...
+} else {
+  ... try something different ...
+}

@@ -1,0 +1,6 @@
+json
+{
+  "type": "Baz",
+  ??? "type": "Baz",
+  ??? ??? "type": "Foo"
+}

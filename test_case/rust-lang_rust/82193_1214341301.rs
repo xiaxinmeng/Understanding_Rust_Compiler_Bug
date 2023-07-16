@@ -1,0 +1,4 @@
+toml
+> [build]
+> rustflags = [ "-C", "target-feature=-crt-static" ]
+> 

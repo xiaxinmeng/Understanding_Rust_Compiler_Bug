@@ -1,0 +1,1 @@
+seelf.mode = Cast(CastTarget { prefix: [None, None, None, None, None, None, None, None], prefix_chunk_size: Size { raw: 0 },        rest: Uniform { unit: Reg { kind: Float, size: Size { raw: 4 } }, total: Size { raw: 16 } } })

@@ -1,0 +1,2 @@
+
+fn try(f: ||) -> bool;

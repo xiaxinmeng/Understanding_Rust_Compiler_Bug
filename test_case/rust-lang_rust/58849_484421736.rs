@@ -1,0 +1,2 @@
+
+flamegraph -o rustdoc.svg /home/james/.rustup/toolchains/beta-x86_64-unknown-linux-gnu/bin/rustdoc --edition=2018 --crate-name nrf52832_pac src/lib.rs --color always -o /tmp/nrf52832-pac/target/doc -L dependency=/tmp/nrf52832-pac/target/debug/deps --extern bare_metal=/tmp/nrf52832-pac/target/debug/deps/libbare_metal-77e06d3286078ba3.rmeta --extern cortex_m=/tmp/nrf52832-pac/target/debug/deps/libcortex_m-3b084aea88ac1290.rmeta --extern vcell=/tmp/nrf52832-pac/target/debug/deps/libvcell-28d9c41f1ae25f64.rmeta

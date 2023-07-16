@@ -1,0 +1,3 @@
+rust
+/// Fine (no #[stable(..)])
+const fn ...

@@ -1,0 +1,1 @@
+\nlet mut i = 0;\nlet mut x = &mut i; // ok!\n\n// or:\nlet mut i = 0;\nlet a = &i; // ok!\nlet b = &i; // still ok!\nlet c = &i; // still ok!\n

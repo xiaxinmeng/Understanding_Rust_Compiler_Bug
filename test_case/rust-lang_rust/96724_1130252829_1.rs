@@ -1,0 +1,3 @@
+rust
+// unsuffixed literal
+«««««« ... «««««« "literal" »»»»»» ... »»»»»»

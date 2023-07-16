@@ -1,0 +1,2 @@
+rust
+x.boxed().into()

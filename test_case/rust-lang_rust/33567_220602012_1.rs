@@ -1,0 +1,2 @@
+
+SWITCH_INT(ENUM, ...)

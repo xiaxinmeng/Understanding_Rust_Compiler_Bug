@@ -1,0 +1,1 @@
+ignore (only-for-syntax-highlight)\nimpl<P1, ..., Pm> ForeignTrait<T1, ..., Tn> for T0 { ... }\n

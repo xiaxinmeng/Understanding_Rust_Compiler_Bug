@@ -1,0 +1,1 @@
+\n\nAlternatively, define a trait locally and implement that instead:\n\n

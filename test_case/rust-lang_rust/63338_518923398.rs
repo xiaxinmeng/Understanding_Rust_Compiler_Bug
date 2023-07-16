@@ -1,0 +1,3 @@
+
+const IS_EMPTY_SINGLETON = 0
+const HAS_NO_PARENT = 1

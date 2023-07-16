@@ -1,0 +1,30 @@
+
+  Compiling autocfg v1.0.1
+   Compiling libc v0.2.82
+   Compiling gimli v0.23.0
+   Compiling adler v0.2.3
+   Compiling cfg-if v1.0.0
+   Compiling rustc-demangle v0.1.18
+   Compiling object v0.22.0
+     Running `rustc --crate-name autocfg /home/david/.cargo/registry/src/github.com-1ecc6299db9ec823/autocfg-1.0.1/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi --crate-type lib --emit=dep-info,metadata,link -Cembed-bitcode=no -C debuginfo=2 -C metadata=f40b69de65cfa16a -C extra-filename=-f40b69de65cfa16a --out-dir /home/david/Projects/rust/backtrace-rs/target/debug/deps -L dependency=/home/david/Projects/rust/backtrace-rs/target/debug/deps --cap-lints allow -Z split-dwarf=split`
+     Running `rustc --crate-name build_script_build /home/david/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.82/build.rs --error-format=json --json=diagnostic-rendered-ansi --crate-type bin --emit=dep-info,link -Cembed-bitcode=no -C debuginfo=2 -C metadata=299960e7a1692464 -C extra-filename=-299960e7a1692464 --out-dir /home/david/Projects/rust/backtrace-rs/target/debug/build/libc-299960e7a1692464 -L dependency=/home/david/Projects/rust/backtrace-rs/target/debug/deps --cap-lints allow -Z split-dwarf=split`
+     Running `rustc --crate-name gimli --edition=2018 /home/david/.cargo/registry/src/github.com-1ecc6299db9ec823/gimli-0.23.0/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts --crate-type lib --emit=dep-info,metadata,link -Cembed-bitcode=no -C debuginfo=2 --cfg 'feature="read"' -C metadata=1558b68d5687196a -C extra-filename=-1558b68d5687196a --out-dir /home/david/Projects/rust/backtrace-rs/target/debug/deps -L dependency=/home/david/Projects/rust/backtrace-rs/target/debug/deps --cap-lints allow -Z split-dwarf=split`
+     Running `rustc --crate-name cfg_if --edition=2018 /home/david/.cargo/registry/src/github.com-1ecc6299db9ec823/cfg-if-1.0.0/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts --crate-type lib --emit=dep-info,metadata,link -Cembed-bitcode=no -C debuginfo=2 -C metadata=ce59338d636be0e5 -C extra-filename=-ce59338d636be0e5 --out-dir /home/david/Projects/rust/backtrace-rs/target/debug/deps -L dependency=/home/david/Projects/rust/backtrace-rs/target/debug/deps --cap-lints allow -Z split-dwarf=split`
+     Running `rustc --crate-name adler /home/david/.cargo/registry/src/github.com-1ecc6299db9ec823/adler-0.2.3/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts --crate-type lib --emit=dep-info,metadata,link -Cembed-bitcode=no -C debuginfo=2 -C metadata=b66c5323933d2b31 -C extra-filename=-b66c5323933d2b31 --out-dir /home/david/Projects/rust/backtrace-rs/target/debug/deps -L dependency=/home/david/Projects/rust/backtrace-rs/target/debug/deps --cap-lints allow -Z split-dwarf=split`
+     Running `rustc --crate-name rustc_demangle /home/david/.cargo/registry/src/github.com-1ecc6299db9ec823/rustc-demangle-0.1.18/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts --crate-type lib --emit=dep-info,metadata,link -Cembed-bitcode=no -C debuginfo=2 -C metadata=882a963021f29db3 -C extra-filename=-882a963021f29db3 --out-dir /home/david/Projects/rust/backtrace-rs/target/debug/deps -L dependency=/home/david/Projects/rust/backtrace-rs/target/debug/deps --cap-lints allow -Z split-dwarf=split`
+     Running `rustc --crate-name object --edition=2018 /home/david/.cargo/registry/src/github.com-1ecc6299db9ec823/object-0.22.0/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts --crate-type lib --emit=dep-info,metadata,link -Cembed-bitcode=no -C debuginfo=2 --cfg 'feature="archive"' --cfg 'feature="coff"' --cfg 'feature="elf"' --cfg 'feature="macho"' --cfg 'feature="pe"' --cfg 'feature="read_core"' --cfg 'feature="unaligned"' -C metadata=fdd8b8c7c909b622 -C extra-filename=-fdd8b8c7c909b622 --out-dir /home/david/Projects/rust/backtrace-rs/target/debug/deps -L dependency=/home/david/Projects/rust/backtrace-rs/target/debug/deps --cap-lints allow -Z split-dwarf=split`
+     Running `/home/david/Projects/rust/backtrace-rs/target/debug/build/libc-299960e7a1692464/build-script-build`
+   Compiling miniz_oxide v0.4.3
+     Running `rustc --crate-name build_script_build --edition=2018 /home/david/.cargo/registry/src/github.com-1ecc6299db9ec823/miniz_oxide-0.4.3/build.rs --error-format=json --json=diagnostic-rendered-ansi --crate-type bin --emit=dep-info,link -Cembed-bitcode=no -C debuginfo=2 -C metadata=6f3f48770204354e -C extra-filename=-6f3f48770204354e --out-dir /home/david/Projects/rust/backtrace-rs/target/debug/build/miniz_oxide-6f3f48770204354e -L dependency=/home/david/Projects/rust/backtrace-rs/target/debug/deps --extern autocfg=/home/david/Projects/rust/backtrace-rs/target/debug/deps/libautocfg-f40b69de65cfa16a.rlib --cap-lints allow -Z split-dwarf=split`
+     Running `rustc --crate-name libc /home/david/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.82/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts --crate-type lib --emit=dep-info,metadata,link -Cembed-bitcode=no -C debuginfo=2 -C metadata=55acfc5d67d2fc7b -C extra-filename=-55acfc5d67d2fc7b --out-dir /home/david/Projects/rust/backtrace-rs/target/debug/deps -L dependency=/home/david/Projects/rust/backtrace-rs/target/debug/deps --cap-lints allow -Z split-dwarf=split --cfg freebsd11 --cfg libc_priv_mod_use --cfg libc_union --cfg libc_const_size_of --cfg libc_align --cfg libc_core_cvoid --cfg libc_packedN --cfg libc_cfg_target_vendor`
+error: linking dwarf objects with `rust-llvm-dwp` failed: exit code: 1
+  |
+  = note: "rust-llvm-dwp" "-e" "/home/david/Projects/rust/backtrace-rs/target/debug/build/miniz_oxide-6f3f48770204354e/build_script_build-6f3f48770204354e" "-o" "/home/david/Projects/rust/backtrace-rs/target/debug/build/miniz_oxide-6f3f48770204354e/build_script_build-6f3f48770204354e.dwp"
+  = note:
+  = note: error: No such file or directory
+
+
+error: aborting due to previous error
+
+     Running `/home/david/Projects/rust/backtrace-rs/target/debug/build/miniz_oxide-6f3f48770204354e/build-script-build`
+^C⏎ 

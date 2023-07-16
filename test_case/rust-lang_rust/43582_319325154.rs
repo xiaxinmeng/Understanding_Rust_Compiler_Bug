@@ -1,0 +1,6 @@
+Rust
+fn main() {
+    let mut x = 0;
+    let mut y = (&mut x,);
+    *y.0 = 1;
+}

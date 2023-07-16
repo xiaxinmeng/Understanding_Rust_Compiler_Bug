@@ -1,0 +1,8 @@
+
+Reading specs from /opt/l/staging_dir/toolchain-mips_mips32_gcc-6.2.0_glibc-2.24/bin/../lib/gcc/mips-openwrt-linux-gnu/6.2.0/specs
+COLLECT_GCC=/opt/l/staging_dir/toolchain-mips_mips32_gcc-6.2.0_glibc-2.24/bin/mips-openwrt-linux-gnu-gcc
+COLLECT_LTO_WRAPPER=/opt/l/staging_dir/toolchain-mips_mips32_gcc-6.2.0_glibc-2.24/bin/../libexec/gcc/mips-openwrt-linux-gnu/6.2.0/lto-wrapper
+Target: mips-openwrt-linux-gnu
+Configured with: /home/diego/lede/build_dir/toolchain-mips_mips32_gcc-6.2.0_glibc-2.24/gcc-6.2.0/configure --with-bugurl=http://www.lede-project.org/bugs/ --with-pkgversion='LEDE GCC 6.2.0 r2065' --prefix=/home/diego/lede/staging_dir/toolchain-mips_mips32_gcc-6.2.0_glibc-2.24 --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=mips-openwrt-linux-gnu --with-gnu-ld --enable-target-optspace --disable-libgomp --disable-libmudflap --disable-multilib --disable-libmpx --disable-nls --without-isl --without-cloog --with-host-libstdcxx=-lstdc++ --with-float=soft --with-gmp=/home/diego/lede/staging_dir/host --with-mpfr=/home/diego/lede/staging_dir/host --with-mpc=/home/diego/lede/staging_dir/host --disable-decimal-float --with-mips-plt --with-diagnostics-color=auto-if-env --enable-libssp --enable-__cxa_atexit --with-headers=/home/diego/lede/staging_dir/toolchain-mips_mips32_gcc-6.2.0_glibc-2.24/include --disable-libsanitizer --enable-languages=c,c++ --enable-shared --enable-threads --with-slibdir=/home/diego/lede/staging_dir/toolchain-mips_mips32_gcc-6.2.0_glibc-2.24/lib --enable-lto --with-libelf=/home/diego/lede/staging_dir/host
+Thread model: posix
+gcc version 6.2.0 (LEDE GCC 6.2.0 r2065) 

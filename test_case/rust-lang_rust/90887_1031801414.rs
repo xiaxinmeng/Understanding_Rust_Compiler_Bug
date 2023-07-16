@@ -1,0 +1,16 @@
+plain
+   Compiling rustc_trait_selection v0.0.0 (/checkout/compiler/rustc_trait_selection)
+error[E0308]: mismatched types
+   --> compiler/rustc_trait_selection/src/traits/project.rs:506:40
+    |
+506 |                     .unwrap_or_else(|| ty.super_fold_with(self))
+    |                                        ^^^^^^^^^^^^^^^^^^^^^^^^ expected enum `rustc_middle::ty::Term`, found `&TyS<'_>`
+help: try wrapping the expression in `rustc_middle::ty::Term::Ty`
+    |
+    |
+506 |                     .unwrap_or_else(|| rustc_middle::ty::Term::Ty(ty.super_fold_with(self)))
+    |                                        +++++++++++++++++++++++++++                        +
+For more information about this error, try `rustc --explain E0308`.
+[RUSTC-TIMING] rustc_trait_selection test:false 2.693
+error: could not compile `rustc_trait_selection` due to previous error
+warning: build failed, waiting for other jobs to finish...

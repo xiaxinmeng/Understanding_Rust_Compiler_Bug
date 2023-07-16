@@ -1,0 +1,1 @@
+compile_fail,E0373\nfn foo() -> Box<Fn(u32) -> u32> {\n    let x = 0u32;\n    Box::new(|y| x + y)\n}\n

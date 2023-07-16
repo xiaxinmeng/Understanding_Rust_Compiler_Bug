@@ -1,0 +1,1 @@
+\n\nIn here, `x` is created before `y` and therefore has a greater lifetime. Always\nkeep in mind that values in a scope are dropped in the opposite order they are\ncreated. So to fix the previous example, just make the `y` lifetime greater than\nthe `x`'s one:\n\n

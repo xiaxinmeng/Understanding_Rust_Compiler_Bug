@@ -1,0 +1,1 @@
+assert_eq!(*mutex_lock, 0);

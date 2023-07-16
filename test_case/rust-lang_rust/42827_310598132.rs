@@ -1,0 +1,1 @@
+Unique::new(*p as *mut T)

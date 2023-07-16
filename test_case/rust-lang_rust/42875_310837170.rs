@@ -1,0 +1,4 @@
+rust
+mod a {
+    use *;
+}

@@ -1,0 +1,2 @@
+
+Linux derp 4.5.4-1-ARCH #1 SMP PREEMPT Wed May 11 22:21:28 CEST 2016 x86_64 GNU/Linux

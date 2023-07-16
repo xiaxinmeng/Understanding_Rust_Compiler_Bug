@@ -1,0 +1,56 @@
+plain
+[00:48:58] ....................................................................................................
+[00:49:02] ...................................................................................................i
+[00:49:04] ....................................................................................................
+[00:49:07] ....................................................................................................
+[00:49:10] ................................................iiiiiiiii...........................................
+[00:49:15] ....................................................................................................
+[00:49:19] ....................................................................................................
+[00:49:22] .............................i......................................................................
+[00:49:25] ...............................................................................i.i..ii..............
+---
+[00:51:41] ....................................................................................................
+[00:51:50] ....................................................................................................
+[00:52:01] ....................................................................................................
+[00:52:08] ....................................................................................................
+[00:52:16] ....................................F...............................................................
+[00:52:36] ............................................................................i.......................
+[00:52:46] ....................................................................................................
+[00:52:57] ....................................................................................................
+[00:53:06] .i..................................................................................................
+---
+[00:55:53] ---- [run-pass] run-pass/issue-21562.rs stdout ----
+[00:55:53] 
+[00:55:53] error: compilation failed!
+[00:55:53] status: exit code: 101
+[00:55:53] command: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "/checkout/src/test/run-pass/issue-21562.rs" "--target=x86_64-unknown-linux-gnu" "-C" "prefer-dynamic" "-o" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/run-pass/issue-21562/a" "-Crpath" "-O" "-Zunstable-options" "-Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/run-pass/issue-21562/auxiliary"
+[00:55:53] ------------------------------------------
+[00:55:53] 
+[00:55:53] ------------------------------------------
+[00:55:53] due to previous error
+---
+[00:55:53] note: we would appreciate a bug report: https://github.com/rust-lang/rust/blob/master/CONTRIBUTING.md#bug-reports
+[00:55:53] 
+[00:55:53] note: rustc 1.30.0-dev running on x86_64-unknown-linux-gnu
+[00:55:53] 
+[00:55:53] note: compiler flags: -Z unstable-options -C prefer-dynamic -C rpath
+[00:55:53] 
+[00:55:53] ------------------------------------------
+[00:55:53] 
+[00:55:53] thread '[run-pass] run-pass/issue-21562.rs' panicked at 'explicit panic', tools/compiletest/src/runtest.rs:3189:9
+---
+[00:55:53] 
+[00:55:53] thread 'main' panicked at 'Some tests failed', tools/compiletest/src/main.rs:497:22
+[00:55:53] 
+[00:55:53] 
+[00:55:53] command did not execute successfully: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage0-tools-bin/compiletest" "--compile-lib-path" "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/lib" "--run-lib-path" "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/lib/rustlib/x86_64-unknown-linux-gnu/lib" "--rustc-path" "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "--src-base" "/checkout/src/test/run-pass" "--build-base" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/run-pass" "--stage-id" "stage2-x86_64-unknown-linux-gnu" "--mode" "run-pass" mh1th0x
+128740 ./obj/build/x86_64-unknown-linux-gnu/stage0-bootstrap-tools/x86_64-unknown-linux-gnu/release
+125608 ./obj/build/x86_64-unknown-linux-gnu/stage1-rustc/x86_64-unknown-linux-gnu
+125604 ./obj/build/x86_64-unknown-linux-gnu/stage1-rustc/x86_64-unknown-linux-gnu/release
+122840 ./obj/build/x86_64-unknown-linux-gnu/stage1-rustc/x86_64-unknown-linux-gnu/release/deps
+---
+travis_time:end:065135fa:start=1534596338643600720,finish=1534596338651785007,duration=8184287
+travis_fold:end:after_failure.3
+travis_fold:start:after_failure.4
+travis_time:start:18ccd5b4
+$ ln -s . checkout && for CORE in obj/cores/core.*; do EXE=$(echo $CORE | sed 's|obj/cores/core\

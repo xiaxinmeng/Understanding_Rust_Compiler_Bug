@@ -1,0 +1,13 @@
+ python
+Path("/").parent == Path('/')
+Path("/foo").parent == Path('/')
+Path("/foo/").parent == Path('/')
+PureWindowsPath("C:\\foo").parent == PureWindowsPath("C:\\")
+PureWindowsPath("C:\\").parent == PureWindowsPath("C:\\")
+Path("") == Path('.')
+Path("").parent == Path('.')
+Path(".").parent == Path('.')
+Path("foo").parent == Path('.')
+Path("foo/").parent == Path('.')
+Path("foo/./././").parent == Path('.')
+Path("./foo").parent == Path('.')

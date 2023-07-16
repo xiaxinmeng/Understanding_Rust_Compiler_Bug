@@ -1,0 +1,1 @@
+\n\nThis will compile, because it has the constraint on the type parameter:\n\n

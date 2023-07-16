@@ -1,0 +1,1 @@
+/// [`char`]: primitive.char.html

@@ -1,0 +1,25 @@
+\n\nYou can find more information about borrowing in the rust-book:\nhttp://doc.rust-lang.org/stable/book/references-and-borrowing.html\n"},"level":"error","spans":[{"file_name":"/checkout/src/test/ui/span/borrowck-call-is-borrow-issue-12224.rs","byte_start":1527,"byte_end":1528,"line_start":65,"line_end":65,"column_start":5,"column_end":6,"is_primary":false,"text":[{"text":"    f(Box::new(|a| {","highlight_start":5,"highlight_end":6}],"label":"borrow of `f` occurs here","suggested_replacement":null,"expansion":null},{"file_name":"/checkout/src/test/ui/span/borrowck-call-is-borrow-issue-12224.rs","byte_start":1538,"byte_end":1720,"line_start":65,"line_end":69,"column_start":16,"column_end":6,"is_primary":true,"text":[{"text":"    f(Box::new(|a| {","highlight_start":16,"highlight_end":21},{"text":"        foo(f);","highlight_start":1,"highlight_end":16},{"text":"        //~^ ERROR cannot move `f` into closure because it is borrowed","highlight_start":1,"highlight_end":71},{"text":"        //~| ERROR cannot move out of captured outer variable in an `FnMut` closure","highlight_start":1,"highlight_end":84},{"text":"    }), 3);","highlight_start":1,"highlight_end":6}],"label":"move out of `f` occurs here","suggested_replacement":null,"expansion":null},{"file_name":"/checkout/src/test/ui/span/borrowck-call-is-borrow-issue-12224.rs","byte_start":1527,"byte_end":1725,"line_start":65,"line_end":69,"column_start":5,"column_end":11,"is_primary":false,"text":[{"text":"    f(Box::new(|a| {","highlight_start":5,"highlight_end":21},{"text":"        foo(f);","highlight_start":1,"highlight_end":16},{"text":"        //~^ ERROR cannot move `f` into closure because it is borrowed","highlight_start":1,"highlight_end":71},{"text":"        //~| ERROR cannot move out of captured outer variable in an `FnMut` closure","highlight_start":1,"highlight_end":84},{"text":"    }), 3);","highlight_start":1,"highlight_end":11}],"label":"borrow later used here","suggested_replacement":null,"expansion":null}],"children":[],"rendered":"error[E0505]: cannot move out of `f` because it is borrowed\n  --> /checkout/src/test/ui/span/borrowck-call-is-borrow-issue-12224.rs:65:16\n   |\nLL |        f(Box::new(|a| {\n   |   _____-__________^\n   |  |     |\n   |  |_____borrow of `f` occurs here\n   | ||\nLL | ||         foo(f);\nLL | ||         //~^ ERROR cannot move `f` into closure because it is borrowed\nLL | ||         //~| ERROR cannot move out of captured outer variable in an `FnMut` closure\nLL | ||     }), 3);\n   | ||_____^____- borrow later used here\n   |  |_____|\n   |        move out of `f` occurs here\n\n"}
+[00:49:37] {"message":"aborting due to 5 previous errors","code":null,"level":"error","spans":[],"children":[],"rendered":"error: aborting due to 5 previous errors\n\n"}
+[00:49:37] {"message":"Some errors occurred: E0499, E0505, E0507, E0596.","code":null,"level":"","spans":[],"children":[],"rendered":"Some errors occurred: E0499, E0505, E0507, E0596.\n"}
+[00:49:37] {"message":"For more information about an error, try `rustc --explain E0499`.","code":null,"level":"","spans":[],"children":[],"rendered":"For more information about an error, try `rustc --explain E0499`.\n"}
+[00:49:37]
+[00:49:37] ------------------------------------------
+[00:49:37]
+[00:49:37] thread '[ui (nll)] ui/span/borrowck-call-is-borrow-issue-12224.rs' panicked at 'explicit panic', tools/compiletest/src/runtest.rs:2919:9
+[00:49:37]
+[00:49:37] ---- [ui (nll)] ui/span/borrowck-object-mutability.rs stdout ----
+[00:49:37]  diff of stderr:
+[00:49:37]
+[00:49:37] 10 LL |     x.borrowed_mut(); //~ ERROR cannot borrow
+[00:49:37] 11    |     ^ cannot borrow as mutable
+[00:49:37] 12    |
+[00:49:37] -    = note: Value not mutable causing this error: `x`
+[00:49:37] +    = note: the value which is causing this path not to be mutable is...: `x`
+---
+[00:49:37] /checkout/src/test/ui/update-references.sh '/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui' 'span/borrowck-object-mutability.rs'
+[00:49:37]
+[00:49:37] error: 1 errors occurred comparing output.
+[00:49:37] status: exit code: 101
+[00:49:37] command: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "/checkout/src/test/ui/span/borrowck-object-mutability.rs" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui" "--target=x86_64-unknown-linux-gnu" "--error-format" "json" "-Zui-testing" "-C" "prefer-dynamic" "-o" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/span/borrowck-object-mutability.stage2-x86_64-unknown-linux-gnu" "-Znll" "-Zborrowck=mir" "-Ztwo-phase-borrows" "-Crpath" "-O" "-Zmiri" "-Zunstable-options" "-Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/span/borrowck-object-mutability.stage2-x86_64-unknown-linux-gnu.aux" "-A" "unused"
+---
+[00:49:37] {"message":"cannot borrow immutable item `*x` as mutable","code":{"code":"E0596","explanation":"\nThis error occurs because you tried to mutably borrow a non-mutable variable.\n\nExample of erroneous code:\n\n

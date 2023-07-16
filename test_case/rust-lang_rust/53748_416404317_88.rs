@@ -1,0 +1,1 @@
+\ntrait Foo {\n    // some functions\n}\n\nfn bar<T: Foo>(t: T) {} // ok!\n

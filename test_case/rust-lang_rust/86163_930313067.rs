@@ -1,0 +1,1 @@
+define void @funkce([4 x float] %0, i32 signext %1) unnamed_addr #2 {

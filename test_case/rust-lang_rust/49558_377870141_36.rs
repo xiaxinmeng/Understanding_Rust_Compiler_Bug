@@ -1,0 +1,2 @@
+\n#![feature(repr_transparent)]\n\n#[repr(C)]\nstruct Foo {\n    x: i32,\n    // ...\n}\n\n#[repr(transparent)]\nstruct FooWrapper(Foo
+[00:54:11] {"message":"transparent struct cannot have other repr hints","code":{"code":"E0692","explanation":"\nA `repr(transparent)` type was also annotated with other, incompatible\nrepresentation hints.\n\nErroneous code example:\n\n

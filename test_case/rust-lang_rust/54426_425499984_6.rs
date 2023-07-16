@@ -1,0 +1,1 @@
+\n\nBecause `fancy_ref` still holds a reference to `fancy_num`, `fancy_num` can't\nbe assigned to a new value as it would invalidate the reference.\n\nAlternatively, we can move out of `fancy_num` into a second `fancy_num`:\n\n

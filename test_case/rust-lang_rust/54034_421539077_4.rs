@@ -1,0 +1,1 @@
+compile_fail,E0008\nmatch Some(\"hi\".to_string()) {\n    Some(s) if s.len() == 0 => {}, // use s.\n    _ => {},\n}\n

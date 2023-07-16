@@ -1,0 +1,3 @@
+
+> > rustc .\src\main.rs
+> 

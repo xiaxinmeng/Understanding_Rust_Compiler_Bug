@@ -1,0 +1,2 @@
+ rust
++        #[link(name = "rt")]

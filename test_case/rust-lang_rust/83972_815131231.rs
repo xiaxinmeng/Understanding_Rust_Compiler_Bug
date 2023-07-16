@@ -1,0 +1,3 @@
+
+$ rustc -Zprint-mono-items=lazy -Zverbose ...
+MONO_ITEM fn <FooImpl<Const(Unevaluated(Unevaluated { def: WithOptConstParam { did: DefId(0:18 ~ a[317d]::{impl#1}::Foo::{constant#0}), const_param_did: Some(DefId(0:7 ~ a[317d]::FooImpl::N)) }, substs: [], promoted: None }): usize)> as Foo>::foo @@ a.7rcbfp3g-cgu.0[Internal]

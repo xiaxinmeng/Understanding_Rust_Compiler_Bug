@@ -1,0 +1,20 @@
+
+15,264,218 ( 8.70%)  ./malloc/malloc.c:_int_free                                                                                                                                                                   
+ 9,694,689 ( 5.53%)  ???:<regex::re_trait::Matches<R> as core::iter::traits::iterator::Iterator>::next                                                                                                             
+ 9,251,931 ( 5.28%)  ???:alloc::collections::btree::map::BTreeMap<K,V>::insert                                                                                                                                     
+ 9,026,812 ( 5.15%)  ./string/../sysdeps/x86_64/multiarch/memcmp-avx2-movbe.S:__memcmp_avx2_movbe                                                                                                                  
+ 8,679,939 ( 4.95%)  ./malloc/malloc.c:malloc                                                                                                                                                                      
+ 7,931,216 ( 4.52%)  ???:tera::renderer::processor::Processor::render_node                                                                                                                                         
+ 6,247,456 ( 3.56%)  ./malloc/malloc.c:free                                                                                                                                                                        
+ 6,031,251 ( 3.44%)  ./malloc/malloc.c:_int_malloc                                                                                                                                                                 
+ 5,809,794 ( 3.31%)  ???:alloc::collections::btree::node::Handle<alloc::collections::btree::node::NodeRef<alloc::collections::btree::node::marker::Mut,K,V,alloc::collections::btree::node::marker::Leaf>,alloc::collections::btree::node::marker::Edge>::insert_recursing                                                                                                                                                            
+ 5,701,810 ( 3.25%)  ???:tera::renderer::call_stack::CallStack::lookup                                                                                                                                             
+ 4,808,736 ( 2.74%)  ???:tera::utils::escape_html                                                                                                                                                                  
+ 4,516,246 ( 2.57%)  ./string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:__memcpy_avx_unaligned_erms                                                                                                 
+ 4,387,412 ( 2.50%)  ???:<std::collections::hash::map::DefaultHasher as core::hash::Hasher>::write                                                                                                                 
+ 4,332,914 ( 2.47%)  ???:tera::renderer::stack_frame::StackFrame::find_value                                                                                                                                       
+ 4,180,122 ( 2.38%)  ???:tera::renderer::processor::Processor::eval_expression                                                                                                                                     
+ 4,096,170 ( 2.34%)  ???:std::io::Write::write_fmt                                                                                                                                                                 
+ 3,814,135 ( 2.17%)  ???:<serde_json::value::ser::SerializeMap as serde::ser::SerializeStruct>::serialize_field                                                                                                    
+ 3,628,023 ( 2.07%)  ???:hashbrown::map::make_hash                                                                                                                                                                 
+ 3,168,934 ( 1.81%)  /rustc///library/core/src/fmt/mod.rs:core::fmt::write  

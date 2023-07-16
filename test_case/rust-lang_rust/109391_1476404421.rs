@@ -1,0 +1,2 @@
+
+// normalize-stdout-test: " +" -> " "

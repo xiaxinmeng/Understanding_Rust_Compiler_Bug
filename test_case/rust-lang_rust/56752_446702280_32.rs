@@ -1,0 +1,1 @@
+compile_fail\ntrait Super<A> {}\n\ntrait Trait: Super<Self> {\n}\n\nstruct Foo;\n\nimpl Super<Foo> for Foo{}\n\nimpl Trait for Foo {}\n

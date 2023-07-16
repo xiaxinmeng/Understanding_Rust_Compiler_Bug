@@ -1,0 +1,2 @@
+rust
+struct _AssertCopy where String: ::core::marker::Copy;

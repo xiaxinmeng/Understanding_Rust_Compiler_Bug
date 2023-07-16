@@ -1,0 +1,3 @@
+ rust
+enum State { ST_NULL, ST_WHITESPACE=1 }
+// ...

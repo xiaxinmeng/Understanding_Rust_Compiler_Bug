@@ -1,0 +1,11 @@
+diff
+-    // When generating a statically linked executable there's generally some
+-    // small setup needed which is listed in these files. These are provided by
+-    // a musl toolchain and are linked by default by the `musl-gcc` script. Note
+-    // that `gcc` also does this by default, it just uses some different files.
+-    //
+-    // Each target directory for musl has these object files included in it so
+-    // they'll be included from there.
+-    base.pre_link_objects_exe.push("crt1.o".to_string());
+-    base.pre_link_objects_exe.push("crti.o".to_string());
+-    base.post_link_objects.push("crtn.o".to_string());

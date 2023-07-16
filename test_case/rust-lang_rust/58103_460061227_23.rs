@@ -1,0 +1,1 @@
+\n\nor replace the captured variable with a constant or a static item:\n\n

@@ -1,0 +1,3 @@
+
+///
+async pub fn foo() {}

@@ -1,0 +1,1 @@
+\ntrait Foo {\n    type Bar;\n}\n\ntrait Baz : Foo {\n    fn bar() -> Self::Bar; // like this\n}\n

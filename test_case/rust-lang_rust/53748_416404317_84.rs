@@ -1,0 +1,1 @@
+\ntrait Trait {\n    type Bar;\n}\n\ntype Foo = Trait<Bar=i32>; // ok!\n

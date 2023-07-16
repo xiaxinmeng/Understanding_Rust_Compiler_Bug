@@ -1,0 +1,4 @@
+
+$ xz --version
+xz (XZ Utils) 5.1.0alpha
+liblzma 5.1.0alpha

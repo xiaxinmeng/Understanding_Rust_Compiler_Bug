@@ -1,0 +1,7 @@
+
+$ rustfmt --write-mode overwrite test.rs
+error: expected `where`, `{`, `(`, or `;` after struct name, found `K`
+ --> test.rs:1:133
+  |
+1 | use std::marker::PhantomData; use std::collections::HashSet; use std::hash::{Hash, Hasher}; use std::borrow::Borrow; struct PartMap K, V, F: Fn &V  -> &K + Clone> { map: HashSet Wrap K, V, F>>, fun: F, _p: PhantomData K>, } struct Wrap K, V, F: Fn &V  -> &K> { v: V, fun: F, _p: PhantomData K>, } impl K, V, F: Fn &V  -> &K> Borrow K> for Wrap K, V, F> { fn borrow &self  -> &K { self.key   } } impl K, V, F: Fn &V  -> &K> Wrap K, V, F> { fn key &self  -> &K {  self.fun  &self.v  } } impl K: Hash, V, F: Fn &V  -> &K> Hash for Wrap K, V, F> { fn hash H> &self, state: &mut H  where H: Hasher { self.key  .hash state ; } } impl K: PartialEq, V, F: Fn &V  -> &K> PartialEq for Wrap K, V, F> { fn eq &self, other: &Self  -> bool { self.key      other.key   } } impl K: Eq, V, F: Fn &V  -> &K> Eq for Wrap K, V, F> {} impl K: Eq + Hash, V, F: Fn &V  -> &K + Clone> PartMap K, V, F> { pub fn new f: F  -> Self { PartMap { map: HashSet::new  , fun: f, _p: PhantomData, } } fn wrap &self, v: V  -> Wrap K, V, F> { Wrap { v: v, fun: self.fun.clone  , _p: PhantomData } } pub fn insert &mut self, v: V  -> Option V> { let wrap   self.wrap v ; self.map.replace wrap .map |w| w.v  } pub fn get &self, k: &K  -> Option &V> { self.map.get k .map |w| &w.v  } } fn main   { }
+  |                                                                                                                                     ^

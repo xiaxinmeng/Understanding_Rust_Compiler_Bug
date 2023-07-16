@@ -1,0 +1,1 @@
+\n\nAlternatively, move the other attributes to the contained type:\n\n

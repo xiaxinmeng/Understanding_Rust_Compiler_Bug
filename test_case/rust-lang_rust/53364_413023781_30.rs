@@ -1,0 +1,1 @@
+\n\nPlease check that you used the correct type and recheck its definition. Perhaps\nit doesn't need the type parameter.\n\nExample:\n\n

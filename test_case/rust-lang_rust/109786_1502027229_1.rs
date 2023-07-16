@@ -1,0 +1,3 @@
+
+use ...;
+struct Foo;

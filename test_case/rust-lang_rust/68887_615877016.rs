@@ -1,0 +1,1 @@
+/path/to/any/clang++ -D_WIN32_WINNT=0x0601 -target i686-pc-windows-gnu  --sysroot /build/mingw32 -B/usr/local/bin/i686-w64-mingw32- "$@"

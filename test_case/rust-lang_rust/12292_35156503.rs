@@ -1,0 +1,3 @@
+ rust
+pub enum DecodeError = ...
+pub type DecodeResult<T> = Result<T, ~DecodeError>

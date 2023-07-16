@@ -1,0 +1,1 @@
+\n\n### The trait cannot use `Self` as a type parameter in the supertrait listing\n\nThis is similar to the second sub-error, but subtler. It happens in situations\nlike the following:\n\n

@@ -1,0 +1,1 @@
+\n// We declare a function:\nfn i_am_a_function() {}\n\n// And we call it:\ni_am_a_function();\n

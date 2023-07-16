@@ -1,0 +1,2 @@
+
+DEBUG rustdoc::html::format fmt_type(t=ResolvedPath { path: Path { global: false, res: Err, segments: [PathSegment { name: "Vec", args: AngleBracketed { args: [Type(Primitive(Usize)), Type(ResolvedPath { path: Path { global: false, res: Err, segments: [PathSegment { name: "Global", args: AngleBracketed { args: [], bindings: [] } }] }, param_names: None, did: DefId(5:5465 ~ alloc[4799]::alloc::Global), is_generic: false })], bindings: [] } }] }, param_names: None, did: DefId(5:4837 ~ alloc[4799]::vec::Vec), is_generic: false }

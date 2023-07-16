@@ -1,0 +1,10 @@
+
+[walter@cuddles rust]$ ldd $(which rustc)
+	linux-vdso.so.1 (0x00007fff38d6a000)
+	libgcc_s.so.1 => /usr/lib/libgcc_s.so.1 (0x00007f7606ed6000)
+	librt.so.1 => /usr/lib/librt.so.1 (0x00007f7606ed1000)
+	libpthread.so.0 => /usr/lib/libpthread.so.0 (0x00007f7606ecc000)
+	libm.so.6 => /usr/lib/libm.so.6 (0x00007f7606de4000)
+	libdl.so.2 => /usr/lib/libdl.so.2 (0x00007f7606ddf000)
+	libc.so.6 => /usr/lib/libc.so.6 (0x00007f7605e19000)
+	/lib64/ld-linux-x86-64.so.2 => /usr/lib64/ld-linux-x86-64.so.2 (0x00007f7606f25000)

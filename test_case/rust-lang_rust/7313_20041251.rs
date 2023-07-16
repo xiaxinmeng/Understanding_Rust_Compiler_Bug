@@ -1,0 +1,19 @@
+
+type            frequency
+c_void          306
+c_int           264
+c_char          126
+size_t          119
+c_double        113
+c_float         101
+FILE            55
+intptr_t        48
+uintptr_t       44
+pid_t           10
+DIR             5
+ssize_t         4
+dirent_t        4
+c_uchar         4
+mode_t          3
+c_long          3
+c_ulong         1

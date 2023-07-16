@@ -1,0 +1,21 @@
+\n"},"level":"warning","spans":[{"file_name":"/checkout/src/test/ui/borrowck/borrowck-report-with-custom-diagnostic.rs","byte_start":824,"byte_end":830,"line_start":34,"line_end":34,"column_start":17,"column_end":23,"is_primary":false,"text":[{"text":"        let y = &mut x;","highlight_start":17,"highlight_end":23}],"label":"first mutable borrow occurs here","suggested_replacement":null,"suggestion_applicability":null,"expansion":null},{"file_name":"/checkout/src/test/ui/borrowck/borrowck-report-with-custom-diagnostic.rs","byte_start":894,"byte_end":900,"line_start":36,"line_end":36,"column_start":17,"column_end":23,"is_primary":true,"text":[{"text":"        let z = &mut x; //~ ERROR cannot borrow","highlight_start":17,"highlight_end":23}],"label":"second mutable borrow occurs here","suggested_replacement":null,"suggestion_applicability":null,"expansion":null},{"file_name":"/checkout/src/test/ui/borrowck/borrowck-report-with-custom-diagnostic.rs","byte_start":1002,"byte_end":1003,"line_start":39,"line_end":39,"column_start":9,"column_end":10,"is_primary":false,"text":[{"text":"        y.use_mut();","highlight_start":9,"highlight_end":10}],"label":"first borrow later used here","suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"this error has been downgraded to a warning for backwards compatibility with previous releases","code":null,"level":"warning","spans":[],"children":[],"rendered":null},{"message":"this represents potential undefined behavior in your code and this warning will become a hard error in the future","code":null,"level":"warning","spans":[],"children":[],"rendered":null}],"rendered":"warning[E0499]: cannot borrow `x` as mutable more than once at a time\n  --> /checkout/src/test/ui/borrowck/borrowck-report-with-custom-diagnostic.rs:36:17\n   |\nLL |         let y = &mut x;\n   |                 ------ first mutable borrow occurs here\nLL |         //~^ first mutable borrow occurs here\nLL |         let z = &mut x; //~ ERROR cannot borrow\n   |                 ^^^^^^ second mutable borrow occurs here\n...\nLL |         y.use_mut();\n   |         - first borrow later used here\n   |\n   = warning: this error has been downgraded to a warning for backwards compatibility with previous releases\n   = warning: this represents potential undefined behavior in your code and this warning will become a hard error in the future\n\n"}
+[01:38:31] {"message":"aborting due to 2 previous errors","code":null,"level":"error","spans":[],"children":[],"rendered":"error: aborting due to 2 previous errors\n\n"}
+[01:38:31] {"message":"Some errors occurred: E0499, E0502.","code":null,"level":"","spans":[],"children":[],"rendered":"Some errors occurred: E0499, E0502.\n"}
+[01:38:31] 
+[01:38:31] ------------------------------------------
+[01:38:31] 
+[01:38:31] thread '[ui (nll)] ui/borrowck/borrowck-report-with-custom-diagnostic.rs' panicked at 'explicit panic', src/tools/compiletest/src/runtest.rs:3319:9
+[01:38:31] thread '[ui (nll)] ui/borrowck/borrowck-report-with-custom-diagnostic.rs' panicked at 'explicit panic', src/tools/compiletest/src/runtest.rs:3319:9
+[01:38:31] 
+[01:38:31] ---- [ui (nll)] ui/generator/yield-in-args.rs stdout ----
+[01:38:31] 
+[01:38:31] error: ui test compiled successfully!
+[01:38:31] status: exit code: 0
+[01:38:31] command: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "/checkout/src/test/ui/generator/yield-in-args.rs" "-Zthreads=1" "--target=x86_64-unknown-linux-gnu" "--error-format" "json" "-Zui-testing" "-C" "prefer-dynamic" "-o" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/generator/yield-in-args.nll/a" "-Zborrowck=migrate" "-Ztwo-phase-borrows" "-Crpath" "-Zunstable-options" "-Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/generator/yield-in-args.nll/auxiliary" "-A" "unused"
+[01:38:31] ------------------------------------------
+[01:38:31] 
+[01:38:31] ------------------------------------------
+[01:38:31] stderr:
+[01:38:31] stderr:
+[01:38:31] ------------------------------------------
+[01:38:31] {"message":"borrow may still be in use when generator yields","code":{"code":"E0626","explanation":"\nThis error occurs because a borrow in a generator persists across a\nyield point.\n\n

@@ -1,0 +1,6 @@
+ Rust
+extern "C" fn get_parameter_callback(dsp_state: *mut ffi::FMOD_DSP_STATE, index: c_int, value: *mut c_float, value_str: *mut c_char) -> fmod::Result {
+...
+value as f32
+...
+}

@@ -1,0 +1,1 @@
+\ntrait Foo where Self: Sized {\n\n}\n

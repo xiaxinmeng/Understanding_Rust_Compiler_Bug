@@ -1,0 +1,1 @@
+\n# #![feature(generators, generator_trait)]\n# use std::ops::Generator;\nlet mut b = || {\n  let v = vec![1,2,3];\n  for x in v { // <-- Take ownership of the values instead!\n    yield x; // <-- Now yield is OK.\n  }\n};\nunsafe { b.resume() };\n

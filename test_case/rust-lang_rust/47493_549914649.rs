@@ -1,0 +1,13 @@
+llvm
+...
+; core::result::Result<T,E>::unwrap
+; Function Attrs: inlinehint nounwind nonlazybind
+define internal void @"_ZN4core6result19Result$LT$T$C$E$GT$6unwrap17h1179f71b032e9d7eE"(i64, i64) unnamed_addr #0 personality i32 (...)* @rust_eh_personality {
+start:
+  ...
+bb5:                                              ; preds = %start
+  ...
+  ; invoke core::result::unwrap_failed
+  invoke void @_ZN4core6result13unwrap_failed17hfb1545ecedec37d1E([0 x i8]* noalias nonnull readonly align 1 bitcast (<{ [43 x i8] }>* @0 to [0 x i8]*), i64 43, {}* nonnull align 1 %22, [3 x i64]* noalias readonly align 8 dereferenceable(24) bitcast ({ void (i64*)*, i64, i64, i1 (i64*, %"core::fmt::Formatter"*)* }* @vtable.0 to [3 x i64]*))
+          to label %unreachable unwind label %cleanup
+...

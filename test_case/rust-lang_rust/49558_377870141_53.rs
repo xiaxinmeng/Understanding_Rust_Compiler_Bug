@@ -1,0 +1,4 @@
+\n\nIf you don't know the basics of Rust, you can go look to the Rust Book to get\nstarted: https://doc.rust-lang.org/book/\n"},"level":"error","spans":[],"children":[{"message":"consider adding a `main` function to `/checkout/src/test/compile-fail/resolve_self_super_hint.rs`","code":null,"level":"note","spans":[],"children":[],"rendered":null}],"rendered":"error[E0601]: `main` function not found in crate `resolve_self_super_hint`\n   |\n   = note: consider adding a `main` function to `/checkout/src/test/compile-fail/resolve_self_super_hint.rs`\n\n"}
+[00:54:11] thread 'rustc' panicked at 'value was not set', libcore/option.rs:916:5
+[00:54:11] note: Run with `RUST_BACKTRACE=1` for a backtrace.
+[0

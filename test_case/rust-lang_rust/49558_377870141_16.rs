@@ -1,0 +1,1 @@
+ignore (cannot-doctest-multicrate-project)\n// In some_crate:\n#[macro_export]\nmacro_rules! get_tacos {\n    ...\n}\n\n#[macro_export]\nmacro_rules! get_pimientos {\n    ...\n}\n\n// In your crate:\n#[macro_use(get_tacos, get_pimientos)] // It imports `get_tacos` and\nextern crate some_crate;               // `get_pimientos` macros from some_crate\n

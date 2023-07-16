@@ -1,0 +1,1 @@
+\ntrait Trait {\n    fn foo(&self) -> Self;\n}\n\nimpl Trait for String {\n    fn foo(&self) -> Self {\n        \"hi\".to_owned()\n    }\n}\n\nimpl Trait for u8 {\n    fn foo(&self) -> Self {\n        1\n    }\n}\n

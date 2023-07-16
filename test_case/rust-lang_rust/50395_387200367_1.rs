@@ -1,0 +1,1 @@
+\n\nAt present, it is not permitted to have a yield that occurs while a\nborrow is still in scope. To resolve this error, the borrow must\neither be \"contained\" to a smaller scope that does not overlap the\nyield or else eliminated in another way. So, for example, we might\nresolve the previous example by removing the borrow and just storing\nthe integer by value:\n\n

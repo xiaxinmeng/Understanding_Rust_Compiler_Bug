@@ -1,0 +1,29 @@
+
+#17780 0x00007ffff5d7f0f8 in rustc_parse::parser::expr::<impl rustc_parse::parser::Parser>::parse_bottom_expr () from /home/joshua/.local/lib/rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-4f0cc9f50e53f0ba.so
+#17781 0x00007ffff5d79a92 in rustc_parse::parser::expr::<impl rustc_parse::parser::Parser>::parse_prefix_expr::{{closure}} () from /home/joshua/.local/lib/rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-4f0cc9f50e53f0ba.so
+#17782 0x00007ffff5d78798 in rustc_parse::parser::expr::<impl rustc_parse::parser::Parser>::parse_prefix_expr () from /home/joshua/.local/lib/rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-4f0cc9f50e53f0ba.so
+#17783 0x00007ffff5d757a8 in rustc_parse::parser::expr::<impl rustc_parse::parser::Parser>::parse_assoc_expr_with () from /home/joshua/.local/lib/rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-4f0cc9f50e53f0ba.so
+#17784 0x00007ffff5dbc934 in rustc_parse::parser::stmt::<impl rustc_parse::parser::Parser>::parse_local () from /home/joshua/.local/lib/rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-4f0cc9f50e53f0ba.so
+#17785 0x00007ffff5dba70f in rustc_parse::parser::stmt::<impl rustc_parse::parser::Parser>::parse_stmt_without_recovery::{{closure}} () from /home/joshua/.local/lib/rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-4f0cc9f50e53f0ba.so
+#17786 0x00007ffff5db9e80 in rustc_parse::parser::stmt::<impl rustc_parse::parser::Parser>::parse_stmt_without_recovery () from /home/joshua/.local/lib/rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-4f0cc9f50e53f0ba.so
+#17787 0x00007ffff5dbe12b in rustc_parse::parser::stmt::<impl rustc_parse::parser::Parser>::parse_full_stmt () from /home/joshua/.local/lib/rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-4f0cc9f50e53f0ba.so
+#17788 0x00007ffff5dbdd7f in rustc_parse::parser::stmt::<impl rustc_parse::parser::Parser>::parse_block_tail () from /home/joshua/.local/lib/rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-4f0cc9f50e53f0ba.so
+#17789 0x00007ffff5dbd421 in rustc_parse::parser::stmt::<impl rustc_parse::parser::Parser>::parse_block_common () from /home/joshua/.local/lib/rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-4f0cc9f50e53f0ba.so
+#17790 0x00007ffff5d94c3f in rustc_parse::parser::item::<impl rustc_parse::parser::Parser>::parse_item_kind () from /home/joshua/.local/lib/rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-4f0cc9f50e53f0ba.so
+#17791 0x00007ffff5d92d17 in rustc_parse::parser::item::<impl rustc_parse::parser::Parser>::parse_item_common_ () from /home/joshua/.local/lib/rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-4f0cc9f50e53f0ba.so
+#17792 0x00007ffff5d922be in rustc_parse::parser::item::<impl rustc_parse::parser::Parser>::parse_item_common () from /home/joshua/.local/lib/rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-4f0cc9f50e53f0ba.so
+#17793 0x00007ffff5d91d6f in rustc_parse::parser::item::<impl rustc_parse::parser::Parser>::parse_item () from /home/joshua/.local/lib/rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-4f0cc9f50e53f0ba.so
+#17794 0x00007ffff5d917ca in rustc_parse::parser::item::<impl rustc_parse::parser::Parser>::parse_mod () from /home/joshua/.local/lib/rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-4f0cc9f50e53f0ba.so
+#17795 0x00007ffff5e35d57 in rustc_parse::parse_crate_from_file () from /home/joshua/.local/lib/rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-4f0cc9f50e53f0ba.so
+#17796 0x00007ffff3dd25aa in rustc_session::utils::<impl rustc_session::session::Session>::time () from /home/joshua/.local/lib/rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-4f0cc9f50e53f0ba.so
+#17797 0x00007ffff3e09112 in rustc_interface::queries::Queries::parse () from /home/joshua/.local/lib/rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-4f0cc9f50e53f0ba.so
+#17798 0x00007ffff3c01ee6 in rustc_interface::queries::<impl rustc_interface::interface::Compiler>::enter () from /home/joshua/.local/lib/rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-4f0cc9f50e53f0ba.so
+#17799 0x00007ffff3bd08f7 in rustc_span::with_source_map () from /home/joshua/.local/lib/rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-4f0cc9f50e53f0ba.so
+#17800 0x00007ffff3bfea5c in scoped_tls::ScopedKey<T>::set () from /home/joshua/.local/lib/rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-4f0cc9f50e53f0ba.so
+#17801 0x00007ffff3c05b75 in std::sys_common::backtrace::__rust_begin_short_backtrace () from /home/joshua/.local/lib/rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-4f0cc9f50e53f0ba.so
+#17802 0x00007ffff3b6eb5a in core::ops::function::FnOnce::call_once{{vtable-shim}} () from /home/joshua/.local/lib/rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-4f0cc9f50e53f0ba.so
+#17803 0x00007ffff332499a in <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once () at /rustc/f4db9ffb22dfcb702dbdb2e0607cb91791866b57/library/alloc/src/boxed.rs:1327
+#17804 <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once () at /rustc/f4db9ffb22dfcb702dbdb2e0607cb91791866b57/library/alloc/src/boxed.rs:1327
+#17805 std::sys::unix::thread::Thread::new::thread_start () at library/std/src/sys/unix/thread.rs:71
+#17806 0x00007ffff3255fa3 in start_thread (arg=<optimized out>) at pthread_create.c:486
+#17807 0x00007ffff31754cf in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:95

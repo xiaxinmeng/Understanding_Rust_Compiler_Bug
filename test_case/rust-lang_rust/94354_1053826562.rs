@@ -1,0 +1,26 @@
+shell
+❯ rg --fixed-strings --files-with-matches '#![allow(overflowing_literals)]'
+library/stdarch/crates/intrinsic-test/src/main.rs
+library/stdarch/crates/core_arch/src/x86/aes.rs
+library/stdarch/crates/core_arch/src/x86/avx512bitalg.rs
+library/stdarch/crates/core_arch/src/x86/avx512vaes.rs
+library/stdarch/crates/core_arch/src/x86/avx512gfni.rs
+library/stdarch/crates/core_arch/src/x86/pclmulqdq.rs
+library/stdarch/crates/core_arch/src/x86/avx512vpclmulqdq.rs
+src/test/ui/structs-enums/enum-discrim-autosizing.rs
+src/test/ui/structs-enums/enum-discrim-width-stuff.rs
+src/test/ui/structs-enums/enum-discrim-range-overflow.rs
+src/test/ui/simd/target-feature-mixup.rs
+src/test/ui/pattern/usefulness/issue-13727.rs
+src/test/ui/packed/packed-struct-generic-layout.rs
+src/test/ui/numbers-arithmetic/shift.rs
+src/test/ui/numbers-arithmetic/i128.rs
+src/test/ui/deriving/deriving-hash.rs
+src/test/ui/consts/const-fn-val.rs
+src/test/ui/consts/const-rec-and-tup.rs
+src/test/ui/consts/const-negation.rs
+src/test/ui/array-slice-vec/box-of-array-of-drop-1.rs
+src/test/ui/array-slice-vec/box-of-array-of-drop-2.rs
+src/test/ui/array-slice-vec/nested-vec-3.rs
+src/doc/rust-by-example/src/types/cast.md
+library/core/tests/num/dec2flt/mod.rs

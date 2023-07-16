@@ -1,0 +1,3 @@
+rust
+panic!();
+CONSTANT;

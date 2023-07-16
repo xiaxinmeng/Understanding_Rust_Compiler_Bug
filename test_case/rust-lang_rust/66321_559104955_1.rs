@@ -1,0 +1,1 @@
+src/test/run-fail/generator-resume-after-panic.rs

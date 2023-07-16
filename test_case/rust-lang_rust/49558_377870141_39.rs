@@ -1,0 +1,1 @@
+\n\nNote that introducing another `struct` just to have a place for the other\nattributes may have unintended side effects on the representation:\n\n

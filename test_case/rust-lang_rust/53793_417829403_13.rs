@@ -1,0 +1,1 @@
+\n"},"level":"error","spans":[{"file_name":"/checkout/src/test/ui/rfc-2093-infer-outlives/regions-enum-not-wf.rs","byte_start":1158,"byte_end":1398,"line_start":45,"line_end":48,"column_start":1,"column_end":2,"is_primary":true,"text":[{"text":"enum RefDouble<'a, 'b, T> { /needs to be alive, and missing the constraint that\ndenotes this will cause this error.\n\n

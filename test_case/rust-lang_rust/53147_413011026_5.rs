@@ -1,0 +1,1 @@
+\n\nAlternatively, if your type implements `Clone` and you need to own the value,\nconsider borrowing and then cloning:\n\n

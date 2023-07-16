@@ -1,0 +1,2 @@
+rust
+let closure = || *p;

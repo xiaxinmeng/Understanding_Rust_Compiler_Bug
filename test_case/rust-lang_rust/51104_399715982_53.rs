@@ -1,0 +1,1 @@
+\n\nWhen casting, keep in mind that only primitive types can be cast into each\nother. Example:\n\n

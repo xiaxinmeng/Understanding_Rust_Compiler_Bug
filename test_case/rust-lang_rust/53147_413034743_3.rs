@@ -1,0 +1,1 @@
+compile_fail,E0507\nstruct TheDarkKnight;\n\nimpl TheDarkKnight {\n    fn nothing_is_true(self) {}\n}\n\nstruct Batcave {\n    knight: TheDarkKnight\n}\n\nfn main() {\n    let mut cave = Batcave {\n        knight: TheDarkKnight\n    };\n    let borrowed = &mut cave;\n\n    borrowed.knight.nothing_is_true(); // E0507\n}\n

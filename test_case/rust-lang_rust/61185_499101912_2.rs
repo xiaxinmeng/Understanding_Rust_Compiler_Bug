@@ -1,0 +1,24 @@
+
++  10.794 (+ 17.19% /   62.776 =>   73.570) CodegenBackend { compiler: Compiler { stage: 1, host: "x86_64-unknown-linux-gnu" }, target: "x86_64-unknown-linux-gnu", backend: "emscripten" }
++  11.570 (+ 15.77% /   73.344 =>   84.914) CodegenBackend { compiler: Compiler { stage: 1, host: "x86_64-unknown-linux-gnu" }, target: "x86_64-unknown-linux-gnu", backend: "llvm" }
++  15.973 (+ 23.07% /   69.243 =>   85.216) CodegenBackend { compiler: Compiler { stage: 0, host: "x86_64-unknown-linux-gnu" }, target: "x86_64-unknown-linux-gnu", backend: "emscripten" }
+-  17.705 (- 16.81% /  105.308 =>   87.603) Std { compiler: Compiler { stage: 2, host: "x86_64-unknown-linux-gnu" }, target: "x86_64-unknown-linux-gnu" }
++  22.480 (+ 52.46% /   42.854 =>   65.334) ToolBuild { compiler: Compiler { stage: 0, host: "x86_64-unknown-linux-gnu" }, target: "x86_64-unknown-linux-gnu", tool: "fabricate", path: "src/tools/rust-installer", mode: ToolBootstrap, is_optional_tool: false, source_type: Submodule, extra_features: [] }
++  28.282 (+ 23.43% /  120.697 =>  148.979) Rustdoc { compiler: Compiler { stage: 2, host: "x86_64-unknown-linux-gnu" } }
++  29.662 (+ 24.48% /  121.168 =>  150.830) ToolBuild { compiler: Compiler { stage: 2, host: "x86_64-unknown-linux-gnu" }, target: "x86_64-unknown-linux-gnu", tool: "error_index_generator", path: "src/tools/error_index_generator", mode: ToolRustc, is_optional_tool: false, source_type: InTree, extra_features: [] }
++  29.855 (+ 45.25% /   65.980 =>   95.835) ToolBuild { compiler: Compiler { stage: 0, host: "x86_64-unknown-linux-gnu" }, target: "x86_64-unknown-linux-gnu", tool: "unstable-book-gen", path: "src/tools/unstable-book-gen", mode: ToolBootstrap, is_optional_tool: false, source_type: InTree, extra_features: [] }
++  32.225 (+ 33.03% /   97.576 =>  129.801) Std { target: "x86_64-unknown-linux-gnu", compiler: Compiler { stage: 1, host: "x86_64-unknown-linux-gnu" } }
+-  37.837 (-  9.26% /  408.716 =>  370.879) Extended { stage: 2, host: "x86_64-unknown-linux-gnu", target: "x86_64-unknown-linux-gnu" }
++  38.345 (+ 23.16% /  165.570 =>  203.915) ToolBuild { compiler: Compiler { stage: 1, host: "x86_64-unknown-linux-gnu" }, target: "x86_64-unknown-linux-gnu", tool: "rustfmt", path: "src/tools/rustfmt", mode: ToolRustc, is_optional_tool: true, source_type: Submodule, extra_features: [] }
+-  42.658 (- 20.62% /  206.879 =>  164.221) Rustc { compiler: Compiler { stage: 2, host: "x86_64-unknown-linux-gnu" } }
++  51.647 (+ 29.56% /  174.699 =>  226.346) Rustc { stage: 2, target: "x86_64-unknown-linux-gnu" }
++  52.415 (+ 53.75% /   97.522 =>  149.937) Rustdoc { compiler: Compiler { stage: 1, host: "x86_64-unknown-linux-gnu" } }
++  53.498 (+ 20.85% /  256.526 =>  310.024) ToolBuild { compiler: Compiler { stage: 1, host: "x86_64-unknown-linux-gnu" }, target: "x86_64-unknown-linux-gnu", tool: "clippy-driver", path: "src/tools/clippy", mode: ToolRustc, is_optional_tool: true, source_type: Submodule, extra_features: [] }
++  59.658 (+ 18.24% /  327.024 =>  386.682) ToolBuild { compiler: Compiler { stage: 1, host: "x86_64-unknown-linux-gnu" }, target: "x86_64-unknown-linux-gnu", tool: "rls", path: "src/tools/rls", mode: ToolRustc, is_optional_tool: true, source_type: Submodule, extra_features: ["clippy"] }
++  67.197 (+ 13.77% /  487.916 =>  555.113) PlainSourceTarball
++  77.209 (+ 57.64% /  133.956 =>  211.165) Llvm { target: "x86_64-unknown-linux-gnu", emscripten: true }
++ 124.271 (+ 31.22% /  398.026 =>  522.297) ToolBuild { compiler: Compiler { stage: 1, host: "x86_64-unknown-linux-gnu" }, target: "x86_64-unknown-linux-gnu", tool: "cargo", path: "src/tools/cargo", mode: ToolRustc, is_optional_tool: false, source_type: Submodule, extra_features: [] }
++ 138.442 (+ 54.00% /  256.360 =>  394.802) ToolBuild { compiler: Compiler { stage: 0, host: "x86_64-unknown-linux-gnu" }, target: "x86_64-unknown-linux-gnu", tool: "rustbook", path: "src/tools/rustbook", mode: ToolBootstrap, is_optional_tool: false, source_type: InTree, extra_features: [] }
++ 203.954 (+ 18.84% / 1082.769 => 1286.723) Llvm { target: "x86_64-unknown-linux-gnu", emscripten: false }
++ 260.261 (+ 23.46% / 1109.413 => 1369.674) Rustc { target: "x86_64-unknown-linux-gnu", compiler: Compiler { stage: 1, host: "x86_64-unknown-linux-gnu" } }
++ 457.296 (+ 47.71% /  958.455 => 1415.751) Rustc { target: "x86_64-unknown-linux-gnu", compiler: Compiler { stage: 0, host: "x86_64-unknown-linux-gnu" } }

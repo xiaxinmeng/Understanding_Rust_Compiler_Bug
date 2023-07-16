@@ -1,0 +1,2 @@
+
+thread 'rustc' panicked at 'Unable to fulfill trait DefId(2:1944 ~ core[6c88]::marker[0]::Unpin[0]) for 'lines::Lines<'a, 'b, L, F, S>': [FulfillmentError(Obligation(predicate=Binder(ProjectionPredicate(ProjectionTy { substs: [S], item_def_id: DefId(2:4966 ~ core[6c88]::iter[0]::traits[0]::iterator[0]::Iterator[0]::Item[0]) }, section::SectionText<'_>)), depth=3),Ambiguity)]', /rustc/c367798cfd3817ca6ae908ce675d1d99242af148/src/libstd/macros.rs:16:9

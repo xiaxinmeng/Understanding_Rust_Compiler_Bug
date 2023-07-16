@@ -1,0 +1,40 @@
+toml
+[llvm]
+optimize = true
+release-debuginfo = false
+assertions = false
+targets = "X86"
+link-jobs = 3
+[build]
+build = "x86_64-unknown-linux-gnu"
+host = ["x86_64-unknown-linux-gnu"]
+target = ["x86_64-unknown-linux-gnu"]
+docs = true
+submodules = false
+python = "python2.7"
+locked-deps = true
+vendor = false
+verbose = 2
+sanitizers = false
+extended = true
+tools = ["clippy","src",]
+[install]
+prefix = "/usr"
+libdir = "lib64/rust-9999"
+docdir = "share/doc/rust-9999"
+mandir = "share/rust-9999/man"
+[rust]
+optimize = true
+debuginfo = false
+debug-assertions = true # false
+use-jemalloc = true
+default-linker = "x86_64-pc-linux-gnu-gcc"
+rpath = false
+ignore-git = false
+lld = false
+llvm-tools = true
+[target.x86_64-unknown-linux-gnu]
+cc = "x86_64-pc-linux-gnu-gcc"
+cxx = "x86_64-pc-linux-gnu-g++"
+linker = "x86_64-pc-linux-gnu-gcc"
+ar = "x86_64-pc-linux-gnu-ar"

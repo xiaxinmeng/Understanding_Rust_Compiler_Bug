@@ -1,0 +1,3 @@
+
+export VAR=val
+command

@@ -1,0 +1,1 @@
+\n\nAt compile time each implementation of `Trait` will produce 8 where Self: Sized;\n}\n

@@ -1,0 +1,1 @@
+It would seem very weird that some impls have full documentation while others don't. This is just not coherent. Also, impls are sorted alphabetically and I don't want to change it.

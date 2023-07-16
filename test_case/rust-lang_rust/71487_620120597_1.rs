@@ -1,0 +1,3 @@
+rust
+#!//bin/bash
+[foo]

@@ -1,0 +1,1 @@
+compile_fail,E0716\n# #![feature(nll)]\nfn foo() -> i32 { 22 }\nfn bar(x: &i32) -> &i32 { x }\nlet p = bar(&foo());\n         // ------ creates a temporary\nlet q = *p;\n

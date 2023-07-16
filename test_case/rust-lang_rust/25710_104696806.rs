@@ -1,0 +1,2 @@
+
+CFG_LLVM_LINKAGE_FILE=/rust/x86_64-unknown-linux-gnu/rt/llvmdeps.rs LD_LIBRARY_PATH=/rust/x86_64-unknown-linux-gnu/stage1/lib:$LD_LIBRARY_PATH  valgrind --tool=massif x86_64-unknown-linux-gnu/stage1/bin/rustc --cfg stage1  -O --cfg rtopt --cfg ndebug -C rpath -C prefer-dynamic --target=x86_64-unknown-linux-gnu  -D warnings -L "x86_64-unknown-linux-gnu/rt" -L "/rust/x86_64-unknown-linux-gnu/llvm/Release/lib"    --out-dir x86_64-unknown-linux-gnu/stage1/lib/rustlib/x86_64-unknown-linux-gnu/lib -C extra-filename=-d8ace771 /rust/src/librustc/lib.rs [OPTIONS]

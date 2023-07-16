@@ -1,0 +1,1 @@
+compile_fail,E0013\nstatic X: i32 = 42;\nconst Y: i32 = X;\n

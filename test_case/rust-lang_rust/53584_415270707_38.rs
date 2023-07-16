@@ -1,0 +1,1 @@
+\nfn foo<T>(x: T) {\n    let bar = |y: T| { // explicit type annotation may not be necessary\n        // ..\n    };\n    bar(x);\n}\n

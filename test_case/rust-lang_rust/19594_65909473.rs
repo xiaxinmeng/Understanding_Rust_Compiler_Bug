@@ -1,0 +1,6 @@
+
+cd path/to/uutils
+FILES=$(find . -name '*.rs')
+FILES="$FILES $FILES $FILES $FILES"
+FILES="$FILES $FILES $FILES $FILES"
+FILES="$FILES $FILES $FILES $FILES"

@@ -1,0 +1,2 @@
+go
+p == interface{}(nil)

@@ -1,0 +1,1 @@
+\n\n### The trait cannot contain associated constants\n\nJust like static functions, associated constants aren't stored on the method\ntable. If the trait or any subtrait contain an associated constant, they cannot\nbe made into an object.\n\n

@@ -1,0 +1,50 @@
+rust
+2019-11-22T00:10:44.1733373Z   discriminant(_LOCAL_0) = VAR_IDX;
+2019-11-22T00:10:44.1733598Z   into:
+2019-11-22T00:10:44.1733653Z - `SimplifyArmIdentity` which transforms something like:
+2019-11-22T00:10:44.1733752Z - `SimplifyBranchSame` which transforms `SwitchInt`s to identical basic blocks into a `goto` to the first reachable target.
+2019-11-22T00:10:44.1733902Z AGENT_DISABLELOGPLUGIN_TESTFILEPUBLISHERPLUGIN=true
+2019-11-22T00:10:44.1733982Z AGENT_DISABLELOGPLUGIN_TESTRESULTLOGPLUGIN=true
+2019-11-22T00:10:44.1734038Z AGENT_HOMEDIRECTORY=C:\agents\2.160.1
+2019-11-22T00:10:44.1734106Z AGENT_ID=520
+---
+2019-11-22T00:10:44.1741938Z BUILD_SOURCEBRANCHNAME=auto
+2019-11-22T00:10:44.1742005Z BUILD_SOURCESDIRECTORY=D:\a\1\s
+2019-11-22T00:10:44.1742068Z BUILD_SOURCEVERSION=ae731e69b0e519dbf73d4a870a82224b778808de
+2019-11-22T00:10:44.1742142Z BUILD_SOURCEVERSIONAUTHOR=bors
+2019-11-22T00:10:44.1742230Z BUILD_SOURCEVERSIONMESSAGE=Auto merge of #66282 - Centril:simplify-try, r=oli-obk
+2019-11-22T00:10:44.1742473Z CI_JOB_NAME=x86_64-msvc-cargo
+2019-11-22T00:10:44.1742526Z COBERTURA_HOME=C:\cobertura-2.1.1
+2019-11-22T00:10:44.1742657Z COMMONPROGRAMFILES=C:\Program Files\Common Files
+2019-11-22T00:10:44.1742722Z COMMON_TESTRESULTSDIRECTORY=D:\a\1\TestResults
+---
+2019-11-22T00:10:44.1746232Z HOMEPATH=\Users\VssAdministrator
+2019-11-22T00:10:44.1746312Z IEWebDriver=C:\SeleniumWebDrivers\IEDriver
+2019-11-22T00:10:44.1746369Z INPUT_ARGUMENTS=
+2019-11-22T00:10:44.1748921Z ImageVersion=20191028.1
+2019-11-22T00:10:44.1749288Z It should be noted however that the desugaring of `?` includes a function call and so the first pass in this PR relies on inlining to substitute that function call for identity on `x`. Inlining requires `mir-opt-level=2` so this might not have any effect in perf-bot but let's find out.
+2019-11-22T00:10:44.1749792Z JAVA_HOME_11_X64=C:\Program Files\Java\zulu-11-azure-jdk_11.33.15-11.0.4-win_x64
+2019-11-22T00:10:44.1749876Z JAVA_HOME_7_X64=C:\Program Files\Java\zulu-7-azure-jdk_7.31.0.5-7.0.232-win_x64
+2019-11-22T00:10:44.1749972Z JAVA_HOME_8_X64=C:\Program Files\Java\zulu-8-azure-jdk_8.40.0.25-8.0.222-win_x64
+2019-11-22T00:10:44.1750060Z LOCALAPPDATA=C:\Users\VssAdministrator\AppData\Local
+---
+2019-11-22T00:10:44.1790457Z TMP=/tmp
+2019-11-22T00:10:44.1790526Z TOOLSTATE_ISSUES_API_URL=https://api.github.com/repos/rust-lang/rust/issues
+2019-11-22T00:10:44.1790601Z TOOLSTATE_PUBLISH=1
+2019-11-22T00:10:44.1790664Z TOOLSTATE_REPO=https://github.com/rust-lang-nursery/rust-toolstate
+2019-11-22T00:10:44.1790759Z This PR works towards https://github.com/rust-lang/rust/issues/66234 by providing two optimization passes meant to run in sequence:
+2019-11-22T00:10:44.1790845Z Together, these are meant to simplify the following into just `res`:
+2019-11-22T00:10:44.1791153Z USERDOMAIN=fv-az665
+2019-11-22T00:10:44.1791225Z USERDOMAIN_ROAMINGPROFILE=fv-az665
+2019-11-22T00:10:44.1791297Z USERNAME=VssAdministrator
+2019-11-22T00:10:44.1791353Z USERPROFILE=C:\Users\VssAdministrator
+2019-11-22T00:10:44.1791353Z USERPROFILE=C:\Users\VssAdministrator
+2019-11-22T00:10:44.1791431Z VCPKG_INSTALLATION_ROOT=C:\vcpkg
+2019-11-22T00:10:44.1791487Z VCVARS_BAT=vcvars64.bat
+2019-11-22T00:10:44.1791566Z VS140COMNTOOLS=C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\
+2019-11-22T00:10:44.1791634Z VSTS_AGENT_PERFLOG=c:\vsts\perflog
+2019-11-22T00:10:44.1791717Z VSTS_PROCESS_LOOKUP_ID=vsts_2d5c59f1-62fe-4ead-a819-c4591a3bcde2
+2019-11-22T00:10:44.1791794Z WINDIR=C:\windows
+2019-11-22T00:10:44.1791852Z WIX=C:\Program Files (x86)\WiX Toolset v3.11\
+2019-11-22T00:10:44.1791934Z [mir-opt] asking `?`s in a more optimized fashion
+2019-11-22T00:10:44.1792059Z 

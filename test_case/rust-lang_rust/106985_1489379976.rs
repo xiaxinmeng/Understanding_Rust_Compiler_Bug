@@ -1,0 +1,2 @@
+rust
+    /// [`contains`]: VecDeque::contains

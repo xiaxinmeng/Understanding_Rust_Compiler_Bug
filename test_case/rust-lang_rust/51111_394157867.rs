@@ -1,0 +1,14 @@
+
+
+warning: [Uniooon::X] cannot be resolved, ignoring it...
+  --> $DIR/intra-links-warning.rs:13:1
+   |
+13 | / //! Test with [Foo::baz], [Bar::foo], ...
+14 | | //!
+15 | | //! and [Uniooon::X].
+   | |_____________________^
+   |
+   = note: the link appears in this line:
+           
+            and [Uniooon::X].
+                 ^^^^^^^^^^ 

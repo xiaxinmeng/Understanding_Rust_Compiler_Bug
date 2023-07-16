@@ -1,0 +1,3 @@
+
+   = note: `fn(&'0 ())` must implement `Trait`, for any lifetime `'0`...
+   = note: ...but `Trait` is actually implemented for the type `fn(&'static ())`

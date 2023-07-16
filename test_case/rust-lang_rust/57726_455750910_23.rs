@@ -1,0 +1,1 @@
+\n\nWhen trying to make some type implement a trait `Foo`, you must, at minimum,\nprovide implementations for all of `Foo`'s required methods (meaning the\nmethods that do not have default implementations), as well as any required\ntrait items like associated types or constants. Example:\n\n

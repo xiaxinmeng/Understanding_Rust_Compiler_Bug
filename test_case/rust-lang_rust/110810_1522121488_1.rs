@@ -1,0 +1,2 @@
+toml
+crate-type = ["cdylib"]

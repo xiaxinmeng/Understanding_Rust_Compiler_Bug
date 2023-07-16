@@ -1,0 +1,34 @@
+plain
+    Finished release [optimized] target(s) in 15.69s
+     Running unittests (build/x86_64-unknown-linux-gnu/stage1-rustc/x86_64-unknown-linux-gnu/release/deps/rustc_target-d390060a80f05fd6)
+
+running 184 tests
+...............F..F................................................................................. 100/184
+failures:
+
+---- spec::tests::aarch64_linux_android stdout ----
+thread 'spec::tests::aarch64_linux_android' panicked at 'assertion failed: `(left == right)`
+thread 'spec::tests::aarch64_linux_android' panicked at 'assertion failed: `(left == right)`
+  left: `Err("unknown sanitizer memtag")`,
+ right: `Ok(Target { llvm_target: "aarch64-linux-android", pointer_width: 64, arch: "aarch64", data_layout: "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128", options: TargetOptions { is_builtin: false, endian: little, c_int_width: "32", os: "android", env: "", abi: "", vendor: "unknown", linker_flavor: Gcc, linker: None, lld_flavor: Ld, pre_link_args: {Gcc: ["-Wl,--allow-multiple-definition"]}, pre_link_objects: {}, post_link_objects: {}, pre_link_objects_fallback: {}, post_link_objects_fallback: {}, crt_objects_fallback: None, late_link_args: {}, late_link_args_dynamic: {}, late_link_args_static: {}, post_link_args: {}, link_script: None, link_env: [], link_env_remove: [], asm_args: [], cpu: "generic", features: "+neon,+fp-armv8", dynamic_linking: true, only_cdylib: false, executables: true, relocation_model: Pic, code_model: None, tls_model: GeneralDynamic, disable_redzone: false, frame_pointer: MayOmit, function_sections: true, dll_prefix: "lib", dll_suffix: ".so", exe_suffix: "", staticlib_prefix: "lib", staticlib_suffix: ".a", families: ["unix"], abi_return_struct_as_int: false, is_like_osx: false, is_like_solaris: false, is_like_windows: false, is_like_msvc: false, is_like_emscripten: false, is_like_fuchsia: false, is_like_wasm: false, dwarf_version: Some(2), linker_is_gnu: true, allows_weak_linkage: true, has_rpath: true, no_default_libraries: true, position_independent_executables: true, static_position_independent_executables: false, needs_plt: false, relro_level: Full, archive_format: "gnu", allow_asm: true, main_needs_argc_argv: true, has_elf_tls: false, obj_is_bitcode: false, forces_embed_bitcode: false, bitcode_llvm_cmdline: "", min_atomic_width: None, max_atomic_width: Some(128), atomic_cas: true, panic_strategy: Unwind, crt_static_allows_dylibs: false, crt_static_default: false, crt_static_respected: false, stack_probes: None, min_global_align: None, default_codegen_units: None, trap_unreachable: true, requires_lto: false, singlethread: false, no_builtins: false, default_hidden_visibility: false, emit_debug_gdb_scripts: true, requires_uwtable: false, default_uwtable: true, simd_types_indirect: true, limit_rdylib_exports: true, override_export_symbols: None, merge_functions: Aliases, mcount: "mcount", llvm_abiname: "", relax_elf_relocations: false, llvm_args: [], use_ctors_section: false, eh_frame_header: true, has_thumb_interworking: false, split_debuginfo: Off, supported_sanitizers: HWADDRESS | CFI | MEMTAG, default_adjusted_cabi: None, c_enum_min_bits: 32, generate_arange_section: true, supports_stack_protector: true } })`', compiler/rustc_target/src/spec/tests/tests_impl.rs:6:5
+
+---- spec::tests::aarch64_unknown_linux_gnu stdout ----
+---- spec::tests::aarch64_unknown_linux_gnu stdout ----
+thread 'spec::tests::aarch64_unknown_linux_gnu' panicked at 'assertion failed: `(left == right)`
+error: test failed, to rerun pass '-p rustc_target --lib'
+  left: `Err("unknown sanitizer memtag")`,
+ right: `Ok(Target { llvm_target: "aarch64-unknown-linux-gnu", pointer_width: 64, arch: "aarch64", data_layout: "e-m:e-i8:8:32-i16:16:32-i64:64-i128:128-n32:64-S128", options: TargetOptions { is_builtin: false, endian: little, c_int_width: "32", os: "linux", env: "gnu", abi: "", vendor: "unknown", linker_flavor: Gcc, linker: None, lld_flavor: Ld, pre_link_args: {}, pre_link_objects: {}, post_link_objects: {}, pre_link_objects_fallback: {}, post_link_objects_fallback: {}, crt_objects_fallback: None, late_link_args: {}, late_link_args_dynamic: {}, late_link_args_static: {}, post_link_args: {}, link_script: None, link_env: [], link_env_remove: [], asm_args: [], cpu: "generic", features: "+outline-atomics", dynamic_linking: true, only_cdylib: false, executables: true, relocation_model: Pic, code_model: None, tls_model: GeneralDynamic, disable_redzone: false, frame_pointer: MayOmit, function_sections: true, dll_prefix: "lib", dll_suffix: ".so", exe_suffix: "", staticlib_prefix: "lib", staticlib_suffix: ".a", families: ["unix"], abi_return_struct_as_int: false, is_like_osx: false, is_like_solaris: false, is_like_windows: false, is_like_msvc: false, is_like_emscripten: false, is_like_fuchsia: false, is_like_wasm: false, dwarf_version: None, linker_is_gnu: true, allows_weak_linkage: true, has_rpath: true, no_default_libraries: true, position_independent_executables: true, static_position_independent_executables: false, needs_plt: false, relro_level: Full, archive_format: "gnu", allow_asm: true, main_needs_argc_argv: true, has_elf_tls: true, obj_is_bitcode: false, forces_embed_bitcode: false, bitcode_llvm_cmdline: "", min_atomic_width: None, max_atomic_width: Some(128), atomic_cas: true, panic_strategy: Unwind, crt_static_allows_dylibs: false, crt_static_default: false, crt_static_respected: true, stack_probes: None, min_global_align: None, default_codegen_units: None, trap_unreachable: true, requires_lto: false, singlethread: false, no_builtins: false, default_hidden_visibility: false, emit_debug_gdb_scripts: true, requires_uwtable: false, default_uwtable: false, simd_types_indirect: true, limit_rdylib_exports: true, override_export_symbols: None, merge_functions: Aliases, mcount: "\u{1}_mcount", llvm_abiname: "", relax_elf_relocations: false, llvm_args: [], use_ctors_section: false, eh_frame_header: true, has_thumb_interworking: false, split_debuginfo: Off, supported_sanitizers: ADDRESS | LEAK | MEMORY | THREAD | HWADDRESS | CFI | MEMTAG, default_adjusted_cabi: None, c_enum_min_bits: 32, generate_arange_section: true, supports_stack_protector: true } })`', compiler/rustc_target/src/spec/tests/tests_impl.rs:6:5
+
+failures:
+    spec::tests::aarch64_linux_android
+    spec::tests::aarch64_unknown_linux_gnu
+    spec::tests::aarch64_unknown_linux_gnu
+
+test result: FAILED. 182 passed; 2 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+
+
+command did not execute successfully: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage0/bin/cargo" "test" "--target" "x86_64-unknown-linux-gnu" "-Zbinary-dep-depinfo" "-j" "16" "--release" "--locked" "--color" "always" "--features" " llvm" "--manifest-path" "/checkout/compiler/rustc/Cargo.toml" "-p" "rustc_target" "--" "--quiet"
+
+
+Build completed unsuccessfully in 0:35:45

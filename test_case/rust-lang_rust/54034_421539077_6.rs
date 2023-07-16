@@ -1,0 +1,1 @@
+compile_fail,E0008\nstruct A{}\n\nimpl A {\n    fn consume(self) -> usize {\n        0\n    }\n}\n\nfn main() {\n    let a = Some(A{});\n    match a {\n        Some(y) if y.consume() > 0 => {}\n        _ => {}\n    }\n}\n

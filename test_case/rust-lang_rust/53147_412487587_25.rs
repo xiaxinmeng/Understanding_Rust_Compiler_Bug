@@ -1,0 +1,1 @@
+\nuse std::cell::RefCell;\n\nstruct TheDarkKnight;\n\nimpl TheDarkKnight {\n    fn nothing_is_true(self) {}\n}\n\nfn main() {\n    let x = RefCell::new(TheDarkKnight);\n    let x = x.into_inner(); // we get back ownership\n\n    x.nothing_is_true(); // ok!\n}\n

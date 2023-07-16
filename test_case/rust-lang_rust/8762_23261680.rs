@@ -1,0 +1,34 @@
+
+#0  0x00007ffff6186748 in middle::ty::__extensions__::meth_43052::iter_bytes::_b965143dcf3ece80::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#1  0x00007ffff61aaa5b in middle::ty::mk_t::_e931c6ec37273d78::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#2  0x00007ffff61ae75a in middle::ty::mk_param::_32dd632be817fb3e::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#3  0x00007ffff63f6b29 in middle::typeck::collect::ty_generics::compute_bounds::_35286487a393fe63::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#4  0x00007ffff63e3033 in middle::typeck::collect::ty_generics::_2a33f4ab7a74e87c::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#5  0x00007ffff63eecb3 in middle::typeck::collect::mk_item_substs::_3c1e735eaadfcd1c::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#6  0x00007ffff63ee3de in middle::typeck::collect::trait_def_of_item::_c8767b261a4275e::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#7  0x00007ffff63d3733 in middle::typeck::collect::get_trait_def::_41decb3a7c6f898e::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#8  0x00007ffff63d8f60 in middle::typeck::astconv::ast_path_to_trait_ref_61794::_a09e937eb343dd22::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#9  0x00007ffff63e7e2f in middle::typeck::collect::instantiate_trait_ref::_302fe93b4bc5025::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#10 0x00007ffff63f6b64 in middle::typeck::collect::ty_generics::compute_bounds::_35286487a393fe63::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#11 0x00007ffff63e3033 in middle::typeck::collect::ty_generics::_2a33f4ab7a74e87c::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#12 0x00007ffff63eecb3 in middle::typeck::collect::mk_item_substs::_3c1e735eaadfcd1c::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#13 0x00007ffff63ee3de in middle::typeck::collect::trait_def_of_item::_c8767b261a4275e::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#14 0x00007ffff63d3733 in middle::typeck::collect::get_trait_def::_41decb3a7c6f898e::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#15 0x00007ffff63d8f60 in middle::typeck::astconv::ast_path_to_trait_ref_61794::_a09e937eb343dd22::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#16 0x00007ffff63e7e2f in middle::typeck::collect::instantiate_trait_ref::_302fe93b4bc5025::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#17 0x00007ffff63f6b64 in middle::typeck::collect::ty_generics::compute_bounds::_35286487a393fe63::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#18 0x00007ffff63e3033 in middle::typeck::collect::ty_generics::_2a33f4ab7a74e87c::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#19 0x00007ffff63eecb3 in middle::typeck::collect::mk_item_substs::_3c1e735eaadfcd1c::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#20 0x00007ffff63ee3de in middle::typeck::collect::trait_def_of_item::_c8767b261a4275e::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#21 0x00007ffff63d3733 in middle::typeck::collect::get_trait_def::_41decb3a7c6f898e::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#22 0x00007ffff63d8f60 in middle::typeck::astconv::ast_path_to_trait_ref_61794::_a09e937eb343dd22::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#23 0x00007ffff63e7e2f in middle::typeck::collect::instantiate_trait_ref::_302fe93b4bc5025::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#24 0x00007ffff63f6b64 in middle::typeck::collect::ty_generics::compute_bounds::_35286487a393fe63::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#25 0x00007ffff63e3033 in middle::typeck::collect::ty_generics::_2a33f4ab7a74e87c::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#26 0x00007ffff63eecb3 in middle::typeck::collect::mk_item_substs::_3c1e735eaadfcd1c::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#27 0x00007ffff63ee3de in middle::typeck::collect::trait_def_of_item::_c8767b261a4275e::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#28 0x00007ffff63d3733 in middle::typeck::collect::get_trait_def::_41decb3a7c6f898e::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#29 0x00007ffff63d8f60 in middle::typeck::astconv::ast_path_to_trait_ref_61794::_a09e937eb343dd22::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#30 0x00007ffff63e7e2f in middle::typeck::collect::instantiate_trait_ref::_302fe93b4bc5025::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+#31 0x00007ffff63f6b64 in middle::typeck::collect::ty_generics::compute_bounds::_35286487a393fe63::_0$x2e8$x2dpre () from /usr/local/bin/../lib/librustc-d3cb8c2ccd84a7a7-0.8-pre.so
+[ ... ]

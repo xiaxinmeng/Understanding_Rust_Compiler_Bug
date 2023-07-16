@@ -1,0 +1,23 @@
+
+Program received signal EXC_BAD_INSTRUCTION, Illegal instruction/operand.
+0x000000010334f6d2 in util::abort::h9182c37c9de2edd0ICa ()
+(gdb) bt
+#0  0x000000010334f6d2 in util::abort::h9182c37c9de2edd0ICa ()
+#1  0x000000010334fc00 in fmt::secret_show::h3110566893878729201 ()
+#2  0x000000010001c0ff in local_ptr::compiled::take::h10142886416038288936 ()
+#3  0x000000010001bf8e in local::Task.Local$LT$local_ptr..Borrowed$LT$Task$GT$$GT$::take::he4688e74cf2e22f9Sfb ()
+#4  0x000000010001becc in comm::oneshot::Packet$LT$T$GT$::recv::h3883734107073250834 ()
+#5  0x000000010001b702 in comm::Receiver$LT$T$GT$::recv_opt::h3285373062164709319 ()
+#6  0x000000010001b508 in comm::Receiver$LT$T$GT$::recv::h15528954908478842927 ()
+#7  0x000000010001b279 in task::TaskBuilder$LT$S$GT$::try_future::closure.3207 ()
+#8  0x0000000100002040 in sync::future::Future$LT$A$GT$::get_ref::h11522134085165834637 ()
+#9  0x0000000100001d97 in sync::future::Future$LT$A$GT$::unwrap::h8665793292685818696 ()
+#10 0x0000000100001cd6 in task::TaskBuilder$LT$S$GT$::try::h9076772579531168055 ()
+#11 0x0000000100001b65 in task::try::h15377513306858637937 ()
+#12 0x0000000100001938 in main::h86eac4ec1db0033dfaa ()
+#13 0x000000010007dcba in start::closure.8650 ()
+#14 0x00000001038490cc in rust_try_inner ()
+#15 0x00000001037e14cc in task::Task::run::h184281d54b13b946MVc ()
+#16 0x000000010007db0e in start::h5719ba99613907a78je ()
+#17 0x000000010007d959 in lang_start::hf6b85c6c32cdb3b4rje ()
+#18 0x0000000100001abf in main ()

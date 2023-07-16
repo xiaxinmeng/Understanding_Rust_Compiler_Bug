@@ -1,0 +1,9 @@
+
+error[E0277]: the trait bound `std::string::String: std::marker::Copy` is not satisfied
+ --> $DIR/not_copy.rs:6:12
+  |
+6 |     value: String,
+  |            ^^^^^^ the trait `std::marker::Copy` is not implemented for `std::string::String`
+  |
+  = help: see issue #48214
+  = help: add `#![feature(trivial_bounds)]` to the crate attributes to enable

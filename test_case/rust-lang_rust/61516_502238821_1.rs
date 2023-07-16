@@ -1,0 +1,2 @@
+
+internal compiler error: src/librustc/infer/canonical/canonicalizer.rs:557: failed to lift `QueryResponse { var_values: CanonicalVarValues { var_values: [^0, Const { ty: _, val: Infer(Canonical(DebruijnIndex(0), 1)) }] }, region_constraints: [], certainty: Proven, value: FakeArray<^0, _: _> }`, canonicalized from `QueryResponse { var_values: CanonicalVarValues { var_values: [_, Const { ty: _, val: Infer(Var(_#1c)) }] }, region_constraints: [], certainty: Proven, value: FakeArray<_, _: _> }

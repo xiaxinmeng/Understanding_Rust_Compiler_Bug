@@ -1,0 +1,14 @@
+
+duplicate artfacts found when compiling a tool, this typically means that something was recompiled because a transitive dependency has different features activated than in a previous build:
+  winapi 0.3.4 (registry+https://github.com/rust-lang/crates.io-index)
+    `clippy-driver` enabled features ["consoleapi", "dbghelp", "errhandlingapi", "fileapi", "handleapi", "ioapiset", "minwindef", "namedpipeapi", "ntdef", "processenv", "processthreadsapi", "std", "winerror", "winnt", "winsock2", "ws2def", "ws2ipdef", "ws2tcpip"] at "C:\\projects\\rust\\build\\x86_64-pc-windows-gnu\\stage2-tools\\x86_64-pc-windows-gnu\\release\\deps\\libwinapi-7cb6d087db077e11.rlib"
+    `cargo` enabled features ["consoleapi", "dbghelp", "errhandlingapi", "fileapi", "handleapi", "ioapiset", "jobapi", "jobapi2", "lmcons", "minschannel", "minwinbase", "minwindef", "namedpipeapi", "ntdef", "ntsecapi", "ntstatus", "processenv", "processthreadsapi", "profileapi", "psapi", "schannel", "securitybaseapi", "std", "synchapi", "sysinfoapi", "timezoneapi", "winbase", "wincon", "wincrypt", "winerror", "winnt", "winsock2", "ws2def", "ws2ipdef", "ws2tcpip"] at "C:\\projects\\rust\\build\\x86_64-pc-windows-gnu\\stage2-tools\\x86_64-pc-windows-gnu\\release\\deps\\libwinapi-d6c198bedd24dbbb.rlib"
+  backtrace 0.3.6 (registry+https://github.com/rust-lang/crates.io-index)
+    `clippy-driver` enabled features ["backtrace-sys", "coresymbolication", "dbghelp", "default", "dladdr", "libbacktrace", "libunwind", "winapi"] at "C:\\projects\\rust\\build\\x86_64-pc-windows-gnu\\stage2-tools\\x86_64-pc-windows-gnu\\release\\deps\\libbacktrace-4d22e1f3c416866d.rlib"
+    `cargo` enabled features ["backtrace-sys", "coresymbolication", "dbghelp", "default", "dladdr", "libbacktrace", "libunwind", "winapi"] at "C:\\projects\\rust\\build\\x86_64-pc-windows-gnu\\stage2-tools\\x86_64-pc-windows-gnu\\release\\deps\\libbacktrace-1b3034da488e3e14.rlib"
+  error-chain 0.11.0 (registry+https://github.com/rust-lang/crates.io-index)
+    `clippy-driver` enabled features ["backtrace", "default", "example_generated"] at "C:\\projects\\rust\\build\\x86_64-pc-windows-gnu\\stage2-tools\\x86_64-pc-windows-gnu\\release\\deps\\liberror_chain-6878f7237b9efb05.rlib"
+    `rls` enabled features ["backtrace", "default", "example_generated"] at "C:\\projects\\rust\\build\\x86_64-pc-windows-gnu\\stage2-tools\\x86_64-pc-windows-gnu\\release\\deps\\liberror_chain-1e94c8f434bd4c43.rlib"
+  cargo_metadata 0.5.4 (registry+https://github.com/rust-lang/crates.io-index)
+    `clippy-driver` enabled features [] at "C:\\projects\\rust\\build\\x86_64-pc-windows-gnu\\stage2-tools\\x86_64-pc-windows-gnu\\release\\deps\\libcargo_metadata-03e90dedac875643.rlib"
+    `rls` enabled features [] at "C:\\projects\\rust\\build\\x86_64-pc-windows-gnu\\stage2-tools\\x86_64-pc-windows-gnu\\release\\deps\\libcargo_metadata-39ee2e9489759a28.rlib"

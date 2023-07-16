@@ -1,0 +1,2 @@
+javascript
+callback(JSON.parse("{...}"))

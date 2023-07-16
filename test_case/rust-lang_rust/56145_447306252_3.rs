@@ -1,0 +1,1 @@
+\n# use std::panic::UnwindSafe as ForeignTrait;\nstruct MyType<T>(T);\nimpl<T> ForeignTrait for MyType<T> { } // Ok\n

@@ -1,0 +1,1 @@
+\nfn count_to_n(n `impl Trait` not allowed outside of function and inherent method\n    //        return types\n    for i in count_to_ten {\n        println!(\"{}\", i);\n    }\n}\n

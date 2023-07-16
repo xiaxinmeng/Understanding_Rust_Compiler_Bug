@@ -1,0 +1,1 @@
+\n\nIf only some methods aren't object-safe, you can add a `where Self: Sized` bound\non them to mark them as explicitly unavailable to trait objects. The\nfunctionality will still be available to all other implementers, including\n`Box<Trait>` which is itself sized (assuming you `impl Trait for Box<Trait>`).\n\n

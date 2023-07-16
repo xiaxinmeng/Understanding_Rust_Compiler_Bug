@@ -1,0 +1,2 @@
+shell
+> brew search gcc

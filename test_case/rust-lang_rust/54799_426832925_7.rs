@@ -1,0 +1,1 @@
+\nstruct Foo<'a, T>\nwhere\n    T: 'a,\n{\n    foo: <T as SomeTrait<'a>>::Output\n}\n\ntrait SomeTrait<'a> {\n    type Output;\n}\n\nimpl<'a, T> SomeTrait<'a> for T\nwhere\n    T: 'a,\n{\n    type Output = u32;\n}\n

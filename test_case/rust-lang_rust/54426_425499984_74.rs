@@ -1,0 +1,1 @@
+compile_fail\n#![feature(box_syntax)]\n\nfn main() {\n    let array: &[isize] = &[1, 2, 3];\n    let _x: Box<[isize]> = box *array;\n    // error: cannot move a value of type [isize]: the size of [isize] cannot\n    //        be statically determined\n}\n

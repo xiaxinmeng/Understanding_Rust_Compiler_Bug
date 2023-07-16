@@ -1,0 +1,2 @@
+
+forgetful_try!(foo);

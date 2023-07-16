@@ -1,0 +1,2 @@
+
+self.attr+= Zero::zero();

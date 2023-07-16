@@ -1,0 +1,2 @@
+
+AutoLock lock(theLock)

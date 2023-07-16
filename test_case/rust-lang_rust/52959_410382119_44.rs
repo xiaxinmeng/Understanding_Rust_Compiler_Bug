@@ -1,0 +1,1 @@
+\nfn you_know_nothing(jon_snow: &mut i32) {\n    let mut jon_copy = jon_snow.clone();\n    let nights_watch = || {\n        jon_copy = 2;\n    };\n  / it will be copied here.\n    }\n}\n

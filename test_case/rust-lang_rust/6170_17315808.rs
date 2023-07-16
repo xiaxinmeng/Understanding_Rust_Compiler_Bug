@@ -1,0 +1,10 @@
+
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/arm-apple-darwin10-llvm-g++-4.2  -DRUST_NDEBUG -fno-omit-frame-pointer -O2  -Wall -Werror -g -fPIC -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/include/c++/4.2.1 -I/usr/include -fno-rtti -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS5.1.sdk/ -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/usr/include/c++/4.2.1 -I/usr/include -MMD -MP -MT  rt/arm-apple-darwin/arch/arm/gpr.o -MF rt/arm-apple-darwin/arch/arm/gpr.d -c -o  rt/arm-apple-darwin/arch/arm/gpr.o  -I ~/rust/src/rt -I ~/rust/src/rt/isaac -I ~/rust/src/rt/uthash -I .../rust/src/rt/arch/arm -I ~/rust/src/rt/linenoise -I ~/rust/src/libuv/include  ~/rust/src/rt/arch/arm/gpr.cpp
+/var/folders/l_/9rdx5d4566g29s90r8zbyb7h0000gn/T//ccDLG6jU.s:38:ARM register expected -- `mov %r0,r1'
+/var/folders/l_/9rdx5d4566g29s90r8zbyb7h0000gn/T//ccDLG6jU.s:42:ARM register expected -- `mov %r9,r2'
+/var/folders/l_/9rdx5d4566g29s90r8zbyb7h0000gn/T//ccDLG6jU.s:46:ARM register expected -- `mov %r10,r3'
+/var/folders/l_/9rdx5d4566g29s90r8zbyb7h0000gn/T//ccDLG6jU.s:50:ARM register expected -- `mov %r11,r12'
+/var/folders/l_/9rdx5d4566g29s90r8zbyb7h0000gn/T//ccDLG6jU.s:54:ARM register expected -- `mov %r12,lr'
+/var/folders/l_/9rdx5d4566g29s90r8zbyb7h0000gn/T//ccDLG6jU.s:58:ARM register expected -- `mov %r13,r4'
+/var/folders/l_/9rdx5d4566g29s90r8zbyb7h0000gn/T//ccDLG6jU.s:62:ARM register expected -- `mov %r14,r5'
+/var/folders/l_/9rdx5d4566g29s90r8zbyb7h0000gn/T//ccDLG6jU.s:66:ARM register expected -- `mov %r15,r6'

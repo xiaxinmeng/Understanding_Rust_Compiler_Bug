@@ -1,0 +1,56 @@
+
+running 1 test
+test src/some_docs.md - _::Error (line 14) ... FAILED
+
+failures:
+
+---- src/some_docs.md - _::Error (line 14) stdout ----
+error: linking with `link.exe` failed: exit code: 1181
+  |
+  = note: "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.32.31326\\bin\\HostX64\\x64\\link.exe" 
+"/NOLOGO" "C:\\Users\\BENNO~1.LAP\\AppData\\Local\\Temp\\rustckeLD8R\\symbols.o" 
+"C:\\Users\\BENNO~1.LAP\\AppData\\Local\\Temp\\rustdoctesteriAMV\\rust_out.rust_out.921f0e3c-cgu.0.rcgu.o" 
+"C:\\Users\\BENNO~1.LAP\\AppData\\Local\\Temp\\rustdoctesteriAMV\\rust_out.4jh3562snej2r6lm.rcgu.o" 
+"/LIBPATH:target/debug/deps"
+ "/LIBPATH:C:\\Users\\Benno.LAPTOP-SOMENAME\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib"
+ "C:\\Users\\Benno.LAPTOP-SOMENAME\\source\\repos\\rustdocwindows\\target\\debug\\deps\\libtokio-475c740a026df197.rlib"
+ "C:\\Users\\Benno.LAPTOP-SOMENAME\\source\\repos\\rustdocwindows\\target\\debug\\deps\\libnum_cpus-a41762073fbff5e0.rlib"
+ "C:\\Users\\Benno.LAPTOP-SOMENAME\\source\\repos\\rustdocwindows\\target\\debug\\deps\\libsocket2-af2374001ac84e76.rlib"
+ "C:\\Users\\Benno.LAPTOP-SOMENAME\\source\\repos\\rustdocwindows\\target\\debug\\deps\\libmemchr-2d2995cb1b206dfc.rlib"
+ "C:\\Users\\Benno.LAPTOP-SOMENAME\\source\\repos\\rustdocwindows\\target\\debug\\deps\\libonce_cell-c715be824e7a7cac.rlib"
+ "C:\\Users\\Benno.LAPTOP-SOMENAME\\source\\repos\\rustdocwindows\\target\\debug\\deps\\libbytes-886dc47712887a58.rlib"
+ "C:\\Users\\Benno.LAPTOP-SOMENAME\\source\\repos\\rustdocwindows\\target\\debug\\deps\\libmio-d5c1842815a5b615.rlib"
+ "C:\\Users\\Benno.LAPTOP-SOMENAME\\source\\repos\\rustdocwindows\\target\\debug\\deps\\liblog-80e233060601556d.rlib"
+ "C:\\Users\\Benno.LAPTOP-SOMENAME\\source\\repos\\rustdocwindows\\target\\debug\\deps\\libpin_project_lite-e6398ca62c762a3b.rlib"
+ "C:\\Users\\Benno.LAPTOP-SOMENAME\\source\\repos\\rustdocwindows\\target\\debug\\deps\\libwinapi-dd92b06c44063101.rlib"
+ "C:\\Users\\Benno.LAPTOP-SOMENAME\\source\\repos\\rustdocwindows\\target\\debug\\deps\\libparking_lot-c9e40f63faa54b0e.rlib" 
+"C:\\Users\\Benno.LAPTOP-SOMENAME\\source\\repos\\rustdocwindows\\target\\debug\\deps\\libparking_lot_core-38a0cc33576f5a1c.rlib"
+ "C:\\Users\\Benno.LAPTOP-SOMENAME\\source\\repos\\rustdocwindows\\target\\debug\\deps\\libwindows_sys-0f71026276f686a8.rlib"
+ "C:\\Users\\Benno.LAPTOP-SOMENAME\\source\\repos\\rustdocwindows\\target\\debug\\deps\\libcfg_if-5321058e3340cc33.rlib"
+ "C:\\Users\\Benno.LAPTOP-SOMENAME\\source\\repos\\rustdocwindows\\target\\debug\\deps\\libsmallvec-0ad84c6b5cb41103.rlib" 
+"C:\\Users\\Benno.LAPTOP-SOMENAME\\source\\repos\\rustdocwindows\\target\\debug\\deps\\liblock_api-b2ed4988a48945ef.rlib"
+ "C:\\Users\\Benno.LAPTOP-SOMENAME\\source\\repos\\rustdocwindows\\target\\debug\\deps\\libscopeguard-fa0df20a1b9200d1.rlib" 
+"C:\\Users\\Benno.LAPTOP-SOMENAME\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib\\libstd-1cd530251ef8500f.rlib"
+ "C:\\Users\\Benno.LAPTOP-SOMENAME\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib\\libpanic_unwind-8749f5778873ad0b.rlib"
+ "C:\\Users\\Benno.LAPTOP-SOMENAME\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib\\librustc_demangle-952a244e6b15fd3d.rlib"
+ "C:\\Users\\Benno.LAPTOP-SOMENAME\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib\\libstd_detect-d590b5e29f586f0c.rlib"
+ "C:\\Users\\Benno.LAPTOP-SOMENAME\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib\\libhashbrown-157899a56f45c8e0.rlib"
+ "C:\\Users\\Benno.LAPTOP-SOMENAME\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib\\libminiz_oxide-7b45cc2f3e360e16.rlib"
+ "C:\\Users\\Benno.LAPTOP-SOMENAME\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib\\libadler-20c8aee5cf2ca628.rlib"
+ "C:\\Users\\Benno.LAPTOP-SOMENAME\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib\\librustc_std_workspace_alloc-601e4def09298a16.rlib" "C:\\Users\\Benno.LAPTOP-SOMENAME\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib\\libunwind-6bfe55bee864f405.rlib"
+ "C:\\Users\\Benno.LAPTOP-SOMENAME\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib\\libcfg_if-2dcf1993985aac9f.rlib"
+ "C:\\Users\\Benno.LAPTOP-SOMENAME\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib\\liblibc-df8a6f52e5519032.rlib" 
+"C:\\Users\\Benno.LAPTOP-SOMENAME\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib\\liballoc-170085950b44d410.rlib"
+ "C:\\Users\\Benno.LAPTOP-SOMENAME\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib\\librustc_std_workspace_core-4f71a076c7db927f.rlib"
+ "C:\\Users\\Benno.LAPTOP-SOMENAME\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib\\libcore-d75ffa8a17ba1137.rlib" 
+"C:\\Users\\Benno.LAPTOP-SOMENAME\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib\\libcompiler_builtins-6f60f6a23a58b163.rlib"
+ "ntdll.lib" "advapi32.lib" "cfgmgr32.lib" "fwpuclnt.lib" "gdi32.lib" "kernel32.lib" "msimg32.lib" "ntdll.lib"
+ "opengl32.lib" "user32.lib" "winspool.lib" "ws2_32.lib" "windows.lib" "advapi32.lib" "userenv.lib" "kernel32.lib" "ws2_32.lib" "bcrypt.lib" "msvcrt.lib"
+ "/NXCOMPAT" "/LIBPATH:C:\\Users\\Benno.LAPTOP-SOMENAME\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\x86_64-pc-windows-msvc\\lib" 
+"/OUT:C:\\Users\\BENNO~1.LAP\\AppData\\Local\\Temp\\rustdoctesteriAMV\\rust_out"
+ "/OPT:REF,NOICF" "/DEBUG" 
+"/NATVIS:C:\\Users\\Benno.LAPTOP-SOMENAME\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\etc\\intrinsic.natvis" 
+"/NATVIS:C:\\Users\\Benno.LAPTOP-SOMENAME\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\etc\\liballoc.natvis"
+ "/NATVIS:C:\\Users\\Benno.LAPTOP-SOMENAME\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\etc\\libcore.natvis"
+ "/NATVIS:C:\\Users\\Benno.LAPTOP-SOMENAME\\.rustup\\toolchains\\stable-x86_64-pc-windows-msvc\\lib\\rustlib\\etc\\libstd.natvis"
+  = note: LINK : fatal error LNK1181: cannot open input file 'windows.lib'

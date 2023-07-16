@@ -1,0 +1,3 @@
+rust
+#[foo]
+#[derive(Bar)]

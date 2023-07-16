@@ -1,0 +1,1 @@
+compile_fail,E0433\nlet map = HashMap::new();\n// error: failed to resolve: use of undeclared type or module `HashMap`\n

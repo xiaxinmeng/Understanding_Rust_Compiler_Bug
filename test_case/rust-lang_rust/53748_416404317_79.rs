@@ -1,0 +1,1 @@
+compile_fail,E0404\nstruct Foo;\nstruct Bar;\n\nimpl Foo for Bar {} // error: `Foo` is not a trait\n

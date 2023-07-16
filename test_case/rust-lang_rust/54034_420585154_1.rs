@@ -1,0 +1,1 @@
+\n\nThe variable `s` has type `String`, and its use in the guard is as a variable of\ntype `String`. The guard code effectively executes in a separate scope to the\nbody of the arm, so the value would be moved into this anonymous scope and\ntherefore becomes unavailable in the body of the arm.\n\nThe problem above can be solved by using the `ref` keyword.\n\n

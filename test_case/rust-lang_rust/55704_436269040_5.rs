@@ -1,0 +1,1 @@
+\nfn main() {\n    let s1 = String::from(\"hello\");\n\n    let len = calculate_length(&s1);\n\x, p1.y);\n    println!(\"p2: {}, {}\", p2.x, p2.y);\n}\n

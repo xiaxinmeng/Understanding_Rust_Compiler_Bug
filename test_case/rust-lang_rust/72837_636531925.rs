@@ -1,0 +1,46 @@
+
+  44  29712.0  rustc (11001) :0
+  43  29712.0  std::sys::unix::thread::Thread::new::thread_start::h9f834bdc6e39a9b2  0x9b5ec :0
+  42 librustc_driver-fb2031bd75aab819.dylib 29712.0  _$LT$core..iter..adapters..Map$LT$I$C$F$GT$$u20$as$u20$core..iter..traits..iterator..Iterator$GT$::fold::h8c2717a68e98d462
+  41 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc_data_structures::obligation_forest::ObligationForest$LT$O$GT$::process_obligations::h3185ac75a4bd5095
+  40 librustc_driver-fb2031bd75aab819.dylib 29712.0  _$LT$rustc_infer..traits..fulfill..FulfillmentContext$u20$as$u20$rustc_infer..traits..engine..TraitEngine$GT$::select_where_possible::h1d86259f320dec43
+  39 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc_typeck::check::FnCtxt::resolve_generator_interiors::h439c330a22944621
+  38 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc::ty::context::GlobalCtxt::enter_local::hc93171005e5a9314
+  37 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc_typeck::check::typeck_tables_of::hf80ea4df5bf98c3d
+  36 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc::ty::query::_$LT$impl$u20$rustc..ty..query..config..QueryAccessors$u20$for$u20$rustc..ty..query..queries..typeck_tables_of$GT$::compute::h17fe53adad606528
+  35 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc::dep_graph::graph::DepGraph::with_task_impl::h560047f14d84d69f
+  34 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc::ty::query::plumbing::_$LT$impl$u20$rustc..ty..context..TyCtxt$GT$::force_query::hcfbb123a094ca3a5
+  33 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc::ty::query::force_from_dep_node::h9c22dc0393aeed38
+  32 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc::dep_graph::graph::DepGraph::try_mark_previous_green::hf91bda8e87abf34c
+  31 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc::dep_graph::graph::DepGraph::try_mark_green::hcfd492bf4c63f2f2
+  30 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc::dep_graph::graph::DepGraph::try_mark_green_and_read::h0878bb24de9a50c0
+  29 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc::ty::query::plumbing::_$LT$impl$u20$rustc..ty..context..TyCtxt$GT$::get_query::h52bf91864737fb40
+  28 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc_typeck::collect::type_of::type_of::h5de9d560cfe304fe
+  27 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc::ty::query::__query_compute::type_of::h80ba69f6ca5234a7
+  26 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc::ty::query::_$LT$impl$u20$rustc..ty..query..config..QueryAccessors$u20$for$u20$rustc..ty..query..queries..type_of$GT$::compute::h263aa8dbce30bec5
+  25 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc::dep_graph::graph::DepGraph::with_task_impl::h4d476118625646eb
+  24 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc::ty::query::plumbing::_$LT$impl$u20$rustc..ty..context..TyCtxt$GT$::get_query::h7f2d261667fae68d
+  23 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc_hir::intravisit::walk_expr::hacc6cbe150a394e3
+  22 librustc_driver-fb2031bd75aab819.dylib 29712.0  _$LT$rustc_typeck..collect..CollectItemTypesVisitor$u20$as$u20$rustc_hir..intravisit..Visitor$GT$::visit_item::hf59b62c776887b5d
+  21 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc::hir::map::Map::visit_item_likes_in_module::h3f4c001b9e308205
+  20 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc_typeck::collect::collect_mod_item_types::h6b7c7c2ab1617f1a
+  19 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc::ty::query::__query_compute::collect_mod_item_types::hfabcb650888ec04c
+  18 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc::ty::query::_$LT$impl$u20$rustc..ty..query..config..QueryAccessors$u20$for$u20$rustc..ty..query..queries..collect_mod_item_types$GT$::compute::hacdd90f12ba337e3
+  17 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc::dep_graph::graph::DepGraph::with_task_impl::hf77bd2cd60727462
+  16 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc::ty::query::plumbing::_$LT$impl$u20$rustc..ty..context..TyCtxt$GT$::get_query::h87fbbb0e91dc4246
+  15 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc::ty::query::plumbing::_$LT$impl$u20$rustc..ty..context..TyCtxt$GT$::ensure_query::h6ff4db2c8b8e4a79
+  14 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc_session::session::Session::track_errors::ha6dc70e62db9aa67
+  13 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc_typeck::check_crate::h7aaa5f0409d6f7ad
+  12 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc_interface::passes::analysis::h6bb24597f4916b01
+  11 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc::ty::query::__query_compute::analysis::h88de4d0dd692d10d
+  10 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc::dep_graph::graph::DepGraph::with_task_impl::h9a73af588ce59dd4
+   9 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc::ty::query::plumbing::_$LT$impl$u20$rustc..ty..context..TyCtxt$GT$::get_query::h0584084415d5b674
+   8 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc::ty::context::tls::enter_global::hd76f9366316b00ef
+   7 librustc_driver-fb2031bd75aab819.dylib 29712.0  rustc_interface::interface::run_compiler_in_existing_thread_pool::hd446b7fdac39cc09
+   6 librustc_driver-fb2031bd75aab819.dylib 29712.0  std::sys_common::backtrace::__rust_begin_short_backtrace::h10f532a852ee1c61
+   5 libstd-887843bce4296088.dylib 29712.0  __rust_maybe_catch_panic
+   4 librustc_driver-fb2031bd75aab819.dylib 29712.0  core::ops::function::FnOnce::call_once$u7b$$u7b$vtable.shim$u7d$$u7d$::hef94622df49ae77a
+   3 libstd-887843bce4296088.dylib 29712.0  _$LT$alloc..boxed..Box$LT$F$GT$$u20$as$u20$core..ops..function..FnOnce$LT$A$GT$$GT$::call_once::h9a0848a2221632a4
+   2 libstd-887843bce4296088.dylib 29712.0  std::sys::unix::thread::Thread::new::thread_start::h9f834bdc6e39a9b2
+   1 libsystem_pthread.dylib 29712.0  _pthread_start
+   0 libsystem_pthread.dylib 29712.0  thread_start

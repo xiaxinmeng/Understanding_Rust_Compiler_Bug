@@ -1,0 +1,4 @@
+
+make clean
+./configure
+make

@@ -1,0 +1,1 @@
+\n\nThough this example seems innocuous and easy to solve, the problem becomes clear\nwhen it encounters functions which consume the value:\n\n

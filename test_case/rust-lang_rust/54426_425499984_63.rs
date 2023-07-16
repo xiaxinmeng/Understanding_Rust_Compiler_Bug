@@ -1,0 +1,1 @@
+\n#[derive(Clone, Copy)] // implement Copy trait\nstruct Value {}\n\nfn eat(val: Value) {}\n\nfn main() {\n    let x = Value{};\n    {\n        let _ref_to_val: &Value = &x;\n        eat(x); // it will be copied here.\n    }\n}\n

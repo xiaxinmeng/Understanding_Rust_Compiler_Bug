@@ -1,0 +1,3 @@
+
+./x.py install
+ 

@@ -1,0 +1,1 @@
+\n\nThe `cfg` attribute supports only three kinds of predicates:\n\n * any\n * all\n * not\n\nExample:\n\n

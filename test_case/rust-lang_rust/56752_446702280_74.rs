@@ -1,0 +1,1 @@
+\ntrait Foo {\n    fn foo() -> u8 where Self: Sized;\n}\n

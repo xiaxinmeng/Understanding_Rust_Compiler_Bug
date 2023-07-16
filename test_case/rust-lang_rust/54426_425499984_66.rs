@@ -1,0 +1,1 @@
+compile_fail,E0381\nfn main() {\n    let x: i32;\n    let y = x; // error, use of possibly uninitialized variable\n}\n

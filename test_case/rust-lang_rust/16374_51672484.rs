@@ -1,0 +1,4 @@
+
+-----
+keywords: foo, bar, baz
+-----

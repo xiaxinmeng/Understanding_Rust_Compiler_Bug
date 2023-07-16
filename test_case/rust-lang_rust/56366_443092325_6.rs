@@ -1,0 +1,1 @@
+compile_fail,E0392\nstruct Foo<'a, T> {\n    x: *const T,\n}\n

@@ -1,0 +1,1 @@
+\nfn main() {\n    // Your program will start here.\n    println!(\"Hello world!\");\n}\n

@@ -1,0 +1,1 @@
+\n#[derive(Clone)]\nstruct A{}\n\nimpl A {\n    fn consume(self) -> usize {\n        0\n    }\n}\n\nfn main() {\n    let a = Some(A{});\n    match a{\n        Some(ref y) if y.clone().consume() > 0 => {}\n        _ => {}\n    }\n}\n

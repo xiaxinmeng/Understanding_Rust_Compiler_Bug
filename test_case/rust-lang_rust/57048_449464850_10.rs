@@ -1,0 +1,1 @@
+\n\nPlease verify that the function name wasn't misspelled, and ensure\nthat it is declared in the rust source code (in the file\nsrc/librustc_platform_intrinsics/x86.rs). Example:\n\n

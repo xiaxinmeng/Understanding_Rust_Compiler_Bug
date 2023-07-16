@@ -1,0 +1,1 @@
+\n\nThe reason for this is that there are two appearances of type parameter `T` in\nthe `impl` header, both as parameters for `ForeignTrait2`. The first appearance\nis uncovered, and so runs afoul of the orphan rule.\n\nConsider one more example:\n\n

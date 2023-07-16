@@ -1,0 +1,6 @@
+rust
+if let Some(status) = foo.try_wait()? {
+    ...
+} else {
+    ...
+}

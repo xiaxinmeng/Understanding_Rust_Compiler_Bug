@@ -1,0 +1,1 @@
+\n\nIn Rust, you can only move a value when its size is known at compile time.\n\nTo work around this restriction, consider \"hiding\" the value behind a reference:\neither `&x` or `&mut x`. Since a reference has a fixed size, this lets you move\nit around as usual. Example:\n\n

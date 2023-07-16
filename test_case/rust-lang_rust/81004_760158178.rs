@@ -1,0 +1,37 @@
+rust
+#0  0x00007f8f3c98b769 in rustc_data_structures::obligation_forest::ObligationForest<O>::register_obligation_at () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#1  0x00007f8f3c98feeb in <rustc_trait_selection::traits::fulfill::FulfillmentContext as rustc_infer::traits::engine::TraitEngine>::select_where_possible () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#2  0x00007f8f3c98f800 in <rustc_trait_selection::traits::fulfill::FulfillmentContext as rustc_infer::traits::engine::TraitEngine>::select_all_or_error () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#3  0x00007f8f3c28966c in rustc_typeck::check::fn_ctxt::_impl::<impl rustc_typeck::check::fn_ctxt::FnCtxt>::select_all_obligations_or_error () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#4  0x00007f8f3c377bd4 in rustc_infer::infer::InferCtxtBuilder::enter () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#5  0x00007f8f3c2f22c8 in rustc_typeck::check::wfcheck::check_associated_item () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#6  0x00007f8f3c2bc655 in rustc_typeck::check::check::check_impl_item_well_formed () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#7  0x00007f8f3c2e196c in rustc_middle::ty::query::<impl rustc_query_system::query::config::QueryAccessors<rustc_middle::ty::context::TyCtxt> for rustc_middle::ty::query::queries::check_impl_item_well_formed>::compute () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#8  0x00007f8f3cee2ecc in rustc_middle::dep_graph::<impl rustc_query_system::dep_graph::DepKind for rustc_middle::dep_graph::dep_node::DepKind>::with_deps () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#9  0x00007f8f3c2aaeed in rustc_query_system::dep_graph::graph::DepGraph<K>::with_task_impl () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#10 0x00007f8f3c2e3565 in rustc_data_structures::stack::ensure_sufficient_stack () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#11 0x00007f8f3c347dd5 in rustc_query_system::query::plumbing::force_query_with_job () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#12 0x00007f8f3c32722f in rustc_query_system::query::plumbing::get_query_impl () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#13 0x00007f8f3c345d57 in rustc_query_system::query::plumbing::ensure_query_impl () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#14 0x00007f8f3c2f496b in <rustc_typeck::check::wfcheck::CheckTypeWellFormedVisitor as rustc_hir::itemlikevisit::ParItemLikeVisitor>::visit_impl_item () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#15 0x00007f8f3c35532e in rustc_data_structures::sync::par_for_each_in () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#16 0x00007f8f3cf5715b in rustc_hir::hir::Crate::par_visit_all_item_likes () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#17 0x00007f8f3cf1c1a6 in rustc_session::session::Session::track_errors () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#18 0x00007f8f3cf586b9 in rustc_typeck::check_crate () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#19 0x00007f8f3cbf66aa in rustc_interface::passes::analysis () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#20 0x00007f8f3cb9f9a9 in rustc_middle::ty::query::<impl rustc_query_system::query::config::QueryAccessors<rustc_middle::ty::context::TyCtxt> for rustc_middle::ty::query::queries::analysis>::compute () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#21 0x00007f8f3a83e5f3 in rustc_middle::dep_graph::<impl rustc_query_system::dep_graph::DepKind for rustc_middle::dep_graph::dep_node::DepKind>::with_deps () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#22 0x00007f8f3cb7c954 in rustc_query_system::dep_graph::graph::DepGraph<K>::with_task_impl () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#23 0x00007f8f3cb9bd41 in rustc_data_structures::stack::ensure_sufficient_stack () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#24 0x00007f8f3cb7a0c6 in rustc_query_system::query::plumbing::force_query_with_job () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#25 0x00007f8f3cb79574 in rustc_query_system::query::plumbing::get_query_impl () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#26 0x00007f8f3cb9fd5d in rustc_interface::queries::<impl rustc_interface::interface::Compiler>::enter () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#27 0x00007f8f3cb95904 in rustc_span::with_source_map () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#28 0x00007f8f3cba0fea in rustc_interface::interface::create_compiler_and_run () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#29 0x00007f8f3cb96157 in std::sys_common::backtrace::__rust_begin_short_backtrace () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#30 0x00007f8f3cb7abaa in core::ops::function::FnOnce::call_once{{vtable-shim}} () from /home/lzutao/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-3c5369d6b996b200.so
+#31 0x00007f8f39fc52ba in <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once () at /rustc/a62a76047ea24aad7639f14eb3ce0e620b77bdb7/library/alloc/src/boxed.rs:1484
+#32 <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once () at /rustc/a62a76047ea24aad7639f14eb3ce0e620b77bdb7/library/alloc/src/boxed.rs:1484
+#33 std::sys::unix::thread::Thread::new::thread_start () at /rustc/a62a76047ea24aad7639f14eb3ce0e620b77bdb7//library/std/src/sys/unix/thread.rs:71
+#34 0x00007f8f39cfb4a4 in start_thread () from /lib/x86_64-linux-gnu/libpthread.so.0
+#35 0x00007f8f39631d0f in clone () from /lib/x86_64-linux-gnu/libc.so.6

@@ -1,0 +1,1 @@
+\n\nTo avoid those issues, you have to make the types match correctly.\nSo we can fix the previous examples like this:\n\n

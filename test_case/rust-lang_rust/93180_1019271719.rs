@@ -1,0 +1,2 @@
+
+error: internal compiler error: compiler/rustc_mir_transform/src/generator.rs:761:13: Broken MIR: generator contains type http::uri::Parts in MIR, but typeck only knows about {ResumeTy, &mut client::grpc::Grpc<T>, C, http::Request<UnsyncBoxBody<bytes::Bytes, status::Status>>, client::grpc::Grpc<T>, <T as GrpcService<UnsyncBoxBody<bytes::Bytes, status::Status>>>::Future, ()} and [&mut client::grpc::Grpc<T>, request::Request<S>, http::uri::PathAndQuery, C]

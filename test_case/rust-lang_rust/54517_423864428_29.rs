@@ -1,0 +1,1 @@
+\nstruct Something;\n\nimpl Something {} // ok!\n\n// or:\n\ntrait Foo {\n    type N;\n\n    fn bar(_: Self::N); // ok!\n}\n\n// or:\n\nfn foo<T>(x: T) {} // ok!\n

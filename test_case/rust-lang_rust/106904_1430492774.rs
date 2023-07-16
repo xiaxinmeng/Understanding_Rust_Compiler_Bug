@@ -1,0 +1,1 @@
+(SplitDebuginfo::Unpacked, _) if !sess.target_can_use_split_dwarf() => (true, false)

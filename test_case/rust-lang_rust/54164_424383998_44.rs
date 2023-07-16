@@ -1,0 +1,1 @@
+\n\nHere, we are still borrowing `foo()`, but as the borrow is assigned\ndirectly into a variable, the temporary will not be dropped until\nthe end of the enclosing block. Similar rules apply when temporaries\nare stored into aggregate structures like a tuple or struct:\n\n

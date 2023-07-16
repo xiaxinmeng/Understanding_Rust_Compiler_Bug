@@ -1,0 +1,1 @@
+\n\nWe want to express the constraint that Foo should not outlive `'a`, because\nthe data pointed to by `T` is only valid for that lifetime. The problem is\nthat there are no actual uses of `'a`. It's possible to work around this\nby adding a PhantomData type to the struct, using it to tell the compiler\nto act as if the struct contained a borrowed reference `&'a T`:\n\n

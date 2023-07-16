@@ -1,0 +1,1 @@
+compile_fail,E0271\ntrait Trait { type AssociatedType; }\n\nfn foo<T>(t: T) where T: Trait<AssociatedType=u32> {\n    println!(\"in foo\");\n}\n\nimpl Trait for i8 { type AssociatedType = &'static str; }\n\nfoo(3_i8);\n

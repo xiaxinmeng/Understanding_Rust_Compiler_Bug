@@ -1,0 +1,2 @@
+
+catch_unwind(|| {})

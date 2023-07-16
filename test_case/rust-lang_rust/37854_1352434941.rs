@@ -1,0 +1,5 @@
+rs
+const NOMINAL_LOW: i32 = 0;
+const NOMINAL_LOW_MAX: i32 = NOMINAL_LOW - 1;
+const NOMINAL_HIGH: i32 = 100;
+const NOMINAL_HIGH_MAX: i32 = NOMINAL_HIGH - 1;

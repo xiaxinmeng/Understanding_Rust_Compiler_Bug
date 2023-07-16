@@ -1,0 +1,1 @@
+\n\nOnly primitive types can be cast into each other. Examples:\n\n

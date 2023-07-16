@@ -1,0 +1,1 @@
+compile_fail\ntrait Trait {\n    fn foo(&self) -> Self;\n}\n\nfn call_foo(x: Box<Trait>) {\n    let y = x.foo(); // What type is y?\n    // ...\n}\n

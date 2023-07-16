@@ -1,0 +1,5 @@
+
+{
+    kind: OuterLineDocComment,
+    data: "line 1\nline 2\nline 3"
+}

@@ -1,0 +1,9 @@
+ rust
+struct Foo { x: i32 }
+const fn make_foo(x: i32) -> Foo { Foo { x: x } }
+...
+const EXAMPLE: Foo = make_foo(22);
+...
+match something {
+    EXAMPLE => ...
+}

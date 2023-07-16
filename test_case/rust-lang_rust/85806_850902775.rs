@@ -1,0 +1,2 @@
+
+-lgcc -lc -ldl -lgcc

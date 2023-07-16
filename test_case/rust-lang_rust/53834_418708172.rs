@@ -1,0 +1,1 @@
+<ident> !  <lparen|lbracket|lbrace>

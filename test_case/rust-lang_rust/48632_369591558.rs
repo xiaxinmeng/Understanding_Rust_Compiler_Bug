@@ -1,0 +1,22 @@
+
+make-prepare                	  77.56
+pytest/bootstrap            	   0.00
+stage0-std                  	  86.93
+stage0-test                 	  16.88
+stage0-rustc                	1303.26
+llvm                        	 374.77
+stage0-trans-llvm           	 222.65
+llvm-emscripten             	 178.92
+stage0-trans-emscripten     	 101.89
+stage1-std                  	 106.24
+stage1-test                 	  24.38
+stage1-rustc                	1925.45
+stage1-trans-llvm           	 251.70
+stage1-trans-emscripten     	 141.57
+stage2-std                  	  79.94
+stage2-test                 	  17.86
+stage0-compiletest          	  65.40
+test/ui                     	 286.97
+test/run-pass               	5015.79
+test/compile-fail           	 136.52
+test/parse-fail             	   5.29

@@ -1,0 +1,13 @@
+\n"},"level":"error","spans":[{"file_name":"/checkout/src/test/ui/generator/dropck.rs","byte_start":832,"byte_end":834,"line_start":21,"line_end":21,"column_start":11,"column_end":13,"is_primary":false,"text":[{"text":"    gen = || {","highlight_start":11,"highlight_end":13}],"label":"capture occurs here","suggested_replacement":null,"expansion":null},{"file_name":"/checkout/src/test/ui/generator/dropck.rs","byte_start":920,"byte_end":924,"line_start":23,"line_end":23,"column_start":18,"column_end":22,"is_primary":true,"text":[{"text":"        let _d = ref_.take(); //~ ERROR `ref_` does not live long enough","highlight_start":18,"highlight_end":22}],"label":"borrowed value does not live long enough","suggested_replacement":null,"expansion":null},{"file_name":"/checkout/src/test/ui/generator/dropck.rs","byte_start":1096,"byte_end":1097,"line_start":28,"line_end":28,"column_start":1,"column_end":2,"is_primary":false,"text":[{"text":"}","highlight_start":1,"highlight_end":2}],"label":"borrowed value dropped before borrower","suggested_replacement":null,"expansion":null}],"children":[{"message":"values in a scope are dropped in the opposite order they are created","code":null,"level":"note","spans":[],"children":[],"rendered":null}],"rendered":"error[E0597]: `ref_` does not live long enough\n  --> /checkout/src/test/ui/generator/dropck.rs:23:18\n   |\nLL |     gen = || {\n   |           -- capture occurs here\nLL |         // but the generator can use it to drop a `Ref<'a, i32>`.\nLL |         let _d = ref_.take(); //~ ERROR `ref_` does not live long enough\n   |                  ^^^^ borrowed value does not live long enough\n...\nLL | }\n   | - borrowed value dropped before borrower\n   |\n   = note: values in a scope are dropped in the opposite order they are created\n\n"}
+[00:44:03] {"message":"aborting due to 2 previous errors","code":null,"level":"error","spans":[],"children":[],"rendered":"error: aborting due to 2 previous errors\n\n"}
+[00:44:03] {"me-lldb-python" "/usr/bin/python2.7" "--gdb" "/usr/bin/gdb" "--quiet" "--llvm-version" "3.9.1\n" "--system-llvm" "--cc" "" "--cxx" "" "--cflags" "" "--llvm-components" "" "--llvm-cxxflags" "" "--adb-path" "adb" "--adb-test-dir" "/data/tmp/work" "--android-cross-path" "" "--color" "always"
+[00:44:03] expected success, got: exit code: 101
+[00:44:03]
+[00:44:03]
+[00:44:03] failed to run: /checkout/obj/build/bootstrap/debug/bootstrap test
+[00:44:03] Build completed unsuccessfully in 0:02:16
+[00:44:03] make: *** [check] Error 1
+[00:44:03] Makefile:58: recipe for target 'check' failed
+---
+$ dmesg | grep -i kill
+[   10.453064] init: failsafe main process (1094) killed by TERM signal

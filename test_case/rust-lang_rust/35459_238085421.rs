@@ -1,0 +1,5 @@
+
+$ nm libkernel.so | ack kernel
+0000000000384108 d _ZN6kernel6kernel15__STATIC_FMTSTR17h42857d76e83fb6f3E
+00000000000b4090 T kernel
+000000000038f3d0 D rust_metadata_kernel_f0c475c1165a0b09

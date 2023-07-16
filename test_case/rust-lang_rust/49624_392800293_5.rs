@@ -1,0 +1,1 @@
+\n\nPlease note that a type alias is not sufficient.\n\nFor another example of an error, suppose there's another trait defined in `foo`\nnamed `ForeignTrait2` that takes two type parameters. Then this `impl` results\nin the same rule violation:\n\n

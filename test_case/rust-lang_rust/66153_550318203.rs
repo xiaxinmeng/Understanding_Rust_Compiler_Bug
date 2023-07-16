@@ -1,0 +1,2 @@
+
+chroot /chroot/domjudge

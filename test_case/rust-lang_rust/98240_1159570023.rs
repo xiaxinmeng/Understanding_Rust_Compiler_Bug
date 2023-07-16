@@ -1,0 +1,543 @@
+plain
+---- [ui] src/test/ui/asm/x86_64/parse-error.rs stdout ----
+diff of stderr:
+
+57    |
+58 LL |         asm!("{}", in(reg) foo => bar);
+59    |                                ^^ expected one of 7 possible tokens
++    |
++    = help: closures are written `|a, b| a + b` and greater-than-or-equal is `>=`.
+61 error: expected a path for argument to `sym`
+62   --> $DIR/parse-error.rs:31:24
+
+
+---
+To only update this specific test, also pass `--test-args asm/x86_64/parse-error.rs`
+
+error: 1 errors occurred comparing output.
+status: exit status: 1
+command: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "/checkout/src/test/ui/asm/x86_64/parse-error.rs" "-Zthreads=1" "--target=x86_64-unknown-linux-gnu" "--error-format" "json" "--json" "future-incompat" "-Ccodegen-units=1" "-Zui-testing" "-Zdeduplicate-diagnostics=no" "--emit" "metadata" "-C" "prefer-dynamic" "--out-dir" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/asm/x86_64/parse-error" "-A" "unused" "-Crpath" "-O" "-Cdebuginfo=0" "-Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/asm/x86_64/parse-error/auxiliary"
+stdout: none
+--- stderr -------------------------------
+error: requires at least a template string argument
+   |
+LL |         asm!();
+   |         ^^^^^^
+
+---
+   |
+LL |         asm!("{}" foo);
+   |                   ^^^ expected `,`
+
+error: expected operand, clobber_abi, options, or additional template string
+   |
+LL |         asm!("{}", foo);
+LL |         asm!("{}", foo);
+   |                    ^^^ expected operand, clobber_abi, options, or additional template string
+error: expected `(`, found `foo`
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:19:23
+   |
+LL |         asm!("{}", in foo);
+LL |         asm!("{}", in foo);
+   |                       ^^^ expected `(`
+
+error: expected `)`, found `foo`
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:21:27
+   |
+LL |         asm!("{}", in(reg foo));
+   |                           ^^^ expected `)`
+error: expected expression, found end of macro arguments
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:23:27
+   |
+   |
+LL |         asm!("{}", in(reg));
+
+error: expected register class or explicit register
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:25:26
+   |
+   |
+LL |         asm!("{}", inout(=) foo => bar);
+
+error: expected expression, found end of macro arguments
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:27:37
+   |
+   |
+LL |         asm!("{}", inout(reg) foo =>);
+
+
+error: expected one of `!`, `,`, `.`, `::`, `?`, `{`, or an operator, found `=>`
+   |
+   |
+LL |         asm!("{}", in(reg) foo => bar);
+   |                                ^^ expected one of 7 possible tokens
+   |
+   = help: closures are written `|a, b| a + b` and greater-than-or-equal is `>=`.
+error: expected a path for argument to `sym`
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:31:24
+   |
+   |
+LL |         asm!("{}", sym foo + bar);
+
+
+error: expected one of `)`, `att_syntax`, `may_unwind`, `nomem`, `noreturn`, `nostack`, `preserves_flags`, `pure`, `raw`, or `readonly`, found `foo`
+   |
+   |
+LL |         asm!("", options(foo));
+   |                          ^^^ expected one of 10 possible tokens
+
+error: expected one of `)` or `,`, found `foo`
+   |
+   |
+LL |         asm!("", options(nomem foo));
+   |                                ^^^ expected one of `)` or `,`
+
+error: expected one of `)`, `att_syntax`, `may_unwind`, `nomem`, `noreturn`, `nostack`, `preserves_flags`, `pure`, `raw`, or `readonly`, found `foo`
+   |
+   |
+LL |         asm!("", options(nomem, foo));
+   |                                 ^^^ expected one of 10 possible tokens
+error: arguments are not allowed after options
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:39:31
+   |
+LL |         asm!("{}", options(), const foo);
+LL |         asm!("{}", options(), const foo);
+   |                    ---------  ^^^^^^^^^ argument
+   |                    |
+   |                    previous options
+
+error: at least one abi must be provided as an argument to `clobber_abi`
+   |
+   |
+LL |         asm!("", clobber_abi());
+
+error: expected string literal
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:44:30
+   |
+   |
+LL |         asm!("", clobber_abi(foo));
+
+
+error: expected one of `)` or `,`, found `foo`
+   |
+   |
+LL |         asm!("", clobber_abi("C" foo));
+   |                                  ^^^ expected one of `)` or `,`
+error: expected string literal
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:48:35
+   |
+   |
+LL |         asm!("", clobber_abi("C", foo));
+
+error: arguments are not allowed after clobber_abi
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:50:38
+   |
+   |
+LL |         asm!("{}", clobber_abi("C"), const foo);
+   |                    ----------------  ^^^^^^^^^ argument
+   |                    clobber_abi
+
+error: clobber_abi is not allowed after options
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:53:29
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:53:29
+   |
+LL |         asm!("", options(), clobber_abi("C"));
+   |                  ---------  ^^^^^^^^^^^^^^^^
+   |                  options
+
+error: clobber_abi is not allowed after options
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:55:31
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:55:31
+   |
+LL |         asm!("{}", options(), clobber_abi("C"), const foo);
+   |                    ---------  ^^^^^^^^^^^^^^^^
+   |                    options
+
+error: duplicate argument named `a`
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:57:36
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:57:36
+   |
+LL |         asm!("{a}", a = const foo, a = const bar);
+   |                     -------------  ^^^^^^^^^^^^^ duplicate argument
+   |                     previously here
+
+error: argument never used
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:57:36
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:57:36
+   |
+LL |         asm!("{a}", a = const foo, a = const bar);
+   |                                    ^^^^^^^^^^^^^ argument never used
+   |
+   = help: if this argument is intentionally unused, consider using it in an asm comment: `"/* {1} */"`
+error: explicit register arguments cannot have names
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:62:18
+   |
+   |
+LL |         asm!("", a = in("eax") foo);
+
+error: named arguments cannot follow explicit register arguments
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:64:36
+   |
+   |
+LL |         asm!("{a}", in("eax") foo, a = const bar);
+   |                     -------------  ^^^^^^^^^^^^^ named argument
+   |                     explicit register argument
+
+error: named arguments cannot follow explicit register arguments
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:67:36
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:67:36
+   |
+LL |         asm!("{a}", in("eax") foo, a = const bar);
+   |                     -------------  ^^^^^^^^^^^^^ named argument
+   |                     explicit register argument
+
+error: positional arguments cannot follow named arguments or explicit register arguments
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:70:36
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:70:36
+   |
+LL |         asm!("{1}", in("eax") foo, const bar);
+   |                     -------------  ^^^^^^^^^ positional argument
+   |                     explicit register argument
+
+
+error: expected one of `clobber_abi`, `const`, `in`, `inlateout`, `inout`, `lateout`, `options`, `out`, or `sym`, found `""`
+   |
+   |
+LL |         asm!("", options(), "");
+   |                             ^^ expected one of 9 possible tokens
+
+error: expected one of `clobber_abi`, `const`, `in`, `inlateout`, `inout`, `lateout`, `options`, `out`, or `sym`, found `"{}"`
+   |
+   |
+LL |         asm!("{}", in(reg) foo, "{}", out(reg) foo);
+   |                                 ^^^^ expected one of 9 possible tokens
+error: asm template must be a string literal
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:77:14
+   |
+   |
+LL |         asm!(format!("{{{}}}", 0), in(reg) foo);
+   |
+   = note: this error originates in the macro `format` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: asm template must be a string literal
+error: asm template must be a string literal
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:79:21
+   |
+LL |         asm!("{1}", format!("{{{}}}", 0), in(reg) foo, out(reg) bar);
+   |
+   = note: this error originates in the macro `format` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+
+error: _ cannot be used for input operands
+   |
+   |
+LL |         asm!("{}", in(reg) _);
+
+
+error: _ cannot be used for input operands
+   |
+   |
+LL |         asm!("{}", inout(reg) _);
+
+
+error: _ cannot be used for input operands
+   |
+   |
+LL |         asm!("{}", inlateout(reg) _);
+
+error: requires at least a template string argument
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:92:1
+   |
+   |
+LL | global_asm!();
+
+error: asm template must be a string literal
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:94:13
+   |
+   |
+LL | global_asm!(FOO);
+
+error: expected token: `,`
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:96:18
+   |
+   |
+LL | global_asm!("{}" FOO);
+   |                  ^^^ expected `,`
+error: expected operand, options, or additional template string
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:98:19
+   |
+   |
+LL | global_asm!("{}", FOO);
+   |                   ^^^ expected operand, options, or additional template string
+error: expected expression, found end of macro arguments
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:100:24
+   |
+   |
+LL | global_asm!("{}", const);
+
+
+error: expected one of `,`, `.`, `?`, or an operator, found `FOO`
+   |
+   |
+LL | global_asm!("{}", const(reg) FOO);
+   |                              ^^^ expected one of `,`, `.`, `?`, or an operator
+
+error: expected one of `)`, `att_syntax`, `may_unwind`, or `raw`, found `FOO`
+   |
+   |
+LL | global_asm!("", options(FOO));
+   |                         ^^^ expected one of `)`, `att_syntax`, `may_unwind`, or `raw`
+
+error: expected one of `)`, `att_syntax`, `may_unwind`, or `raw`, found `nomem`
+   |
+   |
+LL | global_asm!("", options(nomem FOO));
+   |                         ^^^^^ expected one of `)`, `att_syntax`, `may_unwind`, or `raw`
+
+error: expected one of `)`, `att_syntax`, `may_unwind`, or `raw`, found `nomem`
+   |
+   |
+LL | global_asm!("", options(nomem, FOO));
+   |                         ^^^^^ expected one of `)`, `att_syntax`, `may_unwind`, or `raw`
+error: arguments are not allowed after options
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:110:30
+   |
+   |
+LL | global_asm!("{}", options(), const FOO);
+   |                   ---------  ^^^^^^^^^ argument
+   |                   previous options
+
+error: expected string literal
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:112:29
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:112:29
+   |
+LL | global_asm!("", clobber_abi(FOO));
+
+
+error: expected one of `)` or `,`, found `FOO`
+   |
+   |
+LL | global_asm!("", clobber_abi("C" FOO));
+   |                                 ^^^ expected one of `)` or `,`
+error: expected string literal
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:116:34
+   |
+   |
+LL | global_asm!("", clobber_abi("C", FOO));
+
+error: arguments are not allowed after clobber_abi
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:118:37
+   |
+   |
+LL | global_asm!("{}", clobber_abi("C"), const FOO);
+   |                   ----------------  ^^^^^^^^^ argument
+   |                   clobber_abi
+
+
+error: `clobber_abi` cannot be used with `global_asm!`
+   |
+   |
+LL | global_asm!("{}", clobber_abi("C"), const FOO);
+
+error: clobber_abi is not allowed after options
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:121:28
+   |
+   |
+LL | global_asm!("", options(), clobber_abi("C"));
+   |                 ---------  ^^^^^^^^^^^^^^^^
+   |                 options
+
+error: clobber_abi is not allowed after options
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:123:30
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:123:30
+   |
+LL | global_asm!("{}", options(), clobber_abi("C"), const FOO);
+   |                   ---------  ^^^^^^^^^^^^^^^^
+   |                   options
+
+
+error: `clobber_abi` cannot be used with `global_asm!`
+   |
+   |
+LL | global_asm!("", clobber_abi("C"), clobber_abi("C"));
+
+error: duplicate argument named `a`
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:127:35
+   |
+   |
+LL | global_asm!("{a}", a = const FOO, a = const BAR);
+   |                    -------------  ^^^^^^^^^^^^^ duplicate argument
+   |                    previously here
+
+error: argument never used
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:127:35
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:127:35
+   |
+LL | global_asm!("{a}", a = const FOO, a = const BAR);
+   |                                   ^^^^^^^^^^^^^ argument never used
+   |
+   = help: if this argument is intentionally unused, consider using it in an asm comment: `"/* {1} */"`
+
+error: expected one of `clobber_abi`, `const`, `options`, or `sym`, found `""`
+   |
+   |
+LL | global_asm!("", options(), "");
+   |                            ^^ expected one of `clobber_abi`, `const`, `options`, or `sym`
+
+error: expected one of `clobber_abi`, `const`, `options`, or `sym`, found `"{}"`
+   |
+   |
+LL | global_asm!("{}", const FOO, "{}", const FOO);
+   |                              ^^^^ expected one of `clobber_abi`, `const`, `options`, or `sym`
+error: asm template must be a string literal
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:134:13
+   |
+   |
+LL | global_asm!(format!("{{{}}}", 0), const FOO);
+   |
+   = note: this error originates in the macro `format` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: asm template must be a string literal
+error: asm template must be a string literal
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:136:20
+   |
+LL | global_asm!("{1}", format!("{{{}}}", 0), const FOO, const BAR);
+   |
+   = note: this error originates in the macro `format` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0435]: attempt to use a non-constant value in a constant
+---
+   |
+LL |     let mut foo = 0;
+   |     ----------- help: consider using `const` instead of `let`: `const foo`
+...
+LL |         asm!("{}", clobber_abi("C"), const foo);
+   |                                            ^^^ non-constant value
+error[E0435]: attempt to use a non-constant value in a constant
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:57:31
+   |
+LL |     let mut foo = 0;
+LL |     let mut foo = 0;
+   |     ----------- help: consider using `const` instead of `let`: `const foo`
+...
+LL |         asm!("{a}", a = const foo, a = const bar);
+   |                               ^^^ non-constant value
+error[E0435]: attempt to use a non-constant value in a constant
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:57:46
+   |
+LL |     let mut bar = 0;
+LL |     let mut bar = 0;
+   |     ----------- help: consider using `const` instead of `let`: `const bar`
+...
+LL |         asm!("{a}", a = const foo, a = const bar);
+   |                                              ^^^ non-constant value
+error[E0435]: attempt to use a non-constant value in a constant
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:64:46
+   |
+LL |     let mut bar = 0;
+LL |     let mut bar = 0;
+   |     ----------- help: consider using `const` instead of `let`: `const bar`
+...
+LL |         asm!("{a}", in("eax") foo, a = const bar);
+   |                                              ^^^ non-constant value
+error[E0435]: attempt to use a non-constant value in a constant
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:67:46
+   |
+LL |     let mut bar = 0;
+LL |     let mut bar = 0;
+   |     ----------- help: consider using `const` instead of `let`: `const bar`
+...
+LL |         asm!("{a}", in("eax") foo, a = const bar);
+   |                                              ^^^ non-constant value
+error[E0435]: attempt to use a non-constant value in a constant
+  --> /checkout/src/test/ui/asm/x86_64/parse-error.rs:70:42
+   |
+LL |     let mut bar = 0;
+LL |     let mut bar = 0;
+   |     ----------- help: consider using `const` instead of `let`: `const bar`
+...
+LL |         asm!("{1}", in("eax") foo, const bar);
+   |                                          ^^^ non-constant value
+error: aborting due to 66 previous errors
+
+For more information about this error, try `rustc --explain E0435`.
+------------------------------------------
+------------------------------------------
+
+
+---- [ui] src/test/ui/fn/fn-recover-return-sign2.rs stdout ----
+diff of stderr:
+
+9    |
+10 LL | fn foo() => impl Fn() => bool {
+11    |                       ^^ expected one of `+`, `->`, `::`, `where`, or `{`
++    |
++    = help: closures are written `|a, b| a + b` and greater-than-or-equal is `>=`.
+13 error: aborting due to 2 previous errors
+14 
+
+
+
+The actual stderr differed from the expected stderr.
+Actual stderr saved to /checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/fn/fn-recover-return-sign2/fn-recover-return-sign2.stderr
+To update references, rerun the tests and pass the `--bless` flag
+To only update this specific test, also pass `--test-args fn/fn-recover-return-sign2.rs`
+
+error: 1 errors occurred comparing output.
+status: exit status: 1
+command: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "/checkout/src/test/ui/fn/fn-recover-return-sign2.rs" "-Zthreads=1" "--target=x86_64-unknown-linux-gnu" "--error-format" "json" "--json" "future-incompat" "-Ccodegen-units=1" "-Zui-testing" "-Zdeduplicate-diagnostics=no" "--emit" "metadata" "-C" "prefer-dynamic" "--out-dir" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/fn/fn-recover-return-sign2" "-A" "unused" "-Crpath" "-O" "-Cdebuginfo=0" "-Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/fn/fn-recover-return-sign2/auxiliary"
+stdout: none
+--- stderr -------------------------------
+error: return types are denoted using `->`
+   |
+   |
+LL | fn foo() => impl Fn() => bool {
+   |          ^^ help: use `->` instead
+
+error: expected one of `+`, `->`, `::`, `where`, or `{`, found `=>`
+   |
+   |
+LL | fn foo() => impl Fn() => bool {
+   |                       ^^ expected one of `+`, `->`, `::`, `where`, or `{`
+   |
+   = help: closures are written `|a, b| a + b` and greater-than-or-equal is `>=`.
+error: aborting due to 2 previous errors
+------------------------------------------
+
+
+
+---- [ui] src/test/ui/missing/missing-comma-in-match.rs stdout ----
+diff of stderr:
+
+5    |                   - help: missing a comma here to end this `match` arm
+6 LL |         &Some(2) => { 3 }
+7    |                  ^^ expected one of `,`, `.`, `?`, `}`, or an operator
++    |
++    = help: closures are written `|a, b| a + b` and greater-than-or-equal is `>=`.
+9 error: aborting due to previous error
+10 
+
+
+
+The actual stderr differed from the expected stderr.
+Actual stderr saved to /checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/missing/missing-comma-in-match/missing-comma-in-match.stderr
+To update references, rerun the tests and pass the `--bless` flag
+To only update this specific test, also pass `--test-args missing/missing-comma-in-match.rs`
+
+error: 1 errors occurred comparing output.
+status: exit status: 1
+command: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "/checkout/src/test/ui/missing/missing-comma-in-match.rs" "-Zthreads=1" "--target=x86_64-unknown-linux-gnu" "--error-format" "json" "--json" "future-incompat" "-Ccodegen-units=1" "-Zui-testing" "-Zdeduplicate-diagnostics=no" "--emit" "metadata" "-C" "prefer-dynamic" "--out-dir" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/missing/missing-comma-in-match" "-A" "unused" "-Crpath" "-O" "-Cdebuginfo=0" "-Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/missing/missing-comma-in-match/auxiliary"
+stdout: none
+--- stderr -------------------------------
+error: expected one of `,`, `.`, `?`, `}`, or an operator, found `=>`
+   |
+LL |         &None => 1
+LL |         &None => 1
+   |                   - help: missing a comma here to end this `match` arm
+LL |         &Some(2) => { 3 }
+   |                  ^^ expected one of `,`, `.`, `?`, `}`, or an operator
+   |
+   = help: closures are written `|a, b| a + b` and greater-than-or-equal is `>=`.
+error: aborting due to previous error
+------------------------------------------
+
+

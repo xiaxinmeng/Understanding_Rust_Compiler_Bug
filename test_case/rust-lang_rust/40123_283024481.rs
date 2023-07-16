@@ -1,0 +1,21 @@
+
+Foo { bar: 2, baz: 2 }, Foo { bar: 1, baz: 33649522 }
+Foo { bar: 0, baz: 2 }, Foo { bar: 1, baz: 33649522 }
+Foo { bar: 0, baz: 2 }, Foo { bar: 1, baz: 33649522 }
+Foo { bar: 1, baz: 2 }, Foo { bar: 1, baz: 33649522 }
+Foo { bar: 2, baz: 2 }, Foo { bar: 1, baz: 33649522 }
+Foo { bar: 0, baz: 2 }, Foo { bar: 1, baz: 33649522 }
+Foo { bar: 0, baz: 2 }, Foo { bar: 1, baz: 33649522 }
+Foo { bar: 1, baz: 2 }, Foo { bar: 1, baz: 33649522 }
+Foo { bar: 2, baz: 2 }, Foo { bar: 1, baz: 33649522 }
+Foo { bar: 0, baz: 2 }, Foo { bar: 1, baz: 33649522 }
+Foo { bar: 0, baz: 144115188075855872 }, Foo { bar: 1, baz: 33649522 }
+Foo { bar: 0, baz: 562949953421312 }, Foo { bar: 1, baz: 33649522 }
+Foo { bar: 0, baz: 0 }, Foo { bar: 1, baz: 33649522 }
+Foo { bar: 2, baz: 2 }, Foo { bar: 1, baz: 33649522 }
+Foo { bar: 0, baz: 144115188075855872 }, Foo { bar: 1, baz: 33649522 }
+Foo { bar: 0, baz: 562949953421312 }, Foo { bar: 1, baz: 33649522 }
+Foo { bar: 0, baz: 0 }, Foo { bar: 1, baz: 33649522 }
+Foo { bar: 2, baz: 2 }, Foo { bar: 1, baz: 33649522 }
+Foo { bar: 0, baz: 144115188075855872 }, Foo { bar: 1, baz: 33649522 }
+Foo { bar: 0, baz: 0 }, Foo { bar: 1, baz: 33649522 }

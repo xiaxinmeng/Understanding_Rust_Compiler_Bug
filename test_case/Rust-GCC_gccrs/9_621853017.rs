@@ -1,0 +1,1 @@
+clang-format -style=file --assume-filename=./contrib/clang-format

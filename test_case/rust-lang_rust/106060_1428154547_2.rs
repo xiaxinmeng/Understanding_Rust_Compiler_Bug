@@ -1,0 +1,2 @@
+\"]\n    #[rental(debug, clone, deref_suffix, covariant, map_suffix = \"T\")] pub\n    struct RentRef < H : 'static + StableDeref, T : 'static >\\
+n    { head : H, suffix : & 'head T, }\n    #[doc = r\" Stores an owner and a mutable reference in the same struct.\"]\n    #[doc = r\"\"] #[doc = r\" 

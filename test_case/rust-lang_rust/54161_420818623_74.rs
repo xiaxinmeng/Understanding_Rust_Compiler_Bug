@@ -1,0 +1,1 @@
+\n\nThe problem here is that we're attempting to take the type of X from MyTrait.\nUnfortunately, the type of X is not defined, because it's only made concrete in\nimplementations of the trait. A working version of this code might look like:\n\n

@@ -1,0 +1,1 @@
+\n"},"level":"error","spans":[{"file_name":"/checkout/src/test/ui/impl-trait/no-method-suggested-traits.rs","byte_start":1773,"byte_end":1780,"line_start":62,"line_end":62,"colutype which doesn't implement it:\n\nErroneous code example:\n\n

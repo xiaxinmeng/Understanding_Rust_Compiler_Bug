@@ -1,0 +1,2 @@
+\n\nOr by cloning `value` before borr; //[ast]~ ERROR cannot use `f.x` because it was mutably borrowed\n   |         ^^^ use of borrowed `f`\n\n"}
+[00:51:24] {"message":"cannot use `g.0` because it was mutably borrowed","code":{"code":"E0503","explanation":"\nA value was used after it was mutably borrowed.\n\nExample of erroneous code:\n\n

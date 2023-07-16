@@ -1,0 +1,1 @@
+\nuse self::something::Foo; // ok!\n\nmod something {\n    pub struct Foo;\n}\n# fn main() {}\n

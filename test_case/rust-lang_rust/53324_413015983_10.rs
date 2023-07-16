@@ -1,0 +1,1 @@
+compile_fail,E0411\n<Self>::foo; // error: use of `Self` outside of an impl, trait, or type\n             // definition\n

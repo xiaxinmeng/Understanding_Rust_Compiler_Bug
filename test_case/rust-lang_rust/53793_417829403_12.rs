@@ -1,0 +1,1 @@
+\n\nTo see why this is important, consider the case where `T` is itself a reference\n(e.g., `T = &str`). If we don't include the restriction that `T: 'a`, the\nfollowing code would be perfectly legal:\n\n

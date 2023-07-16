@@ -1,0 +1,1 @@
+\nfn foo<T>(x: T) {\n    type MaybeT<T> = Option<T>;\n}\n

@@ -1,0 +1,1 @@
+\n\nIf the value has to be borrowed, try limiting the lifetime of the borrow using\na scoped block:\n\n

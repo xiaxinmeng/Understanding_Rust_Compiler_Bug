@@ -1,0 +1,1 @@
+\n\nSuch cases can sometimes be resolved by iterating \"by value\" (or using\n`into_iter()`) to avoid borrowing:\n\n

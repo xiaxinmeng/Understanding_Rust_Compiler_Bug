@@ -1,0 +1,1 @@
+\nlet x: Vec<_> = \"hello\".chars().rev().collect();\n

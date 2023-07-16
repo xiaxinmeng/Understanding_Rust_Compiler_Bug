@@ -1,0 +1,6 @@
+
+x = new InferCtxt
+...
+specialization_graph_of() // this errors and increases the error count
+...
+x.is_tainted_by_errors() // returns `true`

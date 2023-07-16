@@ -1,0 +1,35 @@
+
+stack backtrace:
+   0: std::sys_common::backtrace::_print
+             at /rustc/a53f9df32fbb0b5f4382caaad8f1a46f36ea887c\/src\libstd\sys_common\backtrace.rs:71
+   1: std::panicking::default_hook::{{closure}}
+             at /rustc/a53f9df32fbb0b5f4382caaad8f1a46f36ea887c\/src\libstd\panicking.rs:197
+   2: std::panicking::default_hook
+             at /rustc/a53f9df32fbb0b5f4382caaad8f1a46f36ea887c\/src\libstd\panicking.rs:211
+   3: std::panicking::rust_panic_with_hook
+             at /rustc/a53f9df32fbb0b5f4382caaad8f1a46f36ea887c\/src\libstd\panicking.rs:474
+   4: std::panicking::continue_panic_fmt
+             at /rustc/a53f9df32fbb0b5f4382caaad8f1a46f36ea887c\/src\libstd\panicking.rs:381
+   5: std::panicking::rust_begin_panic
+             at /rustc/a53f9df32fbb0b5f4382caaad8f1a46f36ea887c\/src\libstd\panicking.rs:308
+   6: core::panicking::panic_fmt
+             at /rustc/a53f9df32fbb0b5f4382caaad8f1a46f36ea887c\/src\libcore\panicking.rs:85
+   7: core::panicking::panic_bounds_check
+             at /rustc/a53f9df32fbb0b5f4382caaad8f1a46f36ea887c\/src\libcore\panicking.rs:61
+   8: rand_test::main
+             at .\src\main.rs:5
+   9: std::rt::lang_start::{{closure}}<()>
+             at /rustc/a53f9df32fbb0b5f4382caaad8f1a46f36ea887c\src\libstd\rt.rs:64
+  10: std::panicking::try::do_call<closure,i32>
+             at /rustc/a53f9df32fbb0b5f4382caaad8f1a46f36ea887c\/src\libstd\panicking.rs:293
+  11: panic_unwind::__rust_maybe_catch_panic
+             at /rustc/a53f9df32fbb0b5f4382caaad8f1a46f36ea887c\/src\libpanic_unwind\lib.rs:85
+  12: std::rt::lang_start_internal
+             at /rustc/a53f9df32fbb0b5f4382caaad8f1a46f36ea887c\/src\libstd\rt.rs:48
+  13: std::rt::lang_start<()>
+             at /rustc/a53f9df32fbb0b5f4382caaad8f1a46f36ea887c\src\libstd\rt.rs:64
+  14: main
+  15: __scrt_common_main_seh
+             at f:\dd\vctools\crt\vcstartup\src\startup\exe_common.inl:253
+  16: BaseThreadInitThunk
+  17: RtlUserThreadStart

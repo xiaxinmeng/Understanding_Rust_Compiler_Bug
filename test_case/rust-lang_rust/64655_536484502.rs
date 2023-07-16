@@ -1,0 +1,34 @@
+
+% git log --author=bors --format=oneline 4a45578bc..f4a421ee3
+f4a421ee3cf1259f0750ac7fabd19da1d8551e4c Auto merge of #56783 - alexcrichton:pinentry-mode, r=Mark-Simulacrum
+7489ee9c6f92050a12a3a3097df0a7d3737d82ec Auto merge of #56461 - oli-obk:alloc_ids, r=RalfJung
+9fe5cb5342244a716055fa0162e795deabd4985c Auto merge of #56161 - RalfJung:vecdeque-stacked-borrows, r=SimonSapin
+ced7cc5c6523ff478599ed9188df37e91fd96c68 Auto merge of #56090 - nnethercote:filesearch, r=eddyb
+2f35a1016b0c0cc1132c19875dcd88d7b2825eae Auto merge of #55982 - alexcrichton:panic-extern-abort, r=zackmdavis
+0076f58d5333f24f709aa46b4bad760ffb51b9b0 Auto merge of #55992 - cramertj:pin-docs, r=alexcrichton
+dd8fc7dc06dea00afbd365468cf4804f68a3531c Auto merge of #56735 - Mark-Simulacrum:fix-sign, r=alexcrichton
+bd47d6825bf4090517549d33cfef10d3300b4a75 Auto merge of #56092 - alexcrichton:no-more-std-subodules, r=Mark-Simulacrum
+ae3833db3b0acd5d7f06cad333e61e21e39be295 Auto merge of #56039 - ljedrz:sorted_map_upgrades, r=matthewjasper
+a64cdec1b48b0d042e5f0e38634a7c438c104b85 Auto merge of #56010 - euclio:intra-doc-spans, r=QuietMisdreavus
+8375ab4ff43474c73e3572c2b226560f8cc8e695 Auto merge of #53497 - fukatani:test-debuginfo-function-call, r=tromey
+3499575282b5cda1e98220baae4f6c87e1863926 Auto merge of #56243 - RalfJung:test-deterministic, r=alexcrichton
+3a3121337122637fa11f0e5d42aec67551e8c125 Auto merge of #56703 - alexcrichton:fix-tools, r=Mark-Simulacrum
+4c0116e13ffd4b84e6691cd3b1f09269c4e76728 Auto merge of #56627 - alexcrichton:update-cargo, r=alexcrichton
+da1527cb06c7245f83ca51903ea2a27631820215 Auto merge of #56688 - GuillaumeGomez:rollup, r=GuillaumeGomez
+1137d29d5e551e377579c5a601fe7c444057d00c Auto merge of #56666 - Xanewok:rustfmt, r=kennytm
+3a75e80557a103497cffbcab395a2f37061a77ea Auto merge of #56157 - RalfJung:park, r=nagisa
+9567a1cf5993d46c00ee2f2b363f3eabe90b2a0e Auto merge of #56624 - RalfJung:miri, r=oli-obk
+286dc37d1bd30ecd419e889c7f3888575deac5fc Auto merge of #56369 - nnethercote:rm-Delimited, r=petrochenkov
+e2c329c72c3d764423c3909c7483cf2fd6659626 Auto merge of #56269 - nnethercote:_match-Matrix-SmallVec, r=simulacrum
+9cb38a84e7d593106946cae8e25d9cdbf24751ee Auto merge of #56463 - ljedrz:slice_concat_join, r=nikic
+b755501043d5b27b39f94bcadd57c8d5dedfd6ba Auto merge of #56444 - petrochenkov:uifull, r=davidtwco
+850fc6a4791b3b0ab668f9fb67c35dddd838b01f Auto merge of #56644 - jens1o:patch-1, r=pietroalbini
+ea007c6b10e728de9dfc1fe78b8e0aed4f08f1ab Auto merge of #56631 - matthiaskrgr:clippy, r=nikic
+b7da2c6e12a6b2a2343e2f1e66fe4f6a1ad55463 Auto merge of #56630 - sinkuu:core_iter, r=kennytm
+d7a9d961c349bb7826ece463e51f10667a9fb851 Auto merge of #56615 - integer32llc:update-book, r=GuillaumeGomez
+8db23425a345381ec5f8d40e582c119a06b8cb3d Auto merge of #56616 - estebank:issue-56539, r=davidtwco
+bdef56a3245460d1fb28c3b4d8ac4b17373c66ce Auto merge of #56632 - Eijebong:synup, r=Mark-Simulacrum
+9772d02774534aa4ccd0b328364403d5b6cda1d0 Auto merge of #56623 - Centril:rollup, r=Centril
+1ccb5b219d50b1bc96dbb85e82a8473f16422582 Auto merge of #56583 - RalfJung:vergen, r=oli-obk
+059e6a6f57f4e80d527a3cd8a8afe7f51f01af8e Auto merge of #56578 - alexreg:cosmetic-1, r=alexreg
+0a7798079608b4ff014471ae64b6c8201aa59cdf Auto merge of #56258 - euclio:fs-read-write, r=euclio

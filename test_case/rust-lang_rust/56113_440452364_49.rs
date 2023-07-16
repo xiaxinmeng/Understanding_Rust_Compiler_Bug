@@ -1,0 +1,1 @@
+\ block.\n    }\n    // The block has ended and with it the borrow.\n    // You can now use `value` again.\n    let _sum = value + 1;\n}\n

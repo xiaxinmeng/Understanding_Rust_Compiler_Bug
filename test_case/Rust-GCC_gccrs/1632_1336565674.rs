@@ -1,0 +1,19 @@
+
+ Native configuration is x86_64-apple-darwin21.6.0
+
+		=== rust tests ===
+
+Schedule of variations:
+    unix
+
+Running target unix
+Using /usr/local/share/dejagnu/baseboards/unix.exp as board description file for target.
+Using /usr/local/share/dejagnu/config/unix.exp as generic interface file for target.
+Using /Users/runner/work/gccrs/gccrs/gcc/testsuite/config/default.exp as tool-and-target-specific interface file.
+Running /Users/runner/work/gccrs/gccrs/gcc/testsuite/rust/compile/compile.exp ...
+Running /Users/runner/work/gccrs/gccrs/gcc/testsuite/rust/compile/torture/compile.exp ...
+Running /Users/runner/work/gccrs/gccrs/gcc/testsuite/rust/compile/xfail/xfail.exp ...
+Running /Users/runner/work/gccrs/gccrs/gcc/testsuite/rust/debug/debug.exp ...
+FAIL: rust/debug/chartype.rs scan-assembler 0x10[ \t][^\n\r]* DW_AT_encoding
+Running /Users/runner/work/gccrs/gccrs/gcc/testsuite/rust/execute/torture/execute.exp ...
+Running /Users/runner/work/gccrs/gccrs/gcc/testsuite/rust/link/link.exp ...

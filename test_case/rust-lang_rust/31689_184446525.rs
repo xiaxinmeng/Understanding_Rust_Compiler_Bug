@@ -1,0 +1,2 @@
+
+$ make check NO_REBUILD=1 NO_MKFILE_DEPS=1

@@ -1,0 +1,3 @@
+
+configure:3474:  /tmp/build/.build/s390x-ibm-linux-gnu/build/build-cc-gcc-core-pass-2/./gcc/xgcc -B/tmp/build/.build/s390x-ibm-linux-gnu/build/build-cc-gcc-core-pass-2/./gcc/ -B/tmp/build/.build/s390x-ibm-linux-gnu/buildtools/s390x-ibm-linux-gnu/bin/ -B/tmp/build/.build/s390x-ibm-linux-gnu/buildtools/s390x-ibm-linux-gnu/lib/ -isystem /tmp/build/.build/s390x-ibm-linux-gnu/buildtools/s390x-ibm-linux-gnu/include -isystem /tmp/build/.build/s390x-ibm-linux-gnu/buildtools/s390x-ibm-linux-gnu/sys-include    -o conftest -O2 -g -I/tmp/build/.build/s390x-ibm-linux-gnu/buildtools/include   -g -Os   conftest.c  >&5
+xgcc: error trying to exec 'cc1': execvp: No such file or directory

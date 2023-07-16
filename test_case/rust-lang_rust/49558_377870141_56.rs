@@ -1,0 +1,1 @@
+\nextern crate core; // Required to use the `core` crate\n\nuse core::any;\n# fn main() {}\n

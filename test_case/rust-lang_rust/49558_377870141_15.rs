@@ -1,0 +1,1 @@
+compile_fail,E0466\n#[macro_use(a_macro(another_macro))] // error: invalid import declaration\nextern crate core as some_crate;\n\n#[macro_use(i_want = \"some_macros\")] // error: invalid import declaration\nextern crate core as another_crate;\n

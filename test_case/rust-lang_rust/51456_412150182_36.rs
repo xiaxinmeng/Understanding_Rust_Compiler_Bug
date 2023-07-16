@@ -1,0 +1,1 @@
+compile_fail,E0412\nuse std::fs::File;\n\nmod foo {\n    fn some_function(f: File) {}\n}\n

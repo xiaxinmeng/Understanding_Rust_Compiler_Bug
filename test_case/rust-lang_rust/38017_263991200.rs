@@ -1,0 +1,15 @@
+
+./compare.py ~/src/rust/build-before-hashmap/x86_64-unknown-linux-gnu/stage1/bin/rustc ~/src/rust/build/x86_64-unknown-linux-gnu/stage1/bin/rustc
+futures-rs-test  5.152s vs  5.029s --> 1.024x faster (variance: 1.006x, 1.021x)
+helloworld       0.251s vs  0.279s --> 0.899x faster (variance: 1.645x, 1.277x)
+html5ever-2016-  6.668s vs  6.813s --> 0.979x faster (variance: 1.029x, 1.009x)
+hyper.0.5.0      5.995s vs  5.935s --> 1.010x faster (variance: 1.015x, 1.034x)
+inflate-0.1.0    4.583s vs  4.560s --> 1.005x faster (variance: 1.032x, 1.008x)
+issue-32062-equ  0.341s vs  0.373s --> 0.913x faster (variance: 1.182x, 1.242x)
+issue-32278-big  2.052s vs  2.076s --> 0.988x faster (variance: 1.054x, 1.033x)
+jld-day15-parse  1.654s vs  1.624s --> 1.018x faster (variance: 1.098x, 1.059x)
+piston-image-0. 13.449s vs 13.717s --> 0.981x faster (variance: 1.010x, 1.024x)
+regex-0.1.80    10.920s vs 10.854s --> 1.006x faster (variance: 1.016x, 1.009x)
+regex.0.1.30     2.928s vs  2.862s --> 1.023x faster (variance: 1.014x, 1.020x)
+rust-encoding-0  2.359s vs  2.360s --> 1.000x faster (variance: 1.011x, 1.039x)
+syntex-0.42.2    0.069s vs  0.077s --> 0.900x faster (variance: 1.312x, 1.156x)

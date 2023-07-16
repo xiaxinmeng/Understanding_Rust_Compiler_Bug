@@ -1,0 +1,1 @@
+\n\nTo fix this error, ensure the match arm kind is the same as the expression\nmatched.\n\nFixed example:\n\n

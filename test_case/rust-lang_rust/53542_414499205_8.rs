@@ -1,0 +1,1 @@
+\n\nSee [RFC 1522] for more details.\n\n[RFC 1522]: https://github.com/rust-lang/rfcs/blob/master/text/1522-conservative-impl-trait.md\n"},"level":"error","spans":[{"file_name":"/checkout/src/test/ui/impl-trait/where-allowed.rs","byte_start":1550,"byte_end":1560,"line_start":44   }\n}\n

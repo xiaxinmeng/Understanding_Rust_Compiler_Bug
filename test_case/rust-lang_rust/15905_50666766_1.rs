@@ -1,0 +1,65 @@
+
+task 'rustc' failed at 'index out of bounds: the len is 0 but the index is 1', /home/rustbuild/src/rust-buildbot/slave/nightly-linux/build/src/librustc/middle/subst.rs:420
+
+stack backtrace:
+   1:     0x7ff0d4304350 - rt::backtrace::imp::write::ha4acd61ef18a62aeDUp
+   2:     0x7ff0d4307640 - failure::on_fail::h147f48194e5619a2Afq
+   3:     0x7ff0d83a4440 - unwind::begin_unwind_inner::h60a9644c6207f9d1iTd
+   4:     0x7ff0d83a40e0 - unwind::begin_unwind_fmt::hbf6376b6994c2990rQd
+   5:     0x7ff0d83a40a0 - rust_begin_unwind
+   6:     0x7ff0d83e93f0 - failure::begin_unwind::h8aa4b293b7062f1bVWj
+   7:     0x7ff0d83ecd70 - failure::fail_bounds_check::h7f693f45d174b9107Uj
+   8:     0x7ff0d8e130b0 - middle::trans::common::find_vtable::hd49bb8bbb24cd20e223
+   9:     0x7ff0d8db6d20 - middle::trans::meth::trans_method_callee::h13fac7d98a0aa817Hch
+  10:     0x7ff0d8de0130 - middle::trans::callee::trans_method_call::closure.$x22closure$x22$LP$112159$RP$
+  11:     0x7ff0d8db5090 - middle::trans::callee::trans_call_inner::ha2a49241f2d4197b6zZ
+  12:     0x7ff0d8ddfa30 - middle::trans::callee::trans_method_call::h79aeb2e43c302a99mvZ
+  13:     0x7ff0d8dee4b0 - middle::trans::expr::trans_rvalue_dps_unadjusted::h45f9ea70500363ffVm1
+  14:     0x7ff0d8ded6c0 - middle::trans::expr::trans_unadjusted::h8e92248b02e688feVP0
+  15:     0x7ff0d8dacc30 - middle::trans::expr::trans::h9131eec42a5ec2d5tw0
+  16:     0x7ff0d8de6090 - middle::trans::callee::trans_args::h0beaffe0f9f6a5a97ZZ
+  17:     0x7ff0d8db5090 - middle::trans::callee::trans_call_inner::ha2a49241f2d4197b6zZ
+  18:     0x7ff0d8dded60 - middle::trans::callee::trans_call::h8f463c254e0698bdeuZ
+  19:     0x7ff0d8dee4b0 - middle::trans::expr::trans_rvalue_dps_unadjusted::h45f9ea70500363ffVm1
+  20:     0x7ff0d8dab3e0 - middle::trans::expr::trans_into::h0c47537ec0cfc708ys0
+  21:     0x7ff0d8e020f0 - middle::trans::expr::trans_adt::h087e5bbda34e7217wX1
+  22:     0x7ff0d8e05cd0 - middle::trans::expr::trans_rec_or_struct::closure.$x22closure$x22$LP$112427$RP$
+  23:     0x7ff0d8dee4b0 - middle::trans::expr::trans_rvalue_dps_unadjusted::h45f9ea70500363ffVm1
+  24:     0x7ff0d8dab3e0 - middle::trans::expr::trans_into::h0c47537ec0cfc708ys0
+  25:     0x7ff0d8dab9e0 - middle::trans::controlflow::trans_block::h5bb191e037b70d18OBW
+  26:     0x7ff0d8e5c430 - middle::trans::base::trans_closure::hc88ea69250b3efe49Gb
+  27:     0x7ff0d8d9f820 - middle::trans::base::trans_fn::h80584f1466eb039bfTb
+  28:     0x7ff0d8d9fe50 - middle::trans::monomorphize::monomorphic_fn::h61dcafaef40b50d8xZV
+  29:     0x7ff0d8dd47f0 - middle::trans::callee::trans_fn_ref_with_vtables::h78751fb3aefc06f7R8Y
+  30:     0x7ff0d8dd1e50 - middle::trans::callee::trans_fn_ref::h75cc428eb61c9be0wVY
+  31:     0x7ff0d8db6d20 - middle::trans::meth::trans_method_callee::h13fac7d98a0aa817Hch
+  32:     0x7ff0d8e0b2b0 - middle::trans::expr::trans_overloaded_call::closure.$x22closure$x22$LP$112492$RP$
+  33:     0x7ff0d8db5090 - middle::trans::callee::trans_call_inner::ha2a49241f2d4197b6zZ
+  34:     0x7ff0d8dee4b0 - middle::trans::expr::trans_rvalue_dps_unadjusted::h45f9ea70500363ffVm1
+  35:     0x7ff0d8dab3e0 - middle::trans::expr::trans_into::h0c47537ec0cfc708ys0
+  36:     0x7ff0d8e88460 - middle::trans::_match::store_local::closure.$x22closure$x22$LP$115578$RP$
+  37:     0x7ff0d8e88100 - middle::trans::_match::mk_binding_alloca::h8111926511742816842
+  38:     0x7ff0d8e567e0 - middle::trans::_match::store_local::hc16c4829486bf931D3e
+  39:     0x7ff0d8daa930 - middle::trans::base::init_local::he0e6f8d8a560aba7hXa
+  40:     0x7ff0d8da9f10 - middle::trans::controlflow::trans_stmt::h8c8ab5f00528c12dywW
+  41:     0x7ff0d8dab9e0 - middle::trans::controlflow::trans_block::h5bb191e037b70d18OBW
+  42:     0x7ff0d8e5c430 - middle::trans::base::trans_closure::hc88ea69250b3efe49Gb
+  43:     0x7ff0d8d9f820 - middle::trans::base::trans_fn::h80584f1466eb039bfTb
+  44:     0x7ff0d8d9a7f0 - middle::trans::base::trans_item::h1a8eb49262b769baKac
+  45:     0x7ff0d8e6c010 - middle::trans::base::trans_crate::h6d9aacd380ee9d42H3c
+  46:     0x7ff0d9299210 - driver::driver::phase_4_translate_to_llvm::h83f7bbcd209edddddiu
+  47:     0x7ff0d928f950 - driver::driver::compile_input::h67e0103484fb9c9dTUt
+  48:     0x7ff0d933e290 - driver::run_compiler::ha05dba9ca20aca52iZw
+  49:     0x7ff0d933e1a0 - driver::main_args::closure.$x22closure$x22$LP$134272$RP$
+  50:     0x7ff0d9351060 - task::TaskBuilder<S>::try_future::closure.$x22closure$x22$LP$135416$RP$
+  51:     0x7ff0d9350e40 - task::TaskBuilder<S>::spawn_internal::closure.$x22closure$x22$LP$135393$RP$
+  52:     0x7ff0d86f8590 - task::spawn_opts::closure.$x22closure$x22$LP$8187$RP$
+  53:     0x7ff0d83fcc30 - rust_try
+  54:     0x7ff0d83a1750 - unwind::try::h2d0dc9479d15367bnHd
+  55:     0x7ff0d83a14b0 - task::Task::run::h854afb19e4abdac4dSc
+  56:     0x7ff0d86f8380 - task::spawn_opts::closure.$x22closure$x22$LP$8133$RP$
+  57:     0x7ff0d83a3510 - thread::thread_start::h2a1fd0502c67d799hfd
+  58:     0x7ff0d36880c0 - start_thread
+  59:     0x7ff0d80732d9 - __clone
+  60:                0x0 - <unknown>
+

@@ -1,0 +1,3 @@
+
+[target.arm-linux-androideabi]
+linker = "arm-linux-androideabi-gcc"

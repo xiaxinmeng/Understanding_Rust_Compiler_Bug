@@ -1,0 +1,7 @@
+\n"},"level":"error","spans":[{"file_name":"/checkout/src/test/ui/feature-gate-doc_alias.rs","byte_start":467,"byte_end":488,"line_start":11,"line_end":11,"column_start":1,"column_end":22,"is_primary":true,"text":[{"text":"#[doc(alias = \"foo\")] //~ ERROR: #[doc(alias = \"...\")] is experimental","highlight_start":1,"highlight_end":22}],"label":null,"suggested_replacement":null,"expansion":null}],"children":[{"message":"add #![feature(doc_alias)] to the crate attributes to enable","code":null,"level":"help","spans":[],"children":[],"rendered":null}],"rendered":"error[E0658]: #[doc(alias = \"...\")] is experimental (see issue #50146)\n  --> /checkout/src/test/ui/feature-gate-doc_alias.rs:11:1\n   |\nLL | #[doc(alias = \"foo\")] //~ ERROR: #[doc(alias = \"...\")] is experimental\n   | ^^^^^^^^^^^^^^^^^^^^^\n   |\n   = help: add #![feature(doc_alias)] to the crate attributes to enable\n\n"}
+[00:43:34] {"message":"aborting due to previous error","code":null,"level":"error","spans":[],"children":[],"rendered":"error: aborting due to previous error\n\n"}
+[00:43:34] {"message":"For more information about this error, try `rustc --explain E0658`.","code":null,"level":"","spans":[],"children":[],"rendered":"For more information about this error, try `rustc --explain E0658`.\n"}
+[00:43:34] ------------------------------------------
+[00:43:34] 
+[00:43:34] thread '[ui] ui/feature-gate-doc_alias.rs' panicked at 'explicit panic', tools/compiletest/src/runtest.rs:2938:9
+[00:43:34] note: Run with `RUST_BACKTRACE=1` for a backtrace.

@@ -1,0 +1,25 @@
+
+- rdrand 0.4.0
+    - rand 0.4.6
+        - phf_generator 0.7.22
+            - phf_codegen 0.7.22
+                - markup5ever 0.7.5
+                    - html5ever 0.22.5
+                        - ammonia 1.2.0
+                            - mdbook 0.1.7
+                            - mdbook 0.2.3
+            - string_cache_codegen 0.4.2
+                - markup5ever 0.7.5
+                    - [...]
+                - string_cache 0.7.3
+                    - markup5ever 0.7.5
+                        - [...]
+    - rand_os 0.1.3
+        - redox_users 0.3.0
+            - dirs 1.0.5
+                - rustfmt-nightly 1.2.2
+- fuchsia-cprng 0.1.1
+    - rand 0.4.6
+        - [...]
+    - rand_os 0.1.3
+        - [...]

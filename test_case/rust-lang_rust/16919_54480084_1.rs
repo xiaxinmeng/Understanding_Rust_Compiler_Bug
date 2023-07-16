@@ -1,0 +1,57 @@
+
+[root@ip-10-228-0-60 ~]# gdb -h
+This is the GNU debugger.  Usage:
+
+    gdb [options] [executable-file [core-file or process-id]]
+    gdb [options] --args executable-file [inferior-arguments ...]
+    gdb [options] [--python|-P] script-file [script-arguments ...]
+
+Options:
+
+  --args             Arguments after executable-file are passed to inferior
+  -b BAUDRATE        Set serial port baud rate used for remote debugging.
+  --batch            Exit after processing options.
+  --batch-silent     As for --batch, but suppress all gdb stdout output.
+  --return-child-result
+                     GDB exit code will be the child's exit code.
+  --cd=DIR           Change current directory to DIR.
+  --command=FILE, -x Execute GDB commands from FILE.
+  --eval-command=COMMAND, -ex
+                     Execute a single GDB command.
+                     May be used multiple times and in conjunction
+                     with --command.
+  --init-command=FILE, -ix Like -x but execute it before loading inferior.
+  --init-eval-command=COMMAND, -iex Like -ex but before loading inferior.
+  --core=COREFILE    Analyze the core dump COREFILE.
+  --pid=PID          Attach to running process PID.
+  --dbx              DBX compatibility mode.
+  --directory=DIR    Search for source files in DIR.
+  --epoch            Output information used by epoch emacs-GDB interface.
+  --exec=EXECFILE    Use EXECFILE as the executable.
+  --fullname         Output information used by emacs-GDB interface.
+  --help             Print this message.
+  --interpreter=INTERP
+                     Select a specific interpreter / user interface
+  -l TIMEOUT         Set timeout in seconds for remote debugging.
+  --nw           Do not use a window interface.
+  --nx               Do not read .gdbinit file.
+  --python, -P       Following argument is Python script file; remaining
+                     arguments are passed to script.
+  --quiet            Do not print version number on startup.
+  --readnow          Fully read symbol files on first access.
+  --readnever        Do not read symbol files.
+  --se=FILE          Use FILE as symbol file and executable file.
+  --symbols=SYMFILE  Read symbols from SYMFILE.
+  --tty=TTY          Use TTY for input/output by the program being debugged.
+  --tui              Use a terminal user interface.
+  --version          Print version information and then exit.
+  -w                 Use a window interface.
+  --write            Set writing into executable and core files.
+  --xdb              XDB compatibility mode.
+
+At startup, GDB reads the following init files and executes their commands:
+
+For more information, type "help" from within GDB, or consult the
+GDB manual (available as on-line info or a printed manual).
+Report bugs to "<http://www.gnu.org/software/gdb/bugs/>".
+

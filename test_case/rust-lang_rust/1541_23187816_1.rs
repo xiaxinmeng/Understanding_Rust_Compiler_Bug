@@ -1,0 +1,6 @@
+ rust
+// code from example above...
+
+fn xxx() -> aaa::bbb::CCC {
+   ...
+}

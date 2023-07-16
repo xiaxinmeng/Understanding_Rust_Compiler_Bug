@@ -1,0 +1,1 @@
+\ntrait Trait {\n    fn foo(&self) -> Self where Self: Sized;\n    // more functions\n}\n

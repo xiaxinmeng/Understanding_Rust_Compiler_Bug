@@ -1,0 +1,2 @@
+rust
+std::process::abort();

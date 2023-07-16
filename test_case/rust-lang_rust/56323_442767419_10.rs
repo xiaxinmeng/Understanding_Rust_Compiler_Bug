@@ -1,0 +1,20 @@
+\n"},"level":"error","spans":[{"file_name":"/checkout/src/test/run-pass-fulldeps/issue-11881.rs","byte_start":644,"byte_end":659,"line_start":18,"line_end":18,"column_start":5,"column_end":20,"is_primary":true,"text":[{"text":"use rustc_ezilaires;","highlight_start":5,"highlight_end":20}],"label":"`rustc_ezilaires` reimported here","suggested_replacement":null,"suggestion_applicability":null,"expansion":null},{"file_name":"/checkout/src/test/run-pass-fulldeps/issue-11881.rs","byte_start":570,"byte_end":599,"line_start":17,"line_end":17,"column_start":1,"column_end":30,"is_primary":false,"text":[{"text":"extern crate rustc_ezilaires; use rustc_ezilaires as rustc_serialize;","highlight_start":1,"highlight_end":30}],"label":"previous import of the extern crate `rustc_ezilaires` here","suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"`rustc_ezilaires` must be defined only once in the type namespace of this module","code":null,"level":"note","spans":[],"children":[],"rendered":null},{"message":"you can use `as` to change the binding name of the import","code":null,"level":"help","spans":[{"file_name":"/checkout/src/test/run-pass-fulldeps/issue-11881.rs","byte_start":644,"byte_end":659,"line_start":18,"line_end":18,"column_start":5,"column_end":20,"is_primary":true,"text":[{"text":"use rustc_ezilaires;","highlight_start":5,"highlight_end":20}],"label":null,"suggested_replacement":"rustc_ezilaires as other_rustc_ezilaires","suggestion_applicability":"MaybeIncorrect","expansion":null}],"children":[],"rendered":null}],"rendered":"error[E0254]: the name `rustc_ezilaires` is defined multiple times\n  --> /checkout/src/test/run-pass-fulldeps/issue-11881.rs:18:5\n   |\nLL | extern crate rustc_ezilaires; use rustc_ezilaires as rustc_serialize;\n   | ----------------------------- previous import of the extern crate `rustc_ezilaires` here\nLL | use rustc_ezilaires;\n   |     ^^^^^^^^^^^^^^^ `rustc_ezilaires` reimported here\n   |\n   = note: `rustc_ezilaires` must be defined only once in the type namespace of this module\nhelp: you can use `as` to change the binding name of the import\n   |\nLL | use rustc_ezilaires as other_rustc_ezilaires;\n   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n"}
+[01:14:20] {"message":"aborting due to previous error","code":null,"level":"error","spans":[],"children":[],"rendered":"error: aborting due to previous error\n\n"}
+[01:14:20] {"message":"For more information about this error, try `rustc --explain E0254`.","code":null,"level":"","spans":[],"children":[],"rendered":"For more information about this error, try `rustc --explain E0254`.\n"}
+[01:14:20] ------------------------------------------
+[01:14:20] 
+[01:14:20] thread '[run-pass] run-pass-fulldeps/issue-11881.rs' panicked at 'explicit panic', src/tools/compiletest/src/runtest.rs:3282:9
+[01:14:20] 
+[01:14:20] 
+[01:14:20] ---- [run-pass] run-pass-fulldeps/issue-14021.rs stdout ----
+[01:14:20] 
+[01:14:20] error: test compilation failed although it shouldn't!
+[01:14:20] status: exit code: 1
+[01:14:20] command: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "/checkout/src/test/run-pass-fulldeps/issue-14021.rs" "--target=x86_64-unknown-linux-gnu" "--error-format" "json" "-Zui-testing" "-C" "prefer-dynamic" "-o" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/run-pass-fulldeps/issue-14021/a" "-Crpath" "-O" "-Zunstable-options" "-Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/run-pass-fulldeps/issue-14021/auxiliary"
+[01:14:20] ------------------------------------------
+[01:14:20] 
+[01:14:20] ------------------------------------------
+[01:14:20] stderr:
+[01:14:20] stderr:
+[01:14:20] ------------------------------------------
+[01:14:20] {"message":"the name `rustc_ezilaires` is defined multiple times","code":{"code":"E0259","explanation":"\nThe name chosen for an external crate conflicts with another external crate\nthat has been imported into the current module.\n\nErroneous code example:\n\n

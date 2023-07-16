@@ -1,0 +1,3 @@
+
+*self_spec:                                                                                                                                                                                                                                            
++ %{!shared:%{!r:%{!fPIE:%{!pie:-fno-PIE -no-pie}}}}

@@ -1,0 +1,4 @@
+
+trait TypeEquals {
+    type Other;
+}

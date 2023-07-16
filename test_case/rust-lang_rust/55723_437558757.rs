@@ -1,0 +1,2 @@
+rust
+/// （sum - arr[i]）

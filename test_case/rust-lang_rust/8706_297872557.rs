@@ -1,0 +1,4 @@
+rust
+fn main() {
+    let s = ~"ZͨA͑ͦL̄͑ĜͨOͥ͛!̏"; while true { break; }
+}

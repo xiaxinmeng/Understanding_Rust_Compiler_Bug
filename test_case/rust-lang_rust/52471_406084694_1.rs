@@ -1,0 +1,1 @@
+\n\nThe first element was moved out of the array, but this is not\npossible because `NonCopy` does not implement the `Copy` trait.\n\nConsider borrowing the element instead of moving it:\n\n

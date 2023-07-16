@@ -1,0 +1,1 @@
+\n\nNote that empty arrays `[T; 0]` have the same alignment requirement as the\nelement type `T`. Also note that the e above, `Wrapper` would\nhave to be aligned to 32 bytes even though `f32` has a smaller alignment\nrequirement.\n\nConsider removing the over-aligned zero-sized field:\n\n

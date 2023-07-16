@@ -1,0 +1,1 @@
+compile_fail,E0223\ntrait MyTrait {type X; }\n\nfn main() {\n    let foo: MyTrait::X;\n}\n

@@ -1,0 +1,1 @@
+\nlet x = &[1_usize, 2] as &[usize]; // ok!\n

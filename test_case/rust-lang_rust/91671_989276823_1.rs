@@ -1,0 +1,2 @@
+
+     Running `rustdoc --edition=2021 --crate-type lib --crate-name a64_doctestfail --test /Users/pnkfelix/Dev/Rust/a64_doctestfail/src/lib.rs -L dependency=/Users/pnkfelix/Dev/Rust/a64_doctestfail/target/release/deps -L dependency=/Users/pnkfelix/Dev/Rust/a64_doctestfail/target/release/deps --extern a64_doctestfail=/Users/pnkfelix/Dev/Rust/a64_doctestfail/target/release/deps/liba64_doctestfail-92a7e819a735c31f.rlib --extern tokio=/Users/pnkfelix/Dev/Rust/a64_doctestfail/target/release/deps/libtokio-72abe3f6a7246c4a.rlib -C lto --error-format human`

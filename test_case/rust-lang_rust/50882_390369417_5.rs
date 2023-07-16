@@ -1,0 +1,1 @@
+compile_fail,E0243\nstruct Foo<T> { x: T }\n\nstruct Bar { x: Foo }\n

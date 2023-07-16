@@ -1,0 +1,1 @@
+target_feature(enable = "avx")

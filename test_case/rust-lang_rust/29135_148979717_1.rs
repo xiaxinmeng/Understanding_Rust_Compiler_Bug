@@ -1,0 +1,17 @@
+
+doug@Tio /c/projects/rust-all/rust-extern/target/debug
+$ nm extern.dll | grep rs_
+627c16e0 t __ZN10rs_trigger10__rust_abiE
+628950a4 r __ZN10rs_trigger15__STATIC_FMTSTR20hdfbe560ac65b650e4baE
+62895098 r __ZN10rs_trigger15__STATIC_FMTSTR20hdfbe560ac65b650epbaE
+628950ac r __ZN10rs_trigger15__STATIC_FMTSTR20hdfbe560ac65b650eucaE
+62895090 r __ZN10rs_trigger15__STATIC_FMTSTR20hdfbe560ac65b650eVaaE
+62895a68 R __ZN11dynamic_lib2dl19check_for_errors_in15__STATIC_FMTSTR20h94187edf
+1ce43451q4dE
+627c19e0 t __ZN11rs_register10__rust_abiE
+6289516c r __ZN11rs_register15__STATIC_FMTSTR20hdfbe560ac65b650e6caE
+627c98e0 T __ZN3env7vars_os20h2fe647ea53eb2950b7dE
+627c1580 t __ZN6rs_str10__rust_abiE
+627c19c0 T _rs_register@4
+627c1570 T _rs_str@0
+627c16c0 T _rs_trigger@4

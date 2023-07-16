@@ -1,0 +1,13 @@
+\n"},"level":"error","spans":[{"file_name":"/checkout/src/test/ui/error-codes/E0088.rs","byte_start":527,"byte_end":539,"line_start":15,"line_end":15,"column_start":5,"column_end":17,"is_primary":false,"text":[{"text":"    f::<'static>(); //~ ERROR E0088","highlight_start":5,"highlight_end":17}],"label":"expected 0 lifetime parameters","suggested_replacement":null,"suggestion_applicability":null,"expansion":null},{"file_name":"/checkout/src/test/ui/error-codes/E0088.rs","byte_start":531,"byte_end":538,"line_start":15,"line_end":15,"column_start":9,"column_end":16,"is_primary":true,"text":[{"text":"    f::<'static>(); //~ ERROR E0088","highlight_start":9,"highlight_end":16}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[],"rendered":"error[E0088]: too many lifetime parameters provided: expected at most 0 lifetime parameters, found 1 lifetime parameter\n  --> /checkout/src/test/ui/error-codes/E0088.rs:15:9\n   |\nLL |     f::<'static>(); //~ ERROR E0088\n   |     ----^^^^^^^- expected 0 lifetime parameters\n\n"}
+[00:47:21] {"message":"too many lifetime parameters provided: expected at most 1 lifetime parameter, found 2 lifetimu/stage2/lib" "--run-lib-path" "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/lib/rustlib/x86_64-unknown-linux-gnu/lib" "--rustc-path" "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "--src-base" "/checkout/src/test/ui" "--build-base" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui" "--stage-id" "stage2-x86_64-unknown-linux-gnu" "--mode" "ui" "--target" "x86_64-unknown-linux-gnu" "--host" "x86_64-unknown-linux-gnu" "--llvm-filecheck" "/usr/lib/llvm-3.9/bin/FileCheck" "--host-rustcflags" "-Crpath -O -Zunstable-options " "--target-rustcflags" "-Crpath -O -Zunstable-options  -Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "--docck-python" "/usr/bin/python2.7" "--lldb-python" "/usr/bin/python2.7" "--gdb" "/usr/bin/gdb" "--quiet" "--llvm-version" "3.9.1\n" "--system-llvm" "--cc" "" "--cxx" "" "--cflags" "" "--llvm-components" "" "--llvm-cxxflags" "" "--adb-path" "adb" "--adb-test-dir" "/data/tmp/work" "--android-cross-path" "" "--color" "always"
+[00:47:21] 
+[00:47:21] 
+[00:47:21] failed to run: /checkout/obj/build/bootstrap/debug/bootstrap test
+[00:47:21] Build completed unsuccessfully in 0:02:34
+[00:47:21] Build completed unsuccessfully in 0:02:34
+[00:47:21] Makefile:58: recipe for target 'check' failed
+[00:47:21] make: *** [check] Error 1
+
+The command "stamp sh -x -c "$RUN_SCRIPT"" exited with 2.
+travis_time:start:2ff8d964
+$ date && (curl -fs --head https://google.com | grep ^Date: | sed 's/Date: //g' || true)

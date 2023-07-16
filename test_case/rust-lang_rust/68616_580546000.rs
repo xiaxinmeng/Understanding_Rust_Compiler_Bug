@@ -1,0 +1,48 @@
+
+args/align_offset_v0/(8, 24,      16) time:   [17.704 ns 17.714 ns 17.726 ns]
+args/align_offset_v1/(8, 24,      16) time:   [9.4928 ns 9.5079 ns 9.5266 ns]
+args/align_offset_v2/(8, 24,      16) time:   [9.8614 ns 9.8679 ns 9.8755 ns]
+args/align_offset_v3/(8, 24,      16) time:   [4.8711 ns 4.8765 ns 4.8843 ns]
+args/align_offset_v4/(8, 24,      16) time:   [4.3562 ns 4.3628 ns 4.3716 ns]
+
+args/align_offset_v0/(8, 24,     128) time:   [20.516 ns 20.529 ns 20.545 ns]
+args/align_offset_v1/(8, 24,     128) time:   [11.731 ns 11.738 ns 11.747 ns]
+args/align_offset_v2/(8, 24,     128) time:   [9.8589 ns 9.8675 ns 9.8788 ns]
+args/align_offset_v3/(8, 24,     128) time:   [4.8710 ns 4.8760 ns 4.8834 ns]
+args/align_offset_v4/(8, 24,     128) time:   [4.3631 ns 4.3687 ns 4.3751 ns]
+
+args/align_offset_v0/(8, 24,     256) time:   [23.108 ns 23.146 ns 23.193 ns]
+args/align_offset_v1/(8, 24,     256) time:   [11.728 ns 11.732 ns 11.738 ns]
+args/align_offset_v2/(8, 24,     256) time:   [11.909 ns 11.926 ns 11.949 ns]
+args/align_offset_v3/(8, 24,     256) time:   [5.7815 ns 5.7864 ns 5.7935 ns]
+args/align_offset_v4/(8, 24,     256) time:   [5.4964 ns 5.5050 ns 5.5154 ns]
+
+args/align_offset_v0/(8, 24,     512) time:   [23.093 ns 23.106 ns 23.121 ns]
+args/align_offset_v1/(8, 24,     512) time:   [14.113 ns 14.123 ns 14.135 ns]
+args/align_offset_v2/(8, 24,     512) time:   [11.922 ns 11.945 ns 11.971 ns]
+args/align_offset_v3/(8, 24,     512) time:   [5.7889 ns 5.8045 ns 5.8232 ns]
+args/align_offset_v4/(8, 24,     512) time:   [5.5012 ns 5.5142 ns 5.5301 ns]
+
+args/align_offset_v0/(8, 24,    2048) time:   [23.094 ns 23.131 ns 23.177 ns]
+args/align_offset_v1/(8, 24,    2048) time:   [14.110 ns 14.131 ns 14.157 ns]
+args/align_offset_v2/(8, 24,    2048) time:   [11.915 ns 11.937 ns 11.963 ns]
+args/align_offset_v3/(8, 24,    2048) time:   [5.7853 ns 5.7980 ns 5.8180 ns]
+args/align_offset_v4/(8, 24,    2048) time:   [5.5066 ns 5.5185 ns 5.5321 ns]
+
+args/align_offset_v0/(8, 24,    4096) time:   [23.095 ns 23.111 ns 23.132 ns]
+args/align_offset_v1/(8, 24,    4096) time:   [14.113 ns 14.124 ns 14.137 ns]
+args/align_offset_v2/(8, 24,    4096) time:   [13.861 ns 13.870 ns 13.880 ns]
+args/align_offset_v3/(8, 24,    4096) time:   [6.7730 ns 6.7797 ns 6.7895 ns]
+args/align_offset_v4/(8, 24,    4096) time:   [6.3811 ns 6.3965 ns 6.4140 ns]
+
+args/align_offset_v0/(8, 24,  131072) time:   [25.976 ns 26.018 ns 26.081 ns]
+args/align_offset_v1/(8, 24,  131072) time:   [16.490 ns 16.519 ns 16.557 ns]
+args/align_offset_v2/(8, 24,  131072) time:   [13.859 ns 13.866 ns 13.875 ns]
+args/align_offset_v3/(8, 24,  131072) time:   [6.7823 ns 6.7983 ns 6.8178 ns]
+args/align_offset_v4/(8, 24,  131072) time:   [6.3731 ns 6.3844 ns 6.3965 ns]
+
+args/align_offset_v0/(8, 24, 1048576) time:   [26.292 ns 26.337 ns 26.392 ns]
+args/align_offset_v1/(8, 24, 1048576) time:   [16.491 ns 16.501 ns 16.513 ns]
+args/align_offset_v2/(8, 24, 1048576) time:   [16.052 ns 16.060 ns 16.069 ns]
+args/align_offset_v3/(8, 24, 1048576) time:   [7.9321 ns 7.9426 ns 7.9573 ns]
+args/align_offset_v4/(8, 24, 1048576) time:   [7.5099 ns 7.5171 ns 7.5253 ns]

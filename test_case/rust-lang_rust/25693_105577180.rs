@@ -1,0 +1,5 @@
+
+accumulate_from_ty
+accumulate_from_adt
+accumulate_from_assoc_types
+accumulate_from_ty

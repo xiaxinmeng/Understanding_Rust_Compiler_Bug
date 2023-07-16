@@ -1,0 +1,5 @@
+
+enum Enum {
+    NONSTANDARD,
+    PUBKEY
+}

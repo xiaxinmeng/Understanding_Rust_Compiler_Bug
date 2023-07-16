@@ -1,0 +1,1 @@
+--emit=metadata,object` or `--emit=metadata,llvm-bc

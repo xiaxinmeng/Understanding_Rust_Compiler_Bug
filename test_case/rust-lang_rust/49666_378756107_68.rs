@@ -1,0 +1,1 @@
+compile_fail,E0626\n# #![feature(generators, generator_trait)]\n# use std::ops::Generator;\nlet mut b = || {\n  let v = vec![1,2,3];\n  for &x in &v { // <-- borrow of `v` is still in scope...\n    yield x; // ...when this yield occurs.\n  }\n};\nunsafe { b.resume() };\n

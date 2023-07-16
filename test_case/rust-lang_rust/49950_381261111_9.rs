@@ -1,0 +1,1 @@
+compile_fail,E0391\ntrait FirstTrait : SecondTrait {\n\n}\n\ntrait SecondTrait : FirstTrait {\n\n}\n

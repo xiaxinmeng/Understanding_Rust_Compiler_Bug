@@ -1,0 +1,23 @@
+rust
+// before
+... foo(|a| bar(a, x, y)) ...
+... foo(|a| baz(a, z)) ...
+fn foo(b: impl FnOnce(A)) {
+    ... b(a) ...
+}
+
+// after
+enum B {
+    Bar(x: X, y: Y),
+    Baz(z: Z),
+}
+... foo(B::Bar(x, y)) ...
+... foo(B::Baz(z)) ...
+fn foo(b: B) {
+    ...
+    match b {
+        B::Bar(x, y) => bar(a, x, y),
+        B::Baz(z) => baz(a, z),
+    }
+    ...
+}

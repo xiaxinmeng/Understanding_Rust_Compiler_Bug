@@ -1,0 +1,1 @@
+\n#![feature(repr_simd)]\n#![feature(platform_intrinsics)]\n\n#[repr(simd)]\nstruct i16x8(i16, i16, i16, i16, i16, i16, i16, i16);\n\nextern \"platform-intrinsic\" {\n    fn x86_mm_adds_epi16(x: i16x8, y: i16x8) -> i16x8; // ok!\n}\n

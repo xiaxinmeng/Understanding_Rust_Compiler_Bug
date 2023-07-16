@@ -1,0 +1,2 @@
+
+foo!(Fn(Option<bool>))

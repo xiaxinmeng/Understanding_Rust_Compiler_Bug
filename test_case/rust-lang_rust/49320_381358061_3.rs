@@ -1,0 +1,9 @@
+\n"},"level":"error","spans":[{"file_name":"/checkout/src/test/ui/allocator-submodule.rs","byte_start":720,"byte_end":763,"line_start":22,"line_end":22,"column_start":5,"column_end":48,"is_primary":true,"text":[{"text":"    static MY_HEAP: Global = Global::default(); //~ ERROR","highlight_start":5,"highlight_end":48}],"label":"no `MY_HEAP` in the root","suggested_replacement":null,"expansion":{"span":{"file_name":"/checkout/src/test/ui/allocator-submodule.rs","byte_start":720,"byte_end":763,"line_start":22,"line_end":22,"column_start":5,"column_end":48,"is_primary":false,"text":[{"text":"    static MY_HEAP: Global = Global::default(); //~ ERROR","highlight_start":5,"highlight_end":48}],"label":null,"suggested_replacement":null,"expansion":null},"macro_decl_name":"#[global_allocator]","def_site_span":null}}],"children":[],"rendered":"error[E0432]: unresolved import `MY_HEAP`\n  --> /checkout/src/test/ui/allocator-submodule.rs:22:5\n   |\nLL |     static MY_HEAP: Global = Global::default(); //~ ERROR\n   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ no `MY_HEAP` in the root\n\n"}
+[00:47:50] {"message":"aborting due to previous error","code":null,"level":"error","spans":[],"children":[],"rendered":"error: aborting due tpython" "/usr/bin/python2.7" "--lldb-python" "/usr/bin/python2.7" "--gdb" "/usr/bin/gdb" "--quiet" "--llvm-version" "3.9.1\n" "--system-llvm" "--cc" "" "--cxx" "" "--cflags" "" "--llvm-components" "" "--llvm-cxxflags" "" "--adb-path" "adb" "--adb-test-dir" "/data/tmp/work" "--android-cross-path" "" "--color" "always"
+[00:47:50] expected success, got: exit code: 101
+[00:47:50]
+[00:47:50]
+[00:47:50] failed to run: /checkout/obj/build/bootstrap/debug/bootstrap test
+[00:47:50] Build completed unsuccessfully in 0:02:30
+[00:47:50] Makefile:58: recipe for target 'check' failed
+[00:47:50] make: *** [check] Error 1

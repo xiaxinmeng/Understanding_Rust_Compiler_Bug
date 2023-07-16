@@ -1,0 +1,1 @@
+\n#![feature(repr_simd)]\n#![feature(platform_intrinsics)]\n\n#[repr(simd)]\nstruct io give\nit the awaited types. Example:\n\n

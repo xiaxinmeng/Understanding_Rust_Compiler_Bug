@@ -1,0 +1,42 @@
+
+benchcmp old new --threshold 5
+ name                                           old ns/iter  new ns/iter  diff ns/iter   diff %  speedup
+ btree::map::clone_fat_100_and_remove_all       188,776      212,082            23,306   12.35%   x 0.89
+ btree::map::clone_fat_100_and_remove_half      126,885      140,420            13,535   10.67%   x 0.90
+ btree::map::clone_fat_val_100_and_remove_all   80,833       96,580             15,747   19.48%   x 0.84
+ btree::map::clone_fat_val_100_and_remove_half  56,937       63,812              6,875   12.07%   x 0.89
+ btree::map::clone_slim_100                     2,173        2,660                 487   22.41%   x 0.82
+ btree::map::clone_slim_100_and_drain_half      3,791        3,376                -415  -10.95%   x 1.12
+ btree::map::clone_slim_10k_and_drain_half      383,565      330,780           -52,785  -13.76%   x 1.16
+ btree::map::find_rand_100                      18           17                     -1   -5.56%   x 1.06
+ btree::map::find_seq_100                       19           16                     -3  -15.79%   x 1.19
+ btree::map::find_seq_10_000                    40           38                     -2   -5.00%   x 1.05
+ btree::map::first_and_last_0                   32           10                    -22  -68.75%   x 3.20
+ btree::map::first_and_last_100                 42           35                     -7  -16.67%   x 1.20
+ btree::map::first_and_last_10k                 67           56                    -11  -16.42%   x 1.20
+ btree::map::iter_0                             1,974        1,761                -213  -10.79%   x 1.12
+ btree::map::iter_1                             2,203        1,723                -480  -21.79%   x 1.28
+ btree::map::range_included_included            406,740      429,854            23,114    5.68%   x 0.95
+ btree::map::range_unbounded_unbounded          28,312       26,284             -2,028   -7.16%   x 1.08
+ btree::set::clone_100_and_clear                1,894        1,794                -100   -5.28%   x 1.06
+ btree::set::clone_100_and_drain_half           2,881        2,438                -443  -15.38%   x 1.18
+ btree::set::clone_100_and_into_iter            1,904        1,797                -107   -5.62%   x 1.06
+ btree::set::clone_10k                          205,597      195,300           -10,297   -5.01%   x 1.05
+ btree::set::clone_10k_and_clear                205,790      194,898           -10,892   -5.29%   x 1.06
+ btree::set::clone_10k_and_drain_half           327,173      279,673           -47,500  -14.52%   x 1.17
+ btree::set::clone_10k_and_into_iter            203,332      192,766           -10,566   -5.20%   x 1.05
+ btree::set::clone_10k_and_pop_all              313,573      331,570            17,997    5.74%   x 0.95
+ btree::set::clone_10k_and_remove_all           478,245      505,970            27,725    5.80%   x 0.95
+ btree::set::difference_random_100_vs_10k       2,540        2,287                -253   -9.96%   x 1.11
+ btree::set::difference_staggered_100_vs_10k    2,338        2,120                -218   -9.32%   x 1.10
+ btree::set::intersection_100_neg_vs_100_pos    26           15                    -11  -42.31%   x 1.73
+ btree::set::intersection_100_neg_vs_10k_pos    31           17                    -14  -45.16%   x 1.82
+ btree::set::intersection_100_pos_vs_100_neg    26           15                    -11  -42.31%   x 1.73
+ btree::set::intersection_100_pos_vs_10k_neg    31           16                    -15  -48.39%   x 1.94
+ btree::set::intersection_10k_neg_vs_100_pos    29           16                    -13  -44.83%   x 1.81
+ btree::set::intersection_10k_neg_vs_10k_pos    32           18                    -14  -43.75%   x 1.78
+ btree::set::intersection_10k_pos_vs_100_neg    29           16                    -13  -44.83%   x 1.81
+ btree::set::intersection_10k_pos_vs_10k_neg    32           17                    -15  -46.88%   x 1.88
+ btree::set::intersection_random_100_vs_10k     2,297        2,125                -172   -7.49%   x 1.08
+ btree::set::intersection_staggered_100_vs_10k  2,138        1,924                -214  -10.01%   x 1.11
+ btree::set::is_subset_100_vs_10k               1,242        1,085                -157  -12.64%   x 1.14

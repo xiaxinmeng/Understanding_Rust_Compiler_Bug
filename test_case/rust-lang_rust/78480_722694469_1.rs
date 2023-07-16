@@ -1,0 +1,1 @@
+unsafe { Unique::new_unchecked(ptr::raw_mut!(Box::leak(node).data)) }

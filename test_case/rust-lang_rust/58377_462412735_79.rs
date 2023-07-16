@@ -1,0 +1,1 @@
+\n\nIn this case, the compiler cannot infer what the type of `x` should be:\n`Vec<char>` and `String` are both suitable candidates. To specify which type to\nuse, you can use a type annotation on `x`:\n\n

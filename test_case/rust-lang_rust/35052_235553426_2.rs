@@ -1,0 +1,13 @@
+
+0000000000000ec0 T _Fzmq_context
+00000000000026b0 T _bind_function
+0000000000000f00 T _emacs_module_init
+0000000000002180 T _find_function
+00000000000024e0 T _get_environment
+0000000000002510 T _intern_symbol
+0000000000002320 T _make_function
+0000000000086330 S _plugin_is_GPL_compatible
+0000000000002880 T _provide
+0000000000041e20 T _rust_begin_unwind
+00000000000435e0 T _rust_eh_personality
+00000000000e98d0 S _rust_metadata_emm_42c41e3ad011af9b

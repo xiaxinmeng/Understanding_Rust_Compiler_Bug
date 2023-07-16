@@ -1,0 +1,2 @@
+python
+result = await task

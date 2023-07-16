@@ -1,0 +1,1 @@
+\nfn foo<T: Copy>(x: T) {\n    struct Foo<T: Copy> {\n        x: T,\n    }\n}\n

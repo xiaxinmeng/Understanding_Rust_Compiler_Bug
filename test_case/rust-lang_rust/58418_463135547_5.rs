@@ -1,0 +1,1 @@
+\n\nA workaround for this problem is to wrap the trait up in a struct, and implement\nDrop on that. An example is shown below:\n\n

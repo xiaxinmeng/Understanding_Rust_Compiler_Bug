@@ -1,0 +1,45 @@
+plain
+configure: rust.debug-assertions := True
+configure: rust.overflow-checks := True
+configure: llvm.assertions      := True
+configure: dist.missing-tools   := True
+configure: build.configure-args := ['--enable-sccache', '--disable-manage-submodu ...
+configure: writing `config.toml` in current directory
+configure: 
+configure: run `python /checkout/x.py --help`
+configure: 
+---
+skip untracked path cpu-usage.csv during rustfmt invocations
+skip untracked path src/doc/book/ during rustfmt invocations
+skip untracked path src/doc/rust-by-example/ during rustfmt invocations
+skip untracked path src/llvm-project/ during rustfmt invocations
+Diff in /checkout/compiler/rustc_codegen_ssa/src/mir/block.rs at line 1101:
+                 fn_span,
+             } => {
+                 self.codegen_call_terminator(
+-                    helper, bx, terminator, func, args, destination, target, cleanup, fn_span,
++                    helper,
++                    bx,
++                    func,
++                    args,
++                    destination,
++                    target,
++                    target,
++                    cleanup,
++                    fn_span,
+                 );
+             }
+             mir::TerminatorKind::GeneratorDrop | mir::TerminatorKind::Yield { .. } => {
+Diff in /checkout/compiler/rustc_codegen_cranelift/src/abi/mod.rs at line 342:
+         match instance.def {
+         match instance.def {
+             InstanceDef::Intrinsic(_) => {
+-                crate::intrinsics::codegen_intrinsic_call(fx, instance, args, ret_place, target, span);
++                crate::intrinsics::codegen_intrinsic_call(
++                    fx, instance, args, ret_place, target, span,
+                 return;
+             }
+             }
+             InstanceDef::DropGlue(_, None) => {
+Running `"/checkout/obj/build/x86_64-unknown-linux-gnu/stage0/bin/rustfmt" "--config-path" "/checkout" "--edition" "2021" "--unstable-features" "--skip-children" "--check" "/checkout/compiler/rustc_codegen_ssa/src/mir/rvalue.rs" "/checkout/compiler/rustc_codegen_ssa/src/coverageinfo/ffi.rs" "/checkout/compiler/rustc_codegen_ssa/src/mir/constant.rs" "/checkout/compiler/rustc_codegen_ssa/src/mir/block.rs" "/checkout/compiler/rustc_lint/src/nonstandard_style.rs" "/checkout/compiler/rustc_codegen_ssa/src/mir/mod.rs" "/checkout/compiler/rustc_codegen_ssa/src/back/link.rs" "/checkout/compiler/rustc_codegen_ssa/src/coverageinfo/map.rs"` failed.
+If you're running `tidy`, try again with `--bless`. Or, if you just want to format code, run `./x.py fmt` instead.

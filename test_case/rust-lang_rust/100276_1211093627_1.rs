@@ -1,0 +1,26 @@
+
+v is 0 (match), construct is if let chain (let)
+  vanilla:      drop,postfix,body,
+  &:            drop,postfix,body,
+  &mut:         drop,postfix,body,
+  move:         drop,postfix,body,
+  tuple:        drop,postfix,body,
+  array:        drop,postfix,body,
+  nested:       drop,inner,postfix,body,
+  fn(this):     drop,postfix,body,
+  fn(&self):    drop,postfix,body,
+  ref &:        drop,postfix,body,
+  ref mut &mut: drop,postfix,body,
+[...]
+v is 1 (mismatch), construct is if let chain (let)
+  vanilla:      drop,else,
+  &:            drop,else,
+  &mut:         drop,else,
+  move:         drop,else,
+  tuple:        drop,else,
+  array:        drop,else,
+  nested:       drop,inner,else,
+  fn(this):     drop,else,
+  fn(&self):    drop,else,
+  ref &:        drop,else,
+  ref mut &mut: drop,else,

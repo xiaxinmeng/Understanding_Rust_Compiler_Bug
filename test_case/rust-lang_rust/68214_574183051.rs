@@ -1,0 +1,1 @@
+src/tools/build-manifest/src/main.rs

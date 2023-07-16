@@ -1,0 +1,1 @@
+\n\nIn here, `x` is created before `y` and therefore haeater lifetime than the borrowed one.\n\nExample of erroneous code:\n\n

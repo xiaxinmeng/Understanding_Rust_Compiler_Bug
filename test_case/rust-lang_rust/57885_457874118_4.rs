@@ -1,0 +1,1 @@
+\n\nHowever, a better solution would be using fully explicit naming of type and\ntrait:\n\n

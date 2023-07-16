@@ -1,0 +1,1 @@
+/n/nAnother case that causes this error is when a type is imported into a parent/nmodule. To fix this, you can follow the suggestion and use File directly or/n`use super::File;` which will import the types from the parent namespace. An/nexample that causes this error is below:/n/n

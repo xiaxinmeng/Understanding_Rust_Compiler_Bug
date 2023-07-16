@@ -1,0 +1,4 @@
+yml
+branches:
+  only:
+    - auto

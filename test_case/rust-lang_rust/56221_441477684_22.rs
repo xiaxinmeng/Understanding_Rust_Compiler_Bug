@@ -1,0 +1,1 @@
+\npub mod moon {\n    pub fn foo() {}\n}\n\npub mod earth {\n    pub fn foo() {}\n}\n\nmod collider {\n    pub use moon;\n    pub use earth;\n}\n\nfn main() {\n    collider::moon::foo(); // ok!\n    collider::earth::foo(); // ok!\n}\n

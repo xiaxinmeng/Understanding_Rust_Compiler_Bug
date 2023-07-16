@@ -1,0 +1,1 @@
+\nstruct NonCopy;\n\nfn main() {\n    let array = [NonCopy; 1];\n    let _value = &array[0]; // Borrowing is allowed, unlike moving.\n}\n

@@ -1,0 +1,26 @@
+
+readelf -Ws liblibrary.so| grep -i asan
+     2: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND __asan_report_load8
+    10: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND __asan_report_load4
+    20: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND __asan_unregister_globals
+    37: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND __asan_register_globals
+    43: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND __asan_stack_malloc_0
+    59: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND __asan_report_store4
+    61: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND __asan_report_store8
+   126: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND __asan_init
+   131: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND __asan_stack_malloc_1
+   142: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND __asan_version_mismatch_check_v8
+   169: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND __asan_option_detect_stack_use_after_return
+    54: 000000000006f530    32 FUNC    LOCAL  DEFAULT   12 asan.module_ctor
+    55: 000000000006f550    22 FUNC    LOCAL  DEFAULT   12 asan.module_dtor
+ 10963: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND __asan_report_load8
+ 11057: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND __asan_report_load4
+ 11144: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND __asan_unregister_globals
+ 11459: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND __asan_register_globals
+ 11544: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND __asan_stack_malloc_0
+ 11724: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND __asan_report_store4
+ 11728: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND __asan_report_store8
+ 12783: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND __asan_init
+ 12841: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND __asan_stack_malloc_1
+ 12993: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND __asan_version_mismatch_check_v8
+ 13442: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND __asan_option_detect_stack_use_after_return

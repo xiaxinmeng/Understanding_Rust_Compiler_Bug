@@ -1,0 +1,1 @@
+compile_fail\ntrait Foo {\n    type Bar;\n}\n\ntrait Foo2 {\n    type Bar;\n}\n\ntrait Baz : Foo + Foo2 {\n    fn bar() -> Self::Bar;\n    // error: ambiguous associated type `Bar` in bounds of `Self`\n}\n

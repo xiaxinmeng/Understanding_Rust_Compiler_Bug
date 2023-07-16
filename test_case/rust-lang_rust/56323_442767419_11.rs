@@ -1,0 +1,1 @@
+\n\nThe solution is to choose a different name that doesn't conflict with any\nexternal crate imported into the current module.\n\nCorrect example:\n\n

@@ -1,0 +1,3 @@
+
+   Doc-tests log
+     Running `rustdoc --crate-type lib --test /home/joshua/src/rust/log/src/lib.rs --crate-name log -L dependency=/home/joshua/.local/lib/cargo/target/debug/deps -L dependency=/home/joshua/.local/lib/cargo/target/debug/deps --cfg const_type_id --cfg atomic_cas --cfg has_atomics --cfg srcbuild --extern cfg_if=/home/joshua/.local/lib/cargo/target/debug/deps/libcfg_if-78e41e584d7442e1.rlib --extern log=/home/joshua/.local/lib/cargo/target/debug/deps/liblog-317dcbf283c962fd.rlib --extern serde_test=/home/joshua/.local/lib/cargo/target/debug/deps/libserde_test-3647946855f36b77.rlib --extern sval=/home/joshua/.local/lib/cargo/target/debug/deps/libsval-0040d76711c48027.rlib -C embed-bitcode=no`

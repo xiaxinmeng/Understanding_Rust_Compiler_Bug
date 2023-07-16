@@ -1,0 +1,12 @@
+`
+./src/tools/miri/tests/run-pass/unsized-tuple-impls.rs
+./src/test/run-pass-valgrind/dst-dtor-4.rs
+./src/test/ui/dynamically-sized-types/dst-raw.rs
+./src/test/ui/dynamically-sized-types/dst-tuple.rs
+./src/test/ui/unsized-locals/unsized-exprs-rpass.rs
+./src/test/ui/dynamically-sized-types/dst-trait-tuple.rs
+./src/test/ui/dynamically-sized-types/dst-tuple-no-reorder.rs
+./src/test/ui/dynamically-sized-types/dst-tuple-zst-offsets.rs
+./src/test/ui/dynamically-sized-types/dst-tuple-sole.rs
+./src/test/ui/dynamically-sized-types/dst-irrefutable-bind.rs
+./src/test/ui/unsized/unsized-tuple-impls.rs

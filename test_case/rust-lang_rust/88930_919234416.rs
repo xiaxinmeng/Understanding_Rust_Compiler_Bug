@@ -1,0 +1,6 @@
+
+let mut res: [MaybeUninit<__m256i>; N] = MaybeUninit::uninit_array();
+...
+res[i].write(_mm256_or_si256(_mm256_setzero_si256(), t));
+...
+mem::transmute::<_, [__m256i; N]>(res)

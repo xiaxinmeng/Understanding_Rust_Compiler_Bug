@@ -1,0 +1,3 @@
+llvm
+; Function Attrs: nounwind uwtable
+define void @wr_dp_push_border_image(%WrState* align 8 dereferenceable(8), { double, double }, { double, double }, i1 zeroext, %WrSpaceAndClipChain* noalias readonly align 8 dereferenceable(8), { double, double }, i64, i32, i32, i1 zeroext, %SideOffsets* byval noalias nocapture dereferenceable(16) %slice, %LayoutGeometry* byval noalias nocapture dereferenceable(16) %outset, i8 zeroext, i8 zeroext) unnamed_addr #0 personality i32 (i32, i32, i64, %"unwind::libunwind::_Unwind_Exception"*, %"unwind::libunwind::_Unwind_Context"*)* @rust_eh_personality !dbg !41 {

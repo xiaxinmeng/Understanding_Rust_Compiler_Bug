@@ -1,0 +1,2 @@
+
+error: internal compiler error: /buildslave/rust-buildbot/slave/stable-dist-rustc-linux/build/src/librustc/infer/mod.rs:626: Encountered errors `[FulfillmentError(Obligation(predicate=Binder(ProjectionPredicate(ProjectionTy { trait_ref: <() as Array<'a>>, item_name: Element(83) }, ())),depth=1),MismatchedProjectionTypes(Sorts(ExpectedFound { expected: &(), found: () })))]` resolving bounds after type-checking

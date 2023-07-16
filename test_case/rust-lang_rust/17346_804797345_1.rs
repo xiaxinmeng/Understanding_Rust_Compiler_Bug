@@ -1,0 +1,8 @@
+
+[target.x86_64-unknown-linux-gnu]
+rustflags = [
+    "-C", "link-arg=-nostdlib"
+]
+
+[build]
+target = "x86_64-unknown-linux-gnu"

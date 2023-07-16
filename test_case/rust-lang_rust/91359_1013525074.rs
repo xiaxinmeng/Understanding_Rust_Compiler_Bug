@@ -1,0 +1,8 @@
+
+before:
+@_ZN4core3ops8function6FnOnce9call_once17h6167d96ae4804be7E
+@_ZN4core3ops8function6FnOnce9call_once17h8169c06c34eb37ffE
+
+after:
+@_ZN4core3ops8function6FnOnce9call_once17ha64f943b1f6dc5e7E
+@_ZN4core3ops8function6FnOnce9call_once17hee47af59da14cf75E

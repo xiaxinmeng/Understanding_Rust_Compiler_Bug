@@ -1,0 +1,47 @@
+
+ $ size --format=Berkeley new/lib*
+   text    data     bss     dec     hex filename
+  16704   43227       4   59935    ea1f new/libarena-4e7c5e5c.so
+  66353   68691       4  135048   20f88 new/libdebug-4e7c5e5c.so
+  31623    3694       8   35325    89fd new/libflate-4e7c5e5c.so
+  20497   43949       8   64454    fbc6 new/libfmt_macros-4e7c5e5c.so
+  76969   79267       4  156240   26250 new/libgetopts-4e7c5e5c.so
+   9800   44700       4   54504    d4e8 new/libgraphviz-4e7c5e5c.so
+  30301   38304     200   68805   10cc5 new/liblog-4e7c5e5c.so
+ 345535  159001      24  504560   7b2f0 new/libnative-4e7c5e5c.so
+ 165524  177332       4  342860   53b4c new/libregex-4e7c5e5c.so
+12815808        5999302     368 18815478        11f19f6 new/librustc-4e7c5e5c.so
+ 224381  100857       4  325242   4f67a new/librustc_back-4e7c5e5c.so
+19020330        1043863   69088 20133281        13335a1 new/librustc_llvm-4e7c5e5c.so
+2987929 1069179       4 4057112  3de818 new/librustdoc-4e7c5e5c.so
+1161899  487994    5280 1655173  194185 new/librustrt-4e7c5e5c.so
+ 267564  851740       4 1119308  11144c new/libserialize-4e7c5e5c.so
+ 833044 1551820     344 2385208  246538 new/libstd-4e7c5e5c.so
+ 159305  630662       8  789975   c0dd7 new/libsync-4e7c5e5c.so
+3216767 3550444       4 6767215  67426f new/libsyntax-4e7c5e5c.so
+ 212138  102246       8  314392   4cc18 new/libterm-4e7c5e5c.so
+ 446332  261222       8  707562   acbea new/libtest-4e7c5e5c.so
+  56115   61988       4  118107   1cd5b new/libtime-4e7c5e5c.so
+$ size --format=Berkeley old/lib*
+   text    data     bss     dec     hex filename
+  16704   43231       8   59943    ea27 old/libarena-4e7c5e5c.so
+  66353   68688       8  135049   20f89 old/libdebug-4e7c5e5c.so
+  31563    3694       8   35265    89c1 old/libflate-4e7c5e5c.so
+  20501   43950       8   64459    fbcb old/libfmt_macros-4e7c5e5c.so
+  76981   79267       4  156252   2625c old/libgetopts-4e7c5e5c.so
+   9820   44702       8   54530    d502 old/libgraphviz-4e7c5e5c.so
+  30357   38835     200   69392   10f10 old/liblog-4e7c5e5c.so
+ 345551  158983      24  504558   7b2ee old/libnative-4e7c5e5c.so
+ 165488  177654       8  343150   53c6e old/libregex-4e7c5e5c.so
+12817208        6004915     368 18822491        11f355b old/librustc-4e7c5e5c.so
+ 224345  100862       8  325215   4f65f old/librustc_back-4e7c5e5c.so
+19020330        1043869   69088 20133287        13335a7 old/librustc_llvm-4e7c5e5c.so
+2987941 1071291       4 4059236  3df064 old/librustdoc-4e7c5e5c.so
+1162110  488450    5280 1655840  194420 old/librustrt-4e7c5e5c.so
+ 267596  852193       4 1119793  111631 old/libserialize-4e7c5e5c.so
+ 833128 1552192     344 2385664  246700 old/libstd-4e7c5e5c.so
+ 159261  630741       8  790010   c0dfa old/libsync-4e7c5e5c.so
+3220819 3562525       8 6783352  678178 old/libsyntax-4e7c5e5c.so
+ 212270  102337       4  314611   4ccf3 old/libterm-4e7c5e5c.so
+ 446524  261683       4  708211   ace73 old/libtest-4e7c5e5c.so
+  56171   62442       4  118617   1cf59 old/libtime-4e7c5e5c.so

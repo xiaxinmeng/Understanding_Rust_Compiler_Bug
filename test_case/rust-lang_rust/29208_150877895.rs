@@ -1,0 +1,7 @@
+
+Start-FileDownload "https://static.rust-lang.org/dist/rust-nightly-${env:TARGET}.exe"
+rust-nightly-%TARGET%.exe /VERYSILENT /NORESTART /DIR="C:\Rust"
+SET PATH=%PATH%;C:\Rust\bin
+SET PATH=%PATH%;C:\MinGW\bin
+rustc -V
+*hangs indefinitely*

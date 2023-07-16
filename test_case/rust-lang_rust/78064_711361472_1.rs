@@ -1,0 +1,5 @@
+
+#[repr(C)]
+struct MyClass {
+...
+}

@@ -1,0 +1,3 @@
+
+*self_spec:                                                                                                                                                                                                                                            
++ %{!r:%{!fpie:%{!fPIE:%{!fpic:%{!fPIC:%{!fno-pic:-fno-PIE}}}}}}

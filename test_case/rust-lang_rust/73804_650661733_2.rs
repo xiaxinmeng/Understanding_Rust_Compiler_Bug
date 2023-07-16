@@ -1,0 +1,1 @@
+/// [pattern]: crate::str::pattern

@@ -1,0 +1,1 @@
+error[E0658]: unions with non-`Copy` fields are unstable (see issue #32836)

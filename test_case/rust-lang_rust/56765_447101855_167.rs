@@ -1,0 +1,1 @@
+\n#![feature(nll)]\n\npub struct S<'a> { data: &'a mut String }\n\nimpl<'a> Drop for S<'a> {\n    fn drop(&mut self) { self.data.push_str(\"being dropped\"); }\n}\n\nfn demo<'a>(s: &'a mut S<'a>) -> &'a mut String { let p = &mut *(*s).data; p }\n

@@ -1,0 +1,3 @@
+
+  impl<H,T> Reusable<H> for T where T : Other<H> , H : TTrans<???> { ...       
+                                                             ^^ here

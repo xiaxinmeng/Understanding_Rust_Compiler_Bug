@@ -1,0 +1,1 @@
+\n#![feature(repr_transparent)]\n\n#[repr(transparent)]\nstruct Grams(f32);\n

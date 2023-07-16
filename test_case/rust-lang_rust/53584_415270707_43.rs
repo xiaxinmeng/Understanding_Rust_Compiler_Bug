@@ -1,0 +1,1 @@
+\n# struct Foo<T>(T);\nimpl<T> Foo<T> {\n    pub fn foo(&self, x: T) {\n        self.bar(x);\n    }\n\n    fn bar(&self, y: T) {\n        // ..\n    }\n}\n

@@ -1,0 +1,1 @@
+\nuse std::os::raw::{c_char, c_int};\n\nextern \"C\" {\n    fn printf(_: *const c_char, ...) -> c_int;\n}\n

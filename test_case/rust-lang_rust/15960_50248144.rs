@@ -1,0 +1,3 @@
+
+> rand::random::<uint>();
+> 

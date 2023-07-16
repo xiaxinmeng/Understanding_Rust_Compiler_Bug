@@ -1,0 +1,2 @@
+Rust
+// must-compile-successfully

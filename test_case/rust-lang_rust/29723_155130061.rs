@@ -1,0 +1,12 @@
+ rust
+fn main() {
+    let s = String::new();
+    let _s = match 0 {
+        0 if { drop(s); false } => String::from("oops"),
+        _ => {
+            // This should trigger an error,
+            // s could have been moved from.
+            s
+        }
+    };
+}

@@ -1,0 +1,1 @@
+compile_fail,E0220\ntrait T1 {\n    type Bar;\n}\n\ntype Foo = T1<F=i32>; // error: associated type `F` not found for `T1`\n\n// or:\n\ntrait T2 {\n    type Bar;\n\n    // error: Baz is used but not declared\n    fn return_bool(&self, _: &Self::Bar, _: &Self::Baz) -> bool;\n}\n

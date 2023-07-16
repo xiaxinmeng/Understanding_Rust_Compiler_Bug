@@ -1,0 +1,1 @@
+rust,ignore (pseudo-Rust)\nuse mycrate::Error;\n\n// This will not error as the non_exhaustive Error enum has been matched with a\n// wildcard.\nmatch error {\n   Message(ref s) => ...,\n   Other => ...,\n   _ => ...,\n}\n

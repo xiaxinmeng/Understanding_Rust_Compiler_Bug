@@ -1,0 +1,12 @@
+
+profile = "compiler"
+changelog-seen = 2
+
+# These defaults are meant for contributors to the compiler who do not modify codegen or LLVM
+[rust]
+# This enables `RUSTC_LOG=debug`, avoiding confusing situations
+# where adding `debug!()` appears to do nothing.
+# However, it makes running the compiler slightly slower.
+debug-logging = false
+# This greatly increases the speed of rebuilds, especially when there are only minor changes. However, it makes the initial build slightly slower.
+incremental = true

@@ -1,0 +1,1 @@
+\n\nIn this situation, even the `ref` keyword cannot solve it, since borrowed\ncontent cannot be moved. This problem cannot be solved generally. If the value\ncan be cloned, here is a not-so-specific solution:\n\n

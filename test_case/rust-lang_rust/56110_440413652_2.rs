@@ -1,0 +1,8 @@
+\n"},"level":"error","spans":[{"file_name":"/checkout/src/test/ui/inhabitedness-infinite-loop.rs","byte_start":696,"byte_end":697,"line_start":22,"line_end":22,"column_start":11,"column_end":12,"is_primary":true,"text":[{"text":"    match f {}","highlight_start":11,"highlight_end":12}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"ensure that all possible cases are being handled, possibly by adding wildcards or more match arms","code":null,"level":"help","spans":[{"file_name":"/checkout/src/test/ui/inhabitedness-infinite-loop.rs","byte_start":696,"byte_/src/test/ui/issues/issue-44402.rs" "--target=x86_64-unknown-linux-gnu" "--error-format" "json" "-Zui-testing" "-C" "prefer-dynamic" "-o" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/issues/issue-44402/a" "-Crpath" "-O" "-Zunstable-options" "-Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/issues/issue-44402/auxiliary" "-A" "unused"
+[00:47:14] ------------------------------------------
+[00:47:14] 
+[00:47:14] ------------------------------------------
+[00:47:14] stderr:
+[00:47:14] stderr:
+[00:47:14] ------------------------------------------
+[00:47:14] {"message":"non-exhaustive patterns: `Some(_)` not covered","code":{"code":"E0004","explanation":"\nThis error indicates that the compiler cannot guarantee a matching pattern for\none or more possible inputs to a match expression. Guaranteed matches are\nrequired in order to assign values to match expressions, or alternatively,\ndetermine the flow of execution. Erroneous code example:\n\n

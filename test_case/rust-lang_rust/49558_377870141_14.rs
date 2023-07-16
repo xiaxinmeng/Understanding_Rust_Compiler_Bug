@@ -1,0 +1,1 @@
+compile_fail,E0466\n#[macro_use(a_macro(another_macro))] // er here.\n    println!(\"Hello world!\");\n}\n

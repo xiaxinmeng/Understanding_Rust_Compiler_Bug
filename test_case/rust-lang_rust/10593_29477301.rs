@@ -1,0 +1,42 @@
+
+failures:
+    tests::compile_flag_build
+    tests::dash_S
+    tests::find_sources_in_cwd
+    tests::install_after_build
+    tests::install_remove
+    tests::pkgid_pointing_to_subdir
+    tests::reinstall
+    tests::rust_path_install_target
+    tests::rust_path_test
+    tests::rustpkg_build_no_arg
+    tests::rustpkg_clean_no_arg
+    tests::rustpkg_library_target
+    tests::rustpkg_local_pkg
+    tests::sysroot_flag
+    tests::test_7402
+    tests::test_c_dependency_no_rebuilding
+    tests::test_c_dependency_ok
+    tests::test_c_dependency_yes_rebuilding
+    tests::test_cfg_build
+    tests::test_emit_llvm_S_build
+    tests::test_emit_llvm_build
+    tests::test_install_git
+    tests::test_install_to_rust_path
+    tests::test_install_valid_external
+    tests::test_installed_read_only
+    tests::test_linker_build
+    tests::test_list
+    tests::test_optimized_build
+    tests::test_package_request_version
+    tests::test_package_version
+    tests::test_rebuild_when_needed
+    tests::test_rust_path_can_contain_package_dirs_with_flag
+    tests::test_rustpkg_test_cfg
+    tests::test_rustpkg_test_creates_exec
+    tests::test_rustpkg_test_failure_exit_status
+    tests::test_rustpkg_test_output
+    tests::test_target_specific_build_dir
+    tests::test_target_specific_install_dir
+
+test result: FAILED. 41 passed; 38 failed; 9 ignored; 0 measured

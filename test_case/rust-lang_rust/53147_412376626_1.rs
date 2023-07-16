@@ -1,0 +1,1 @@
+compile_fail,E0508\nstruct NonCopy;\n\nfn main() {\n    let array = [NonCopy; 1];\n    let _value = array[0]; // error: cannot move out of type `[NonCopy; 1]`,\n                           //        a non-copy fixed-size array\n}\n

@@ -1,0 +1,2 @@
+
+     Running `rustc --crate-name num_traits /home/user/.cargo/registry/src/github.com-1ecc6299db9ec823/num-traits-0.2.6/src/lib.rs --color always --crate-type lib --emit=dep-info,metadata -C debuginfo=2 -C metadata=f4779c1b3a57d428 -C extra-filename=-f4779c1b3a57d428 --out-dir /tmp/pro/target/debug/deps -L dependency=/tmp/pro/target/debug/deps --cap-lints allow -C target-cpu=native --cfg has_i128`

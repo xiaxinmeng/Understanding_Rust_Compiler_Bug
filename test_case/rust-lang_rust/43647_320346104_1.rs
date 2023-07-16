@@ -1,0 +1,2 @@
+
+        statically linked

@@ -1,0 +1,1 @@
+\n\n`#[inline]` hints the compiler whether or not to attempt to inline a method or\nfunction. By default, the compiler does a pretty good job of figuring this out\nitself, but if you feel tctly placed\non something other than a function or method.\n\nExamples of erroneous code:\n\n

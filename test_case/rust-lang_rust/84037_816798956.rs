@@ -1,0 +1,4 @@
+
+quote! {
+    #name = #kind#value
+}

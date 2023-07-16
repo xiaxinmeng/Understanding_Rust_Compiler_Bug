@@ -1,0 +1,1 @@
+\n\nTo fix this issue, just remove the return keyword or move the expression into a\nfunction. Example:\n\n

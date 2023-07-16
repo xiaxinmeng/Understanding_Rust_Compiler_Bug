@@ -1,0 +1,184 @@
+plain
+
+---- [ui] src/test/ui/stats/hir-stats.rs stdout ----
+diff of stderr:
+
+140 WherePredicate           216 ( 2.3%)             3            72
+141 Block                    288 ( 3.1%)             6            48
+142 QPath                    408 ( 4.4%)            17            24
+- Pat                      440 ( 4.8%)             5            88
+- Expr                     672 ( 7.3%)            12            56
+- Item                     960 (10.4%)            12            80
+- Ty                     1_152 (12.4%)            16            72
+- Path                   1_296 (14.0%)            27            48
+- PathSegment            2_240 (24.2%)            40            56
++ Pat                      440 ( 4.7%)             5            88
++ Expr                     768 ( 8.2%)            12            64
++ Item                     960 (10.3%)            12            80
++ Ty                     1_152 (12.3%)            16            72
++ Path                   1_296 (13.9%)            27            48
++ PathSegment            2_240 (24.0%)            40            56
+- Total                  9_256
++ Total                  9_352
+151 
+152 
+---
+To only update this specific test, also pass `--test-args stats/hir-stats.rs`
+
+error: 1 errors occurred comparing output.
+status: exit status: 0
+command: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "/checkout/src/test/ui/stats/hir-stats.rs" "-Zthreads=1" "--target=x86_64-unknown-linux-gnu" "--error-format" "json" "--json" "future-incompat" "-Ccodegen-units=1" "-Zui-testing" "-Zdeduplicate-diagnostics=no" "-Cstrip=debuginfo" "--emit" "metadata" "-C" "prefer-dynamic" "--out-dir" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/stats/hir-stats" "-A" "unused" "-Crpath" "-Cdebuginfo=0" "-Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "-Zhir-stats" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/stats/hir-stats/auxiliary"
+stdout: none
+--- stderr -------------------------------
+PRE EXPANSION AST STATS
+
+Name                Accumulated Size         Count     Item Size
+----------------------------------------------------------------
+ExprField                 48 ( 0.6%)             1            48
+Crate                     56 ( 0.7%)             1            56
+Attribute                 64 ( 0.8%)             2            32
+- Normal                    32 ( 0.4%)             1
+- DocComment                32 ( 0.4%)             1
+Some tests failed in compiletest suite=ui mode=ui host=x86_64-unknown-linux-gnu target=x86_64-unknown-linux-gnu
+GenericArgs               64 ( 0.8%)             1            64
+- AngleBracketed            64 ( 0.8%)             1
+Local                     72 ( 0.9%)             1            72
+WherePredicate            72 ( 0.9%)             1            72
+- BoundPredicate            72 ( 0.9%)             1
+Arm                       96 ( 1.1%)             2            48
+ForeignItem               96 ( 1.1%)             1            96
+- Fn                        96 ( 1.1%)             1
+FieldDef                 160 ( 1.9%)             2            80
+Stmt                     160 ( 1.9%)             5            32
+- Local                     32 ( 0.4%)             1
+- MacCall                   32 ( 0.4%)             1
+- Expr                      96 ( 1.1%)             3
+Param                    160 ( 1.9%)             4            40
+FnDecl                   200 ( 2.4%)             5            40
+Variant                  240 ( 2.8%)             2           120
+Block                    288 ( 3.4%)             6            48
+GenericBound             352 ( 4.2%)             4            88
+- Trait                    352 ( 4.2%)             4
+AssocItem                416 ( 4.9%)             4           104
+- TyAlias                  208 ( 2.5%)             2
+- Fn                       208 ( 2.5%)             2
+GenericParam             520 ( 6.1%)             5           104
+PathSegment              720 ( 8.5%)            30            24
+Expr                     832 ( 9.8%)             8           104
+- Path                     104 ( 1.2%)             1
+- Match                    104 ( 1.2%)             1
+- Struct                   104 ( 1.2%)             1
+- Lit                      208 ( 2.5%)             2
+- Block                    312 ( 3.7%)             3
+Pat                      840 ( 9.9%)             7           120
+- Struct                   120 ( 1.4%)             1
+- Wild                     120 ( 1.4%)             1
+- Ident                    600 ( 7.1%)             5
+Ty                     1_344 (15.9%)            14            96
+- Rptr                      96 ( 1.1%)             1
+- Ptr                       96 ( 1.1%)             1
+- ImplicitSelf             192 ( 2.3%)             2
+- Path                     960 (11.4%)            10
+Item                   1_656 (19.6%)             9           184
+- Trait                    184 ( 2.2%)             1
+- Enum                     184 ( 2.2%)             1
+- ForeignMod               184 ( 2.2%)             1
+- Impl                     184 ( 2.2%)             1
+- Fn                       368 ( 4.4%)             2
+- Use                      552 ( 6.5%)             3
+Total                  8_456
+
+
+POST EXPANSION AST STATS
+POST EXPANSION AST STATS
+
+Name                Accumulated Size         Count     Item Size
+----------------------------------------------------------------
+ExprField                 48 ( 0.5%)             1            48
+Crate                     56 ( 0.6%)             1            56
+GenericArgs               64 ( 0.7%)             1            64
+- AngleBracketed            64 ( 0.7%)             1
+Local                     72 ( 0.8%)             1            72
+WherePredicate            72 ( 0.8%)             1            72
+- BoundPredicate            72 ( 0.8%)             1
+Arm                       96 ( 1.0%)             2            48
+ForeignItem               96 ( 1.0%)             1            96
+- Fn                        96 ( 1.0%)             1
+InlineAsm                120 ( 1.3%)             1           120
+Attribute                128 ( 1.4%)             4            32
+- DocComment                32 ( 0.3%)             1
+- Normal                    96 ( 1.0%)             3
+FieldDef                 160 ( 1.7%)             2            80
+Stmt                     160 ( 1.7%)             5            32
+- Local                     32 ( 0.3%)             1
+- Semi                      32 ( 0.3%)             1
+- Expr                      96 ( 1.0%)             3
+Param                    160 ( 1.7%)             4            40
+FnDecl                   200 ( 2.2%)             5            40
+Variant                  240 ( 2.6%)             2           120
+Block                    288 ( 3.1%)             6            48
+GenericBound             352 ( 3.8%)             4            88
+- Trait                    352 ( 3.8%)             4
+AssocItem                416 ( 4.5%)             4           104
+- TyAlias                  208 ( 2.3%)             2
+- Fn                       208 ( 2.3%)             2
+GenericParam             520 ( 5.7%)             5           104
+PathSegment              792 ( 8.6%)            33            24
+Pat                      840 ( 9.1%)             7           120
+- Struct                   120 ( 1.3%)             1
+- Wild                     120 ( 1.3%)             1
+- Ident                    600 ( 6.5%)             5
+Expr                     936 (10.2%)             9           104
+- Path                     104 ( 1.1%)             1
+- Match                    104 ( 1.1%)             1
+- Struct                   104 ( 1.1%)             1
+- InlineAsm                104 ( 1.1%)             1
+- Lit                      208 ( 2.3%)             2
+- Block                    312 ( 3.4%)             3
+Ty                     1_344 (14.6%)            14            96
+- Rptr                      96 ( 1.0%)             1
+- Ptr                       96 ( 1.0%)             1
+- ImplicitSelf             192 ( 2.1%)             2
+- Path                     960 (10.5%)            10
+Item                   2_024 (22.0%)            11           184
+- Trait                    184 ( 2.0%)             1
+- Enum                     184 ( 2.0%)             1
+- ExternCrate              184 ( 2.0%)             1
+- ForeignMod               184 ( 2.0%)             1
+- Impl                     184 ( 2.0%)             1
+- Fn                       368 ( 4.0%)             2
+- Use                      736 ( 8.0%)             4
+Total                  9_184
+
+
+HIR STATS
+HIR STATS
+
+Name                Accumulated Size         Count     Item Size
+----------------------------------------------------------------
+Param                     64 ( 0.7%)             2            32
+Local                     64 ( 0.7%)             1            64
+ForeignItem               72 ( 0.8%)             1            72
+FieldDef                  96 ( 1.0%)             2            48
+Arm                       96 ( 1.0%)             2            48
+Stmt                      96 ( 1.0%)             3            32
+FnDecl                   120 ( 1.3%)             3            40
+Attribute                128 ( 1.4%)             4            32
+Lifetime                 128 ( 1.4%)             4            32
+Variant                  160 ( 1.7%)             2            80
+ImplItem                 176 ( 1.9%)             2            88
+GenericBound             192 ( 2.1%)             4            48
+TraitItem                192 ( 2.1%)             2            96
+WherePredicate           216 ( 2.3%)             3            72
+Block                    288 ( 3.1%)             6            48
+QPath                    408 ( 4.4%)            17            24
+Pat                      440 ( 4.7%)             5            88
+Expr                     768 ( 8.2%)            12            64
+Item                     960 (10.3%)            12            80
+Ty                     1_152 (12.3%)            16            72
+Path                   1_296 (13.9%)            27            48
+PathSegment            2_240 (24.0%)            40            56
+Total                  9_352
+------------------------------------------
+
+

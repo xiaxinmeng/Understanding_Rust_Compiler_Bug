@@ -1,0 +1,6 @@
+rs
+// compiler/rustc_hir_typeck/fallback.rs:130
+// ...
+/// "Diverging" type variables are variables created when we
+/// coerce a `!` type into an unbound type variable `?X`. 
+// ...

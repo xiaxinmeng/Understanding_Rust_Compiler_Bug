@@ -1,0 +1,1 @@
+cstring_from_reader

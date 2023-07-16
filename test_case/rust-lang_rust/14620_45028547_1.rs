@@ -1,0 +1,3 @@
+ rust
+let mut foo: &mut T = &mut init();
+...

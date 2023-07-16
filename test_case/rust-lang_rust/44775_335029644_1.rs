@@ -1,0 +1,4 @@
+rust
+Mutex {
+    data: <locked>
+}

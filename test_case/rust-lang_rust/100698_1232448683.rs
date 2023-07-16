@@ -1,0 +1,6 @@
+rust
+pub static LINK_EXPORTS: MyLinkExports = MyLinkExports {
+    // ...
+    foo: foo as fn(_) -> _,
+    // ...
+};

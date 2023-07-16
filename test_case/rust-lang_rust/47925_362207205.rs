@@ -1,0 +1,1 @@
+impl Write for &TcpStream

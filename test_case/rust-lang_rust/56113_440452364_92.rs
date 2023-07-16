@@ -1,0 +1,1 @@
+compile_fail,E0499\nlet mut i = 0;\nlet mut x = &mut i;\nlet mut a = &mut i;\n// error: cannot borrow `i` as mutable more than once at a time\n

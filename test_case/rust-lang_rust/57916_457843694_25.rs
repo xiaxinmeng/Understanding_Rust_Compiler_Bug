@@ -1,0 +1,1 @@
+\n\nThis is because cell types do operations that are not thread-safe. Due to this,\nthey don't implement Sync and thus can't be placed in statics.\n\nHowever, if you still wish to use these types, you can achieve this by an unsafe\nwrapper:\n\n

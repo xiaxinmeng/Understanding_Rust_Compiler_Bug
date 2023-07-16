@@ -1,0 +1,1 @@
+\n\nIf you are using shorthand field patterns but want to refer to the struct field\nby a different name, you should rename it explicitly.\n\nChange this:\n\n

@@ -1,0 +1,7 @@
+
+% /home/pnkfelix/Dev/Mozilla/rust-stage1/objdir-dbgopt-check/x86_64-unknown-linux-gnu/stage2/bin/rustc --out-dir /home/pnkfelix/Dev/Mozilla/rust-stage1/objdir-dbgopt-check/x86_64-unknown-linux-gnu/test/run-make/bootstrap-from-c-with-green -L /home/pnkfelix/Dev/Mozilla/rust-stage1/objdir-dbgopt-check/x86_64-unknown-linux-gnu/test/run-make/bootstrap-from-c-with-green lib.rs
+% ln -nsf /home/pnkfelix/Dev/Mozilla/rust-stage1/objdir-dbgopt-check/x86_64-unknown-linux-gnu/test/run-make/bootstrap-from-c-with-green/libboot-*.so /home/pnkfelix/Dev/Mozilla/rust-stage1/objdir-dbgopt-check/x86_64-unknown-linux-gnu/test/run-make/bootstrap-from-c-with-green/libboot.so
+% LD_LIBRARY_PATH=/home/pnkfelix/Dev/Mozilla/rust-stage1/objdir-dbgopt-check/x86_64-unknown-linux-gnu/stage1/lib/rustlib/x86_64-unknown-linux-gnu/lib gcc -Wall -Werror -g -fPIC -m64 -L/home/pnkfelix/Dev/Mozilla/rust-stage1/objdir-dbgopt-check/x86_64-unknown-linux-gnu/test/run-make/bootstrap-from-c-with-green main.c -o /home/pnkfelix/Dev/Mozilla/rust-stage1/objdir-dbgopt-check/x86_64-unknown-linux-gnu/test/run-make/bootstrap-from-c-with-green/main -lboot
+% LD_LIBRARY_PATH=/home/pnkfelix/Dev/Mozilla/rust-stage1/objdir-dbgopt-check/x86_64-unknown-linux-gnu/test/run-make/bootstrap-from-c-with-green /home/pnkfelix/Dev/Mozilla/rust-stage1/objdir-dbgopt-check/x86_64-unknown-linux-gnu/test/run-make/bootstrap-from-c-with-green/main
+hello
+% 

@@ -1,0 +1,3 @@
+rust
+> || { Pin::new(reference); };
+> 

@@ -1,0 +1,1 @@
+compile_fail,E0503\nfn main() {\n    let mut value = 3;\n    // Create a mutable borrow of `value`. This borrow\n    // lives until the end of this function.\n    let _borrow = &mut value;\n    let _sum = value + 1; // error: cannot use `value` because\n                          //        it was mutably borrowed\n}\n

@@ -1,0 +1,2 @@
+
+thread 'rustc' panicked at 'called `Result::unwrap()` on an `Err` value: IoError { kind: OtherIoError, desc: "couldn\'t copy path", detail: Some("couldn\'t write to file (No space left on device; path=/tmp/rsar.D7fuw95ZSU5H/rustc-serialize-ec565150ee89f7b5.o); from=\"/home/daniel/Code/digital_composer/target/deps/rustc-serialize-ec565150ee89f7b5.o\"; to=\"/tmp/rsar.D7fuw95ZSU5H/rustc-serialize-ec565150ee89f7b5.o\"") }', /home/rustbuild/src/rust-buildbot/slave/nightly-dist-rustc-linux/build/src/libcore/result.rs:743

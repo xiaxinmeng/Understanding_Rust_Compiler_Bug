@@ -1,0 +1,3 @@
+
+futex(0x7f3b9ca02b40, FUTEX_WAKE_PRIVATE, 1) = 0
+futex(0x7f3b9ca02b40, FUTEX_WAIT_PRIVATE, 2, NULL…

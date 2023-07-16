@@ -1,0 +1,2 @@
+hack
+$result = await task;

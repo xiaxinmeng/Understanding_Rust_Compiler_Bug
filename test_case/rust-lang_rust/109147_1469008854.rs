@@ -1,0 +1,2 @@
+
+use clippy::pendantic::Cell;

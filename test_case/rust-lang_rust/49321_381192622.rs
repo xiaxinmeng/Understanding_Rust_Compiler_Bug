@@ -1,0 +1,2 @@
+
+// must-compile-sucessfully

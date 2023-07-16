@@ -1,0 +1,1 @@
+define dso_local void @funkce(float inreg %0, float inreg %1, float inreg %2, float inreg %3, i32 signext %4) #0 {

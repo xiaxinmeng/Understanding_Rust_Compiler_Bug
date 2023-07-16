@@ -1,0 +1,1 @@
+\n\nNote that the error hertype, the type does not implement the special\n`Sized` trait, because the type does not have a known size at compile time and\ncan only be accessed behind a pointer. Thus, if we have a trait like the\nfollowing:\n\n

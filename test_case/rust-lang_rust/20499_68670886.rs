@@ -1,0 +1,23 @@
+ bash
+# find /usr/local \! -perm '+g+r'
+/usr/local/bin/cargo
+/usr/local/bin/rust-lldb
+/usr/local/bin/rustc
+/usr/local/bin/rustdoc
+/usr/local/components
+/usr/local/COPYRIGHT
+/usr/local/etc
+/usr/local/install.sh
+/usr/local/lib
+/usr/local/LICENSE-APACHE
+/usr/local/LICENSE-MIT
+/usr/local/manifest-cargo.in
+/usr/local/manifest-rust-docs.in
+/usr/local/manifest-rustc.in
+/usr/local/README.md
+/usr/local/rust-installer-version
+/usr/local/share/doc
+/usr/local/share/man/man1/cargo.1
+/usr/local/share/man/man1/rustc.1
+/usr/local/share/man/man1/rustdoc.1
+/usr/local/share/zsh

@@ -1,0 +1,12 @@
+
+ 6f1a03dae6bcea44976918186f2d554186b3499c src/doc/book (remotes/origin/ch11-edits-95-g6f1a03da)
+ f570bcb681771d691aa4fdb8dfcfad1939844bf5 src/doc/nomicon (remotes/origin/HEAD)
+ 1abfbaa70313fdf527cf799ffd9b9a096a62105c src/doc/reference (remotes/origin/HEAD)
+ 11bfb0dcf85f7aa92abd30524bb1e42e18d108c6 src/jemalloc (3.6.0-539-g11bfb0d)
+ 5e49856003f33aa5781a0edca148be21025e18e7 src/libcompiler_builtins (remotes/origin/HEAD)
+ 2a5b50b7f7f539a0fd201331d6c1e0534aa332f5 src/liblibc (0.2.29-28-g2a5b50b7f)
+ d9e7d2696e41983b6b5a0b4fac604b4e548a84d3 src/llvm (remotes/origin/rust-llvm-release-4-0-1)
+ da282f1bb7277b4d30fa1599ee29ad8eb4dd2a92 src/rt/hoedown (2.0.0-226-gda282f1)
+ 305bc25d5e105e84ffe261655b46cf74570f6e5b src/tools/cargo (0.14.0-1065-g305bc25d)
+ 5d4bbd9052fe2af849a7d017b85df98ad002c20f src/tools/rls (alpha-388-g5d4bbd9)
+ b4ff403041f17957f735ad750c3241a3a428b9b7 src/tools/rust-installer (remotes/origin/HEAD)

@@ -1,0 +1,3 @@
+
+> for (unsigned int i = foo.Length()-1; i >= 0; --i) ...
+> 

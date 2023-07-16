@@ -1,0 +1,4 @@
+rust
+LHS
++=
+RHS;

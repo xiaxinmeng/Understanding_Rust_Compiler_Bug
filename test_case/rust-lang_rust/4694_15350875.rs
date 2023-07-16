@@ -1,0 +1,18 @@
+
+000010DF  48C78578DFFFFF01  mov qword [rbp-0x2088],0x1
+         -000000
+000010EA  48C78580DFFFFF01  mov qword [rbp-0x2080],0x1
+         -000000
+000010F5  48C78588DFFFFF01  mov qword [rbp-0x2078],0x1
+         -000000
+00001100  48C78590DFFFFF01  mov qword [rbp-0x2070],0x1
+         -000000
+0000110B  48C78598DFFFFF01  mov qword [rbp-0x2068],0x1
+         -000000
+00001116  48C785A0DFFFFF01  mov qword [rbp-0x2060],0x1
+         -000000
+00001121  48C785A8DFFFFF01  mov qword [rbp-0x2058],0x1
+         -000000
+0000112C  48C785B0DFFFFF01  mov qword [rbp-0x2050],0x1
+         -000000
+; etc.

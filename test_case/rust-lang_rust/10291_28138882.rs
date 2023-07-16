@@ -1,0 +1,3 @@
+
+note: first, the lifetime cannot outlive an anonymous lifetime defined on the block at 23:46...
+...so that types are compatible (expected `int` but found `int`)

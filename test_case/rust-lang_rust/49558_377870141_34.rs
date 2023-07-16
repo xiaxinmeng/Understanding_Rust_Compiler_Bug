@@ -1,0 +1,1 @@
+compile_fail,E0692\n#![feature(repr_transparent)]\n\n#[repr(transparent, C)] // error: incompatible representation hints\nstruct Grams(f32);\n

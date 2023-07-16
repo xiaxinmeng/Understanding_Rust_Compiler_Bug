@@ -1,0 +1,4 @@
+toml
+[profile.release]
+lto = true
+codegen-units = 1

@@ -1,0 +1,1 @@
+compile_fail,E0401\nfn foo<T>(x: T) {\n    struct Foo {\n        x: T,\n    }\n    // ...\n}\n

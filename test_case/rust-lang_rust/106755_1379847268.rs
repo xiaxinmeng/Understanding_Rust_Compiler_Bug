@@ -1,0 +1,591 @@
+
+thread 'rustc' panicked at 'called `Result::unwrap()` on an `Err` value: failed while formatting fluent string `trait_selection_negative_positive_conflict`:
+message was missing
+', compiler/rustc_errors/src/emitter.rs:1391:84
+stack backtrace:
+   0:     0x7fa64ccf2d44 - std::backtrace_rs::backtrace::libunwind::trace::h4c97bf25d2e51ae8
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/std/src/../../backtrace/src/backtrace/libunwind.rs:93:5
+   1:     0x7fa64ccf2d44 - std::backtrace_rs::backtrace::trace_unsynchronized::h37aa0c666953359e
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/std/src/../../backtrace/src/backtrace/mod.rs:66:5
+   2:     0x7fa64ccf2d44 - std::sys_common::backtrace::_print_fmt::hda9969f991ffe421
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/std/src/sys_common/backtrace.rs:65:5
+   3:     0x7fa64ccf2d44 - <std::sys_common::backtrace::_print::DisplayBacktrace as core::fmt::Display>::fmt::h43dbafa239606d9e
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/std/src/sys_common/backtrace.rs:44:22
+   4:     0x7fa64cd6c4e8 - core::fmt::write::hd8b1d49ea978e1a7
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/core/src/fmt/mod.rs:1208:17
+   5:     0x7fa64ccbfe3f - std::io::Write::write_fmt::h910d70db5835b5b3
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/std/src/io/mod.rs:1682:15
+   6:     0x7fa64ccf2b45 - std::sys_common::backtrace::_print::hba0af3cc8e4f9e16
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/std/src/sys_common/backtrace.rs:47:5
+   7:     0x7fa64ccf2b45 - std::sys_common::backtrace::print::hcb425016d7f50579
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/std/src/sys_common/backtrace.rs:34:9
+   8:     0x7fa64ccb61d4 - std::panicking::default_hook::{{closure}}::h5a92231480ffed71
+   9:     0x7fa64ccb5e3f - std::panicking::default_hook::h6128a4fdcff47458
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/std/src/panicking.rs:286:9
+  10:     0x7fa64e7e3522 - <alloc[8442e47aebcde8b2]::boxed::Box<dyn for<'a, 'b> core[a28e3aee1dd4a69e]::ops::function::Fn<(&'a core[a28e3aee1dd4a69e]::panic::panic_info::PanicInfo<'b>,), Output = ()> + core[a28e3aee1dd4a69e]::marker::Sync + core[a28e3aee1dd4a69e]::marker::Send> as core[a28e3aee1dd4a69e]::ops::function::Fn<(&core[a28e3aee1dd4a69e]::panic::panic_info::PanicInfo,)>>::call
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/alloc/src/boxed.rs:2002:9
+  11:     0x7fa64e7e3522 - rustc_driver[b5e5f54b2e117763]::DEFAULT_HOOK::{closure#0}::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_driver/src/lib.rs:1201:17
+  12:     0x7fa64ccb6aaa - <alloc::boxed::Box<F,A> as core::ops::function::Fn<Args>>::call::haf9ff6e68c2e05a7
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/alloc/src/boxed.rs:2002:9
+  13:     0x7fa64ccb6aaa - std::panicking::rust_panic_with_hook::h0207dd496e646917
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/std/src/panicking.rs:692:13
+  14:     0x7fa64ccf3249 - std::panicking::begin_panic_handler::{{closure}}::h4f3167dde486c20a
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/std/src/panicking.rs:579:13
+  15:     0x7fa64ccf2e8e - std::sys_common::backtrace::__rust_end_short_backtrace::h5667162f671b6d90
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/std/src/sys_common/backtrace.rs:137:18
+  16:     0x7fa64ccb65b2 - rust_begin_unwind
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/std/src/panicking.rs:575:5
+  17:     0x7fa64cc7b9e3 - core::panicking::panic_fmt::h90dee617596c399d
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/core/src/panicking.rs:64:14
+  18:     0x7fa64cc7bf63 - core::result::unwrap_failed::h303efdcd3d5e7a03
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/core/src/result.rs:1790:5
+  19:     0x7fa64e93e276 - <core[a28e3aee1dd4a69e]::result::Result<alloc[8442e47aebcde8b2]::borrow::Cow<str>, std[898f9bf6a8d0f504]::error::Report<rustc_errors[65f593afc401dd23]::error::TranslateError>>>::unwrap
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/core/src/result.rs:1112:23
+  20:     0x7fa64e93e276 - <rustc_errors[65f593afc401dd23]::emitter::EmitterWriter>::emit_message_default::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_errors/src/emitter.rs:1391:28
+  21:     0x7fa64e937282 - <rustc_errors[65f593afc401dd23]::emitter::EmitterWriter>::emit_message_default
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_errors/src/emitter.rs:1356:25
+  22:     0x7fa64e92b790 - <rustc_errors[65f593afc401dd23]::emitter::EmitterWriter>::emit_messages_default
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_errors/src/emitter.rs:2072:15
+  23:     0x7fa64e92b790 - <rustc_errors[65f593afc401dd23]::emitter::EmitterWriter as rustc_errors[65f593afc401dd23]::emitter::Emitter>::emit_diagnostic
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_errors/src/emitter.rs:552:9
+  24:     0x7fa64e9027df - <rustc_errors[65f593afc401dd23]::HandlerInner>::emit_diagnostic::{closure#2}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_errors/src/lib.rs:1364:17
+  25:     0x7fa64f492d9b - rustc_interface[2bb18c634d623d0e]::callbacks::track_diagnostic::{closure#0}::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_interface/src/callbacks.rs:41:54
+  26:     0x7fa64f492d9b - rustc_middle[e6798efc31860406]::ty::context::tls::enter_context::<rustc_interface[2bb18c634d623d0e]::callbacks::track_diagnostic::{closure#0}::{closure#0}, ()>::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1311:50
+  27:     0x7fa64f492d9b - rustc_middle[e6798efc31860406]::ty::context::tls::set_tlv::<rustc_middle[e6798efc31860406]::ty::context::tls::enter_context<rustc_interface[2bb18c634d623d0e]::callbacks::track_diagnostic::{closure#0}::{closure#0}, ()>::{closure#0}, ()>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1295:9
+  28:     0x7fa64f492d9b - rustc_middle[e6798efc31860406]::ty::context::tls::enter_context::<rustc_interface[2bb18c634d623d0e]::callbacks::track_diagnostic::{closure#0}::{closure#0}, ()>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1311:9
+  29:     0x7fa64f492d9b - rustc_interface[2bb18c634d623d0e]::callbacks::track_diagnostic::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_interface/src/callbacks.rs:41:20
+  30:     0x7fa64f492d9b - rustc_middle[e6798efc31860406]::ty::context::tls::with_context_opt::<rustc_interface[2bb18c634d623d0e]::callbacks::track_diagnostic::{closure#0}, ()>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1328:22
+  31:     0x7fa64f492d9b - rustc_interface[2bb18c634d623d0e]::callbacks::track_diagnostic
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_interface/src/callbacks.rs:31:5
+  32:     0x7fa64e901a8e - <rustc_errors[65f593afc401dd23]::HandlerInner>::emit_diagnostic
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_errors/src/lib.rs:1333:9
+  33:     0x7fa64e8fce06 - <rustc_errors[65f593afc401dd23]::Handler>::emit_diagnostic
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_errors/src/lib.rs:1109:9
+  34:     0x7fa64e8fce06 - <rustc_errors[65f593afc401dd23]::ErrorGuaranteed as rustc_errors[65f593afc401dd23]::diagnostic_builder::EmissionGuarantee>::diagnostic_builder_emit_producing_guarantee
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_errors/src/diagnostic_builder.rs:169:28
+  35:     0x7fa64d851950 - <rustc_errors[65f593afc401dd23]::diagnostic_builder::DiagnosticBuilder<rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::emit
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_errors/src/diagnostic_builder.rs:452:9
+  36:     0x7fa64d851950 - rustc_trait_selection[4401c6daeb5074ad]::traits::specialize::report_negative_positive_conflict
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_trait_selection/src/traits/specialize/mod.rs:331:27
+  37:     0x7fa64d851950 - rustc_trait_selection[4401c6daeb5074ad]::traits::specialize::report_overlap_conflict
+  38:     0x7fa650f3ee82 - rustc_trait_selection[4401c6daeb5074ad]::traits::specialize::specialization_graph_provider
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_trait_selection/src/traits/specialize/mod.rs:262:17
+  39:     0x7fa6503b68e1 - rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job::<rustc_query_impl[b283f3c634514fbd]::queries::specialization_graph_of, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:433:13
+  40:     0x7fa6503b68e1 - stacker[efd2648ccb3cd540]::maybe_grow::<rustc_middle[e6798efc31860406]::traits::specialization_graph::Graph, rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::specialization_graph_of, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>
+                               at /home/matthias/.cargo/registry/src/github.com-1ecc6299db9ec823/stacker-0.1.15/src/lib.rs:55:9
+  41:     0x7fa6503b68e1 - rustc_data_structures[5f73042812525593]::stack::ensure_sufficient_stack::<rustc_middle[e6798efc31860406]::traits::specialization_graph::Graph, rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::specialization_graph_of, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_data_structures/src/stack.rs:17:5
+  42:     0x7fa6503b68e1 - <rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query::<rustc_middle[e6798efc31860406]::traits::specialization_graph::Graph, rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::specialization_graph_of, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:128:17
+  43:     0x7fa6503b68e1 - rustc_middle[e6798efc31860406]::ty::context::tls::enter_context::<<rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query<rustc_middle[e6798efc31860406]::traits::specialization_graph::Graph, rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::specialization_graph_of, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}, rustc_middle[e6798efc31860406]::traits::specialization_graph::Graph>::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1311:50
+  44:     0x7fa6503b68e1 - rustc_middle[e6798efc31860406]::ty::context::tls::set_tlv::<rustc_middle[e6798efc31860406]::ty::context::tls::enter_context<<rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query<rustc_middle[e6798efc31860406]::traits::specialization_graph::Graph, rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::specialization_graph_of, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}, rustc_middle[e6798efc31860406]::traits::specialization_graph::Graph>::{closure#0}, rustc_middle[e6798efc31860406]::traits::specialization_graph::Graph>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1295:9
+  45:     0x7fa6503b68e1 - rustc_middle[e6798efc31860406]::ty::context::tls::enter_context::<<rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query<rustc_middle[e6798efc31860406]::traits::specialization_graph::Graph, rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::specialization_graph_of, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}, rustc_middle[e6798efc31860406]::traits::specialization_graph::Graph>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1311:9
+  46:     0x7fa6503b68e1 - <rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query::<rustc_middle[e6798efc31860406]::traits::specialization_graph::Graph, rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::specialization_graph_of, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:127:13
+  47:     0x7fa6503b68e1 - rustc_middle[e6798efc31860406]::ty::context::tls::with_related_context::<<rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query<rustc_middle[e6798efc31860406]::traits::specialization_graph::Graph, rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::specialization_graph_of, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, rustc_middle[e6798efc31860406]::traits::specialization_graph::Graph>::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1355:13
+  48:     0x7fa6503b68e1 - rustc_middle[e6798efc31860406]::ty::context::tls::with_context::<rustc_middle[e6798efc31860406]::ty::context::tls::with_related_context<<rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query<rustc_middle[e6798efc31860406]::traits::specialization_graph::Graph, rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::specialization_graph_of, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, rustc_middle[e6798efc31860406]::traits::specialization_graph::Graph>::{closure#0}, rustc_middle[e6798efc31860406]::traits::specialization_graph::Graph>::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1339:40
+  49:     0x7fa6503b68e1 - rustc_middle[e6798efc31860406]::ty::context::tls::with_context_opt::<rustc_middle[e6798efc31860406]::ty::context::tls::with_context<rustc_middle[e6798efc31860406]::ty::context::tls::with_related_context<<rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query<rustc_middle[e6798efc31860406]::traits::specialization_graph::Graph, rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::specialization_graph_of, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, rustc_middle[e6798efc31860406]::traits::specialization_graph::Graph>::{closure#0}, rustc_middle[e6798efc31860406]::traits::specialization_graph::Graph>::{closure#0}, rustc_middle[e6798efc31860406]::traits::specialization_graph::Graph>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1328:22
+  50:     0x7fa6503b68e1 - rustc_middle[e6798efc31860406]::ty::context::tls::with_context::<rustc_middle[e6798efc31860406]::ty::context::tls::with_related_context<<rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query<rustc_middle[e6798efc31860406]::traits::specialization_graph::Graph, rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::specialization_graph_of, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, rustc_middle[e6798efc31860406]::traits::specialization_graph::Graph>::{closure#0}, rustc_middle[e6798efc31860406]::traits::specialization_graph::Graph>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1339:9
+  51:     0x7fa6503b68e1 - rustc_middle[e6798efc31860406]::ty::context::tls::with_related_context::<<rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query<rustc_middle[e6798efc31860406]::traits::specialization_graph::Graph, rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::specialization_graph_of, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, rustc_middle[e6798efc31860406]::traits::specialization_graph::Graph>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1352:9
+  52:     0x7fa6503b68e1 - <rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query::<rustc_middle[e6798efc31860406]::traits::specialization_graph::Graph, rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::specialization_graph_of, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:112:9
+  53:     0x7fa6503b68e1 - rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job::<rustc_query_impl[b283f3c634514fbd]::queries::specialization_graph_of, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:432:22
+  54:     0x7fa6503b68e1 - rustc_query_system[490a0743243e93bb]::query::plumbing::try_execute_query::<rustc_query_impl[b283f3c634514fbd]::queries::specialization_graph_of, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:378:17
+  55:     0x7fa650612d7d - rustc_query_system[490a0743243e93bb]::query::plumbing::get_query::<rustc_query_impl[b283f3c634514fbd]::queries::specialization_graph_of, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt, rustc_middle[e6798efc31860406]::dep_graph::dep_node::DepKind>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:750:36
+  56:     0x7fa650612d7d - <rustc_query_impl[b283f3c634514fbd]::Queries as rustc_middle[e6798efc31860406]::ty::query::QueryEngine>::specialization_graph_of::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:727:17
+  57:     0x7fa650612d7d - <rustc_query_impl[b283f3c634514fbd]::Queries as rustc_middle[e6798efc31860406]::ty::query::QueryEngine>::specialization_graph_of
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/lib.rs:44:1
+  58:     0x7fa64ed044af - <rustc_middle[e6798efc31860406]::ty::query::TyCtxtEnsure>::specialization_graph_of::<rustc_span[b9a05ef69a984185]::def_id::DefId>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/query.rs:234:17
+  59:     0x7fa64ed044af - rustc_hir_analysis[e049b83b0a5db4cd]::coherence::coherent_trait
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_hir_analysis/src/coherence/mod.rs:127:18
+  60:     0x7fa65030cbc8 - rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job::<rustc_query_impl[b283f3c634514fbd]::queries::coherent_trait, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:433:13
+  61:     0x7fa65030cbc8 - stacker[efd2648ccb3cd540]::maybe_grow::<(), rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::coherent_trait, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>
+                               at /home/matthias/.cargo/registry/src/github.com-1ecc6299db9ec823/stacker-0.1.15/src/lib.rs:55:9
+  62:     0x7fa65030cbc8 - rustc_data_structures[5f73042812525593]::stack::ensure_sufficient_stack::<(), rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::coherent_trait, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_data_structures/src/stack.rs:17:5
+  63:     0x7fa65030cbc8 - <rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query::<(), rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::coherent_trait, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:128:17
+  64:     0x7fa65030cbc8 - rustc_middle[e6798efc31860406]::ty::context::tls::enter_context::<<rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query<(), rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::coherent_trait, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}, ()>::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1311:50
+  65:     0x7fa65030cbc8 - rustc_middle[e6798efc31860406]::ty::context::tls::set_tlv::<rustc_middle[e6798efc31860406]::ty::context::tls::enter_context<<rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query<(), rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::coherent_trait, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}, ()>::{closure#0}, ()>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1295:9
+  66:     0x7fa65030cbc8 - rustc_middle[e6798efc31860406]::ty::context::tls::enter_context::<<rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query<(), rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::coherent_trait, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}, ()>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1311:9
+  67:     0x7fa65030cbc8 - <rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query::<(), rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::coherent_trait, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:127:13
+  68:     0x7fa65030cbc8 - rustc_middle[e6798efc31860406]::ty::context::tls::with_related_context::<<rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query<(), rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::coherent_trait, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, ()>::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1355:13
+  69:     0x7fa65030cbc8 - rustc_middle[e6798efc31860406]::ty::context::tls::with_context::<rustc_middle[e6798efc31860406]::ty::context::tls::with_related_context<<rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query<(), rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::coherent_trait, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, ()>::{closure#0}, ()>::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1339:40
+  70:     0x7fa65030cbc8 - rustc_middle[e6798efc31860406]::ty::context::tls::with_context_opt::<rustc_middle[e6798efc31860406]::ty::context::tls::with_context<rustc_middle[e6798efc31860406]::ty::context::tls::with_related_context<<rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query<(), rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::coherent_trait, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, ()>::{closure#0}, ()>::{closure#0}, ()>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1328:22
+  71:     0x7fa65030cbc8 - rustc_middle[e6798efc31860406]::ty::context::tls::with_context::<rustc_middle[e6798efc31860406]::ty::context::tls::with_related_context<<rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query<(), rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::coherent_trait, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, ()>::{closure#0}, ()>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1339:9
+  72:     0x7fa65030cbc8 - rustc_middle[e6798efc31860406]::ty::context::tls::with_related_context::<<rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query<(), rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::coherent_trait, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, ()>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1352:9
+  73:     0x7fa65030cbc8 - <rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query::<(), rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::coherent_trait, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:112:9
+  74:     0x7fa65030cbc8 - rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job::<rustc_query_impl[b283f3c634514fbd]::queries::coherent_trait, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:432:22
+  75:     0x7fa65030cbc8 - rustc_query_system[490a0743243e93bb]::query::plumbing::try_execute_query::<rustc_query_impl[b283f3c634514fbd]::queries::coherent_trait, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:378:17
+  76:     0x7fa6505fc2ed - rustc_query_system[490a0743243e93bb]::query::plumbing::get_query::<rustc_query_impl[b283f3c634514fbd]::queries::coherent_trait, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt, rustc_middle[e6798efc31860406]::dep_graph::dep_node::DepKind>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:750:36
+  77:     0x7fa6505fc2ed - <rustc_query_impl[b283f3c634514fbd]::Queries as rustc_middle[e6798efc31860406]::ty::query::QueryEngine>::coherent_trait::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:727:17
+  78:     0x7fa6505fc2ed - <rustc_query_impl[b283f3c634514fbd]::Queries as rustc_middle[e6798efc31860406]::ty::query::QueryEngine>::coherent_trait
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/lib.rs:44:1
+  79:     0x7fa64ec0dc3e - <rustc_middle[e6798efc31860406]::ty::query::TyCtxtEnsure>::coherent_trait::<rustc_span[b9a05ef69a984185]::def_id::DefId>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/query.rs:234:17
+  80:     0x7fa64ec0dc3e - rustc_hir_analysis[e049b83b0a5db4cd]::check_crate::{closure#3}::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_hir_analysis/src/lib.rs:505:30
+  81:     0x7fa64ec0dc3e - <rustc_data_structures[5f73042812525593]::profiling::VerboseTimingGuard>::run::<(), rustc_hir_analysis[e049b83b0a5db4cd]::check_crate::{closure#3}::{closure#0}>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_data_structures/src/profiling.rs:723:9
+  82:     0x7fa64ec0dc3e - <rustc_session[93296ed40d7cc11d]::session::Session>::time::<(), rustc_hir_analysis[e049b83b0a5db4cd]::check_crate::{closure#3}::{closure#0}>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_session/src/utils.rs:10:50
+  83:     0x7fa64ec0dc3e - rustc_hir_analysis[e049b83b0a5db4cd]::check_crate::{closure#3}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_hir_analysis/src/lib.rs:503:9
+  84:     0x7fa64ec0dc3e - <rustc_session[93296ed40d7cc11d]::session::Session>::track_errors::<rustc_hir_analysis[e049b83b0a5db4cd]::check_crate::{closure#3}, ()>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_session/src/session.rs:564:22
+  85:     0x7fa64ebac35d - rustc_hir_analysis[e049b83b0a5db4cd]::check_crate
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_hir_analysis/src/lib.rs:502:5
+  86:     0x7fa64f405024 - rustc_interface[2bb18c634d623d0e]::passes::analysis
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_interface/src/passes.rs:886:5
+  87:     0x7fa6503faa20 - rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job::<rustc_query_impl[b283f3c634514fbd]::queries::analysis, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:433:13
+  88:     0x7fa6503faa20 - stacker[efd2648ccb3cd540]::maybe_grow::<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::analysis, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>
+                               at /home/matthias/.cargo/registry/src/github.com-1ecc6299db9ec823/stacker-0.1.15/src/lib.rs:55:9
+  89:     0x7fa6503faa20 - rustc_data_structures[5f73042812525593]::stack::ensure_sufficient_stack::<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::analysis, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_data_structures/src/stack.rs:17:5
+  90:     0x7fa6503faa20 - <rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query::<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::analysis, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:128:17
+  91:     0x7fa6503faa20 - rustc_middle[e6798efc31860406]::ty::context::tls::enter_context::<<rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::analysis, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1311:50
+  92:     0x7fa6503faa20 - rustc_middle[e6798efc31860406]::ty::context::tls::set_tlv::<rustc_middle[e6798efc31860406]::ty::context::tls::enter_context<<rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::analysis, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1295:9
+  93:     0x7fa6503faa20 - rustc_middle[e6798efc31860406]::ty::context::tls::enter_context::<<rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::analysis, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1311:9
+  94:     0x7fa6503faa20 - <rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query::<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::analysis, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:127:13
+  95:     0x7fa6503faa20 - rustc_middle[e6798efc31860406]::ty::context::tls::with_related_context::<<rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::analysis, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1355:13
+  96:     0x7fa6503faa20 - rustc_middle[e6798efc31860406]::ty::context::tls::with_context::<rustc_middle[e6798efc31860406]::ty::context::tls::with_related_context<<rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::analysis, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1339:40
+  97:     0x7fa6503faa20 - rustc_middle[e6798efc31860406]::ty::context::tls::with_context_opt::<rustc_middle[e6798efc31860406]::ty::context::tls::with_context<rustc_middle[e6798efc31860406]::ty::context::tls::with_related_context<<rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::analysis, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1328:22
+  98:     0x7fa6503faa20 - rustc_middle[e6798efc31860406]::ty::context::tls::with_context::<rustc_middle[e6798efc31860406]::ty::context::tls::with_related_context<<rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::analysis, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1339:9
+  99:     0x7fa6503faa20 - rustc_middle[e6798efc31860406]::ty::context::tls::with_related_context::<<rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::analysis, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1352:9
+ 100:     0x7fa6503faa20 - <rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt as rustc_query_system[490a0743243e93bb]::query::QueryContext>::start_query::<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job<rustc_query_impl[b283f3c634514fbd]::queries::analysis, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>::{closure#0}>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:112:9
+ 101:     0x7fa6503faa20 - rustc_query_system[490a0743243e93bb]::query::plumbing::execute_job::<rustc_query_impl[b283f3c634514fbd]::queries::analysis, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:432:22
+ 102:     0x7fa6503faa20 - rustc_query_system[490a0743243e93bb]::query::plumbing::try_execute_query::<rustc_query_impl[b283f3c634514fbd]::queries::analysis, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:378:17
+ 103:     0x7fa6505d2fc7 - rustc_query_system[490a0743243e93bb]::query::plumbing::get_query::<rustc_query_impl[b283f3c634514fbd]::queries::analysis, rustc_query_impl[b283f3c634514fbd]::plumbing::QueryCtxt, rustc_middle[e6798efc31860406]::dep_graph::dep_node::DepKind>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:750:36
+ 104:     0x7fa6505d2fc7 - <rustc_query_impl[b283f3c634514fbd]::Queries as rustc_middle[e6798efc31860406]::ty::query::QueryEngine>::analysis::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:727:17
+ 105:     0x7fa6505d2fc7 - <rustc_query_impl[b283f3c634514fbd]::Queries as rustc_middle[e6798efc31860406]::ty::query::QueryEngine>::analysis
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/lib.rs:44:1
+ 106:     0x7fa64e85cf1a - <rustc_middle[e6798efc31860406]::ty::query::TyCtxtAt>::analysis
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/query.rs:263:17
+ 107:     0x7fa64e85cf1a - <rustc_middle[e6798efc31860406]::ty::context::TyCtxt>::analysis
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/query.rs:244:35
+ 108:     0x7fa64e85cf1a - rustc_driver[b5e5f54b2e117763]::run_compiler::{closure#1}::{closure#2}::{closure#2}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_driver/src/lib.rs:375:34
+ 109:     0x7fa64e85cf1a - <rustc_interface[2bb18c634d623d0e]::passes::QueryContext>::enter::<rustc_driver[b5e5f54b2e117763]::run_compiler::{closure#1}::{closure#2}::{closure#2}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_interface/src/passes.rs:765:42
+ 110:     0x7fa64e85cf1a - rustc_middle[e6798efc31860406]::ty::context::tls::enter_context::<<rustc_interface[2bb18c634d623d0e]::passes::QueryContext>::enter<rustc_driver[b5e5f54b2e117763]::run_compiler::{closure#1}::{closure#2}::{closure#2}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1311:50
+ 111:     0x7fa64e85cf1a - rustc_middle[e6798efc31860406]::ty::context::tls::set_tlv::<rustc_middle[e6798efc31860406]::ty::context::tls::enter_context<<rustc_interface[2bb18c634d623d0e]::passes::QueryContext>::enter<rustc_driver[b5e5f54b2e117763]::run_compiler::{closure#1}::{closure#2}::{closure#2}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1295:9
+ 112:     0x7fa64e85cf1a - rustc_middle[e6798efc31860406]::ty::context::tls::enter_context::<<rustc_interface[2bb18c634d623d0e]::passes::QueryContext>::enter<rustc_driver[b5e5f54b2e117763]::run_compiler::{closure#1}::{closure#2}::{closure#2}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1311:9
+ 113:     0x7fa64e85cf1a - <rustc_interface[2bb18c634d623d0e]::passes::QueryContext>::enter::<rustc_driver[b5e5f54b2e117763]::run_compiler::{closure#1}::{closure#2}::{closure#2}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_interface/src/passes.rs:765:9
+ 114:     0x7fa64e87e0b7 - rustc_driver[b5e5f54b2e117763]::run_compiler::{closure#1}::{closure#2}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_driver/src/lib.rs:374:13
+ 115:     0x7fa64e87e0b7 - <rustc_interface[2bb18c634d623d0e]::interface::Compiler>::enter::<rustc_driver[b5e5f54b2e117763]::run_compiler::{closure#1}::{closure#2}, core[a28e3aee1dd4a69e]::result::Result<core[a28e3aee1dd4a69e]::option::Option<rustc_interface[2bb18c634d623d0e]::queries::Linker>, rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_interface/src/queries.rs:380:19
+ 116:     0x7fa64e7c898c - rustc_driver[b5e5f54b2e117763]::run_compiler::{closure#1}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_driver/src/lib.rs:306:22
+ 117:     0x7fa64e7c898c - rustc_interface[2bb18c634d623d0e]::interface::run_compiler::<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_driver[b5e5f54b2e117763]::run_compiler::{closure#1}>::{closure#0}::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_interface/src/interface.rs:325:21
+ 118:     0x7fa64e7c898c - rustc_span[b9a05ef69a984185]::with_source_map::<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_interface[2bb18c634d623d0e]::interface::run_compiler<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_driver[b5e5f54b2e117763]::run_compiler::{closure#1}>::{closure#0}::{closure#0}>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_span/src/lib.rs:1026:5
+ 119:     0x7fa64e86c4ba - rustc_interface[2bb18c634d623d0e]::interface::run_compiler::<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_driver[b5e5f54b2e117763]::run_compiler::{closure#1}>::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_interface/src/interface.rs:319:13
+ 120:     0x7fa64e86c4ba - <scoped_tls[b7a439aa38053655]::ScopedKey<rustc_span[b9a05ef69a984185]::SessionGlobals>>::set::<rustc_interface[2bb18c634d623d0e]::interface::run_compiler<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_driver[b5e5f54b2e117763]::run_compiler::{closure#1}>::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>
+                               at /home/matthias/.cargo/registry/src/github.com-1ecc6299db9ec823/scoped-tls-1.0.0/src/lib.rs:137:9
+ 121:     0x7fa64e80db0f - rustc_span[b9a05ef69a984185]::create_session_globals_then::<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_interface[2bb18c634d623d0e]::interface::run_compiler<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_driver[b5e5f54b2e117763]::run_compiler::{closure#1}>::{closure#0}>
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_span/src/lib.rs:111:5
+ 122:     0x7fa64e80db0f - rustc_interface[2bb18c634d623d0e]::util::run_in_thread_pool_with_globals::<rustc_interface[2bb18c634d623d0e]::interface::run_compiler<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_driver[b5e5f54b2e117763]::run_compiler::{closure#1}>::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#0}::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_interface/src/util.rs:145:38
+ 123:     0x7fa64e80db0f - std[898f9bf6a8d0f504]::sys_common::backtrace::__rust_begin_short_backtrace::<rustc_interface[2bb18c634d623d0e]::util::run_in_thread_pool_with_globals<rustc_interface[2bb18c634d623d0e]::interface::run_compiler<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_driver[b5e5f54b2e117763]::run_compiler::{closure#1}>::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#0}::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/std/src/sys_common/backtrace.rs:121:18
+ 124:     0x7fa64e7f7521 - <std[898f9bf6a8d0f504]::thread::Builder>::spawn_unchecked_::<rustc_interface[2bb18c634d623d0e]::util::run_in_thread_pool_with_globals<rustc_interface[2bb18c634d623d0e]::interface::run_compiler<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_driver[b5e5f54b2e117763]::run_compiler::{closure#1}>::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#0}::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#1}::{closure#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/std/src/thread/mod.rs:550:17
+ 125:     0x7fa64e7f7521 - <core[a28e3aee1dd4a69e]::panic::unwind_safe::AssertUnwindSafe<<std[898f9bf6a8d0f504]::thread::Builder>::spawn_unchecked_<rustc_interface[2bb18c634d623d0e]::util::run_in_thread_pool_with_globals<rustc_interface[2bb18c634d623d0e]::interface::run_compiler<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_driver[b5e5f54b2e117763]::run_compiler::{closure#1}>::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#0}::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#1}::{closure#0}> as core[a28e3aee1dd4a69e]::ops::function::FnOnce<()>>::call_once
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/core/src/panic/unwind_safe.rs:271:9
+ 126:     0x7fa64e7f7521 - std[898f9bf6a8d0f504]::panicking::try::do_call::<core[a28e3aee1dd4a69e]::panic::unwind_safe::AssertUnwindSafe<<std[898f9bf6a8d0f504]::thread::Builder>::spawn_unchecked_<rustc_interface[2bb18c634d623d0e]::util::run_in_thread_pool_with_globals<rustc_interface[2bb18c634d623d0e]::interface::run_compiler<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_driver[b5e5f54b2e117763]::run_compiler::{closure#1}>::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#0}::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#1}::{closure#0}>, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/std/src/panicking.rs:483:40
+ 127:     0x7fa64e7f7521 - std[898f9bf6a8d0f504]::panicking::try::<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, core[a28e3aee1dd4a69e]::panic::unwind_safe::AssertUnwindSafe<<std[898f9bf6a8d0f504]::thread::Builder>::spawn_unchecked_<rustc_interface[2bb18c634d623d0e]::util::run_in_thread_pool_with_globals<rustc_interface[2bb18c634d623d0e]::interface::run_compiler<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_driver[b5e5f54b2e117763]::run_compiler::{closure#1}>::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#0}::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#1}::{closure#0}>>
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/std/src/panicking.rs:447:19
+ 128:     0x7fa64e7f7521 - std[898f9bf6a8d0f504]::panic::catch_unwind::<core[a28e3aee1dd4a69e]::panic::unwind_safe::AssertUnwindSafe<<std[898f9bf6a8d0f504]::thread::Builder>::spawn_unchecked_<rustc_interface[2bb18c634d623d0e]::util::run_in_thread_pool_with_globals<rustc_interface[2bb18c634d623d0e]::interface::run_compiler<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_driver[b5e5f54b2e117763]::run_compiler::{closure#1}>::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#0}::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#1}::{closure#0}>, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/std/src/panic.rs:140:14
+ 129:     0x7fa64e7f7521 - <std[898f9bf6a8d0f504]::thread::Builder>::spawn_unchecked_::<rustc_interface[2bb18c634d623d0e]::util::run_in_thread_pool_with_globals<rustc_interface[2bb18c634d623d0e]::interface::run_compiler<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_driver[b5e5f54b2e117763]::run_compiler::{closure#1}>::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#0}::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#1}
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/std/src/thread/mod.rs:549:30
+ 130:     0x7fa64e7f7521 - <<std[898f9bf6a8d0f504]::thread::Builder>::spawn_unchecked_<rustc_interface[2bb18c634d623d0e]::util::run_in_thread_pool_with_globals<rustc_interface[2bb18c634d623d0e]::interface::run_compiler<core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>, rustc_driver[b5e5f54b2e117763]::run_compiler::{closure#1}>::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#0}::{closure#0}, core[a28e3aee1dd4a69e]::result::Result<(), rustc_errors[65f593afc401dd23]::ErrorGuaranteed>>::{closure#1} as core[a28e3aee1dd4a69e]::ops::function::FnOnce<()>>::call_once::{shim:vtable#0}
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/core/src/ops/function.rs:250:5
+ 131:     0x7fa64cca5d78 - <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once::hbd90f1d7134662bc
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/alloc/src/boxed.rs:1988:9
+ 132:     0x7fa64cca5d78 - <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once::h1ec077bbd6166474
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/alloc/src/boxed.rs:1988:9
+ 133:     0x7fa64cc8d6b5 - std::sys::unix::thread::Thread::new::thread_start::h357b5324080a198e
+                               at /home/matthias/vcs/github/rust_debug_assertions/library/std/src/sys/unix/thread.rs:108:17
+ 134:     0x7fa64ce9f8fd - <unknown>
+ 135:     0x7fa64cf21a60 - <unknown>
+ 136:                0x0 - <unknown>
+
+error: internal compiler error: unexpected panic
+
+note: the compiler unexpectedly panicked. this is a bug.
+
+note: we would appreciate a bug report: https://github.com/rust-lang/rust/issues/new?labels=C-bug%2C+I-ICE%2C+T-compiler&template=ice.md
+
+note: rustc 1.68.0-dev running on x86_64-unknown-linux-gnu
+
+note: compiler flags: -Z translate-lang=en_US
+
+query stack during panic:
+#0 [specialization_graph_of] building specialization graph of trait `core::marker::Send`
+#1 [coherent_trait] coherence checking all impls of trait `core::marker::Send`
+#2 [analysis] running analysis passes on this crate
+end of query stack
+error: internal compiler error: no warnings or errors encountered even though `delayed_good_path_bugs` issued
+
+error: internal compiler error: trimmed_def_paths constructed but no error emitted; use `DelayDm` for lints or `with_no_trimmed_paths` for debugging
+  |
+  = note: delayed at    0: <rustc_errors::HandlerInner>::delay_good_path_bug::<&str>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_errors/src/lib.rs:1582:25
+             1: <rustc_errors::Handler>::delay_good_path_bug::<&str>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_errors/src/lib.rs:1003:9
+             2: <rustc_session::session::Session>::delay_good_path_bug::<&str>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_session/src/session.rs:629:9
+             3: rustc_middle::ty::print::pretty::trimmed_def_paths
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/print/pretty.rs:2896:9
+             4: rustc_query_system::query::plumbing::execute_job::<rustc_query_impl::queries::trimmed_def_paths, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:433:13
+             5: stacker::maybe_grow::<std::collections::hash::map::HashMap<rustc_span::def_id::DefId, rustc_span::symbol::Symbol, core::hash::BuildHasherDefault<rustc_hash::FxHasher>>, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::trimmed_def_paths, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>
+                       at /home/matthias/.cargo/registry/src/github.com-1ecc6299db9ec823/stacker-0.1.15/src/lib.rs:55:9
+             6: rustc_data_structures::stack::ensure_sufficient_stack::<std::collections::hash::map::HashMap<rustc_span::def_id::DefId, rustc_span::symbol::Symbol, core::hash::BuildHasherDefault<rustc_hash::FxHasher>>, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::trimmed_def_paths, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_data_structures/src/stack.rs:17:5
+             7: <rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query::<std::collections::hash::map::HashMap<rustc_span::def_id::DefId, rustc_span::symbol::Symbol, core::hash::BuildHasherDefault<rustc_hash::FxHasher>>, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::trimmed_def_paths, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:128:17
+             8: rustc_middle::ty::context::tls::enter_context::<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<std::collections::hash::map::HashMap<rustc_span::def_id::DefId, rustc_span::symbol::Symbol, core::hash::BuildHasherDefault<rustc_hash::FxHasher>>, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::trimmed_def_paths, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}, std::collections::hash::map::HashMap<rustc_span::def_id::DefId, rustc_span::symbol::Symbol, core::hash::BuildHasherDefault<rustc_hash::FxHasher>>>::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1311:50
+             9: rustc_middle::ty::context::tls::set_tlv::<rustc_middle::ty::context::tls::enter_context<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<std::collections::hash::map::HashMap<rustc_span::def_id::DefId, rustc_span::symbol::Symbol, core::hash::BuildHasherDefault<rustc_hash::FxHasher>>, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::trimmed_def_paths, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}, std::collections::hash::map::HashMap<rustc_span::def_id::DefId, rustc_span::symbol::Symbol, core::hash::BuildHasherDefault<rustc_hash::FxHasher>>>::{closure#0}, std::collections::hash::map::HashMap<rustc_span::def_id::DefId, rustc_span::symbol::Symbol, core::hash::BuildHasherDefault<rustc_hash::FxHasher>>>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1295:9
+            10: rustc_middle::ty::context::tls::enter_context::<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<std::collections::hash::map::HashMap<rustc_span::def_id::DefId, rustc_span::symbol::Symbol, core::hash::BuildHasherDefault<rustc_hash::FxHasher>>, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::trimmed_def_paths, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}, std::collections::hash::map::HashMap<rustc_span::def_id::DefId, rustc_span::symbol::Symbol, core::hash::BuildHasherDefault<rustc_hash::FxHasher>>>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1311:9
+            11: <rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query::<std::collections::hash::map::HashMap<rustc_span::def_id::DefId, rustc_span::symbol::Symbol, core::hash::BuildHasherDefault<rustc_hash::FxHasher>>, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::trimmed_def_paths, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:127:13
+            12: rustc_middle::ty::context::tls::with_related_context::<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<std::collections::hash::map::HashMap<rustc_span::def_id::DefId, rustc_span::symbol::Symbol, core::hash::BuildHasherDefault<rustc_hash::FxHasher>>, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::trimmed_def_paths, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, std::collections::hash::map::HashMap<rustc_span::def_id::DefId, rustc_span::symbol::Symbol, core::hash::BuildHasherDefault<rustc_hash::FxHasher>>>::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1355:13
+            13: rustc_middle::ty::context::tls::with_context::<rustc_middle::ty::context::tls::with_related_context<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<std::collections::hash::map::HashMap<rustc_span::def_id::DefId, rustc_span::symbol::Symbol, core::hash::BuildHasherDefault<rustc_hash::FxHasher>>, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::trimmed_def_paths, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, std::collections::hash::map::HashMap<rustc_span::def_id::DefId, rustc_span::symbol::Symbol, core::hash::BuildHasherDefault<rustc_hash::FxHasher>>>::{closure#0}, std::collections::hash::map::HashMap<rustc_span::def_id::DefId, rustc_span::symbol::Symbol, core::hash::BuildHasherDefault<rustc_hash::FxHasher>>>::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1339:40
+            14: rustc_middle::ty::context::tls::with_context_opt::<rustc_middle::ty::context::tls::with_context<rustc_middle::ty::context::tls::with_related_context<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<std::collections::hash::map::HashMap<rustc_span::def_id::DefId, rustc_span::symbol::Symbol, core::hash::BuildHasherDefault<rustc_hash::FxHasher>>, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::trimmed_def_paths, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, std::collections::hash::map::HashMap<rustc_span::def_id::DefId, rustc_span::symbol::Symbol, core::hash::BuildHasherDefault<rustc_hash::FxHasher>>>::{closure#0}, std::collections::hash::map::HashMap<rustc_span::def_id::DefId, rustc_span::symbol::Symbol, core::hash::BuildHasherDefault<rustc_hash::FxHasher>>>::{closure#0}, std::collections::hash::map::HashMap<rustc_span::def_id::DefId, rustc_span::symbol::Symbol, core::hash::BuildHasherDefault<rustc_hash::FxHasher>>>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1328:22
+            15: rustc_middle::ty::context::tls::with_context::<rustc_middle::ty::context::tls::with_related_context<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<std::collections::hash::map::HashMap<rustc_span::def_id::DefId, rustc_span::symbol::Symbol, core::hash::BuildHasherDefault<rustc_hash::FxHasher>>, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::trimmed_def_paths, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, std::collections::hash::map::HashMap<rustc_span::def_id::DefId, rustc_span::symbol::Symbol, core::hash::BuildHasherDefault<rustc_hash::FxHasher>>>::{closure#0}, std::collections::hash::map::HashMap<rustc_span::def_id::DefId, rustc_span::symbol::Symbol, core::hash::BuildHasherDefault<rustc_hash::FxHasher>>>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1339:9
+            16: rustc_middle::ty::context::tls::with_related_context::<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<std::collections::hash::map::HashMap<rustc_span::def_id::DefId, rustc_span::symbol::Symbol, core::hash::BuildHasherDefault<rustc_hash::FxHasher>>, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::trimmed_def_paths, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, std::collections::hash::map::HashMap<rustc_span::def_id::DefId, rustc_span::symbol::Symbol, core::hash::BuildHasherDefault<rustc_hash::FxHasher>>>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1352:9
+            17: <rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query::<std::collections::hash::map::HashMap<rustc_span::def_id::DefId, rustc_span::symbol::Symbol, core::hash::BuildHasherDefault<rustc_hash::FxHasher>>, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::trimmed_def_paths, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:112:9
+            18: rustc_query_system::query::plumbing::execute_job::<rustc_query_impl::queries::trimmed_def_paths, rustc_query_impl::plumbing::QueryCtxt>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:432:22
+            19: rustc_query_system::query::plumbing::try_execute_query::<rustc_query_impl::queries::trimmed_def_paths, rustc_query_impl::plumbing::QueryCtxt>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:378:17
+            20: rustc_query_system::query::plumbing::get_query::<rustc_query_impl::queries::trimmed_def_paths, rustc_query_impl::plumbing::QueryCtxt, rustc_middle::dep_graph::dep_node::DepKind>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:750:36
+            21: <rustc_query_impl::Queries as rustc_middle::ty::query::QueryEngine>::trimmed_def_paths::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:727:17
+            22: <rustc_query_impl::Queries as rustc_middle::ty::query::QueryEngine>::trimmed_def_paths
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/lib.rs:44:1
+            23: <rustc_middle::ty::query::TyCtxtAt>::trimmed_def_paths
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/query.rs:263:17
+            24: <rustc_middle::ty::context::TyCtxt>::trimmed_def_paths
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/query.rs:244:35
+            25: <rustc_middle::ty::print::pretty::FmtPrinter as rustc_middle::ty::print::pretty::PrettyPrinter>::try_print_trimmed_def_path
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/print/pretty.rs:391:26
+            26: <rustc_middle::ty::print::pretty::FmtPrinter as rustc_middle::ty::print::Printer>::print_def_path
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/print/pretty.rs:1803:19
+            27: <rustc_middle::ty::print::pretty::FmtPrinter as rustc_middle::ty::print::Printer>::default_print_def_path::{closure#2}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/print/mod.rs:154:42
+            28: <rustc_middle::ty::print::pretty::FmtPrinter as rustc_middle::ty::print::Printer>::path_generic_args::<<rustc_middle::ty::print::pretty::FmtPrinter as rustc_middle::ty::print::Printer>::default_print_def_path::{closure#2}>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/print/pretty.rs:1966:16
+            29: <rustc_middle::ty::print::pretty::FmtPrinter as rustc_middle::ty::print::Printer>::default_print_def_path
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/print/mod.rs:153:40
+            30: <rustc_middle::ty::print::pretty::FmtPrinter as rustc_middle::ty::print::Printer>::print_def_path
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/print/pretty.rs:1851:9
+            31: <rustc_middle::ty::print::pretty::TraitRefPrintOnlyTraitPath as rustc_middle::ty::print::Print<rustc_middle::ty::print::pretty::FmtPrinter>>::print
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/print/pretty.rs:2693:9
+            32: <rustc_middle::ty::print::pretty::TraitRefPrintOnlyTraitPath as core::fmt::Display>::fmt::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/print/pretty.rs:2522:30
+            33: rustc_middle::ty::context::tls::with::<<rustc_middle::ty::print::pretty::TraitRefPrintOnlyTraitPath as core::fmt::Display>::fmt::{closure#0}, core::result::Result<(), core::fmt::Error>>::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1366:32
+            34: rustc_middle::ty::context::tls::with_context::<rustc_middle::ty::context::tls::with<<rustc_middle::ty::print::pretty::TraitRefPrintOnlyTraitPath as core::fmt::Display>::fmt::{closure#0}, core::result::Result<(), core::fmt::Error>>::{closure#0}, core::result::Result<(), core::fmt::Error>>::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1339:40
+            35: rustc_middle::ty::context::tls::with_context_opt::<rustc_middle::ty::context::tls::with_context<rustc_middle::ty::context::tls::with<<rustc_middle::ty::print::pretty::TraitRefPrintOnlyTraitPath as core::fmt::Display>::fmt::{closure#0}, core::result::Result<(), core::fmt::Error>>::{closure#0}, core::result::Result<(), core::fmt::Error>>::{closure#0}, core::result::Result<(), core::fmt::Error>>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1328:22
+            36: rustc_middle::ty::context::tls::with_context::<rustc_middle::ty::context::tls::with<<rustc_middle::ty::print::pretty::TraitRefPrintOnlyTraitPath as core::fmt::Display>::fmt::{closure#0}, core::result::Result<(), core::fmt::Error>>::{closure#0}, core::result::Result<(), core::fmt::Error>>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1339:9
+            37: rustc_middle::ty::context::tls::with::<<rustc_middle::ty::print::pretty::TraitRefPrintOnlyTraitPath as core::fmt::Display>::fmt::{closure#0}, core::result::Result<(), core::fmt::Error>>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1366:9
+            38: <rustc_middle::ty::print::pretty::TraitRefPrintOnlyTraitPath as core::fmt::Display>::fmt
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/print/pretty.rs:2521:17
+            39: <rustc_middle::ty::print::pretty::TraitRefPrintOnlyTraitPath as alloc::string::ToString>::to_string
+                       at /home/matthias/vcs/github/rust_debug_assertions/library/alloc/src/string.rs:2536:9
+            40: <rustc_trait_selection::errors::NegativePositiveConflict as rustc_errors::diagnostic_builder::IntoDiagnostic>::into_diagnostic
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_trait_selection/src/errors.rs:76:36
+            41: <rustc_session::parse::ParseSess>::create_err::<rustc_trait_selection::errors::NegativePositiveConflict>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_session/src/parse.rs:341:9
+            42: <rustc_session::session::Session>::create_err::<rustc_trait_selection::errors::NegativePositiveConflict>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_session/src/session.rs:482:9
+            43: rustc_trait_selection::traits::specialize::report_negative_positive_conflict
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_trait_selection/src/traits/specialize/mod.rs:324:19
+            44: rustc_trait_selection::traits::specialize::report_overlap_conflict
+            45: rustc_trait_selection::traits::specialize::specialization_graph_provider
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_trait_selection/src/traits/specialize/mod.rs:262:17
+            46: rustc_query_system::query::plumbing::execute_job::<rustc_query_impl::queries::specialization_graph_of, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:433:13
+            47: stacker::maybe_grow::<rustc_middle::traits::specialization_graph::Graph, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::specialization_graph_of, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>
+                       at /home/matthias/.cargo/registry/src/github.com-1ecc6299db9ec823/stacker-0.1.15/src/lib.rs:55:9
+            48: rustc_data_structures::stack::ensure_sufficient_stack::<rustc_middle::traits::specialization_graph::Graph, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::specialization_graph_of, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_data_structures/src/stack.rs:17:5
+            49: <rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query::<rustc_middle::traits::specialization_graph::Graph, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::specialization_graph_of, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:128:17
+            50: rustc_middle::ty::context::tls::enter_context::<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<rustc_middle::traits::specialization_graph::Graph, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::specialization_graph_of, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}, rustc_middle::traits::specialization_graph::Graph>::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1311:50
+            51: rustc_middle::ty::context::tls::set_tlv::<rustc_middle::ty::context::tls::enter_context<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<rustc_middle::traits::specialization_graph::Graph, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::specialization_graph_of, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}, rustc_middle::traits::specialization_graph::Graph>::{closure#0}, rustc_middle::traits::specialization_graph::Graph>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1295:9
+            52: rustc_middle::ty::context::tls::enter_context::<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<rustc_middle::traits::specialization_graph::Graph, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::specialization_graph_of, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}, rustc_middle::traits::specialization_graph::Graph>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1311:9
+            53: <rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query::<rustc_middle::traits::specialization_graph::Graph, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::specialization_graph_of, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:127:13
+            54: rustc_middle::ty::context::tls::with_related_context::<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<rustc_middle::traits::specialization_graph::Graph, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::specialization_graph_of, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, rustc_middle::traits::specialization_graph::Graph>::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1355:13
+            55: rustc_middle::ty::context::tls::with_context::<rustc_middle::ty::context::tls::with_related_context<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<rustc_middle::traits::specialization_graph::Graph, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::specialization_graph_of, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, rustc_middle::traits::specialization_graph::Graph>::{closure#0}, rustc_middle::traits::specialization_graph::Graph>::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1339:40
+            56: rustc_middle::ty::context::tls::with_context_opt::<rustc_middle::ty::context::tls::with_context<rustc_middle::ty::context::tls::with_related_context<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<rustc_middle::traits::specialization_graph::Graph, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::specialization_graph_of, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, rustc_middle::traits::specialization_graph::Graph>::{closure#0}, rustc_middle::traits::specialization_graph::Graph>::{closure#0}, rustc_middle::traits::specialization_graph::Graph>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1328:22
+            57: rustc_middle::ty::context::tls::with_context::<rustc_middle::ty::context::tls::with_related_context<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<rustc_middle::traits::specialization_graph::Graph, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::specialization_graph_of, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, rustc_middle::traits::specialization_graph::Graph>::{closure#0}, rustc_middle::traits::specialization_graph::Graph>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1339:9
+            58: rustc_middle::ty::context::tls::with_related_context::<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<rustc_middle::traits::specialization_graph::Graph, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::specialization_graph_of, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, rustc_middle::traits::specialization_graph::Graph>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1352:9
+            59: <rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query::<rustc_middle::traits::specialization_graph::Graph, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::specialization_graph_of, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:112:9
+            60: rustc_query_system::query::plumbing::execute_job::<rustc_query_impl::queries::specialization_graph_of, rustc_query_impl::plumbing::QueryCtxt>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:432:22
+            61: rustc_query_system::query::plumbing::try_execute_query::<rustc_query_impl::queries::specialization_graph_of, rustc_query_impl::plumbing::QueryCtxt>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:378:17
+            62: rustc_query_system::query::plumbing::get_query::<rustc_query_impl::queries::specialization_graph_of, rustc_query_impl::plumbing::QueryCtxt, rustc_middle::dep_graph::dep_node::DepKind>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:750:36
+            63: <rustc_query_impl::Queries as rustc_middle::ty::query::QueryEngine>::specialization_graph_of::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:727:17
+            64: <rustc_query_impl::Queries as rustc_middle::ty::query::QueryEngine>::specialization_graph_of
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/lib.rs:44:1
+            65: <rustc_middle::ty::query::TyCtxtEnsure>::specialization_graph_of::<rustc_span::def_id::DefId>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/query.rs:234:17
+            66: rustc_hir_analysis::coherence::coherent_trait
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_hir_analysis/src/coherence/mod.rs:127:18
+            67: rustc_query_system::query::plumbing::execute_job::<rustc_query_impl::queries::coherent_trait, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:433:13
+            68: stacker::maybe_grow::<(), rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::coherent_trait, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>
+                       at /home/matthias/.cargo/registry/src/github.com-1ecc6299db9ec823/stacker-0.1.15/src/lib.rs:55:9
+            69: rustc_data_structures::stack::ensure_sufficient_stack::<(), rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::coherent_trait, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_data_structures/src/stack.rs:17:5
+            70: <rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query::<(), rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::coherent_trait, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:128:17
+            71: rustc_middle::ty::context::tls::enter_context::<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<(), rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::coherent_trait, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}, ()>::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1311:50
+            72: rustc_middle::ty::context::tls::set_tlv::<rustc_middle::ty::context::tls::enter_context<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<(), rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::coherent_trait, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}, ()>::{closure#0}, ()>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1295:9
+            73: rustc_middle::ty::context::tls::enter_context::<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<(), rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::coherent_trait, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}, ()>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1311:9
+            74: <rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query::<(), rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::coherent_trait, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:127:13
+            75: rustc_middle::ty::context::tls::with_related_context::<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<(), rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::coherent_trait, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, ()>::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1355:13
+            76: rustc_middle::ty::context::tls::with_context::<rustc_middle::ty::context::tls::with_related_context<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<(), rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::coherent_trait, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, ()>::{closure#0}, ()>::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1339:40
+            77: rustc_middle::ty::context::tls::with_context_opt::<rustc_middle::ty::context::tls::with_context<rustc_middle::ty::context::tls::with_related_context<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<(), rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::coherent_trait, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, ()>::{closure#0}, ()>::{closure#0}, ()>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1328:22
+            78: rustc_middle::ty::context::tls::with_context::<rustc_middle::ty::context::tls::with_related_context<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<(), rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::coherent_trait, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, ()>::{closure#0}, ()>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1339:9
+            79: rustc_middle::ty::context::tls::with_related_context::<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<(), rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::coherent_trait, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, ()>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1352:9
+            80: <rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query::<(), rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::coherent_trait, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:112:9
+            81: rustc_query_system::query::plumbing::execute_job::<rustc_query_impl::queries::coherent_trait, rustc_query_impl::plumbing::QueryCtxt>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:432:22
+            82: rustc_query_system::query::plumbing::try_execute_query::<rustc_query_impl::queries::coherent_trait, rustc_query_impl::plumbing::QueryCtxt>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:378:17
+            83: rustc_query_system::query::plumbing::get_query::<rustc_query_impl::queries::coherent_trait, rustc_query_impl::plumbing::QueryCtxt, rustc_middle::dep_graph::dep_node::DepKind>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:750:36
+            84: <rustc_query_impl::Queries as rustc_middle::ty::query::QueryEngine>::coherent_trait::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:727:17
+            85: <rustc_query_impl::Queries as rustc_middle::ty::query::QueryEngine>::coherent_trait
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/lib.rs:44:1
+            86: <rustc_middle::ty::query::TyCtxtEnsure>::coherent_trait::<rustc_span::def_id::DefId>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/query.rs:234:17
+            87: rustc_hir_analysis::check_crate::{closure#3}::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_hir_analysis/src/lib.rs:505:30
+            88: <rustc_data_structures::profiling::VerboseTimingGuard>::run::<(), rustc_hir_analysis::check_crate::{closure#3}::{closure#0}>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_data_structures/src/profiling.rs:723:9
+            89: <rustc_session::session::Session>::time::<(), rustc_hir_analysis::check_crate::{closure#3}::{closure#0}>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_session/src/utils.rs:10:50
+            90: rustc_hir_analysis::check_crate::{closure#3}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_hir_analysis/src/lib.rs:503:9
+            91: <rustc_session::session::Session>::track_errors::<rustc_hir_analysis::check_crate::{closure#3}, ()>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_session/src/session.rs:564:22
+            92: rustc_hir_analysis::check_crate
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_hir_analysis/src/lib.rs:502:5
+            93: rustc_interface::passes::analysis
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_interface/src/passes.rs:886:5
+            94: rustc_query_system::query::plumbing::execute_job::<rustc_query_impl::queries::analysis, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:433:13
+            95: stacker::maybe_grow::<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::analysis, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>
+                       at /home/matthias/.cargo/registry/src/github.com-1ecc6299db9ec823/stacker-0.1.15/src/lib.rs:55:9
+            96: rustc_data_structures::stack::ensure_sufficient_stack::<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::analysis, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_data_structures/src/stack.rs:17:5
+            97: <rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query::<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::analysis, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:128:17
+            98: rustc_middle::ty::context::tls::enter_context::<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::analysis, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1311:50
+            99: rustc_middle::ty::context::tls::set_tlv::<rustc_middle::ty::context::tls::enter_context<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::analysis, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1295:9
+           100: rustc_middle::ty::context::tls::enter_context::<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::analysis, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1311:9
+           101: <rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query::<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::analysis, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:127:13
+           102: rustc_middle::ty::context::tls::with_related_context::<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::analysis, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1355:13
+           103: rustc_middle::ty::context::tls::with_context::<rustc_middle::ty::context::tls::with_related_context<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::analysis, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1339:40
+           104: rustc_middle::ty::context::tls::with_context_opt::<rustc_middle::ty::context::tls::with_context<rustc_middle::ty::context::tls::with_related_context<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::analysis, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1328:22
+           105: rustc_middle::ty::context::tls::with_context::<rustc_middle::ty::context::tls::with_related_context<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::analysis, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1339:9
+           106: rustc_middle::ty::context::tls::with_related_context::<<rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::analysis, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1352:9
+           107: <rustc_query_impl::plumbing::QueryCtxt as rustc_query_system::query::QueryContext>::start_query::<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_query_system::query::plumbing::execute_job<rustc_query_impl::queries::analysis, rustc_query_impl::plumbing::QueryCtxt>::{closure#0}>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:112:9
+           108: rustc_query_system::query::plumbing::execute_job::<rustc_query_impl::queries::analysis, rustc_query_impl::plumbing::QueryCtxt>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:432:22
+           109: rustc_query_system::query::plumbing::try_execute_query::<rustc_query_impl::queries::analysis, rustc_query_impl::plumbing::QueryCtxt>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:378:17
+           110: rustc_query_system::query::plumbing::get_query::<rustc_query_impl::queries::analysis, rustc_query_impl::plumbing::QueryCtxt, rustc_middle::dep_graph::dep_node::DepKind>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_system/src/query/plumbing.rs:750:36
+           111: <rustc_query_impl::Queries as rustc_middle::ty::query::QueryEngine>::analysis::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/plumbing.rs:727:17
+           112: <rustc_query_impl::Queries as rustc_middle::ty::query::QueryEngine>::analysis
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_query_impl/src/lib.rs:44:1
+           113: <rustc_middle::ty::query::TyCtxtAt>::analysis
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/query.rs:263:17
+           114: <rustc_middle::ty::context::TyCtxt>::analysis
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/query.rs:244:35
+           115: rustc_driver::run_compiler::{closure#1}::{closure#2}::{closure#2}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_driver/src/lib.rs:375:34
+           116: <rustc_interface::passes::QueryContext>::enter::<rustc_driver::run_compiler::{closure#1}::{closure#2}::{closure#2}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_interface/src/passes.rs:765:42
+           117: rustc_middle::ty::context::tls::enter_context::<<rustc_interface::passes::QueryContext>::enter<rustc_driver::run_compiler::{closure#1}::{closure#2}::{closure#2}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1311:50
+           118: rustc_middle::ty::context::tls::set_tlv::<rustc_middle::ty::context::tls::enter_context<<rustc_interface::passes::QueryContext>::enter<rustc_driver::run_compiler::{closure#1}::{closure#2}::{closure#2}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1295:9
+           119: rustc_middle::ty::context::tls::enter_context::<<rustc_interface::passes::QueryContext>::enter<rustc_driver::run_compiler::{closure#1}::{closure#2}::{closure#2}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_middle/src/ty/context.rs:1311:9
+           120: <rustc_interface::passes::QueryContext>::enter::<rustc_driver::run_compiler::{closure#1}::{closure#2}::{closure#2}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_interface/src/passes.rs:765:9
+           121: rustc_driver::run_compiler::{closure#1}::{closure#2}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_driver/src/lib.rs:374:13
+           122: <rustc_interface::interface::Compiler>::enter::<rustc_driver::run_compiler::{closure#1}::{closure#2}, core::result::Result<core::option::Option<rustc_interface::queries::Linker>, rustc_errors::ErrorGuaranteed>>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_interface/src/queries.rs:380:19
+           123: rustc_driver::run_compiler::{closure#1}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_driver/src/lib.rs:306:22
+           124: rustc_interface::interface::run_compiler::<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_driver::run_compiler::{closure#1}>::{closure#0}::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_interface/src/interface.rs:325:21
+           125: rustc_span::with_source_map::<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_interface::interface::run_compiler<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_driver::run_compiler::{closure#1}>::{closure#0}::{closure#0}>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_span/src/lib.rs:1026:5
+           126: rustc_interface::interface::run_compiler::<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_driver::run_compiler::{closure#1}>::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_interface/src/interface.rs:319:13
+           127: <scoped_tls::ScopedKey<rustc_span::SessionGlobals>>::set::<rustc_interface::interface::run_compiler<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_driver::run_compiler::{closure#1}>::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>
+                       at /home/matthias/.cargo/registry/src/github.com-1ecc6299db9ec823/scoped-tls-1.0.0/src/lib.rs:137:9
+           128: rustc_span::create_session_globals_then::<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_interface::interface::run_compiler<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_driver::run_compiler::{closure#1}>::{closure#0}>
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_span/src/lib.rs:111:5
+           129: rustc_interface::util::run_in_thread_pool_with_globals::<rustc_interface::interface::run_compiler<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_driver::run_compiler::{closure#1}>::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#0}::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/compiler/rustc_interface/src/util.rs:145:38
+           130: std::sys_common::backtrace::__rust_begin_short_backtrace::<rustc_interface::util::run_in_thread_pool_with_globals<rustc_interface::interface::run_compiler<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_driver::run_compiler::{closure#1}>::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#0}::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>
+                       at /home/matthias/vcs/github/rust_debug_assertions/library/std/src/sys_common/backtrace.rs:121:18
+           131: <std::thread::Builder>::spawn_unchecked_::<rustc_interface::util::run_in_thread_pool_with_globals<rustc_interface::interface::run_compiler<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_driver::run_compiler::{closure#1}>::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#0}::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#1}::{closure#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/library/std/src/thread/mod.rs:550:17
+           132: <core::panic::unwind_safe::AssertUnwindSafe<<std::thread::Builder>::spawn_unchecked_<rustc_interface::util::run_in_thread_pool_with_globals<rustc_interface::interface::run_compiler<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_driver::run_compiler::{closure#1}>::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#0}::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#1}::{closure#0}> as core::ops::function::FnOnce<()>>::call_once
+                       at /home/matthias/vcs/github/rust_debug_assertions/library/core/src/panic/unwind_safe.rs:271:9
+           133: std::panicking::try::do_call::<core::panic::unwind_safe::AssertUnwindSafe<<std::thread::Builder>::spawn_unchecked_<rustc_interface::util::run_in_thread_pool_with_globals<rustc_interface::interface::run_compiler<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_driver::run_compiler::{closure#1}>::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#0}::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#1}::{closure#0}>, core::result::Result<(), rustc_errors::ErrorGuaranteed>>
+                       at /home/matthias/vcs/github/rust_debug_assertions/library/std/src/panicking.rs:483:40
+           134: std::panicking::try::<core::result::Result<(), rustc_errors::ErrorGuaranteed>, core::panic::unwind_safe::AssertUnwindSafe<<std::thread::Builder>::spawn_unchecked_<rustc_interface::util::run_in_thread_pool_with_globals<rustc_interface::interface::run_compiler<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_driver::run_compiler::{closure#1}>::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#0}::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#1}::{closure#0}>>
+                       at /home/matthias/vcs/github/rust_debug_assertions/library/std/src/panicking.rs:447:19
+           135: std::panic::catch_unwind::<core::panic::unwind_safe::AssertUnwindSafe<<std::thread::Builder>::spawn_unchecked_<rustc_interface::util::run_in_thread_pool_with_globals<rustc_interface::interface::run_compiler<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_driver::run_compiler::{closure#1}>::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#0}::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#1}::{closure#0}>, core::result::Result<(), rustc_errors::ErrorGuaranteed>>
+                       at /home/matthias/vcs/github/rust_debug_assertions/library/std/src/panic.rs:140:14
+           136: <std::thread::Builder>::spawn_unchecked_::<rustc_interface::util::run_in_thread_pool_with_globals<rustc_interface::interface::run_compiler<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_driver::run_compiler::{closure#1}>::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#0}::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#1}
+                       at /home/matthias/vcs/github/rust_debug_assertions/library/std/src/thread/mod.rs:549:30
+           137: <<std::thread::Builder>::spawn_unchecked_<rustc_interface::util::run_in_thread_pool_with_globals<rustc_interface::interface::run_compiler<core::result::Result<(), rustc_errors::ErrorGuaranteed>, rustc_driver::run_compiler::{closure#1}>::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#0}::{closure#0}, core::result::Result<(), rustc_errors::ErrorGuaranteed>>::{closure#1} as core::ops::function::FnOnce<()>>::call_once::{shim:vtable#0}
+                       at /home/matthias/vcs/github/rust_debug_assertions/library/core/src/ops/function.rs:250:5
+           138: <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
+                       at /home/matthias/vcs/github/rust_debug_assertions/library/alloc/src/boxed.rs:1988:9
+           139: <alloc::boxed::Box<F,A> as core::ops::function::FnOnce<Args>>::call_once
+                       at /home/matthias/vcs/github/rust_debug_assertions/library/alloc/src/boxed.rs:1988:9
+           140: std::sys::unix::thread::Thread::new::thread_start
+                       at /home/matthias/vcs/github/rust_debug_assertions/library/std/src/sys/unix/thread.rs:108:17
+           141: <unknown>
+           142: <unknown>
+
+
+note: the compiler unexpectedly panicked. this is a bug.
+
+note: we would appreciate a bug report: https://github.com/rust-lang/rust/issues/new?labels=C-bug%2C+I-ICE%2C+T-compiler&template=ice.md
+
+note: rustc 1.68.0-dev running on x86_64-unknown-linux-gnu
+
+note: compiler flags: -Z translate-lang=en_US
+
+query stack during panic:
+end of query stack
+thread panicked while panicking. aborting.
+[1]    11236 IOT instruction (core dumped)  /home/matthias/.rustup/toolchains/local-debug-assertions/bin/rustc

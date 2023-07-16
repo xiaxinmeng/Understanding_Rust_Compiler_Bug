@@ -1,0 +1,1 @@
+\nstruct Foo<'a, T: 'a> {\n    foo: &'a T\n}\n

@@ -1,0 +1,8 @@
+rust
+error[E0015]: cannot call non-const fn `Foo::{constant#0}::Foo::<17_usize>::value` in constants
+  --> $DIR/nested-type.rs:15:5
+   |
+LL |     Foo::<17>::value()
+   |     ^^^^^^^^^^^^^^^^^^
+   |
+   = note: calls in constants are limited to constant functions, tuple structs and tuple variants

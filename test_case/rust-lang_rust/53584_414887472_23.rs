@@ -1,0 +1,1 @@
+compile_fail,E0107\nstruct Foo<'a, 'b>(&'a str, &'b str);\nenum Bar { A, B, C }\n\nstruct Baz<'a> {\n    foo: Foo<'a>, // error: wrong number of lifetime argum"E0107","explanation":"\nThis error means that an incorrect number of type or lifetime parameters\nwere provided:\n\n

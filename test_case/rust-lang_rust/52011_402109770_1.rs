@@ -1,0 +1,1 @@
+compile_fail,E0080\nenum Enum {\n    X = (1 << 500),\n    Y = (1 / 0)\n}\n

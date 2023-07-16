@@ -1,0 +1,43 @@
+plain
+[00:00:46] configure: rust.quiet-tests     := True
+---
+[00:43:24] .................................................................................i..................
+[00:43:30] ........................i..F........................................................................
+[00:43:34] ....................................................................................................
+[00:43:38] ....................................................................................................
+[00:43:41] ....................................................................................................
+[00:43:46] ....................................................................................................
+[00:43:52] ...............F...........................................................F........................
+[00:43:58] .F.F..F.......................................F.....................................................
+[00:44:04] ....................................................................................................
+[00:44:11] .......................i...........................................................................i
+[00:44:17] ............................................................................F.......................
+[00:44:23] .............ii.....................................................................................
+---
+[00:44:35] 1 error[E0391]: cycle detected when computing the supertraits of `B`
+[00:44:35] -    |
+[00:44:35] - note: ...which requires computing the supertraits of `C`...
+[00:44:35] 4   --> $DIR/cycle-trait-supertrait-indirect.rs:17:1
+[00:44:35] 5    |
+[00:44:35] 6 LL | trait B: C {
+[00:44:35]
+[00:44:35] 7    | ^^^^^^^^^^
+[00:44:35] - note: ...which again requires computing the supertraits of `B`, completing the cycle
+[00:44:35] +    |
+[00:44:35] + note: ...which requires computing the supertraits of `C`...
+[00:44:35] 9   --> $DIR/cycle-trait-supertrait-indirect.rs:20:1
+[00:44:35] 10    |
+[00:44:35] 11 LL | trait C: B { }
+[00:44:35]
+[00:44:35] 12    | ^^^^^^^^^^
+[00:44:35] +    = note: ...which again requires computing the supertraits of `B`, completing the cycle
+[00:44:35] 13 note: cycle used when computing the supertraits of `A`
+[00:44:35] 14   --> $DIR/cycle-trait-supertrait-indirect.rs:14:1
+---
+[00:44:35] /checkout/src/test/ui/update-references.sh '/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui' 'cycle-trait-supertrait-indirect.rs'
+[00:44:35]
+[00:44:35] error: 1 errors occurred comparing output.
+[00:44:35] status: exit code: 101
+[00:44:35] command: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "/checkout/src/test/ui/cycle-trait-supertrait-indirect.rs" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui" "--target=x86_64-unknown-linux-gnu" "--error-format" "json" "-Zui-testing" "-C" "prefer-dynamic" "-o" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/cycle-trait-supertrait-indirect.stage2-x86_64-unknown-linux-gnu" "-Crpath" "-O" "-Zunstable-options" "-Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/cycle-trait-supertrait-indirect.stage2-x86_64-unknown-linux-gnu.aux" "-A" "unused"
+---
+[00:44:35] {"message":"cycle detected when computing the supertraits of `B`","code":{"code":"E0391","explanation":"\nThis error indicates that some types or traits depend on each other\nand therefore cannot be constructed.\n\nThe following example contains a circular dependency between two traits:\n\n

@@ -1,0 +1,1 @@
+compile_fail\nfn main () {\n    let foo = 1;\n    let x = foo { x: 1, y: 2 };\n}\n

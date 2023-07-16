@@ -1,0 +1,22 @@
+
+[00:48:12]     [compile-fail] compile-fail/E0506.rs
+[00:48:12]     [compile-fail] compile-fail/borrowck/borrowck-assign-comp.rs
+[00:48:12]     [compile-fail] compile-fail/borrowck/borrowck-closures-mut-and-imm.rs
+[00:48:12]     [compile-fail] compile-fail/borrowck/borrowck-describe-lvalue.rs
+[00:48:12]     [compile-fail] compile-fail/borrowck/borrowck-imm-ref-to-mut-rec-field-issue-3162-c.rs
+[00:48:12]     [compile-fail] compile-fail/borrowck/borrowck-init-in-fru.rs
+[00:48:12]     [compile-fail] compile-fail/borrowck/borrowck-lend-flow-match.rs
+[00:48:12]     [compile-fail] compile-fail/borrowck/borrowck-match-already-borrowed.rs
+[00:48:12]     [compile-fail] compile-fail/borrowck/borrowck-move-in-irrefut-pat.rs
+[00:48:12]     [compile-fail] compile-fail/borrowck/borrowck-move-out-of-overloaded-auto-deref.rs
+[00:48:12]     [compile-fail] compile-fail/borrowck/borrowck-overloaded-index-and-overloaded-deref.rs
+[00:48:12]     [compile-fail] compile-fail/borrowck/borrowck-overloaded-index-ref-index.rs
+[00:48:12]     [compile-fail] compile-fail/borrowck/borrowck-pat-reassign-binding.rs
+[00:48:12]     [compile-fail] compile-fail/borrowck/borrowck-unary-move.rs
+[00:48:12]     [compile-fail] compile-fail/borrowck/borrowck-uninit-ref-chain.rs
+[00:48:12]     [compile-fail] compile-fail/borrowck/borrowck-union-borrow.rs
+[00:48:12]     [compile-fail] compile-fail/borrowck/borrowck-vec-pattern-move-tail.rs
+[00:48:12]     [compile-fail] compile-fail/coerce-overloaded-autoderef.rs
+[00:48:12]     [compile-fail] compile-fail/hrtb-identity-fn-borrows.rs
+[00:48:12]     [compile-fail] compile-fail/mut-pattern-internal-mutability.rs
+[00:48:12]     [compile-fail] compile-fail/regions-pattern-typing-issue-19997.rs

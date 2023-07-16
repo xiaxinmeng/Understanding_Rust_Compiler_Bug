@@ -1,0 +1,73 @@
+
+thread 'rustc' panicked at 'assertion failed: bpos.to_u32() >= mbc.pos.to_u32() + mbc.bytes as u32', src/libsyntax/source_map.rs:867:17
+stack backtrace:
+   0: backtrace::backtrace::libunwind::trace
+             at /cargo/registry/src/github.com-1ecc6299db9ec823/backtrace-0.3.35/src/backtrace/libunwind.rs:88
+   1: backtrace::backtrace::trace_unsynchronized
+             at /cargo/registry/src/github.com-1ecc6299db9ec823/backtrace-0.3.35/src/backtrace/mod.rs:66
+   2: std::sys_common::backtrace::_print
+             at src/libstd/sys_common/backtrace.rs:47
+   3: std::sys_common::backtrace::print
+             at src/libstd/sys_common/backtrace.rs:36
+   4: std::panicking::default_hook::{{closure}}
+             at src/libstd/panicking.rs:200
+   5: std::panicking::default_hook
+             at src/libstd/panicking.rs:214
+   6: rustc::util::common::panic_hook
+   7: std::panicking::rust_panic_with_hook
+             at src/libstd/panicking.rs:481
+   8: std::panicking::begin_panic
+   9: syntax::source_map::SourceMap::bytepos_to_file_charpos
+  10: syntax::source_map::SourceMap::lookup_char_pos
+  11: rustc_codegen_cranelift::debuginfo::FunctionDebugContext::define::{{closure}}
+             at src/debuginfo.rs:293
+  12: rustc_codegen_cranelift::debuginfo::FunctionDebugContext::define
+             at src/debuginfo.rs:317
+  13: rustc_codegen_cranelift::base::trans_fn::{{closure}}
+             at src/base.rs:89
+  14: core::option::Option<T>::map
+             at /rustc/17e73e801a75559eac5c932ff07bd9c8499a1364/src/libcore/option.rs:447
+  15: rustc_codegen_cranelift::base::trans_fn
+             at src/base.rs:87
+  16: rustc_codegen_cranelift::driver::trans_mono_item
+             at src/driver.rs:344
+  17: rustc_codegen_cranelift::driver::codegen_mono_items::{{closure}}::{{closure}}
+             at src/driver.rs:304
+  18: rustc_codegen_cranelift::unimpl::try_unimpl::{{closure}}
+             at src/unimpl.rs:28
+  19: <std::panic::AssertUnwindSafe<F> as core::ops::function::FnOnce<()>>::call_once
+             at /rustc/17e73e801a75559eac5c932ff07bd9c8499a1364/src/libstd/panic.rs:315
+  20: std::panicking::try::do_call
+             at /rustc/17e73e801a75559eac5c932ff07bd9c8499a1364/src/libstd/panicking.rs:296
+  21: __rust_maybe_catch_panic
+             at src/libpanic_unwind/lib.rs:80
+  22: std::panicking::try
+             at /rustc/17e73e801a75559eac5c932ff07bd9c8499a1364/src/libstd/panicking.rs:275
+  23: std::panic::catch_unwind
+             at /rustc/17e73e801a75559eac5c932ff07bd9c8499a1364/src/libstd/panic.rs:394
+  24: rustc_codegen_cranelift::unimpl::try_unimpl
+             at src/unimpl.rs:28
+  25: rustc_codegen_cranelift::driver::codegen_mono_items::{{closure}}
+             at src/driver.rs:302
+  26: rustc_codegen_cranelift::driver::time
+             at src/driver.rs:358
+  27: rustc_codegen_cranelift::driver::codegen_mono_items
+             at src/driver.rs:300
+  28: rustc_codegen_cranelift::driver::codegen_cgus
+             at src/driver.rs:287
+  29: rustc_codegen_cranelift::driver::run_aot
+             at src/driver.rs:205
+  30: rustc_codegen_cranelift::driver::codegen_crate
+             at src/driver.rs:39
+  31: <rustc_codegen_cranelift::CraneliftCodegenBackend as rustc_codegen_utils::codegen_backend::CodegenBackend>::codegen_crate
+             at src/lib.rs:202
+  32: rustc::util::common::time
+  33: rustc_interface::passes::BoxedGlobalCtxt::access::{{closure}}
+  34: rustc_interface::passes::create_global_ctxt::{{closure}}
+  35: rustc_interface::passes::BoxedGlobalCtxt::enter
+  36: rustc_interface::queries::Query<T>::compute
+  37: rustc_interface::queries::<impl rustc_interface::interface::Compiler>::ongoing_codegen
+  38: rustc_interface::interface::run_compiler_in_existing_thread_pool
+  39: std::thread::local::LocalKey<T>::with
+  40: scoped_tls::ScopedKey<T>::set
+  41: syntax::with_globals

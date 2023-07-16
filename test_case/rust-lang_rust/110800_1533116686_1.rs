@@ -1,0 +1,1 @@
+` with non-Rust code is confusing, and the described behaviour doesn't match what I would expect from skimming the code, I would expect that to render the codeblock with highlighting because it is `rust` but also inject the `class=test` to the resulting element.

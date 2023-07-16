@@ -1,0 +1,1 @@
+\n\nAn example of matching non-exhaustively on the above enum is provided below:\n\n

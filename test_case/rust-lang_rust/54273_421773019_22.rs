@@ -1,0 +1,1 @@
+compile_fail,E0423\npub mod a {\n    pub const I: i32 = 1;\n}\n\nfn h1() -> i32 {\n    a.I\n    //~^ ERROR expected value, found mo\nyield this error:\n\n

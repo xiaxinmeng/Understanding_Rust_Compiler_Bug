@@ -1,0 +1,3 @@
+
+FakeRead(ForLet(span), *raw_ptr)  // This deref is unsafe
+_X = create the closure ... 

@@ -1,0 +1,5 @@
+
+[target.i686-pc-windows-gnu]
+rustflags=["-Clink-self-contained=yes"]
+[target.x86_64-pc-windows-gnu]
+rustflags=["-Clink-self-contained=yes"]

@@ -1,0 +1,6 @@
+
+if opt.is_some() {
+    // ...
+    let x = opt.unwrap();
+    // ...
+}

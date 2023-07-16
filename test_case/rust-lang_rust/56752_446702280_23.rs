@@ -1,0 +1,1 @@
+\ntrait Trait {\n    fn foo(&self);\n}\n\nimpl Trait for String {\n    fn foo(&self) {\n        // implementation 1\n    }\n}\n\nimpl Trait for u8 {\n    fn foo(&self) {\n        // implementation 2\n    }\n}\n// ...\n

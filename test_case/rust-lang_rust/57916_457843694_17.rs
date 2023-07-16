@@ -1,0 +1,1 @@
+\n\nUsing unsafe functionality is potentially dangerous and disallowed by safety\nchecks. Examples:\n\n* Dereferencing raw pointers\n* Calling functions via FFI\n* Calling functions marked unsafe\n\nThese safety checks can be relaxed for a section of the code by wrapping the\nunsafe instructions with an `unsafe` block. For instance:\n\n

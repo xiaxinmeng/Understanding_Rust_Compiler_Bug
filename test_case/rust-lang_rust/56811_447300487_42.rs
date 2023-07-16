@@ -1,0 +1,1 @@
+\n\nSince `MyStruct` is a type that is not marked `Copy`, the data gets moved out\nof `x` when we set `y`. This is fundamental to Rust's ownership system: outside\nof workarounds like `Rc`, a value cannot be owned by more than one variabe of possibly uninitialized variable\n}\n

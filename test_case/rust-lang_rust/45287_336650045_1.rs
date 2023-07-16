@@ -1,0 +1,2 @@
+rust
+$  rustc  data.rs

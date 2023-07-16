@@ -1,0 +1,2 @@
+compile_fail,E0505\nstruct Value {}\n\nfn eat(val: Value) {}\n\nfn main() {\n    let x = Value{};\n    {\n         |\n   |                 move out of `b` occurs here\n...\nLL |         &mut true => { println!(\"You might think we should get here\"); },\n   |         --------- borrow used here in later iteration of loop\n\n"}
+[00:43:19] {"message":"use of moved value: `*b`","code":{"code":"E0382","explanation":"\nThis error occurs when an attempt is made to use a variable after its contents\nhave been moved elsewhere. For example:\n\n

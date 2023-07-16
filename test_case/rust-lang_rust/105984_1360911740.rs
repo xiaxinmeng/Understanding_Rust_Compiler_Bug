@@ -1,0 +1,2 @@
+sh
+RUST_MIN_STACK=99999999 RUST_BACKTRACE=1 cargo +nightly build

@@ -1,0 +1,29 @@
+
+-//! use liblumen_alloc::stats::Histogram;
+-//!
+-//! mod stats {
+-//!     use liblumen_alloc::define_histogram;
+-//!     define_histogram!(10);
+-//! }
+-//! # fn main() {
+-//! // Create a histogram that will spread the given range over
+-//! // the 10 buckets the `Histogram` type was defined with.
+-//! let mut histogram = stats::Histogram::with_const_width(0, 10_000);
+-//!
+-//! // Adds some samples to the histogram.
+-//! for sample in 0..100 {
+-//!     histogram.add(sample);
+-//!     histogram.add(sample * sample);
+-//! }
+-//!
+-//! // Iterate over buckets and do stuff with their range and count.
+-//! for ((start, end), count) in histogram.into_iter() {
+-//!     println!("{}..{} has {} samples", start, end, count);
+-//! }
+-//!
+-//! // And you can also `Display` a histogram!
+-//! println!("{}", histogram);
+-//!
+-//! // Prints:
+-//! //
+-//! // 

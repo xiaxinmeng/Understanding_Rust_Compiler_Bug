@@ -1,0 +1,1 @@
+\nfn main() {\n    let mut x = 3;\n    x = 5;\n}\n

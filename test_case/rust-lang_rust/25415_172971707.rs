@@ -1,0 +1,21 @@
+
+error: aborting due to 22 previous errors
+src/future.rs:209:49: 209:66 error: cannot infer an appropriate lifetime for lifetime parameter `'a` due to conflicting requirements [E0495]
+src/future.rs:322:43: 322:62 error: cannot infer an appropriate lifetime for lifetime parameter `'a` due to conflicting requirements [E0495]
+src/join.rs:12:14: 16:7 error: the parameter type `J` may not live long enough [E0309]
+src/join.rs:237:92: 243:6 error: mismatched types:
+src/join.rs:239:17: 239:57 error: cannot infer an appropriate lifetime due to conflicting requirements [E0495]
+src/process.rs:126:9: 126:19 error: cannot infer an appropriate lifetime for lifetime parameter `'a` due to conflicting requirements [E0495]
+src/process.rs:140:22: 140:33 error: cannot infer an appropriate lifetime for lifetime parameter `'a` due to conflicting requirements [E0495]
+src/process.rs:37:21: 37:31 error: the parameter type `F` may not live long enough [E0310]
+src/process.rs:38:11: 38:36 error: the parameter type `F` may not live long enough [E0310]
+src/process.rs:63:20: 63:24 error: cannot infer an appropriate lifetime due to conflicting requirements [E0495]
+src/select.rs:255:25: 255:39 error: cannot infer an appropriate lifetime for lifetime parameter `'a` due to conflicting requirements [E0495]
+src/stream.rs:210:14: 223:11 error: cannot infer an appropriate lifetime for lifetime parameter `'a` due to conflicting requirements [E0495]
+src/stream.rs:270:14: 285:11 error: cannot infer an appropriate lifetime for lifetime parameter `'a` due to conflicting requirements [E0495]
+src/stream.rs:273:32: 279:23 error: the type `[closure@src/stream.rs:273:40: 279:22 rest:stream::Stream<'_, T, E>, complete:future::Complete<'_, <U as Async<'a>>::Value, E>, f:F]` does not fulfill the required lifetime [E0477]
+src/stream.rs:277:62: 277:70 error: cannot infer an appropriate lifetime due to conflicting requirements [E0495]
+src/stream.rs:283:50: 283:58 error: cannot infer an appropriate lifetime due to conflicting requirements [E0495]
+src/stream.rs:377:49: 377:66 error: cannot infer an appropriate lifetime for lifetime parameter `'a` due to conflicting requirements [E0495]
+src/stream.rs:517:15: 517:32 error: cannot infer an appropriate lifetime for lifetime parameter `'a` due to conflicting requirements [E0495]
+src/stream.rs:583:15: 583:36 error: cannot infer an appropriate lifetime for lifetime parameter `'a` due to conflicting requirements [E0495]

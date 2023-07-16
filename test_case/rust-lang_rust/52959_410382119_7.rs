@@ -1,0 +1,1 @@
+\nfn bar(x: &mut i32) {}\nfn foo(a: &mut i32) {\n    bar(a);\n    let ref y = a; // ok!\n}\n

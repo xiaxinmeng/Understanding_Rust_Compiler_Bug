@@ -1,0 +1,25 @@
+
+test a_read_128::vec_new            ... bench:       1,362 ns/iter (+/- 200) = 93 MB/s
+test a_read_128::vec_with_capacity  ... bench:       1,158 ns/iter (+/- 199) = 110 MB/s
+test b_read_512::vec_new            ... bench:       1,705 ns/iter (+/- 203) = 300 MB/s
+test b_read_512::vec_with_capacity  ... bench:       1,172 ns/iter (+/- 301) = 436 MB/s
+test c_read_2k::vec_new             ... bench:       2,102 ns/iter (+/- 188) = 974 MB/s
+test c_read_2k::vec_with_capacity   ... bench:       1,193 ns/iter (+/- 327) = 1716 MB/s
+test d_read_8k::vec_new             ... bench:       2,759 ns/iter (+/- 271) = 2969 MB/s
+test d_read_8k::vec_with_capacity   ... bench:       1,412 ns/iter (+/- 187) = 5801 MB/s
+test e_read_32k::vec_new            ... bench:       4,957 ns/iter (+/- 93) = 6610 MB/s
+test e_read_32k::vec_with_capacity  ... bench:       2,878 ns/iter (+/- 205) = 11385 MB/s
+test f_read_128k::vec_new           ... bench:      14,690 ns/iter (+/- 135) = 8922 MB/s
+test f_read_128k::vec_with_capacity ... bench:       9,101 ns/iter (+/- 160) = 14401 MB/s
+test g_read_512k::vec_new           ... bench:      30,788 ns/iter (+/- 284) = 17028 MB/s
+test g_read_512k::vec_with_capacity ... bench:      21,640 ns/iter (+/- 42) = 24227 MB/s
+test h_read_1m::vec_new             ... bench:     444,013 ns/iter (+/- 3,361) = 2361 MB/s
+test h_read_1m::vec_with_capacity   ... bench:     232,138 ns/iter (+/- 2,474) = 4517 MB/s
+test i_read_2m::vec_new             ... bench:     633,958 ns/iter (+/- 3,849) = 3308 MB/s
+test i_read_2m::vec_with_capacity   ... bench:     343,065 ns/iter (+/- 813) = 6112 MB/s
+test j_read_4m::vec_new             ... bench:   1,114,472 ns/iter (+/- 12,811) = 3763 MB/s
+test j_read_4m::vec_with_capacity   ... bench:     773,090 ns/iter (+/- 2,065) = 5425 MB/s
+test k_read_8m::vec_new             ... bench:   2,156,756 ns/iter (+/- 7,510) = 3889 MB/s
+test k_read_8m::vec_with_capacity   ... bench:   1,792,980 ns/iter (+/- 5,539) = 4678 MB/s
+test l_read_32m::vec_new            ... bench:   8,499,907 ns/iter (+/- 24,512) = 3947 MB/s
+test l_read_32m::vec_with_capacity  ... bench:   8,129,977 ns/iter (+/- 22,403) = 4127 MB/s

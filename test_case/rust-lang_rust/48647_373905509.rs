@@ -1,0 +1,37 @@
+
+make-prepare                	  79.49
+stage0-tidy                 	  76.52
+stage0-std                  	  12.84
+stage0-rustc                	 943.37
+llvm                        	 347.13
+stage0-trans-llvm           	  81.17
+stage1-std                  	 380.31
+stage1-test                 	  31.89
+stage1-rustc                	2399.85
+stage1-trans-llvm           	 171.88
+stage2-rustdoc              	 249.10
+stage0-std                  	  63.65
+stage0-rustbook             	 176.79
+stage2-rustdoc              	 340.50
+doc/compiler                	 153.16
+stage2-error_index_generator	   7.30
+stage0-std                  	  22.36
+test/ui                     	 109.15
+test/run-pass               	1216.81
+test/compile-fail           	 281.84
+test/parse-fail             	   6.45
+test/run-fail               	  25.34
+test/run-pass-valgrind      	   5.78
+test/mir-opt                	  27.92
+test/codegen                	   8.07
+test/codegen-units          	   4.39
+test/incremental            	  34.33
+test/debuginfo              	  20.73
+test/ui-fulldeps            	  33.59
+test/run-pass-fulldeps      	 666.00
+test/run-fail-fulldeps      	   7.91
+test/compile-fail-fulldeps  	 142.09
+test/incremental-fulldeps   	   5.83
+stage2-rustdoc              	 318.28
+test/run-make               	 127.39
+...

@@ -1,0 +1,1 @@
+compile_fail,E0088\nfn f<'a>() {}\n\nfn main() {\n    f()                 // error: wrong number of lifetime arguments:\n                        //        expected 1, found 0\n    f::<'static, 'b>() // error: wrong number of lifetime arguments:\n                        //        expected 0, found 2\n}\n

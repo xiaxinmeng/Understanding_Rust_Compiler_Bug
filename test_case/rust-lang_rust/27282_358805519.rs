@@ -1,0 +1,6 @@
+rust
+let mut b = true;
+match b {
+    true => ...
+    false => ...
+}

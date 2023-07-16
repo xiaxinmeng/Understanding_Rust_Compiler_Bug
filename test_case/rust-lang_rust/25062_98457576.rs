@@ -1,0 +1,2 @@
+ javascript
+$(".error-unused").hide();

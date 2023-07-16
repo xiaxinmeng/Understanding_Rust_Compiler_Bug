@@ -1,0 +1,3 @@
+
+ > readlink /var
+private/var

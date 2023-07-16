@@ -1,0 +1,1 @@
+\n\nThis error can be solved by adding type annotations that provide the missing\ninformation to the compiler. In this case, the solution is to use a concrete\ntype:\n\n

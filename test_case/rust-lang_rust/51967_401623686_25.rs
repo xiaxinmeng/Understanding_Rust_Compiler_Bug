@@ -1,0 +1,1 @@
+\nuse std::fs::File;\n\nmod foo {\n    // either\n    use super::File;\n    // or\n    // use std::fs::File;\n    fn foo(f: File) {}\n}\n# fn main() {} // don't insert it for us; that'll break i Foo { a: bool };\n\nlet f = Foo();\n// error: expected function, found `Foo`\n// `Foo` is a struct name, but this expression uses it like a function name\n

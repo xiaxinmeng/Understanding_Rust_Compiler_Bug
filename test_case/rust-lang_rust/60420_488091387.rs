@@ -1,0 +1,27 @@
+plain
+[00:03:39]    Compiling profiler_builtins v0.0.0 (/checkout/src/libprofiler_builtins)
+[00:03:39] error[E0599]: no method named `to_lower_case` found for type `std::borrow::Cow<'_, str>` in the current scope
+[00:03:39]   --> src/libprofiler_builtins/build.rs:55:36
+[00:03:39]    |
+[00:03:39] 55 |         features.to_string_lossy().to_lower_case().contains("cas")
+[00:03:39]    |                                    ^^^^^^^^^^^^^ help: did you mean: `to_lowercase`
+[00:03:39] error: aborting due to previous error
+[00:03:39] 
+[00:03:39] For more information about this error, try `rustc --explain E0599`.
+[00:03:39] error: Could not compile `profiler_builtins`.
+---
+travis_time:end:2be4937e:start=1556653887438432367,finish=1556653887448836365,duration=10403998
+travis_fold:end:after_failure.3
+travis_fold:start:after_failure.4
+travis_time:start:000153ca
+$ ln -s . checkout && for CORE in obj/cores/core.*; do EXE=$(echo $CORE | sed 's|obj/cores/core\.[0-9]*\.!checkout!\(.*\)|\1|;y|!|/|'); if [ -f "$EXE" ]; then printf travis_fold":start:crashlog\n\033[31;1m%s\033[0m\n" "$CORE"; gdb --batch -q -c "$CORE" "$EXE" -iex 'set auto-load off' -iex 'dir src/' -iex 'set sysroot .' -ex bt -ex q; echo travis_fold":"end:crashlog; fi; done || true
+travis_fold:end:after_failure.4
+travis_fold:start:after_failure.5
+travis_time:start:066bdc22
+travis_time:start:066bdc22
+$ cat ./obj/build/x86_64-unknown-linux-gnu/native/asan/build/lib/asan/clang_rt.asan-dynamic-i386.vers || true
+cat: ./obj/build/x86_64-unknown-linux-gnu/native/asan/build/lib/asan/clang_rt.asan-dynamic-i386.vers: No such file or directory
+travis_fold:end:after_failure.5
+travis_fold:start:after_failure.6
+travis_time:start:08fe01de
+$ dmesg | grep -i kill

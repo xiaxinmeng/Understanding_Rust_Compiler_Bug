@@ -1,0 +1,47 @@
+
+stack backtrace:
+   0: backtrace::backtrace::`libunwind`::trace
+             at /cargo/registry/src/github.com-1ecc6299db9ec823/backtrace-0.3.40/src/backtrace/libunwind.rs:88
+   1: backtrace::backtrace::trace_unsynchronized
+             at /cargo/registry/src/github.com-1ecc6299db9ec823/backtrace-0.3.40/src/backtrace/mod.rs:66
+   2: std::sys_common::backtrace::_print_fmt
+             at src/libstd/sys_common/backtrace.rs:84
+   3: <std::sys_common::backtrace::_print::DisplayBacktrace as core::fmt::Display>::fmt
+             at src/libstd/sys_common/backtrace.rs:61
+   4: core::fmt::write
+             at src/libcore/fmt/mod.rs:1025
+   5: std::io::Write::write_fmt
+             at src/libstd/io/mod.rs:1426
+   6: std::sys_common::backtrace::_print
+             at src/libstd/sys_common/backtrace.rs:65
+   7: std::sys_common::backtrace::print
+             at src/libstd/sys_common/backtrace.rs:50
+   8: std::panicking::default_hook::{{closure}}
+             at src/libstd/panicking.rs:193
+   9: std::panicking::default_hook
+             at src/libstd/panicking.rs:210
+  10: std::panicking::rust_panic_with_hook
+             at src/libstd/panicking.rs:471
+  11: std::panicking::begin_panic
+             at /rustc/f3e1a954d2ead4e2fc197c7da7d71e6c61bad196/src/libstd/panicking.rs:404
+  12: playground::main
+             at src/main.rs:2
+  13: std::rt::lang_start::{{closure}}
+             at /rustc/f3e1a954d2ead4e2fc197c7da7d71e6c61bad196/src/libstd/rt.rs:67
+  14: std::rt::lang_start_internal::{{closure}}
+             at src/libstd/rt.rs:52
+  15: std::panicking::try::do_call
+             at src/libstd/panicking.rs:292
+  16: __rust_maybe_catch_panic
+             at src/libpanic_unwind/lib.rs:78
+  17: std::panicking::try
+             at src/libstd/panicking.rs:270
+  18: std::panic::catch_unwind
+             at src/libstd/panic.rs:394
+  19: std::rt::lang_start_internal
+             at src/libstd/rt.rs:51
+  20: std::rt::lang_start
+             at /rustc/f3e1a954d2ead4e2fc197c7da7d71e6c61bad196/src/libstd/rt.rs:67
+  21: main
+  22: __libc_start_main
+  23: _start

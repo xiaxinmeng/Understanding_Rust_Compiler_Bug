@@ -1,0 +1,6 @@
+ rust
+fn foo<Default>(...) -> Default {
+    ...
+    let x = SomeType::default();
+    ...
+}

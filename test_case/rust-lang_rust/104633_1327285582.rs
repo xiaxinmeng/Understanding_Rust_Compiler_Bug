@@ -1,0 +1,3 @@
+rust
+#![feautre(...)]
+#![cfg(notathing)]

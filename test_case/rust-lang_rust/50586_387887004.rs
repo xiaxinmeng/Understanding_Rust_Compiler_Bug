@@ -1,0 +1,24 @@
+
+* 55c984ee5d Auto merge of #48097 - oli-obk:did_you_mean_to_run_rls_with_clippy, r=nrc
+* 3b6412b943 Auto merge of #48896 - alexcrichton:bitcode-in-object, r=michaelwoerister
+* cc34ca1c97 Auto merge of #48818 - michaelwoerister:issue-47309, r=eddyb
+* 5f3996c3ec Auto merge of #48813 - sinkuu:build_in_assert_macro, r=alexcrichton
+* a7170b0412 Auto merge of #48524 - abonander:check-macro-stability, r=petrochenkov
+* 36b6687318 Auto merge of #49051 - kennytm:rollup, r=kennytm
+* db2f0ae1f4 Rollup merge of #48972 - mark-i-m:rustdoc_readme, r=QuietMisdreavus
+* fb49ae0260 Rollup merge of #49049 - Centril:fix/flatten-fusediterator, r=bluss
+* a199fb2319 Rollup merge of #49037 - estebank:coherence-tweaks, r=nikomatsakis
+* 64490ff883 Rollup merge of #48990 - ExpHP:dont-drop-the-bomb, r=estebank
+* 6fbd03393b Rollup merge of #48853 - Songbird0:addrparseerror_documentation_improvement, r=GuillaumeGomez
+* 90230ce372 Rollup merge of #49050 - snf:fix_oom_asmjs, r=alexcrichton
+* 55a0075a20 Rollup merge of #49042 - kennytm:fix-e0307-typo, r=rkruppe
+* 77cf02de18 Rollup merge of #49024 - draganmladjenovic:mips64_cabi_sret, r=sanxiyn
+* 5a7aa6cae5 Rollup merge of #49007 - estebank:follow-up-47574, r=oli-obk
+* bf270bb66a Rollup merge of #48965 - alexcrichton:add-sha-feature, r=eddyb
+* 97b489ef39 Rollup merge of #48961 - Songbird0:rustdoc_doctests_assertions, r=GuillaumeGomez
+* 292c6ca041 Rollup merge of #48959 - alexcrichton:signext, r=eddyb
+* 35b008cb92 Rollup merge of #48957 - Eijebong:rand, r=michaelwoerister
+* e1d19df9a5 Rollup merge of #48922 - petrochenkov:asunder, r=nikomatsakis
+* 68a602efa9 Rollup merge of #48892 - alexcrichton:thinlto-again, r=Mark-Simulacrum
+* da88827267 Rollup merge of #48875 - jcowgill:mips-test-fixes, r=sanxiyn
+* a45b79ddb7 Rollup merge of #48706 - ehuss:main-not-found-in-crate, r=estebank

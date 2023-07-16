@@ -1,0 +1,3 @@
+
+note: reference must be valid for the static lifetime...
+<anon>:4:91: 8:2 note: ...but borrowed value is only valid for the block suffix following statement 0 at 4:90

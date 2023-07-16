@@ -1,0 +1,23 @@
+
+➜  hash-rs git:(rfc-extend-hasher) ✗ cargo benchcmp sip13::str_:: sip13::slice:: benches.txt
+ name             sip13::str_:: ns/iter  sip13::slice:: ns/iter  diff ns/iter   diff % 
+ bytes_000000001  13 (76 MB/s)           15 (66 MB/s)                       2   15.38% 
+ bytes_000000002  13 (153 MB/s)          15 (133 MB/s)                      2   15.38% 
+ bytes_000000004  13 (307 MB/s)          13 (307 MB/s)                      0    0.00% 
+ bytes_000000007  18 (388 MB/s)          16 (437 MB/s)                     -2  -11.11% 
+ bytes_000000008  15 (533 MB/s)          16 (500 MB/s)                      1    6.67% 
+ bytes_000000009  16 (562 MB/s)          17 (529 MB/s)                      1    6.25% 
+ bytes_000000012  15 (800 MB/s)          16 (750 MB/s)                      1    6.67% 
+ bytes_000000016  16 (1000 MB/s)         18 (888 MB/s)                      2   12.50% 
+ bytes_000000017  17 (1000 MB/s)         19 (894 MB/s)                      2   11.76% 
+➜  hash-rs git:(rfc-extend-hasher) ✗ cargo benchcmp fnv::str_:: fnv::slice:: benches.txt
+ name             fnv::str_:: ns/iter  fnv::slice:: ns/iter  diff ns/iter   diff % 
+ bytes_000000001  1 (1000 MB/s)        4 (250 MB/s)                     3  300.00% 
+ bytes_000000002  2 (1000 MB/s)        5 (400 MB/s)                     3  150.00% 
+ bytes_000000004  2 (2000 MB/s)        5 (800 MB/s)                     3  150.00% 
+ bytes_000000007  4 (1750 MB/s)        7 (1000 MB/s)                    3   75.00% 
+ bytes_000000008  3 (2666 MB/s)        8 (1000 MB/s)                    5  166.67% 
+ bytes_000000009  4 (2250 MB/s)        8 (1125 MB/s)                    4  100.00% 
+ bytes_000000012  5 (2400 MB/s)        10 (1200 MB/s)                   5  100.00% 
+ bytes_000000016  7 (2285 MB/s)        13 (1230 MB/s)                   6   85.71% 
+ bytes_000000017  9 (1888 MB/s)        13 (1307 MB/s)                   4   44.44%

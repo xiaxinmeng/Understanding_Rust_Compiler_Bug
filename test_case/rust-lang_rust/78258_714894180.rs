@@ -1,0 +1,1 @@
+ `impl Trait` return type cannot contain a projection or `Self` that references lifetimes from a parent scope.

@@ -1,0 +1,3 @@
+ rust
+use std::iter;
+it.move_iter().flat_map(|x| iter::range_step(x * x, 999 * x, x)).filter(...

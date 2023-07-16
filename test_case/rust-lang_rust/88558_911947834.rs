@@ -1,0 +1,801 @@
+plain
+.................................................................................................... 6100/12093
+i.......................................................................i........................... 6200/12093
+.................................................................................................... 6300/12093
+..................................ii.ii.......i...i................................................. 6400/12093
+.....F......F.......................................................................i....i.......... 6500/12093
+.................................................................................................... 6700/12093
+...i................................................................................................ 6800/12093
+...................i................................................................................ 6900/12093
+......................................ii....................................................i....... 7000/12093
+---
+
+---- [ui] ui/layout/hexagon-enum.rs stdout ----
+diff of stderr:
+
+- error: layout_of(A) = Layout {
+-     fields: Arbitrary {
+-         offsets: [
+-                 raw: 0,
+-             },
+-         ],
+-         memory_index: [
+---
+-                 false,
+-             ),
+-             valid_range: 0..=0,
+-         },
+-         tag_encoding: Direct,
+-         tag_field: 0,
+-         variants: [
+-             Layout {
+-                 fields: Arbitrary {
+-                     offsets: [],
+-                     memory_index: [],
+-                 variants: Single {
+-                     index: 0,
+-                 },
+-                 abi: Aggregate {
+-                 abi: Aggregate {
+-                     sized: true,
+-                 },
+-                 largest_niche: None,
+-                 align: AbiAndPrefAlign {
+-                     abi: Align {
+-                         pow2: 0,
+-                     },
+-                     pref: Align {
+-                         pow2: 0,
+-                 },
+-                 size: Size {
+-                     raw: 1,
+-                 },
+---
+-             ),
+-             valid_range: 0..=0,
+-         },
+-     ),
+-     largest_niche: Some(
+-         Niche {
+-             offset: Size {
+-                 raw: 0,
+-             scalar: Scalar {
+-                 value: Int(
+-                     I8,
+-                     false,
+-                     false,
+-                 ),
+-                 valid_range: 0..=0,
+-             },
+-         },
+-     ),
+-     align: AbiAndPrefAlign {
+-         abi: Align {
+-             pow2: 0,
+-         },
+-         pref: Align {
+-             pow2: 0,
+-     },
+-     size: Size {
+-         raw: 1,
+-     },
+-     },
+- }
+-   --> $DIR/hexagon-enum.rs:16:1
+-    |
+- LL | enum A { Apple }
+-    | ^^^^^^^^^^^^^^^^
++ error: requires `drop` lang_item
+88 
+- error: layout_of(B) = Layout {
+-     fields: Arbitrary {
+-         offsets: [
+-                 raw: 0,
+-             },
+-         ],
+-         memory_index: [
+---
+-                 false,
+-             ),
+-             valid_range: 255..=255,
+-         },
+-         tag_encoding: Direct,
+-         tag_field: 0,
+-         variants: [
+-             Layout {
+-                 fields: Arbitrary {
+-                     offsets: [],
+-                     memory_index: [],
+-                 variants: Single {
+-                     index: 0,
+-                 },
+-                 abi: Aggregate {
+-                 abi: Aggregate {
+-                     sized: true,
+-                 },
+-                 largest_niche: None,
+-                 align: AbiAndPrefAlign {
+-                     abi: Align {
+-                         pow2: 0,
+-                     },
+-                     pref: Align {
+-                         pow2: 0,
+-                 },
+-                 size: Size {
+-                     raw: 1,
+-                 },
+---
+-             ),
+-             valid_range: 255..=255,
+-         },
+-     ),
+-     largest_niche: Some(
+-         Niche {
+-             offset: Size {
+-                 raw: 0,
+-             scalar: Scalar {
+-                 value: Int(
+-                     I8,
+-                     false,
+-                     false,
+-                 ),
+-                 valid_range: 255..=255,
+-             },
+-         },
+-     ),
+-     align: AbiAndPrefAlign {
+-         abi: Align {
+-             pow2: 0,
+-         },
+-         pref: Align {
+-             pow2: 0,
+-     },
+-     size: Size {
+-         raw: 1,
+-     },
+-     },
+- }
+-   --> $DIR/hexagon-enum.rs:20:1
+-    |
+- LL | enum B { Banana = 255, }
+- 
+- 
+- error: layout_of(C) = Layout {
+-     fields: Arbitrary {
+-         offsets: [
+-                 raw: 0,
+-             },
+-         ],
+-         memory_index: [
+---
+-                 false,
+-             ),
+-             valid_range: 256..=256,
+-         },
+-         tag_encoding: Direct,
+-         tag_field: 0,
+-         variants: [
+-             Layout {
+-                 fields: Arbitrary {
+-                     offsets: [],
+-                     memory_index: [],
+-                 variants: Single {
+-                     index: 0,
+-                 },
+-                 abi: Aggregate {
+-                 abi: Aggregate {
+-                     sized: true,
+-                 },
+-                 largest_niche: None,
+-                 align: AbiAndPrefAlign {
+-                     abi: Align {
+-                         pow2: 1,
+-                     },
+-                     pref: Align {
+-                         pow2: 1,
+-                 },
+-                 size: Size {
+-                     raw: 2,
+-                 },
+---
+-             ),
+-             valid_range: 256..=256,
+-         },
+-     ),
+-     largest_niche: Some(
+-         Niche {
+-             offset: Size {
+-                 raw: 0,
+-             scalar: Scalar {
+-                 value: Int(
+-                     I16,
+-                     false,
+-                     false,
+-                 ),
+-                 valid_range: 256..=256,
+-             },
+-         },
+-     ),
+-     align: AbiAndPrefAlign {
+-         abi: Align {
+-             pow2: 1,
+-         },
+-         pref: Align {
+-             pow2: 1,
+-     },
+-     size: Size {
+-         raw: 2,
+-     },
+-     },
+- }
+-   --> $DIR/hexagon-enum.rs:24:1
+-    |
+- LL | enum C { Chaenomeles = 256, }
+- 
+- 
+- error: layout_of(P) = Layout {
+-     fields: Arbitrary {
+-         offsets: [
+-                 raw: 0,
+-             },
+-         ],
+-         memory_index: [
+---
+-                 false,
+-             ),
+-             valid_range: 268435456..=268435456,
+-         },
+-         tag_encoding: Direct,
+-         tag_field: 0,
+-         variants: [
+-             Layout {
+-                 fields: Arbitrary {
+-                     offsets: [],
+-                     memory_index: [],
+-                 variants: Single {
+-                     index: 0,
+-                 },
+-                 abi: Aggregate {
+-                 abi: Aggregate {
+-                     sized: true,
+-                 },
+-                 largest_niche: None,
+-                 align: AbiAndPrefAlign {
+-                     abi: Align {
+-                         pow2: 2,
+-                     },
+-                     pref: Align {
+-                         pow2: 2,
+-                 },
+-                 size: Size {
+-                     raw: 4,
+-                 },
+---
+-             ),
+-             valid_range: 268435456..=268435456,
+-         },
+-     ),
+-     largest_niche: Some(
+-         Niche {
+-             offset: Size {
+-                 raw: 0,
+-             scalar: Scalar {
+-                 value: Int(
+-                     I32,
+-                     false,
+-                     false,
+-                 ),
+-                 valid_range: 268435456..=268435456,
+-             },
+-         },
+-     ),
+-     align: AbiAndPrefAlign {
+-         abi: Align {
+-             pow2: 2,
+-         },
+-         pref: Align {
+-             pow2: 2,
+-     },
+-     size: Size {
+-         raw: 4,
+-     },
+-     },
+- }
+-   --> $DIR/hexagon-enum.rs:28:1
+-    |
+- LL | enum P { Peach = 0x1000_0000isize, }
+- 
+- 
+- error: layout_of(T) = Layout {
+-     fields: Arbitrary {
+-         offsets: [
+-                 raw: 0,
+-             },
+-         ],
+-         memory_index: [
+---
+-                 true,
+-             ),
+-             valid_range: 2164260864..=2164260864,
+-         },
+-         tag_encoding: Direct,
+-         tag_field: 0,
+-         variants: [
+-             Layout {
+-                 fields: Arbitrary {
+-                     offsets: [],
+-                     memory_index: [],
+-                 variants: Single {
+-                     index: 0,
+-                 },
+-                 abi: Aggregate {
+-                 abi: Aggregate {
+-                     sized: true,
+-                 },
+-                 largest_niche: None,
+-                 align: AbiAndPrefAlign {
+-                     abi: Align {
+-                         pow2: 2,
+-                     },
+-                     pref: Align {
+-                         pow2: 2,
+-                 },
+-                 size: Size {
+-                     raw: 4,
+-                 },
+---
+-             ),
+-             valid_range: 2164260864..=2164260864,
+-         },
+-     ),
+-     largest_niche: Some(
+-         Niche {
+-             offset: Size {
+-                 raw: 0,
+-             scalar: Scalar {
+-                 value: Int(
+-                     I32,
+-                     true,
+-                     true,
+-                 ),
+-                 valid_range: 2164260864..=2164260864,
+-             },
+-         },
+-     ),
+-     align: AbiAndPrefAlign {
+-         abi: Align {
+-             pow2: 2,
+-         },
+-         pref: Align {
+-             pow2: 2,
+-     },
+-     size: Size {
+-         raw: 4,
+-     },
+-     },
+- }
+-   --> $DIR/hexagon-enum.rs:34:1
+-    |
+- LL | enum T { Tangerine = TANGERINE as isize }
+- 
+- error: aborting due to 5 previous errors
++ error: aborting due to previous error
+442 
+---
+To only update this specific test, also pass `--test-args layout/hexagon-enum.rs`
+
+error: 1 errors occurred comparing output.
+status: exit status: 1
+command: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "/checkout/src/test/ui/layout/hexagon-enum.rs" "-Zthreads=1" "--error-format" "json" "-Ccodegen-units=1" "-Zui-testing" "-Zdeduplicate-diagnostics=no" "-Zemit-future-incompat-report" "--emit" "metadata" "-C" "prefer-dynamic" "--out-dir" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/layout/hexagon-enum" "-A" "unused" "-Crpath" "-O" "-Cdebuginfo=0" "-Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "--target" "hexagon-unknown-linux-musl" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/layout/hexagon-enum/auxiliary"
+------------------------------------------
+
+------------------------------------------
+stderr:
+stderr:
+------------------------------------------
+error: requires `drop` lang_item
+error: aborting due to previous error
+
+
+------------------------------------------
+------------------------------------------
+
+
+---- [ui] ui/layout/thumb-enum.rs stdout ----
+diff of stderr:
+
+- error: layout_of(A) = Layout {
+-     fields: Arbitrary {
+-         offsets: [
+-                 raw: 0,
+-             },
+-         ],
+-         memory_index: [
+---
+-                 false,
+-             ),
+-             valid_range: 0..=0,
+-         },
+-         tag_encoding: Direct,
+-         tag_field: 0,
+-         variants: [
+-             Layout {
+-                 fields: Arbitrary {
+-                     offsets: [],
+-                     memory_index: [],
+-                 variants: Single {
+-                     index: 0,
+-                 },
+-                 abi: Aggregate {
+-                 abi: Aggregate {
+-                     sized: true,
+-                 },
+-                 largest_niche: None,
+-                 align: AbiAndPrefAlign {
+-                     abi: Align {
+-                         pow2: 0,
+-                     },
+-                     pref: Align {
+-                         pow2: 2,
+-                 },
+-                 size: Size {
+-                     raw: 1,
+-                 },
+---
+-             ),
+-             valid_range: 0..=0,
+-         },
+-     ),
+-     largest_niche: Some(
+-         Niche {
+-             offset: Size {
+-                 raw: 0,
+-             scalar: Scalar {
+-                 value: Int(
+-                     I8,
+-                     false,
+-                     false,
+-                 ),
+-                 valid_range: 0..=0,
+-             },
+-         },
+-     ),
+-     align: AbiAndPrefAlign {
+-         abi: Align {
+-             pow2: 0,
+-         },
+-         pref: Align {
+-             pow2: 2,
+-     },
+-     size: Size {
+-         raw: 1,
+-     },
+-     },
+- }
+-   --> $DIR/thumb-enum.rs:16:1
+-    |
+- LL | enum A { Apple }
+-    | ^^^^^^^^^^^^^^^^
++ error: requires `drop` lang_item
+88 
+- error: layout_of(B) = Layout {
+-     fields: Arbitrary {
+-         offsets: [
+-                 raw: 0,
+-             },
+-         ],
+-         memory_index: [
+---
+-                 false,
+-             ),
+-             valid_range: 255..=255,
+-         },
+-         tag_encoding: Direct,
+-         tag_field: 0,
+-         variants: [
+-             Layout {
+-                 fields: Arbitrary {
+Some tests failed in compiletest suite=ui mode=ui host=x86_64-unknown-linux-gnu target=x86_64-unknown-linux-gnu
+-                     offsets: [],
+-                     memory_index: [],
+-                 variants: Single {
+-                     index: 0,
+-                 },
+-                 abi: Aggregate {
+-                 abi: Aggregate {
+-                     sized: true,
+-                 },
+-                 largest_niche: None,
+-                 align: AbiAndPrefAlign {
+-                     abi: Align {
+-                         pow2: 0,
+-                     },
+-                     pref: Align {
+-                         pow2: 2,
+-                 },
+-                 size: Size {
+-                     raw: 1,
+-                 },
+---
+-             ),
+-             valid_range: 255..=255,
+-         },
+-     ),
+-     largest_niche: Some(
+-         Niche {
+-             offset: Size {
+-                 raw: 0,
+-             scalar: Scalar {
+-                 value: Int(
+-                     I8,
+-                     false,
+-                     false,
+-                 ),
+-                 valid_range: 255..=255,
+-             },
+-         },
+-     ),
+-     align: AbiAndPrefAlign {
+-         abi: Align {
+-             pow2: 0,
+-         },
+-         pref: Align {
+-             pow2: 2,
+-     },
+-     size: Size {
+-         raw: 1,
+-     },
+-     },
+- }
+-   --> $DIR/thumb-enum.rs:20:1
+-    |
+- LL | enum B { Banana = 255, }
+- 
+- 
+- error: layout_of(C) = Layout {
+-     fields: Arbitrary {
+-         offsets: [
+-                 raw: 0,
+-             },
+-         ],
+-         memory_index: [
+---
+-                 false,
+-             ),
+-             valid_range: 256..=256,
+-         },
+-         tag_encoding: Direct,
+-         tag_field: 0,
+-         variants: [
+-             Layout {
+-                 fields: Arbitrary {
+-                     offsets: [],
+-                     memory_index: [],
+-                 variants: Single {
+-                     index: 0,
+-                 },
+-                 abi: Aggregate {
+-                 abi: Aggregate {
+-                     sized: true,
+-                 },
+-                 largest_niche: None,
+-                 align: AbiAndPrefAlign {
+-                     abi: Align {
+-                         pow2: 1,
+-                     },
+-                     pref: Align {
+-                         pow2: 2,
+-                 },
+-                 size: Size {
+-                     raw: 2,
+-                 },
+---
+-             ),
+-             valid_range: 256..=256,
+-         },
+-     ),
+-     largest_niche: Some(
+-         Niche {
+-             offset: Size {
+-                 raw: 0,
+-             scalar: Scalar {
+-                 value: Int(
+-                     I16,
+-                     false,
+-                     false,
+-                 ),
+-                 valid_range: 256..=256,
+-             },
+-         },
+-     ),
+-     align: AbiAndPrefAlign {
+-         abi: Align {
+-             pow2: 1,
+-         },
+-         pref: Align {
+-             pow2: 2,
+-     },
+-     size: Size {
+-         raw: 2,
+-     },
+-     },
+- }
+-   --> $DIR/thumb-enum.rs:24:1
+-    |
+- LL | enum C { Chaenomeles = 256, }
+- 
+- 
+- error: layout_of(P) = Layout {
+-     fields: Arbitrary {
+-         offsets: [
+-                 raw: 0,
+-             },
+-         ],
+-         memory_index: [
+---
+-                 false,
+-             ),
+-             valid_range: 268435456..=268435456,
+-         },
+-         tag_encoding: Direct,
+-         tag_field: 0,
+-         variants: [
+-             Layout {
+-                 fields: Arbitrary {
+-                     offsets: [],
+-                     memory_index: [],
+-                 variants: Single {
+-                     index: 0,
+-                 },
+-                 abi: Aggregate {
+-                 abi: Aggregate {
+-                     sized: true,
+-                 },
+-                 largest_niche: None,
+-                 align: AbiAndPrefAlign {
+-                     abi: Align {
+-                         pow2: 2,
+-                     },
+-                     pref: Align {
+-                         pow2: 2,
+-                 },
+-                 size: Size {
+-                     raw: 4,
+-                 },
+---
+-             ),
+-             valid_range: 268435456..=268435456,
+-         },
+-     ),
+-     largest_niche: Some(
+-         Niche {
+-             offset: Size {
+-                 raw: 0,
+-             scalar: Scalar {
+-                 value: Int(
+-                     I32,
+-                     false,
+-                     false,
+-                 ),
+-                 valid_range: 268435456..=268435456,
+-             },
+-         },
+-     ),
+-     align: AbiAndPrefAlign {
+-         abi: Align {
+-             pow2: 2,
+-         },
+-         pref: Align {
+-             pow2: 2,
+-     },
+-     size: Size {
+-         raw: 4,
+-     },
+-     },
+- }
+-   --> $DIR/thumb-enum.rs:28:1
+-    |
+- LL | enum P { Peach = 0x1000_0000isize, }
+- 
+- 
+- error: layout_of(T) = Layout {
+-     fields: Arbitrary {
+-         offsets: [
+-                 raw: 0,
+-             },
+-         ],
+-         memory_index: [
+---
+-                 true,
+-             ),
+-             valid_range: 2164260864..=2164260864,
+-         },
+-         tag_encoding: Direct,
+-         tag_field: 0,
+-         variants: [
+-             Layout {
+-                 fields: Arbitrary {
+-                     offsets: [],
+-                     memory_index: [],
+-                 variants: Single {
+-                     index: 0,
+-                 },
+-                 abi: Aggregate {
+-                 abi: Aggregate {
+-                     sized: true,
+-                 },
+-                 largest_niche: None,
+-                 align: AbiAndPrefAlign {
+-                     abi: Align {
+-                         pow2: 2,
+-                     },
+-                     pref: Align {
+-                         pow2: 2,
+-                 },
+-                 size: Size {
+-                     raw: 4,
+-                 },
+---
+-             ),
+-             valid_range: 2164260864..=2164260864,
+-         },
+-     ),
+-     largest_niche: Some(
+-         Niche {
+-             offset: Size {
+-                 raw: 0,
+-             scalar: Scalar {
+-                 value: Int(
+-                     I32,
+-                     true,
+-                     true,
+-                 ),
+-                 valid_range: 2164260864..=2164260864,
+-             },
+-         },
+-     ),
+-     align: AbiAndPrefAlign {
+-         abi: Align {
+-             pow2: 2,
+-         },
+-         pref: Align {
+-             pow2: 2,
+-     },
+-     size: Size {
+-         raw: 4,
+-     },
+-     },
+- }
+-   --> $DIR/thumb-enum.rs:34:1
+-    |
+- LL | enum T { Tangerine = TANGERINE as isize }
+- 
+- error: aborting due to 5 previous errors
++ error: aborting due to previous error
+442 
+---
+To only update this specific test, also pass `--test-args layout/thumb-enum.rs`
+
+error: 1 errors occurred comparing output.
+status: exit status: 1
+command: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "/checkout/src/test/ui/layout/thumb-enum.rs" "-Zthreads=1" "--error-format" "json" "-Ccodegen-units=1" "-Zui-testing" "-Zdeduplicate-diagnostics=no" "-Zemit-future-incompat-report" "--emit" "metadata" "-C" "prefer-dynamic" "--out-dir" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/layout/thumb-enum" "-A" "unused" "-Crpath" "-O" "-Cdebuginfo=0" "-Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "--target" "thumbv8m.main-none-eabihf" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/layout/thumb-enum/auxiliary"
+------------------------------------------
+
+------------------------------------------
+stderr:
+stderr:
+------------------------------------------
+error: requires `drop` lang_item
+error: aborting due to previous error
+
+
+------------------------------------------
+---
+test result: FAILED. 11989 passed; 2 failed; 102 ignored; 0 measured; 0 filtered out; finished in 136.87s
+
+
+
+command did not execute successfully: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage0-tools-bin/compiletest" "--compile-lib-path" "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/lib" "--run-lib-path" "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/lib/rustlib/x86_64-unknown-linux-gnu/lib" "--rustc-path" "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "--src-base" "/checkout/src/test/ui" "--build-base" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui" "--stage-id" "stage2-x86_64-unknown-linux-gnu" "--suite" "ui" "--mode" "ui" "--target" "x86_64-unknown-linux-gnu" "--host" "x86_64-unknown-linux-gnu" "--llvm-filecheck" "/usr/lib/llvm-10/bin/FileCheck" "--nodejs" "/usr/bin/node" "--host-rustcflags" "-Crpath -O -Cdebuginfo=0  -Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "--target-rustcflags" "-Crpath -O -Cdebuginfo=0  -Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "--docck-python" "/usr/bin/python3" "--lldb-python" "/usr/bin/python3" "--gdb" "/usr/bin/gdb" "--quiet" "--llvm-version" "10.0.0" "--llvm-components" "aarch64 aarch64asmparser aarch64codegen aarch64desc aarch64disassembler aarch64info aarch64utils aggressiveinstcombine all all-targets amdgpu amdgpuasmparser amdgpucodegen amdgpudesc amdgpudisassembler amdgpuinfo amdgpuutils analysis arm armasmparser armcodegen armdesc armdisassembler arminfo armutils asmparser asmprinter avr avrasmparser avrcodegen avrdesc avrdisassembler avrinfo binaryformat bitreader bitstreamreader bitwriter bpf bpfasmparser bpfcodegen bpfdesc bpfdisassembler bpfinfo cfguard codegen core coroutines coverage debuginfocodeview debuginfodwarf debuginfogsym debuginfomsf debuginfopdb demangle dlltooldriver dwarflinker engine executionengine frontendopenmp fuzzmutate globalisel hexagon hexagonasmparser hexagoncodegen hexagondesc hexagondisassembler hexagoninfo instcombine instrumentation interpreter ipo irreader jitlink lanai lanaiasmparser lanaicodegen lanaidesc lanaidisassembler lanaiinfo libdriver lineeditor linker lto mc mca mcdisassembler mcjit mcparser mips mipsasmparser mipscodegen mipsdesc mipsdisassembler mipsinfo mirparser msp430 msp430asmparser msp430codegen msp430desc msp430disassembler msp430info native nativecodegen nvptx nvptxcodegen nvptxdesc nvptxinfo objcarcopts object objectyaml option orcerror orcjit passes perfjitevents powerpc powerpcasmparser powerpccodegen powerpcdesc powerpcdisassembler powerpcinfo profiledata remarks riscv riscvasmparser riscvcodegen riscvdesc riscvdisassembler riscvinfo riscvutils runtimedyld scalaropts selectiondag sparc sparcasmparser sparccodegen sparcdesc sparcdisassembler sparcinfo support symbolize systemz systemzasmparser systemzcodegen systemzdesc systemzdisassembler systemzinfo tablegen target textapi transformutils vectorize webassembly webassemblyasmparser webassemblycodegen webassemblydesc webassemblydisassembler webassemblyinfo windowsmanifest x86 x86asmparser x86codegen x86desc x86disassembler x86info x86utils xcore xcorecodegen xcoredesc xcoredisassembler xcoreinfo xray" "--system-llvm" "--cc" "" "--cxx" "" "--cflags" "" "--adb-path" "adb" "--adb-test-dir" "/data/tmp/work" "--android-cross-path" "" "--channel" "nightly" "--color" "always"
+
+
+Build completed unsuccessfully in 0:14:32

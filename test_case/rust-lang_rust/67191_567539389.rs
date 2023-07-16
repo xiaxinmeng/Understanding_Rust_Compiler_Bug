@@ -1,0 +1,4 @@
+rust
+if false {
+    CONSTANT;
+}

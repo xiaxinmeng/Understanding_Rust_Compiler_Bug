@@ -1,0 +1,1 @@
+compile_fail,E0532\nenum State {\n    Succeeded,\n    Failed(String),\n}\n\nfn print_on_failure(state: &State) {\n    match *state {\n        // error: expected unit struct/variant or constant, found tuple\n        //        variant `State::Failed`\n        State::Failed => println!(\"Failed\"),\n        _ => ()\n    }\n}\n

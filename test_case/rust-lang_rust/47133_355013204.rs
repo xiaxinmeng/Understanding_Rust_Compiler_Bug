@@ -1,0 +1,3 @@
+rust
+#![allow(unused)]        // disable all unused warnings...
+#![warn(truly_unused)]   // ...then reenable warnings for a subset of them

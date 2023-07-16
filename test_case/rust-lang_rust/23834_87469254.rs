@@ -1,0 +1,2 @@
+
+Process didn't exit successfully: `rustc src/lib.rs --crate-name alloc --crate-type lib -g -C metadata=4b6a8ab3fd4b7ba5 -C extra-filename=-4b6a8ab3fd4b7ba5 --out-dir /home/rprichard/mess/TEST/alloctest/lib/liballoc/target/debug --emit=dep-info,link -L dependency=/home/rprichard/mess/TEST/alloctest/lib/liballoc/target/debug -L dependency=/home/rprichard/mess/TEST/alloctest/lib/liballoc/target/debug/deps --extern core=/home/rprichard/mess/TEST/alloctest/lib/liballoc/target/debug/deps/libcore-fa8a124aff706daf.rlib`

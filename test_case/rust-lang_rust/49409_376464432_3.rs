@@ -1,0 +1,1 @@
+`RUSTFLAGS="-Z pgo-use=profile_data.pgo" cargo build --release

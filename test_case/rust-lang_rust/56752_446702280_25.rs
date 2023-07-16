@@ -1,0 +1,1 @@
+\ntrait Trait {\n    fn foo<T>(&self, on: T);\n    // more methods\n}\n\nimpl Trait for String {\n    fn foo<T>(&self, on: T) {\n        // implementation 1\n    }\n}\n\nimpl Trait for u8 {\n    fn foo<T>(&self, on: T) {\n        // implementation 2\n    }\n}\n\n// 8 more implementations\n

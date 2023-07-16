@@ -1,0 +1,1 @@
+` RUSTFLAGS="-C passes=lint" cargo build

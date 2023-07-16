@@ -1,0 +1,3 @@
+rust
+#[inline]
+fn f() {}

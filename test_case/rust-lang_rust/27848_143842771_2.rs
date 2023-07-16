@@ -1,0 +1,27 @@
+
+% cargo build --verbose
+    Updating registry `https://github.com/rust-lang/crates.io-index`
+   Compiling libc v0.1.10
+     Running `rustc /Users/lazarus/.cargo/registry/src/github.com-0a35038f75765ae4/libc-0.1.10/rust/src/liblibc/lib.rs --crate-name libc --crate-type lib -g --cfg feature=\"default\" --cfg feature=\"cargo-build\" -C metadata=144c435538abd757 -C extra-filename=-144c435538abd757 --out-dir /Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps --emit=dep-info,link -L dependency=/Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps -L dependency=/Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps --cap-lints allow`
+   Compiling regex-syntax v0.2.2
+     Running `rustc /Users/lazarus/.cargo/registry/src/github.com-0a35038f75765ae4/regex-syntax-0.2.2/src/lib.rs --crate-name regex_syntax --crate-type lib -g -C metadata=6d9e9f3bd76497d4 -C extra-filename=-6d9e9f3bd76497d4 --out-dir /Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps --emit=dep-info,link -L dependency=/Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps -L dependency=/Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps --cap-lints allow`
+   Compiling memchr v0.1.6
+     Running `rustc /Users/lazarus/.cargo/registry/src/github.com-0a35038f75765ae4/memchr-0.1.6/src/lib.rs --crate-name memchr --crate-type lib -g -C metadata=1ef94c8f78e37fc7 -C extra-filename=-1ef94c8f78e37fc7 --out-dir /Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps --emit=dep-info,link -L dependency=/Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps -L dependency=/Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps --extern libc=/Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps/liblibc-144c435538abd757.rlib --cap-lints allow`
+   Compiling aho-corasick v0.3.2
+     Running `rustc /Users/lazarus/.cargo/registry/src/github.com-0a35038f75765ae4/aho-corasick-0.3.2/src/lib.rs --crate-name aho_corasick --crate-type lib -g -C metadata=4235a5ba781fe1b1 -C extra-filename=-4235a5ba781fe1b1 --out-dir /Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps --emit=dep-info,link -L dependency=/Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps -L dependency=/Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps --extern memchr=/Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps/libmemchr-1ef94c8f78e37fc7.rlib --cap-lints allow`
+   Compiling regex v0.1.41
+     Running `rustc /Users/lazarus/.cargo/registry/src/github.com-0a35038f75765ae4/regex-0.1.41/src/lib.rs --crate-name regex --crate-type lib -g --cfg feature=\"pattern\" -C metadata=c5abedf84fe61ddb -C extra-filename=-c5abedf84fe61ddb --out-dir /Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps --emit=dep-info,link -L dependency=/Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps -L dependency=/Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps --extern aho_corasick=/Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps/libaho_corasick-4235a5ba781fe1b1.rlib --extern memchr=/Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps/libmemchr-1ef94c8f78e37fc7.rlib --extern regex_syntax=/Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps/libregex_syntax-6d9e9f3bd76497d4.rlib --cap-lints allow`
+   Compiling regex_macros v0.1.21
+     Running `rustc /Users/lazarus/.cargo/registry/src/github.com-0a35038f75765ae4/regex_macros-0.1.21/src/lib.rs --crate-name regex_macros --crate-type dylib -C prefer-dynamic -g -C metadata=ed47cfffdeca22b7 -C extra-filename=-ed47cfffdeca22b7 --out-dir /Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps --emit=dep-info,link -L dependency=/Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps -L dependency=/Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps --extern regex=/Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps/libregex-c5abedf84fe61ddb.rlib --cap-lints allow`
+   Compiling bad-rust-plugin v0.1.0 (file:///Users/lazarus/dev/tmp/bad-rust-plugin)
+     Running `rustc src/main.rs --crate-name bad_rust_plugin --crate-type bin -g --out-dir /Users/lazarus/dev/tmp/bad-rust-plugin/target/debug --emit=dep-info,link -L dependency=/Users/lazarus/dev/tmp/bad-rust-plugin/target/debug -L dependency=/Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps --extern regex=/Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps/libregex-c5abedf84fe61ddb.rlib --extern regex_macros=/Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps/libregex_macros-ed47cfffdeca22b7.dylib`
+error: internal compiler error: unexpected panic
+note: the compiler unexpectedly panicked. this is a bug.
+note: we would appreciate a bug report: https://github.com/rust-lang/rust/blob/master/CONTRIBUTING.md#bug-reports
+note: run with `RUST_BACKTRACE=1` for a backtrace
+thread 'rustc' panicked at 'index out of bounds: the len is 60 but the index is 66', ../src/libcollections/vec.rs:1037
+
+Could not compile `bad-rust-plugin`.
+
+Caused by:
+  Process didn't exit successfully: `rustc src/main.rs --crate-name bad_rust_plugin --crate-type bin -g --out-dir /Users/lazarus/dev/tmp/bad-rust-plugin/target/debug --emit=dep-info,link -L dependency=/Users/lazarus/dev/tmp/bad-rust-plugin/target/debug -L dependency=/Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps --extern regex=/Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps/libregex-c5abedf84fe61ddb.rlib --extern regex_macros=/Users/lazarus/dev/tmp/bad-rust-plugin/target/debug/deps/libregex_macros-ed47cfffdeca22b7.dylib` (exit code: 101)

@@ -1,0 +1,1 @@
+\n# #![feature(generators, generator_trait)]\n# use std::ops::Generator;\nlet mut b = || {\n    let a = 3;\n    yield ();\n    println!(\"{}\", a);\n};\nunsafe { b.resume() };\n

@@ -1,0 +1,21 @@
+\n"},"level":"error","spans":[{"file_name":"/checkout/src/test/ui/issue-23302-2.rs","byte_start":0,"byte_end":0,"line_start":1,"line_end":1,"column_start":1,"column_end":1,"is_primary":true,"text":[{"text":"// Copyright 2015 The Rust Project Developers. See the COPYRIGHT","highlight_start":1,"highlight_end":1}],"label":"cyclic reference","suggested_replacement":null,"expansion":null}],"children":[{"message":"the cycle begins when const-evaluating `Y::A::{{initializer}}`...","code":null,"level":"note","spans":[{"file_name":"/checkout/src/test/ui/issue-23302-2.rs","byte_start":567,"byte_end":580,"line_start":14,"line_end":14,"column_start":9,"column_end":22,"is_primary":true,"text":[{"text":"    A = Y::B as isize, //~ ERROR E0391","highlight_start":9,"highlight_end":22}],"label":null,"suggested_replacement":null,"expansion":null}],"children":[],"rendered":null},{"message":"...which then requires computing layout of `Y`...","code":null,"level":"note","spans":[{"file_name":"/checkout/src/test/ui/issue-23302-2.rs","byte_start":567,"byte_end":571,"line_start":14,"line_end":14,"column_start":9,"column_end":13,"is_primary":true,"text":[{"text":"    A = Y::B as isize, //~ ERROR E0391","highlight_start":9,"highlight_end":13}],"label":null,"suggested_replacement":null,"expansion":null}],"children":[],"rendered":null},{"message":"...which then again requires const-evaluating `Y::A::{{initializer}}`, completing the cycle.","code":null,"level":"note","spans":[],"children":[],"rendered":null}],"rendered":"error[E0391]: cyclic dependency detected\n   |\nnote: the cycle begins when const-evaluating `Y::A::{{initializer}}`...\n  --> /checkout/src/test/ui/issue-23302-2.rs:14:9\n   |\nLL |     A = Y::B as isize, //~ ERROR E0391\n   |         ^^^^^^^^^^^^^\nnote: ...which then requires computing layout of `Y`...\n  --> /checkout/src/test/ui/issue-23302-2.rs:14:9\n   |\nLL |     A = Y::B as isize, //~ ERROR E0391\n   |         ^^^^\n   = note: ...which then again requires const-evaluating `Y::A::{{initializer}}`, completing the cycle.\n\n"}
+[00:40:53] {"message":"aborting due to previous error","code":null,"level":"error","spans":[],"children":[],"rendered":"error: aborting due to previous error\n\n"}
+[00:40:53] {"message":"For more information about this error, try `rustc --explain E0391`.","code":null,"level":"","spans":[],"children":[],"rendered":"For more information about this error, try `rustc --explain E0391`.\n"}
+---
+[00:40:53] - LL |     B = A, //~ ERROR E0391
+[00:40:53] -    |         ^ cyclic reference
+[00:40:53] 6    |
+[00:40:53] 7 note: the cycle begins when const-evaluating `Foo::B::{{initializer}}`...
+[00:40:53] 8   --> $DIR/issue-36163.rs:14:9
+[00:40:53]
+[00:40:53]
+[00:40:53] The actual stderr differed from the expected stderr.
+[00:40:53] Actual stderr saved to /checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/issue-36163.stderr
+[00:40:53] To update references, run this command from build directory:
+[00:40:53] /checkout/src/test/ui/update-references.sh '/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui' 'issue-36163.rs'
+[00:40:53]
+[00:40:53] error: 1 errors occurred comparing output.
+[00:40:53] status: exit code: 101
+[00:40:53] command: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "/checkout/src/test/ui/issue-36163.rs" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui" "--target=x86_64-unknown-linux-gnu" "--error-format" "json" "-Zui-testing" "-C" "prefer-dynamic" "-o" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/issue-36163.stage2-x86_64-unknown-linux-gnu" "-Crpath" "-O" "-Zmiri" "-Zunstable-options" "-Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/issue-36163.stage2-x86_64-unknown-linux-gnu.aux" "-A" "unused"
+---
+[00:40:53] {"message":"cyclic dependency detected","code":{"code":"E0391","explanation":"\nThis error indicates that some types or traits depend on each other\nand therefore cannot be constructed.\n\nThe following example contains a circular dependency between two traits:\n\n

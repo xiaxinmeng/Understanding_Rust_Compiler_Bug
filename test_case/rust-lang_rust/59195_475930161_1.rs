@@ -1,0 +1,1 @@
+\n\nHere, the function `eat` takes ownership of `x`. However,\n`x` cannot be moved because the borrow to `_ref_to_val`\nneeds to last till the function `borrow`.\nTo fix that you can do a few different things:\n\n* Try to avoid moving the variable.\n* Release borrow before move.\n* Implement the `Copy` trait on the type.\n\nExamples:\n\n

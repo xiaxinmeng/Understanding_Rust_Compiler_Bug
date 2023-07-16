@@ -1,0 +1,29 @@
+
+stack backtrace:
+   1:     0x7fe588440779 - sys::backtrace::write::h1fb912b6242676e13JC
+   2:     0x7fe588465067 - panicking::on_panic::h49b58f19dee2b6499aJ
+   3:     0x7fe5883aefb2 - rt::unwind::begin_unwind_inner::h954a8c2d8b458b8ehQI
+   4:     0x7fe5883af27f - rt::unwind::begin_unwind_fmt::h8142be88e287f416VOI
+   5:     0x7fe5863bcfe0 - middle::ty::resolve_expr::h468519011c7f5a2dsB6
+   6:     0x7fe58650e2b1 - middle::ty::expr_kind::h13d00213be0997d6yD6
+   7:     0x7fe58650e07a - middle::ty::expr_is_lval::he8576d1b1ffb6fb6vC6
+   8:     0x7fe587245c60 - check::check_expr_with_unifier::h1234167007494092036
+   9:     0x7fe58726c89b - check::check_decl_local::h66808f8a0a45231fHjs
+  10:     0x7fe5872125b1 - check::check_block_with_expected::h8460ca5f594c8570Nps
+  11:     0x7fe5871f6196 - check::check_fn::hd5196d54a6852698Abo
+  12:     0x7fe58720df97 - check::check_bare_fn::h0073eb2d0e87712990n
+  13:     0x7fe587207b58 - check::check_item::hef34ffea35346370Ujo
+  14:     0x7fe5872cefb6 - check_crate::closure.36498
+  15:     0x7fe5872ca3f0 - check_crate::h679eb3dc01c34e66zxC
+  16:     0x7fe588ab8938 - driver::phase_3_run_analysis_passes::h7b112f16caf4f0fcpGa
+  17:     0x7fe588a99a05 - driver::compile_input::hb07383d8b05653e9Qba
+  18:     0x7fe588b586e1 - run_compiler::hd11be756ecff4a4dL4b
+  19:     0x7fe588b56332 - boxed::F.FnBox<A>::call_box::h9743051768958258733
+  20:     0x7fe588b55869 - rt::unwind::try::try_fn::h3770862294174962809
+  21:     0x7fe5884e55f8 - rust_try_inner
+  22:     0x7fe5884e55e5 - rust_try
+  23:     0x7fe588b55b18 - boxed::F.FnBox<A>::call_box::h17316511360530184554
+  24:     0x7fe5884529e1 - sys::thread::create::thread_start::h14fabfa97526362frLH
+  25:     0x7fe582ddd0a4 - start_thread
+  26:     0x7fe588018cfc - __clone
+  27:                0x0 - <unknown>

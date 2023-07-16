@@ -1,0 +1,12 @@
+rust
+trait Trait<Input> {
+    type Output;
+}
+
+async fn walk<F>(filter: F)
+where
+    for<'a> F: Trait<&'a u32> + 'a,
+    for<'a> <F as Trait<&'a u32>>::Output: 'a,
+{
+}
+

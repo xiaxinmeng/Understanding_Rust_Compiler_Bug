@@ -1,0 +1,3 @@
+c
+void _start() {
+}

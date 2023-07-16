@@ -1,0 +1,8 @@
+
+[profile.bench]
+opt-level =3
+debug =false
+rpath =false
+lto =true
+debug-assertions =false
+codegen-units =1

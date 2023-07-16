@@ -1,0 +1,12 @@
+
+Testing libstd stage2 (i686-pc-windows-gnu -> i686-pc-windows-gnu)
+   Compiling cmake v0.1.22
+   Compiling rand v0.0.0 (file:///C:/projects/rust/src/librand)
+   Compiling rustc_asan v0.0.0 (file:///C:/projects/rust/src/librustc_asan)
+   Compiling alloc v0.0.0 (file:///C:/projects/rust/src/liballoc)
+   Compiling core v0.0.0 (file:///C:/projects/rust/src/libcore)
+   Compiling collections v0.0.0 (file:///C:/projects/rust/src/libcollections)
+error: linking with `gcc` failed: exit code: 1
+  |
+  = note: "gcc" "-Wl,--enable-long-section-names" "-fno-use-linker-plugin" "-Wl,--nxcompat" "-nostdlib" "-Wl,--large-address-aware" "C:\\projects\\rust\\build\\i686-pc-windows-gnu\\stage1\\lib\\rustlib\\i686-pc-windows-gnu\\lib\\crt2.o" "C:\\projects\\rust\\build\\i686-pc-windows-gnu\\stage1\\lib\\rustlib\\i686-pc-windows-gnu\\lib\\rsbegin.o" "-L" "C:\\projects\\rust\\build\\i686-pc-windows-gnu\\stage1\\lib\\rustlib\\i686-pc-windows-gnu\\lib" "C:\\projects\\rust\\build\\i686-pc-windows-gnu\\stage1-std\\i686-pc-windows-gnu\\release\\deps\\collectionstest-cf7d8872f6b0686a.0.o" "-o" "C:\\projects\\rust\\build\\i686-pc-windows-gnu\\stage1-std\\i686-pc-windows-gnu\\release\\deps\\collectionstest-cf7d8872f6b0686a.exe" "-Wl,--gc-sections" "-nodefaultlibs" "-L" "C:\\projects\\rust\\build\\i686-pc-windows-gnu\\stage1-std\\i686-pc-windows-gnu\\release\\deps" "-L" "C:\\projects\\rust\\build\\i686-pc-windows-gnu\\stage1-std\\release\\deps" "-L" "C:\\projects\\rust\\build\\i686-pc-windows-gnu\\stage1\\lib\\rustlib\\i686-pc-windows-gnu\\lib" "-Wl,-Bstatic" "-Wl,-Bdynamic" "-L" "C:\\projects\\rust\\build\\i686-pc-windows-gnu\\stage1\\lib\\rustlib\\i686-pc-windows-gnu\\lib" "-l" "test-51dd1e12bb8fc6c0" "-L" "C:\\projects\\rust\\build\\i686-pc-windows-gnu\\stage1\\lib\\rustlib\\i686-pc-windows-gnu\\lib" "-l" "term-9bb4a9959ced7ebc" "-L" "C:\\projects\\rust\\build\\i686-pc-windows-gnu\\stage1\\lib\\rustlib\\i686-pc-windows-gnu\\lib" "-l" "getopts-83c65310844a796d" "-L" "C:\\projects\\rust\\build\\i686-pc-windows-gnu\\stage1\\lib\\rustlib\\i686-pc-windows-gnu\\lib" "-l" "std-4d6881ec6132b951" "C:\\projects\\rust\\build\\i686-pc-windows-gnu\\stage1\\lib\\rustlib\\i686-pc-windows-gnu\\lib\\libcompiler_builtins-7ac5a34e9b48514f.rlib" "-l" "kernel32" "-l" "advapi32" "-l" "ws2_32" "-l" "userenv" "-l" "shell32" "-l" "gcc_eh" "-lmingwex" "-lmingw32" "-lgcc" "-lmsvcrt" "-luser32" "-lkernel32" "C:\\projects\\rust\\build\\i686-pc-windows-gnu\\stage1\\lib\\rustlib\\i686-pc-windows-gnu\\lib\\rsend.o"
+  = note: collect2.exe: error: ld returned 5 exit status

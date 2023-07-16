@@ -1,0 +1,3 @@
+rust
+fn test() {
+}

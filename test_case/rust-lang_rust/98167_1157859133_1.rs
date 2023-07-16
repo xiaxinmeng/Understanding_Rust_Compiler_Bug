@@ -1,0 +1,2 @@
+
+debug buf [0x00f8, 0xe007, 0x1f00] mapped

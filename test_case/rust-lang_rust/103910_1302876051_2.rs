@@ -1,0 +1,11 @@
+
+root@host-10-89-235-184 demo]# x86_64-linux-musl-gcc -v
+Using built-in specs.
+COLLECT_GCC=x86_64-linux-musl-gcc
+COLLECT_LTO_WRAPPER=/usr/local/x86_64-linux-musl-cross/bin/../libexec/gcc/x86_64-linux-musl/11.2.1/lto-wrapper
+Target: x86_64-linux-musl
+Configured with: ../src_gcc/configure --enable-languages=c,c++,fortran CC='gcc -static --static' CXX='g++ -static --static' FC='gfortran -static --static' CFLAGS='-g0 -O2 -fno-align-functions -fno-align-jumps -fno-align-loops -fno-align-labels -Wno-error' CXXFLAGS='-g0 -O2 -fno-align-functions -fno-align-jumps -fno-align-loops -fno-align-labels -Wno-error' FFLAGS='-g0 -O2 -fno-align-functions -fno-align-jumps -fno-align-loops -fno-align-labels -Wno-error' LDFLAGS='-s -static --static' --enable-default-pie --enable-static-pie --disable-cet --disable-bootstrap --disable-assembly --disable-werror --target=x86_64-linux-musl --prefix= --libdir=/lib --disable-multilib --with-sysroot=/x86_64-linux-musl --enable-tls --disable-libmudflap --disable-libsanitizer --disable-gnu-indirect-function --disable-libmpx --enable-initfini-array --enable-libstdcxx-time=rt --enable-deterministic-archives --enable-libstdcxx-time --enable-libquadmath --enable-libquadmath-support --disable-decimal-float --with-build-sysroot=/tmp/m1132/build/local/x86_64-linux-musl/obj_sysroot AR_FOR_TARGET=/tmp/m1132/build/local/x86_64-linux-musl/obj_binutils/binutils/ar AS_FOR_TARGET=/tmp/m1132/build/local/x86_64-linux-musl/obj_binutils/gas/as-new LD_FOR_TARGET=/tmp/m1132/build/local/x86_64-linux-musl/obj_binutils/ld/ld-new NM_FOR_TARGET=/tmp/m1132/build/local/x86_64-linux-musl/obj_binutils/binutils/nm-new OBJCOPY_FOR_TARGET=/tmp/m1132/build/local/x86_64-linux-musl/obj_binutils/binutils/objcopy OBJDUMP_FOR_TARGET=/tmp/m1132/build/local/x86_64-linux-musl/obj_binutils/binutils/objdump RANLIB_FOR_TARGET=/tmp/m1132/build/local/x86_64-linux-musl/obj_binutils/binutils/ranlib READELF_FOR_TARGET=/tmp/m1132/build/local/x86_64-linux-musl/obj_binutils/binutils/readelf STRIP_FOR_TARGET=/tmp/m1132/build/local/x86_64-linux-musl/obj_binutils/binutils/strip-new --build=x86_64-pc-linux-muslx32 --host=x86_64-pc-linux-muslx32
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.1 20211120 (GCC)
+

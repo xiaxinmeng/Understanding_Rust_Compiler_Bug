@@ -1,0 +1,3 @@
+compile_fail,E0532
+// you code...
+    

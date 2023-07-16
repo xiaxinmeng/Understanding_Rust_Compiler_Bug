@@ -1,0 +1,1 @@
+\n\nIf you encounter this error you probably need to use a `match` or `if let` to\ndeal with the possibility of failure. Example:\n\n

@@ -1,0 +1,16 @@
+
+    -C                   lto -- perform LLVM link-time optimizations
+    -C        target-cpu=val -- select target processor (rustc --print target-cpus for details)
+    -C    target-feature=val -- target specific attributes (rustc --print target-features for details)
+    -C            passes=val -- a list of extra LLVM passes to run (space separated)
+    -C         llvm-args=val -- a list of arguments to pass to llvm (space separated)
+    -C            save-temps -- save all temporary output files during compilation
+    -C no-prepopulate-passes -- don't pre-populate the pass manager with a list of passes
+    -C    no-vectorize-loops -- don't run the loop vectorization optimization passes
+    -C      no-vectorize-slp -- don't run LLVM's SLP vectorization pass
+    -C      no-integrated-as -- use an external assembler rather than LLVM's integrated one
+    -C        no-redzone=val -- disable the use of the redzone
+    -C  relocation-model=val -- choose the relocation model to use (rustc --print relocation-models for details)
+    -C        code-model=val -- choose the code model to use (rustc --print code-models for details)
+    -C            remark=val -- print remarks for these optimization passes (space separated, or "all")
+    -C  inline-threshold=val -- set the inlining threshold for

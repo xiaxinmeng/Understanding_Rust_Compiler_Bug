@@ -1,0 +1,1 @@
+\n\nIn this example, `value` is mutably borrowed by `borrow` and cannot be\nused to calculate `sum`. This is not possible because this would violate\nRust's mutability rules.\n\nYou can fix this error by limiting the scope of the borrow:\n\n

@@ -1,0 +1,8 @@
+plain
+travis_fold:start:apt
+Installing APT Packages
+travis_time:start:22262163
+$ travis_apt_get_update
+No output has been received in the last 30m0s, this potentially indicates a stalled build or something wrong with the build itself.
+Check the details on how to adjust your build configuration on: https://docs.travis-ci.com/user/common-build-problems/#Build-times-out-because-no-output-was-received
+The build has been terminated

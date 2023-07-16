@@ -1,0 +1,6 @@
+
+...
+Changes in 2.23:
+
+* Enable compressed debug section feature for x86/x86_64 pe-coff.
+...

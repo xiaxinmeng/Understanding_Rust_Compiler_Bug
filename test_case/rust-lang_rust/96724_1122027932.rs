@@ -1,0 +1,23 @@
+
+    [ui] src/test/ui/borrowck/issue-25793.rs
+    [ui] src/test/ui/conditional-compilation/cfg-attr-syntax-validation.rs
+    [ui] src/test/ui/inference/deref-suggestion.rs
+    [ui] src/test/ui/issues/issue-26094.rs
+    [ui] src/test/ui/issues/issue-26237.rs
+    [ui] src/test/ui/macros/issue-29084.rs
+    [ui] src/test/ui/mismatched_types/issue-26480.rs
+    [ui] src/test/ui/parser/extern-abi-from-mac-literal-frag.rs
+    [ui] src/test/ui/parser/float-field-interpolated.rs
+    [ui] src/test/ui/parser/macro/trait-non-item-macros.rs
+    [ui] src/test/ui/proc-macro/capture-macro-rules-invoke.rs
+    [ui] src/test/ui/proc-macro/expr-stmt-nonterminal-tokens.rs
+    [ui] src/test/ui/proc-macro/issue-75734-pp-paren.rs
+    [ui] src/test/ui/proc-macro/macro-rules-derive-cfg.rs
+    [ui] src/test/ui/proc-macro/nested-nonterminal-tokens.rs
+    [ui] src/test/ui/proc-macro/nodelim-groups.rs
+    [ui] src/test/ui/proc-macro/nonterminal-expansion.rs
+    [ui] src/test/ui/rfc-2294-if-let-guard/feature-gate.rs
+    [ui] src/test/ui/rfc-2361-dbg-macro/dbg-macro-expected-behavior.rs
+    [ui] src/test/ui/type/ascription/issue-47666.rs
+    [ui] src/test/ui/unsafe/ranged_ints_macro.rs#mir
+    [ui] src/test/ui/unsafe/ranged_ints_macro.rs#thir

@@ -1,0 +1,2 @@
+
+  PATH=c:\mingw-w64\i686-4.9.1-win32-dwarf-rt_v3-rev1\mingw32\bin;c:\msys64\mingw32\bin;c:\msys64\usr\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\msys64\usr\bin;c:\python27;c:\python27\scripts;c:\program files (x86)\inno setup 5;c:\program files (x86)\CMake\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\

@@ -1,0 +1,2 @@
+
+parallel-compiler = true

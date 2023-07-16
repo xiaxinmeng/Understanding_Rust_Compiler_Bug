@@ -1,0 +1,1 @@
+compile_fail,E0503\nfn main() {\n    let mut value = 3;\n    // Create a mutable borrow of `value`. This borrow\n    // lives until the end of this function.\n  to `_ref_to_val`.\nTo fix that you can do few different things:\n\n* Try to avoid moving the variable.\n* Release borrow before move.\n* Implement the `Copy` trait on the type.\n\nExamples:\n\n

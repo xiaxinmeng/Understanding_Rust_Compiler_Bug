@@ -1,0 +1,2 @@
+rust
+trait Sub: Super {}

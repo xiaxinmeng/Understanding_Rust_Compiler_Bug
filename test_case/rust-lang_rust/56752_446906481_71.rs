@@ -1,0 +1,1 @@
+\ntrait Foo {\n    fn x(&self) -> i32;\n}\n

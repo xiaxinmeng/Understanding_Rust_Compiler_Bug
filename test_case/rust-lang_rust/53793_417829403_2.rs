@@ -1,0 +1,8 @@
+\n"},"level":"error","spans":[{"file_name":"/checkout/src/test/ui/cycle-trait/cycle-trait-supertrait-indirect.rs","byte_start":592,"byte_end":602,"line_start":17,"line_end":17,"column_start":1,"column_end":11,"is_primary":true,"text":[{"text":"trait B: C {","highlight_start":1,"highlight_end":11}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"...which requires computing the supertraits of `C`...","code":null,"level":"note","spans":[{"file_name":"/checkout/src/test/ui/cycle-trait/cycle-trait-supertrait-indirect.rs","byte_start":638,"byte_end":648,"line_start":21,"line_end":21,"column_start":1,"column_end":11,"is_primary":true,"text":[{"text":"trait C: B { }","highlight_start":1,"highlight_end":11}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[],"rendered":null},{"messi/issues/issue-17252/a" "-Crpath" "-O" "-Zunstable-options" "-Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/issues/issue-17252/auxiliary" "-A" "unused"
+[00:47:21] ------------------------------------------
+[00:47:21] 
+[00:47:21] ------------------------------------------
+[00:47:21] stderr:
+[00:47:21] stderr:
+[00:47:21] ------------------------------------------
+[00:47:21] {"message":"cycle detected when processing `FOO`","code":{"code":"E0391","explanation":"\nThis error indicates that some types or traits depend on each other\nand therefore cannot be constructed.\n\nThe following example contains a circular dependency between two traits:\n\n

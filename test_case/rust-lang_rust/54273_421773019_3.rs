@@ -1,0 +1,1 @@
+\nstruct SomeStruct {\n    x: i32,\n    y: i32\n}\nlet mut s = SomeStruct {x: 0, y: 0};\n\ns.x = 3; // that's good !\n\n// ...\n\nfn some_func(x: &mut i32) {\n    *x = 12; // that's good !\n}\n

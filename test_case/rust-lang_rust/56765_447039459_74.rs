@@ -1,0 +1,1 @@
+\nfn main() {\n    let mut s1 = String::from(\"many\");\n    let s2 = s1.clone();\n    s1.remove(0);\n    println!(\"{} {}\", s1, s2);\n}\n

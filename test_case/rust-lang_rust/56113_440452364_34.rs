@@ -1,0 +1,1 @@
+\nfn main() {\n    let mut value = 3;\n    // By creating a new block, you can limit the scope\n    // of the reference.\n    {\n        let _borrow = &mut value; // Use `_borrow` inside this block.\n    }\n    // The block has ended and with it the borrow.\n    // You can now use `value` again.\n    let _sum = value + 1;\n}\n

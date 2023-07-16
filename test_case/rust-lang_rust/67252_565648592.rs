@@ -1,0 +1,20 @@
+
+error: future cannot be sent between threads safely
+  --> $DIR/unnamed-future.rs:18:5
+   |
+LL | fn spawn<T: Send>(_: T) {}
+   |    -----    ---- required by this bound in `spawn`
+...
+LL |     spawn(async {
+   |     ^^^^^ future is not `Send`
+   |
+   = help: within `impl std::future::Future`, the trait `std::marker::Send` is not implemented for `*mut ()`
+note: future is not `Send` as this value is used across an await
+  --> $DIR/unnamed-future.rs:20:9
+   |
+LL |         let _a = std::ptr::null_mut::<()>(); // `*mut ()` is not `Send`
+   |             -- has type `*mut ()`
+LL |         AFuture.await;
+   |         ^^^^^^^^^^^^^ await occurs here, with `_a` maybe used later
+LL |     });
+   |     - `_a` is later dropped here

@@ -1,0 +1,5 @@
+ c
+#define RTLD_LAZY       0x1
+#define RTLD_NOW        0x2
+#define RTLD_LOCAL      0x4
+#define RTLD_GLOBAL     0x8

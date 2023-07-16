@@ -1,0 +1,5 @@
+toml
+[toolchain]
+channel = "nightly"
+components = [ "rust-src" ]
+profile = "minimal"

@@ -1,0 +1,1 @@
+\n\nAuto traits such as Send and Sync are an exception to this rule:\nIt's possible to have bounds of one non-builtin trait, plus any number of\nauto traits. For example, the following compiles correctly:\n\n

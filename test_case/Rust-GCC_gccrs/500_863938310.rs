@@ -1,0 +1,1 @@
+gccrs ./xx.rs -B ./gcc/

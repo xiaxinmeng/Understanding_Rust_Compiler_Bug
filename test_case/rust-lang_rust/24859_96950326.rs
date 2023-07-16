@@ -1,0 +1,2 @@
+
+./configure --enable-valgrind

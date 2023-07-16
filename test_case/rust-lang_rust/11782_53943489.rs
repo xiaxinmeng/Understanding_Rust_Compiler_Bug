@@ -1,0 +1,30 @@
+
+rust/
+    bin/
+        gcc.exe
+        ld.exe
+        ar.exe
+        libgcc_s_dw2-1.dll 
+        libstdc++-6.dll
+    lib/
+        crt2.o
+        crtbegin.o
+        crtend.o
+        dllcrt2.o
+        libadvapi32.a
+        libcrypt32.a
+        libgcc.a
+        libgcc_eh.a
+        libgcc_s.a
+        libimagehlp.a
+        libiphlpapi.a
+        libkernel32.a
+        libm.a
+        libmingw32.a
+        libmingwex.a
+        libmsvcrt.a
+        libpsapi.a
+        libshell32.a
+        libstdc++.a
+        libuser32.a
+        libws2_32.a

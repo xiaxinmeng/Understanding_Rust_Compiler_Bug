@@ -1,0 +1,3 @@
+
+Manually-specified variables were not used by the project:
+    CMAKE_BUILD_TYPE

@@ -1,0 +1,2 @@
+c
+void (*bar)() = banana;

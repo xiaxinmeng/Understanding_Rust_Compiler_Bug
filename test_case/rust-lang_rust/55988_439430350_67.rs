@@ -1,0 +1,1 @@
+\nfn foo() -> Box<Fn(u32) -> u32> {\n    let x = 0u32;\n    Box::new(move |y| x + y)\n}\n

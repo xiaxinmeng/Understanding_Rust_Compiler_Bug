@@ -1,0 +1,1 @@
+CString::from_vec_until_nul(&buffer)

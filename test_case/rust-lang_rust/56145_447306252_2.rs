@@ -1,0 +1,1 @@
+compile_fail,E0210\n# #[cfg(for_demonstration_only)]\nextern crate foo;\n# #[cfg(for_demonstration_only)]\nuse foo::ForeignTrait;\n# use std::panic::UnwindSafe as ForeignTrait;\n\nimpl<T> ForeignTrait for T { } // error\n# fn main() {}\n

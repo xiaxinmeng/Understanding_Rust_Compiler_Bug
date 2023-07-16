@@ -1,0 +1,1 @@
+compile_fail ` will be stabilized in 1.22.)

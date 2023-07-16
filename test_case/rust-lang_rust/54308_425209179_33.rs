@@ -1,0 +1,1 @@
+compile_fail,E0423\nprintln(\"\");\n// error: expected function, found macro `println`\n// did you mean `println!(...)`? (notice the trailing `!`)\n

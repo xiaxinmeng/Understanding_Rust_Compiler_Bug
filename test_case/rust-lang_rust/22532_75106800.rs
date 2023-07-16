@@ -1,0 +1,22 @@
+
+failures:
+    btree::map::test::test_basic_large
+    btree::map::test::test_iter_mixed
+    btree::map::test::test_range
+    btree::map::test::test_range_1000
+    btree::map::test::test_range_small
+    ring_buf::tests::test_clone
+    ring_buf::tests::test_insert
+    ring_buf::tests::test_mut_rev_iter
+    ring_buf::tests::test_mut_rev_iter_wrap
+    ring_buf::tests::test_param_int
+    ring_buf::tests::test_param_reccy
+    ring_buf::tests::test_param_taggy
+    ring_buf::tests::test_param_taggypar
+    ring_buf::tests::test_remove
+    ring_buf::tests::test_rev_iter
+    ring_buf::tests::test_simple
+    ring_buf::tests::test_split_off
+    ring_buf::tests::test_swap_front_back_remove
+    slice::tests::test_element_swaps
+    slice::tests::test_permutations

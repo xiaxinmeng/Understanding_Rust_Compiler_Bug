@@ -1,0 +1,1 @@
+\n\nHere, `y` is bound to the contents of the `Some` and can be used within the\nblock corresponding to the match arm. However, in case `x` is `None`, we have\nnot specified what `y` is, and the block will use a nonexistent variable.\n\nTo fix this error, either split into multiple match arms:\n\n

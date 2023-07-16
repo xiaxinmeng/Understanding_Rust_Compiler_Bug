@@ -1,0 +1,25 @@
+
+   0: rust_begin_unwind
+             at /rustc/18bf6b4f01a6feaf7259ba7cdae58031af1b7b39/library/std/src/panicking.rs:475
+   1: core::panicking::panic_fmt
+             at /rustc/18bf6b4f01a6feaf7259ba7cdae58031af1b7b39/library/core/src/panicking.rs:85
+   2: core::option::expect_none_failed
+             at /rustc/18bf6b4f01a6feaf7259ba7cdae58031af1b7b39/library/core/src/option.rs:1221
+   3: core::result::Result<T,E>::unwrap
+             at /rustc/18bf6b4f01a6feaf7259ba7cdae58031af1b7b39/library/core/src/result.rs:973
+   4: test::run_test_in_process
+             at /rustc/18bf6b4f01a6feaf7259ba7cdae58031af1b7b39/library/test/src/lib.rs:559
+   5: test::run_test::run_test_inner::{{closure}}
+             at /rustc/18bf6b4f01a6feaf7259ba7cdae58031af1b7b39/library/test/src/lib.rs:450
+   6: test::run_test::run_test_inner
+             at /rustc/18bf6b4f01a6feaf7259ba7cdae58031af1b7b39/library/test/src/lib.rs:475
+   7: test::run_test
+             at /rustc/18bf6b4f01a6feaf7259ba7cdae58031af1b7b39/library/test/src/lib.rs:505
+   8: test::run_tests
+             at /rustc/18bf6b4f01a6feaf7259ba7cdae58031af1b7b39/library/test/src/lib.rs:284
+   9: test::console::run_tests_console
+             at /rustc/18bf6b4f01a6feaf7259ba7cdae58031af1b7b39/library/test/src/console.rs:280
+  10: test::test_main
+             at /rustc/18bf6b4f01a6feaf7259ba7cdae58031af1b7b39/library/test/src/lib.rs:120
+  11: test::test_main_static
+             at /rustc/18bf6b4f01a6feaf7259ba7cdae58031af1b7b39/library/test/src/lib.rs:139

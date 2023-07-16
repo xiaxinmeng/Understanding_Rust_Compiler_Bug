@@ -1,0 +1,10 @@
+rust
+error[E0308]: mismatched types
+ --> <anon>:6:22
+  |
+6 |     stream.write_fmt(format!("message received"))
+  |                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected struct `std::fmt::Arguments`, found struct `std::string::String`
+  |
+  = note: expected type `std::fmt::Arguments<'_>`
+             found type `std::string::String`
+  = note: this error originates in a macro outside of the current crate

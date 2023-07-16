@@ -1,0 +1,4 @@
+toml
+> [target.'cfg(all(windows, target_env = "msvc"))']
+> rustflags = ["-C", "target-feature=+crt-static"]
+> 

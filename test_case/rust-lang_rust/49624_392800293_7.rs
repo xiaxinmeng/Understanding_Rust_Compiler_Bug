@@ -1,0 +1,1 @@
+\n\nThis only differs from the previous `impl` in that the parameters `T` and\n`MyType<T>` for `ForeignTrait2` have been swapped. This example does *not*\nviolate the orphan rule; it is permitted.\n\nTo see why that last example was allowed, you need to understand the general\nrule. Unfortunately this rule is a bit tricky to state. Consider an `impl`:\n\n

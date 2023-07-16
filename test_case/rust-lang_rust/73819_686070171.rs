@@ -1,0 +1,3 @@
+
+///    hello
+pub struct Foo;

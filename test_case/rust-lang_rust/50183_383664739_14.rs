@@ -1,0 +1,1 @@
+compile_fail,E0282\nlet x = \"hello\".chars().rev().collect();\n

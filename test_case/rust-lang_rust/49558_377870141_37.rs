@@ -1,0 +1,1 @@
+\n\nA type annotated as `repr(transparent)` delegates all representation concerns to\nanother type, so adding more representation hints is contradictory. Remove\neither the `transparent` hint or the other hints, like this:\n\n

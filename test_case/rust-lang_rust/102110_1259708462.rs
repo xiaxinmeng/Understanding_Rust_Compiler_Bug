@@ -1,0 +1,801 @@
+plain
+    Checking rustc_passes v0.0.0 (/checkout/compiler/rustc_passes)
+    Checking rustc_monomorphize v0.0.0 (/checkout/compiler/rustc_monomorphize)
+    Checking rustc_query_impl v0.0.0 (/checkout/compiler/rustc_query_impl)
+    Checking rustc_save_analysis v0.0.0 (/checkout/compiler/rustc_save_analysis)
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+    |
+    |
+374 |                 lint.build(&format!("`#[{name}]` only has an effect on {}", supported_names))
+    |
+note: the lint level is defined here
+   --> compiler/rustc_passes/src/lib.rs:9:9
+    |
+    |
+9   | #![deny(rustc::diagnostic_outside_of_impl)]
+
+
+error: diagnostics should be created using translatable messages
+    |
+    |
+374 |                 lint.build(&format!("`#[{name}]` only has an effect on {}", supported_names))
+    |
+note: the lint level is defined here
+   --> compiler/rustc_passes/src/lib.rs:8:9
+    |
+    |
+8   | #![deny(rustc::untranslatable_diagnostic)]
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+    |
+    |
+432 |                 tcx.sess.span_err(p.span, &repr);
+
+
+error: diagnostics should be created using translatable messages
+    |
+    |
+432 |                 tcx.sess.span_err(p.span, &repr);
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+    |
+    |
+881 |                 let mut err = lint.build(fluent::passes::attr_crate_level);
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+     |
+668  |   macro_rules! struct_span_err {
+     |   ---------------------------- in this expansion of `struct_span_err!`
+     |   ---------------------------- in this expansion of `struct_span_err!`
+669  |       ($session:expr, $span:expr, $code:ident, $($message:tt)*) => ({
+670  |           $session.struct_span_err_with_code(
+     |
+    ::: compiler/rustc_passes/src/check_attr.rs:1665:21
+     |
+1665 | /                     struct_span_err!(
+1665 | /                     struct_span_err!(
+1666 | |                         self.tcx.sess,
+1667 | |                         hint.span(),
+1668 | |                         E0552,
+1669 | |                         "unrecognized representation hint"
+     | |_____________________- in this macro invocation
+
+
+error: diagnostics should be created using translatable messages
+     |
+668  |   macro_rules! struct_span_err {
+     |   ---------------------------- in this expansion of `struct_span_err!`
+     |   ---------------------------- in this expansion of `struct_span_err!`
+669  |       ($session:expr, $span:expr, $code:ident, $($message:tt)*) => ({
+670  |           $session.struct_span_err_with_code(
+     |
+    ::: compiler/rustc_passes/src/check_attr.rs:1665:21
+     |
+1665 | /                     struct_span_err!(
+1665 | /                     struct_span_err!(
+1666 | |                         self.tcx.sess,
+1667 | |                         hint.span(),
+1668 | |                         E0552,
+1669 | |                         "unrecognized representation hint"
+     | |_____________________- in this macro invocation
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+     |
+668  |   macro_rules! struct_span_err {
+     |   ---------------------------- in this expansion of `struct_span_err!`
+     |   ---------------------------- in this expansion of `struct_span_err!`
+669  |       ($session:expr, $span:expr, $code:ident, $($message:tt)*) => ({
+670  |           $session.struct_span_err_with_code(
+     |
+    ::: compiler/rustc_passes/src/check_attr.rs:1679:13
+     |
+1679 | /             struct_span_err!(
+1679 | /             struct_span_err!(
+1680 | |                 self.tcx.sess,
+1681 | |                 hint.span(),
+1682 | |                 E0517,
+1683 | |                 "{}",
+1684 | |                 &format!("attribute should be applied to {article} {allowed_targets}")
+     | |_____________- in this macro invocation
+
+
+error: diagnostics should be created using translatable messages
+     |
+668  |   macro_rules! struct_span_err {
+     |   ---------------------------- in this expansion of `struct_span_err!`
+     |   ---------------------------- in this expansion of `struct_span_err!`
+669  |       ($session:expr, $span:expr, $code:ident, $($message:tt)*) => ({
+670  |           $session.struct_span_err_with_code(
+     |
+    ::: compiler/rustc_passes/src/check_attr.rs:1679:13
+     |
+1679 | /             struct_span_err!(
+1679 | /             struct_span_err!(
+1680 | |                 self.tcx.sess,
+1681 | |                 hint.span(),
+1682 | |                 E0517,
+1683 | |                 "{}",
+1684 | |                 &format!("attribute should be applied to {article} {allowed_targets}")
+     | |_____________- in this macro invocation
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+     |
+668  |   macro_rules! struct_span_err {
+     |   ---------------------------- in this expansion of `struct_span_err!`
+     |   ---------------------------- in this expansion of `struct_span_err!`
+669  |       ($session:expr, $span:expr, $code:ident, $($message:tt)*) => ({
+670  |           $session.struct_span_err_with_code(
+     |
+    ::: compiler/rustc_passes/src/check_attr.rs:1697:13
+     |
+1697 | /             struct_span_err!(
+1697 | /             struct_span_err!(
+1698 | |                 self.tcx.sess,
+1699 | |                 hint_spans,
+1700 | |                 E0692,
+1701 | |                 "transparent {} cannot have other repr hints",
+1703 | |             )
+     | |_____________- in this macro invocation
+
+
+error: diagnostics should be created using translatable messages
+     |
+668  |   macro_rules! struct_span_err {
+     |   ---------------------------- in this expansion of `struct_span_err!`
+     |   ---------------------------- in this expansion of `struct_span_err!`
+669  |       ($session:expr, $span:expr, $code:ident, $($message:tt)*) => ({
+670  |           $session.struct_span_err_with_code(
+     |
+    ::: compiler/rustc_passes/src/check_attr.rs:1697:13
+     |
+1697 | /             struct_span_err!(
+1697 | /             struct_span_err!(
+1698 | |                 self.tcx.sess,
+1699 | |                 hint_spans,
+1700 | |                 E0692,
+1701 | |                 "transparent {} cannot have other repr hints",
+1703 | |             )
+     | |_____________- in this macro invocation
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+    |
+194 |                         lint.build(&format!(
+    |                              ^^^^^
+
+
+error: diagnostics should be created using translatable messages
+    |
+194 |                         lint.build(&format!(
+    |                              ^^^^^
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+    |
+748 |                     let mut err = lint.build(&format!(
+    |                                        ^^^^^
+
+
+error: diagnostics should be created using translatable messages
+    |
+748 |                     let mut err = lint.build(&format!(
+    |                                        ^^^^^
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+  --> compiler/rustc_passes/src/entry.rs:79:14
+   |
+79 |             .struct_span_err(attr.span, &format!("`{}` attribute {}", sym, details))
+
+
+error: diagnostics should be created using translatable messages
+  --> compiler/rustc_passes/src/entry.rs:79:14
+   |
+79 |             .struct_span_err(attr.span, &format!("`{}` attribute {}", sym, details))
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+    |
+668 |   macro_rules! struct_span_err {
+    |   ---------------------------- in this expansion of `struct_span_err!`
+    |   ---------------------------- in this expansion of `struct_span_err!`
+669 |       ($session:expr, $span:expr, $code:ident, $($message:tt)*) => ({
+670 |           $session.struct_span_err_with_code(
+    |
+   ::: compiler/rustc_passes/src/entry.rs:104:17
+    |
+104 | /                 struct_span_err!(
+104 | /                 struct_span_err!(
+105 | |                     ctxt.tcx.sess,
+106 | |                     ctxt.tcx.def_span(id.def_id.to_def_id()),
+107 | |                     E0137,
+108 | |                     "multiple functions with a `#[rustc_main]` attribute"
+    | |_________________- in this macro invocation
+
+
+error: diagnostics should be created using translatable messages
+    |
+668 |   macro_rules! struct_span_err {
+    |   ---------------------------- in this expansion of `struct_span_err!`
+    |   ---------------------------- in this expansion of `struct_span_err!`
+669 |       ($session:expr, $span:expr, $code:ident, $($message:tt)*) => ({
+670 |           $session.struct_span_err_with_code(
+    |
+   ::: compiler/rustc_passes/src/entry.rs:104:17
+    |
+104 | /                 struct_span_err!(
+104 | /                 struct_span_err!(
+105 | |                     ctxt.tcx.sess,
+106 | |                     ctxt.tcx.def_span(id.def_id.to_def_id()),
+107 | |                     E0137,
+108 | |                     "multiple functions with a `#[rustc_main]` attribute"
+    | |_________________- in this macro invocation
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+    |
+668 |   macro_rules! struct_span_err {
+    |   ---------------------------- in this expansion of `struct_span_err!`
+    |   ---------------------------- in this expansion of `struct_span_err!`
+669 |       ($session:expr, $span:expr, $code:ident, $($message:tt)*) => ({
+670 |           $session.struct_span_err_with_code(
+    |
+   ::: compiler/rustc_passes/src/entry.rs:123:17
+    |
+123 | /                 struct_span_err!(
+123 | /                 struct_span_err!(
+124 | |                     ctxt.tcx.sess,
+125 | |                     ctxt.tcx.def_span(id.def_id),
+126 | |                     E0138,
+127 | |                     "multiple `start` functions"
+    | |_________________- in this macro invocation
+
+
+error: diagnostics should be created using translatable messages
+    |
+668 |   macro_rules! struct_span_err {
+    |   ---------------------------- in this expansion of `struct_span_err!`
+    |   ---------------------------- in this expansion of `struct_span_err!`
+669 |       ($session:expr, $span:expr, $code:ident, $($message:tt)*) => ({
+670 |           $session.struct_span_err_with_code(
+    |
+   ::: compiler/rustc_passes/src/entry.rs:123:17
+    |
+123 | /                 struct_span_err!(
+123 | /                 struct_span_err!(
+124 | |                     ctxt.tcx.sess,
+125 | |                     ctxt.tcx.def_span(id.def_id),
+126 | |                     E0138,
+127 | |                     "multiple `start` functions"
+    | |_________________- in this macro invocation
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+   --> compiler/rustc_passes/src/entry.rs:148:22
+148 |                     .struct_span_err(
+    |                      ^^^^^^^^^^^^^^^
+
+
+error: diagnostics should be created using translatable messages
+   --> compiler/rustc_passes/src/entry.rs:148:22
+148 |                     .struct_span_err(
+    |                      ^^^^^^^^^^^^^^^
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+   --> compiler/rustc_passes/src/entry.rs:186:22
+186 |                     .struct_span_err(
+    |                      ^^^^^^^^^^^^^^^
+
+
+error: diagnostics should be created using translatable messages
+   --> compiler/rustc_passes/src/entry.rs:186:22
+186 |                     .struct_span_err(
+    |                      ^^^^^^^^^^^^^^^
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+    |
+668 |   macro_rules! struct_span_err {
+    |   ---------------------------- in this expansion of `struct_span_err!`
+    |   ---------------------------- in this expansion of `struct_span_err!`
+669 |       ($session:expr, $span:expr, $code:ident, $($message:tt)*) => ({
+670 |           $session.struct_span_err_with_code(
+    |
+   ::: compiler/rustc_passes/src/entry.rs:209:19
+    |
+209 |       let mut err = struct_span_err!(
+---
+214 | |         tcx.crate_name(LOCAL_CRATE)
+215 | |     );
+    | |_____- in this macro invocation
+
+error: diagnostics should be created using translatable messages
+    |
+668 |   macro_rules! struct_span_err {
+    |   ---------------------------- in this expansion of `struct_span_err!`
+    |   ---------------------------- in this expansion of `struct_span_err!`
+669 |       ($session:expr, $span:expr, $code:ident, $($message:tt)*) => ({
+670 |           $session.struct_span_err_with_code(
+    |
+   ::: compiler/rustc_passes/src/entry.rs:209:19
+    |
+209 |       let mut err = struct_span_err!(
+---
+214 | |         tcx.crate_name(LOCAL_CRATE)
+215 | |     );
+    | |_____- in this macro invocation
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+    |
+668 |   macro_rules! struct_span_err {
+    |   ---------------------------- in this expansion of `struct_span_err!`
+    |   ---------------------------- in this expansion of `struct_span_err!`
+669 |       ($session:expr, $span:expr, $code:ident, $($message:tt)*) => ({
+670 |           $session.struct_span_err_with_code(
+    |
+   ::: compiler/rustc_passes/src/lang_items.rs:68:35
+    |
+    |
+68  |                       Some(span) => struct_span_err!(
+69  | |                         self.tcx.sess,
+70  | |                         span,
+71  | |                         E0152,
+71  | |                         E0152,
+72  | |                         "found duplicate lang item `{}`",
+74  | |                     ),
+    | |_____________________- in this macro invocation
+
+
+error: diagnostics should be created using translatable messages
+    |
+668 |   macro_rules! struct_span_err {
+    |   ---------------------------- in this expansion of `struct_span_err!`
+    |   ---------------------------- in this expansion of `struct_span_err!`
+669 |       ($session:expr, $span:expr, $code:ident, $($message:tt)*) => ({
+670 |           $session.struct_span_err_with_code(
+    |
+   ::: compiler/rustc_passes/src/lang_items.rs:68:35
+    |
+    |
+68  |                       Some(span) => struct_span_err!(
+69  | |                         self.tcx.sess,
+70  | |                         span,
+71  | |                         E0152,
+71  | |                         E0152,
+72  | |                         "found duplicate lang item `{}`",
+74  | |                     ),
+    | |_____________________- in this macro invocation
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+   |
+   |
+77 | ...                   self.tcx.sess.struct_err(&format!(
+
+
+error: diagnostics should be created using translatable messages
+   |
+   |
+77 | ...                   self.tcx.sess.struct_err(&format!(
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+   |
+   |
+84 |                         _ => self.tcx.sess.struct_err(&format!(
+
+
+error: diagnostics should be created using translatable messages
+   |
+   |
+84 |                         _ => self.tcx.sess.struct_err(&format!(
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+    |
+668 |   macro_rules! struct_span_err {
+    |   ---------------------------- in this expansion of `struct_span_err!`
+    |   ---------------------------- in this expansion of `struct_span_err!`
+669 |       ($session:expr, $span:expr, $code:ident, $($message:tt)*) => ({
+670 |           $session.struct_span_err_with_code(
+    |
+   ::: compiler/rustc_passes/src/lang_items.rs:180:17
+    |
+180 | /                 struct_span_err!(
+---
+188 | |                     pluralized,
+189 | |                 )
+    | |_________________- in this macro invocation
+
+error: diagnostics should be created using translatable messages
+    |
+668 |   macro_rules! struct_span_err {
+    |   ---------------------------- in this expansion of `struct_span_err!`
+    |   ---------------------------- in this expansion of `struct_span_err!`
+669 |       ($session:expr, $span:expr, $code:ident, $($message:tt)*) => ({
+670 |           $session.struct_span_err_with_code(
+    |
+   ::: compiler/rustc_passes/src/lang_items.rs:180:17
+    |
+180 | /                 struct_span_err!(
+---
+188 | |                     pluralized,
+189 | |                 )
+    | |_________________- in this macro invocation
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+     |
+     |
+1328 |                     lint.build(&msg)
+
+
+error: diagnostics should be created using translatable messages
+     |
+     |
+1328 |                     lint.build(&msg)
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+     |
+1495 | ...                   lint.build(&format!(
+     |                            ^^^^^
+
+
+error: diagnostics should be created using translatable messages
+     |
+1495 | ...                   lint.build(&format!(
+     |                            ^^^^^
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+     |
+     |
+1512 | ...                   lint.build(&format!("unused variable: `{}`", name))
+
+
+error: diagnostics should be created using translatable messages
+     |
+     |
+1512 | ...                   lint.build(&format!("unused variable: `{}`", name))
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+     |
+     |
+1605 |                         lint.build(&format!("variable `{}` is assigned to, but never used", name))
+
+
+error: diagnostics should be created using translatable messages
+     |
+     |
+1605 |                         lint.build(&format!("variable `{}` is assigned to, but never used", name))
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+     |
+     |
+1616 |                         let mut err = lint.build(&format!("unused variable: `{}`", name));
+
+
+error: diagnostics should be created using translatable messages
+     |
+     |
+1616 |                         let mut err = lint.build(&format!("unused variable: `{}`", name));
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+     |
+     |
+1665 | ...                   let mut err = lint.build(&format!("unused variable: `{}`", name));
+
+
+error: diagnostics should be created using translatable messages
+     |
+     |
+1665 | ...                   let mut err = lint.build(&format!("unused variable: `{}`", name));
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+     |
+     |
+1688 | ...                   let mut err = lint.build(&format!("unused variable: `{}`", name));
+
+
+error: diagnostics should be created using translatable messages
+     |
+     |
+1688 | ...                   let mut err = lint.build(&format!("unused variable: `{}`", name));
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+     |
+     |
+1762 |                     lint.build(&message(&name))
+
+
+error: diagnostics should be created using translatable messages
+     |
+     |
+1762 |                     lint.build(&message(&name))
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+    |
+668 |   macro_rules! struct_span_err {
+    |   ---------------------------- in this expansion of `struct_span_err!`
+    |   ---------------------------- in this expansion of `struct_span_err!`
+669 |       ($session:expr, $span:expr, $code:ident, $($message:tt)*) => ({
+670 |           $session.struct_span_err_with_code(
+    |
+   ::: compiler/rustc_passes/src/stability.rs:200:17
+    |
+200 | /                 struct_span_err!(
+---
+205 | |                     either stable or unstable attribute"
+206 | |                 )
+    | |_________________- in this macro invocation
+
+error: diagnostics should be created using translatable messages
+    |
+668 |   macro_rules! struct_span_err {
+    |   ---------------------------- in this expansion of `struct_span_err!`
+    |   ---------------------------- in this expansion of `struct_span_err!`
+669 |       ($session:expr, $span:expr, $code:ident, $($message:tt)*) => ({
+670 |           $session.struct_span_err_with_code(
+    |
+   ::: compiler/rustc_passes/src/stability.rs:200:17
+    |
+200 | /                 struct_span_err!(
+---
+205 | |                     either stable or unstable attribute"
+206 | |                 )
+    | |_________________- in this macro invocation
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+    |
+    |
+223 |                 self.tcx.sess.struct_span_err(span,"this stability annotation is useless")
+
+
+error: diagnostics should be created using translatable messages
+    |
+    |
+223 |                 self.tcx.sess.struct_span_err(span,"this stability annotation is useless")
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+    |
+    |
+242 | ...                   self.tcx.sess.struct_span_err(span, "invalid stability version found")
+
+
+error: diagnostics should be created using translatable messages
+    |
+    |
+242 | ...                   self.tcx.sess.struct_span_err(span, "invalid stability version found")
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+    |
+    |
+251 | ...                   self.tcx.sess.struct_span_err(span, "an API can't be stabilized after it is deprecated")
+
+
+error: diagnostics should be created using translatable messages
+    |
+    |
+251 | ...                   self.tcx.sess.struct_span_err(span, "an API can't be stabilized after it is deprecated")
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+    |
+    |
+262 | ...                   self.tcx.sess.struct_span_err(span, "invalid deprecation version found")
+
+
+error: diagnostics should be created using translatable messages
+    |
+    |
+262 | ...                   self.tcx.sess.struct_span_err(span, "invalid deprecation version found")
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+    |
+    |
+534 |             self.tcx.sess.span_err(span, &format!("{} has missing stability attribute", descr));
+
+
+error: diagnostics should be created using translatable messages
+    |
+    |
+534 |             self.tcx.sess.span_err(span, &format!("{} has missing stability attribute", descr));
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+    |
+    |
+554 |             self.tcx.sess.span_err(span, &format!("{descr} has missing const stability attribute"));
+
+
+error: diagnostics should be created using translatable messages
+    |
+    |
+554 |             self.tcx.sess.span_err(span, &format!("{descr} has missing const stability attribute"));
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+    |
+    |
+756 | ...                   .build("an `#[unstable]` annotation here has no effect")
+
+
+error: diagnostics should be created using translatable messages
+    |
+    |
+756 | ...                   .build("an `#[unstable]` annotation here has no effect")
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+    |
+    |
+771 | ...                   .struct_span_err(item.span, "trait implementations cannot be const stable yet")
+
+
+error: diagnostics should be created using translatable messages
+    |
+    |
+771 | ...                   .struct_span_err(item.span, "trait implementations cannot be const stable yet")
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+    |
+668 |   macro_rules! struct_span_err {
+    |   ---------------------------- in this expansion of `struct_span_err!`
+    |   ---------------------------- in this expansion of `struct_span_err!`
+669 |       ($session:expr, $span:expr, $code:ident, $($message:tt)*) => ({
+670 |           $session.struct_span_err_with_code(
+    |
+   ::: compiler/rustc_passes/src/stability.rs:942:13
+    |
+942 | /             struct_span_err!(
+942 | /             struct_span_err!(
+943 | |                 tcx.sess,
+944 | |                 *span,
+945 | |                 E0554,
+946 | |                 "`#![feature]` may not be used on the {} release channel",
+947 | |                 env!("CFG_RELEASE_CHANNEL")
+    | |_____________- in this macro invocation
+
+
+error: diagnostics should be created using translatable messages
+    |
+668 |   macro_rules! struct_span_err {
+    |   ---------------------------- in this expansion of `struct_span_err!`
+    |   ---------------------------- in this expansion of `struct_span_err!`
+669 |       ($session:expr, $span:expr, $code:ident, $($message:tt)*) => ({
+670 |           $session.struct_span_err_with_code(
+    |
+   ::: compiler/rustc_passes/src/stability.rs:942:13
+    |
+942 | /             struct_span_err!(
+942 | /             struct_span_err!(
+943 | |                 tcx.sess,
+944 | |                 *span,
+945 | |                 E0554,
+946 | |                 "`#![feature]` may not be used on the {} release channel",
+947 | |                 env!("CFG_RELEASE_CHANNEL")
+    | |_____________- in this macro invocation
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+     |
+668  | macro_rules! struct_span_err {
+     | ---------------------------- in this expansion of `struct_span_err!`
+     | ---------------------------- in this expansion of `struct_span_err!`
+669  |     ($session:expr, $span:expr, $code:ident, $($message:tt)*) => ({
+670  |         $session.struct_span_err_with_code(
+     |
+    ::: compiler/rustc_passes/src/stability.rs:1054:9
+     |
+     |
+1054 |         struct_span_err!(tcx.sess, span, E0635, "unknown feature `{}`", feature).emit();
+
+
+error: diagnostics should be created using translatable messages
+     |
+668  | macro_rules! struct_span_err {
+     | ---------------------------- in this expansion of `struct_span_err!`
+     | ---------------------------- in this expansion of `struct_span_err!`
+669  |     ($session:expr, $span:expr, $code:ident, $($message:tt)*) => ({
+670  |         $session.struct_span_err_with_code(
+     |
+    ::: compiler/rustc_passes/src/stability.rs:1054:9
+     |
+     |
+1054 |         struct_span_err!(tcx.sess, span, E0635, "unknown feature `{}`", feature).emit();
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+     |
+1066 |             .struct_span_err(
+     |              ^^^^^^^^^^^^^^^
+
+
+error: diagnostics should be created using translatable messages
+     |
+1066 |             .struct_span_err(
+     |              ^^^^^^^^^^^^^^^
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+     |
+1085 |         lint.build(&format!(
+     |              ^^^^^
+
+
+error: diagnostics should be created using translatable messages
+     |
+1085 |         lint.build(&format!(
+     |              ^^^^^
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+     |
+1117 |         lint.build(&format!(
+     |              ^^^^^
+
+
+error: diagnostics should be created using translatable messages
+     |
+1117 |         lint.build(&format!(
+     |              ^^^^^
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+     |
+668  | macro_rules! struct_span_err {
+     | ---------------------------- in this expansion of `struct_span_err!`
+     | ---------------------------- in this expansion of `struct_span_err!`
+669  |     ($session:expr, $span:expr, $code:ident, $($message:tt)*) => ({
+670  |         $session.struct_span_err_with_code(
+     |
+    ::: compiler/rustc_passes/src/stability.rs:1126:5
+     |
+     |
+1126 |     struct_span_err!(sess, span, E0636, "the feature `{}` has already been declared", feature)
+
+
+error: diagnostics should be created using translatable messages
+     |
+668  | macro_rules! struct_span_err {
+     | ---------------------------- in this expansion of `struct_span_err!`
+     | ---------------------------- in this expansion of `struct_span_err!`
+669  |     ($session:expr, $span:expr, $code:ident, $($message:tt)*) => ({
+670  |         $session.struct_span_err_with_code(
+     |
+    ::: compiler/rustc_passes/src/stability.rs:1126:5
+     |
+     |
+1126 |     struct_span_err!(sess, span, E0636, "the feature `{}` has already been declared", feature)
+
+
+error: diagnostics should only be created in `SessionDiagnostic`/`AddSubdiagnostic` impls
+     |
+     |
+1136 |         .struct_span_err(fn_sig_span, ERROR_MSG)
+
+
+error: diagnostics should be created using translatable messages
+     |
+     |
+1136 |         .struct_span_err(fn_sig_span, ERROR_MSG)
+
+error: could not compile `rustc_passes` due to 83 previous errors
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `rustc_passes` due to 83 previous errors

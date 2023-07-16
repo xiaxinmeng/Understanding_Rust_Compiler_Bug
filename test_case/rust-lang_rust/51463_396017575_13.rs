@@ -1,0 +1,1 @@
+compile_fail,E0606\nlet x = &0u8; // Here, `x` is a `&u8`.\nlet y: u32 = x as u32; // error: casting `&u8` as `u32` is invalid\n

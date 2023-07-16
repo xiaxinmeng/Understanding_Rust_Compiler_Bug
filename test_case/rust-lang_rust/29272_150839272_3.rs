@@ -1,0 +1,3 @@
+ bash
+$ time RUST_LOG=rustc::metadata::loader make -j1 -- VERBOSE=1 TIME_PASSES=1 TIME_LLVM_PASSES=1 'RUSTFLAGS=--verbose -Z print-link-args -Z print-llvm-passes -C debug-assertions=y' RUST_BACKTRACE=1
+...

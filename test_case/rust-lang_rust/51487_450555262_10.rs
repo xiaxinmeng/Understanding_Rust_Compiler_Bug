@@ -1,0 +1,1 @@
+\n\nTo fix this error, please refer to the function declaration to give\nit the awaited types. Example:\n\n

@@ -1,0 +1,2 @@
+
+scope!(exit, foo.unlock());

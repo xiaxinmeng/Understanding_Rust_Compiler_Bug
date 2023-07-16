@@ -1,0 +1,3 @@
+ make
+ifeq ($(CFG_PANDOC),)
+     ...

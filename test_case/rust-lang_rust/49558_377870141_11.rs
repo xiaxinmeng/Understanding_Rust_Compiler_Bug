@@ -1,0 +1,1 @@
+compile_fail,E0467\n#[macro_reexport]                    // error: no macros listed for export\nextern crate core as macros_for_good;\n\n#[macro_reexport(fun_macro = \"foo\")] // error: not a macro identifier\nextern crate core as other_macros_for_good;\n

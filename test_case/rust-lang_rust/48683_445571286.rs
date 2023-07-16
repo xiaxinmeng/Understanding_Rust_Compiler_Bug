@@ -1,0 +1,21 @@
+
+1949  libc
+1872  winapi
+1462  winapi-x86_64-pc-windows-gnu
+1462  winapi-i686-pc-windows-gnu
+1461  bitflags
+1151  rand_core
+955   fuchsia-zircon-sys
+955   fuchsia-zircon
+846   rand
+846   cfg-if
+738   phf_shared
+737   siphasher
+591   unicase
+581   cloudabi
+528   log
+398   lazy_static
+358   unicode-xid
+264   quote
+259   serde
+239   syn

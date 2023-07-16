@@ -1,0 +1,1 @@
+\ntrait Foo {\n    type Bar;\n}\n\ntrait Foo2 {\n    type Bar;\n}\n\ntrait Baz : Foo + Foo2 {\n    fn bar() -> <Self as Foo>::Bar; // ok!\n}\n

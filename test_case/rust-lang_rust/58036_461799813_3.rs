@@ -1,0 +1,1 @@
+\n\nTo solve this error, please ensure that the type is also public. The type\ncan be made inaccessible if necessary by placing it into a private inner\nmodule, but it still has to be marked with `pub`.\nExample:\n\n

@@ -1,0 +1,25 @@
+
+{
+   PTHREAD_MUTEX_INITIALIZER_1
+   drd:MutexErr
+   fun:pthread_mutex_destroy
+   fun:_ZN18std..thread..Inner9drop.*
+}
+{
+   PTHREAD_COND_INITIALIZER_1
+   drd:CondErr
+   fun:pthread_cond_destroy@*
+   fun:_ZN18std..thread..Inner9drop.*
+}
+{
+   PTHREAD_MUTEX_INITIALIZER_2
+   drd:MutexErr
+   fun:pthread_mutex_destroy
+   fun:_ZN13thread..Inner10drop.*
+}
+{
+   PTHREAD_COND_INITIALIZER_2
+   drd:CondErr
+   fun:pthread_cond_destroy@*
+   fun:_ZN13thread..Inner10drop.*
+}

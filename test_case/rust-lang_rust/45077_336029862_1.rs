@@ -1,0 +1,3 @@
+
+… -L native=/checkout/obj/build/i686-unknown-freebsd/llvm/lib -L native= --cfg llvm_component="aarch64" …
+                                                              ^~~~~~~~~~

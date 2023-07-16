@@ -1,0 +1,3 @@
+sh
+    pacman -Sy pacman-mirrors
+    ...

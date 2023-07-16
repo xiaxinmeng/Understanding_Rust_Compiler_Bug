@@ -1,0 +1,2 @@
+
+rm $(call DYLIB,boot-*)

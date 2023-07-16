@@ -1,0 +1,1 @@
+"will be deprecated if and when `Box<FnOnce>` Box<FnOnce> becomes usable"

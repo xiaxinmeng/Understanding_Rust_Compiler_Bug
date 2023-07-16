@@ -1,0 +1,6 @@
+llvm
+; foo.ll
+...
+!3 = !DIFile(filename: "foo.rs", directory: "/home/matt/src/rust98678", checksumkind: CSK_SHA1, checksum: "bcb9f08512c8f3b8181ef4726012bc6807bc9be4")
+!16 = !DICompositeType(tag: DW_TAG_structure_type, name: "MyType", scope: !2, file: !3, line: 3, size: 32, align: 32, elements: !17, templateParams: !19, identifier: "9e5968c7af39c148acb253912b7f409f")
+...

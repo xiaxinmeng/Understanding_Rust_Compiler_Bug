@@ -1,0 +1,1 @@
+compile_fail,E0423\nstruct Foo { a: bool };\n\nlet f = Foo();\n// error: expected function, found `Foo`\n// `Foo` is a struct name, but this expression uses it like a function name\n

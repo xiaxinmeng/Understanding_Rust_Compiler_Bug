@@ -1,0 +1,1 @@
+struct is never constructed

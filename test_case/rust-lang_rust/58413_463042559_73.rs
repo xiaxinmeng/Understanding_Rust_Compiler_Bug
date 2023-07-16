@@ -1,0 +1,1 @@
+\n\nTo enable this feature on a nightly version of rustc, add the `const_fn`\nfeature flag:\n\n

@@ -1,0 +1,1 @@
+\n\nIn order to fix this error, verify that the type you're using does implement\nthe trait. Example:\n\n

@@ -1,0 +1,1 @@
+\n\nIt is fine only if you put something back. `mem::replace` can be used for that:\n\n

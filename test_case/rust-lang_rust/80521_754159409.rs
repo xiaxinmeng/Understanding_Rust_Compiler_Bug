@@ -1,0 +1,2 @@
+rust
+// needs-profiler-support

@@ -1,0 +1,2 @@
+
+error: <unknown>:0:0: in function entry_function i32 (i32, i32, i32, i32, i32): secure entry function requires arguments on stack

@@ -1,0 +1,2 @@
+rust
+assert!(true);

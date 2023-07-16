@@ -1,0 +1,1 @@
+\n\nIf `p` here borrows from the temporary, then you are going to get an error,\nbecause the temporary gets freed while still in use.\nYou can add a temporary to extend the lifetime:\n\n

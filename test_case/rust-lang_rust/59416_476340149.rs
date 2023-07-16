@@ -1,0 +1,11 @@
+
+test bench_bytes_nonoverlapping              ... bench:     651,573 ns/iter (+/- 1,277)
+test bench_bytes_orig                        ... bench:     651,663 ns/iter (+/- 2,202)
+test bench_giant_obj_nonoverlapping          ... bench:      64,622 ns/iter (+/- 651)
+test bench_giant_obj_orig                    ... bench:      78,483 ns/iter (+/- 496)
+test bench_irregular_size_obj_nonoverlapping ... bench:     385,827 ns/iter (+/- 1,360)
+test bench_irregular_size_obj_orig           ... bench:     365,499 ns/iter (+/- 938)
+test bench_simd_size_obj_nonoverlapping      ... bench:      63,660 ns/iter (+/- 263)
+test bench_simd_size_obj_orig                ... bench:      84,770 ns/iter (+/- 183)
+test bench_u64_nonoverlapping                ... bench:     103,898 ns/iter (+/- 736)
+test bench_u64_orig                          ... bench:     103,919 ns/iter (+/- 2,119)

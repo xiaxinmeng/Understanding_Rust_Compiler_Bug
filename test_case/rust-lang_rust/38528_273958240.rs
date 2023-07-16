@@ -1,0 +1,2 @@
+rust
+future::ok::<(),()>(()).and_then(|()| Ok(())).and_then(|()| Ok(())).and_then(|()| Ok(())).and_then(|()| Ok(())).and_then(|()| Ok(())).and_then(|()| Ok(())).and_then(|()| Ok(())).and_then(|()| Ok(())).and_then(|()| Ok(())).and_then(|()| Ok(())).and_then(|()| Ok(())).and_then(|()| Ok(())).and_then(|()| Ok(())).and_then(|()| Ok(())).and_then(|()| Ok(())).and_then(|()| Ok(())).and_then(|()| Ok(())).and_then(|()| Ok(())).and_then(|()| Ok(())).and_then(|()| Ok(())).and_then(|()| Ok(())).and_then(|()| Ok(())).and_then(|()| Ok(()));

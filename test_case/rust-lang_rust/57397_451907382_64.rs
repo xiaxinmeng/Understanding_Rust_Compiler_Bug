@@ -1,0 +1,1 @@
+compile_fail,E0117\nimpl Drop for u32 {}\n

@@ -1,0 +1,2 @@
+rust
+#[quickcheck(some::runner)]

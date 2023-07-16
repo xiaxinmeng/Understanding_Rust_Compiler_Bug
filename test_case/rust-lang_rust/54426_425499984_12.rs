@@ -1,0 +1,1 @@
+\n\nOr by moving the reference into a function:\n\n

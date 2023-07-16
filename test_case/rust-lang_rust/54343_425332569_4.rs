@@ -1,0 +1,1 @@
+\n\nA mutable reference can be created with `&mut`.\n\nSometimes we don't want a reference, but a duplicate. All types marked `Clone`\ncan be duplicated by calling `.clone()` can still use `value_cloned`,\n    let _sum = value_cloned + 1;\n    // even though the borrow only ends here.\n}\n

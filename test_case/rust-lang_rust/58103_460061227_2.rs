@@ -1,0 +1,1 @@
+\nenum Test {\n    V1\n}\n\nimpl Test {\n    fn func(&self) -> i32 {\n        12\n    }\n}\n\nfn main() {\n    const FOO: Test = Test::V1;\n\n    FOO.func(); // here is good\n    let x = FOO.func(); // or even here!\n}\n

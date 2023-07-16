@@ -1,0 +1,1 @@
+compile_fail,E0309\n// This won't compile because T is not constrained, meaning the data\n// stored in it is not guaranteed to last as long as the reference\nstruct Foo<'a, T> {\n    foo: &'a T\n}\n

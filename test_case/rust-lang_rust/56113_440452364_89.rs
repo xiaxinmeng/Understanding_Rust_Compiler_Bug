@@ -1,0 +1,1 @@
+compile_fail,E0502\nfn bar(x: &mut i32) {}\nfn foo(a: &mut i32) {\n    let ref y = a; // a is borrowed as immutable.\n    bar(a); // error: cannot borrow `*a` as mutable because `a` is also borrowed\n            //        as immutable\n}\n

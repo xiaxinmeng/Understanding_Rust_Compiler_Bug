@@ -1,0 +1,1 @@
+RUST_LOG=rustc_trans=info xargo build --target aarch64-vesper-metta

@@ -1,0 +1,3 @@
+rust
+pub fn test() {
+    //! 

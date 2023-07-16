@@ -1,0 +1,7 @@
+rust
+/*!
+ * * Hello
+ *     * World
+ *
+  * Lorem
+ */

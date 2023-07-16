@@ -1,0 +1,3 @@
+
+rustup-toolchain-install-master c8bdaa84ec1b37f18f30375e196a65b7602f3790
+cargo +c8bdaa84ec1b37f18f30375e196a65b7602f3790 test

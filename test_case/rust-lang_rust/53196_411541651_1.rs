@@ -1,0 +1,1 @@
+\n\nHere, the `nothing_is_true` method takes the ownership of `self`. However,\n`self` cannot be moved because `.borrow()` only provides an `&TheDarkKnight`,\nwhich is a borrow of the content owned by the `RefCell`. To fix this error,\nyou have three choices:\n\n* Try to avoid moving the variable.\n* Somehow reclt borrowed.knight, TheDarkKnight).nothing_is_true(); // ok!\n

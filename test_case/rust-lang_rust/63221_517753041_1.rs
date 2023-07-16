@@ -1,0 +1,3 @@
+rust
+/// Doc.
+struct S;

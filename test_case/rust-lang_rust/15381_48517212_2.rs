@@ -1,0 +1,10 @@
+
+stack backtrace:
+   1: 0x6a18242a
+   2: 0x61f8893c
+   3:   0x6e28da
+   4:   0x6e2860
+   5: 0x70f7255a
+   6: 0x711eb8c5
+   7: 0x711ea8fe
+   8: 0x711d724b

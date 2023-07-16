@@ -1,0 +1,4 @@
+
+impl Bar
+    for Foo
+{

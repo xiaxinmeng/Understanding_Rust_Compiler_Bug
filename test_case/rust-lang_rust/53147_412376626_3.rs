@@ -1,0 +1,1 @@
+\n#[derive(Clone)]\nstruct NonCopy;\n\nfn main() {\n    let array = [NonCopy; 1];\n    // Now you can clone the array element.\n    let _value = array[0].clone();\n}\n

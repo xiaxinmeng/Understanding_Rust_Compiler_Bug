@@ -1,0 +1,2 @@
+ make
+CFG_FILENAME_EXTRA=$(shell echo -n $(CFG_RELEASE) | $(CFG_HASH_COMMAND))

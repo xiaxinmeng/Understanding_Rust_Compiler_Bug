@@ -1,0 +1,6 @@
+rust
+impl S<u8, u16> {
+    ...
+    Self(x) // Will probably start inferring `T` and `U` for `S<T, U>` instead of using `u8` and `u16`
+    ...
+}

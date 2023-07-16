@@ -1,0 +1,2 @@
+\n\nSince `MyStruct` is a type that is not marked `Copy`, the data gets moved out\nof `x` when we set `y`. This is fundamental to Rust's ownership system: outside\nof workarounds like `Rc`, a value cannot be owned by more than one variable.\n\nSometimes we don't need to move the value. Using a reference, we can let another\nfunction borrow the value without changing its ownership. In the example below,\nwe don't actually have to move our string to `calculate_le[01:30:22] make: *** [check] Error 1
+ngth`, we can give it\na reference to it with `&` instead.\n\n

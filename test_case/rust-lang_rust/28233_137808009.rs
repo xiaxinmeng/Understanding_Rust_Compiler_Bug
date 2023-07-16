@@ -1,0 +1,7 @@
+
+rustc: /home/rustbuild/src/rust-buildbot/slave/nightly-dist-rustc-linux/build/src/llvm/lib/CodeGen/AsmPrinter/DwarfUnit.cpp:713: llvm::DIE* llvm::DwarfUnit::getOrCreateTypeDIE(const llvm::MDNode*): Assertion `Ty == resolve(Ty->getRef()) && "type was not uniqued, possible ODR violation."' failed.
+Build failed, waiting for other jobs to finish...
+rustc: /home/rustbuild/src/rust-buildbot/slave/nightly-dist-rustc-linux/build/src/llvm/lib/CodeGen/AsmPrinter/DwarfUnit.cpp:713: llvm::DIE* llvm::DwarfUnit::getOrCreateTypeDIE(const llvm::MDNode*): Assertion `Ty == resolve(Ty->getRef()) && "type was not uniqued, possible ODR violation."' failed.
+rustc: /home/rustbuild/src/rust-buildbot/slave/nightly-dist-rustc-linux/build/src/llvm/lib/CodeGen/AsmPrinter/DwarfUnit.cpp:713: llvm::DIE* llvm::DwarfUnit::getOrCreateTypeDIE(const llvm::MDNode*): Assertion `Ty == resolve(Ty->getRef()) && "type was not uniqued, possible ODR violation."' failed.
+rustc: /home/rustbuild/src/rust-buildbot/slave/nightly-dist-rustc-linux/build/src/llvm/lib/CodeGen/AsmPrinter/DwarfUnit.cpp:713: llvm::DIE* llvm::DwarfUnit::getOrCreateTypeDIE(const llvm::MDNode*): Assertion `Ty == resolve(Ty->getRef()) && "type was not uniqued, possible ODR violation."' failed.
+rustc: /home/rustbuild/src/rust-buildbot/slave/nightly-dist-rustc-linux/build/src/llvm/lib/CodeGen/AsmPrinter/DwarfUnit.cpp:713: llvm::DIE* llvm::DwarfUnit::getOrCreateTypeDIE(const llvm::MDNode*): Assertion `Ty == resolve(Ty->getRef()) && "type was not uniqued, possible ODR violation."' failed.

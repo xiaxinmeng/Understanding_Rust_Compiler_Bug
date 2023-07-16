@@ -1,0 +1,55 @@
+
+stack backtrace:
+   1:     0x7faa4ec31c1f - sys::backtrace::write::h4a039d759790405fOBA
+   2:     0x7faa4ec5c932 - panicking::on_panic::h38cda3cfda05a4d8hHJ
+   3:     0x7faa4eb91bda - rt::unwind::begin_unwind_inner::hbc6ba0bf039eeb6dknJ
+   4:     0x7faa4bfc708d - rt::unwind::begin_unwind::h13059210073216592212
+   5:     0x7faa4bfc7033 - diagnostic::SpanHandler::span_bug::h531e8213fd4b4588h0D
+   6:     0x7faa4c8a2cf3 - session::Session::span_bug::h12f8cbfb39f8a605ISp
+   7:     0x7faa4e3badfc - trans::debuginfo::scope_metadata::h81ce967f070c060bSjE
+   8:     0x7faa4e2cd9f8 - trans::debuginfo::set_source_location::h5065a2bc414e2ce68MD
+   9:     0x7faa4e282432 - trans::expr::trans_into::h77ab0e7120a822e9znh
+  10:     0x7faa4e2826f9 - trans::expr::trans_into::h77ab0e7120a822e9znh
+  11:     0x7faa4e2e4c6f - trans::expr::trans_uniq_expr::hb45ab4b4566d896cukj
+  12:     0x7faa4e2e58df - trans::expr::trans_unary::habacd13d7a8861e7Jgj
+  13:     0x7faa4e2cfdfe - trans::expr::trans_unadjusted::h99b640dbc3358c2cz4h
+  14:     0x7faa4e282a07 - trans::expr::trans_into::h77ab0e7120a822e9znh
+  15:     0x7faa4e302ce9 - trans::expr::trans_adt::hc28a4aed96db1eb6O6i
+  16:     0x7faa4e30579f - trans::expr::trans_struct::closure.42069
+  17:     0x7faa4e2ef606 - trans::expr::trans_struct::h90194012c12d3616K2i
+  18:     0x7faa4e2d1b2d - trans::expr::trans_rvalue_dps_unadjusted::hba1263ec7559b76b4zi
+  19:     0x7faa4e2829e6 - trans::expr::trans_into::h77ab0e7120a822e9znh
+  20:     0x7faa4e283817 - trans::controlflow::trans_block::h42681ce0640e2e4cb5d
+  21:     0x7faa4e35ae11 - trans::base::trans_closure::hb2757f968ffe5e4fKkt
+  22:     0x7faa4e26c0f8 - trans::base::trans_fn::hce2b3d6c72d05174Dvt
+  23:     0x7faa4e26db90 - trans::monomorphize::monomorphic_fn::h49a5d55eb30e66a7usd
+  24:     0x7faa4e2b343e - trans::callee::trans_fn_ref_with_substs::h3aa1af6a03cfb4944kg
+  25:     0x7faa4e2b1a2e - trans::callee::trans_fn_ref::h8889dc3d233c59b9E9f
+  26:     0x7faa4e2aee7d - trans::callee::trans::h4cf60639a99f29d7VYf
+  27:     0x7faa4e2c55ab - trans::callee::trans_call_inner::h8632436444412771428
+  28:     0x7faa4e2d1fd0 - trans::expr::trans_rvalue_dps_unadjusted::hba1263ec7559b76b4zi
+  29:     0x7faa4e2cfc58 - trans::expr::trans_unadjusted::h99b640dbc3358c2cz4h
+  30:     0x7faa4e284148 - trans::expr::trans::h5b717c9ef7c9e01eHth
+  31:     0x7faa4e2c0fe3 - trans::callee::trans_args::h4b19cef3e74053e2m1g
+  32:     0x7faa4e2c6490 - trans::callee::trans_call_inner::h8632436444412771428
+  33:     0x7faa4e2d1fd0 - trans::expr::trans_rvalue_dps_unadjusted::hba1263ec7559b76b4zi
+  34:     0x7faa4e2829e6 - trans::expr::trans_into::h77ab0e7120a822e9znh
+  35:     0x7faa4e392f57 - trans::_match::mk_binding_alloca::h7291972955133085902
+  36:     0x7faa4e281ded - trans::base::init_local::h638f4027bba7a7d4czs
+  37:     0x7faa4e2834f2 - trans::controlflow::trans_block::h42681ce0640e2e4cb5d
+  38:     0x7faa4e35ae11 - trans::base::trans_closure::hb2757f968ffe5e4fKkt
+  39:     0x7faa4e26c0f8 - trans::base::trans_fn::hce2b3d6c72d05174Dvt
+  40:     0x7faa4e267e91 - trans::base::trans_item::h61ea9df2ff905370vTt
+  41:     0x7faa4e363ddc - trans::base::trans_crate::h1737e7beedd46e53GPu
+  42:     0x7faa4f268b83 - driver::phase_4_translate_to_llvm::h3290bee8a52fe776rNa
+  43:     0x7faa4f24453f - driver::compile_input::hb18fe8ea427236ffIba
+  44:     0x7faa4f30c917 - run_compiler::h845d3feaee911021H5b
+  45:     0x7faa4f30a489 - thunk::F.Invoke<A, R>::invoke::h16057606092771618870
+  46:     0x7faa4f309100 - rt::unwind::try::try_fn::h9181260052925924808
+  47:     0x7faa4eccc2f8 - rust_try_inner
+  48:     0x7faa4eccc2e5 - rust_try
+  49:     0x7faa4f30989f - thunk::F.Invoke<A, R>::invoke::h1492325410489626830
+  50:     0x7faa4ec47665 - sys::thread::thread_start::h6486a3ef3bc76b1ar8E
+  51:     0x7faa48d38181 - start_thread
+  52:     0x7faa4e80047c - __clone
+  53:                0x0 - <unknown>

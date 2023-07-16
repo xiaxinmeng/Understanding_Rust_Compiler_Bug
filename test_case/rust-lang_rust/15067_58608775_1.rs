@@ -1,0 +1,2 @@
+ rust
+Fn<&[int], uint>

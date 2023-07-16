@@ -1,0 +1,13 @@
+
+  2.55 │      → callq  rustc_mir::interpret::step::<impl rustc_mir::interpret::eval_context::InterpCx<M>>::step                                                                                                                              ▒
+  2.35 │        movups 0x130(%rsp),%xmm0                                                                                                                                                                                                     ▒
+  0.10 │        movaps %xmm0,0x60(%rsp)                                                                                                                                                                                                      ▒
+ 67.80 │        movups 0xf0(%rsp),%xmm0                                                                                                                                                                                                      ▒
+       │        movups 0x100(%rsp),%xmm1                                                                                                                                                                                                     ▒
+  0.10 │        movups 0x110(%rsp),%xmm2                                                                                                                                                                                                     ▒
+       │        movups 0x120(%rsp),%xmm3                                                                                                                                                                                                     ▒
+  3.53 │        movaps %xmm3,0x50(%rsp)                                                                                                                                                                                                      ▒
+       │        movaps %xmm2,0x40(%rsp)                                                                                                                                                                                                      ▒
+       │        movaps %xmm1,0x30(%rsp)                                                                                                                                                                                                      ▒
+  3.22 │        movaps %xmm0,0x20(%rsp)                                                                                                                                                                                                      ▒
+ 12.67 │        cmpb   $0x1,0x20(%rsp)   

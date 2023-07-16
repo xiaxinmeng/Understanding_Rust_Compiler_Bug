@@ -1,0 +1,1 @@
+\n\nIn here, `x` isn't mutable, so when we try to mutably borrow it in `y`, it\nfails. To fix this error, you need to make `x` murow a non-mutable variable.\n\nExample of erroneous code:\n\n

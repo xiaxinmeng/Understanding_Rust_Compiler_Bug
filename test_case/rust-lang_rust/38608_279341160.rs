@@ -1,0 +1,11 @@
+
+  = note: /home/whitequark/Work/rust/build/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/debug/deps/librustc_llvm-880e12bf8a3af75a.so: undefined reference to `ffi_type_float'
+          /home/whitequark/Work/rust/build/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/debug/deps/librustc_llvm-880e12bf8a3af75a.so: undefined reference to `ffi_type_sint64'
+          /home/whitequark/Work/rust/build/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/debug/deps/librustc_llvm-880e12bf8a3af75a.so: undefined reference to `ffi_type_pointer'
+          /home/whitequark/Work/rust/build/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/debug/deps/librustc_llvm-880e12bf8a3af75a.so: undefined reference to `ffi_type_sint32'
+          /home/whitequark/Work/rust/build/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/debug/deps/librustc_llvm-880e12bf8a3af75a.so: undefined reference to `ffi_type_void'
+          /home/whitequark/Work/rust/build/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/debug/deps/librustc_llvm-880e12bf8a3af75a.so: undefined reference to `ffi_type_sint8'
+          /home/whitequark/Work/rust/build/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/debug/deps/librustc_llvm-880e12bf8a3af75a.so: undefined reference to `ffi_call'
+          /home/whitequark/Work/rust/build/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/debug/deps/librustc_llvm-880e12bf8a3af75a.so: undefined reference to `ffi_type_sint16'
+          /home/whitequark/Work/rust/build/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/debug/deps/librustc_llvm-880e12bf8a3af75a.so: undefined reference to `ffi_type_double'
+          /home/whitequark/Work/rust/build/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/debug/deps/librustc_llvm-880e12bf8a3af75a.so: undefined reference to `ffi_prep_cif'

@@ -1,0 +1,1 @@
+\n\nIn order to fix this error, you need to make the item public by using the `pub`\nkeyword. Example:\n\n

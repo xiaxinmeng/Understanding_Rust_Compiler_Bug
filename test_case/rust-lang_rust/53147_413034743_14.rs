@@ -1,0 +1,2 @@
+\n# struct TheDarkKnight;\n# impl TheDarkKnight { fn nothing_is_true(self) {} }\n# struct elp: consider removing the `*`: `&x`\n\n"}
+[00:54:01] {"message":"cannot move out of borrowed content","code":{"code":"E0507","explanation":"\nYou tried to move out of a value which was borrowed. Erroneous code example:\n\n

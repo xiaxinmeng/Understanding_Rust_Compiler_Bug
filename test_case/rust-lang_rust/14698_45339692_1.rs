@@ -1,0 +1,23 @@
+
+   1:     0x7fb7528c44c0 - rt::backtrace::imp::write::hc141f98b309f96020vx::v0.11.0.pre
+   2:     0x7fb75284c690 - rt::unwind::begin_unwind_inner::h750099d3e14072d315w::v0.11.0.pre
+   3:     0x7fb7528448c0 - rt::unwind::begin_unwind_fmt::hef19b0403fbee428b5w::v0.11.0.pre
+   4:     0x7fb7528c4260 - rust_begin_unwind
+   5:     0x7fb75290df90 - failure::begin_unwind::h6a8ab74fb77e791aMZv::v0.11.0.pre
+   6:     0x7fb7538ffbc0 - back::link::link_natively::h67bd5d7dd321fb869z8::v0.11.0.pre
+   7:     0x7fb7538faaa0 - back::link::link_binary::hdbadb636fdce1355Ad8::v0.11.0.pre
+   8:     0x7fb75399c570 - driver::driver::phase_6_link_output::h6b9e3b205a4abd13xNm::v0.11.0.pre
+   9:     0x7fb753990780 - driver::driver::compile_input::h87aeeec375cfdeceAsm::v0.11.0.pre
+  10:     0x7fb753a5cdd0 - driver::run_compiler::hc15d974bd69c9202j7o::v0.11.0.pre
+  11:     0x7fb753a5ccf0 - driver::main_args::closure.94805
+  12:     0x7fb753a71ff0 - driver::monitor::closure.95876
+  13:     0x7fb753a6d3d0 - task::TaskBuilder::try::closure.95639
+  14:     0x7fb755a797f0 - task::spawn_opts::closure.7844
+  15:     0x7fb7528be8f0 - rt::task::Task::run::closure.25203
+  16:     0x7fb752928890 - rust_try
+  17:     0x7fb7528be840 - rt::task::Task::run::h35032c49d09a27e0FUu::v0.11.0.pre
+  18:     0x7fb755a795a0 - task::spawn_opts::closure.7817
+  19:     0x7fb7528c2890 - rt::thread::thread_start::h4bb4efb79a43c494dEv::v0.11.0.pre
+  20:     0x7fb75220ffa0 - start_thread
+  21:     0x7fb75250aa09 - __clone
+  22:                0x0 - <unknown>

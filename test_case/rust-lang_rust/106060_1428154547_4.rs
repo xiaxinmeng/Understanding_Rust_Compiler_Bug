@@ -1,0 +1,3 @@
+rust\"] #[doc = r\" # extern crate rental;\"]\n    #[doc = r\" # use rental::common::RentRefCellMut;\"]\n    #[doc = r\" # fn main() {\"] #[d\
+oc = r\" use std::cell;\"] #[doc = r\"\"]\n    #[doc =\n    r\" let mut r = RentRefCellMut::new(Box::new(cell::RefCell::new(5)), |c| c.borrow_mut());\"]\n    #[doc \
+= r\" *r = 12;\"]\n    #[doc = r\" assert_eq!(12, RentRefCellMut::rent(&r, |c| **c));\"]\n    #[doc = r\" # }\"] #[doc = r\" 

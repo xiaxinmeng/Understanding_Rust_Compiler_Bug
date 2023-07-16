@@ -1,0 +1,1 @@
+\n\nAs the error message indicates, only `u8` can be cast into `char`. Example:\n\n

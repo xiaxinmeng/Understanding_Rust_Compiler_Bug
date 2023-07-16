@@ -1,0 +1,1 @@
+sudo xcode-select -s /Library/Developer/CommandLineTools/

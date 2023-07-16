@@ -1,0 +1,3 @@
+ rust
+#[deriving(Rng(method="fn next(&mut self) -> u32"))]
+...

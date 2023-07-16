@@ -1,0 +1,2 @@
+
+use libc::TCP_KEEPIDLE as KEEPALIVE_TIME;

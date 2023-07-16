@@ -1,0 +1,9 @@
+sh
+$ target/release/bisect --preserve --test test.sh --start b65f0bedd2f22d9661ecb7092f07746dc2ccfb0d --end a0dcecff90c45ad5d4eb60859e22bb3f1b03842a
+INFO:rust_sysroot: Getting commits from the git checkout in b65f0bedd2f22d9661ecb7092f07746dc2ccfb0d...a0dcecff90c45ad5d4eb60859e22bb3f1b03842a
+INFO:rust_sysroot: Received 93 commits
+Searching in 93 commits; about 7 steps
+thread 'rustc' panicked at 'non-FnLike node found: NodeImplItem(ImplItem { id: NodeId(13), name: new, hir_id: HirId { owner: DefIndex(0:5), local_id: ItemLocalId(0) }, vis: Public, defaultness: Final, attrs: [], generics: Generics { params: [], where_clause: WhereClause { id: NodeId(14), predicates: [] }, span: 1.rs:1:1: 1:1 }, node: Method(MethodSig { unsafety: Normal, constness: NotConst, abi: Rust, decl: FnDecl { inputs: [type(Option<i32>), type(())], output: Return(type(Foo)), variadic: false, has_implicit_self: false } }, BodyId { node_id: NodeId(40) }), span: 1.rs:6:5: 8:6 })', librustc/traits/error_reporting.rs:837:13
+thread 'rustc' panicked at 'non-FnLike node found: NodeImplItem(ImplItem { id: NodeId(13), name: new, hir_id: HirId { owner: DefIndex(0:5), local_id: ItemLocalId(0) }, vis: Public, defaultness: Final, attrs: [], generics: Generics { params: [], where_clause: WhereClause { id: NodeId(14), predicates: [] }, span: 1.rs:1:1: 1:1 }, node: Method(MethodSig { unsafety: Normal, constness: NotConst, abi: Rust, decl: FnDecl { inputs: [type(Option<i32>), type(())], output: Return(type(Foo)), variadic: false, has_implicit_self: false } }, BodyId { node_id: NodeId(40) }), span: 1.rs:6:5: 8:6 })', librustc/traits/error_reporting.rs:837:13
+searched commits b65f0bedd2f22d9661ecb7092f07746dc2ccfb0d through a0dcecff90c45ad5d4eb60859e22bb3f1b03842a
+regression in 76; Some(Commit { sha: "8d3e93beae9562f8b32b7f82c3824389f6ac5bad", date: 2018-01-21T06:32:03Z, summary: "Auto merge of #47622 - GuillaumeGomez:rollup, r=GuillaumeGomez" })

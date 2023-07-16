@@ -1,0 +1,17 @@
+compile_fail\ntrait Super<A> {}\n-----
+[00:58:23] thread '[run-pass] run-pass-fulldeps/plugin-args-1.rs' panicked at 'explicit panic', src/tools/compiletest/src/runtest.rs:3252:9
+[00:58:23] 
+[00:58:23] ---- [run-pass] run-pass-fulldeps/plugin-args-2.rs stdout ----
+[00:58:23] 
+[00:58:23] 
+[00:58:23] error: auxiliary build of "/checkout/src/test/run-pass-fulldeps/auxiliary/plugin_args.rs" failed to compile: 
+[00:58:23] status: exit code: 1
+[00:58:23] command: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "/checkout/src/test/run-pass-fulldeps/auxiliary/plugin_args.rs" "--target=x86_64-unknown-linux-gnu" "--error-format" "json" "-Zui-testing" "-C" "prefer-dynamic" "--out-dir" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/run-pass-fulldeps/plugin-args-2/auxiliary" "-Crpath" "-O" "-Zunstable-options" "-Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "--crate-type" "dylib" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/run-pass-fulldeps/plugin-args-2/auxiliary"
+[00:58:23] ------------------------------------------
+[00:58:23] 
+[00:58:23] ------------------------------------------
+[00:58:23] stderr:
+[00:58:23] stderr:
+[00:58:23] ------------------------------------------
+[00:58:23] {"message":"unused import: `syntax::ptr::P`","code":{"code":"unused_imports","explanation":null},"level":"warning","spans":[{"file_name":"/checkout/src/test/run-pass-fulldeps/auxiliary/plugin_args.rs","byte_start":864,"byte_end":878,"line_start":27,"line_end":27,"column_start":5,"column_end":19,"is_primary":true,"text":[{"text":"use syntax::ptr::P;","highlight_start":5,"highlight_end":19}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"#[warn(unused_imports)] on by default","code":null,"level":"note","spans":[],"children":[],"rendered":null}],"rendered":"warning: unused import: `syntax::ptr::P`\n  --> /checkout/src/test/run-pass-fulldeps/auxiliary/plugin_args.rs:27:5\n   |\nLL | use syntax::ptr::P;\n   |     ^^^^^^^^^^^^^^\n   |\n   = note: #[warn(unused_imports)] on by default\n\n"}
+[00:58:23] {"message":"the trait `syntax::ext::base::MacResult` cannot be made into an object","code":{"code":"E0038","explanation":"\nTrait objects like `Box<Trait>` can only be constructed when certain\nrequirements are satisfied by the trait in question.\n\nTrait objects are a form of dynamic dispatch and use a dynamically sized type\nfor the inner type. So, for a given trait `Trait`, when `Trait` is treated as a\ntype, as in `Box<Trait>`, the inner type is 'unsized'. In such cases the boxed\npointer is a 'fat pointer' that contains an extra pointer to a table of methods\n(among other things) for dynamic dispatch. This design mandates some\nrestrictions on the types of traits that are allowed to be used in trait\nobjects, which are collectively termed as 'object safety' rules.\n\nAttempting to create a trait object for a non object-safe trait will trigger\nthis error.\n\nThere are various rules:\n\n### The trait cannot require `Self: Sized`\n\nWhen `Trait` is treated as a type, the type does not implement the special\n`Sized` trait, because the type does not have a known size at compile time and\ncan only be accessed behind a pointer. Thus, if we have a trait like the\nfollowing:\n\n

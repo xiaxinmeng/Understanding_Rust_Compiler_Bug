@@ -1,0 +1,4 @@
+console
+$ (lldb) x/4xg 0x53409c0+0xd839ee8
+0x12b7a8a8: 0xe0b62e2929aba83c 0x8c71dcd9ba0b4926
+0x12b7a8b8: 0xaf8e5410288e1b6f 0xdb71e91432b1a24b

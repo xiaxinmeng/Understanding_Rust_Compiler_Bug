@@ -1,0 +1,1 @@
+\nstruct Value {}\n\nfn eat(val: Value) {}\n\nfn main() {\n    let x = Value{};\n    {\n        let _ref_to_val: &Value = &x;\n    }\n    eat(x); // release borrow and then move it.\n}\n

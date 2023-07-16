@@ -1,0 +1,5 @@
+\n"},"level":"error","spans":[{"file_name":"/checkout/src/test/ui/rust-2018/trait-import-suggestions.rs","byte_start":1178,"byte_end":1191,"line_start":43,"line_end":43,"column_start":13,"column_end":26,"is_primary":true,"text":[{"text":"    let y = u32::from_str(\"33\"); //~ ERROR no function or associated item named `from_str`","highlight_start":13,"highlight_end":26}],"label":"function or associated item not found in `u32`","suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"items from traits can only be used if the trait is in scope","code":null,"level":"help","spans":[],"children":[],"rendered":null},{"message":"the following trait is implemented but not in scope, perhaps add a `use` for it:","code":null,"levetravis_time:end:16904ec5:start=1544004383454075946,finish=1544007279025227839,duration=2895571151893
+travis_time:start:09b5a3d0
+$ date && (curl -fs --head https://google.com | grep ^Date: | sed 's/Date: //g' || true)
+Wed Dec  5 10:54:39 UTC 2018
+Wed, 05 Dec 2018 10:54:39 GMT

@@ -1,0 +1,271 @@
+plain
+/usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:122: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.io/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+/usr/local/lib/python2.7/dist-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py:122: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.io/en/latest/security.html#insecureplatformwarning.
+  InsecurePlatformWarning
+  Downloading https://files.pythonhosted.org/packages/46/ad/28647c5e1f4bb4094af886e203cfde5543fafd6a5bf830a85909d2058f9f/awscli-1.15.42-py2.py3-none-any.whl (1.3MB)
+    0% |▎                               | 10kB 14.2MB/s eta 0:00:01
+    1% |▌                               | 20kB 1.9MB/s eta 0:00:01
+    2% |▉                               | 30kB 2.2MB/s eta 0:00:01
+    3% |█                               | 40kB 2.0MB/s eta 0:00:01
+---
+[00:42:39] ....................................................................................................
+[00:42:43] ....................................................................................................
+[00:42:49] ....................................................................................................
+[00:42:54] ....................................................................................................
+[00:43:00] ......i.......................FFF.F........................................FFF........i.............
+[00:43:10] ....................................................................................................
+[00:43:16] ....................................................................................................
+[00:43:22] .....................i..............................................................................
+[00:43:22] ......
+[00:43:22] ......
+[00:43:22] failures:
+[00:43:22] 
+[00:43:22] ---- [ui] ui/nll/closure-requirements/propagate-approximated-shorter-to-static-comparing-against-free.rs stdout ----
+[00:43:22] diff of stderr:
+[00:43:22] 
+[00:43:22] 4 LL |     foo(cell, |cell_a, cell_x| {
+[00:43:22] 6 
+[00:43:22] 6 
+[00:43:22] - error: free region `ReFree(DefId(0/1:12 ~ propagate_approximated_shorter_to_static_comparing_against_free[317d]::case1[0]::{{closure}}[0]), BrAnon(1))` does not outlive free region `'_#1r`
+[00:43:22] + error: CallArgument
+[00:43:22] +   --> $DIR/propagate-approximated-shorter-to-static-comparing-against-free.rs:33:20
+[00:43:22] 9    |
+[00:43:22] 9    |
+[00:43:22] 10 LL |         cell_a.set(cell_x.get()); // forces 'x: 'a, error in closure
+[00:43:22] +    |                    ^^^^^^^^^^^^
+[00:43:22] 12 
+[00:43:22] 13 note: No external requirements
+[00:43:22] 14   --> $DIR/propagate-approximated-shorter-to-static-comparing-against-free.rs:31:15
+[00:43:22] 14   --> $DIR/propagate-approximated-shorter-to-static-comparing-against-free.rs:31:15
+[00:43:22] 
+[00:43:22] 
+[00:43:22] The actual stderr differed from the expected stderr.
+[00:43:22] Actual stderr saved to /checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-comparing-against-free/propagate-approximated-shorter-to-static-comparing-against-free.stderr
+[00:43:22] To update references, rerun the tests and pass the `--bless` flag
+[00:43:22] To only update this specific test, also pass `--test-args nll/closure-requirements/propagate-approximated-shorter-to-static-comparing-against-free.rs`
+[00:43:22] error: 1 errors occurred comparing output.
+[00:43:22] status: exit code: 101
+[00:43:22] status: exit code: 101
+[00:43:22] command: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "/checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-comparing-against-free.rs" "--target=x86_64-unknown-linux-gnu" "--error-format" "json" "-Zui-testing" "-C" "prefer-dynamic" "-o" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-comparing-against-free/a" "-Crpath" "-O" "-Zunstable-options" "-Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "-Zborrowck=mir" "-Zverbose" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-comparing-against-free/auxiliary" "-A" "unused"
+[00:43:22] ------------------------------------------
+[00:43:22] 
+[00:43:22] ------------------------------------------
+[00:43:22] stderr:
+[00:43:22] stderr:
+[00:43:22] ------------------------------------------
+[00:43:22] {"message":"not reporting region error due to nll","code":null,"level":"warning","spans":[{"file_name":"/checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-comparing-against-free.rs","byte_start":933,"byte_end":936,"line_start":31,"line_end":31,"column_start":5,"column_end":8,"is_primary":true,"text":[{"text":"    foo(cell, |cell_a, cell_x| {","highlight_start":5,"highlight_end":8}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[],"rendered":"warning: not reporting region error due to nll\n  --> /checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-comparing-against-free.rs:31:5\n   |\nLL |     foo(cell, |cell_a, cell_x| {\n   |     ^^^\n\n"}
+[00:43:22] {"message":"CallArgument","code":null,"level":"error","spans":[{"file_name":"/checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-comparing-against-free.rs","byte_start":1040,"byte_end":1052,"line_start":33,"line_end":33,"column_start":20,"column_end":32,"is_primary":true,"text":[{"text":"        cell_a.set(cell_x.get()); // forces 'x: 'a, error in closure","highlight_start":20,"highlight_end":32}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[],"rendered":"error: CallArgument\n  --> /checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-comparing-against-free.rs:33:20\n   |\nLL |         cell_a.set(cell_x.get()); // forces 'x: 'a, error in closure\n   |                    ^^^^^^^^^^^^\n\n"}
+[00:43:22] {"message":"No external requirements","code":null,"level":"note","spans":[{"file_name":"/checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-comparing-against-free.rs","byte_start":943,"byte_end":1143,"line_start":31,"line_end":35,"column_start":15,"column_end":6,"is_primary":true,"text":[{"text":"    foo(cell, |cell_a, cell_x| {","highlight_start":15,"highlight_end":33},{"text":"        //~^ WARNING not reporting region error due to nll","highlight_start":1,"highlight_end":59},{"text":"        cell_a.set(cell_x.get()); // forces 'x: 'a, error in closure","highlight_start":1,"highlight_end":69},{"text":"        //~^ ERROR does not outlive free region","highlight_start":1,"highlight_end":48},{"text":"    })","highlight_start":1,"highlight_end":6}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"defining type: DefId(0/1:12 ~ propagate_approximated_shorter_to_static_comparing_against_free[317d]::case1[0]::{{closure}}[0]) with closure substs [\n    i32,\n    for<'r> extern \"rust-call\" fn((std::cell::Cell<&'_#1r u32>, std::cell::Cell<&ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 'r)) u32>))\n]","code":null,"level":"note","spans":[],"children":[],"rendered":null}],"rendered":"note: No external requirements\n  --> /checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-comparing-against-free.rs:31:15\n   |\nLL |       foo(cell, |cell_a, cell_x| {\n   |  _______________^\nLL | |         //~^ WARNING not reporting region error due to nll\nLL | |         cell_a.set(cell_x.get()); // forces 'x: 'a, error in closure\nLL | |         //~^ ERROR does not outlive free region\nLL | |     })\n   | |_____^\n   |\n   = note: defining type: DefId(0/1:12 ~ propagate_approximated_shorter_to_static_comparing_against_free[317d]::case1[0]::{{closure}}[0]) with closure substs [\n               i32,\n               for<'r> extern \"rust-call\" fn((std::cell::Cell<&'_#1r u32>, std::cell::Cell<&ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 'r)) u32>))\n           ]\n\n"}
+[00:43:22] {"message":"No external requirements","code":null,"level":"note","spans":[{"file_name":"/checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-comparing-against-free.rs","byte_start":871,"byte_end":1146,"line_start":28,"line_end":36,"column_start":1,"column_end":2,"is_primary":true,"text":[{"text":"fn case1() {","highlight_start":1,"highlight_end":13},{"text":"    let a = 0;","highlight_start":1,"highlight_end":15},{"text":"    let cell = Cell::new(&a);","highlight_start":1,"highlight_end":30},{"text":"    foo(cell, |cell_a, cell_x| {","highlight_start":1,"highlight_end":33},{"text":"        //~^ WARNING not reporting region error due to nll","highlight_start":1,"highlight_end":59},{"text":"        cell_a.set(cell_x.get()); // forces 'x: 'a, error in closure","highlight_start":1,"highlight_end":69},{"text":"        //~^ ERROR does not outlive free region","highlight_start":1,"highlight_end":48},{"text":"    })","highlight_start":1,"highlight_end":7},{"text":"}","highlight_start":1,"highlight_end":2}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"defining type: DefId(0/0:5 ~ propagate_approximated_shorter_to_static_comparing_against_free[317d]::case1[0]) with substs []","code":null,"level":"note","spans":[],"children":[],"rendered":null}],"rendered":"note: No external requirements\n  --> /checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-comparing-against-free.rs:28:1\n   |\nLL | / fn case1() {\nLL | |     let a = 0;\nLL | |     let cell = Cell::new(&a);\nLL | |     foo(cell, |cell_a, cell_x| {\n...  |\nLL | |     })\nLL | | }\n   | |_^\n   |\n   = note: defining type: DefId(0/0:5 ~ propagate_approximated_shorter_to_static_comparing_against_free[317d]::case1[0]) with substs []\n\n"}
+[00:43:22] {"message":"External requirements","code":null,"level":"note","spans":[{"file_name":"/checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-comparing-against-free.rs","byte_start":1393,"byte_end":1506,"line_start":46,"line_end":48,"column_start":15,"column_end":6,"is_primary":true,"text":[{"text":"    foo(cell, |cell_a, cell_x| {","highlight_start":15,"highlight_end":33},{"text":"        cell_x.set(cell_a.get()); // forces 'a: 'x, implies 'a = 'static -> borrow error","highlight_start":1,"highlight_end":89},{"text":"    })","highlight_start":1,"highlight_end":6}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"defining type: DefId(0/1:13 ~ propagate_approximated_shorter_to_static_comparing_against_free[317d]::case2[0]::{{closure}}[0]) with closure substs [\n    i32,\n    for<'r> extern \"rust-call\" fn((std::cell::Cell<&'_#1r u32>, std::cell::Cell<&ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 'r)) u32>))\n]","code":null,"level":"note","spans":[],"children":[],"rendered":null},{"message":"number of external vids: 2","code":null,"level":"note","spans":[],"children":[],"rendered":null},{"message":"where '_#1r: '_#0r","code":null,"level":"note","spans":[],"children":[],"rendered":null}],"rendered":"note: External requirements\n  --> /checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-comparing-against-free.rs:46:15\n   |\nLL |       foo(cell, |cell_a, cell_x| {\n   |  _______________^\nLL | |         cell_x.set(cell_a.get()); // forces 'a: 'x, implies 'a = 'static -> borrow error\nLL | |     })\n   | |_____^\n   |\n   = note: defining type: DefId(0/1:13 ~ propagate_approximated_shorter_to_static_comparing_against_free[317d]::case2[0]::{{closure}}[0]) with closure substs [\n               i32,\n               for<'r> extern \"rust-call\" fn((std::cell::Cell<&'_#1r u32>, std::cell::Cell<&ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 'r)) u32>))\n           ]\n   = note: number of external vids: 2\n   = note: where '_#1r: '_#0r\n\n"}
+[00:43:22] {"message":"No external requirements","code":null,"level":"note","spans":[{"file_name":"/checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-comparing-against-free.rs","byte_start":1165,"byte_end":1509,"line_start":39,"line_end":49,"column_start":1,"column_end":2,"is_primary":true,"text":[{"text":"fn case2() {","highlight_start":1,"highlight_end":13},{"text":"    let a = 0;","highlight_start":1,"highlight_end":15},{"text":"    let cell = Cell::new(&a);","highlight_start":1,"highlight_end":30},{"text":"    //~^ ERROR `a` does not live long enough","highlight_start":1,"highlight_end":45},{"text":"","highlight_start":1,"highlight_end":1},{"text":"    // As you can see in the stderr output, this closure propoagates a","highlight_start":1,"highlight_end":71},{"text":"    // requirement that `'a: 'static'.","highlight_start":1,"highlight_end":39},{"text":"    foo(cell, |cell_a, cell_x| {","highlight_start":1,"highlight_end":33},{"text":"        cell_x.set(cell_a.get()); // forces 'a: 'x, implies 'a = 'static -> borrow error","highlight_start":1,"highlight_end":89},{"text":"    })","highlight_start":1,"highlight_end":7},{"text":"}","highlight_start":1,"highlight_end":2}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"defining type: DefId(0/0:6 ~ propagainformation about this error, try `rustc --explain E0597`.\n"}
+[00:43:22] ------------------------------------------
+[00:43:22] 
+[00:43:22] thread '[ui] ui/nll/closure-requirements/propagate-approximated-shorter-to-static-comparing-against-free.rs' panicked at 'explicit panic', tools/compiletest/src/runtest.rs:3139:9
+[00:43:22] note: Run with `RUST_BACKTRACE=1` for a backtrace.
+[00:43:22] note: Run with `RUST_BACKTRACE=1` for a backtrace.
+[00:43:22] 
+[00:43:22] ---- [ui] ui/nll/closure-requirements/propagate-approximated-shorter-to-static-no-bound.rs stdout ----
+[00:43:22] diff of stderr:
+[00:43:22] 
+[00:43:22] 23    = note: number of external vids: 2
+[00:43:22] 24    = note: where '_#1r: '_#0r
+[00:43:22] 25 
+[00:43:22] - error: free region `ReFree(DefId(0/0:6 ~ propagate_approximated_shorter_to_static_no_bound[317d]::supply[0]), BrNamed(crate0:DefIndex(1:16), 'a))` does not outlive free region `ReStatic`
+[00:43:22] + error: CallArgument
+[00:43:22] 28    |
+[00:43:22] 28    |
+[00:43:22] 29 LL | /     establish_relationships(&cell_a, &cell_b, |_outlives, x, y| {
+[00:43:22] 
+[00:43:22] 32 LL | |         // Only works if 'x: 'y:
+[00:43:22] 33 LL | |         demand_y(x, y, x.get()) //~ WARNING not reporting region error due to nll
+[00:43:22] 34 LL | |     });
+[00:43:22] +    | |______^ CallArgument
+[00:43:22] 36 
+[00:43:22] 37 note: No external requirements
+[00:43:22] 38   --> $DIR/propagate-approximated-shorter-to-static-no-bound.rs:44:1
+[00:43:22] 38   --> $DIR/propagate-approximated-shorter-to-static-no-bound.rs:44:1
+[00:43:22] 
+[00:43:22] 
+[00:43:22] The actual stderr differed from the expected stderr.
+[00:43:22] Actual stderr saved to /checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-no-bound/propagate-approximated-shorter-to-static-no-bound.stderr
+[00:43:22] To update references, rerun the tests and pass the `--bless` flag
+[00:43:22] To only update this specific test, also pass `--test-args nll/closure-requirements/propagate-approximated-shorter-to-static-no-bound.rs`
+[00:43:22] error: 1 errors occurred comparing output.
+[00:43:22] status: exit code: 101
+[00:43:22] status: exit code: 101
+[00:43:22] command: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "/checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-no-bound.rs" "--target=x86_64-unknown-linux-gnu" "--error-format" "json" "-Zui-testing" "-C" "prefer-dynamic" "-o" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-no-bound/a" "-Crpath" "-O" "-Zunstable-options" "-Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "-Zborrowck=mir" "-Zverbose" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-no-bound/auxiliary" "-A" "unused"
+[00:43:22] ------------------------------------------
+[00:43:22] 
+[00:43:22] ------------------------------------------
+[00:43:22] stderr:
+[00:43:22] stderr:
+[00:43:22] ------------------------------------------
+[00:43:22] {"message":"not reporting region error due to nll","code":null,"level":"warning","spans":[{"file_name":"/checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-no-bound.rs","byte_start":1638,"byte_end":1661,"line_start":49,"line_end":49,"column_start":9,"column_end":32,"is_primary":true,"text":[{"text":"        demand_y(x, y, x.get()) //~ WARNING not reporting region error due to nll","highlight_start":9,"highlight_end":32}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[],"rendered":"warning: not reporting region error due to nll\n  --> /checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-no-bound.rs:49:9\n   |\nLL |         demand_y(x, y, x.get()) //~ WARNING not reporting region error due to nll\n   |         ^^^^^^^^^^^^^^^^^^^^^^^\n\n"}
+[00:43:22] {"message":"External requirements","code":null,"level":"note","spans":[{"file_name":"/checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-no-bound.rs","byte_start":1528,"byte_end":1717,"line_start":45,"line_end":50,"column_start":47,"column_end":6,"is_primary":true,"text":[{"text":"    establish_relationships(&cell_a, &cell_b, |_outlives, x, y| {","highlight_start":47,"highlight_end":66},{"text":"        //~^ ERROR does not outlive free region","highlight_start":1,"highlight_end":48},{"text":"","highlight_start":1,"highlight_end":1},{"text":"        // Only works if 'x: 'y:","highlight_start":1,"highlight_end":33},{"text":"        demand_y(x, y, x.get()) //~ WARNING not reporting region error due to nll","highlight_start":1,"highlight_end":82},{"text":"    });","highlight_start":1,"highlight_end":6}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"defining type: DefId(0/1:18 ~ propagate_approximated_shorter_to_static_no_bound[317d]::supply[0]::{{closure}}[0]) with closure substs [\n    i16,\n    for<'r, 's, 't0, 't1, 't2> extern \"rust-call\" fn((&ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 'r)) std::cell::Cell<&'_#1r &ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 's)) u32>, &ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 't0)) std::cell::Cell<&ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 's)) u32>, &ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 't1)) std::cell::Cell<&ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 't2)) u32>))\n]","code":null,"level":"note","spans":[],"children":[],"rendered":null},{"message":"number of external vids: 2","code":null,"level":"note","spans":[],"children":[],"rendered":null},{"message":"where '_#1r: '_#0r","code":null,"level":"note","spans":[],"children":[],"rendered":null}],"rendered":"note: External requirements\n  --> /checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-no-bound.rs:45:47\n   |\nLL |       establish_relationships(&cell_a, &cell_b, |_outlives, x, y| {\n   |  _______________________________________________^\nLL | |         //~^ ERROR does not outlive free region\nLL | |\nLL | |         // Only works if 'x: 'y:\nLL | |         demand_y(x, y, x.get()) //~ WARNING not reporting region error due to nll\nLL | |     });\n   | |_____^\n   |\n   = note: defining type: DefId(0/1:18 ~ propagate_approximated_shorter_to_static_no_bound[317d]::supply[0]::{{closure}}[0]) with closure substs [\n               i16,\n               for<'r, 's, 't0, 't1, 't2> extern \"rust-call\" fn((&ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 'r)) std::cell::Cell<&'_#1r &ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 's)) u32>, &ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 't0)) std::cell::Cell<&ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 's)) u32>, &ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 't1)) std::cell::Cell<&ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 't2)) u32>))\n           ]\n   = note: number of external vids: 2\n   = note: where '_#1r: '_#0r\n\n"}
+[00:43:22] {"message":"CallArgument","code":null,"level":"error","spans":[{"file_name":"/checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-no-bound.rs","byte_start":1486,"byte_end":1718,"line_start":45,"line_end":50,"column_start":5,"column_end":7,"is_primary":true,"text":[{"text":"    establish_relationships(&cell_a, &cell_b, |_outlives, x, y| {","highlight_start":5,"highlight_end":66},{"text":"        //~^ ERROR does not outlive free region","highlight_start":1,"highlight_end":48},{"text":"","highlight_start":1,"highlight_end":1},{"text":"        // Only works if 'x: 'y:","highlight_start":1,"highlight_end":33},{"text":"        demand_y(x, y, x.get()) //~ WARNING not reporting region error due to nll","highlight_start":1,"highlight_end":82},{"text":"    });","highlight_start":1,"highlight_end":7}],"label":"CallArgument","suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[],"rendered":"error: CallArgument\n  --> /checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-no-bound.rs:45:5\n   |\nLL | /     establish_relationships(&cell_a, &cell_b, |_outlives, x, y| {\nLL | |         //~^ ERROR does not outlive free region\nLL | |\nLL | |         // Only works if 'x: 'y:\nLL | |         demand_y(x, y, x.get()) //~ WARNING not reporting region error due to nll\nLL | |     });\n   | |______^ CallArgument\n\n"}
+[00:43:22] {"message":"No external requirements","code":null,"level":"note","spans":[{"file_name":"/checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-no-bound.rs","byte_start":1416,"byte_end":1721,"line_start":44,"line_end":51,"column_start":1,"column_end":2,"is_primary":true,"text":[{"text":"fn supply<'a, 'b>(cell_a: Cell<&'a u32>, cell_b: Cell<&'b u32>) {","highlight_start":1,"highlight_end":66},{"text":"    establish_relationships(&cell_a, &cell_b, |_outlives, x, y| {","highlight_start":1,"highlight_end":66},{"text":"        //~^ ERROR does not outlive free region","highlight_start":1,"highlight_end":48},{"text":"","highlight_start":1,"highlight_end":1},{"text":"        // Only works if 'x: 'y:","highlight_start":1,"highlight_end":33},{"text":"        demand_y(x, y, x.get()) //~ WARNING not reporting region error due to nll","highlight_start":1,"highlight_end":82},{"text":"    });","highlight_start":1,"highlight_end":8},{"text":"}","highlight_start":1,"highlight_end":2}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"defining type: DefId(0/0:6 ~ propagate_approximated_shorter_to_static_no_bound[317d]::supply[0]) with substs []","code":null,"level":"note","spans":[],"children":[],"rendered":null}],"rendered":"note: No external requirements\n  --> /checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-no-bound.rs:44:1\n   |\nLL | / fn supply<'a, 'b>(cell_a: Cell<&'a u32>, cell_b: Cell<&'b u32>) {\nLL | |     establish_relationships(&cell_a, &cell_b, |_outlives, x, y| {\nLL | |         //~^ ERROR does not outlive free region\nLL | |\n...  |\nLL | |     });\nLL | | }\n   | |_^\n   |\n   = note: defining type: DefId(0/0:6 ~ propagate_approximated_shorter_to_static_no_bound[317d]::supply[0]) with substs []\n\n"}
+[00:43:22] {"message":"aborting due to previous error","code":null,"level":"error","spans":[],"children":[],"rendered":"error: aborting due to previous error\n\n"}
+[00:43:22] ------------------------------------------
+[00:43:22] 
+[00:43:22] thread '[ui] ui/nll/closure-requirements/propagate-approximated-shorter-to-static-no-bound.rs' panicked at 'explicit panic', tools/compiletest/src/runtest.rs:3139:9
+[00:43:22] 
+[00:43:22] 
+[00:43:22] ---- [ui] ui/nll/closure-requirements/propagate-approximated-shorter-to-static-wrong-bound.rs stdout ----
+[00:43:22] diff of stderr:
+[00:43:22] 
+[00:43:22] 23    = note: number of external vids: 3
+[00:43:22] 24    = note: where '_#1r: '_#0r
+[00:43:22] 25 
+[00:43:22] - error: free region `ReFree(DefId(0/0:6 ~ propagate_approximated_shorter_to_static_wrong_bound[317d]::supply[0]), BrNamed(crate0:DefIndex(1:16), 'a))` does not outlive free region `ReStatic`
+[00:43:22] + error: CallArgument
+[00:43:22] 28    |
+[00:43:22] 28    |
+[00:43:22] 29 LL | /     establish_relationships(&cell_a, &cell_b, |_outlives1, _outlives2, x, y| {
+[00:43:22] 
+[00:43:22] 32 LL | |         demand_y(x, y, x.get())
+[00:43:22] 33 LL | |         //~^ WARNING not reporting region error due to nll
+[00:43:22] 34 LL | |     });
+[00:43:22] +    | |______^ CallArgument
+[00:43:22] 36 
+[00:43:22] 37 note: No external requirements
+[00:43:22] 38   --> $DIR/propagate-approximated-shorter-to-static-wrong-bound.rs:47:1
+[00:43:22] 38   --> $DIR/propagate-approximated-shorter-to-static-wrong-bound.rs:47:1
+[00:43:22] 
+[00:43:22] 
+[00:43:22] The actual stderr differed from the expected stderr.
+[00:43:22] Actual stderr saved to /checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-wrong-bound/propagate-approximated-shorter-to-static-wrong-bound.stderr
+[00:43:22] To update references, rerun the tests and pass the `--bless` flag
+[00:43:22] To only update this specific test, also pass `--test-args nll/closure-requirements/propagate-approximated-shorter-to-static-wrong-bound.rs`
+[00:43:22] error: 1 errors occurred comparing output.
+[00:43:22] status: exit code: 101
+[00:43:22] status: exit code: 101
+[00:43:22] command: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "/checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-wrong-bound.rs" "--target=x86_64-unknown-linux-gnu" "--error-format" "json" "-Zui-testing" "-C" "prefer-dynamic" "-o" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-wrong-bound/a" "-Crpath" "-O" "-Zunstable-options" "-Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "-Zborrowck=mir" "-Zverbose" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-wrong-bound/auxiliary" "-A" "unused"
+[00:43:22] ------------------------------------------
+[00:43:22] 
+[00:43:22] ------------------------------------------
+[00:43:22] stderr:
+[00:43:22] stderr:
+[00:43:22] ------------------------------------------
+[00:43:22] {"message":"not reporting region error due to nll","code":null,"level":"warning","spans":[{"file_name":"/checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-wrong-bound.rs","byte_start":1725,"byte_end":1748,"line_start":51,"line_end":51,"column_start":9,"column_end":32,"is_primary":true,"text":[{"text":"        demand_y(x, y, x.get())","highlight_start":9,"highlight_end":32}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[],"rendered":"warning: not reporting region error due to nll\n  --> /checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-wrong-bound.rs:51:9\n   |\nLL |         demand_y(x, y, x.get())\n   |         ^^^^^^^^^^^^^^^^^^^^^^^\n\n"}
+[00:43:22] {"message":"External requirements","code":null,"level":"note","spans":[{"file_name":"/checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-wrong-bound.rs","byte_start":1603,"byte_end":1813,"line_start":48,"line_end":53,"column_start":47,"column_end":6,"is_primary":true,"text":[{"text":"    establish_relationships(&cell_a, &cell_b, |_outlives1, _outlives2, x, y| {","highlight_start":47,"highlight_end":79},{"text":"        //~^ ERROR does not outlive free region","highlight_start":1,"highlight_end":48},{"text":"        // Only works if 'x: 'y:","highlight_start":1,"highlight_end":33},{"text":"        demand_y(x, y, x.get())","highlight_start":1,"highlight_end":32},{"text":"        //~^ WARNING not reporting region error due to nll","highlight_start":1,"highlight_end":59},{"text":"    });","highlight_start":1,"highlight_end":6}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"defining type: DefId(0/1:18 ~ propagate_approximated_shorter_to_static_wrong_bound[317d]::supply[0]::{{closure}}[0]) with closure substs [\n    i16,\n    for<'r, 's, 't0, 't1, 't2, 't3> extern \"rust-call\" fn((&ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 'r)) std::cell::Cell<&'_#1r &ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 's)) u32>, &ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 't0)) std::cell::Cell<&'_#2r &ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 't1)) u32>, &ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 't2)) std::cell::Cell<&ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 's)) u32>, &ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 't3)) std::cell::Cell<&ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 't1)) u32>))\n]","code":null,"level":"note","spans":[],"children":[],"rendered":null},{"message":"number of external vids: 3","code":null,"level":"note","spans":[],"children":[],"rendered":null},{"message":"where '_#1r: '_#0r","code":null,"level":"note","spans":[],"children":[],"rendered":null}],"rendered":"note: External requirements\n  --> /checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-wrong-bound.rs:48:47\n   |\nLL |       establish_relationships(&cell_a, &cell_b, |_outlives1, _outlives2, x, y| {\n   |  _______________________________________________^\nLL | |         //~^ ERROR does not outlive free region\nLL | |         // Only works if 'x: 'y:\nLL | |         demand_y(x, y, x.get())\nLL | |         //~^ WARNING not reporting region error due to nll\nLL | |     });\n   | |_____^\n   |\n   = note: defining type: DefId(0/1:18 ~ propagate_approximated_shorter_to_static_wrong_bound[317d]::supply[0]::{{closure}}[0]) with closure substs [\n               i16,\n               for<'r, 's, 't0, 't1, 't2, 't3> extern \"rust-call\" fn((&ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 'r)) std::cell::Cell<&'_#1r &ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 's)) u32>, &ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 't0)) std::cell::Cell<&'_#2r &ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 't1)) u32>, &ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 't2)) std::cell::Cell<&ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 's)) u32>, &ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 't3)) std::cell::Cell<&ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 't1)) u32>))\n           ]\n   = note: number of external vids: 3\n   = note: where '_#1r: '_#0r\n\n"}
+[00:43:22] {"message":"CallArgument","code":null,"level":"error","spans":[{"file_name":"/checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-wrong-bound.rs","byte_start":1561,"byte_end":1814,"line_start":48,"line_end":53,"column_start":5,"column_end":7,"is_primary":true,"text":[{"text":"    establish_relationships(&cell_a, &cell_b, |_outlives1, _outlives2, x, y| {","highlight_start":5,"highlight_end":79},{"text":"        //~^ ERROR does not outlive free region","highlight_start":1,"highlight_end":48},{"text":"        // Only works if 'x: 'y:","highlight_start":1,"highlight_end":33},{"text":"        demand_y(x, y, x.get())","highlight_start":1,"highlight_end":32},{"text":"        //~^ WARNING not reporting region error due to nll","highlight_start":1,"highlight_end":59},{"text":"    });","highlight_start":1,"highlight_end":7}],"label":"CallArgument","suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[],"rendered":"error: CallArgument\n  --> /checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-wrong-bound.rs:48:5\n   |\nLL | /     establish_relationships(&cell_a, &cell_b, |_outlives1, _outlives2, x, y| {\nLL | |         //~^ ERROR does not outlive free region\nLL | |         // Only works if 'x: 'y:\nLL | |         demand_y(x, y, x.get())\nLL | |         //~^ WARNING not reporting region error due to nll\nLL | |     });\n   | |______^ CallArgument\n\n"}
+[00:43:22] {"message":"No external requirements","code":null,"level":"note","spans":[{"file_name":"/checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-wrong-bound.rs","byte_start":1491,"byte_end":1817,"line_start":47,"line_end":54,"column_start":1,"column_end":2,"is_primary":true,"text":[{"text":"fn supply<'a, 'b>(cell_a: Cell<&'a u32>, cell_b: Cell<&'b u32>) {","highlight_start":1,"highlight_end":66},{"text":"    establish_relationships(&cell_a, &cell_b, |_outlives1, _outlives2, x, y| {","highlight_start":1,"highlight_end":79},{"text":"        //~^ ERROR does not outlive free region","highlight_start":1,"highlight_end":48},{"text":"        // Only works if 'x: 'y:","highlight_start":1,"highlight_end":33},{"text":"        demand_y(x, y, x.get())","highlight_start":1,"highlight_end":32},{"text":"        //~^ WARNING not reporting region error due to nll","highlight_start":1,"highlight_end":59},{"text":"    });","highlight_start":1,"highlight_end":8},{"text":"}","highlight_start":1,"highlight_end":2}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"defining type: DefId(0/0:6 ~ propagate_approximated_shorter_to_static_wrong_bound[317d]::supply[0]) with substs []","code":null,"level":"note","spans":[],"children":[],"rendered":null}],"rendered":"note: No external requirements\n  --> /checkout/src/test/ui/nll/closure-requirements/propagate-approximated-shorter-to-static-wrong-bound.rs:47:1\n   |\nLL | / fn supply<'a, 'b>(cell_a: Cell<&'a u32>, cell_b: Cell<&'b u32>) {\nLL | |     establish_relationships(&cell_a, &cell_b, |_outlives1, _outlives2, x, y| {\nLL | |         //~^ ERROR does not outlive free region\nLL | |         // Only works if 'x: 'y:\n...  |\nLL | |     });\nLL | | }\n   | |_^\n   |\n   = note: defining type: DefId(0/0:6 ~ propagate_approximated_shorter_to_static_wrong_bound[317d]::supply[0]) with substs []\n\n"}
+[00:43:22] {"message":"aborting due to previous error","code":null,"level":"error","spans":[],"children":[],"rendered":"error: aborting due to previous error\n\n"}
+[00:43:22] ------------------------------------------
+[00:43:22] 
+[00:43:22] thread '[ui] ui/nll/closure-requirements/propagate-approximated-shorter-to-static-wrong-bound.rs' panicked at 'explicit panic', tools/compiletest/src/runtest.rs:3139:9
+[00:43:22] 
+[00:43:22] 
+[00:43:22] ---- [ui] ui/nll/closure-requirements/propagate-fail-to-approximate-longer-no-bounds.rs stdout ----
+[00:43:22] diff of stderr:
+[00:43:22] 
+[00:43:22] 4 LL |         demand_y(x, y, x.get())
+[00:43:22] 6 
+[00:43:22] 6 
+[00:43:22] - error: free region `ReFree(DefId(0/1:18 ~ propagate_fail_to_approximate_longer_no_bounds[317d]::supply[0]::{{closure}}[0]), BrAnon(4))` does not outlive free region `ReFree(DefId(0/1:18 ~ propagate_fail_to_approximate_longer_no_bounds[317d]::supply[0]::{{closure}}[0]), BrAnon(2))`
+[00:43:22] + error: CallArgument
+[00:43:22] +   --> $DIR/propagate-fail-to-approximate-longer-no-bounds.rs:47:9
+[00:43:22] 9    |
+[00:43:22] 9    |
+[00:43:22] 10 LL |         demand_y(x, y, x.get())
+[00:43:22] +    |         ^^^^^^^^^^^^^^^^^^^^^^^
+[00:43:22] 12 
+[00:43:22] 13 note: No external requirements
+[00:43:22] 14   --> $DIR/propagate-fail-to-approximate-longer-no-bounds.rs:45:47
+[00:43:22] 14   --> $DIR/propagate-fail-to-approximate-longer-no-bounds.rs:45:47
+[00:43:22] 
+[00:43:22] 
+[00:43:22] The actual stderr differed from the expected stderr.
+[00:43:22] Actual stderr saved to /checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/nll/closure-requirements/propagate-fail-to-approximate-longer-no-bounds/propagate-fail-to-approximate-longer-no-bounds.stderr
+[00:43:22] To update references, rerun the tests and pass the `--bless` flag
+[00:43:22] To only update this specific test, also pass `--test-args nll/closure-requirements/propagate-fail-to-approximate-longer-no-bounds.rs`
+[00:43:22] error: 1 errors occurred comparing output.
+[00:43:22] status: exit code: 101
+[00:43:22] status: exit code: 101
+[00:43:22] command: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "/checkout/src/test/ui/nll/closure-requirements/propagate-fail-to-approximate-longer-no-bounds.rs" "--target=x86_64-unknown-linux-gnu" "--error-format" "json" "-Zui-testing" "-C" "prefer-dynamic" "-o" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/nll/closure-requirements/propagate-fail-to-approximate-longer-no-bounds/a" "-Crpath" "-O" "-Zunstable-options" "-Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "-Zborrowck=mir" "-Zverbose" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/nll/closure-requirements/propagate-fail-to-approximate-longer-no-bounds/auxiliary" "-A" "unused"
+[00:43:22] ------------------------------------------
+[00:43:22] 
+[00:43:22] ------------------------------------------
+[00:43:22] stderr:
+[00:43:22] stderr:
+[00:43:22] ------------------------------------------
+[00:43:22] {"message":"not reporting region error due to nll","code":null,"level":"warning","spans":[{"file_name":"/checkout/src/test/ui/nll/closure-requirements/propagate-fail-to-approximate-longer-no-bounds.rs","byte_start":1636,"byte_end":1659,"line_start":47,"line_end":47,"column_start":9,"column_end":32,"is_primary":true,"text":[{"text":"        demand_y(x, y, x.get())","highlight_start":9,"highlight_end":32}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[],"rendered":"warning: not reporting region error due to nll\n  --> /checkout/src/test/ui/nll/closure-requirements/propagate-fail-to-approximate-longer-no-bounds.rs:47:9\n   |\nLL |         demand_y(x, y, x.get())\n   |         ^^^^^^^^^^^^^^^^^^^^^^^\n\n"}
+[00:43:22] {"message":"CallArgument","code":null,"level":"error","spans":[{"file_name":"/checkout/src/test/ui/nll/closure-requirements/propagate-fail-to-approximate-longer-no-bounds.rs","byte_start":1636,"byte_end":1659,"line_start":47,"line_end":47,"column_start":9,"column_end":32,"is_primary":true,"text":[{"text":"        demand_y(x, y, x.get())","highlight_start":9,"highlight_end":32}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[],"rendered":"error: CallArgument\n  --> /checkout/src/test/ui/nll/closure-requirements/propagate-fail-to-approximate-longer-no-bounds.rs:47:9\n   |\nLL |         demand_y(x, y, x.get())\n   |         ^^^^^^^^^^^^^^^^^^^^^^^\n\n"}
+[00:43:22] {"message":"No external requirements","code":null,"level":"note","spans":[{"file_name":"/checkout/src/test/ui/nll/closure-requirements/propagate-fail-to-approximate-longer-no-bounds.rs","byte_start":1575,"byte_end":1769,"line_start":45,"line_end":50,"column_start":47,"column_end":6,"is_primary":true,"text":[{"text":"    establish_relationships(&cell_a, &cell_b, |_outlives, x, y| {","highlight_start":47,"highlight_end":66},{"text":"        // Only works if 'x: 'y:","highlight_start":1,"highlight_end":33},{"text":"        demand_y(x, y, x.get())","highlight_start":1,"highlight_end":32},{"text":"        //~^ WARN not reporting region error due to nll","highlight_start":1,"highlight_end":56},{"text":"        //~| ERROR does not outlive free region","highlight_start":1,"highlight_end":48},{"text":"    });","highlight_start":1,"highlight_end":6}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"defining type: DefId(0/1:18 ~ propagate_fail_to_approximate_longer_no_bounds[317d]::supply[0]::{{closure}}[0]) with closure substs [\n    i16,\n    for<'r, 's, 't0, 't1, 't2> extern \"rust-call\" fn((&ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 'r)) std::cell::Cell<&ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 's)) &'_#1r u32>, &ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 't0)) std::cell::Cell<&ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 't1)) u32>, &ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 't2)) std::cell::Cell<&ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 's)) u32>))\n]","code":null,"level":"note","spans":[],"children":[],"rendered":null}],"rendered":"note: No external requirements\n  --> /checkout/src/test/ui/nll/closure-requirements/propagate-fail-to-approximate-longer-no-bounds.rs:45:47\n   |\nLL |       establish_relationships(&cell_a, &cell_b, |_outlives, x, y| {\n   |  _______________________________________________^\nLL | |         // Only works if 'x: 'y:\nLL | |         demand_y(x, y, x.get())\nLL | |         //~^ WARN not reporting region error due to nll\nLL | |         //~| ERROR does not outlive free region\nLL | |     });\n   | |_____^\n   |\n   = note: defining type: DefId(0/1:18 ~ propagate_fail_to_approximate_longer_no_bounds[317d]::supply[0]::{{closure}}[0]) with closure substs [\n               i16,\n               for<'r, 's, 't0, 't1, 't2> extern \"rust-call\" fn((&ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 'r)) std::cell::Cell<&ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 's)) &'_#1r u32>, &ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 't0)) std::cell::Cell<&ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 't1)) u32>, &ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 't2)) std::cell::Cell<&ReLateBound(DebruijnIndex(0), BrNamed(crate0:DefIndex(0:0), 's)) u32>))\n           ]\n\n"}
+[00:43:22] {"message":"No external requirements","code":null,"level":"note","spans":[{"file_name":"/checkout/src/test/ui/nll/closure-requirements/propagate-fail-to-approximate-longer-no-bounds.rs","byte_start":1463,"byte_end":1773,"line_start":44,"line_end":51,"column_start":1,"column_end":2,"is_primary":true,"text":[{"text":"fn supply<'a, 'b>(cell_a: Cell<&'a u32>, cell_b: Cell<&'b u32>) {","highlight_start":1,"highlight_end":66},{"text":"    establish_relationships(&cell_a, &cell_b, |_outlives, x, y| {","highlight_start":1,"highlight_end":66},{"text":"        // Only works if 'x: 'y:","highlight_start":1,"highlight_end":33},{"text":"        demand_y(x, y, x.get())","highlight_start":1,"highlight_end":32},{"text":"        //~^ WARN not reporting region error due to nll","highlight_start":1,"highlight_end":56},{"text":"        //~| ERROR does not outlive free region","highlight_start":1,"highlight_end":48},{"text":"    });","highlight_start":1,"highlight_end":8},{"text":"}","highlight_start":1,"highlight_end":2}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"defining type: DefId(0/0:6 ~ propagate_fail_to_approximate_longer_no_bounds[317d]::supply[0]) with substs []","code":null,"level":"note","spans":[],"children":[],"rendered":null}],"rendered":"note: No external requirements\n  --> /checkout/src/test/ui/nll/closure-requirements/propagate-fail-to-approximate-longer-no-bounds.rs:44:1\n   |\nLL | / fn supply<'a, 'b>(cell_a: Cell<&'a u32>, cell_b: Cell<&'b u32>) {\nLL | |     establish_relationships(&cell_a, &cell_b, |_outlives, x, y| {\nLL | |         // Only works if 'x: 'y:\nLL | |         demand_y(x, y, x.get())\n...  |\nLL | |     });\nLL | | }\n   | |_^\n   |\n   = note: defining type: DefId(0/0:6 ~ propagate_fail_to_approximate_longer_no_bounds[317d]::supply[0]) with substs []\n\n"}
+[00:43:22] {"message":"aborting due to previous error","code":null,"level":"error","spans":[],"children":[],"rendered":"error: aborting due to previous error\n\n"}
+[00:43:22] ------------------------------------------
+[00:43:22] 
+[00:43:22] thread '[ui] ui/nll/closure-requirements/propagate-fail-to-approximate-longer-no-bounds.rs' panicked at 'explicit panic', tools/compiletest/src/runtest.rs:3139:9
+[00:43:22] 
+[00:43:22] 
+[00:43:22] ---- [ui] ui/nll/ty-outlives/projection-one-region-closure.rs stdout ----
+[00:43:22] diff of stderr:
+[00:43:22] 
+[00:43:22] 40    |
+[00:43:22] 41    = help: consider adding an explicit lifetime bound `T: ReFree(DefId(0/0:8 ~ projection_one_region_closure[317d]::no_relationships_late[0]), BrNamed(crate0:DefIndex(1:16), 'a))`...
+[00:43:22] 42 
+[00:43:22] - error: free region `ReEarlyBound(0, 'b)` does not outlive free region `ReFree(DefId(0/0:8 ~ projection_one_region_closure[317d]::no_relationships_late[0]), BrNamed(crate0:DefIndex(1:16), 'a))`
+[00:43:22] + error: CallArgument
+[00:43:22] +   --> $DIR/projection-one-region-closure.rs:55:5
+[00:43:22] 45    |
+[00:43:22] 45    |
+[00:43:22] 46 LL |     with_signature(cell, t, |cell, t| require(cell, t));
+[00:43:22] +    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[00:43:22] 48 
+[00:43:22] 49 note: No external requirements
+[00:43:22] 50   --> $DIR/projection-one-region-closure.rs:51:1
+[00:43:22] 50   --> $DIR/projection-one-region-closure.rs:51:1
+[00:43:22] 
+[00:43:22] 88    |
+[00:43:22] 89    = help: consider adding an explicit lifetime bound `T: ReEarlyBound(0, 'a)`...
+[00:43:22] 90 
+[00:43:22] - error: free region `ReEarlyBound(1, 'b)` does not outlive free region `ReEarlyBound(0, 'a)`
+[00:43:22] + error: CallArgument
+[00:43:22] +   --> $DIR/projection-one-region-closure.rs:67:5
+[00:43:22] 93    |
+[00:43:22] 93    |
+[00:43:22] 94 LL |     with_signature(cell, t, |cell, t| require(cell, t));
+[00:43:22] +    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[00:43:22] 96 
+[00:43:22] 97 note: No external requirements
+[00:43:22] 98   --> $DIR/projection-one-region-closure.rs:62:1
+[00:43:22] 98   --> $DIR/projection-one-region-closure.rs:62:1
+[00:43:22] 
+[00:43:22] 137    |
+[00:43:22] 138    = help: consider adding an explicit lifetime bound `T: ReEarlyBound(0, 'a)`...
+[00:43:22] 139 
+[00:43:22] - error: free region `ReEarlyBound(1, 'b)` does not outlive free region `ReEarlyBound(0, 'a)`
+[00:43:22] + error: CallArgument
+[00:43:22] +   --> $DIR/projection-one-region-closure.rs:89:5
+[00:43:22] 142    |
+[00:43:22] 142    |
+[00:43:22] 143 LL |     with_signature(cell, t, |cell, t| require(cell, t));
+[00:43:22] +    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[00:43:22] 145 
+[00:43:22] 146 note: No external requirements
+[00:43:22] 147   --> $DIR/projection-one-region-closure.rs:74:1
+[00:43:22] 147   --> $DIR/projection-one-region-closure.rs:74:1
+[00:43:22] 
+[00:43:22] 
+[00:43:22] The actual stderr differed from the expected stderr.
+[00:43:22] Actual stderr saved to /checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/nll/ty-outlives/projection-one-region-closure/projection-one-region-closure.stderr
+[00:43:22] To update references, rerun the tests and pass the `--bless` flag
+[00:43:22] To only update this specific test, also pass `--test-args nll/ty-outlives/projection-one-region-closure.rs`
+[00:43:22] error: 1 errors occurred comparing output.
+[00:43:22] status: exit code: 101
+[00:43:22] status: exit code: 101
+[00:43:22] command: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "/checkout/src/test/ui/nll/ty-outlives/projection-one-region-closure.rs" "--target=x86_64-unknown-linux-gnu" "--error-format" "json" "-Zui-testing" "-C" "prefer-dynamic" "-o" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/nll/ty-outlives/projection-one-region-closure/a" "-Crpath" "-O" "-Zunstable-options" "-Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "-Zborrowck=mir" "-Zverbose" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/nll/ty-outlives/projection-one-region-closure/auxiliary" "-A" "unused"
+[00:43:22] ------------------------------------------
+[00:43:22] 
+[00:43:22] ------------------------------------------
+[00:43:22] stderr:
+[00:43:22] stderr:
+[00:43:22] ------------------------------------------
+[00:43:22] {"message":"not reporting region error due to nll","code":null,"level":"warning","spans":[{"file_name":"/checkout/src/test/ui/nll/ty-outlives/projection-one-region-closure.rs","byte_start":1582,"byte_end":1589,"line_start":55,"line_end":55,"column_start":39,"column_end":46,"is_primary":true,"text":[{"text":"    with_signature(cell, t, |cell, t| require(cell, t));","highlight_start":39,"highlight_end":46}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[],"rendered":"warning: not reporting region error due to nll\n  --> /checkout/src/test/ui/nll/ty-outlives/projection-one-region-closure.rs:55:39\n   |\nLL |     with_signature(cell, t, |cell, t| require(cell, t));\n   |                                       ^^^^^^^\n\n"}
+[00:43:22] {"message":"not reporting region error due to nll","code":null,"level":"warning","spans":[{"file_name":"/checkout/src/test/ui/nll/ty-outlives/projection-one-region-closure.rs","byte_start":1925,"byte_end":1932,"line_start":67,"line_end":67,"column_start":39,"column_end":46,"is_primary":true,"text":[{"text":"    with_signature(cell, t, |cell, t| require(cell, t));","highlight_start":39,"highlight_end":46}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[],"rendered":"warning: not reporting region error due to nll\n  --> /checkout/src/test/ui/nll/ty-outlives/projection-one-region-closure.rs:67:39\n   |\nLL |     with_signature(cell, t, |cell, t| require(cell, t));\n   |                                       ^^^^^^^\n\n"}
+[00:43:22] {"message":"not reporting region error due to nll","code":null,"level":"warning","spans":[{"file_name":"/checkout/src/test/ui/nll/ty-outlives/projection-one-region-closure.rs","byte_start":2869,"byte_end":2876,"line_start":89,"line_end":89,"column_start":39,"column_end":46,"is_primary":true,"text":[{"text":"    with_signature(cell, t, |cell, t| require(cell, t));","highlight_start":39,"highlight_end":46}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[],"rendered":"warning: not reporting region error due to nll\n  --> /checkout/src/test/ui/nll/ty-outlives/projection-one-region-closure.rs:89:39\n   |\nLL |     with_signature(cell, t, |cell, t| require(cell, t));\n   |                                       ^^^^^^^\n\n"}
+[00:43:22] {"message":"External requirements","code":null,"level":"note","spans":[{"file_name":"/checkout/src/test/ui/nll/ty-outlives/projection-one-region-closure.rs","byte_start":1572,"byte_end":1598,"line_start":55,"line_end":55,"column_start":29,"column_end":55,"is_primary":true,"text":[{"text":"    with_signature(cell, t, |cell, t| require(cell, t));","highlight_start":29,"highlight_end":55}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"defining type: DefId(0/1:19 ~ projection_one_region_closure[317d]::no_relationships_late[0]::{{closure}}[0]) with closure substs [\n    '_#1r,\n    T,\n    i32,\n    extern \"rust-call\" fn((std::cell::Cell<&'_#2r ()>, T))\n]","code":null,"level":"note","spans":[],"children":[],"rendered":null},{"message":"number of external vids: 3","code":null,"level":"note","spans":[],"children":[],"rendered":null},{"message":"where T: '_#2r","code":null,"level":"note","spans":[],"children":[],"rendered":null},{"message":"where '_#1r: '_#2r","code":null,"level":"note","spans":[],"children":[],"rendered":null}],"rendered":"note: External requirements\n  --> /checkout/src/test/ui/nll/ty-outlives/projection-one-region-closure.rs:55:29\n   |\nLL |     with_signature(cell, t, |cell, t| require(cell, t));\n   |                             ^^^^^^^^^^^^^^^^^^^^^^^^^^\n   |\n   = note: defining type: DefId(0/1:19 ~ projection_one_region_closure[317d]::no_relationships_late[0]::{{closure}}[0]) with closure substs [\n               '_#1r,\n               T,\n               i32,\n               extern \"rust-call\" fn((std::cell::Cell<&'_#2r ()>, T))\n           ]\n   = note: number of external vids: 3\n   = note: where T: '_#2r\n   = note: where '_#1r: '_#2r\n\n"}
+[00:43:22] {"message":"the parameter type `T` may not live long enough","code":{"code":"E0309","explanation":"\nTypes in type definitions have lifetimes associated with them that represent\nhow long the data stored within them is guaranteed to be live. This lifetime\nmust be as long as the data needs to be alive, and missing the constraint that\ndenotes this will cause this error.\n\n

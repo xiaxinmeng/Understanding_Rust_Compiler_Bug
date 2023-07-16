@@ -1,0 +1,2 @@
+rust
+expr as fun()(:);

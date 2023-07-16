@@ -1,0 +1,6 @@
+
+    let (llmod, link_meta) = {
+    ...
+    }
+    ...
+    link::write::run_passes(sess, llmod, sess.opts.output_type, &outputs.obj_filename));

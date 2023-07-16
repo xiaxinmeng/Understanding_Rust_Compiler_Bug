@@ -1,0 +1,2 @@
+
+rustc --bench --run

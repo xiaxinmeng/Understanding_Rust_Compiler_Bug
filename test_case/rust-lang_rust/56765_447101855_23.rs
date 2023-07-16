@@ -1,0 +1,1 @@
+\n// Basic Example:\ntrait Trait { type AssociatedType; }\n\nfn foo<T>(t: T) where T: Trait<AssociatedType = &'static str> {\n    println!(\"in foo\");\n}\n\nimpl Trait for i8 { type AssociatedType = &'static str; }\n\nfoo(3_i8);\n\n// For-Loop Example:\nlet vs = vec![1, 2, 3, 4];\nfor v in &vs {\n    match v {\n        &1 => {}\n        _ => {}\n    }\n}\n

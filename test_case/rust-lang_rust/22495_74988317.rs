@@ -1,0 +1,2 @@
+
+rustc --help | grep color

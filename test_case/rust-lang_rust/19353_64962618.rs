@@ -1,0 +1,8 @@
+ antlr
+grammar : rule + ;
+rule    : nonterminal ':' productionrule ';' ;
+productionrule : production [ '|' production ] * ;
+production : term * ;
+term : element repeats ;
+element : LITERAL | IDENTIFIER | '[' productionrule ']' ;
+repeats : [ '*' | '+' ] NUMBER ? | NUMBER ? | '?' ;

@@ -1,0 +1,1 @@
+\n\nTo avoid this error, you have to keep only one of them and remove the others.\nSo let's take our example and fix it:\n\n

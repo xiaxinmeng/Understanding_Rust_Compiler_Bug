@@ -1,0 +1,4 @@
+ rust
+trait Trait: UnwindSafe {
+    // ...
+}

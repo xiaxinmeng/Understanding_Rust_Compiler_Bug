@@ -1,0 +1,1 @@
+\n"},"level":"error","spans":[{"file_name":"/checkout/src/test/ui/generator/yield-while-local-borrowed.rs","byte_start":1774,"byte_end":1781,"line_startt overlap the\nyield or else eliminated in another way. So, for example, we might\nresolve the previous example by removing the borrow and just storing\nthe integer by value:\n\n

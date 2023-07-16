@@ -1,0 +1,3 @@
+
+rustc --version
+rustc 1.15.1 (021bd294c 2017-02-08)

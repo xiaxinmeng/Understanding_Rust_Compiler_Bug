@@ -1,0 +1,2 @@
+rust
+slice[..].method()

@@ -1,0 +1,175 @@
+
+> ~/projects/rustc-builtins$ cargo build --target 3ds --features c
+   Compiling rustc_builtins v0.1.0 (file:///home/fenrir/projects/rustc-builtins)
+error: failed to run custom build command for `rustc_builtins v0.1.0 (file:///home/fenrir/projects/rustc-builtins)`
+process didn't exit successfully: `/home/fenrir/projects/rustc-builtins/target/debug/build/rustc_builtins-49d55fc18653e6c7/build-script-build` (exit code: 101)
+--- stdout
+cargo:rerun-if-changed=build.rs
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/absvdi2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/absvsi2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/absvti2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/addtf3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/addvdi3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/addvsi3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/addvti3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/arm/aeabi_cdcmp.S
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/arm/aeabi_cdcmpeq_check_nan.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/arm/aeabi_cfcmp.S
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/arm/aeabi_cfcmpeq_check_nan.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/arm/aeabi_dcmp.S
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/arm/aeabi_div0.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/arm/aeabi_drsub.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/arm/aeabi_fcmp.S
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/arm/aeabi_frsub.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/apple_versioning.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/ashlti3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/ashrti3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/arm/bswapdi2.S
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/arm/bswapsi2.S
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/clear_cache.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/arm/clzdi2.S
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/arm/clzsi2.S
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/clzti2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/cmpdi2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/cmpti2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/comparedf2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/arm/comparesf2.S
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/ctzdi2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/ctzsi2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/ctzti2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/divdc3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/divdf3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/arm/divmodsi4.S
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/divsc3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/divsf3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/arm/divsi3.S
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/divtf3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/divti3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/divxc3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/extendhfsf2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/extendsfdf2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/ffsdi2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/ffsti2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/fixdfdi.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/fixdfsi.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/fixdfti.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/fixsfdi.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/fixsfsi.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/fixsfti.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/fixunsdfdi.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/fixunsdfsi.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/fixunsdfti.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/fixunssfdi.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/fixunssfsi.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/fixunssfti.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/fixunsxfdi.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/fixunsxfsi.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/fixunsxfti.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/fixxfdi.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/fixxfti.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/floatdidf.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/floatdisf.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/floatdixf.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/floatsidf.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/floatsisf.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/floattidf.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/floattisf.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/floattixf.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/floatundidf.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/floatundisf.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/floatundixf.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/floatunsidf.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/floatunsisf.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/floatuntidf.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/floatuntisf.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/floatuntixf.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/gcc_personality_v0.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/int_util.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/lshrti3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/arm/modsi3.S
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/modti3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/muldc3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/muldf3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/muloti4.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/mulsc3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/mulsf3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/multf3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/multi3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/mulvdi3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/mulvsi3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/mulvti3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/mulxc3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/negdf2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/negdi2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/negsf2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/negti2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/negvdi2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/negvsi2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/negvti2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/paritydi2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/paritysi2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/parityti2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/popcountdi2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/popcountsi2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/popcountti2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/powidf2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/powisf2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/powitf2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/powixf2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/subdf3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/subsf3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/subtf3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/subvdi3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/subvsi3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/subvti3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/arm/switch16.S
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/arm/switch32.S
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/arm/switch8.S
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/arm/switchu8.S
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/arm/sync_synchronize.S
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/trampoline_setup.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/truncdfhf2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/truncdfsf2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/truncsfhf2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/ucmpdi2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/ucmpti2.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/arm/udivmodsi4.S
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/udivmodti4.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/arm/udivsi3.S
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/udivti3.c
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/arm/umodsi3.S
+cargo:rerun-if-changed=compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/umodti3.c
+TARGET = Some("3ds")
+OPT_LEVEL = Some("0")
+PROFILE = Some("debug")
+TARGET = Some("3ds")
+debug=true opt-level=0
+HOST = Some("x86_64-unknown-linux-gnu")
+TARGET = Some("3ds")
+TARGET = Some("3ds")
+HOST = Some("x86_64-unknown-linux-gnu")
+CC_3ds = None
+CC_3ds = None
+TARGET_CC = None
+CC = None
+HOST = Some("x86_64-unknown-linux-gnu")
+TARGET = Some("3ds")
+HOST = Some("x86_64-unknown-linux-gnu")
+CFLAGS_3ds = None
+CFLAGS_3ds = None
+TARGET_CFLAGS = None
+CFLAGS = None
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-g" "-fPIC" "-fno-builtin" "-fvisibility=hidden" "-fomit-frame-pointer" "-ffreestanding" "-o" "/home/fenrir/projects/rustc-builtins/target/3ds/debug/build/rustc_builtins-49d55fc18653e6c7/out/compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/absvdi2.o" "-c" "compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/absvdi2.c"
+cargo:warning=cc: error: compiler-rt/compiler-rt-cdylib/compiler-rt/lib/builtins/absvdi2.c: No such file or directory
+cargo:warning=cc: fatal error: no input files
+cargo:warning=compilation terminated.
+ExitStatus(ExitStatus(256))
+
+
+command did not execute successfully, got: exit code: 1
+
+
+
+--- stderr
+thread 'main' panicked at 'explicit panic', /home/fenrir/.cargo/registry/src/github.com-1ecc6299db9ec823/gcc-0.3.35/src/lib.rs:897
+note: Run with `RUST_BACKTRACE=1` for a backtrace.

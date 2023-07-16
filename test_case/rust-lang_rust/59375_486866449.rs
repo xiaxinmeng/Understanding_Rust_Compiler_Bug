@@ -1,0 +1,1 @@
+$ perf record cargo test --features=decode_test test_encode_decode::bitrate_aom

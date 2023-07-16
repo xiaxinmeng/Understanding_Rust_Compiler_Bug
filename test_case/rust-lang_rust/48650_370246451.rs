@@ -1,0 +1,12 @@
+ warning: could not delete temp file: C:\Users\burtd\.rustup\tmp\xidhk4wkgb6ipg1j_file
+warning: could not delete temp file: C:\Users\burtd\.rustup\tmp\l7ygfdsq2ahokj5s_file
+warning: could not delete temp file: C:\Users\burtd\.rustup\tmp\p4anr930syjhavu7_file
+warning: could not delete temp file: C:\Users\burtd\.rustup\tmp\h396aadq61lgtz1w_file
+warning: could not delete temp file: C:\Users\burtd\.rustup\tmp\2_5r3rgro0rujxbk_file
+warning: could not delete temp file: C:\Users\burtd\.rustup\tmp\ijd8pyhvwtwdylj8_file
+warning: could not delete temp file: C:\Users\burtd\.rustup\tmp\qzd6c8i0khyhmnl0_file
+warning: could not delete temp file: C:\Users\burtd\.rustup\tmp\rdpkqr7urr7neqh2_file
+warning: could not delete temp file: C:\Users\burtd\.rustup\tmp\7wrz80llfxpd87up_file
+warning: could not delete temp file: C:\Users\burtd\.rustup\tmp\0emrlead82ii3gi__file
+warning: could not delete temp file: C:\Users\burtd\.rustup\tmp\_1h2o61ij5p9kzar_file
+warning: could not delete temp file: C:\Users\burtd\.rustup\tmp\1er02ceun3c8ro9n_file

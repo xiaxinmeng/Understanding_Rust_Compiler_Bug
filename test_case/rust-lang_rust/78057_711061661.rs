@@ -1,0 +1,1 @@
+error: to use a constant of type `Opaque` in a pattern, `Opaque` must be annotated with `#[derive(PartialEq, Eq)]

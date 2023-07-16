@@ -1,0 +1,5 @@
+
+(gdb) bt
+#0  0xfb18b3e8 in void std::__insertion_sort<__gnu_cxx::__normal_iterator<std::pair<unsigned long long, llvm::Function*>*, std::vector<std::pair<unsigned long long, llvm::Function*>, std::allocator<std::pair<unsigned long long, llvm::Function*> > > >, __gnu_cxx::__ops::_Iter_comp_iter<llvm::less_first> >(__gnu_cxx::__normal_iterator<std::pair<unsigned long long, llvm::Function*>*, std::vector<std::pair<unsigned long long, llvm::Function*>, std::allocator<std::pair<unsigned long long, llvm::Function*> > > >, __gnu_cxx::__normal_iterator<std::pair<unsigned long long, llvm::Function*>*, std::vector<std::pair<unsigned long long, llvm::Function*>, std::allocator<std::pair<unsigned long long, llvm::Function*> > > >, __gnu_cxx::__ops::_Iter_comp_iter<llvm::less_first>) () from /root/.rustup/toolchains/stable-arm-unknown-linux-gnueabihf/bin/../lib/librustc_driver-b281b647ba3a1a96.so
+#1  0xf454b000 in ?? ()
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)

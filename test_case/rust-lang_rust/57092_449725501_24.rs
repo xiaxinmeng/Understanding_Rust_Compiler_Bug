@@ -1,0 +1,1 @@
+\n\nTo fix this, ensure that any declared variables are initialized before being\nused. Example:\n\n

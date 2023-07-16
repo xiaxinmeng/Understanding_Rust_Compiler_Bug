@@ -1,0 +1,4 @@
+toml
+[profile.release]
+lto = "fat"
+codegen-units = 1

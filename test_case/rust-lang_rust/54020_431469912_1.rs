@@ -1,0 +1,1 @@
+\n\nIn this case, `Foo` is undefined, so it inherently isn't anything, and\ndefinitely not a struct.\n\n

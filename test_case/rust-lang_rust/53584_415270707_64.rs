@@ -1,0 +1,1 @@
+\n\nThe machine code for `foo::<u8>()`, `foo::<bool>()`, `foo::<String>()`, or any\nother type substitution is different. Hence the compiler generates the\nimplementation on-demand. If you call `foo()` with a `bool` parameter, the\ncompiler will only generate code for `foo::<bool>()`. Whenwhere Self: Sized {\n\n}\n

@@ -1,0 +1,2 @@
+
+export L="./librepro.a"

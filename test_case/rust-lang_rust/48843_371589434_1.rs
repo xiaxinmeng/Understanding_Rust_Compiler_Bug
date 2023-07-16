@@ -1,0 +1,1 @@
+`curl https://api.travis-ci.org/v3/job/350884125/log.txt --compressed --silent | grep "Building\|Testing\|Check\|[Ff]inished"cargo/issues

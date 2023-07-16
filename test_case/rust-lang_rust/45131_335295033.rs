@@ -1,0 +1,4 @@
+
+     Running `rustc --crate-name build_script_build /home/ben/.cargo/registry/src/github.com-1ecc6299db9ec823/python3-sys-0.1.3/build.rs --crate-type bin --emit=dep-info,link -C opt-level=3 --cfg 'feature="default"' --cfg 'feature="extension-module"' --cfg 'feature="python-3"' -C metadata=60c44052e847b67b -C extra-filename=-60c44052e847b67b --out-dir /home/ben/rust-lather/target/release/build/python3-sys-60c44052e847b67b -L dependency=/home/ben/rust-lather/target/release/deps --extern regex=/home/ben/rust-lather/target/release/deps/libregex-6bf8361efa00f7a6.rlib --cap-lints allow -Ccodegen-units=4 -C target-cpu=native -C codegen-units=32 -Z thinlto`
+rustc: /checkout/src/llvm/lib/Transforms/Scalar/GVN.cpp:1933: bool llvm::GVN::replaceOperandsWithConsts(llvm::Instruction*) const: Assertion `!isa<Constant>(Operand) && "Replacing constants with constants is invalid"' failed.
+error: Could not compile `python3-sys`.

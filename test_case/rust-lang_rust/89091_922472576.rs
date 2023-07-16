@@ -1,0 +1,3 @@
+
+[llvm]
+ninja=false

@@ -1,0 +1,3 @@
+ rust
+if (foo)
+   bar;

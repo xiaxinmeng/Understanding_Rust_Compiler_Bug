@@ -1,0 +1,7 @@
+
+error: linking with `cc` failed: exit status: 1
+   |
+   = note: "cc" "-m64" "-arch" "x86_64" "/Users/runner/work/rust/rust/build/x86_64-apple-darwin/test/ui/lint/dead-code/unused-variant-pub/unused-variant-pub.unused_variant_pub.9641604c-cgu.0.rcgu.o" "-L" "/Users/runner/work/rust/rust/build/x86_64-apple-darwin/native/rust-test-helpers" "-L" "/Users/runner/work/rust/rust/build/x86_64-apple-darwin/test/ui/lint/dead-code/unused-variant-pub/auxiliary" "-L" "/Users/runner/work/rust/rust/build/x86_64-apple-darwin/stage2/lib/rustlib/x86_64-apple-darwin/lib" "-L" "/Users/runner/work/rust/rust/build/x86_64-apple-darwin/stage2/lib/rustlib/x86_64-apple-darwin/lib" "-lstd-21bc79810f65aca7" "/Users/runner/work/rust/rust/build/x86_64-apple-darwin/stage2/lib/rustlib/x86_64-apple-darwin/lib/libcompiler_builtins-619b8ddb39045aa8.rlib" "-lSystem" "-lresolv" "-lc" "-lm" "-liconv" "-L" "/Users/runner/work/rust/rust/build/x86_64-apple-darwin/stage2/lib/rustlib/x86_64-apple-darwin/lib" "-o" "/Users/runner/work/rust/rust/build/x86_64-apple-darwin/test/ui/lint/dead-code/unused-variant-pub/unused-variant-pub" "-Wl,-dead_strip" "-nodefaultlibs" "-Wl,-z,origin" "-Wl,-rpath,@loader_path/../../../../../stage2/lib/rustlib/x86_64-apple-darwin/lib"
+   = note: ld: warning: directory not found for option '-L/Users/runner/work/rust/rust/build/x86_64-apple-darwin/test/ui/lint/dead-code/unused-variant-pub/auxiliary'
+           ld: unknown option: -z
+           clang: error: linker command failed with exit code 1 (use -v to see invocation)

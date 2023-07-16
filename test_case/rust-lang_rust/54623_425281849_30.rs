@@ -1,0 +1,1 @@
+compile_fail,E0562\nfn main() {\n    let count_to_ten: impl Iterator<Item=usize> = 0..10;\n     and inherent method\n    //        return types\n    for i in count_to_ten {\n        println!(\"{}\", i);\n    }\n}\n

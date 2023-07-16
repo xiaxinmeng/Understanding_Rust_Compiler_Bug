@@ -1,0 +1,1 @@
+compile_fail,E0107\nstruct Foo<'a, 'b>(&'a str, &'b str);\nenum Bar { A, B, C }\n\nstruct Baz<'a> {\n    foo: Foo<'a>, // error: wrong number of lifetime arguments:\n                  //        expected 2, found 1\n    bar: Bar<'a>, // error: wrong number of lifetime arguments:\n                  //        expected 0, found 1\n}\n

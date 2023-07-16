@@ -1,0 +1,1 @@
+compile_fail,E0384\nfn main() {\n    let x = 3;\n    x = 5; // error, reassignment of immutable variable\n}\n

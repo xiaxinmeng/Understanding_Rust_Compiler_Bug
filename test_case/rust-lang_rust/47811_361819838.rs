@@ -1,0 +1,1 @@
+ warning[E0170]: pattern binding `L` is named the same as one of the variants of the type `Bit` 

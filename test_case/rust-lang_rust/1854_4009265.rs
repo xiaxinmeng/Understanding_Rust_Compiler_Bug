@@ -1,0 +1,3 @@
+
+vec::iter(v) fn {
+}

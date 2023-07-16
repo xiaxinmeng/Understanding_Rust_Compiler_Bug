@@ -1,0 +1,2 @@
+\nuse std::fmt;\n\n// Restrict the input type to types that implement Debug.\nfn some_func<T: fmt::Debug>(foo: T) {\n    println!(\"{:?}\", foo);\n}\n\nfn main()  = note: required by `std::alloc::GlobalAlloc::alloc`\n\n"}
+[00:49:31] {"message":"the trait bound `usize: std::alloc::GlobalAlloc` is not satisfied","code":{"code":"E0277","explanation":"\nYou tried to use a type which doesn't implement some trait in a place which\nexpected that trait. Erroneous code example:\n\n

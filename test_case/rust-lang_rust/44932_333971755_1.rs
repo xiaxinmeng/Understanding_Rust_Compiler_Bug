@@ -1,0 +1,3 @@
+rust
+    ptr::null::<ToString>()
+    

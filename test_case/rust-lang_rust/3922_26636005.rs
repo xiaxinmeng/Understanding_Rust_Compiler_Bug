@@ -1,0 +1,7 @@
+ rust
+upcall_rust_personality
+upcall_call_shim_on_c_stack
+upcall_call_shim_on_rust_stack
+upcall_new_stack
+upcall_del_stack
+upcall_reset_stack_limit

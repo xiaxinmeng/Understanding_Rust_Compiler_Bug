@@ -1,0 +1,26 @@
+plain
+configure: rust.channel         := nightly
+configure: rust.debug-assertions := True
+configure: llvm.assertions      := True
+configure: dist.missing-tools   := True
+configure: build.configure-args := ['--enable-sccache', '--disable-manage-submodu ...
+configure: writing `config.toml` in current directory
+configure: 
+configure: run `python /checkout/x.py --help`
+configure: 
+---
+skip untracked path src/llvm-project/ during rustfmt invocations
+Diff in /checkout/library/core/src/intrinsics.rs at line 1858:
+     }
+ 
+Running `"/checkout/obj/build/x86_64-unknown-linux-gnu/stage0/bin/rustfmt" "--config-path" "/checkout" "--edition" "2018" "--unstable-features" "--skip-children" "--check" "/checkout/library/core/src/intrinsics.rs"` failed.
+If you're running `tidy`, try again with `--bless`. Or, if you just want to format code, run `./x.py fmt` instead.
+     if cfg!(debug_assertions)
+-        && !(is_aligned_and_not_null(src)
+-            && is_aligned_and_not_null(dst)
+-            /*&& is_nonoverlapping(src, dst, count)*/)
++        && !(is_aligned_and_not_null(src) && is_aligned_and_not_null(dst)/*&& is_nonoverlapping(src, dst, count)*/)
+     {
+         // Not panicking to keep codegen impact smaller.
+         abort();
+Build completed unsuccessfully in 0:00:21

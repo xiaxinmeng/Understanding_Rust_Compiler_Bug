@@ -1,0 +1,2 @@
+rust
+const G: () = F();

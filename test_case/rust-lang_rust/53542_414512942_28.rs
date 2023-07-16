@@ -1,0 +1,1 @@
+\n\nIn order to fix this error, verify that the type you're using does implement\nthe trait. Examplenthe various methods (and other items) related to the implementation.\n\nThis works fine, but when the method gains generic parameters, we can have a\nproblem.\n\nUsually, generic parameters get _monomorphized_. For example, if I have\n\n

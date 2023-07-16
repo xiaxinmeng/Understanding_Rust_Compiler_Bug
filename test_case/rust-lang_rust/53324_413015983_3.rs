@@ -1,0 +1,1 @@
+\n\nThis problem can be solved by specifying from which trait we want to use the\n`Bar` type:\n\n

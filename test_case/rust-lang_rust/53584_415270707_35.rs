@@ -1,0 +1,1 @@
+compile_fail,E0401\nfn foo<T>(x: T) {\n    fn bar(y: T) { // T is defined in the \"outer\" function\n        // ..\n    }\n    bar(x);\n}\n

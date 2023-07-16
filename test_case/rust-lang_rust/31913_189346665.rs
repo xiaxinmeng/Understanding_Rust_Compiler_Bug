@@ -1,0 +1,23 @@
+
+   1:     0x7f0b43b0b0d0 - sys::backtrace::tracing::imp::write::h605e9c1f7ada7ab7hbv
+   2:     0x7f0b43b1448b - panicking::default_handler::_$u7b$$u7b$closure$u7d$$u7d$::closure.44444
+   3:     0x7f0b43b13fe3 - panicking::default_handler::h6b489e2028b5422aFQz
+   4:     0x7f0b43ad87bc - sys_common::unwind::begin_unwind_inner::h2bd8af3374a15fceAZt
+   5:     0x7f0b43ad9258 - sys_common::unwind::begin_unwind_fmt::h3b596f09d971ea5eGYt
+   6:     0x7f0b43b08ba1 - rust_begin_unwind
+   7:     0x7f0b43b5b6bf - panicking::panic_fmt::h71118c177c5714b4lcM
+   8:     0x7f0b43b5c1b8 - panicking::panic::h62d0499da58dfdf5SaM
+   9:     0x7f0b440f7c51 - pretty::pretty_print_input::_$u7b$$u7b$closure$u7d$$u7d$::closure.36785
+  10:     0x7f0b440f257c - driver::phase_3_run_analysis_passes::_$u7b$$u7b$closure$u7d$$u7d$::closure.36783
+  11:     0x7f0b440f0bb8 - middle::ty::context::ctxt<'tcx>::create_and_enter::h10434081139749583753
+  12:     0x7f0b440ee0e7 - driver::phase_3_run_analysis_passes::h5320998580799269994
+  13:     0x7f0b43ffe847 - pretty::pretty_print_input::h5b47642c7d3d0daasdc
+  14:     0x7f0b43ff36f6 - run_compiler::heb165938024abeeaHOc
+  15:     0x7f0b43ff1061 - sys_common::unwind::try::try_fn::h10705131437883225394
+  16:     0x7f0b43b08b2b - __rust_try
+  17:     0x7f0b43b010dd - sys_common::unwind::inner_try::ha3e3bb972be5f331CWt
+  18:     0x7f0b43ff18b0 - boxed::F.FnBox<A>::call_box::h15933834349413702402
+  19:     0x7f0b43b12a59 - sys::thread::Thread::new::thread_start::h219f55ad3bfdbbebZNy
+  20:     0x7f0b3c299423 - start_thread
+  21:     0x7f0b4378acbc - clone
+  22:                0x0 - <unknown>

@@ -1,0 +1,56 @@
+
+
+
+
+CFG_PREFIX           := /usr/local
+CFG_LOCAL_RUST_ROOT  := /usr/local
+CFG_LLVM_ROOT        := 
+CFG_ANDROID_CROSS_PATH := /opt/ndk_standalone
+CFG_MINGW32_CROSS_PATH := 
+CFG_BUILD            := x86_64-apple-darwin
+CFG_HOST             := x86_64-apple-darwin
+CFG_TARGET           := x86_64-apple-darwin
+CFG_LOCALSTATEDIR    := /var/lib
+CFG_SYSCONFDIR       := /etc
+CFG_DATADIR          := /usr/local/share
+CFG_INFODIR          := /usr/local/share/info
+CFG_MANDIR           := /usr/local/share/man
+CFG_LIBDIR           := /usr/local/lib
+CFG_PERL             := /usr/bin/perl
+CFG_CURLORWGET       := /usr/bin/curl
+CFG_PYTHON           := /usr/local/bin/python2.7
+CFG_GIT              := /usr/local/bin/git
+CFG_CLANG            := /usr/bin/clang++
+CFG_CCACHE           := 
+CFG_GCC              := /Users/carter/bin/gcc
+CFG_LD               := /usr/bin/ld
+CFG_VALGRIND         := /usr/local/bin/valgrind
+CFG_PERF             := 
+CFG_ISCC             := 
+CFG_LLNEXTGEN        := 
+CFG_PANDOC           := /Users/carter/Library/Haskell/bin/pandoc
+CFG_PDFLATEX         := /usr/texbin/pdflatex
+CFG_XETEX            := /usr/texbin/xetex
+CFG_LUATEX           := /usr/texbin/luatex
+CFG_NODE             := /usr/local/bin/node
+CFG_GDB              := /usr/bin/gdb
+CFG_ADB              := 
+CFG_SRC_DIR          := /Users/carter/Desktop/repoScratcher/rust/
+CFG_BUILD_DIR        := /Users/carter/Desktop/repoScratcher/rust/build/
+CFG_OSTYPE           := apple-darwin
+CFG_CPUTYPE          := x86_64
+CFG_CONFIGURE_ARGS   := 
+CFG_PREFIX           := /usr/local
+CFG_BUILD            := x86_64-apple-darwin
+CFG_HOST             := x86_64-apple-darwin
+CFG_TARGET           := x86_64-apple-darwin
+CFG_C_COMPILER       := gcc
+CFG_LIBDIR           := lib
+CFG_DISABLE_MANAGE_SUBMODULES := 
+CFG_ANDROID_CROSS_PATH := /opt/ndk_standalone
+CFG_MINGW32_CROSS_PATH := 
+CFG_MANDIR           := /usr/local/share/man
+CFG_LLVM_ROOT        := 
+CFG_LLVM_SRC_DIR     := /Users/carter/Desktop/repoScratcher/rust/src/llvm/
+CFG_LLVM_BUILD_DIR_x86_64_apple_darwin := /Users/carter/Desktop/repoScratcher/rust/build/x86_64-apple-darwin/llvm
+CFG_LLVM_INST_DIR_x86_64_apple_darwin := /Users/carter/Desktop/repoScratcher/rust/build/x86_64-apple-darwin/llvm/Release+Asserts

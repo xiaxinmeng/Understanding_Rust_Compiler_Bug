@@ -1,0 +1,2 @@
+shell
+$ cargo +aarchdev build

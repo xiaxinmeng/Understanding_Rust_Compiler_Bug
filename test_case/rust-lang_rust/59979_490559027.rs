@@ -1,0 +1,1 @@
+[02:12:48] warning: spurious network error (2 tries remaining): failed to get 200 response from `https://static.crates.io/crates/termcolor/termcolor-1.0.1.crate`, got 504

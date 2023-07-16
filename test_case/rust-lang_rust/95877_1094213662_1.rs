@@ -1,0 +1,2 @@
+
+Linux iceyself 5.15.28-1-MANJARO #1 SMP PREEMPT Fri Mar 11 14:12:57 UTC 2022 x86_64 GNU/Linux

@@ -1,0 +1,2 @@
+\n\nA mutable reference can be created with `&mut`.\n\nSometimes we don't want a reference, but a duplicate. All types marked `Clone`\ncan be duplicated by calling `.clone()`. Subsequent changes to a clone do not\naffect the original variable.\n\nMost types in the standard library are marked `Clone`. The exe_mut();\n   |     - mutable borrow later used here\n\n"}
+[00:47:58] {"message":"cannot borrow `x` as mutable more than once at a time","code":{"code":"E0499","explanation":"\nA variable was borrowed as mutable more than once. Erroneous code example:\n\n

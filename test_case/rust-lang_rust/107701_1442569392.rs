@@ -1,0 +1,19 @@
+
+ iter::bench_enumerate_chain_ref_sum   3,796,358       2,140,264           -1,656,094  -43.62%   x 1.77 
+ iter::bench_filter_chain_count        971,643         1,052,222               80,579    8.29%   x 0.92 
+ iter::bench_filter_chain_ref_count    3,912,179       2,389,902           -1,522,277  -38.91%   x 1.64 
+ iter::bench_filter_chain_ref_sum      1,726,115       1,668,260              -57,855   -3.35%   x 1.03 
+ iter::bench_flat_map_chain_ref_sum    4,929,951       6,990,377            2,060,426   41.79%   x 0.71 
+ iter::bench_for_each_chain_loop       3,881,896       1,900,245           -1,981,651  -51.05%   x 2.04 
+ iter::bench_for_each_chain_ref_fold   3,971,489       2,058,431           -1,913,058  -48.17%   x 1.93 
+ iter::bench_fuse_chain_ref_sum        3,870,879       2,390,027           -1,480,852  -38.26%   x 1.62 
+ iter::bench_inspect_chain_ref_sum     3,903,231       2,059,174           -1,844,057  -47.24%   x 1.90 
+ iter::bench_peekable_chain_ref_sum    3,912,336       2,059,438           -1,852,898  -47.36%   x 1.90 
+ iter::bench_peekable_chain_sum        569,274         474,788                -94,486  -16.60%   x 1.20 
+ iter::bench_skip_chain_ref_sum        3,798,435       2,138,934           -1,659,501  -43.69%   x 1.78 
+ iter::bench_skip_chain_sum            692,548         475,012               -217,536  -31.41%   x 1.46 
+ iter::bench_skip_while_chain_ref_sum  3,781,100       3,897,186              116,086    3.07%   x 0.97 
+ iter::bench_skip_while_chain_sum      462,010         475,298                 13,288    2.88%   x 0.97 
+ iter::bench_slice_chain_ref_sum       554             436                       -118  -21.30%   x 1.27 
+ iter::bench_take_while_chain_ref_sum  1,244,736       1,056,973             -187,763  -15.08%   x 1.18 
+ iter::bench_take_while_chain_sum      256,337         501,667                245,330   95.71%   x 0.51 

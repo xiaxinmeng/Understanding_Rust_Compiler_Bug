@@ -1,0 +1,12 @@
+toml
+# Cargo.toml
+[package]
+name = "foo"
+version = "0.1.0"
+edition = "2021"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"

@@ -1,0 +1,3 @@
+\n\nFor more information about casts, take a look at The Book:\nht not `u32`\n  --> /checkout/src/test/ui/mismatched_types/cast-rfc0401.rs:51:13\n   |\nLL |     let _ = 0x61u32 as char; //~ ERROR can be cast as\n   |             ^^^^^^^^^^^^^^^\n\n"}
+[00:46:20] thread 'main' panicked at 'Some tests failed', tools/compiletest/src/main.rs:498:22
+[00:46:20] {"message":"casting `bool` as `f32` is invalid","code":{"code":"E0606","explanation":"\nAn incompatible cast was attempted.\n\nErroneous code example:\n\n

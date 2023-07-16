@@ -1,0 +1,7 @@
+
+  = note: /usr/local/Cellar/mingw-w64/7.0.0_2/toolchain-x86_64/bin/x86_64-w64-mingw32-ld: /Users/lu_zero/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-pc-windows-gnu/lib/dllcrt2.o:crtdll.c:(.text+0x16): undefined reference to `_encode_pointer'
+          /usr/local/Cellar/mingw-w64/7.0.0_2/toolchain-x86_64/bin/x86_64-w64-mingw32-ld: /Users/lu_zero/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-pc-windows-gnu/lib/dllcrt2.o:crtdll.c:(.text+0x1ac): undefined reference to `_decode_pointer'
+          /usr/local/Cellar/mingw-w64/7.0.0_2/toolchain-x86_64/bin/x86_64-w64-mingw32-ld: /Users/lu_zero/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-pc-windows-gnu/lib/dllcrt2.o:crtdll.c:(.text+0x1c4): undefined reference to `_decode_pointer'
+          /usr/local/Cellar/mingw-w64/7.0.0_2/toolchain-x86_64/bin/x86_64-w64-mingw32-ld: /Users/lu_zero/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-pc-windows-gnu/lib/dllcrt2.o:crtdll.c:(.rdata$.refptr.__onexitend[.refptr.__onexitend]+0x0): undefined reference to `__onexitend'
+          /usr/local/Cellar/mingw-w64/7.0.0_2/toolchain-x86_64/bin/x86_64-w64-mingw32-ld: /Users/lu_zero/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/x86_64-pc-windows-gnu/lib/dllcrt2.o:crtdll.c:(.rdata$.refptr.__onexitbegin[.refptr.__onexitbegin]+0x0): undefined reference to `__onexitbegin'
+          collect2: error: ld returned 1 exit status

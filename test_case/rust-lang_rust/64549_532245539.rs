@@ -1,0 +1,95 @@
+
+thread '<unnamed>' panicked at 'attempt to add with overflow', main.rs:5:13
+stack backtrace:
+   0: backtrace::backtrace::libunwind::trace
+             at /cargo/registry/src/github.com-1ecc6299db9ec823/backtrace-0.3.37/src/backtrace/libunwind.rs:88
+   1: backtrace::backtrace::trace_unsynchronized
+             at /cargo/registry/src/github.com-1ecc6299db9ec823/backtrace-0.3.37/src/backtrace/mod.rs:66
+   2: std::sys_common::backtrace::_print_fmt
+             at src/libstd/sys_common/backtrace.rs:77
+   3: <std::sys_common::backtrace::_print::DisplayBacktrace as core::fmt::Display>::fmt
+             at src/libstd/sys_common/backtrace.rs:61
+   4: core::fmt::write
+             at src/libcore/fmt/mod.rs:1030
+   5: std::io::Write::write_fmt
+             at src/libstd/io/mod.rs:1412
+   6: std::sys_common::backtrace::_print
+             at src/libstd/sys_common/backtrace.rs:65
+   7: std::sys_common::backtrace::print
+             at src/libstd/sys_common/backtrace.rs:50
+   8: std::panicking::default_hook::{{closure}}
+             at src/libstd/panicking.rs:200
+   9: std::panicking::default_hook
+             at src/libstd/panicking.rs:214
+  10: std::panicking::rust_panic_with_hook
+             at src/libstd/panicking.rs:477
+  11: std::panicking::continue_panic_fmt
+             at src/libstd/panicking.rs:384
+  12: rust_begin_unwind
+             at src/libstd/panicking.rs:311
+  13: core::panicking::panic_fmt
+             at src/libcore/panicking.rs:85
+  14: core::panicking::panic
+             at src/libcore/panicking.rs:49
+  15: main::main::{{closure}}::{{closure}}
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: Any', src/libcore/result.rs:1165:5
+stack backtrace:
+   0: backtrace::backtrace::libunwind::trace
+             at /cargo/registry/src/github.com-1ecc6299db9ec823/backtrace-0.3.37/src/backtrace/libunwind.rs:88
+   1: backtrace::backtrace::trace_unsynchronized
+             at /cargo/registry/src/github.com-1ecc6299db9ec823/backtrace-0.3.37/src/backtrace/mod.rs:66
+   2: std::sys_common::backtrace::_print_fmt
+             at src/libstd/sys_common/backtrace.rs:77
+   3: <std::sys_common::backtrace::_print::DisplayBacktrace as core::fmt::Display>::fmt
+             at src/libstd/sys_common/backtrace.rs:61
+   4: core::fmt::write
+             at src/libcore/fmt/mod.rs:1030
+   5: std::io::Write::write_fmt
+             at src/libstd/io/mod.rs:1412
+   6: std::sys_common::backtrace::_print
+             at src/libstd/sys_common/backtrace.rs:65
+   7: std::sys_common::backtrace::print
+             at src/libstd/sys_common/backtrace.rs:50
+   8: std::panicking::default_hook::{{closure}}
+             at src/libstd/panicking.rs:200
+   9: std::panicking::default_hook
+             at src/libstd/panicking.rs:214
+  10: std::panicking::rust_panic_with_hook
+             at src/libstd/panicking.rs:477
+  11: std::panicking::continue_panic_fmt
+             at src/libstd/panicking.rs:384
+  12: rust_begin_unwind
+             at src/libstd/panicking.rs:311
+  13: core::panicking::panic_fmt
+             at src/libcore/panicking.rs:85
+  14: core::result::unwrap_failed
+             at src/libcore/result.rs:1165
+  15: core::result::Result<T,E>::unwrap
+  16: main::main::{{closure}}
+  17: core::iter::traits::iterator::Iterator::for_each::call::{{closure}}
+  18: core::iter::adapters::map_fold::{{closure}}
+  19: core::iter::traits::iterator::Iterator::fold::ok::{{closure}}
+  20: core::iter::traits::iterator::Iterator::try_fold
+  21: core::iter::traits::iterator::Iterator::fold
+  22: <core::iter::adapters::Map<I,F> as core::iter::traits::iterator::Iterator>::fold
+  23: core::iter::traits::iterator::Iterator::for_each
+  24: main::main
+  25: std::rt::lang_start::{{closure}}
+  26: std::rt::lang_start_internal::{{closure}}
+             at src/libstd/rt.rs:49
+  27: std::panicking::try::do_call
+             at src/libstd/panicking.rs:296
+  28: __rust_maybe_catch_panic
+             at src/libpanic_unwind/lib.rs:80
+  29: std::panicking::try
+             at src/libstd/panicking.rs:275
+  30: std::panic::catch_unwind
+             at src/libstd/panic.rs:394
+  31: std::rt::lang_start_internal
+             at src/libstd/rt.rs:48
+  32: std::rt::lang_start
+  33: main
+  34: __libc_start_main
+  35: _start
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.

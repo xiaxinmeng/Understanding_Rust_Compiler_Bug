@@ -1,0 +1,32 @@
+
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+note: Run with `RUST_BACKTRACE=1` for a backtrace.
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17
+thread '<unnamed>' panicked at 'end_activity() was called but a different activity was running', src/librustc/util/profiling.rs:190:17

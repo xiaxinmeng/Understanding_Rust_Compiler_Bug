@@ -1,0 +1,1 @@
+compile_fail,E0690\n#[repr(transparent)]\nstruct LengthWithUnit<U> { // error: transparent struct needs exactly one\n    value: f32,            //        non-zero-sized field, but has 2\n    unit: U,\n}\n

@@ -1,0 +1,7 @@
+rust
+{}
+{ test(); }
+{}
+{
+    if false {}
+}

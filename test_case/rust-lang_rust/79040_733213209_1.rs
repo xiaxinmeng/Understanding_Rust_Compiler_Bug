@@ -1,0 +1,1 @@
+tcx.sess.diagnostic().steal_diagnostic(span, StashKey::ItemNoType)

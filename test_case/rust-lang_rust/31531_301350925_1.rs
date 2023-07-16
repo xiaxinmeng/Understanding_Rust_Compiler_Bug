@@ -1,0 +1,6 @@
+
+$ nm test.0.o
+0000000000000000 R FOO
+0000000000000000 T main
+                 U _ZN3std2rt10lang_start17he6ada39161c356c2E
+0000000000000000 t _ZN4test4main17hf4d700377696cbb0E

@@ -1,0 +1,1 @@
+\n\nHowever, be careful when two types have a common associated type:\n\n

@@ -1,0 +1,3 @@
+toml
+[profile.release]
+opt-level = "s"

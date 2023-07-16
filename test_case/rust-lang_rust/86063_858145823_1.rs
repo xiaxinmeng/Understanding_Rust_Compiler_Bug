@@ -1,0 +1,3 @@
+
+#!/bin/sh
+... your code to test the regression ...

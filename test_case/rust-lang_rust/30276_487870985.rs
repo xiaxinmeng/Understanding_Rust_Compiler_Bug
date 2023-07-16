@@ -1,0 +1,13 @@
+
+error[E0277]: the size for values of type `[i32]` cannot be known at compilation time
+--> src/main.rs:3:36
+  |
+3 | fn main() { let x: fn(_) -> Test = Test; }
+  |                                    ^^^^ doesn't have a size known at compile-time
+  |
+  = help: the trait `std::marker::Sized` is not implemented for `[i32]`
+  = note: to learn more, visit <https://doc.rust-lang.org/book/ch19-04-advanced-types.html#dynamically-sized-types-and-the-sized-trait>
+  = note: all function arguments must have a statically known size
+  = help: unsized locals are gated as an unstable feature
+
+error: aborting due to previous error

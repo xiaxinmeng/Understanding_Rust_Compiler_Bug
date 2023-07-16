@@ -1,0 +1,22 @@
+plain
+[00:07:35]    Compiling proc_macro v0.0.0 (file:///checkout/src/libproc_macro)
+[00:07:53]    Compiling syntax_ext v0.0.0 (file:///checkout/src/libsyntax_ext)
+[00:14:08]    Compiling rustc_mir v0.0.0 (file:///checkout/src/librustc_mir)
+[00:14:08]    Compiling rustc_typeck v0.0.0 (file:///checkout/src/librustc_typeck)
+[00:14:13] error[E0599]: no method named `iter` found for type `std::iter::Chain<std::option::IntoIter<&rustc::mir::BasicBlock>, std::slice::Iter<'_, rustc::mir::BasicBlock>>` in the current scope
+[00:14:13]    --> librustc_mir/borrow_check/nll/constraint_generation.rs:164:60
+[00:14:13]     |
+[00:14:13] 164 |             for successor_block in terminator.successors().iter() {
+[00:14:13] 
+[00:14:22] error: aborting due to previous error
+[00:14:22] 
+[00:14:22] For more information about this error, try `rustc --explain E0599`.
+[00:14:22] For more information about this error, try `rustc --explain E0599`.
+[00:14:22] error: Could not compile `rustc_mir`.
+[00:14:22] 
+[00:14:22] Caused by:
+[00:14:22]   process didn't exit successfully: `/checkout/obj/build/bootstrap/debug/rustc --crate-name rustc_mir librustc_mir/lib.rs --color always --error-format json --crate-type dylib --emit=dep-info,link -C prefer-dynamic -C opt-level=3 -C metadata=be556f8244fb0842 -C extra-filename=-be556f8244fb0842 --out-dir /checkout/obj/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/release/deps --target x86_64-unknown-linux-gnu -L dependency=/checkout/obj/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/release/deps -L dependency=/checkout/obj/build/x86_64-unknown-linux-gnu/stage0-rustc/release/deps --extern serialize=/checkout/obj/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/release/deps/libserialize-946eff7380f27f57.so --extern serialize=/checkout/obj/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/release/deps/libserialize-946eff7380f27f57.rlib --extern rustc_errors=/checkout/obj/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/release/deps/librustc_errors-b789a86e1ab64d11.so --extern rustc_data_structures=/checkout/obj/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/release/deps/librustc_data_structures-f456f53371aa074c.so --extern graphviz=/checkout/obj/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/release/deps/libgraphviz-21ce4bd19908f0cc.so --extern byteorder=/checkout/obj/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/release/deps/libbyteorder-c0908caf79d2e3f2.rlib --extern rustc_apfloat=/checkout/obj/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/release/deps/librustc_apfloat-b7c66a9cab3ff5a6.rlib --extern arena=/checkout/obj/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/release/deps/libarena-16776be762f4e8c2.so --extern log=/checkout/obj/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/release/deps/liblog-4f0866e958f59455.rlib --extern rustc=/checkout/obj/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/release/deps/librustc-6af31fe8ff356c2e.so --extern log_settings=/checkout/obj/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/release/deps/liblog_settings-a9c63eb5aa166466.rlib --extern bitflags=/checkout/obj/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/release/deps/libbitflags-401bddd0d1809e53.rlib --extern syntax_pos=/checkout/obj/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/release/deps/libsyntax_pos-b9901acb1e9e6766.so --extern rustc_target=/checkout/obj/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/release/deps/librustc_target-aed9d8ab86b35123.so --extern syntax=/checkout/obj/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/release/deps/libsyntax-566a8d95e6a18781.so -L native=/checkout/obj/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/release/build/backtrace-sys-31a3817325787acc/out/.libs -L native=/checkout/obj/build/x86_64-unknown-linux-gnu/stage0-rustc/x86_64-unknown-linux-gnu/release/build/miniz-sys-90c24e5cae9d047e/out` (exit code: 101)
+nu/stage0-rustc/x86_64-unknown-linux-gnu/release/deps
+65424 ./src/llvm-emscripten/test/CodeGen
+63880 ./obj/build/x86_64-unknown-linux-gnu/stage0-sysroot
+63876 ./obj/build/x86_64-unknown-linux-gnu/stage0-sysroot/lib

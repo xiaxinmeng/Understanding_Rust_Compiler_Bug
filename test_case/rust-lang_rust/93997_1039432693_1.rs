@@ -1,0 +1,4 @@
+rs
+fn main() {
+    while {} {}
+}

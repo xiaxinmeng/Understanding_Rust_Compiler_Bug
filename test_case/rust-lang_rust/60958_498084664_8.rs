@@ -1,0 +1,9 @@
+
+ * cargo-tarball-0.0.1: [start](https://crater-reports.s3.amazonaws.com/beta-1.36-2/1.35.0/reg/cargo-tarball-0.0.1/log.txt) v. [end](https://crater-reports.s3.amazonaws.com/beta-1.36-2/beta-2019-05-30/reg/cargo-tarball-0.0.1/log.txt); cc @epage
+ * gust-0.1.4: [start](https://crater-reports.s3.amazonaws.com/beta-1.36-2/1.35.0/reg/gust-0.1.4/log.txt) v. [end](https://crater-reports.s3.amazonaws.com/beta-1.36-2/beta-2019-05-30/reg/gust-0.1.4/log.txt); cc @saresend
+ * stager-0.3.4: [start](https://crater-reports.s3.amazonaws.com/beta-1.36-2/1.35.0/reg/stager-0.3.4/log.txt) v. [end](https://crater-reports.s3.amazonaws.com/beta-1.36-2/beta-2019-05-30/reg/stager-0.3.4/log.txt); cc @epage
+ * PurpleMyst/repoman: [start](https://crater-reports.s3.amazonaws.com/beta-1.36-2/1.35.0/gh/PurpleMyst.repoman/log.txt) v. [end](https://crater-reports.s3.amazonaws.com/beta-1.36-2/beta-2019-05-30/gh/PurpleMyst.repoman/log.txt); cc @PurpleMyst
+ * crate-ci/cargo-tarball: [start](https://crater-reports.s3.amazonaws.com/beta-1.36-2/1.35.0/gh/crate-ci.cargo-tarball/log.txt) v. [end](https://crater-reports.s3.amazonaws.com/beta-1.36-2/beta-2019-05-30/gh/crate-ci.cargo-tarball/log.txt); cc @crate-ci
+ * dzamlo/multitest: [start](https://crater-reports.s3.amazonaws.com/beta-1.36-2/1.35.0/gh/dzamlo.multitest/log.txt) v. [end](https://crater-reports.s3.amazonaws.com/beta-1.36-2/beta-2019-05-30/gh/dzamlo.multitest/log.txt); cc @dzamlo
+ * phideg/neptungen: [start](https://crater-reports.s3.amazonaws.com/beta-1.36-2/1.35.0/gh/phideg.neptungen/log.txt) v. [end](https://crater-reports.s3.amazonaws.com/beta-1.36-2/beta-2019-05-30/gh/phideg.neptungen/log.txt); cc @phideg
+ * sunilbandla/draw-charts: [start](https://crater-reports.s3.amazonaws.com/beta-1.36-2/1.35.0/gh/sunilbandla.draw-charts/log.txt) v. [end](https://crater-reports.s3.amazonaws.com/beta-1.36-2/beta-2019-05-30/gh/sunilbandla.draw-charts/log.txt); cc @sunilbandla

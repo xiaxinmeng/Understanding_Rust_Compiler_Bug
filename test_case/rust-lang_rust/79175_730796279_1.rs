@@ -1,0 +1,3 @@
+llvm
+@__profc__RNvYhNtCs4fqI2P2rA04_11issue_791755Trait3fooB5_ = private global [3 x i64] zeroinitializer, section "__llvm_prf_cnts", align 8
+@__profd__RNvYhNtCs4fqI2P2rA04_11issue_791755Trait3fooB5_ = private global { i64, i64, i64*, i8*, i8*, i32, [2 x i16] } { i64 -5234861019717404860, i64 -7566766773726293094, i64* getelementptr inbounds ([3 x i64], [3 x i64]* @__profc__RNvYhNtCs4fqI2P2rA04_11issue_791755Trait3fooB5_, i32 0, i32 0), i8* bitcast (void (i8*)* @_RNvYhNtCs4fqI2P2rA04_11issue_791755Trait3fooB5_ to i8*), i8* null, i32 3, [2 x i16] zeroinitializer }, section "__llvm_prf_data", align 8

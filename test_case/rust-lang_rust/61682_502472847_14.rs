@@ -1,0 +1,3 @@
+rust
+      use Default::default;
+      

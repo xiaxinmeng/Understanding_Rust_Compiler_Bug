@@ -1,0 +1,3 @@
+rust
+//! * Test line
+//!   break

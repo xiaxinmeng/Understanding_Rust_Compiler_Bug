@@ -1,0 +1,20 @@
+x86asm
+       movzx   eax, word ptr [rbx + 14]
+        mov     word ptr [rsp + 14], ax
+        mov     al, byte ptr [rsp + 13]
+        mov     byte ptr [rsp + 16], al
+        mov     byte ptr [rsp + 17], cl
+        mov     byte ptr [rsp + 18], dl
+        mov     byte ptr [rsp + 19], sil
+        mov     byte ptr [rsp + 20], dil
+        mov     byte ptr [rsp + 21], r8b
+        mov     byte ptr [rsp + 22], r9b
+        mov     byte ptr [rsp + 23], r10b
+        mov     byte ptr [rsp + 24], r11b
+        mov     byte ptr [rsp + 25], bpl
+        mov     byte ptr [rsp + 26], r12b
+        mov     byte ptr [rsp + 27], r13b
+        mov     byte ptr [rsp + 28], r14b
+        mov     byte ptr [rsp + 29], r15b
+        movzx   eax, word ptr [rsp + 14]
+        mov     word ptr [rsp + 30], ax

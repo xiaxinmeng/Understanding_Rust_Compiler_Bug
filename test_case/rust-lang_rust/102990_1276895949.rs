@@ -1,0 +1,17 @@
+plain
+   |
+20 | //! std::atomic<T> API). It is therefore possible for this implementation to generate behaviours never observable when the
+   |                ^^^
+   |
+   = note: `-D rustdoc::invalid-html-tags` implied by `-D warnings`
+   |
+20 | //! `std::atomic<T>` API). It is therefore possible for this implementation to generate behaviours never observable when the
+   |     +              +
+
+
+error: could not document `miri`
+
+Caused by:
+  process didn't exit successfully: `/checkout/obj/build/bootstrap/debug/rustdoc --edition=2021 --crate-type lib --crate-name miri src/tools/miri/src/lib.rs --target x86_64-unknown-linux-gnu -o /checkout/obj/build/x86_64-unknown-linux-gnu/stage2-tools/x86_64-unknown-linux-gnu/doc --cfg 'feature="default"' --cfg 'feature="stack-cache"' -Zunstable-options --check-cfg 'values(feature, "default", "stack-cache")' --check-cfg 'names()' --check-cfg 'values()' --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat -C metadata=6350fa1910f5021f -L dependency=/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-tools/x86_64-unknown-linux-gnu/release/deps -L dependency=/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-tools/release/deps --extern env_logger=/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-tools/x86_64-unknown-linux-gnu/release/deps/libenv_logger-8c980a5ea5b55fb5.rmeta --extern getrandom=/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-tools/x86_64-unknown-linux-gnu/release/deps/libgetrandom-4d8a5563b5d925e1.rmeta --extern libc=/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-tools/x86_64-unknown-linux-gnu/release/deps/liblibc-5e9d5fe431b8a57a.rmeta --extern libffi=/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-tools/x86_64-unknown-linux-gnu/release/deps/liblibffi-4aeb618674b84f35.rmeta --extern libloading=/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-tools/x86_64-unknown-linux-gnu/release/deps/liblibloading-72002b3cf8c42ae3.rmeta --extern log=/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-tools/x86_64-unknown-linux-gnu/release/deps/liblog-3cac21a91b436cc1.rmeta --extern measureme=/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-tools/x86_64-unknown-linux-gnu/release/deps/libmeasureme-b5cbea6a7c78f143.rmeta --extern rand=/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-tools/x86_64-unknown-linux-gnu/release/deps/librand-deed2ad84f9b7b78.rmeta --extern rustc_workspace_hack=/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-tools/x86_64-unknown-linux-gnu/release/deps/librustc_workspace_hack-3a280b27877eb232.rmeta --extern shell_escape=/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-tools/x86_64-unknown-linux-gnu/release/deps/libshell_escape-81a6e90444990c4f.rmeta --extern smallvec=/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-tools/x86_64-unknown-linux-gnu/release/deps/libsmallvec-9806ad75f5b074ac.rmeta -Csymbol-mangling-version=v0 -Zunstable-options '--check-cfg=values(bootstrap)' '--check-cfg=values(parallel_compiler)' '--check-cfg=values(release)' '--check-cfg=values(no_btreemap_remove_entry)' '--check-cfg=values(crossbeam_loom)' '--check-cfg=values(span_locations)' '--check-cfg=values(rustix_use_libc)' -Dwarnings '-Wrustdoc::invalid_codeblock_attributes' --crate-version '1.66.0
+  2022-10-13)' --document-private-items --enable-index-page --show-type-layout --generate-link-to-definition -Zunstable-options` (exit status: 1)
+Build completed unsuccessfully in 0:24:21

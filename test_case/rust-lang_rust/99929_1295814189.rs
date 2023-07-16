@@ -1,0 +1,19 @@
+plain
+configure: rust.debug-assertions := True
+configure: rust.overflow-checks := True
+configure: llvm.assertions      := True
+configure: dist.missing-tools   := True
+configure: build.configure-args := ['--enable-sccache', '--disable-manage-submodu ...
+configure: writing `config.toml` in current directory
+configure: 
+configure: run `python /checkout/x.py --help`
+Attempting with retry: make prepare
+---
+skip untracked path cpu-usage.csv during rustfmt invocations
+skip untracked path src/doc/book/ during rustfmt invocations
+skip untracked path src/doc/rust-by-example/ during rustfmt invocations
+skip untracked path src/llvm-project/ during rustfmt invocations
+Diff in /checkout/library/alloc/src/vec/in_place_collect.rs at line 137:
+ //! }
+ //! vec.truncate(write_idx);
+ //! 

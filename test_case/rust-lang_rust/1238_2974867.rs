@@ -1,0 +1,2 @@
+ rust
+export foo::bar;

@@ -1,0 +1,1 @@
+compile_fail,E0382\nstruct MyStruct { s: u32 }\n\nfn main() {\n    let mut x = MyStruct{ s: 5u32 };\n    let y = x;\n    x.s = 6;\n    println!(\"{}\", x.s);\n}\n

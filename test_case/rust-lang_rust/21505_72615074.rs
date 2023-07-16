@@ -1,0 +1,2 @@
+ Rust
+foo.deref()

@@ -1,0 +1,1 @@
+compile_fail,E0659\npub mod moon {\n    pub fn foo() {}\n}\n\npub mod earth {\n    pub fn foo() {}\n}\n\nmod collider {\n    pub use moon::*;\n    pub use earth::*;\n}\n\nfn main() {\n    collider::foo(); // ERROR: `foo` is ambiguous\n}\n

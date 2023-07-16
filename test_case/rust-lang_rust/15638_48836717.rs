@@ -1,0 +1,12 @@
+
+test bench::char_iterator               ... bench:       112 ns/iter (+/- 0)
+test bench::char_iterator_ascii         ... bench:       301 ns/iter (+/- 1)
+test bench::char_iterator_rev           ... bench:       181 ns/iter (+/- 2)
+test bench::char_iterator_wikitext      ... bench:     77445 ns/iter (+/- 1578)
+test bench::citems_iterator             ... bench:       111 ns/iter (+/- 1)
+test bench::citems_iterator_ascii       ... bench:       292 ns/iter (+/- 4)
+test bench::citems_iterator_wikitext    ... bench:     77120 ns/iter (+/- 341)
+test bench::new_chars_iterator          ... bench:        84 ns/iter (+/- 11)
+test bench::new_chars_iterator_ascii    ... bench:       225 ns/iter (+/- 1)
+test bench::new_chars_iterator_rev      ... bench:       109 ns/iter (+/- 3)
+test bench::new_chars_iterator_wikitext ... bench:     54683 ns/iter (+/- 211)

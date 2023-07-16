@@ -1,0 +1,1 @@
+\n\nAlternatively, wrapping trait objects requires something like the following:\n\n

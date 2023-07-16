@@ -1,0 +1,2 @@
+
+pub asyn fn test() {}

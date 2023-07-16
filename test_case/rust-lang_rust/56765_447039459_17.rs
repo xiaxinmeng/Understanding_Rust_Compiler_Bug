@@ -1,0 +1,1 @@
+compile_fail,E0271\ntrait Trait { type AssociatedType; }\n\nfn foo<T>(t: T) where T: Trait<AssociatedType=u32> {\n//                    ~~~~~~~~ ~~~~~~~~~~~~~~~~~~\n/&1 => {}\n        _ => {}\n    }\n}\n

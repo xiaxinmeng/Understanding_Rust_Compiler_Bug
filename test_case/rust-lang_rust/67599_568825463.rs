@@ -1,0 +1,55 @@
+
+thread '<unnamed>' panicked at '!!!', src\lib.rs:6:9
+stack backtrace:
+   0: backtrace::backtrace::trace_unsynchronized
+             at C:\Users\VssAdministrator\.cargo\registry\src\github.com-1ecc6299db9ec823\backtrace-0.3.40\src\backtrace\mod.rs:66
+   1: std::sys_common::backtrace::_print_fmt
+             at /rustc/73528e339aae0f17a15ffa49a8ac608f50c6cf14\/src\libstd\sys_common\backtrace.rs:77
+   2: std::sys_common::backtrace::_print::{{impl}}::fmt
+             at /rustc/73528e339aae0f17a15ffa49a8ac608f50c6cf14\/src\libstd\sys_common\backtrace.rs:61
+   3: core::fmt::write
+             at /rustc/73528e339aae0f17a15ffa49a8ac608f50c6cf14\/src\libcore\fmt\mod.rs:1028
+   4: std::io::Write::write_fmt<std::sys::windows::stdio::Stderr>
+             at /rustc/73528e339aae0f17a15ffa49a8ac608f50c6cf14\/src\libstd\io\mod.rs:1412
+   5: std::sys_common::backtrace::_print
+             at /rustc/73528e339aae0f17a15ffa49a8ac608f50c6cf14\/src\libstd\sys_common\backtrace.rs:65
+   6: std::sys_common::backtrace::print
+             at /rustc/73528e339aae0f17a15ffa49a8ac608f50c6cf14\/src\libstd\sys_common\backtrace.rs:50
+   7: std::panicking::default_hook::{{closure}}
+             at /rustc/73528e339aae0f17a15ffa49a8ac608f50c6cf14\/src\libstd\panicking.rs:188
+   8: std::panicking::default_hook
+             at /rustc/73528e339aae0f17a15ffa49a8ac608f50c6cf14\/src\libstd\panicking.rs:205
+   9: std::panicking::rust_panic_with_hook
+             at /rustc/73528e339aae0f17a15ffa49a8ac608f50c6cf14\/src\libstd\panicking.rs:464
+  10: std::panicking::begin_panic<str*>
+             at /rustc/73528e339aae0f17a15ffa49a8ac608f50c6cf14\src\libstd\panicking.rs:400
+  11: reloadable::RELOAD_API::{{closure}}
+             at .\src\lib.rs:6
+  12: core::ops::function::FnOnce::call_once<closure-0,()>
+             at /rustc/73528e339aae0f17a15ffa49a8ac608f50c6cf14\src\libcore\ops\function.rs:227
+  13: libreloading_test::main
+             at .\src\main.rs:16
+  14: std::rt::lang_start::{{closure}}<()>
+             at /rustc/73528e339aae0f17a15ffa49a8ac608f50c6cf14\src\libstd\rt.rs:61
+  15: std::rt::lang_start_internal::{{closure}}
+             at /rustc/73528e339aae0f17a15ffa49a8ac608f50c6cf14\/src\libstd\rt.rs:48
+  16: std::panicking::try::do_call<closure-0,i32>
+             at /rustc/73528e339aae0f17a15ffa49a8ac608f50c6cf14\/src\libstd\panicking.rs:287
+  17: panic_unwind::__rust_maybe_catch_panic
+             at /rustc/73528e339aae0f17a15ffa49a8ac608f50c6cf14\/src\libpanic_unwind\lib.rs:78
+  18: std::panicking::try
+             at /rustc/73528e339aae0f17a15ffa49a8ac608f50c6cf14\/src\libstd\panicking.rs:265
+  19: std::panic::catch_unwind
+             at /rustc/73528e339aae0f17a15ffa49a8ac608f50c6cf14\/src\libstd\panic.rs:396
+  20: std::rt::lang_start_internal
+             at /rustc/73528e339aae0f17a15ffa49a8ac608f50c6cf14\/src\libstd\rt.rs:47
+  21: std::rt::lang_start<()>
+             at /rustc/73528e339aae0f17a15ffa49a8ac608f50c6cf14\src\libstd\rt.rs:61
+  22: main
+  23: invoke_main
+             at d:\agent\_work\5\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:78
+  24: __scrt_common_main_seh
+             at d:\agent\_work\5\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl:288
+  25: BaseThreadInitThunk
+  26: RtlUserThreadStart
+...

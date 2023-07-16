@@ -1,0 +1,2 @@
+
+#![doc(path = "../README.md")]

@@ -1,0 +1,3 @@
+`
+> cat doctest.rs
+//! 

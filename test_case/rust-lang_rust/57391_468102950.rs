@@ -1,0 +1,2 @@
+rust
+thread::sleep(SECOND);

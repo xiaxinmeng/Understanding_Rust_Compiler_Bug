@@ -1,0 +1,39 @@
+
+task 'rustc' failed at 'index out of bounds: the len is 0 but the index is 0', /home/rustbuild/src/rust-buildbot/slave/nightly-linux/build/src/librustc/middle/check_match.rs:250
+stack backtrace:
+   1:     0x7ffff4cf08d0 - rt::backtrace::imp::write::hbf83dfcc05310575AAa::v0.11.pre
+   2:     0x7ffff4c52410 - rt::unwind::begin_unwind_inner::h72aa261e64bf1fd83aa::v0.11.pre
+   3:     0x7ffff4c52380 - rt::unwind::begin_unwind::h4b893fbf219dd919Daa::v0.11.pre
+   4:     0x7ffff4cf04e0 - rt::unwind::begin_unwind_raw::h93661c3a4ab845afc89::v0.11.pre
+   5:     0x7ffff4c516b0 - rt::unwind::fail_::h01af7c814d53a60dQ59::v0.11.pre
+   6:     0x7ffff4cf0550 - rt::unwind::fail_bounds_check::closure.41280
+   7:     0x7ffff4c535e0 - rt::unwind::fail_bounds_check::h4ad50d6b3ee732e1d69::v0.11.pre
+   8:     0x7ffff5c7f740 - middle::check_match::is_useful::h50ad727595973596onu::v0.11.pre
+   9:     0x7ffff5c86d20 - middle::check_match::is_useful_specialized::h7bf269c0b1d4ff84Itu::v0.11.pre
+  10:     0x7ffff5c7f740 - middle::check_match::is_useful::h50ad727595973596onu::v0.11.pre
+  11:     0x7ffff5c86d20 - middle::check_match::is_useful_specialized::h7bf269c0b1d4ff84Itu::v0.11.pre
+  12:     0x7ffff5c7f740 - middle::check_match::is_useful::h50ad727595973596onu::v0.11.pre
+  13:     0x7ffff5c7f740 - middle::check_match::is_useful::h50ad727595973596onu::v0.11.pre
+  14:     0x7ffff5c86d20 - middle::check_match::is_useful_specialized::h7bf269c0b1d4ff84Itu::v0.11.pre
+  15:     0x7ffff5c7f740 - middle::check_match::is_useful::h50ad727595973596onu::v0.11.pre
+  16:     0x7ffff5c79000 - middle::check_match::check_expr::hf7e16ae699ad3b0ai4t::v0.11.pre
+  17:     0x7ffff5c7ebd0 - visit::walk_expr_opt::h2b6380fdab1223ffi4t::v0.11.pre
+  18:     0x7ffff5c7b9f0 - middle::check_match::check_fn::h732a3f7e2aef6fbbD6u::v0.11.pre
+  19:     0x7ffff5c7c5f0 - visit::walk_item::h5b4743caefa33010p4v::v0.11.pre
+  20:     0x7ffff5c7bc70 - middle::check_match::check_crate::hf456e2a1e5a27a8eD3t::v0.11.pre
+  21:     0x7ffff5c74600 - util::common::time::h7270488e3f9a7dadMug::v0.11.pre
+  22:     0x7ffff60a9290 - driver::driver::phase_3_run_analysis_passes::h5bc132a1236cdb1dqje::v0.11.pre
+  23:     0x7ffff60afcc0 - driver::driver::compile_input::h5158f3c2b13a0794nIe::v0.11.pre
+  24:     0x7ffff60d3540 - run_compiler::h462d0269b5e002b949l::v0.11.pre
+  25:     0x7ffff60ea810 - main_args::closure.91855
+  26:     0x7ffff60e9140 - monitor::closure.91740
+  27:     0x7ffff60e4a70 - task::TaskBuilder::try::closure.91515
+  28:     0x7ffff53754d0 - task::spawn_opts::closure.7786
+  29:     0x7ffff4cebd60 - rt::task::Task::run::closure.41185
+  30:     0x7ffff4cf7310 - rust_try
+  31:     0x7ffff4cebba0 - rt::task::Task::run::h2c4ca697d400385cz37::v0.11.pre
+  32:     0x7ffff53752a0 - task::spawn_opts::closure.7759
+  33:     0x7ffff4cef410 - rt::thread::thread_start::h934e1ab986d86e35gI8::v0.11.pre
+  34:     0x7ffff2525fa0 - start_thread
+  35:     0x7ffff4926a09 - __clone
+  36:                0x0 - <unknown>

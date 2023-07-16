@@ -1,0 +1,2 @@
+rust
+*o.invar = Inner{};

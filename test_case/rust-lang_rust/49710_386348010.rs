@@ -1,0 +1,4 @@
+
+DEBUG 2018-05-03T16:20:21Z: cargo: exit_with_error; err=CliError { error: Some(ProcessError { desc: "process didn\'t exit successfully: `rustc --crate-name spin /home/vagrant/.cargo/registry/src/github.com-1ecc6299db9ec823/spin-0.4.8/src/lib.rs --crate-type lib --emit=dep-info,link -C opt-level=3 -C panic=abort --cfg feature=\"asm\" --cfg feature=\"const_fn\" --cfg feature=\"core_intrinsics\" --cfg feature=\"default\" --cfg feature=\"once\" --cfg feature=\"unstable\" -C metadata=0b6900fccef8d3aa -C extra-filename=-0b6900fccef8d3aa --out-dir /vagrant/target/rust_os/release/deps --target rust_os -L dependency=/vagrant/target/rust_os/release/deps -L dependency=/vagrant/target/release/deps --cap-lints allow --sysroot /home/vagrant/.xargo` (exit code: 101)", exit: Some(ExitStatus(ExitStatus(25856))), output: None }
+
+Could not compile `spin`.), unknown: false, exit_code: 101 }

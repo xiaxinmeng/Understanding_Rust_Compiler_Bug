@@ -1,0 +1,74 @@
+plain
+[00:48:20] ....................................................................................................
+[00:48:23] ....................................................................................................
+[00:48:27] ....................................................................................................
+[00:48:30] ....................................................................................................
+[00:48:36] ................................................................................F...................
+[00:48:46] ....................................................................................................
+[00:48:51] ....................................................................................................
+[00:48:57] .........................i..........................................................................
+[00:49:02] ..........i.........................................................................................
+---
+[00:49:23] ---- [ui] ui/impl-trait/static-return-lifetime-infered.rs stdout ----
+[00:49:23] diff of stderr:
+[00:49:23] 
+[00:49:23] 30    |         |
+[00:49:23] 31    |         ...but this borrow...
+[00:49:23] 32    |
+[00:49:23] - note: ...can't outlive the lifetime 'a as defined on the method body at 20:5
+[00:49:23] -   --> $DIR/static-return-lifetime-infered.rs:20:5
+[00:49:23] + note: ...can't outlive the lifetime 'a as defined on the method body at 20:20
+[00:49:23] +   --> $DIR/static-return-lifetime-infered.rs:20:20
+[00:49:23] 35    |
+[00:49:23] 36 LL |     fn iter_values<'a>(&'a self) -> impl Iterator<Item=u32> {
+[00:49:23] -    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[00:49:23] - help: you can add a constraint to the return type to make it last less than `'static` and match the lifetime 'a as defined on the method body at 20:5
+[00:49:23] +    |                    ^^
+[00:49:23] + help: you can add a constraint to the return type to make it last less than `'static` and match the lifetime 'a as defined on the method body at 20:20
+[00:49:23] 39    |
+[00:49:23] 40 LL |     fn iter_values<'a>(&'a self) -> impl Iterator<Item=u32> + 'a {
+[00:49:23] 41   "line_start":16,"line_end":16,"column_start":35,"column_end":58,"is_primary":false,"text":[{"text":"    fn iter_values_anon(&self) -> impl Iterator<Item=u32> {","highlight_start":35,"highlight_end":58}],"label":"this return type evaluates to the `'static` lifetime...","suggested_replacement":null,"suggestion_applicability":null,"expansion":{"span":{"file_name":"/checkout/src/test/ui/impl-trait/static-return-lifetime-infered.rs","byte_start":548,"byte_end":571,"line_start":16,"line_end":16,"column_start":35,"column_end":58,"is_primary":false,"text":[{"text":"    fn iter_values_anon(&self) -> impl Iterator<Item=u32> {","highlight_start":35,"highlight_end":58}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null},"macro_decl_name":"desugaring of `existential type`","def_site_span":{"file_name":"/checkout/src/test/ui/impl-trait/static-return-lifetime-infered.rs","byte_start":548,"byte_end":571,"line_start":16,"line_end":16,"column_start":35,"column_end":58,"is_primary":false,"text":[{"text":"    fn iter_values_anon(&self) -> impl Iterator<Item=u32> {","highlight_start":35,"highlight_end":58}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}}},{"file_name":"/checkout/src/test/ui/impl-trait/static-return-lifetime-infered.rs","byte_start":582,"byte_end":588,"line_start":17,"line_end":17,"column_start":9,"column_end":15,"is_primary":false,"text":[{"text":"        self.x.iter().map(|a| a.0)","highlight_start":9,"highlight_end":15}],"label":"...but this borrow...","suggested_replacement":null,"suggestion_applicability":null,"expansion":null},{"file_name":"/checkout/src/test/ui/impl-trait/static-return-lifetime-infered.rs","byte_start":589,"byte_end":593,"line_start":17,"line_end":17,"column_start":16,"column_end":20,"is_primary":true,"text":[{"text":"        self.x.iter().map(|a| a.0)","highlight_start":16,"highlight_end":20}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"...can't outlive the anonymous lifetime #1 defined on the method body at 16:5","code":null,"level":"note","spans":[{"file_name":"/checkout/src/test/ui/impl-trait/static-return-lifetime-infered.rs","byte_start":518,"byte_end":614,"line_start":16,"line_end":18,"column_start":5,"column_end":6,"is_primary":true,"text":[{"text":"    fn iter_values_anon(&self) -> impl Iterator<Item=u32> {","highlight_start":5,"highlight_end":60},{"text":"        self.x.iter().map(|a| a.0)","highlight_start":1,"highlight_end":35},{"text":"    }","highlight_start":1,"highlight_end":6}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[],"rendered":null},{"message":"you can add a constraint to the return type to make it last less than `'static` and match the anonymous lifetime #1 defined on the method body at 16:5","code":null,"level":"help","spans":[{"file_name":"/checkout/src/test/ui/impl-trait/static-return-lifetime-infered.rs","byte_start":548,"byte_end":571,"line_start":16,"line_end":16,"column_start":35,"column_end":58,"is_primary":true,"text":[{"text":"    fn iter_values_anon(&self) -> impl Iterator<Item=u32> {","highlight_start":35,"highlight_end":58}],"label":null,"suggested_replacement":"impl Iterator<Item=u32> + '_","suggestion_applicability":"Unspecified","expansion":{"span":{"file_name":"/checkout/src/test/ui/impl-trait/static-return-lifetime-infered.rs","byte_start":548,"byte_end":571,"line_start":16,"line_end":16,"column_start":35,"column_end":58,"is_primary":false,"text":[{"text":"    fn iter_values_anon(&self) -> impl Iterator<Item=u32> {","highlight_start":35,"highlight_end":58}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null},"macro_decl_name":"desugaring of `existential type`","def_site_span":{"file_name":"/checkout/src/test/ui/impl-trait/static-return-lifetime-infered.rs","byte_start":548,"byte_end":571,"line_start":16,"line_end":16,"column_start":35,"column_end":58,"is_primary":false,"text":[{"text":"    fn iter_values_anon(&self) -> impl Iterator<Item=u32> {","highlight_start":35,"highlight_end":58}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}}}],"children":[],"rendered":null}],"rendered":"error: cannot infer an appropriate lifetime\n  --> /checkout/src/test/ui/impl-trait/static-return-lifetime-infered.rs:17:16\n   |\nLL |     fn iter_values_anon(&self) -> impl Iterator<Item=u32> {\n   |                                   ----------------------- this return type evaluates to the `'static` lifetime...\nLL |         self.x.iter().map(|a| a.0)\n   |         ------ ^^^^\n   |         |\n   |         ...but this borrow...\n   |\nnote: ...can't outlive the anonymous lifetime #1 defined on the method body at 16:5\n  --> /checkout/src/test/ui/impl-trait/static-return-lifetime-infered.rs:16:5\n   |\nLL | /     fn iter_values_anon(&self) -> impl Iterator<Item=u32> {\nLL | |         self.x.iter().map(|a| a.0)\nLL | |     }\n   | |_____^\nhelp: you can add a constraint to the return type to make it last less than `'static` and match the anonymous lifetime #1 defined on the method body at 16:5\n   |\nLL |     fn iter_values_anon(&self) -> impl Iterator<Item=u32> + '_ {\n   |                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n"}
+[00:49:23] {"message":"cannot infer an appropriate lifetime","code":null,"level":"error","spans":[{"file_name":"/checkout/src/test/ui/impl-trait/static-return-lifetime-infered.rs","byte_start":704,"byte_end":727,"line_start":20,"line_end":20,"column_start":37,"column_end":60,"is_primary":false,"text":[{"text":"    fn iter_values<'a>(&'a self) -> impl Iterator<Item=u32> {","highlight_start":37,"highlight_end":60}],"label":"this return type evaluates to the `'static` lifetime...","suggested_replacement":null,"suggestion_applicability":null,"expansion":{"span":{"file_name":"/checkout/src/test/ui/impl-trait/static-return-lifetime-infered.rs","byte_start":704,"byte_end":727,"line_start":20,"line_end":20,"column_start":37,"column_end":60,"is_primary":false,"text":[{"text":"    fn iter_values<'a>(&'a self) -> impl Iterator<Item=u32> {","highlight_start":37,"highlight_end":60}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null},"macro_decl_name":"desugaring of `existential type`","def_site_span":{"file_name":"/checkout/src/test/ui/impl-trait/static-return-lifetime-infered.rs","byte_start":704,"byte_end":727,"line_start":20,"line_end":20,"column_start":37,"column_end":60,"is_primary":false,"text":[{"text":"    fn iter_values<'a>(&'a self) -> impl Iterator<Item=u32> {","highlight_start":37,"highlight_end":60}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}}},{"file_name":"/checkout/src/test/ui/impl-trait/static-return-lifetime-infered.rs","byte_start":738,"byte_end":744,"line_start":21,"line_end":21,"column_start":9,"column_end":15,"is_primary":false,"text":[{"text":"        self.x.iter().map(|a| a.0)","highlight_start":9,"highlight_end":15}],"label":"...but this borrow...","suggested_replacement":null,"suggestion_applicability":null,"expansion":null},{"file_name":"/checkout/src/test/ui/impl-trait/static-return-lifetime-infered.rs","byte_start":745,"byte_end":749,"line_start":21,"line_end":21,"column_start":16,"column_end":20,"is_primary":true,"text":[{"text":"        self.x.iter().map(|a| a.0)","highlight_start":16,"highlight_end":20}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"...can't outlive the lifetime 'a as defined on the method body at 20:20","code":null,"level":"note","spans":[{"file_name":"/checkout/src/test/ui/impl-trait/static-return-lifetime-infered.rs","byte_start":687,"byte_end":689,"line_start":20,"line_end":20,"column_start":20,"column_end":22,"is_primary":true,"text":[{"text":"    fn iter_values<'a>(&'a self) -> impl Iterator<Item=u32> {","highlight_start":20,"highlight_end":22}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[],"rendered":null},{"message":"you can add a constraint to the return type to make it l iter_values<'a>(&'a self) -> impl Iterator<Item=u32> {\n   |                                     ----------------------- this return type evaluates to the `'static` lifetime...\nLL |         self.x.iter().map(|a| a.0)\n   |         ------ ^^^^\n   |         |\n   |         ...but this borrow...\n   |\nnote: ...can't outlive the lifetime 'a as defined on the method body at 20:20\n  --> /checkout/src/test/ui/impl-trait/static-return-lifetime-infered.rs:20:20\n   |\nLL |     fn iter_values<'a>(&'a self) -> impl Iterator<Item=u32> {\n   |                    ^^\nhelp: you can add a constraint to the return type to make it last less than `'static` and match the lifetime 'a as defined on the method body at 20:20\n   |\nLL |     fn iter_values<'a>(&'a self) -> impl Iterator<Item=u32> + 'a {\n   |                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n"}
+[00:49:23] {"message":"aborting due to 2 previous errors","code":null,"level":"error","spans":[],"children":[],"rendered":"error: aborting due to 2 previous errors\n\n"}
+[00:49:23] ------------------------------------------
+[00:49:23] 
+[00:49:23] thread '[ui] ui/impl-trait/static-return-lifetime-infered.rs' panicked at 'explicit panic', tools/compiletest/src/runtest.rs:3140:9
+[00:49:23] note: Run with `RUST_BACKTRACE=1` for a backtrace.
+---
+[00:49:23] test result: FAILED. 1527 passed; 1 failed; 5 ignored; 0 measured; 0 filtered out
+[00:49:23] 
+[00:49:23] 
+[00:49:23] 
+[00:49:23] command did not execute successfully: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage0-tools-bin/compiletest" "--compile-lib-path" "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/lib" "--run-lib-path" "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/lib/rustlib/x86_64-unknown-linux-gnu/lib" "--rustc-path" "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "--src-base" "/checkout/src/test/ui" "--build-base" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui" "--stage-id" "stage2-x86_64-unknown-linux-gnu" "--mode" "ui" "--target" "x86_64-unknown-linux-gnu" "--host" "x86_64-unknown-linux-gnu" "--llvm-filecheck" "/usr/lib/llvm-3.9/bin/FileCheck" "--host-rustcflags" "-Crpath -O -Zunstable-options " "--target-rustcflags" "-Crpath -O -Zunstable-options  -Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "--docck-python" "/usr/bin/python2.7" "--lldb-python" "/usr/bin/python2.7" "--gdb" "/usr/bin/gdb" "--quiet" "--llvm-version" "3.9.1\n" "--system-llvm" "--cc" "" "--cxx" "" "--cflags" "" "--llvm-components" "" "--llvm-cxxflags" "" "--adb-path" "adb" "--adb-test-dir" "/data/tmp/work" "--android-cross-path" "" "--color" "always"
+[00:49:23] 
+[00:49:23] 
+[00:49:23] failed to run: /checkout/obj/build/bootstrap/debug/bootstrap test
+[00:49:23] Build completed unsuccessfully in 0:02:11
+[00:49:23] Build completed unsuccessfully in 0:02:11
+[00:49:23] make: *** [check] Error 1
+[00:49:23] Makefile:58: recipe for target 'check' failed
+2433456 ./obj
+2433424 ./obj/build
+1829564 ./obj/build/x86_64-unknown-linux-gnu
+729440 ./src
+---
+144300 ./obj/build/x86_64-unknown-linux-gnu/stage1-rustc/x86_64-unknown-linux-gnu
+144296 ./obj/build/x86_64-unknown-linux-gnu/stage1-rustc/x86_64-unknown-linux-gnu/release
+138748 ./obj/build/bootstrap/debug/incremental
+124176 ./obj/build/bootstrap/debug/incremental/bootstrap-1r3bppl29tbrj
+124172 ./obj/build/bootstrap/debug/incremental/bootstrap-1r3bppl29tbrj/s-f2ewqb4gnu-12ktqh4-38adk87dv7782
+107740 ./obj/build/x86_64-unknown-linux-gnu/stage1-std/x86_64-unknown-linux-gnu/release
+103608 ./obj/build/x86_64-unknown-linux-gnu/stage0/lib/rut/modules/src/libcompiler_builtins/modules/compiler-rt/objects
+31744 ./.git/modules/src/libcompiler_builtins/modules/compiler-rt/objects/pack
+31532 ./src/libcompiler_builtins/compiler-rt/test
+---
+travis_time:end:02c827cc:start=1530212746305392520,finish=1530212746313440930,duration=8048410
+travis_fold:end:after_failure.3
+travis_fold:start:after_failure.4
+travis_time:start:0574a3e5
+$ head -30 ./obj/build/x86_64-unknown-linux-gnu/native/asan/build/lib/asan/clang_rt.asan-dynamic-i386.vers || true
+head: cannot open ‘./obj/build/x86_64-unknown-linux-gnu/native/asan/build/lib/asan/clang_rt.asan-dynamic-i386.vers’ for reading: No such file or directory
+travis_fold:end:after_failure.4
+travis_fold:start:after_failure.5
+travis_time:start:082ba920
+$ dmesg | grep -i kill

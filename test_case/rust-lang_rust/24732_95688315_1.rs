@@ -1,0 +1,30 @@
+
+#0  0x00007ffff71214b7 in raise () from /usr/lib/libc.so.6
+#1  0x00007ffff712288a in abort () from /usr/lib/libc.so.6
+#2  0x00007ffff711a41d in __assert_fail_base () from /usr/lib/libc.so.6
+#3  0x00007ffff711a4d2 in __assert_fail () from /usr/lib/libc.so.6
+#4  0x00007ffff33cbaa0 in llvm::DataLayout::getAlignment(llvm::Type*, bool) const () from /usr/lib/librustc_llvm-4e7c5e5c.so
+#5  0x00007ffff3264a9a in LLVMABISizeOfType () from /usr/lib/librustc_llvm-4e7c5e5c.so
+#6  0x00007ffff633d3de in trans::type_of::in_memory_type_of::h83e5272cbb0b91f16lL () from /usr/lib/librustc_trans-4e7c5e5c.so
+#7  0x00007ffff633d931 in trans::type_of::in_memory_type_of::h83e5272cbb0b91f16lL () from /usr/lib/librustc_trans-4e7c5e5c.so
+#8  0x00007ffff633cffc in vec::Vec$LT$T$GT$.FromIterator$LT$T$GT$::from_iter::h8527532148302774489 () from /usr/lib/librustc_trans-4e7c5e5c.so
+#9  0x00007ffff633dc11 in trans::type_of::in_memory_type_of::h83e5272cbb0b91f16lL () from /usr/lib/librustc_trans-4e7c5e5c.so
+#10 0x00007ffff635465d in trans::base::alloc_ty::h44f852cb49026c27Yah () from /usr/lib/librustc_trans-4e7c5e5c.so
+#11 0x00007ffff645d79c in trans::_match::mk_binding_alloca::h7664614637246624964 () from /usr/lib/librustc_trans-4e7c5e5c.so
+#12 0x00007ffff63531ff in trans::base::init_local::he80f7b701a7c3086EWg () from /usr/lib/librustc_trans-4e7c5e5c.so
+#13 0x00007ffff636368f in trans::controlflow::trans_block::he2b0363ba483aa5723u () from /usr/lib/librustc_trans-4e7c5e5c.so
+#14 0x00007ffff6362387 in trans::base::trans_closure::h0dc61076718b152eBDh () from /usr/lib/librustc_trans-4e7c5e5c.so
+#15 0x00007ffff6363f8b in trans::base::trans_fn::h017a63e4b4f1d383jOh () from /usr/lib/librustc_trans-4e7c5e5c.so
+#16 0x00007ffff6367008 in trans::base::trans_item::h694a5c0c3e92277bvci () from /usr/lib/librustc_trans-4e7c5e5c.so
+#17 0x00007ffff63753be in trans::base::trans_crate::h93b35940c9d58579v1i () from /usr/lib/librustc_trans-4e7c5e5c.so
+#18 0x00007ffff7af8d5b in driver::phase_4_translate_to_llvm::h0cea9caf6133630enOa () from /usr/lib/librustc_driver-4e7c5e5c.so
+#19 0x00007ffff7ad105c in driver::compile_input::h4642f691e22278cbQba () from /usr/lib/librustc_driver-4e7c5e5c.so
+#20 0x00007ffff7b91332 in run_compiler::he528ba831532b90aF4b () from /usr/lib/librustc_driver-4e7c5e5c.so
+#21 0x00007ffff7b8ef83 in boxed::F.FnBox$LT$A$GT$::call_box::h13568337174014462877 () from /usr/lib/librustc_driver-4e7c5e5c.so
+#22 0x00007ffff7b8e4ba in rt::unwind::try::try_fn::h15381261312250239500 () from /usr/lib/librustc_driver-4e7c5e5c.so
+#23 0x00007ffff7608529 in rust_try_inner () from /usr/lib/libstd-4e7c5e5c.so
+#24 0x00007ffff7608516 in rust_try () from /usr/lib/libstd-4e7c5e5c.so
+#25 0x00007ffff7b8e769 in boxed::F.FnBox$LT$A$GT$::call_box::h6713016946069099629 () from /usr/lib/librustc_driver-4e7c5e5c.so
+#26 0x00007ffff758fac2 in sys::thread::create::thread_start::hbe89fbdfc755452dxjw () from /usr/lib/libstd-4e7c5e5c.so
+#27 0x00007ffff165c374 in start_thread () from /usr/lib/libpthread.so.0
+#28 0x00007ffff71d627d in clone () from /usr/lib/libc.so.6

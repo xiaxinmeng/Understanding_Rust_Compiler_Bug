@@ -1,0 +1,21 @@
+rust
+trait Foo<ARG: 'static>: 'static {
+    type Assoc: AsRef<str>;
+}
+
+fn hr_shit<T: ?Sized, ARG>(x: T::Assoc) -> Box<dyn AsRef<str> + 'static>
+where
+    T: Foo<ARG>
+{
+    Box::new(x)
+}
+
+fn extend_lt<'a>(x: &'a str) -> Box<dyn AsRef<str> + 'static> {
+    type DynTrait = dyn for<'a> Foo<&'a str, Assoc = &'a str>;
+    hr_shit::<DynTrait, _>(x)
+} 
+
+fn main() {
+    let extended = extend_lt(&String::from("hello"));
+    println!("{}", extended.as_ref().as_ref());
+}

@@ -1,0 +1,1 @@
+\n\n(Note that `&self` and `&mut self` are okay, it's additional `Self` types which\ncause this problem.)\n\nIn suc_fail,E0038\ntrait Foo {\n    const X: i32;\n}\n\nimpl Foo {}\n

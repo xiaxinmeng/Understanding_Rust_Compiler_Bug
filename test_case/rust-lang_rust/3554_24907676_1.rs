@@ -1,0 +1,13 @@
+
+   ---User Time---   --System Time--   --User+System--   ---Wall Time---  --- Name ---
+  32.9560 ( 21.3%)   3.5840 ( 31.7%)  36.5400 ( 22.0%)  36.4753 ( 21.9%)  X86 DAG->DAG Instruction Selection
+  11.2080 (  7.2%)   0.5440 (  4.8%)  11.7520 (  7.1%)  11.6393 (  7.0%)  Function Integration/Inlining
+  10.2760 (  6.6%)   0.5080 (  4.5%)  10.7840 (  6.5%)  10.9164 (  6.6%)  Global Value Numbering
+   7.4720 (  4.8%)   0.2560 (  2.3%)   7.7280 (  4.7%)   7.7136 (  4.6%)  Combine redundant instructions
+   ... 35 passes ...
+   0.6880 (  0.4%)   0.0960 (  0.8%)   0.7840 (  0.5%)   0.8407 (  0.5%)  Module Verifier
+   ... 6 passes ...
+   0.5800 (  0.4%)   0.0720 (  0.6%)   0.6520 (  0.4%)   0.6933 (  0.4%)  Module Verifier
+   ... 6 passes ...
+   0.5720 (  0.4%)   0.0400 (  0.4%)   0.6120 (  0.4%)   0.5771 (  0.3%)  Module Verifier
+   ...

@@ -1,0 +1,3 @@
+
+trait Tr {}
+use Tr::*;

@@ -1,0 +1,1 @@
+rust-analyzer.checkOnSave.overrideCommand

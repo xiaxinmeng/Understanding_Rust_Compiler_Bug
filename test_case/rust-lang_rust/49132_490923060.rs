@@ -1,0 +1,20 @@
+
+language: rust
+
+rust:
+  - stable
+  - beta
+  - 1.32.0
+
+matrix:
+  include:
+    - rust: nightly
+      env: FORMAT_CHECK=true
+
+before_script:
+  if [ "$FORMAT_CHECK" = "true" ]; then rustup component add rustfmt --toolchain nightly; fi
+
+script:
+  - if [ "$FORMAT_CHECK" = "true" ]; then cargo +nightly fmt --all -- --check; fi
+  - cargo build --verbose
+  - cargo test --verbose

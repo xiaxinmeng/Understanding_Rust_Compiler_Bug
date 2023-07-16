@@ -1,0 +1,1 @@
+\nfn count_to_n(n: usize) -> impl Iterator<Item=usize> {\n    0..n\n}\n\nfn main() {\n    for i in count_to_n(10) {  // ok!\n        println!(\"{}\", i);\n    }\n}\n

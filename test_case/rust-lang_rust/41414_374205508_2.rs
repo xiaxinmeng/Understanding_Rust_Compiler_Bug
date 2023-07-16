@@ -1,0 +1,5 @@
+
+do catch {
+    ...;
+    tail-expr
+}

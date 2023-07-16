@@ -1,0 +1,20 @@
+
+   Compiling rustscan v2.1.1 (/home/$USER/Projets/XXX/RustScan)
+error: linking with `lld-link` failed: exit status: 1
+  |
+  = note: LC_ALL="C" PATH="/home/$USER/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/bin:/home/$USER/.vscode-server/bin/441438abd1ac652551dbe4d408dfcec8a499b8bf/bin/remote-cli:/home/$USER/.local/bin:/home/$USER/.cargo/bin:/home/$USER/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/tmp" VSLANG="1033" "lld-link" "-flavor" "link" "/NOLOGO" "/tmp/rustc3sx4fq/symbols.o" "/home/$USER/Projets/XXX/RustScan/target/x86_64-pc-windows-msvc/release/deps/rustscan.rustscan.73ae6a84-cgu.0.rcgu.o" "/LIBPATH:/home/$USER/Projets/XXX/RustScan/target/x86_64-pc-windows-msvc/release/deps" "/LIBPATH:/home/$USER/Projets/XXX/RustScan/target/release/deps" "/LIBPATH:/tmp/xwin_64/crt/lib/x86_64" "/LIBPATH:/tmp/xwin_64/sdk/lib/um/x86_64" "/LIBPATH:/tmp/xwin_64/sdk/lib/ucrt/x86_64" "/LIBPATH:/home/$USER/Projets/XXX/RustScan/target/x86_64-pc-windows-msvc/release/build/wepoll-ffi-719df429f6c384f7/out" "/LIBPATH:/home/$USER/.cargo/registry/src/github.com-1ecc6299db9ec823/windows_x86_64_msvc-0.42.0/lib" "/LIBPATH:/home/$USER/Projets/XXX/RustScan/target/x86_64-pc-windows-msvc/release/build/ring-a690ee922a6572a9/out" "/LIBPATH:/home/$USER/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-pc-windows-msvc/lib" "/tmp/rustc3sx4fq/libring-7aca1892b1101c44.rlib" "/tmp/rustc3sx4fq/libwepoll_ffi-b138a1eba95895ba.rlib" "/home/$USER/Projets/XXX/RustScan/target/x86_64-pc-windows-msvc/release/deps/libcompiler_builtins-83400d04a98abbd8.rlib" "iphlpapi.lib" "bcrypt.lib" "ntdll.lib" "windows.lib" "advapi32.lib" "advapi32.lib" "cfgmgr32.lib" "credui.lib" "fwpuclnt.lib" "gdi32.lib" "kernel32.lib" "msimg32.lib" "ntdll.lib" "ole32.lib" "opengl32.lib" "secur32.lib" "shell32.lib" "synchronization.lib" "user32.lib" "winspool.lib" "ws2_32.lib" "kernel32.lib" "advapi32.lib" "userenv.lib" "kernel32.lib" "ws2_32.lib" "bcrypt.lib" "msvcrt.lib" "legacy_stdio_definitions.lib" "/NXCOMPAT" "/LIBPATH:/home/$USER/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-pc-windows-msvc/lib" "/OUT:/home/$USER/Projets/XXX/RustScan/target/x86_64-pc-windows-msvc/release/deps/rustscan.exe" "/OPT:REF,ICF" "/DEBUG"
+  = note: lld-link: error: undefined symbol: <u32 as core::convert::TryInto<u32>>::try_into
+          >>> referenced by libcompiler_builtins-83400d04a98abbd8.rlib(compiler_builtins-83400d04a98abbd8.compiler_builtins.2da580f8-cgu.0.rcgu.o):(compiler_builtins::int::specialized_div_rem::u32_div_rem)
+          >>> referenced by libcompiler_builtins-83400d04a98abbd8.rlib(compiler_builtins-83400d04a98abbd8.compiler_builtins.2da580f8-cgu.0.rcgu.o):(<i32 as compiler_builtins::int::Int>::logical_shr)
+          >>> referenced by libcompiler_builtins-83400d04a98abbd8.rlib(compiler_builtins-83400d04a98abbd8.compiler_builtins.2da580f8-cgu.0.rcgu.o):(<u32 as compiler_builtins::int::Int>::wrapping_shl)
+          
+          lld-link: error: undefined symbol: <u32 as core::convert::TryInto<u8>>::try_into
+          >>> referenced by libcompiler_builtins-83400d04a98abbd8.rlib(compiler_builtins-83400d04a98abbd8.compiler_builtins.2da580f8-cgu.0.rcgu.o):(<i8 as compiler_builtins::int::Int>::logical_shr)
+          >>> referenced by libcompiler_builtins-83400d04a98abbd8.rlib(compiler_builtins-83400d04a98abbd8.compiler_builtins.2da580f8-cgu.0.rcgu.o):(<u8 as compiler_builtins::int::Int>::wrapping_shl)
+          
+          lld-link: error: undefined symbol: <u32 as core::convert::TryInto<u16>>::try_into
+          >>> referenced by libcompiler_builtins-83400d04a98abbd8.rlib(compiler_builtins-83400d04a98abbd8.compiler_builtins.2da580f8-cgu.0.rcgu.o):(<i16 as compiler_builtins::int::Int>::logical_shr)
+          >>> referenced by libcompiler_builtins-83400d04a98abbd8.rlib(compiler_builtins-83400d04a98abbd8.compiler_builtins.2da580f8-cgu.0.rcgu.o):(<u16 as compiler_builtins::int::Int>::wrapping_shl)
+          
+
+error: could not compile `rustscan` due to previous error

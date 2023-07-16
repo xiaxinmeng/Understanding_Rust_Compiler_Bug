@@ -1,0 +1,11 @@
+
+   1985 DEBUG:rustc::middle::traits::select: select(Obligation(trait_ref=<<generic #991> as core::kinds::Sized>,depth=0))
+   1986 DEBUG:rustc::middle::traits::select: candidate_from_obligation(cache_skol_trait_ref=<SkolemizedTy(0) as core::kinds::Sized>, obligation=ObligationStack(Obligation(trait_ref=<<generic #992> as core::kinds::Sized>,depth=0)))
+   1987 DEBUG:rustc::middle::traits::select: select(Obligation(trait_ref=<<generic #992> as core::kinds::Sized>,depth=0))
+   1988 DEBUG:rustc::middle::traits::select: candidate_from_obligation(cache_skol_trait_ref=<SkolemizedTy(0) as core::kinds::Sized>, obligation=ObligationStack(Obligation(trait_ref=<<generic #993> as core::kinds::Sized>,depth=0)))
+   1989 DEBUG:rustc::middle::traits::select: select(Obligation(trait_ref=<<generic #993> as core::kinds::Sized>,depth=0))
+   1990 DEBUG:rustc::middle::traits::select: candidate_from_obligation(cache_skol_trait_ref=<SkolemizedTy(0) as core::kinds::Sized>, obligation=ObligationStack(Obligation(trait_ref=<<generic #994> as core::kinds::Sized>,depth=0)))
+   1991 DEBUG:rustc::middle::traits::select: select(Obligation(trait_ref=<<generic #994> as core::kinds::Sized>,depth=0))
+   1992 DEBUG:rustc::middle::traits::select: candidate_from_obligation(cache_skol_trait_ref=<SkolemizedTy(0) as core::kinds::Sized>, obligation=ObligationStack(Obligation(trait_ref=<<generic #995> as core::kinds::Sized>,depth=0)))
+   1993 DEBUG:rustc::middle::traits::select: select(Obligation(trait_ref=<<generic #995> as core::kinds::Sized>,depth=0))
+   1994 DEBUG:rustc::middle::traits::select: candidate_from_obligation(cache_skol_trait_ref=<SkolemizedTy(0) as core::kinds::Sized>, obligation=ObligationStack(Obligation(trait_ref=<<generic #996> as core::kinds::Sized>,depth=0)))

@@ -1,0 +1,1 @@
+\n\nAlternatively, `PhantomData<T>` has alignment 1 for all `T`, so you can use it\nif you need to keep the field for some reason:\n\n

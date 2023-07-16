@@ -1,0 +1,10 @@
+rust
+#![feature(const_generics)]
+
+#[derive(PartialEq, Eq)]
+enum Nat {
+    Z,
+    S(Box<Nat>)
+}
+
+fn foo<const N: Nat>() {}

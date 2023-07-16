@@ -1,0 +1,1 @@
+\n\nSee [RFC 1522] for more details.\n\n[RFC 1522]: https://github.com/rust-lang/rfcs/blob/master/text/1522-conservative-impl-trait.md\n"},"level":"error","spans":[{"file_name":"/checkout/srerator<Item=usize> {\n    0..n\n}\n\nfn main() {\n    for i in count_to_n(10) {  // ok!\n        println!(\"{}\", i);\n    }\n}\n

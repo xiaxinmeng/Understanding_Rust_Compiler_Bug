@@ -1,0 +1,3 @@
+rust
+#[bench]
+fn foo() {}

@@ -1,0 +1,2 @@
+
+sh /postinstall/pi.sh

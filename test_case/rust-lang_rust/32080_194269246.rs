@@ -1,0 +1,31 @@
+
+failures:
+    [run-pass] run-pass/allocator-override.rs
+    [run-pass] run-pass/asm-in-out-operand.rs
+    [run-pass] run-pass/asm-indirect-memory.rs
+    [run-pass] run-pass/asm-out-assign.rs
+    [run-pass] run-pass/associated-const-type-parameters.rs
+    [run-pass] run-pass/backtrace-debuginfo.rs
+    [run-pass] run-pass/const-str-ptr.rs
+    [run-pass] run-pass/ignore-all-the-things.rs
+    [run-pass] run-pass/int-abs-overflow.rs
+    [run-pass] run-pass/issue-14936.rs
+    [run-pass] run-pass/issue-15080.rs
+    [run-pass] run-pass/issue-15104.rs
+    [run-pass] run-pass/issue-23338-ensure-param-drop-order.rs
+    [run-pass] run-pass/issue-7784.rs
+    [run-pass] run-pass/issue-8460.rs
+    [run-pass] run-pass/issue-8860.rs
+    [run-pass] run-pass/match-vec-alternatives.rs
+    [run-pass] run-pass/mir_raw_fat_ptr.rs
+    [run-pass] run-pass/num-wrapping.rs
+    [run-pass] run-pass/out-of-stack.rs
+    [run-pass] run-pass/simd-intrinsic-generic-cast.rs
+    [run-pass] run-pass/simd-intrinsic-generic-elements.rs
+    [run-pass] run-pass/super-fast-paren-parsing.rs
+    [run-pass] run-pass/vec-matching-fixed.rs
+    [run-pass] run-pass/vec-matching-fold.rs
+    [run-pass] run-pass/vec-matching-legal-tail-element-borrow.rs
+    [run-pass] run-pass/vec-matching.rs
+    [run-pass] run-pass/vec-tail-matching.rs
+    [run-pass] run-pass/zero-size-type-destructors.rs

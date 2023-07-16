@@ -1,0 +1,2 @@
+ rust
+scope!(Success) { thing }

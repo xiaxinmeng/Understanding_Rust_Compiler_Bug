@@ -1,0 +1,1 @@
+compile_fail,E0412\nimpl Something {} // error: type name `Something` is nois emitted is when a value is expected, but\nsomething else is found:\n\n

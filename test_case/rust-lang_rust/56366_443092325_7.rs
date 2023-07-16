@@ -1,0 +1,1 @@
+\nuse std::marker::PhantomData;\n\nstruct Foo<'a, T: 'a> {\n    x: *const T,\n    phantom: PhantomData<&'a T>\n}\n

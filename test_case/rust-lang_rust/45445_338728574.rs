@@ -1,0 +1,9 @@
+rust
+unsafe {
+  ...
+  if likely!(unsafe { ... }) {
+    ...
+  } else {
+    ...
+  }
+}

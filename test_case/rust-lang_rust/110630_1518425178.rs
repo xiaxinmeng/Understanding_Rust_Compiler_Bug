@@ -1,0 +1,12 @@
+
+-[[package]]
+-name = "bitvec"
+-version = "0.18.5"
+-source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "98fcd36dda4e17b7d7abc64cb549bf0201f4ab71e00700c798ca7e62ed3761fa"
+-dependencies = [
+- "funty",
+- "radium",
+- "wyz",
+-]
+-

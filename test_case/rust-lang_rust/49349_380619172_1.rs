@@ -1,0 +1,16 @@
+\n"},"level":"error","spans":[{"file_name":"/checkout/src/test/ui/error-codes/E0029-teach.rs","byte_start":550,"byte_end":569,"line_start":17,"line_end":17,"column_start":9,"column_end":28,"is_primary":true,"text":[{"text":"        \"hello\" ... \"world\" => {}","highlight_start":9,"highlight_end":28}],"label":"ranges require char or numeric types","suggested_replacement":null,"expansion":null}],"children":[{"message":"start type: &'static str","code":null,"level":"note","spans":[],"children":[],"rendered":null},{"message":"end type: &'static str","code":null,"level":"note","spans":[],"children":[],"rendered":null}],"rendered":"error[E0029]: only char and numeric types are allowed in range patterns\n  --> /checkout/src/test/ui/error-codes/E0029-teach.rs:17:9\n   |\nLL |         \"hello\" ... \"world\" => {}\n   |         ^^^^^^^^^^^^^^^^^^^ ranges require char or numeric types\n   |\n   = note: start type: &'static str\n   = note: end type: &'static str\n\n"}
+[00:50:54] {"message":"aborting due to previous error","code":null,"level":"error","spans":[],"children":[],"rendered":"error: aborting due to previous error\n\n"}
+[00:50:54] {"message":"For more information about this error, try `rustc --explain E0029`.","code":null,"level":"","spans":[],"children":[],"rendered":"For more information about this error, try `rustc --explain E0029`.\n"}
+---
+[00:50:54] 4 LL |         1000 ... 5 => {}
+[00:50:54] 5    |         ^^^^ lower bound larger than upper bound
+[00:50:54] -    |
+[00:50:54] -    = note: When matching against a range, the compiler verifies that the range is non-empty. Range patterns include both end-points, so this is equivalent to requiring the start of the range to be less than or equal to the end of the range.
+---
+[00:50:54] /checkout/src/test/ui/update-references.sh '/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui' 'error-codes/E0030-teach.rs'
+[00:50:54]
+[00:50:54] error: 1 errors occurred comparing output.
+[00:50:54] status: exit code: 101
+[00:50:54] command: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "/checkout/src/test/ui/error-codes/E0030-teach.rs" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui" "--target=x86_64-unknown-linux-gnu" "--error-format" "json" "-Zui-testing" "-C" "prefer-dynamic" "-o" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/error-codes/E0030-teach.stage2-x86_64-unknown-linux-gnu" "-Crpath" "-O" "-Zmiri" "-Zunstable-options" "-Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "-Z" "teach" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/error-codes/E0030-teach.stage2-x86_64-unknown-linux-gnu.aux" "-A" "unused"
+---
+[00:50:54] {"message":"lower range bound must be less than or equal to upper","code":{"code":"E0030","explanation":"\nWhen matching against a range, the compiler verifies that the range is\nnon-empty.  Range patterns include both end-points, so this is equivalent to\nrequiring the start of the range to be less than or equal to the end of the\nrange.\n\nFor example:\n\n

@@ -1,0 +1,65 @@
+
+gh\awoimbee\sf4_updater\338abed4766951ccf9e48e837f08d124c1893d90\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+gh\StephanHeijl\global-supertrees\60f3ba049bd818be391b122113e956c8fcf55339\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+gh\Xe\pahi\57d22486cc9c6bbaf568c1a92143ef87baee2317\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+gh\LukeThoma5\rs-solitaire\b089b156a5e0630527dff210933c51f2f4941f36\master#3e826bb11228508fbe749e594038d6727208aa94.txt
+gh\lduchosal\battlesnake\0906c57460605be8f3aa55eedaa044abed3307eb\master#3e826bb11228508fbe749e594038d6727208aa94.txt
+gh\hello2dj\rust-practice\ce0d5883667b72104cdd70b2882319ddf6fdb47a\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+reg\pahi-olin\0.2.0\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+reg\aws_parameter_update\0.4.1\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+gh\KenanSulayman\blyat\97d6410e973d65fe6a8be1b5bf1d4cbdeb604f42\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+reg\bitcoin-pro\0.1.0-beta.2\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+ ^ mention is in glade::Error, which is From<NoneError>
+reg\wxf-converter\0.3.0\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+reg\os-rs\0.1.3\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+reg\holochain_persistence_api\0.0.18\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+  reg\lib3h_protocol\0.0.42\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+  gh\marcusnewton\happ-sandbox\24e49b93bfa4d60a756035bc3ccb1fe0e48ed3d1\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+  gh\Holo-Host\holo-communities-dna\ff35247166f9a393dd15890eb1d992dbd4ce88c7\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+  reg\holochain_persistence_pickle\0.0.18\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+  reg\holochain_persistence_mem\0.0.18\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+  reg\holochain_persistence_file\0.0.18\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+reg\ley\0.0.5\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+  gh\AidoP\Ley\1a9186333c6fc74aad1956805b7b760e8648eb0e\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+reg\leetcode-cli\0.3.2\try#3e826bb11228508fbe749e594038d6727208aa94.txt
+  gh\clearloop\leetcode-cli\dc19d2af697b6132479357d9b5fc7c4533211183\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+reg\jstr\0.1.1\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+reg\graph-http\0.0.2\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+ ^ mention is in https://github.com/sreeise/graph-rs/blob/f7b6dbbed5ff4dea27db01b41c259be058facba2/graph-error/src/graph_failure.rs#L221
+reg\goff\0.1.0\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+  gh\imtira\goff\d525e3348a0e471e383729229dad68e63948f7df\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+reg\dochy_fs\0.1.0\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+reg\dochy_archiver\0.1.3\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+reg\dochy_diff\0.1.0\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+reg\decide\0.1.1\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+  gh\devis350\decide\65f76ad203fcff95f8bd40252b7b56e64371ffc1\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+reg\dam\0.1.3\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+  gh\lperlaki\open_dam\171a5f0f5bf2b4c73d36ddb58cee00cd610ed2eb\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+reg\cxmr-tectonic\0.0.1\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+  reg\cxmr-pubsub\0.0.1\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+gh\TyPR124\advent-of-code\3c476baf7b1188fca754cc9c07eedbfa5125a6fc\try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+https://github.com/tscs37/flathunter-rs/blob/master/src/errors.rs#L6
+https://github.com/timjrd/wasm-spectrogram/blob/master/src/error.rs#L1
+https://github.com/svartalf/rust-advent-of-code-2017/blob/master/src/days/day08/common.rs#L5
+https://github.com/noculture/wasl/blob/master/src/frontend/parser.rs#L21
+https://github.com/mythmon/advent-of-code/blob/c8f907fbbb55fec8f9e052760fe4c00a19753811/year2018/src/day12/mod.rs#L134
+https://github.com/makslevental/pg_dump_restore_tui/blob/master/src/config/mod.rs#L94
+https://github.com/alidiusk/Rustulator/blob/master/calculator/src/parser.rs#L8
+https://github.com/Kneelawk/julia-in-motion/blob/master/src/output/mod.rs#L3
+https://github.com/kirillt/ark-tagger/blob/master/src/model/id.rs#L4
+https://github.com/josephlr/rust-aoc/blob/master/src/util/error.rs#L46
+https://github.com/jangerritharms/rs-async-api/blob/master/src/error.rs#L1
+https://github.com/jam1garner/discord-forge/blob/master/src/converter/error.rs#L77
+https://github.com/imtira/wkv/blob/master/src/lib.rs#L36
+https://github.com/goodmanjonathan/aoc2018/blob/master/src/bin/day3/main.rs#L21
+https://github.com/gefjon/gender-lang/blob/master/src/err.rs#L1
+gh/FTB-Gamepedia/ftb-rs/13a561285ad16a610429e1ca17f0ceb9e4479d85/try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+  due to https://github.com/retep998/mediawiki-rs/blob/master/src/lib.rs#L66
+gh/FTB-Gamepedia/bunnybutt-rs/10f5f437f8c8e85479b17e0801adcd5c4e45e450/try#4a23c45c7893f1416456144e3883cc48ea91722e.txt
+  due to https://github.com/retep998/mediawiki-rs/blob/master/src/lib.rs#L66
+https://github.com/ducc/crdb-changefeed-publisher/blob/master/src/error.rs#L65
+https://github.com/decentninja/roleplaying-dice/blob/master/src/main.rs#L63
+https://github.com/CerulanLumina/whereisclass/blob/master/src/xml_parser.rs#L209
+https://github.com/Birbe/jvm/blob/master/wasm/src/lib.rs#L24
+https://github.com/bhjoellund/fibver/blob/master/src/models.rs#L10
+https://github.com/Aiden01/cli/blob/master/src/error.rs#L16

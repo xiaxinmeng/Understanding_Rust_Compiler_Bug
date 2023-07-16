@@ -1,0 +1,2 @@
+
+error: macro undefined: 'assert!'

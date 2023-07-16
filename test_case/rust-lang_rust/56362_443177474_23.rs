@@ -1,0 +1,1 @@
+compile_fail,E0005\nlet x = Some(1);\nlet Some(y) = x;\n// error: refutable pattern in local binding: `None` not covered\n

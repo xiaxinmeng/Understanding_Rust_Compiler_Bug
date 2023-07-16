@@ -1,0 +1,1 @@
+\n\nThis is a very simple case, of course. In more complex cases, we may\nwish to have more than one reference to the value that was borrowed --\nin those cases, something like the `Rc` or `Arc` types may be useful.\n\nThis error also frequently arises with iteration:\n\n

@@ -1,0 +1,4 @@
+
+$ echo "hello" | grep
+Usage: grep [OPTION]... PATTERN [FILE]...
+Try 'grep --help' for more information.

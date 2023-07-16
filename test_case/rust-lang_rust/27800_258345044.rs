@@ -1,0 +1,5 @@
+
+enum Message {
+    CtrlC,
+    NormalMessage(....),
+}

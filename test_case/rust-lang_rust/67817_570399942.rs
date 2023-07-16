@@ -1,0 +1,48 @@
+
+#6  0x00007fe57a7439d3 in rustc::ty::print::pretty::PrettyPrinter::try_print_visible_def_path_recur () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#7  0x00007fe57a74b510 in <rustc::ty::print::pretty::FmtPrinter<F> as rustc::ty::print::Printer>::print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#8  0x00007fe57a752312 in rustc::ty::print::Printer::default_print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#9  0x00007fe57a74b5ad in <rustc::ty::print::pretty::FmtPrinter<F> as rustc::ty::print::Printer>::print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#10 0x00007fe57a7483f4 in rustc::ty::print::pretty::PrettyPrinter::pretty_print_type () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#11 0x00007fe57a74eb49 in <rustc::ty::print::pretty::FmtPrinter<F> as rustc::ty::print::pretty::PrettyPrinter>::generic_delimiters ()
+   from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#12 0x00007fe57a752a42 in rustc::ty::print::Printer::default_print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#13 0x00007fe57a74b5ad in <rustc::ty::print::pretty::FmtPrinter<F> as rustc::ty::print::Printer>::print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#14 0x00007fe57a752312 in rustc::ty::print::Printer::default_print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#15 0x00007fe57a74b5ad in <rustc::ty::print::pretty::FmtPrinter<F> as rustc::ty::print::Printer>::print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#16 0x00007fe57a752312 in rustc::ty::print::Printer::default_print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#17 0x00007fe57a74b5ad in <rustc::ty::print::pretty::FmtPrinter<F> as rustc::ty::print::Printer>::print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#18 0x00007fe57a752312 in rustc::ty::print::Printer::default_print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#19 0x00007fe57a74b5ad in <rustc::ty::print::pretty::FmtPrinter<F> as rustc::ty::print::Printer>::print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#20 0x00007fe57a743bac in rustc::ty::print::pretty::PrettyPrinter::try_print_visible_def_path_recur () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#21 0x00007fe57a743ab5 in rustc::ty::print::pretty::PrettyPrinter::try_print_visible_def_path_recur () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#22 0x00007fe57a74b510 in <rustc::ty::print::pretty::FmtPrinter<F> as rustc::ty::print::Printer>::print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#23 0x00007fe57a752373 in rustc::ty::print::Printer::default_print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#24 0x00007fe57a74b5ad in <rustc::ty::print::pretty::FmtPrinter<F> as rustc::ty::print::Printer>::print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#25 0x00007fe57a74ec81 in <rustc::ty::print::pretty::FmtPrinter<F> as rustc::ty::print::pretty::PrettyPrinter>::generic_delimiters ()
+   from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#26 0x00007fe57a752a42 in rustc::ty::print::Printer::default_print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#27 0x00007fe57a74b5ad in <rustc::ty::print::pretty::FmtPrinter<F> as rustc::ty::print::Printer>::print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#28 0x00007fe57a752312 in rustc::ty::print::Printer::default_print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#29 0x00007fe57a74b5ad in <rustc::ty::print::pretty::FmtPrinter<F> as rustc::ty::print::Printer>::print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#30 0x00007fe57a752312 in rustc::ty::print::Printer::default_print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#31 0x00007fe57a74b5ad in <rustc::ty::print::pretty::FmtPrinter<F> as rustc::ty::print::Printer>::print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#32 0x00007fe57a752312 in rustc::ty::print::Printer::default_print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#33 0x00007fe57a74b5ad in <rustc::ty::print::pretty::FmtPrinter<F> as rustc::ty::print::Printer>::print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#34 0x00007fe57a743bac in rustc::ty::print::pretty::PrettyPrinter::try_print_visible_def_path_recur () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#35 0x00007fe57a743ab5 in rustc::ty::print::pretty::PrettyPrinter::try_print_visible_def_path_recur () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#36 0x00007fe57a74b510 in <rustc::ty::print::pretty::FmtPrinter<F> as rustc::ty::print::Printer>::print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#37 0x00007fe57a752373 in rustc::ty::print::Printer::default_print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#38 0x00007fe57a74b5ad in <rustc::ty::print::pretty::FmtPrinter<F> as rustc::ty::print::Printer>::print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#39 0x00007fe57a74ec81 in <rustc::ty::print::pretty::FmtPrinter<F> as rustc::ty::print::pretty::PrettyPrinter>::generic_delimiters ()
+   from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#40 0x00007fe57a752a42 in rustc::ty::print::Printer::default_print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#41 0x00007fe57a74b5ad in <rustc::ty::print::pretty::FmtPrinter<F> as rustc::ty::print::Printer>::print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#42 0x00007fe57a752312 in rustc::ty::print::Printer::default_print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#43 0x00007fe57a74b5ad in <rustc::ty::print::pretty::FmtPrinter<F> as rustc::ty::print::Printer>::print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#44 0x00007fe57a752312 in rustc::ty::print::Printer::default_print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#45 0x00007fe57a74b5ad in <rustc::ty::print::pretty::FmtPrinter<F> as rustc::ty::print::Printer>::print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#46 0x00007fe57a752312 in rustc::ty::print::Printer::default_print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#47 0x00007fe57a74b5ad in <rustc::ty::print::pretty::FmtPrinter<F> as rustc::ty::print::Printer>::print_def_path () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#48 0x00007fe57a743bac in rustc::ty::print::pretty::PrettyPrinter::try_print_visible_def_path_recur () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so
+#49 0x00007fe57a743ab5 in rustc::ty::print::pretty::PrettyPrinter::try_print_visible_def_path_recur () from /home/aaron/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-17772cbea8f58f8c.so

@@ -1,0 +1,1 @@
+\n\nHere, the where clause `T: 'a` that appears on the impl is not known to be\nsatisfied on the struct. To make this example compile, you have to add\na where-clause like `T: 'a` to the struct definition:\n\n

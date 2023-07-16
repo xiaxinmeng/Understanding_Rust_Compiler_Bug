@@ -1,0 +1,3 @@
+
+#[derive(Debug)]    ■■■ only traits defined in the current crate can be...
+enum Banana { ... }

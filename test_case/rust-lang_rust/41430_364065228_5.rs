@@ -1,0 +1,4 @@
+rust
+pub mod {
+    ...
+}

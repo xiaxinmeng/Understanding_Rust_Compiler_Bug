@@ -1,0 +1,2 @@
+
+type Unsized = dyn Drop;

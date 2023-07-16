@@ -1,0 +1,1 @@
+\n\nMake sure `impl Trait` only appears in return-type position.\n\n

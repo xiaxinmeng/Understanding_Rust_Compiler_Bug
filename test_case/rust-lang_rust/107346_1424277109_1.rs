@@ -1,0 +1,10 @@
+
+- https://github.com/rust-lang/rust/pull/97373 (impl DispatchFromDyn for Cell and UnsafeCell)
+- https://github.com/rust-lang/rust/pull/106625 (Remove backwards compat for LLVM 12 coverage format)
+- https://github.com/rust-lang/rust/pull/106779 (Avoid __cxa_thread_atexit_impl on Emscripten)
+- https://github.com/rust-lang/rust/pull/106811 (Append .dwp to the binary filename instead of replacing the existing extension.)
+- https://github.com/rust-lang/rust/pull/106836 (Remove optimistic spinning from `mpsc::SyncSender`)
+- https://github.com/rust-lang/rust/pull/106946 (implement Hash for proc_macro::LineColumn)
+- https://github.com/rust-lang/rust/pull/107074 (remove unnecessary check for opaque types)
+- https://github.com/rust-lang/rust/pull/107287 (Improve fn pointer notes)
+- https://github.com/rust-lang/rust/pull/107304 (Use `can_eq` to compare types for default assoc type error)

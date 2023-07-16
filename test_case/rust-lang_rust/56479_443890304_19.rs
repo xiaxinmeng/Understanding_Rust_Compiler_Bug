@@ -1,0 +1,1 @@
+\nfn foo() -> i32 { 22 }\nfn bar(x: &i32) -> &i32 { x }\nlet value = &foo();\nlet p = bar(value);\nlet q = *p;\n

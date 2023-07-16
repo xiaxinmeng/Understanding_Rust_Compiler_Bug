@@ -1,0 +1,2 @@
+
+error: internal compiler error: src/librustc_mir/transform/simplify_try.rs:679:22: set descriminant on adt that is not enum. Place: (*(_1.0: &mut [static generator@/home/simon/Documents/rust/src/test/ui/async-await/async-await.rs:197:24: 199:14 x:u8 {std::future::ResumeTy, u8, impl std::future::Future, ()}])), place_type: [static generator@/home/simon/Documents/rust/src/test/ui/async-await/async-await.rs:197:24: 199:14 x:u8 {std::future::ResumeTy, u8, impl std::future::Future, ()}]

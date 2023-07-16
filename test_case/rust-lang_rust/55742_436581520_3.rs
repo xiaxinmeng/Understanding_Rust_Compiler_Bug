@@ -1,0 +1,1 @@
+\nenum Foo { B { i: u32 } }\n\nfn bar(foo: Foo) -> u32 {\n    match foo {\n        Foo::B{i} => i,\n    }\n}\n

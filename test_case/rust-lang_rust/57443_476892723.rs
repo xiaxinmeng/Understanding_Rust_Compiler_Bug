@@ -1,0 +1,15 @@
+
+[2019-03-26T23:17:52Z TRACE sync_cargo_lock] Package build_helper, no version
+[2019-03-26T23:17:52Z INFO  sync_cargo_lock] updated cmake: '0.1.23' → '0.1.33' in "src/bootstrap/Cargo.toml"
+[2019-03-26T23:17:52Z INFO  sync_cargo_lock] updated filetime: '0.2' → '0.2.4' in "src/bootstrap/Cargo.toml"
+[2019-03-26T23:17:52Z INFO  sync_cargo_lock] updated num_cpus: '1.0' → '1.8.0' in "src/bootstrap/Cargo.toml"
+[2019-03-26T23:17:52Z INFO  sync_cargo_lock] updated getopts: '0.2' → '0.2.17' in "src/bootstrap/Cargo.toml"
+[2019-03-26T23:17:52Z INFO  sync_cargo_lock] updated cc: '1.0.1' → '1.0.28' in "src/bootstrap/Cargo.toml"
+[2019-03-26T23:17:52Z INFO  sync_cargo_lock] updated libc: '0.2' → '0.2.50' in "src/bootstrap/Cargo.toml"
+[2019-03-26T23:17:52Z INFO  sync_cargo_lock] updated serde: '1.0.8' → '1.0.82' in "src/bootstrap/Cargo.toml"
+[2019-03-26T23:17:52Z INFO  sync_cargo_lock] updated serde_derive: '1.0.8' → '1.0.81' in "src/bootstrap/Cargo.toml"
+[2019-03-26T23:17:52Z INFO  sync_cargo_lock] updated serde_json: '1.0.2' → '1.0.33' in "src/bootstrap/Cargo.toml"
+[2019-03-26T23:17:52Z INFO  sync_cargo_lock] updated toml: '0.4' → '0.4.10' in "src/bootstrap/Cargo.toml"
+[2019-03-26T23:17:52Z INFO  sync_cargo_lock] updated lazy_static: '0.2' → '0.2.11' in "src/bootstrap/Cargo.toml"
+[2019-03-26T23:17:52Z INFO  sync_cargo_lock] updated time: '0.1' → '0.1.40' in "src/bootstrap/Cargo.toml"
+[2019-03-26T23:17:52Z INFO  sync_cargo_lock] updated petgraph: '0.4.13' → '0.4.13' in "src/bootstrap/Cargo.toml"

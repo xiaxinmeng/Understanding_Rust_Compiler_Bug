@@ -1,0 +1,1 @@
+\n\nTo avoid this kind of error, ensure that at least one local type is referenced\nby the `impl`:\n\n

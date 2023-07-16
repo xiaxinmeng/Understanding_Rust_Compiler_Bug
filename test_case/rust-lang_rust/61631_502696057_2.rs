@@ -1,0 +1,2 @@
+Rust
+let _: Bug;

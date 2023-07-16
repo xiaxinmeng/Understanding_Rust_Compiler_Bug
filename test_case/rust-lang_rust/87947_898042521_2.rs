@@ -1,0 +1,2 @@
+
+RUSTFLAGS="-Z symbol-mangling-version=v0 -Z no-parallel-llvm -Z mir-opt-level=0 -C codegen-units=3 -C llvm-args=-filter-print-funcs=_RNvXs_NtCsijNWNMdNqoj_7pyembed18interpreter_configRNtNtB6_6config39ResolvedOxidizedPythonInterpreterConfigINtNtCskrsM4FCwAVA_4core7convert7TryIntoNtNtNtNtCs9hgvHLNfJdN_4pyo33ffi7cpython10initconfig8PyConfigE8try_into -C llvm-args=-print-after-all" cargo +nightly-2021-05-19 build --release --features allocator-jemalloc

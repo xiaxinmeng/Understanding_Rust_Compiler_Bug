@@ -1,0 +1,1 @@
+compile_fail,E0597\nstruct Foo<'a> {\n    x: Option<&'a u32>,\n}\n\nlet mut x = Foo { x: None };\nlet y = 0;\nx.x = Some(&y); // error: `y` does not live long enough\n

@@ -1,0 +1,3 @@
+
+------stderr------------------------------
+{"message":"function is never used: `foo`, #[warn(dead_code)]  ...

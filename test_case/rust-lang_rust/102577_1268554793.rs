@@ -1,0 +1,7 @@
+plain
+Successfully built e5361e16dc3a
+Successfully tagged rust-ci:latest
+Built container sha256:e5361e16dc3aa31b0571a4dd56f21528e0c2a9bd9e317d23bf419ef5e16023ca
+Uploading finished image to https://ci-caches.rust-lang.org/docker/3ba9d538a45014cf9c069a7f7b39b17975213bb4ad3cb92953bcf42e2feac7246274891423ce6ec10459580375996bc5323b9b2e1eaa3f9fe83d7d3a2f2335cf
+upload failed: - to s3://rust-lang-ci-sccache2/docker/3ba9d538a45014cf9c069a7f7b39b17975213bb4ad3cb92953bcf42e2feac7246274891423ce6ec10459580375996bc5323b9b2e1eaa3f9fe83d7d3a2f2335cf Unable to locate credentials
+[CI_JOB_NAME=x86_64-gnu-llvm-13]

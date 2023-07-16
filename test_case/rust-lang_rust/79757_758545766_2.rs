@@ -1,0 +1,1 @@
+\n\nor, bind the variable to a field of the same type in all sub-patterns of the\nor pattern:\n\n

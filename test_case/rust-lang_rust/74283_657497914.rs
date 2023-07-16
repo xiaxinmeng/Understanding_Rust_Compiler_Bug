@@ -1,0 +1,3 @@
+rust
+pub const PROVIDERS: &'static Providers = { // ...
+};

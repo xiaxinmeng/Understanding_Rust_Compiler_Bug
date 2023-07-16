@@ -1,0 +1,1 @@
+\nstruct FancyNum {\n    num: u8,\n}\n\nfn main() {\n    let mut fancy = FancyNum{ num: 5 };\n\n    let fancy_ref = &mut fancy;\n    // `fancy_ref` is now &mut FancyNum, rather than &(&mut FancyNum)\n\n    fancy_ref.num = 6; // No error!\n\n    println!(\"{}\", fancy_ref.num);\n}\n

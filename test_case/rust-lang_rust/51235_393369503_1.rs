@@ -1,0 +1,1 @@
+compile_fail,E0507\nuse std::cell::RefCell;\n\nstruct TheDarkKnight;\n\nimpl TheDarkKnight {\n    fn nothing_is_true(self) {}\n}\n\nfn main() {\n    let x = RefCell::new(TheDarkKnight);\n\n    x.borrow().nothing_is_true(); // error: cannot move out of borrowed content\n}\n

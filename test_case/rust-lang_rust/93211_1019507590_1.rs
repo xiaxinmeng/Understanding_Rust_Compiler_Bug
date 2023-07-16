@@ -1,0 +1,1 @@
+mklink /J "C:\Documents and settings" "C:\Users"

@@ -1,0 +1,1 @@
+\n\nHere, the expression `&foo()` is borrowing the expression\n`foo()`. As `foo()` is call to a function, and not the name of\na variable, this creates a **temporary** -- that temporary stores\nthe return value from `foo()` so that it can be borrowed.\nSo you might imagine that `let p = bar(&foo())` is equivalent\nto this:\n\n

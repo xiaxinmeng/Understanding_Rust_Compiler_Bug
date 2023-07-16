@@ -1,0 +1,6 @@
+
+let mut foo;
+foo = 3;
+...
+if cond { foo = 1; } else { foo = 2; }
+...

@@ -1,0 +1,11 @@
+toml
+[package]
+name = "ice-macros"
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1.0.9"

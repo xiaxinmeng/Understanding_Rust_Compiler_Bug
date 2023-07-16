@@ -1,0 +1,1 @@
+compile_fail,E0373\nfn foo() {\n    let x = 0u32;\n    let y = 1u32;\n\n    let thr = std::thread::spawn(|| {\n        x + y\n    });\n}\n

@@ -1,0 +1,34 @@
+xml
+<DisplayString Condition="tag == variant0.DISCR_EXACT" Optional="true">{variant0.NAME,en}</DisplayString>
+<DisplayString Condition="tag == variant1.DISCR_EXACT" Optional="true">{variant1.NAME,en}</DisplayString>
+<DisplayString Condition="tag == variant2.DISCR_EXACT" Optional="true">{variant2.NAME,en}</DisplayString>
+<DisplayString Condition="tag == variant3.DISCR_EXACT" Optional="true">{variant3.NAME,en}</DisplayString>
+<DisplayString Condition="tag == variant4.DISCR_EXACT" Optional="true">{variant4.NAME,en}</DisplayString>
+<DisplayString Condition="tag == variant5.DISCR_EXACT" Optional="true">{variant5.NAME,en}</DisplayString>
+<DisplayString Condition="tag == variant6.DISCR_EXACT" Optional="true">{variant6.NAME,en}</DisplayString>
+<DisplayString Condition="tag == variant7.DISCR_EXACT" Optional="true">{variant7.NAME,en}</DisplayString>
+<DisplayString Condition="tag == variant8.DISCR_EXACT" Optional="true">{variant8.NAME,en}</DisplayString>
+<DisplayString Condition="tag == variant9.DISCR_EXACT" Optional="true">{variant9.NAME,en}</DisplayString>
+<DisplayString Condition="tag == variant10.DISCR_EXACT" Optional="true">{variant10.NAME,en}</DisplayString>
+<DisplayString Condition="tag == variant11.DISCR_EXACT" Optional="true">{variant11.NAME,en}</DisplayString>
+<DisplayString Condition="tag == variant12.DISCR_EXACT" Optional="true">{variant12.NAME,en}</DisplayString>
+<DisplayString Condition="tag == variant13.DISCR_EXACT" Optional="true">{variant13.NAME,en}</DisplayString>
+<DisplayString Condition="tag == variant14.DISCR_EXACT" Optional="true">{variant14.NAME,en}</DisplayString>
+<DisplayString Condition="tag == variant15.DISCR_EXACT" Optional="true">{variant15.NAME,en}</DisplayString>
+
+<DisplayString Condition="in_range(tag, variant0.DISCR_BEGIN, variant0.DISCR_END)" Optional="true">{variant0.NAME,en}</DisplayString>
+<DisplayString Condition="in_range(tag, variant1.DISCR_BEGIN, variant1.DISCR_END)" Optional="true">{variant1.NAME,en}</DisplayString>
+<DisplayString Condition="in_range(tag, variant2.DISCR_BEGIN, variant2.DISCR_END)" Optional="true">{variant2.NAME,en}</DisplayString>
+<DisplayString Condition="in_range(tag, variant3.DISCR_BEGIN, variant3.DISCR_END)" Optional="true">{variant3.NAME,en}</DisplayString>
+<DisplayString Condition="in_range(tag, variant4.DISCR_BEGIN, variant4.DISCR_END)" Optional="true">{variant4.NAME,en}</DisplayString>
+<DisplayString Condition="in_range(tag, variant5.DISCR_BEGIN, variant5.DISCR_END)" Optional="true">{variant5.NAME,en}</DisplayString>
+<DisplayString Condition="in_range(tag, variant6.DISCR_BEGIN, variant6.DISCR_END)" Optional="true">{variant6.NAME,en}</DisplayString>
+<DisplayString Condition="in_range(tag, variant7.DISCR_BEGIN, variant7.DISCR_END)" Optional="true">{variant7.NAME,en}</DisplayString>
+<DisplayString Condition="in_range(tag, variant8.DISCR_BEGIN, variant8.DISCR_END)" Optional="true">{variant8.NAME,en}</DisplayString>
+<DisplayString Condition="in_range(tag, variant9.DISCR_BEGIN, variant9.DISCR_END)" Optional="true">{variant9.NAME,en}</DisplayString>
+<DisplayString Condition="in_range(tag, variant10.DISCR_BEGIN, variant10.DISCR_END)" Optional="true">{variant10.NAME,en}</DisplayString>
+<DisplayString Condition="in_range(tag, variant11.DISCR_BEGIN, variant11.DISCR_END)" Optional="true">{variant11.NAME,en}</DisplayString>
+<DisplayString Condition="in_range(tag, variant12.DISCR_BEGIN, variant12.DISCR_END)" Optional="true">{variant12.NAME,en}</DisplayString>
+<DisplayString Condition="in_range(tag, variant13.DISCR_BEGIN, variant13.DISCR_END)" Optional="true">{variant13.NAME,en}</DisplayString>
+<DisplayString Condition="in_range(tag, variant14.DISCR_BEGIN, variant14.DISCR_END)" Optional="true">{variant14.NAME,en}</DisplayString>
+<DisplayString Condition="in_range(tag, variant15.DISCR_BEGIN, variant15.DISCR_END)" Optional="true">{variant15.NAME,en}</DisplayString>

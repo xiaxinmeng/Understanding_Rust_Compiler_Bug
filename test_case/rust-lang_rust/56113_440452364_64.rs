@@ -1,0 +1,1 @@
+compile_fail,E0505\nstruct Value {}\n\nfn eat(val: Value) {}\n\nfn main() {\n    let x = Value{};\n    {\n        let _ref_to_val: &Value = &x;\n        eat(x);\n    }\n}\n

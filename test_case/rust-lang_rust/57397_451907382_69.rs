@@ -1,0 +1,1 @@
+\ntrait Bar {\n    fn get(&self) -> usize;\n}\n\nimpl Bar for u32 {\n    fn get(&self) -> usize { 0 }\n}\n

@@ -1,0 +1,63 @@
+plain
+[00:48:21] ....................................................................................................
+[00:48:24] ....................................................................................................
+[00:48:27] .................................i..................................................................
+[00:48:30] ....................................................................................................
+[00:48:32] ..................................................................................iiiiiiiii.........
+[00:48:38] ....ii..............................................................................................
+[00:48:41] ....................................................................................................
+[00:48:44] ...............................................................i....................................
+[00:48:47] ....................................................................................................
+---
+[00:50:29] ....................................................................................................
+[00:50:37] ....................................................................................................
+[00:50:46] ....................................................................................................
+[00:50:59] ....................................................................................................
+[00:51:07] .......................................F............................................................
+[00:51:24] ....................................................................................................
+[00:51:31] ....................................................................................................
+[00:51:39] ....................................................................................................
+[00:51:51] .................................................................................i..................
+---
+[00:55:02] ---- [run-pass] run-pass/invalid_const_promotion.rs stdout ----
+[00:55:02] 
+[00:55:02] error: compilation failed!
+[00:55:02] status: exit code: 1
+[00:55:02] command: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "/checkout/src/test/run-pass/invalid_const_promotion.rs" "--target=x86_64-unknown-linux-gnu" "-C" "prefer-dynamic" "-o" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/run-pass/invalid_const_promotion/a" "-Crpath" "-O" "-Zunstable-options" "-Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "-C" "debug_assertions=yes" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/run-pass/invalid_const_promotion/auxiliary"
+[00:55:02] ------------------------------------------
+[00:55:02] 
+[00:55:02] ------------------------------------------
+[00:55:02] stderr:
+[00:55:02] stderr:
+[00:55:02] ------------------------------------------
+[00:55:02] error[E0597]: borrowed value does not live long enough
+[00:55:02]    |
+[00:55:02]    |
+[00:55:02] 29 |     let _: &'static _ = &bar();
+[00:55:02]    |                          ^^^^^ temporary value does not live long enough
+[00:55:02] 30 | }
+[00:55:02]    | - temporary value only lives until here
+[00:55:02]    |
+[00:55:02]    = note: borrowed value must be valid for the static lifetime...
+[00:55:02] warning: variable does not need to be mutable
+[00:55:02]   --> /checkout/src/test/run-pass/invalid_const_promotion.rs:55:9
+[00:55:02]    |
+[00:55:02]    |
+[00:55:02] 55 |     let mut p = Command::new(&args[0])
+[00:55:02]    |         |
+[00:55:02]    |         help: remove this `mut`
+[00:55:02]    |
+[00:55:02]    = note: #[warn(unused_mut)] on by default
+---
+[00:55:02] 
+[00:55:02] thread 'main' panicked at 'Some tests failed', tools/compiletest/src/main.rs:497:22
+[00:55:02] 
+[00:55:02] 
+[00:55:02] command did not execute successfully: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage0-tools-bin/compiletest" "--compile-lib-path" "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/lib" "--run-lib-path" "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/lib/rustlib/x86_64-unknown-linux-gnu/lib" "--rustc-path" "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "--src-base" "/checkout/src/test/run-pass" "--build-base" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/run-pass" "--stage-id" "stage2-x86_64-unknown-linux-gnu" "--mode" "run-pass" "--target" "x86_64-unknown-linux-gnu" "--host" "x86_64-unknown-linux-gnu" "--llvm-filecheck" "/usr/lib/llvm-5.0/bin/FileCheck" "--host-rustcflags" "-Crpath -O -Zunstable-options " "--target-rustcflags" "-Crpath -O -Zunstable-options  -Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "--docck-python" "/usr/bin/python2.7" "--lldb-python" "/usr/bin/python2.7" "--gdb" "/usr/bin/gdb" "--quiet" "--llvm-version" "5.0.0\n" "--system-llvm" "--cc" "" "--cxx" "" "--cflags" "" "--llvm-components" "" "--llvm-cxxflags" "" "--adb-path" "adb" "--adb-test-dir" "/data/tmp/work" "--android-cross-path" "" "--color" "always"
+[00:55:02] 
+[00:55:02] 
+[00:55:02] failed to run: /checkout/obj/build/bootstrap/debug/bootstrap test
+[00:55:02] Build completed unsuccessfully in 0:10:42
+[00:55:02] Build completed unsuccessfully in 0:10:42
+[00:55:02] make: *** [check] Error 1
+[00:55:02] Makefile:58: recipe for target 'check' failed

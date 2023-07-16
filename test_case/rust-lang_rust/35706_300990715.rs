@@ -1,0 +1,32 @@
+
+<snip>
+    frame #45342: 0x00000001014bdc1e librustc-f5e010ab81ea8d86.dylib`_$LT$rustc..traits..project..AssociatedTypeNormalizer$LT$$u27$a$C$$u20$$u27$b$C$$u20$$u27$gcx$C$$u20$$u27$tcx$GT$$u20$as$u20$rustc..ty..fold..TypeFolder$LT$$u27$gcx$C$$u20$$u27$tcx$GT$$GT$::fold_ty::h0822fd28d0c8d59a + 1502
+    frame #45343: 0x00000001014bdc1e librustc-f5e010ab81ea8d86.dylib`_$LT$rustc..traits..project..AssociatedTypeNormalizer$LT$$u27$a$C$$u20$$u27$b$C$$u20$$u27$gcx$C$$u20$$u27$tcx$GT$$u20$as$u20$rustc..ty..fold..TypeFolder$LT$$u27$gcx$C$$u20$$u27$tcx$GT$$GT$::fold_ty::h0822fd28d0c8d59a + 1502
+    frame #45344: 0x00000001014bdc1e librustc-f5e010ab81ea8d86.dylib`_$LT$rustc..traits..project..AssociatedTypeNormalizer$LT$$u27$a$C$$u20$$u27$b$C$$u20$$u27$gcx$C$$u20$$u27$tcx$GT$$u20$as$u20$rustc..ty..fold..TypeFolder$LT$$u27$gcx$C$$u20$$u27$tcx$GT$$GT$::fold_ty::h0822fd28d0c8d59a + 1502
+    frame #45345: 0x00000001014bdc1e librustc-f5e010ab81ea8d86.dylib`_$LT$rustc..traits..project..AssociatedTypeNormalizer$LT$$u27$a$C$$u20$$u27$b$C$$u20$$u27$gcx$C$$u20$$u27$tcx$GT$$u20$as$u20$rustc..ty..fold..TypeFolder$LT$$u27$gcx$C$$u20$$u27$tcx$GT$$GT$::fold_ty::h0822fd28d0c8d59a + 1502
+    frame #45346: 0x00000001014bdc1e librustc-f5e010ab81ea8d86.dylib`_$LT$rustc..traits..project..AssociatedTypeNormalizer$LT$$u27$a$C$$u20$$u27$b$C$$u20$$u27$gcx$C$$u20$$u27$tcx$GT$$u20$as$u20$rustc..ty..fold..TypeFolder$LT$$u27$gcx$C$$u20$$u27$tcx$GT$$GT$::fold_ty::h0822fd28d0c8d59a + 1502
+    frame #45347: 0x000000010128c305 librustc-f5e010ab81ea8d86.dylib`_$LT$rustc_data_structures..accumulate_vec..AccumulateVec$LT$A$GT$$u20$as$u20$core..iter..traits..FromIterator$LT$$LT$A$u20$as$u20$rustc_data_structures..array_vec..Array$GT$..Element$GT$$GT$::from_iter::h20c3a889a01c5c1f + 117
+    frame #45348: 0x0000000101534dc7 librustc-f5e010ab81ea8d86.dylib`rustc::ty::structural_impls::_$LT$impl$u20$rustc..ty..fold..TypeFoldable$LT$$u27$tcx$GT$$u20$for$u20$$RF$$u27$tcx$u20$rustc..ty..Slice$LT$$RF$$u27$tcx$u20$rustc..ty..TyS$LT$$u27$tcx$GT$$GT$$GT$::super_fold_with::hbafbef6355fb4f79 + 55
+    frame #45349: 0x00000001014bd792 librustc-f5e010ab81ea8d86.dylib`_$LT$rustc..traits..project..AssociatedTypeNormalizer$LT$$u27$a$C$$u20$$u27$b$C$$u20$$u27$gcx$C$$u20$$u27$tcx$GT$$u20$as$u20$rustc..ty..fold..TypeFolder$LT$$u27$gcx$C$$u20$$u27$tcx$GT$$GT$::fold_ty::h0822fd28d0c8d59a + 338
+    frame #45350: 0x00000001014bd2b9 librustc-f5e010ab81ea8d86.dylib`rustc::traits::project::normalize_with_depth::he29d6c28caf338c0 + 153
+    frame #45351: 0x0000000101559d54 librustc-f5e010ab81ea8d86.dylib`_$LT$$RF$$u27$gcx$u20$rustc..ty..TyS$LT$$u27$gcx$GT$$u20$as$u20$rustc..infer..TransNormalize$LT$$u27$gcx$GT$$GT$::trans_normalize::h5b593665e5d3143d + 292
+    frame #45352: 0x00000001014e5282 librustc-f5e010ab81ea8d86.dylib`_$LT$rustc..traits..trans..AssociatedTypeNormalizer$LT$$u27$a$C$$u20$$u27$gcx$GT$$u20$as$u20$rustc..ty..fold..TypeFolder$LT$$u27$gcx$C$$u20$$u27$gcx$GT$$GT$::fold_ty::haa6d355548aeffe5 + 3138
+    frame #45353: 0x0000000100eff66d librustc_trans-2a23ec83470b8da3.dylib`rustc::traits::trans::_$LT$impl$u20$rustc..ty..context..TyCtxt$LT$$u27$a$C$$u20$$u27$tcx$C$$u20$$u27$tcx$GT$$GT$::trans_apply_param_substs::h82d80567713c67de + 157
+    frame #45354: 0x0000000100f600fd librustc_trans-2a23ec83470b8da3.dylib`_$LT$rustc_trans..collector..MirNeighborCollector$LT$$u27$a$C$$u20$$u27$tcx$GT$$u20$as$u20$rustc..mir..visit..Visitor$LT$$u27$tcx$GT$$GT$::visit_terminator_kind::h3298a4d8a1978c69 + 509
+    frame #45355: 0x0000000100ef9375 librustc_trans-2a23ec83470b8da3.dylib`rustc::mir::visit::Visitor::visit_mir::ha83c977dd755ab39 + 645
+    frame #45356: 0x0000000100f5d73f librustc_trans-2a23ec83470b8da3.dylib`rustc_trans::collector::collect_items_rec::h25c65ce577ee9cdb + 1711
+    frame #45357: 0x0000000100f5a224 librustc_trans-2a23ec83470b8da3.dylib`rustc_trans::base::collect_and_partition_translation_items::_$u7b$$u7b$closure$u7d$$u7d$::hf0548a4fd14f1567 + 1892
+    frame #45358: 0x0000000100f4aa3d librustc_trans-2a23ec83470b8da3.dylib`rustc_trans::base::trans_crate::hc8538e6b8fc181e8 + 4269
+    frame #45359: 0x000000010016e09f librustc_driver-45e2d96c004bc54e.dylib`rustc_driver::driver::phase_4_translate_to_llvm::h8794d833f6109935 + 1567
+    frame #45360: 0x0000000100135ee0 librustc_driver-45e2d96c004bc54e.dylib`rustc_driver::driver::compile_input::_$u7b$$u7b$closure$u7d$$u7d$::h6edadc065bfa9bc5 + 1504
+    frame #45361: 0x0000000100161af3 librustc_driver-45e2d96c004bc54e.dylib`rustc_driver::driver::phase_3_run_analysis_passes::_$u7b$$u7b$closure$u7d$$u7d$::h4d214f00df4ddfbc + 18339
+    frame #45362: 0x000000010014b57c librustc_driver-45e2d96c004bc54e.dylib`rustc_driver::driver::phase_3_run_analysis_passes::h9ba279e7e8dbf3ef + 13916
+    frame #45363: 0x00000001001331ee librustc_driver-45e2d96c004bc54e.dylib`rustc_driver::driver::compile_input::hdef5f220808181b7 + 8942
+    frame #45364: 0x000000010017efd1 librustc_driver-45e2d96c004bc54e.dylib`rustc_driver::run_compiler::h20e73f67d559ff12 + 3073
+    frame #45365: 0x0000000100098e39 librustc_driver-45e2d96c004bc54e.dylib`std::panicking::try::do_call::h61fa3e8a8d939c78 + 889
+    frame #45366: 0x000000010564b9cb libstd-438eba4cd7d88a45.dylib`__rust_maybe_catch_panic + 27
+    frame #45367: 0x00000001000c7e00 librustc_driver-45e2d96c004bc54e.dylib`_$LT$F$u20$as$u20$alloc..boxed..FnBox$LT$A$GT$$GT$::call_box::h4458443c22631385 + 144
+    frame #45368: 0x00000001056454d6 libstd-438eba4cd7d88a45.dylib`std::sys::imp::thread::Thread::new::thread_start::h5852519f9f48a1f2 + 134
+    frame #45369: 0x00007fffc9aa49af libsystem_pthread.dylib`_pthread_body + 180
+    frame #45370: 0x00007fffc9aa48fb libsystem_pthread.dylib`_pthread_start + 286
+    frame #45371: 0x00007fffc9aa4101 libsystem_pthread.dylib`thread_start + 13

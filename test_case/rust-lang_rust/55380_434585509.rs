@@ -1,0 +1,9 @@
+`
+compact-0.2.5
+compact-0.2.13
+compact-0.2.7
+descartes-0.1.10
+descartes-0.1.13
+descartes-0.1.4
+descartes-0.1.8
+michelangelo-0.1.1

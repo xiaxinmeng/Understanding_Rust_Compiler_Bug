@@ -1,0 +1,4 @@
+
+@media only screen and (max-width: 1060px) {
+    .mobile-hidden { display: none }
+}

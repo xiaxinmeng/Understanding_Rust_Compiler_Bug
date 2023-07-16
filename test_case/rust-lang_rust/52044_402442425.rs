@@ -1,0 +1,4 @@
+
+llc-7: a/stdin.ll:25470:373: error: invalid field 'variables'
+!2237 = distinct !DISubprogram(name: "alloc", linkageName: "_ZN12alloc_system8platform75_$LT$impl$u20$core..alloc..GlobalAlloc$u20$for$u20$alloc_system..System$GT$5alloc17hcaa16a633af984e0E", scope: !2239, file: !2238, line: 135, type: !2242, isLocal: true, isDefinition: true, scopeLine: 135, flags: DIFlagPrototyped, isOptimized: true, unit: !1560, templateParams: !21, variables: !21)
+                                                                                                                                                                                                                                                                                                                                                                                    ^

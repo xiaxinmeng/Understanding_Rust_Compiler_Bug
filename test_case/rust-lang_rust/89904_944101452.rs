@@ -1,0 +1,45 @@
+
+        f.debug_struct("CrateRoot")
+            .field("name", &root.name)
+            .field("triple", &root.triple)
+            .field("extra_filename", &root.extra_filename)
+            .field("hash", &root.hash)
+            .field("stable_crate_id", &root.stable_crate_id)
+            .field("panic_strategy", &root.panic_strategy)
+            .field("edition", &root.edition)
+            .field("has_global_allocator", &root.has_global_allocator)
+            .field("has_panic_handler", &root.has_panic_handler)
+            .field("crate_deps", &root.crate_deps.decode(meta).collect::<Vec<_>>())
+
+            .field("dylib_dependency_formats", &root.dylib_dependency_formats.decode(meta).collect::<Vec<_>>())
+            .field("lib_features", &root.lib_features.decode(meta).collect::<Vec<_>>())
+            .field("lang_items", &root.lang_items.decode(meta).collect::<Vec<_>>())
+            .field("lang_items_missing", &root.lang_items_missing.decode(meta).collect::<Vec<_>>())
+            .field("diagnostic_items", &root.diagnostic_items.decode(meta).collect::<Vec<_>>())
+            .field("native_libraries", &root.native_libraries.decode(meta).collect::<Vec<_>>())
+            .field("foreign_modules", &root.foreign_modules.decode(meta).collect::<Vec<_>>())
+            .field("interpret_alloc_index", &root.interpret_alloc_index.decode(meta).collect::<Vec<_>>())
+            .field("exported_symbols", &root.exported_symbols.decode(meta).collect::<Vec<_>>())
+
+
+
+            .field("proc_macro_data.proc_macro_decls_static", &root.proc_macro_data.as_ref().map(|x| x.proc_macro_decls_static))
+            .field("proc_macro_data.stability", &root.proc_macro_data.as_ref().map(|x| x.stability))
+            .field("proc_macro_data.macros", &root.proc_macro_data.as_ref().map(|x| x.macros.decode(meta).collect::<Vec<_>>()))
+
+            // .field("impls", &root.impls.decode(meta).collect::<Vec<_>>())
+            // tables: LazyTables<'tcx>,
+            // .field("syntax_contexts", &root.syntax_contexts)
+            // .field("expn_data", &root.expn_data)
+            // .field("expn_hashes", &root.expn_hashes)
+            // .field("source_map", &root.source_map.decode(meta).collect::<Vec<_>>())
+
+            .field("has_default_lib_allocator", &root.has_default_lib_allocator)
+            .field("compiler_builtins", &root.compiler_builtins)
+            .field("needs_allocator", &root.needs_allocator)
+            .field("needs_panic_runtime", &root.needs_panic_runtime)
+            .field("no_builtins", &root.no_builtins)
+            .field("panic_runtime", &root.panic_runtime)
+            .field("profiler_runtime", &root.profiler_runtime)
+            .field("symbol_mangling_version", &root.symbol_mangling_version)
+            .finish()

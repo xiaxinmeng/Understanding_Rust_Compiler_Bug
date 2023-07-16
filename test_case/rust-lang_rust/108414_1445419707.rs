@@ -1,0 +1,2 @@
+rust
+const MITIGATED_ADVISORIES :  &[&str] = &["INTEL-SA-00079","INTEL-SA-00076"];

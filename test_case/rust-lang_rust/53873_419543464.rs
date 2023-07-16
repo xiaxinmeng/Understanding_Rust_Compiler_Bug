@@ -1,0 +1,6 @@
+rust
+let mut x = &foo;
+...
+
+x = &bar;
+...

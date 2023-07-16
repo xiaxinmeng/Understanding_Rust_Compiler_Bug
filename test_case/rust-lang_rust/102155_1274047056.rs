@@ -1,0 +1,3 @@
+toml
+[rust]
+debug = true

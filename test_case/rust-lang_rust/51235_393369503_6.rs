@@ -1,0 +1,1 @@
+\n# struct TheDarkKnight;\n# impl TheDarkKnight { fn nothing_is_true(self) {} }\n# struct Batcave { knight: TheDarkKnight }\nuse std::mem;\n\nlet mut cave = Batcave {\n    knight: TheDarkKnight\n};\nlet borrowed = &mut cave;\n\nmem::replace(&mut borrowed.knight, TheDarkKnight).nothing_is_true(); // ok!\n

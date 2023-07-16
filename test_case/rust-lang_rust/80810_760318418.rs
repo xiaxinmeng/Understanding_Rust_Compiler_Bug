@@ -1,0 +1,3 @@
+
+downloading <https://ci-artifacts.rust-lang.org/rustc-builds/c963187c6f959417cbb13a33e9eaea4607696fc4/rustc-nightly-s390x-unknown-linux-gnu.tar.xz>...
+error: missing component `rustc` on toolchain `c963187c6f959417cbb13a33e9eaea4607696fc4` on channel `nightly` for target `s390x-unknown-linux-gnu`

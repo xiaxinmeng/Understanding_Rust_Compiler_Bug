@@ -1,0 +1,1 @@
+\nfn main() {\n    let s1 = String::from(\"hello\");\n\n    let len = calculate_length(&s1);\n\n    println!(\"The length of '{}' is {}.\", s1, len);\n}\n\nfn calculate_length(s: &String) -> usize {\n    s.len()\n}\n

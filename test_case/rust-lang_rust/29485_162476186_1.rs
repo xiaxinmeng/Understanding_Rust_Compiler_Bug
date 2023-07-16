@@ -1,0 +1,32 @@
+
+    text      data     bss       dec  filename
+    9021     38464       8     47493  lib/libarena-71b07a99.so
+   32863     12766       8     45637  lib/libflate-71b07a99.so
+   19286     40241       4     59531  lib/libfmt_macros-71b07a99.so
+   60656     70240       8    130904  lib/libgetopts-71b07a99.so
+   12498     47964       4     60466  lib/libgraphviz-71b07a99.so
+   25740     23790      24     49554  lib/liblog-71b07a99.so
+   49478    104506       4    153988  lib/librbml-71b07a99.so
+ 3367632   3223067      32   6590731  lib/librustc-71b07a99.so
+  216766     87705       4    304475  lib/librustc_back-71b07a99.so
+  304387    176979       4    481370  lib/librustc_borrowck-71b07a99.so
+   18597    149256       8    167861  lib/librustc_data_structures-71b07a99.so
+ 1926412    121359       8   2047779  lib/librustc_driver-71b07a99.so
+  768321   1497412      16   2265749  lib/librustc_front-71b07a99.so
+  259104     65749       8    324861  lib/librustc_lint-71b07a99.so
+29222128   1897150  105744  31225022  lib/librustc_llvm-71b07a99.so
+ 1611292    218121       4   1829417  lib/librustc_metadata-71b07a99.so
+  420463    165511       8    585982  lib/librustc_mir-71b07a99.so
+  926977     39857       4    966838  lib/librustc_platform_intrinsics-71b07a99.so
+   39491     11789       8     51288  lib/librustc_plugin-71b07a99.so
+   89545     21788       4    111337  lib/librustc_privacy-71b07a99.so
+  409397    164117       8    573522  lib/librustc_resolve-71b07a99.so
+ 2262107    715243      12   2977362  lib/librustc_trans-71b07a99.so
+ 1749382    562100       4   2311486  lib/librustc_typeck-71b07a99.so
+ 3166949    705446      24   3872419  lib/librustdoc-71b07a99.so
+  163400    500427      16    663843  lib/libserialize-71b07a99.so
+ 1623203   1825834    5912   3454949  lib/libstd-71b07a99.so
+ 4221433   3111003      24   7332460  lib/libsyntax-71b07a99.so
+  149020     80788       4    229812  lib/libterm-71b07a99.so
+  215043    126814      16    341873  lib/libtest-71b07a99.so
+53340591  15805486  111932  69258009  (TOTALS)

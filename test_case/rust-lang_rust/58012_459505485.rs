@@ -1,0 +1,1 @@
+experimental-targets = "WebAssembly;RISCV"

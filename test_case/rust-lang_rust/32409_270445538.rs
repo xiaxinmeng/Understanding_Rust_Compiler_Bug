@@ -1,0 +1,13 @@
+rust
+fn do_something() {
+    // ...
+}
+pub fn do_something() {
+    // ...
+}
+crate fn do_something() {
+    // ...
+}
+super fn do_something() {
+    // ...
+}

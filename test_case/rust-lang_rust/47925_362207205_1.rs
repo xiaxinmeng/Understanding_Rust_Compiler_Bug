@@ -1,0 +1,1 @@
+fn flush (&mut self)

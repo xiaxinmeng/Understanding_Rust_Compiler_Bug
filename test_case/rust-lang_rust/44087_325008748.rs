@@ -1,0 +1,3 @@
+rust
+let catch = 5;
+match catch { ...

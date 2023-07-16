@@ -1,0 +1,1 @@
+Implements [Iterator]. Yeah, it implements [`Iterator`]. Yup, [Iterator].

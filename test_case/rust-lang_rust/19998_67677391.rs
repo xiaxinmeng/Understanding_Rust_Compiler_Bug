@@ -1,0 +1,3 @@
+
+\usepackage{newunicodechar}
+\newunicodechar{⊥}{{$\bot$}}

@@ -1,0 +1,1 @@
+let x = my_map.entry(key.clone().or_insert(42);

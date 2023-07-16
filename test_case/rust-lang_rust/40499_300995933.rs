@@ -1,0 +1,2 @@
+
+FB00;LATIN SMALL LIGATURE FF;Ll;0;L;<compat> 0066 0066;;;;N;;;;;

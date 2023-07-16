@@ -1,0 +1,1 @@
+undefined reference to `__guard_dispatch_icall_fptr'

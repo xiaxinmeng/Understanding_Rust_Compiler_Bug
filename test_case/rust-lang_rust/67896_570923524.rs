@@ -1,0 +1,5 @@
+
+[target.powerpc64le-unknown-linux-gnu.dependencies]
+
+[dependencies.alloc]
+features = ["compiler-builtins-mem"]

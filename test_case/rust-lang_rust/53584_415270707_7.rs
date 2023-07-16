@@ -1,0 +1,1 @@
+compile_fail,E0107\nfn foo<T, U>(x: T) {}\n\nfn main() {\n    let x: bool = true;\n    foo::<f64>(x);           // error: wrong number of type arguments:\n                             //        expected 2, found 1\n    foo::<f64, f64, i32>(x); // error: wrong number of type arguments:\n                             //        expected 2, found 3\n}\n

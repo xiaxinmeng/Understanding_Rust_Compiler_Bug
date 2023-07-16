@@ -1,0 +1,1 @@
+\nstruct FancyNum {\n    num: u8,\n, fancy_num.num, moved_num.num);\n}\n

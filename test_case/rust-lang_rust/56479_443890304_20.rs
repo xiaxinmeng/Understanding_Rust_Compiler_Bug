@@ -1,0 +1,1 @@
+\n// Here, two temporaries are created, but\n// as they are stored directly into `value`,\n// they are not dropped until the end of the\n// enclosing block.\nfn foo() -> i32 { 22 }\nlet value = (&foo(), &foo());\n

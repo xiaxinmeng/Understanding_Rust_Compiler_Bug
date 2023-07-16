@@ -1,0 +1,23 @@
+
+#0  0x00007ffff208ad9b in llvm::Constant::containsPoisonElement() const () from /home/marcel/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/libLLVM-13-rust-1.57.0-nightly.so
+#1  0x00007ffff11a2774 in (anonymous namespace)::ConstantFoldScalarCall1(llvm::StringRef, unsigned int, llvm::Type*, llvm::ArrayRef<llvm::Constant*>, llvm::TargetLibraryInfo const*, llvm::CallBase const*) () from /home/marcel/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/libLLVM-13-rust-1.57.0-nightly.so
+#2  0x00007ffff119e3d9 in (anonymous namespace)::ConstantFoldScalarCall(llvm::StringRef, unsigned int, llvm::Type*, llvm::ArrayRef<llvm::Constant*>, llvm::TargetLibraryInfo const*, llvm::CallBase const*) () from /home/marcel/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/libLLVM-13-rust-1.57.0-nightly.so
+#3  0x00007ffff119d121 in llvm::ConstantFoldCall(llvm::CallBase const*, llvm::Function*, llvm::ArrayRef<llvm::Constant*>, llvm::TargetLibraryInfo const*) () from /home/marcel/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/libLLVM-13-rust-1.57.0-nightly.so
+#4  0x00007ffff1195990 in llvm::SimplifyCall(llvm::CallBase*, llvm::SimplifyQuery const&) () from /home/marcel/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/libLLVM-13-rust-1.57.0-nightly.so
+#5  0x00007ffff118f181 in simplifyInstructionWithOperands(llvm::Instruction*, llvm::ArrayRef<llvm::Value*>, llvm::SimplifyQuery const&, llvm::OptimizationRemarkEmitter*) [clone .llvm.6782241817502413270] () from /home/marcel/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/libLLVM-13-rust-1.57.0-nightly.so
+#6  0x00007ffff118ef35 in llvm::SimplifyInstruction(llvm::Instruction*, llvm::SimplifyQuery const&, llvm::OptimizationRemarkEmitter*) () from /home/marcel/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/libLLVM-13-rust-1.57.0-nightly.so
+#7  0x00007ffff118a61c in (anonymous namespace)::EarlyCSE::run() () from /home/marcel/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/libLLVM-13-rust-1.57.0-nightly.so
+#8  0x00007ffff26c58ac in (anonymous namespace)::EarlyCSELegacyCommonPass<true>::runOnFunction(llvm::Function&) [clone .llvm.3498732353281808599] () from /home/marcel/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/libLLVM-13-rust-1.57.0-nightly.so
+#9  0x00007ffff0f66e07 in llvm::FPPassManager::runOnFunction(llvm::Function&) () from /home/marcel/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/libLLVM-13-rust-1.57.0-nightly.so
+#10 0x00007ffff158259c in (anonymous namespace)::CGPassManager::runOnModule(llvm::Module&) () from /home/marcel/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/libLLVM-13-rust-1.57.0-nightly.so
+#11 0x00007ffff1daae6c in llvm::legacy::PassManagerImpl::run(llvm::Module&) () from /home/marcel/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/libLLVM-13-rust-1.57.0-nightly.so
+#12 0x00007ffff20a000a in LLVMRunPassManager () from /home/marcel/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/../lib/libLLVM-13-rust-1.57.0-nightly.so
+#13 0x00007ffff655e6f1 in rustc_codegen_llvm::back::write::optimize () from /home/marcel/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-523b587517d366cb.so
+#14 0x00007ffff65623ad in rustc_codegen_ssa::back::write::execute_work_item () from /home/marcel/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-523b587517d366cb.so
+#15 0x00007ffff65a1be8 in std::sys_common::backtrace::__rust_begin_short_backtrace () from /home/marcel/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-523b587517d366cb.so
+#16 0x00007ffff65d4f0c in core::ops::function::FnOnce::call_once{{vtable.shim}} () from /home/marcel/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/../lib/librustc_driver-523b587517d366cb.so
+#17 0x00007ffff42238a3 in alloc::boxed::{impl#44}::call_once<(), dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global> () at /rustc/fdf65053e99e8966f9bd83b5a8491326cb33d638/library/alloc/src/boxed.rs:1636
+#18 alloc::boxed::{impl#44}::call_once<(), alloc::boxed::Box<dyn core::ops::function::FnOnce<(), Output=()>, alloc::alloc::Global>, alloc::alloc::Global> () at /rustc/fdf65053e99e8966f9bd83b5a8491326cb33d638/library/alloc/src/boxed.rs:1636
+#19 std::sys::unix::thread::{impl#2}::new::thread_start () at library/std/src/sys/unix/thread.rs:106
+#20 0x00007ffff3fc58d7 in start_thread (arg=<optimized out>) at pthread_create.c:434
+#21 0x00007ffff4056510 in clone3 () at ../sysdeps/unix/sysv/linux/x86_64/clone3.S:81

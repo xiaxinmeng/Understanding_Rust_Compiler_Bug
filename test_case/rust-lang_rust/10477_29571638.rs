@@ -1,0 +1,2 @@
+ rust
+extern { fn abort() -> !; }

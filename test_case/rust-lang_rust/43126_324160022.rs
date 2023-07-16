@@ -1,0 +1,3 @@
+rust
+valgrind --tool=massif --trace-children=yes rustc ...
+ms_print massif.* | less

@@ -1,0 +1,26 @@
+
+make-prepare                	  54.11
+stage0-test                 	  12.21
+stage0-rustc                	 772.94
+llvm                        	 295.78
+stage0-trans-llvm           	  56.48
+stage1-std                  	  81.96
+stage1-test                 	  14.97
+stage1-rustc                	1152.85
+stage1-trans-llvm           	  87.40
+stage2-std                  	  63.00
+stage2-test                 	  14.74
+stage2-remote-test-server   	   2.61
+stage0-remote-test-client   	   2.42
+stage0-compiletest          	  45.28
+test/ui                     	 101.67
+test/run-pass               	 660.46
+test/compile-fail           	 135.16
+test/parse-fail             	   5.25
+test/run-fail               	  19.38
+test/run-pass-valgrind      	   3.89
+test/mir-opt                	  20.29
+test/codegen                	   3.49
+test/codegen-units          	   2.16
+test/incremental            	  17.71
+test/debuginfo              	 111.61

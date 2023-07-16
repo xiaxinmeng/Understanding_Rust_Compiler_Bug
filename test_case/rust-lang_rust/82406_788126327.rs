@@ -1,0 +1,3 @@
+toml
+[target.x86_64-unknown-linux-gnu]
+rustflags = "-Z symbol-mangling-version=v0"

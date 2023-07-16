@@ -1,0 +1,1 @@
+\n\nTo fix this error, please verify you didn't misspell the type name, you did\ndeclare it or imported it into the scope. Examples:\n\n

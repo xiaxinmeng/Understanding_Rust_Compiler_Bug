@@ -1,0 +1,2 @@
+
+CFLAGS=$(CPPFLAGS) -g --std=gnu89 -D_WIN32_WINNT=0x0600

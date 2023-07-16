@@ -1,0 +1,1 @@
+compile_fail,E0422\nfn main () {\n    let x = Foo { x: 1, y: 2 };\n}\n

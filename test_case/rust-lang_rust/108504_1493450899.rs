@@ -1,0 +1,255 @@
+plain
+186 
++ error: some variants are not matched explicitly
++   --> $DIR/omitted-patterns.rs:190:9
++    |
++ LL |     let local = NonExhaustiveEnum::Unit;
++    |         ^^^^^ patterns `NonExhaustiveEnum::Unit`, `NonExhaustiveEnum::Tuple(_)` and `NonExhaustiveEnum::Struct { .. }` not covered
++    = help: ensure that all variants are matched explicitly by adding the suggested match arms
++    = note: the matched value is of type `NonExhaustiveEnum` and the `non_exhaustive_omitted_patterns` attribute was found
++ note: the lint level is defined here
++   --> $DIR/omitted-patterns.rs:189:12
+---
+187 error[E0005]: refutable pattern in local binding
+188   --> $DIR/omitted-patterns.rs:194:9
+189    |
+
+190 LL |     let local_refutable @ NonExhaustiveEnum::Unit = NonExhaustiveEnum::Unit;
+-    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ pattern `_` not covered
++    |         ^^^^^^^^^^^^^^^ pattern `_` not covered
+192    |
+193    = note: `let` bindings require an "irrefutable pattern", like a `struct` or an `enum` with only one variant
+194    = note: for more information, visit https://doc.rust-lang.org/book/ch18-02-refutability.html
+
+198 LL |     let local_refutable @ NonExhaustiveEnum::Unit = NonExhaustiveEnum::Unit else { todo!() };
+200 
+- error: aborting due to 9 previous errors; 6 warnings emitted
++ error: some variants are not matched explicitly
++   --> $DIR/omitted-patterns.rs:201:29
++   --> $DIR/omitted-patterns.rs:201:29
++    |
++ LL | pub fn takes_non_exhaustive(_: NonExhaustiveEnum) {
++    |                             ^ patterns `NonExhaustiveEnum::Unit`, `NonExhaustiveEnum::Tuple(_)` and `NonExhaustiveEnum::Struct { .. }` not covered
++    = help: ensure that all variants are matched explicitly by adding the suggested match arms
++    = note: the matched value is of type `NonExhaustiveEnum` and the `non_exhaustive_omitted_patterns` attribute was found
++ note: the lint level is defined here
++   --> $DIR/omitted-patterns.rs:199:8
+---
+To only update this specific test, also pass `--test-args rfc-2008-non-exhaustive/omitted-patterns.rs`
+
+error: 1 errors occurred comparing output.
+status: exit status: 1
+command: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage1/bin/rustc" "/checkout/tests/ui/rfc-2008-non-exhaustive/omitted-patterns.rs" "-Zthreads=1" "--target=x86_64-unknown-linux-gnu" "--error-format" "json" "--json" "future-incompat" "-Ccodegen-units=1" "-Zui-testing" "-Zsimulate-remapped-rust-src-base=/rustc/FAKE_PREFIX" "-Ztranslate-remapped-path-to-local-path=no" "-Zdeduplicate-diagnostics=no" "-Cstrip=debuginfo" "--remap-path-prefix=/checkout/tests/ui=fake-test-src-base" "--emit" "metadata" "-C" "prefer-dynamic" "--out-dir" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/rfc-2008-non-exhaustive/omitted-patterns" "-A" "unused" "-Crpath" "-Cdebuginfo=0" "-Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/rfc-2008-non-exhaustive/omitted-patterns/auxiliary"
+stdout: none
+--- stderr -------------------------------
+warning: some fields are not explicitly listed
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:102:9
+   |
+LL |         VariantNonExhaustive::Bar { x, .. } => {}
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ field `y` not listed
+   |
+   = help: ensure that all fields are mentioned explicitly by adding the suggested fields
+   = note: the pattern is of type `VariantNonExhaustive` and the `non_exhaustive_omitted_patterns` attribute was found
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:99:12
+   |
+LL |     #[warn(non_exhaustive_omitted_patterns)]
+   |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: some fields are not explicitly listed
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:107:9
+   |
+LL |     let FunctionalRecord { first_field, second_field, .. } = FunctionalRecord::default();
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ field `third_field` not listed
+   |
+   = help: ensure that all fields are mentioned explicitly by adding the suggested fields
+   = note: the pattern is of type `FunctionalRecord` and the `non_exhaustive_omitted_patterns` attribute was found
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:106:12
+   |
+LL |     #[warn(non_exhaustive_omitted_patterns)]
+   |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: some fields are not explicitly listed
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:115:29
+   |
+LL |     let NestedStruct { bar: NormalStruct { first_field, .. }, .. } = NestedStruct::default();
+   |                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ field `second_field` not listed
+   |
+   = help: ensure that all fields are mentioned explicitly by adding the suggested fields
+   = note: the pattern is of type `NormalStruct` and the `non_exhaustive_omitted_patterns` attribute was found
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:114:12
+   |
+LL |     #[warn(non_exhaustive_omitted_patterns)]
+   |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: some fields are not explicitly listed
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:115:9
+   |
+LL |     let NestedStruct { bar: NormalStruct { first_field, .. }, .. } = NestedStruct::default();
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ field `foo` not listed
+   |
+   = help: ensure that all fields are mentioned explicitly by adding the suggested fields
+   = note: the pattern is of type `NestedStruct` and the `non_exhaustive_omitted_patterns` attribute was found
+warning: some fields are not explicitly listed
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:173:9
+   |
+   |
+LL |     let OnlyUnstableStruct { unstable, .. } = OnlyUnstableStruct::new();
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ field `unstable2` not listed
+   |
+   = help: ensure that all fields are mentioned explicitly by adding the suggested fields
+   = note: the pattern is of type `OnlyUnstableStruct` and the `non_exhaustive_omitted_patterns` attribute was found
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:172:12
+   |
+LL |     #[warn(non_exhaustive_omitted_patterns)]
+   |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: some fields are not explicitly listed
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:181:9
+   |
+LL |     let UnstableStruct { stable, stable2, .. } = UnstableStruct::default();
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ field `unstable` not listed
+   |
+   = help: ensure that all fields are mentioned explicitly by adding the suggested fields
+   = note: the pattern is of type `UnstableStruct` and the `non_exhaustive_omitted_patterns` attribute was found
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:180:12
+   |
+LL |     #[warn(non_exhaustive_omitted_patterns)]
+   |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: some variants are not matched explicitly
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:58:9
+   |
+LL |         _ => {}
+   |         ^ pattern `NonExhaustiveEnum::Struct { .. }` not covered
+   = help: ensure that all variants are matched explicitly by adding the suggested match arms
+   = note: the matched value is of type `NonExhaustiveEnum` and the `non_exhaustive_omitted_patterns` attribute was found
+note: the lint level is defined here
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:57:16
+---
+error: some variants are not matched explicitly
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:65:9
+   |
+LL |         _ => {}
+   |         ^ pattern `NonExhaustiveEnum::Tuple(_)` not covered
+   = help: ensure that all variants are matched explicitly by adding the suggested match arms
+   = note: the matched value is of type `NonExhaustiveEnum` and the `non_exhaustive_omitted_patterns` attribute was found
+note: the lint level is defined here
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:64:16
+---
+error: some variants are not matched explicitly
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:75:9
+   |
+LL |         _ => {}
+   |         ^ pattern `NonExhaustiveEnum::Unit` not covered
+   = help: ensure that all variants are matched explicitly by adding the suggested match arms
+   = note: the matched value is of type `NonExhaustiveEnum` and the `non_exhaustive_omitted_patterns` attribute was found
+note: the lint level is defined here
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:74:16
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:74:16
+   |
+LL |         #[deny(non_exhaustive_omitted_patterns)]
+   |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: some variants are not matched explicitly
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:92:32
+   |
+LL |         NestedNonExhaustive::A(_) => {}
+   |                                ^ patterns `NonExhaustiveEnum::Tuple(_)` and `NonExhaustiveEnum::Struct { .. }` not covered
+   = help: ensure that all variants are matched explicitly by adding the suggested match arms
+   = note: the matched value is of type `NonExhaustiveEnum` and the `non_exhaustive_omitted_patterns` attribute was found
+note: the lint level is defined here
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:89:12
+---
+error: some variants are not matched explicitly
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:94:9
+   |
+LL |         _ => {}
+   |         ^ pattern `NestedNonExhaustive::C` not covered
+   = help: ensure that all variants are matched explicitly by adding the suggested match arms
+   = help: ensure that all variants are matched explicitly by adding the suggested match arms
+   = note: the matched value is of type `NestedNonExhaustive` and the `non_exhaustive_omitted_patterns` attribute was found
+error: some variants are not matched explicitly
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:132:9
+   |
+LL |         _ => {}
+LL |         _ => {}
+   |         ^ pattern `NonExhaustiveSingleVariant::A(_)` not covered
+   = help: ensure that all variants are matched explicitly by adding the suggested match arms
+   = help: ensure that all variants are matched explicitly by adding the suggested match arms
+   = note: the matched value is of type `NonExhaustiveSingleVariant` and the `non_exhaustive_omitted_patterns` attribute was found
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:130:12
+   |
+LL |     #[deny(non_exhaustive_omitted_patterns)]
+   |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: some variants are not matched explicitly
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:144:9
+   |
+LL |         _ => {}
+   |         ^ pattern `UnstableEnum::Unstable` not covered
+   = help: ensure that all variants are matched explicitly by adding the suggested match arms
+   = help: ensure that all variants are matched explicitly by adding the suggested match arms
+   = note: the matched value is of type `UnstableEnum` and the `non_exhaustive_omitted_patterns` attribute was found
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:143:16
+   |
+LL |         #[deny(non_exhaustive_omitted_patterns)]
+   |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: some variants are not matched explicitly
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:168:9
+   |
+LL |         _ => {}
+   |         ^ pattern `OnlyUnstableEnum::Unstable2` not covered
+   = help: ensure that all variants are matched explicitly by adding the suggested match arms
+   = help: ensure that all variants are matched explicitly by adding the suggested match arms
+   = note: the matched value is of type `OnlyUnstableEnum` and the `non_exhaustive_omitted_patterns` attribute was found
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:165:12
+   |
+LL |     #[deny(non_exhaustive_omitted_patterns)]
+   |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: some variants are not matched explicitly
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:190:9
+   |
+LL |     let local = NonExhaustiveEnum::Unit;
+   |         ^^^^^ patterns `NonExhaustiveEnum::Unit`, `NonExhaustiveEnum::Tuple(_)` and `NonExhaustiveEnum::Struct { .. }` not covered
+   = help: ensure that all variants are matched explicitly by adding the suggested match arms
+   = note: the matched value is of type `NonExhaustiveEnum` and the `non_exhaustive_omitted_patterns` attribute was found
+note: the lint level is defined here
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:189:12
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:189:12
+   |
+LL |     #[deny(non_exhaustive_omitted_patterns)]
+   |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error[E0005]: refutable pattern in local binding
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:194:9
+   |
+LL |     let local_refutable @ NonExhaustiveEnum::Unit = NonExhaustiveEnum::Unit;
+   |         ^^^^^^^^^^^^^^^ pattern `_` not covered
+   |
+   = note: `let` bindings require an "irrefutable pattern", like a `struct` or an `enum` with only one variant
+   = note: for more information, visit https://doc.rust-lang.org/book/ch18-02-refutability.html
+help: you might want to use `let else` to handle the variant that isn't matched
+   |
+   |
+LL |     let local_refutable @ NonExhaustiveEnum::Unit = NonExhaustiveEnum::Unit else { todo!() };
+
+error: some variants are not matched explicitly
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:201:29
+   |
+   |
+LL | pub fn takes_non_exhaustive(_: NonExhaustiveEnum) {
+   |                             ^ patterns `NonExhaustiveEnum::Unit`, `NonExhaustiveEnum::Tuple(_)` and `NonExhaustiveEnum::Struct { .. }` not covered
+   = help: ensure that all variants are matched explicitly by adding the suggested match arms
+   = note: the matched value is of type `NonExhaustiveEnum` and the `non_exhaustive_omitted_patterns` attribute was found
+note: the lint level is defined here
+  --> fake-test-src-base/rfc-2008-non-exhaustive/omitted-patterns.rs:199:8

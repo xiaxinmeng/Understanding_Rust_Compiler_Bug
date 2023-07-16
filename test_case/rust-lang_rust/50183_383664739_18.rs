@@ -1,0 +1,1 @@
+\nlet x = \"hello\".chars().rev().collect::<Vec<_>>();\n

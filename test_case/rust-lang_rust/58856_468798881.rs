@@ -1,0 +1,40 @@
+
+thread 'rustc' panicked at 'internal error: entered unreachable code', src/libsyntax/parse/parser.rs:648:22
+stack backtrace:
+   0: std::sys::unix::backtrace::tracing::imp::unwind_backtrace
+             at src/libstd/sys/unix/backtrace/tracing/gcc_s.rs:39
+   1: std::sys_common::backtrace::_print
+             at src/libstd/sys_common/backtrace.rs:71
+   2: std::panicking::default_hook::{{closure}}
+             at src/libstd/sys_common/backtrace.rs:59
+             at src/libstd/panicking.rs:200
+   3: std::panicking::default_hook
+             at src/libstd/panicking.rs:215
+   4: std::panicking::rust_panic_with_hook
+             at src/libstd/panicking.rs:478
+   5: std::panicking::begin_panic
+   6: syntax::parse::parser::Parser::parse_fn_decl_with_self
+   7: syntax::parse::parser::Parser::parse_impl_item
+   8: syntax::parse::parser::Parser::parse_item_implementation
+   9: syntax::parse::parser::Parser::parse_item_
+  10: syntax::parse::parser::Parser::parse_item
+  11: syntax::parse::parser::Parser::parse_mod_items
+  12: syntax::parse::parser::Parser::parse_crate_mod
+  13: syntax::parse::parse_crate_from_file
+  14: rustc_driver::driver::phase_1_parse_input::{{closure}}
+  15: rustc::util::common::time
+  16: rustc_driver::driver::phase_1_parse_input
+  17: rustc_driver::driver::compile_input
+  18: <scoped_tls::ScopedKey<T>>::set
+  19: rustc_driver::run_compiler
+  20: <scoped_tls::ScopedKey<T>>::set
+  21: syntax::with_globals
+  22: __rust_maybe_catch_panic
+             at src/libpanic_unwind/lib.rs:87
+  23: <F as alloc::boxed::FnBox<A>>::call_box
+  24: std::sys::unix::thread::Thread::new::thread_start
+             at /rustc/350674b7180a41c8e508d93c6ab8e203b69d3df7/src/liballoc/boxed.rs:759
+             at src/libstd/sys_common/thread.rs:14
+             at src/libstd/sys/unix/thread.rs:80
+  25: start_thread
+  26: __clone

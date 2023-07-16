@@ -1,0 +1,1 @@
+compile_fail,E0038\n# trait Trait { fn foo<T>(&self, on: T); }\n# impl Trait for String { fn foo<T>(&self, on: T) {} }\n# impl Trait for u8 { fn foo<T>(&self, on: T) {} }\n# impl Trait for bool { fn foo<T>(&self, on: T) {} }\n# // etc.\nfn cantable. If the trait or any subtrait contain an associated constant, they cannot\nbe made into an object.\n\n

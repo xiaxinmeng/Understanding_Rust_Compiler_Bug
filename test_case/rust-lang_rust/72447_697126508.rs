@@ -1,0 +1,6 @@
+rust
+pub const NA_REAL: f64 = unsafe {
+    std::mem::transmute(u64::from_le_bytes([
+        0xa2, 0x07, 0x00, 0x00, 0x00, 0x00, 0xf0, 0x7f,
+    ]))
+};

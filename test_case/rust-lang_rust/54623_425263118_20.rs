@@ -1,0 +1,1 @@
+compile_fail,E0562\nfn main() {\n    let count_to_ten: impl Iterator<Item=usizeitten `impl Trait` for some trait `Trait`) are only\nallowed as function and inherent impl return types.\n\nErroneous code example:\n\n

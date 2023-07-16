@@ -1,0 +1,3 @@
+
+Place = PlaceBase | Place . field | * Place | Place [ Expr ] | ...
+PlaceBase = Static | Local

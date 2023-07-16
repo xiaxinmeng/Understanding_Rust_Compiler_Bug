@@ -1,0 +1,1 @@
+note: rustc 1.65.0-nightly (c07a8b4e0 2022-08-26) running on x86_64-pc-windows-msvc

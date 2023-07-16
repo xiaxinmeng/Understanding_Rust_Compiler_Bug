@@ -1,0 +1,1 @@
+compile_fail,E0389\nstruct FancyNum {\n    num: u8,\n}\n\nfn main() {\n    let mut fancy = FancyNum{ num: 5 };\n    let fancy_ref = &(&mut fancy);\n    fancy_ref.num = 6; // error: cannot assign to data in a `&` reference\n    println!(\"{}\", fancy_ref.num);\n}\n

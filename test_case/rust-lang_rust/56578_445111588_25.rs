@@ -1,0 +1,1 @@
+compile_fail,E0191\ntrait Trait {\n    type Bar;\n}\n\ntype Foo = Trait; // error: the value of the associated type `Bar` (from\n                  //        the trait `Trait`) must be specified\n

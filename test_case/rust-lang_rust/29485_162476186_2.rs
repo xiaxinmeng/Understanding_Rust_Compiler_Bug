@@ -1,0 +1,32 @@
+
+    text      data     bss       dec  filename
+    9245     38469       8     47722  lib/libarena-71b07a99.so
+   32903     12772       4     45679  lib/libflate-71b07a99.so
+   20786     40241       4     61031  lib/libfmt_macros-71b07a99.so
+   63584     70235       4    133823  lib/libgetopts-71b07a99.so
+   12744     47949       8     60701  lib/libgraphviz-71b07a99.so
+   26132     23790      24     49946  lib/liblog-71b07a99.so
+   49860    104494       8    154362  lib/librbml-71b07a99.so
+ 3393388   3223197      32   6616617  lib/librustc-71b07a99.so
+  219222     87724       4    306950  lib/librustc_back-71b07a99.so
+  317487    176994       4    494485  lib/librustc_borrowck-71b07a99.so
+   18965    149257       4    168226  lib/librustc_data_structures-71b07a99.so
+ 1980840    121366       8   2102214  lib/librustc_driver-71b07a99.so
+  777253   1497469      16   2274738  lib/librustc_front-71b07a99.so
+  261536     65773       8    327317  lib/librustc_lint-71b07a99.so
+29222240   1897162  105744  31225146  lib/librustc_llvm-71b07a99.so
+ 1661684    218169       4   1879857  lib/librustc_metadata-71b07a99.so
+  427259    165522       4    592785  lib/librustc_mir-71b07a99.so
+  927005     39868       4    966877  lib/librustc_platform_intrinsics-71b07a99.so
+   39967     11805       8     51780  lib/librustc_plugin-71b07a99.so
+   90133     21789       8    111930  lib/librustc_privacy-71b07a99.so
+  407357    164139       4    571500  lib/librustc_resolve-71b07a99.so
+ 2351875    715590       8   3067473  lib/librustc_trans-71b07a99.so
+ 1763514    562155       4   2325673  lib/librustc_typeck-71b07a99.so
+ 3172349    705522      24   3877895  lib/librustdoc-71b07a99.so
+  165452    500460      16    665928  lib/libserialize-71b07a99.so
+ 1642203   1825793    5912   3473908  lib/libstd-71b07a99.so
+ 4319225   3111203      24   7430452  lib/libsyntax-71b07a99.so
+  151144     80785       4    231933  lib/libterm-71b07a99.so
+  218399    126818      16    345233  lib/libtest-71b07a99.so
+53743751  15806510  111920  69662181  (TOTALS)

@@ -1,0 +1,3 @@
+
+env CC=egcc CXX=eg++ ./configure ...
+env CC=egcc CXX=eg++ gmake

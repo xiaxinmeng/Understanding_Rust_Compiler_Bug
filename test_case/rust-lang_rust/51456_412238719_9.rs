@@ -1,0 +1,1 @@
+\n\nIf the type parameter was included by mistake, this error can be fixed\nby simply removing the type parameter, as shown below:\n\n

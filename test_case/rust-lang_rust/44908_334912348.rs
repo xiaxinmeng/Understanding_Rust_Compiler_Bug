@@ -1,0 +1,13 @@
+
+[02:30:45] warning: redundant linker flag specified for library `magenta`
+[02:30:45] 
+[02:31:04] error: linking with `x86_64-unknown-fuchsia-clang` failed: exit code: 1
+[02:31:04]   |
+[02:31:04]   = note: "x86_64-unknown-fuchsia-clang" "-m64" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/lib/rustlib/x86_64-unknown-fuchsia/lib" "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-std/x86_64-unknown-fuchsia/release/deps/std-9da33aa2df7af1bb.0.o" "-o" "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-std/x86_64-unknown-fuchsia/release/deps/libstd-9da33aa2df7af1bb.so" "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-std/x86_64-unknown-fuchsia/release/deps/std-9da33aa2df7af1bb.crate.metadata.o" "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-std/x86_64-unknown-fuchsia/release/deps/std-9da33aa2df7af1bb.crate.allocator.o" "-Wl,-O1" "-nodefaultlibs" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-std/x86_64-unknown-fuchsia/release/deps" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-std/release/deps" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-std/x86_64-unknown-fuchsia/release/build/compiler_builtins-8eeea2bdf612d544/out" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/lib/rustlib/x86_64-unknown-fuchsia/lib" "-l" "magenta" "-l" "backtrace" "-l" "mxio" "-l" "launchpad" "-Wl,-Bstatic" "-Wl,--whole-archive" "/tmp/rustc.pBTzTvOIJv3l/libpanic_unwind-4716ba3e04edbf85.rlib" "-Wl,--no-whole-archive" "-Wl,--whole-archive" "/tmp/rustc.pBTzTvOIJv3l/libunwind-aab18988303f572c.rlib" "-Wl,--no-whole-archive" "-Wl,--whole-archive" "/tmp/rustc.pBTzTvOIJv3l/librand-940cafb5d34d049d.rlib" "-Wl,--no-whole-archive" "-Wl,--whole-archive" "/tmp/rustc.pBTzTvOIJv3l/liballoc_system-71c60414f8c7a15d.rlib" "-Wl,--no-whole-archive" "-Wl,--whole-archive" "/tmp/rustc.pBTzTvOIJv3l/liblibc-30b2f9f033a91c34.rlib" "-Wl,--no-whole-archive" "-Wl,--whole-archive" "/tmp/rustc.pBTzTvOIJv3l/liballoc-c05e268c627ead18.rlib" "-Wl,--no-whole-archive" "-Wl,--whole-archive" "/tmp/rustc.pBTzTvOIJv3l/libstd_unicode-0bc266a7a125aa29.rlib" "-Wl,--no-whole-archive" "-Wl,--whole-archive" "/tmp/rustc.pBTzTvOIJv3l/libcore-a2272f548d3624ea.rlib" "-Wl,--no-whole-archive" "/tmp/rustc.pBTzTvOIJv3l/libcompiler_builtins-d80fc08b6a143705.rlib" "-Wl,-Bdynamic" "-l" "unwind" "-l" "c" "-l" "fdio" "-shared" "-Wl,-rpath,$ORIGIN/../lib"
+[02:31:04]   = note: /usr/local/bin/ld.lld: error: unable to find library -lfdio
+[02:31:04]           clang-5.0: error: ld.lld command failed with exit code 1 (use -v to see invocation)
+[02:31:04]           
+[02:31:04] 
+[02:31:04] error: aborting due to previous error
+[02:31:04] 
+[02:31:04] error: Could not compile `std`.

@@ -1,0 +1,1 @@
+\nenum Foo {\n    Bar,\n}\n

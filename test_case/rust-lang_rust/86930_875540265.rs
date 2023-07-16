@@ -1,0 +1,11 @@
+
+test u128_new ... bench:       8,793 ns/iter (+/- 509)
+test u128_old ... bench:      28,489 ns/iter (+/- 892)
+test u16_new  ... bench:         259 ns/iter (+/- 12)
+test u16_old  ... bench:         921 ns/iter (+/- 27)
+test u32_new  ... bench:         718 ns/iter (+/- 21)
+test u32_old  ... bench:       1,691 ns/iter (+/- 25)
+test u64_new  ... bench:         848 ns/iter (+/- 23)
+test u64_old  ... bench:       4,221 ns/iter (+/- 95)
+test u8_new   ... bench:         219 ns/iter (+/- 8)
+test u8_old   ... bench:         371 ns/iter (+/- 6)

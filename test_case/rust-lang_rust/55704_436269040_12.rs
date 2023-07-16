@@ -1,0 +1,2 @@
+\n\nWith this approach, x and y share ownership of the data via the `Rc` (reference\ncount tpe `std::vec::Vec<bool>`, which does not implement the `Copy` trait\n\n"}
+[00:52:38] {"message":"use of moved value: `(maybe as std::option::Option::Some).0`","code":{"code":"E0382","explanation":"\nThis error occurs when an attempt is made to use a variable after its contents\nhave been moved elsewhere. For example:\n\n

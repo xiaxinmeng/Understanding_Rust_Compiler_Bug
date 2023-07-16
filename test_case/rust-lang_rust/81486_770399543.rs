@@ -1,0 +1,39 @@
+benchcmp
+benchcmp old new --threshold 10
+ name                                           old ns/iter  new ns/iter  diff ns/iter   diff %  speedup
+ btree::map::clone_fat_100                      45,646       72,143             26,497   58.05%   x 0.63
+ btree::map::clone_fat_100_and_clear            45,567       81,445             35,878   78.74%   x 0.56
+ btree::map::clone_fat_100_and_drain_half       106,640      124,207            17,567   16.47%   x 0.86
+ btree::map::clone_fat_val_100                  23,640       38,426             14,786   62.55%   x 0.62
+ btree::map::clone_fat_val_100_and_clear        23,687       41,178             17,491   73.84%   x 0.58
+ btree::map::clone_fat_val_100_and_drain_half   48,727       57,688              8,961   18.39%   x 0.84
+ btree::map::clone_fat_val_100_and_into_iter    34,402       41,846              7,444   21.64%   x 0.82
+ btree::map::clone_fat_val_100_and_remove_half  52,027       61,435              9,408   18.08%   x 0.85
+ btree::map::clone_slim_100                     2,184        1,696                -488  -22.34%   x 1.29
+ btree::map::clone_slim_100_and_clear           5,088        1,670              -3,418  -67.18%   x 3.05
+ btree::map::clone_slim_100_and_drain_all       6,518        3,560              -2,958  -45.38%   x 1.83
+ btree::map::clone_slim_100_and_drain_half      5,963        2,722              -3,241  -54.35%   x 2.19
+ btree::map::clone_slim_100_and_into_iter       5,100        1,655              -3,445  -67.55%   x 3.08
+ btree::map::clone_slim_100_and_pop_all         6,765        3,803              -2,962  -43.78%   x 1.78
+ btree::map::clone_slim_100_and_remove_all      7,826        4,944              -2,882  -36.83%   x 1.58
+ btree::map::clone_slim_100_and_remove_half     6,131        3,031              -3,100  -50.56%   x 2.02
+ btree::map::clone_slim_10k                     262,765      201,860           -60,905  -23.18%   x 1.30
+ btree::map::clone_slim_10k_and_clear           262,713      204,480           -58,233  -22.17%   x 1.28
+ btree::map::clone_slim_10k_and_into_iter       261,446      206,657           -54,789  -20.96%   x 1.27
+ btree::map::clone_slim_10k_and_remove_half     574,250      512,200           -62,050  -10.81%   x 1.12
+ btree::map::find_seq_100                       15           12                     -3  -20.00%   x 1.25
+ btree::map::first_and_last_100                 47           42                     -5  -10.64%   x 1.12
+ btree::set::clone_100                          1,883        1,352                -531  -28.20%   x 1.39
+ btree::set::clone_100_and_clear                1,920        1,384                -536  -27.92%   x 1.39
+ btree::set::clone_100_and_into_iter            1,928        1,410                -518  -26.87%   x 1.37
+ btree::set::clone_100_and_remove_half          2,685        2,248                -437  -16.28%   x 1.19
+ btree::set::clone_10k                          225,550      157,252           -68,298  -30.28%   x 1.43
+ btree::set::clone_10k_and_clear                224,802      165,220           -59,582  -26.50%   x 1.36
+ btree::set::clone_10k_and_into_iter            224,367      167,968           -56,399  -25.14%   x 1.34
+ btree::set::clone_10k_and_remove_half          501,320      447,430           -53,890  -10.75%   x 1.12
+ btree::set::difference_random_100_vs_10k       2,261        2,830                 569   25.17%   x 0.80
+ btree::set::difference_staggered_100_vs_10k    2,804        2,150                -654  -23.32%   x 1.30
+ btree::set::intersection_random_100_vs_10k     2,136        2,650                 514   24.06%   x 0.81
+ btree::set::intersection_random_10k_vs_100     2,163        2,576                 413   19.09%   x 0.84
+ btree::set::intersection_staggered_100_vs_10k  2,597        1,980                -617  -23.76%   x 1.31
+ btree::set::is_subset_100_vs_10k               1,619        1,182                -437  -26.99%   x 1.37

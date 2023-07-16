@@ -1,0 +1,52 @@
+
+running 2 tests
+FF
+failures:
+
+---- [ui] rustdoc-ui/normalize-cycle.rs stdout ----
+
+error: test compilation failed although it shouldn't!
+status: exit status: 1
+command: "/home/joshua/rustc/build/x86_64-unknown-linux-gnu/stage2/bin/rustdoc" "/home/joshua/rustc/src/test/rustdoc-ui/normalize-cycle.rs" "-Zthreads=1" "--target=x86_64-unknown-linux-gnu" "--error-format" "json" "-Ccodegen-units=1" "-Zui-testing" "-Zdeduplicate-diagnostics=no" "-Zemit-future-incompat-report" "-o" "/home/joshua/rustc/build/x86_64-unknown-linux-gnu/test/rustdoc-ui/normalize-cycle" "-Cdebuginfo=0" "-Lnative=/home/joshua/rustc/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "-L" "/home/joshua/rustc/build/x86_64-unknown-linux-gnu/test/rustdoc-ui/normalize-cycle/auxiliary"
+stdout:
+------------------------------------------
+
+------------------------------------------
+stderr:
+------------------------------------------
+error[E0275]: overflow evaluating the requirement `<Source as SelectDsl<Selection>>::Output == _`
+
+error: aborting due to previous error
+
+For more information about this error, try `rustc --explain E0275`.
+
+------------------------------------------
+
+
+---- [ui] rustdoc-ui/normalize-overflow.rs stdout ----
+
+error: test compilation failed although it shouldn't!
+status: exit status: 1
+command: "/home/joshua/rustc/build/x86_64-unknown-linux-gnu/stage2/bin/rustdoc" "/home/joshua/rustc/src/test/rustdoc-ui/normalize-overflow.rs" "-Zthreads=1" "--target=x86_64-unknown-linux-gnu" "--error-format" "json" "-Ccodegen-units=1" "-Zui-testing" "-Zdeduplicate-diagnostics=no" "-Zemit-future-incompat-report" "-o" "/home/joshua/rustc/build/x86_64-unknown-linux-gnu/test/rustdoc-ui/normalize-overflow" "-Cdebuginfo=0" "-Lnative=/home/joshua/rustc/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "-L" "/home/joshua/rustc/build/x86_64-unknown-linux-gnu/test/rustdoc-ui/normalize-overflow/auxiliary" "--extern" "overflow=/home/joshua/rustc/build/x86_64-unknown-linux-gnu/test/rustdoc-ui/normalize-overflow/auxiliary/liboverflow.so"
+stdout:
+------------------------------------------
+
+------------------------------------------
+stderr:
+------------------------------------------
+error[E0275]: overflow evaluating the requirement `overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<U, B>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>: std::marker::Sized`
+   |
+   = help: consider increasing the recursion limit by adding a `#![recursion_limit = "256"]` attribute to your crate (`normalize_overflow`)
+   = note: required because of the requirements on the impl of `std::ops::Shl<overflow::UInt<_, _>>` for `overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<overflow::UInt<U, B>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>, overflow::B0>`
+
+error: aborting due to previous error
+
+For more information about this error, try `rustc --explain E0275`.
+
+------------------------------------------
+
+
+
+failures:
+    [ui] rustdoc-ui/normalize-cycle.rs
+    [ui] rustdoc-ui/normalize-overflow.rs

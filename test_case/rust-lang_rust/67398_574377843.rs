@@ -1,0 +1,5 @@
+
+thread '<unnamed>' panicked at 'cannot access stderr during shutdown', src/libcore/option.rs:1188:5
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace.
+thread '<unnamed>' panicked at 'cannot access stderr during shutdown', src/libcore/option.rs:1188:5
+stack backtrace:

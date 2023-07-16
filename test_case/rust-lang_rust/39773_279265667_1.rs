@@ -1,0 +1,7 @@
+
+avg PUT: 87309.19
+avg GET0: 941140.38
+avg GET: 941140.38
+avg PUT+: 75320.96
+avg GET0+: 921691.27
+avg GET+: 941140.38

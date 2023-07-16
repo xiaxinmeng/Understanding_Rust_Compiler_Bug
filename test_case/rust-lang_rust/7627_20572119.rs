@@ -1,0 +1,2 @@
+
+pub enum c_void {}

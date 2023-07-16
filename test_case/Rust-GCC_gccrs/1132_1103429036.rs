@@ -1,0 +1,2 @@
+rust
+pub trait Hasher {}

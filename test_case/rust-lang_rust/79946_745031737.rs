@@ -1,0 +1,8 @@
+
+  = note: /usr/bin/ld: /tmp/rustcQ1odj9/librustc_middle-b63a4b3fe5a6b279.rlib(rustc_middle-b63a4b3fe5a6b279.1bp2u94sew41xpja.rcgu.o): relocation R_X86_64_PC32 against undefined hidden symbol `anon.e4eedcdcf9dce0f77011b23711e1662a.196.llvm.162878321601332620' can not be used when making a shared object
+          /usr/bin/ld: /tmp/rustcQ1odj9/librustc_middle-b63a4b3fe5a6b279.rlib(rustc_middle-b63a4b3fe5a6b279.1k24h0loog84q6w.rcgu.o): relocation R_X86_64_PC32 against undefined hidden symbol `anon.e4eedcdcf9dce0f77011b23711e1662a.196.llvm.162878321601332620' can not be used when making a shared object
+          /usr/bin/ld: /tmp/rustcQ1odj9/librustc_middle-b63a4b3fe5a6b279.rlib(rustc_middle-b63a4b3fe5a6b279.2trl2z5frku3xuzy.rcgu.o): relocation R_X86_64_PC32 against undefined hidden symbol `anon.e4eedcdcf9dce0f77011b23711e1662a.196.llvm.162878321601332620' can not be used when making a shared object
+          /usr/bin/ld: /tmp/rustcQ1odj9/librustc_middle-b63a4b3fe5a6b279.rlib(rustc_middle-b63a4b3fe5a6b279.31arrfea00oazgke.rcgu.o): relocation R_X86_64_PC32 against undefined hidden symbol `anon.e4eedcdcf9dce0f77011b23711e1662a.393.llvm.162878321601332620' can not be used when making a shared object
+          /usr/bin/ld: /tmp/rustcQ1odj9/librustc_middle-b63a4b3fe5a6b279.rlib(rustc_middle-b63a4b3fe5a6b279.38hexmempyfoakzt.rcgu.o): relocation R_X86_64_PC32 against undefined hidden symbol `anon.e4eedcdcf9dce0f77011b23711e1662a.393.llvm.162878321601332620' can not be used when making a shared object
+          /usr/bin/ld: final link failed: nonrepresentable section on output
+          clang: error: linker command failed with exit code 1 (use -v to see invocation)

@@ -1,0 +1,23 @@
+
+MemTotal:        8388608 kB
+MemFree:         7565036 kB
+MemAvailable:    7680104 kB
+Cached:           145168 kB
+Buffers:               0 kB
+Active:           463060 kB
+Inactive:         289424 kB
+Active(anon):     407456 kB
+Inactive(anon):   250072 kB
+Active(file):      55604 kB
+Inactive(file):    39352 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:               124 kB
+Writeback:             0 kB
+AnonPages:        657528 kB
+Shmem:             50212 kB
+Slab:              47076 kB
+SReclaimable:      20112 kB
+SUnreclaim:        26964 kB

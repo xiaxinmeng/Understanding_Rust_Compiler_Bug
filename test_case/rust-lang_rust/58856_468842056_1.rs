@@ -1,0 +1,48 @@
+text
+thread 'rustc' panicked at 'called `Option::unwrap()` on a `None` value', src/libcore/option.rs:345:21
+stack backtrace:
+   0: std::sys::unix::backtrace::tracing::imp::unwind_backtrace
+             at src/libstd/sys/unix/backtrace/tracing/gcc_s.rs:39
+   1: std::sys_common::backtrace::_print
+             at src/libstd/sys_common/backtrace.rs:71
+   2: std::panicking::default_hook::{{closure}}
+             at src/libstd/sys_common/backtrace.rs:59
+             at src/libstd/panicking.rs:200
+   3: std::panicking::default_hook
+             at src/libstd/panicking.rs:215
+   4: std::panicking::rust_panic_with_hook
+             at src/libstd/panicking.rs:478
+   5: std::panicking::continue_panic_fmt
+             at src/libstd/panicking.rs:385
+   6: rust_begin_unwind
+             at src/libstd/panicking.rs:312
+   7: core::panicking::panic_fmt
+             at src/libcore/panicking.rs:85
+   8: core::panicking::panic
+             at src/libcore/panicking.rs:49
+   9: syntax::parse::parser::Parser::parse_generic_bounds_common
+  10: syntax::parse::parser::Parser::parse_generic_params
+  11: syntax::parse::parser::Parser::parse_generics
+  12: syntax::parse::parser::Parser::parse_item_implementation
+  13: syntax::parse::parser::Parser::parse_item_
+  14: syntax::parse::parser::Parser::parse_item
+  15: syntax::parse::parser::Parser::parse_mod_items
+  16: syntax::parse::parser::Parser::parse_crate_mod
+  17: syntax::parse::parse_crate_from_file
+  18: rustc_driver::driver::phase_1_parse_input::{{closure}}
+  19: rustc::util::common::time
+  20: rustc_driver::driver::phase_1_parse_input
+  21: rustc_driver::driver::compile_input
+  22: <scoped_tls::ScopedKey<T>>::set
+  23: rustc_driver::run_compiler
+  24: <scoped_tls::ScopedKey<T>>::set
+  25: syntax::with_globals
+  26: __rust_maybe_catch_panic
+             at src/libpanic_unwind/lib.rs:87
+  27: <F as alloc::boxed::FnBox<A>>::call_box
+  28: std::sys::unix::thread::Thread::new::thread_start
+             at /rustc/350674b7180a41c8e508d93c6ab8e203b69d3df7/src/liballoc/boxed.rs:759
+             at src/libstd/sys_common/thread.rs:14
+             at src/libstd/sys/unix/thread.rs:80
+  29: start_thread
+  30: clone

@@ -1,0 +1,2 @@
+
+Timeout performing HVALS account_clouds_0, inst: 1, mgr: PrepareActiveSockets, err: never, queue: 4, qu: 0, qs: 2, qc: 2, wr: 0, wq: 0, in: 0, ar: 0, clientName: AppVeyor-Appveyor.Worker_IN_1, IOCP: (Busy=1,Free=999,Min=200,Max=1000), WORKER: (Busy=24,Free=32743,Min=200,Max=32767), Local-CPU: 4.09% (Please take a look at this article for some common client-side issues that can cause timeouts: https://github.com/StackExchange/StackExchange.Redis/tree/master/Docs/Timeouts.md)

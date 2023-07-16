@@ -1,0 +1,1 @@
+\n\nHere, the supertrait might have methods as follows:\n\n

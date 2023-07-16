@@ -1,0 +1,1 @@
+compile_fail,E0503\nfn main() {\n    let mut value = 3;\n    // Create a mutable borrow of `value`. This borrow\n    // lives until the end of this function.\n    let _borrot{ s: 5u32 };\n    let y = x;\n    x.s = 6;\n    println!(\"{}\", x.s);\n}\n

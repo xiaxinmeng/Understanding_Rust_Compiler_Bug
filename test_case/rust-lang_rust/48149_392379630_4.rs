@@ -1,0 +1,1 @@
+\n\nIt's also important to note that the Rust compiler can generally\ndetermine the lifetime by itself. Example:\n\n

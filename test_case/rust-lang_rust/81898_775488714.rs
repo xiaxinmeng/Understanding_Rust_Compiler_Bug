@@ -1,0 +1,41 @@
+plain
+configure: rust.channel         := nightly
+configure: rust.debug-assertions := True
+configure: llvm.assertions      := True
+configure: dist.missing-tools   := True
+configure: build.configure-args := ['--enable-sccache', '--disable-manage-submodu ...
+configure: writing `config.toml` in current directory
+configure: 
+configure: run `python /checkout/x.py --help`
+configure: 
+---
+skip untracked path cpu-usage.csv during rustfmt invocations
+skip untracked path src/doc/book/ during rustfmt invocations
+skip untracked path src/doc/rust-by-example/ during rustfmt invocations
+skip untracked path src/llvm-project/ during rustfmt invocations
+Diff in /checkout/compiler/rustc_codegen_ssa/src/mir/debuginfo.rs at line 349:
+Running `"/checkout/obj/build/x86_64-unknown-linux-gnu/stage0/bin/rustfmt" "--config-path" "/checkout" "--edition" "2018" "--unstable-features" "--skip-children" "--check" "/checkout/compiler/rustc_codegen_ssa/src/mir/debuginfo.rs"` failed.
+If you're running `tidy`, try again with `--bless`. Or, if you just want to format code, run `./x.py fmt` instead.
+                             // declared inside the body of the function rather than being passed by the function's
+                             // caller, its kind should be LocalVariable (Issue #81894).
+                             match *var_ty.kind() {
+-                                ty::Ref(_, inner_type, _) => {
+-                                    match *inner_type.kind() {
+-                                        ty::Slice(_) | ty::Str => VariableKind::LocalVariable,
+-                                        _ => VariableKind::ArgumentVariable(arg_index + 1),
+-                                }
+-                                }
++                                ty::Ref(_, inner_type, _) => match *inner_type.kind() {
++                                    ty::Slice(_) | ty::Str => VariableKind::LocalVariable,
++                                    _ => VariableKind::ArgumentVariable(arg_index + 1),
++                                },
+                                 // FIXME(eddyb) shouldn't `ArgumentVariable` indices be
+                                 // offset in closures to account for the hidden environment?
+                                 // Also, is this `+ 1` needed at all?
+Diff in /checkout/compiler/rustc_codegen_ssa/src/mir/debuginfo.rs at line 361:
+-                                _ => VariableKind::ArgumentVariable(arg_index + 1)
++                                _ => VariableKind::ArgumentVariable(arg_index + 1),
+                         } else {
+                         } else {
+                             VariableKind::LocalVariable
+Build completed unsuccessfully in 0:00:19

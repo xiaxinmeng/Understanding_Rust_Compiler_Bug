@@ -1,0 +1,1 @@
+compile_fail\nuse std::fs::File;\n\nfn main() {\n    let mut f = try!(File::create(\"foo.txt\"));\n}\n

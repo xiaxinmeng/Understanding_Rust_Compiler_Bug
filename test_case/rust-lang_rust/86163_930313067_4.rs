@@ -1,0 +1,1 @@
+[2021-09-29T15:08:02Z WARN  webrender::device::gl] Cropping texture upload Box2D((0, 0), (0, 1)) to None

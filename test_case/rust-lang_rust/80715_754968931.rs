@@ -1,0 +1,13 @@
+
+test iter::bench_cycle_skip_take_ref_sum                        ... bench:   3,511,135 ns/iter (+/- 72,608)
+test iter::bench_cycle_skip_take_sum                            ... bench:   3,002,478 ns/iter (+/- 102,090)
+test iter::bench_cycle_take_skip_ref_sum                        ... bench:   2,709,985 ns/iter (+/- 60,129)
+test iter::bench_cycle_take_skip_sum                            ... bench:   2,342,344 ns/iter (+/- 20,248)
+test iter::bench_skip_chain_ref_sum                             ... bench:   4,170,133 ns/iter (+/- 162,633)
+test iter::bench_skip_chain_sum                                 ... bench:     759,909 ns/iter (+/- 10,462)
+test iter::bench_skip_cycle_skip_zip_add_ref_sum                ... bench:   6,170,983 ns/iter (+/- 47,253)
+test iter::bench_skip_cycle_skip_zip_add_sum                    ... bench:   4,242,784 ns/iter (+/- 7,138)
+test iter::bench_skip_ref_sum                                   ... bench:   1,668,988 ns/iter (+/- 3,920)
+test iter::bench_skip_sum                                       ... bench:     379,766 ns/iter (+/- 10,567)
+test iter::bench_skip_then_zip                                  ... bench:         142 ns/iter (+/- 0)
+test iter::bench_zip_then_skip                                  ... bench:          98 ns/iter (+/- 0)

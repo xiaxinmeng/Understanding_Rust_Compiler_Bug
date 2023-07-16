@@ -1,0 +1,33 @@
+
+ 12.71%     rustc  librustrt.so                          [.] tinfl_decompress
+ 12.11%     rustc  [kernel.kallsyms]                     [k] 0xffffffff81044ffa
+  5.65%     rustc  libextra-a7c050cfd46b2c9a-0.8-pre.so  [.] ebml::reader::vuint_at::_112d46e1a3c7d2e::_0$x2e8$x2dpre
+  3.59%        ld  libbfd-2.22-system.so                 [.] bfd_link_hash_traverse
+  3.01%     rustc  libstd-6c65cf4b443341b1-0.8-pre.so    [.] io::u64_from_be_bytes::_a6ae987ff224d4ce::_0$x2e8$x2dpre
+  2.80%        ld  libbfd-2.22-system.so                 [.] bfd_hash_lookup
+  2.63%     rustc  librustc-d3cb8c2ccd84a7a7-0.8-pre.so  [.] metadata::decoder::lookup_hash::anon::expr_fn_91466
+  2.46%        ld  libbfd-2.22-system.so                 [.] 0x0000000000054c70
+  2.41%     rustc  libc-2.15.so                          [.] __memmove_ssse3_back
+  1.95%     rustc  libc-2.15.so                          [.] _int_free
+  1.94%     rustc  libextra-a7c050cfd46b2c9a-0.8-pre.so  [.] ebml::reader::tagged_docs::_f3d79846144c6234::_0$x2e8$x2dpre
+  1.85%     rustc  librustc-d3cb8c2ccd84a7a7-0.8-pre.so  [.] metadata::decoder::maybe_find_item::anon::expr_fn_91481
+  1.67%        ld  [kernel.kallsyms]                     [k] 0xffffffff81044ffa
+  1.57%     rustc  librustc-d3cb8c2ccd84a7a7-0.8-pre.so  [.] hash::__extensions__::meth_22527::write::_2bbc6fdf571a12f3::_0$x2e8$x2dpre
+  1.56%        ld  libc-2.15.so                          [.] __memcpy_ssse3_back
+  1.40%     rustc  libstd-6c65cf4b443341b1-0.8-pre.so    [.] cleanup::each_live_alloc::_b9a8f420b91ad622::_0$x2e8$x2dpre
+  1.37%     rustc  librustc-d3cb8c2ccd84a7a7-0.8-pre.so  [.] hash::__extensions__::meth_22569::result_u64::_35b0a054bc66faac::_0$x2e8$x2dpre
+  1.24%        cc  [kernel.kallsyms]                     [k] 0xffffffff81044ffa
+  1.17%     rustc  librustc-d3cb8c2ccd84a7a7-0.8-pre.so  [.] num::strconv::from_str_bytes_common_90798::_25931c29ce4e3c55::_0$x2e8$x2dpre
+  1.17%     rustc  libextra-a7c050cfd46b2c9a-0.8-pre.so  [.] ebml::reader::maybe_get_doc::_3f955cb7f9569d::_0$x2e8$x2dpre
+  1.01%        ld  libbfd-2.22-system.so                 [.] bfd_elf_link_add_symbols
+  0.97%     rustc  librustc-d3cb8c2ccd84a7a7-0.8-pre.so  [.] vec::__extensions__::slice_73314::_e73310fe6cef7c2c::_0$x2e8$x2dpre
+  0.89%     rustc  libextra-a7c050cfd46b2c9a-0.8-pre.so  [.] ebml::reader::get_doc::_e6da4d6eaa59445::_0$x2e8$x2dpre
+  0.88%     rustc  librustc-d3cb8c2ccd84a7a7-0.8-pre.so  [.] metadata::decoder::item_name::_10164553c4fefcce::_0$x2e8$x2dpre
+  0.88%     rustc  libc-2.15.so                          [.] _int_malloc
+  0.87%     rustc  ld-2.15.so                            [.] _dl_lookup_symbol_x
+  0.79%  collect2  [kernel.kallsyms]                     [k] 0xffffffff81044ffa
+  0.69%        ld  libc-2.15.so                          [.] __memset_sse2
+  0.68%     rustc  libc-2.15.so                          [.] malloc
+  0.68%     rustc  libsyntax-64629f7f0c6a9bc-0.8-pre.so  [.] util::interner::__extensions__::meth_8795::intern::_6f4abfe5617d84bc::_0$x2e8$x2dpre
+  0.59%     rustc  librustc-d3cb8c2ccd84a7a7-0.8-pre.so  [.] metadata::decoder::__extensions__::each_child_of_module_or_crate::anon::expr_fn_91625
+  0.58%

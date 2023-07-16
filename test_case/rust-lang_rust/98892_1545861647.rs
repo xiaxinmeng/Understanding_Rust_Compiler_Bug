@@ -1,0 +1,12 @@
+plain
+   Compiling write-json v0.1.2
+   Compiling sourcegen v0.0.0 (/checkout/src/tools/rust-analyzer/crates/sourcegen)
+   Compiling zip v0.6.4
+   Compiling xtask v0.1.0 (/checkout/src/tools/rust-analyzer/xtask)
+thread caused non-unwinding panic. aborting.
+rustc exited with signal: 6 (SIGABRT) (core dumped)
+error: could not compile `xtask` (bin "xtask")
+Caused by:
+Caused by:
+  process didn't exit successfully: `/checkout/obj/build/bootstrap/debug/rustc --crate-name xtask --edition=2021 xtask/src/main.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --crate-type bin --emit=dep-info,link -C opt-level=3 -C embed-bitcode=no -C debuginfo=0 -C debug-assertions=on -Zunstable-options --check-cfg 'values(feature)' --check-cfg 'names()' --check-cfg 'values()' -C metadata=100882325aade6a3 -C extra-filename=-100882325aade6a3 --out-dir /checkout/obj/build/x86_64-unknown-linux-gnu/stage2-tools/x86_64-unknown-linux-gnu/release/deps --target x86_64-unknown-linux-gnu -L dependency=/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-tools/x86_64-unknown-linux-gnu/release/deps -L dependency=/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-tools/release/deps --extern anyhow=/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-tools/x86_64-unknown-linux-gnu/release/deps/libanyhow-b205a7f9e633b77a.rlib --extern flate2=/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-tools/x86_64-unknown-linux-gnu/release/deps/libflate2-b892ffaec819cac2.rlib --extern time=/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-tools/x86_64-unknown-linux-gnu/release/deps/libtime-b0856f8e2fbf0349.rlib --extern write_json=/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-tools/x86_64-unknown-linux-gnu/release/deps/libwrite_json-b546234d7f69cb66.rlib --extern xflags=/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-tools/x86_64-unknown-linux-gnu/release/deps/libxflags-3f3de74143d0d22e.rlib --extern xshell=/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-tools/x86_64-unknown-linux-gnu/release/deps/libxshell-90f8ec9fabc99cb3.rlib --extern zip=/checkout/obj/build/x86_64-unknown-linux-gnu/stage2-tools/x86_64-unknown-linux-gnu/release/deps/libzip-26319b7de9647e8f.rlib -Csymbol-mangling-version=v0 -Zunstable-options '--check-cfg=values(bootstrap)' -Zmacro-backtrace -Clink-args=-Wl,-z,origin '-Clink-args=-Wl,-rpath,$ORIGIN/../lib' -Csplit-debuginfo=off -Cllvm-args=-import-instr-limit=10 -Z binary-dep-depinfo` (exit status: 254)
+Build completed unsuccessfully in 0:26:21

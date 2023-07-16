@@ -1,0 +1,3 @@
+
+__ZN3foo3foo17h83583f8ff17ec21aE
+ _ZN3foo3foo17h83583f8ff17ec21aE

@@ -1,0 +1,1 @@
+CString::from_bufreader

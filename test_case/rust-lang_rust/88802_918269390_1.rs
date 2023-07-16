@@ -1,0 +1,2 @@
+
+Some(MetaItem { path: Path { span: ../reproduce-88802.rs:1:4: 1:11 (#0), segments: [PathSegment { ident: feature#0, id: NodeId(4294967040), args: None }], tokens: None }, kind: List([MetaItem(MetaItem { path: Path { span: ../reproduce-88802.rs:1:12: 1:30 (#0), segments: [PathSegment { ident: discriminant_value#0, id: NodeId(4294967040), args: None }], tokens: None }, kind: Word, span: ../reproduce-88802.rs:1:12: 1:30 (#0) })]), span: ../reproduce-88802.rs:1:1: 1:32 (#0) })

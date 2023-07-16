@@ -1,0 +1,2 @@
+
+INFO:cargo::ops::cargo_rustc::fingerprint: fingerprint error for compiler_builtins v0.0.0 (file:///home/mark/src/rust/src/libcompiler_builtins): mtime based components have changed: previously Some(FileTime { seconds: 1495761200, nanos: 142046176 }) now None, paths are "/home/mark/src/rust/build/x86_64-unknown-linux-gnu/stage0-std/x86_64-unknown-linux-gnu/release/build/compiler_builtins-7332fe221efc4ba8/output" and "/home/mark/src/rust/build/x86_64-unknown-linux-gnu/stage0-std/x86_64-unknown-linux-gnu/release/build/compiler_builtins-7332fe221efc4ba8/output"

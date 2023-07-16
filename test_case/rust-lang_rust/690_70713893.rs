@@ -1,0 +1,6 @@
+
+error: linking with `cc` failed: exit code: 1
+note: cc '-Wl,--as-needed' '-m64' '-L' '/usr/local/lib/rustlib/x86_64-unknown-linux-gnu/lib' '-o' 'test' 'test.o' '-Wl,--whole-archive' '-lmorestack' '-Wl,--no-whole-archive' '-Wl,--gc-sections' '-pie' '-nodefaultlibs' '/usr/local/lib/rustlib/x86_64-unknown-linux-gnu/lib/libstd-4e7c5e5c.rlib' '/usr/local/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcollections-4e7c5e5c.rlib' '/usr/local/lib/rustlib/x86_64-unknown-linux-gnu/lib/libunicode-4e7c5e5c.rlib' '/usr/local/lib/rustlib/x86_64-unknown-linux-gnu/lib/librand-4e7c5e5c.rlib' '/usr/local/lib/rustlib/x86_64-unknown-linux-gnu/lib/liballoc-4e7c5e5c.rlib' '/usr/local/lib/rustlib/x86_64-unknown-linux-gnu/lib/liblibc-4e7c5e5c.rlib' '/usr/local/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcore-4e7c5e5c.rlib' '-L' '/usr/local/lib/rustlib/x86_64-unknown-linux-gnu/lib' '-L' '/.rust/lib/x86_64-unknown-linux-gnu' '-L' '/lib/x86_64-unknown-linux-gnu' '-Wl,--whole-archive' '-Wl,-Bstatic' '-Wl,--no-whole-archive' '-Wl,-Bdynamic' '-ldl' '-lpthread' '-lrt' '-lgcc_s' '-lpthread' '-lc' '-lm' '-lcompiler-rt'
+note: /usr/bin/ld: test.o: relocation R_X86_64_32S against `.rodata.str1905' can not be used when making a shared object; recompile with -fPIC
+test.o: error adding symbols: Bad value
+collect2: error: ld returned 1 exit status

@@ -1,0 +1,25 @@
+plain
+[2607/3021] Linking CXX static library lib\libLLVMMSP430CodeGen.a
+[2608/3021] Linking CXX static library lib\libLLVMBPFCodeGen.a
+[2609/3021] Linking CXX static library lib\libLLVMNVPTXCodeGen.a
+[2610/3021] Linking CXX static library lib\libLLVMPowerPCCodeGen.a
+FAILED: lib/libLLVMPowerPCCodeGen.a 
+cmd.exe /C "cd . && "C:\Program Files\CMake\bin\cmake.exe" -E rm -f lib\libLLVMPowerPCCodeGen.a && D:\a\rust\rust\mingw32\bin\ar.exe qc lib\libLLVMPowerPCCodeGen.a  lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/GISel/PPCInstructionSelector.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCBoolRetToInt.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCAsmPrinter.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCBranchSelector.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCBranchCoalescing.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCCallingConv.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCCCState.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCCTRLoops.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCCTRLoopsVerify.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCExpandAtomicPseudoInsts.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCHazardRecognizers.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCInstrInfo.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCISelDAGToDAG.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCISelLowering.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCEarlyReturn.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCFastISel.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCFrameLowering.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCLoopInstrFormPrep.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCMCInstLower.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCMachineFunctionInfo.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCMachineScheduler.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCMacroFusion.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCMIPeephole.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCRegisterInfo.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCSubtarget.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCTargetMachine.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCTargetObjectFile.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCTargetTransformInfo.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCTOCRegDeps.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCTLSDynamicCall.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCVSXCopy.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCReduceCRLogicals.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCVSXFMAMutate.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCVSXSwapRemoval.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCExpandISEL.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCPreEmitPeephole.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCLowerMASSVEntries.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/PPCGenScalarMASSEntries.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/GISel/PPCCallLowering.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/GISel/PPCRegisterBankInfo.cpp.obj lib/Target/PowerPC/CMakeFiles/LLVMPowerPCCodeGen.dir/GISel/PPCLegalizerInfo.cpp.obj && D:\a\rust\rust\mingw32\bin\ranlib.exe lib\libLLVMPowerPCCodeGen.a && cd ."
+D:\a\rust\rust\mingw32\bin\ar.exe: could not create temporary file whilst writing archive: no more archived files
+[2611/3021] Linking CXX static library lib\libLLVMHexagonCodeGen.a
+[2612/3021] Building CXX object tools/dsymutil/CMakeFiles/dsymutil.dir/dsymutil.cpp.obj
+[2613/3021] Linking CXX static library lib\libLLVMMipsCodeGen.a
+[2614/3021] Linking CXX static library lib\libLLVMAArch64CodeGen.a
+[2614/3021] Linking CXX static library lib\libLLVMAArch64CodeGen.a
+[2615/3021] Linking CXX static library lib\libLLVMARMCodeGen.a
+[2616/3021] Linking CXX executable bin\llvm-profdata.exe
+[2617/3021] Linking CXX static library lib\libLLVMPasses.a
+ninja: build stopped: subcommand failed.
+command did not execute successfully, got: exit code: 1
+
+
+build script failed, must exit now', C:\Users\runneradmin\.cargo\registry\src\index.crates.io-1cd66030c949c28d\cmake-0.1.48\src\lib.rs:975:5
+ finished in 303.077 seconds
+Build completed unsuccessfully in 0:06:42
+Build completed unsuccessfully in 0:06:42
+make: *** [Makefile:80: ci-mingw-subset-2] Error 1

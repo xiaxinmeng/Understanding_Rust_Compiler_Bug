@@ -1,0 +1,1 @@
+\n"},"level":"error","spans":[{"file_name":"/checkout/src/test/run-pass/auxiliary/hello_macro.rs","byte_start":916,"byte_end":1031,"line_start":26,"line_end":30,"column_start":5,"column_end":7,"is_primary":true,"text":[{"text":"    quote!({","highlight_start":5,"highlight_end":13lared type or module was used.\n\nErroneous code example:\n\n

@@ -1,0 +1,3 @@
+rust
+let x = Some("air");
+assert_eq!(unsafe { x.unwrap_unchecked() }, "air");

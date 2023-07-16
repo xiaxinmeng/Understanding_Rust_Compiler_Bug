@@ -1,0 +1,2 @@
+ rust
+    (*b.borrow()).foo()

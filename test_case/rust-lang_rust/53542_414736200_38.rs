@@ -1,0 +1,1 @@
+\nmod inner {\n    pub struct Foo;\n\n    impl Foo {\n        pub fn method(&self) {} // It's now public.\n    }\n}\n\nlet foo = inner::Foo;\nfoo.method(); // Ok!\n

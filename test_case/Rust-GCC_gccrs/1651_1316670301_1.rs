@@ -1,0 +1,2 @@
+
+<id=FN_TOK a.rs:1:1 <id=IDENTIFIER, text=main, typehint=unknown a.rs:1:4 <id=LEFT_PAREN a.rs:1:8 <id=RIGHT_PAREN a.rs:1:9 <id=LEFT_CURLY a.rs:1:11 <id=LET a.rs:2:5 <id=IDENTIFIER, text=a, typehint=unknown a.rs:2:9 <id=COLON a.rs:2:10 <id=IDENTIFIER, text=i32, typehint=unknown a.rs:2:12 <id=EQUAL a.rs:2:16 <id=INT_LITERAL, text=1, typehint=pure_decimal a.rs:2:18 <id=PLUS a.rs:2:20 <id=INT_LITERAL, text=2, typehint=pure_decimal a.rs:2:22 <id=SEMICOLON a.rs:2:23 <id=RETURN_TOK a.rs:3:5 <id=SEMICOLON a.rs:3:11 <id=RIGHT_CURLY a.rs:4:1

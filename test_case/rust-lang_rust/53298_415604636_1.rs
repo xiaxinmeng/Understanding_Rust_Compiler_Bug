@@ -1,0 +1,25 @@
+
+d9f1249655 Auto merge of #45285 - alexcrichton:update-bootstrap, r=Mark-Simulacrum
+bed9a85c40 Auto merge of #45570 - nrc:manifest-no-rls, r=alexcrichton
+f7b080b38e Auto merge of #45531 - steveklabnik:fix-unstable-book-formatting, r=kennytm
+51456a6808 Auto merge of #45353 - wesleywiser:untracked_queries, r=michaelwoerister
+1855aff8d7 Auto merge of #45524 - alexcrichton:improve-park-unpark, r=dtolnay
+bb37bc1c61 Auto merge of #45523 - alexcrichton:improve-libbacktrace, r=sfackler
+847f4fcf5f Auto merge of #45522 - michaelwoerister:fix-stable-hasher-cross, r=arielb1
+b218a02ad8 Auto merge of #45519 - michaelwoerister:dedup-errors, r=arielb1
+b0b80f8c22 Auto merge of #45380 - dotdash:arg_copies, r=arielb1
+e0febe7144 Auto merge of #45488 - oli-obk:ctfe_resolve, r=eddyb
+56dc171a2f Auto merge of #45464 - sinkuu:ice_44851, r=jseyfried
+fa29bcedd1 Auto merge of #45096 - DSpeckhals:update-rls-data-for-save-analysis, r=alexcrichton
+e847f30f57 Auto merge of #45532 - kennytm:rollup, r=kennytm
+f9d2416594 Auto merge of #44636 - GuillaumeGomez:little-error-msg, r=michaelwoerister
+2f5ae25a34 Auto merge of #45513 - GuillaumeGomez:rollup, r=GuillaumeGomez
+f764eaf453 Auto merge of #45476 - Xanewok:fingerprint-disambiguator, r=michaelwoerister
+b2478052f8 Auto merge of #45473 - SimonSapin:variance-red-green, r=nikomatsakis
+6e61bbabe4 Auto merge of #45455 - kennytm:print-extern-impl-for-e0119, r=nikomatsakis
+aa40292e78 Auto merge of #44603 - SimonSapin:stylo, r=alexcrichton
+c2799fc9a5 Auto merge of #45446 - leodasvacas:remove-libcollections, r=alexcrichton
+61af75437d Auto merge of #45350 - cjkenn:cjkenn/used-trait-imports, r=nikomatsakis
+fbc3642ef1 Auto merge of #45401 - zackmdavis:crate_shorthand_visibility_modifier, r=nikomatsakis
+a789fa0440 Auto merge of #44984 - Maaarcocr:master, r=nikomatsakis
+336624735c Auto merge of #44766 - sunjay:lift_generics, r=nikomatsakis

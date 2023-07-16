@@ -1,0 +1,1 @@
+discriminant for `V3` incremented from this startpoint (`V1` + 2 variant later => `V3` = 0)

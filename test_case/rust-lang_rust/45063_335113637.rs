@@ -1,0 +1,131 @@
+
+DepGraph Statistics
+------------------------------------------------------------------------------------------
+
+Total Node Count: 172567
+Total Edge Count: 784295
+
+ Node Kind                           | Node Frequency   | Node Count  | Avg. Edge Count  |
+-------------------------------------|------------------|-------------|------------------|
+ DefSpan                             |             9.7% |       16778 |              1.0 |
+ IsSized                             |             7.8% |       13374 |              2.1 |
+ TypeOfItem                          |             7.7% |       13309 |              1.4 |
+ GenericsOfItem                      |             5.6% |        9613 |              1.4 |
+ TraitSelect                         |             4.5% |        7694 |             11.9 |
+ Layout                              |             4.2% |        7182 |              1.5 |
+ InstanceSymbolName                  |             4.0% |        6822 |              6.4 |
+ ImplTraitRef                        |             3.8% |        6552 |              1.2 |
+ NeedsDrop                           |             3.7% |        6456 |              2.1 |
+ IsCopy                              |             3.6% |        6219 |              2.0 |
+ ImplParent                          |             2.7% |        4744 |              1.0 |
+ FnSignature                         |             2.4% |        4093 |              1.9 |
+ ItemAttrs                           |             2.3% |        3917 |              1.0 |
+ ExportName                          |             2.2% |        3757 |              1.0 |
+ SymbolName                          |             2.1% |        3678 |              6.4 |
+ PredicatesOfItem                    |             2.0% |        3533 |              1.9 |
+ IsForeignItem                       |             1.9% |        3285 |              1.0 |
+ ContainsExternIndicator             |             1.4% |        2425 |              2.0 |
+ AssociatedItems                     |             1.4% |        2354 |              1.0 |
+ ParamEnv                            |             1.3% |        2203 |              2.6 |
+ Visibility                          |             1.2% |        2001 |              1.0 |
+ IsDefaultImpl                       |             1.1% |        1894 |              1.0 |
+ LookupDeprecationEntry              |             1.1% |        1852 |              0.2 |
+ LookupStability                     |             1.0% |        1716 |              0.1 |
+ ItemChildren                        |             1.0% |        1643 |              1.0 |
+ ImplementationsOfTrait              |             0.9% |        1602 |              1.0 |
+ IsFreeze                            |             0.9% |        1595 |              2.2 |
+ MirOptimized                        |             0.9% |        1589 |             12.2 |
+ IsExportedSymbol                    |             0.9% |        1503 |              1.0 |
+ DescribeDef                         |             0.9% |        1471 |              1.0 |
+ Hir                                 |             0.8% |        1410 |              0.0 |
+ HirBody                             |             0.8% |        1410 |              0.0 |
+ ObjectLifetimeDefaults              |             0.8% |        1409 |              0.0 |
+ HasTypeckTables                     |             0.8% |        1409 |              1.0 |
+ TraitOfItem                         |             0.8% |        1376 |              1.4 |
+ TypeckTables                        |             0.7% |        1267 |             65.7 |
+ Specializes                         |             0.7% |        1258 |              7.4 |
+ RegionScopeTree                     |             0.7% |        1191 |              1.2 |
+ ImplPolarity                        |             0.6% |        1053 |              1.0 |
+ IsConstFn                           |             0.6% |         977 |              1.0 |
+ AdtDefOfItem                        |             0.5% |         933 |              3.9 |
+ ItemVariances                       |             0.5% |         893 |              2.9 |
+ ItemVarianceConstraints             |             0.5% |         829 |              2.1 |
+ BorrowCheck                         |             0.5% |         803 |             16.8 |
+ MirConst                            |             0.5% |         803 |             45.2 |
+ UnsafetyViolations                  |             0.5% |         803 |              6.3 |
+ MirBorrowCheck                      |             0.5% |         803 |              2.1 |
+ MirValidated                        |             0.5% |         803 |             16.4 |
+ IsMirAvailable                      |             0.4% |         752 |              1.0 |
+ AssociatedItemDefIds                |             0.4% |         730 |              1.0 |
+ Freevars                            |             0.4% |         713 |              0.0 |
+ NamedRegion                         |             0.4% |         706 |              0.0 |
+ ConstEval                           |             0.4% |         653 |              3.9 |
+ ExternConstBody                     |             0.3% |         535 |              1.0 |
+ IsTranslatedFunction                |             0.3% |         517 |              1.0 |
+ InherentImpls                       |             0.3% |         490 |              0.2 |
+ InScopeTraits                       |             0.3% |         487 |              0.0 |
+ SizedConstraint                     |             0.2% |         273 |              3.6 |
+ AdtDestructor                       |             0.1% |         243 |              5.3 |
+ MirShim                             |             0.1% |         240 |             11.2 |
+ MaybeUnusedTraitImport              |             0.1% |         222 |              0.0 |
+ DtorckConstraint                    |             0.1% |         198 |              7.0 |
+ IsLateBound                         |             0.1% |         142 |              0.0 |
+ ClosureKind                         |             0.1% |         113 |              1.0 |
+ ImplDefaultness                     |             0.1% |         105 |              1.0 |
+ SuperPredicatesOfItem               |             0.1% |          99 |              1.0 |
+ TraitImpls                          |             0.1% |          93 |            184.3 |
+ ObjectSafety                        |             0.1% |          92 |             31.8 |
+ TraitDefOfItem                      |             0.1% |          89 |              1.0 |
+ CompileCodegenUnit                  |             0.0% |          79 |           1746.6 |
+ CodegenUnit                         |             0.0% |          79 |              1.0 |
+ GenSignature                        |             0.0% |          76 |              1.0 |
+ SpecializationGraph                 |             0.0% |          70 |            216.1 |
+ ModuleExports                       |             0.0% |          28 |              0.0 |
+ CoherenceCheckTrait                 |             0.0% |          23 |             20.3 |
+ MirConstQualif                      |             0.0% |          23 |              4.1 |
+ CrateDisambiguator                  |             0.0% |          19 |              0.9 |
+ CrateName                           |             0.0% |          19 |              0.9 |
+ OriginalCrateName                   |             0.0% |          19 |              0.9 |
+ NativeLibraries                     |             0.0% |          19 |              1.0 |
+ ExportedSymbols                     |             0.0% |          19 |            742.5 |
+ ExportedSymbolIds                   |             0.0% |          19 |              1.0 |
+ IsPanicRuntime                      |             0.0% |          18 |              1.0 |
+ IsProfilerRuntime                   |             0.0% |          18 |              1.0 |
+ UsedCrateSource                     |             0.0% |          18 |              1.0 |
+ DeriveRegistrarFn                   |             0.0% |          18 |              1.0 |
+ DefinedLangItems                    |             0.0% |          18 |              1.0 |
+ IsNoBuiltins                        |             0.0% |          18 |              1.0 |
+ DepKind                             |             0.0% |          18 |              1.0 |
+ CrateHash                           |             0.0% |          18 |              1.0 |
+ CrateMetadata                       |             0.0% |          18 |              0.0 |
+ IsCompilerBuiltins                  |             0.0% |          18 |              1.0 |
+ IsSanitizerRuntime                  |             0.0% |          18 |              1.0 |
+ MissingExternCrateItem              |             0.0% |          18 |              1.0 |
+ PluginRegistrarFn                   |             0.0% |          18 |              1.0 |
+ TypeParamPredicates                 |             0.0% |          17 |              4.6 |
+ ExternCrate                         |             0.0% |          13 |              1.0 |
+ HasCopyClosures                     |             0.0% |           6 |              0.8 |
+ ExternModStmtCnum                   |             0.0% |           6 |              0.0 |
+ ConstIsRvaluePromotableToStatic     |             0.0% |           4 |              1.0 |
+ Krate                               |             0.0% |           1 |              0.0 |
+ MaybeUnusedExternCrates             |             0.0% |           1 |              0.0 |
+ GetLangItems                        |             0.0% |           1 |              0.0 |
+ Reachability                        |             0.0% |           1 |           1221.0 |
+ CoherenceInherentImplOverlapCheck   |             0.0% |           1 |            221.0 |
+ PostorderCnums                      |             0.0% |           1 |              0.0 |
+ AllCrateNums                        |             0.0% |           1 |              0.0 |
+ CrateVariances                      |             0.0% |           1 |           1130.0 |
+ PrivacyAccessLevels                 |             0.0% |           1 |          12503.0 |
+ CollectAndPartitionTranslationItems |             0.0% |           1 |          23563.0 |
+ VisibleParentMap                    |             0.0% |           1 |           5446.0 |
+ Coherence                           |             0.0% |           1 |             55.0 |
+ LintLevels                          |             0.0% |           1 |           2064.0 |
+ StabilityIndex                      |             0.0% |           1 |           2064.0 |
+ MirKeys                             |             0.0% |           1 |              1.0 |
+ TypeckBodiesKrate                   |             0.0% |           1 |           1446.0 |
+ LinkArgs                            |             0.0% |           1 |              1.0 |
+ OutputFilenames                     |             0.0% |           1 |              0.0 |
+ AllLocalTraitImpls                  |             0.0% |           1 |              0.0 |
+------------------------------------------------------------------------------------------
+
+Re-using 79 out of 79 modules

@@ -1,0 +1,11 @@
+
+lipsum-zh.html size    1024           ... bench:      10,654 ns/iter (+/- 45)
+lipsum-zh.html size 1048576           ... bench:  10,418,459 ns/iter (+/- 7,053)
+lipsum.html size    1024              ... bench:       6,289 ns/iter (+/- 9)
+lipsum.html size 1048576              ... bench:   6,121,224 ns/iter (+/- 6,787)
+lipsum.html size 1048576 (clone only) ... bench:      12,520 ns/iter (+/- 69)
+medium-fragment.html                  ... bench:     213,680 ns/iter (+/- 843)
+small-fragment.html                   ... bench:      20,141 ns/iter (+/- 197)
+strong.html size    1024              ... bench:     175,902 ns/iter (+/- 13,085)
+strong.html size 1048576              ... bench: 175,450,855 ns/iter (+/- 2,841,922)
+tiny-fragment.html                    ... bench:       1,804 ns/iter (+/- 43)

@@ -1,0 +1,1 @@
+\n\nNotice that `x` is stack-allocated by `foo()`. By default, Rust captures\nclosed-over data by reference. This means that once `foo()` returns, `x` no\nlonger exists. An attempt to access `x` within the closure would thus be\nunsafe.\n\nAnother situation where this might be encountered is when spawning threads:\n\n

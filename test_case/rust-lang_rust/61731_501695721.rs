@@ -1,0 +1,2 @@
+rust
+drop(runtime::spawn(...));

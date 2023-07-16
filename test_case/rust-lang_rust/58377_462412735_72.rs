@@ -1,0 +1,29 @@
+\n"},"level":"error","spans":[{"file_name":"/checkout/src/test/ui/span/issue-15480.rs","byte_start":66,"byte_end":71,"line_start":5,"line_end":5,"column_start":10,"column_end":15,"is_primary":true,"text":[{"text":"        &id(3)","highlight_start":10,"highlight_end":15}],"label":"temporary value does not live long enough","suggested_replacement":null,"suggestion_applicability":null,"expansion":null},{"file_name":"<::alloc::macros::vec macros>","byte_start":181,"byte_end":182,"line_start":3,"line_end":3,"column_start":67,"column_end":68,"is_primary":false,"text":[{"text":"{ let tmp = [ $ ( $ x ) , * ] ; < [ _ ] > :: into_vec ( box tmp ) } ) ; (","highlight_start":67,"highlight_end":68}],"label":"temporary value dropped here while still borrowed","suggested_replacement":null,"suggestion_applicability":null,"expansion":{"span":{"file_name":"/checkout/src/test/ui/span/issue-15480.rs","byte_start":51,"byte_end":77,"line_start":4,"line_end":6,"column_start":13,"column_end":6,"is_primary":false,"text":[{"text":"    let v = vec![","highlight_start":13,"highlight_end":18},{"text":"        &id(3)","highlight_start":1,"highlight_end":15},{"text":"    ];","highlight_start":1,"highlight_end":6}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null},"macro_decl_name":"vec!","def_site_span":{"file_name":"<::alloc::macros::vec macros>","byte_start":0,"byte_end":242,"line_start":1,"line_end":4,"column_start":1,"column_end":54,"is_primary":false,"text":[{"text":"( $ elem : expr ; $ n : expr ) => (","highlight_start":1,"highlight_end":36},{"text":"$ crate :: vec :: from_elem ( $ elem , $ n ) ) ; ( $ ( $ x : expr ) , * ) => (","highlight_start":1,"highlight_end":79},{"text":"{ let tmp = [ $ ( $ x ) , * ] ; < [ _ ] > :: into_vec ( box tmp ) } ) ; (","highlight_start":1,"highlight_end":74},{"text":"$ ( $ x : expr , ) * ) => ( vec ! [ $ ( $ x ) , * ] )","highlight_start":1,"highlight_end":54}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}}},{"file_name":"/checkout/src/test/ui/span/issue-15480.rs","byte_start":194,"byte_end":195,"line_start":12,"line_end":12,"column_start":1,"column_end":2,"is_primary":false,"text":[{"text":"}","highlight_start":1,"highlight_end":2}],"label":"temporary value needs to live until here","suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[],"rendered":"error[E0597]: borrowed value does not live long enough\n  --> /checkout/src/test/ui/span/issue-15480.rs:5:10\n   |\nLL |       let v = vec![\n   |  _____________-\nLL | |         &id(3)\n   | |          ^^^^^ temporary value does not live long enough\nLL | |     ];\n   | |_____- temporary value dropped here while still borrowed\n...\nLL |   }\n   |   - temporary value needs to live until here\n   |\n   = note: this error originates in a macro outside of the current crate (in Nightly builds, run with -Z external-macro-backtrace for more info)\n\n"}
+[01:05:24] {"message":"For more information about this error, try `rustc --explain E0597`.","code":null,"level":"","spans":[],"children":[],"rendered":"For more information about this error, try `rustc --explain E0597`.\n"}
+[01:05:24] 
+[01:05:24] ------------------------------------------
+[01:05:24] 
+---
+[01:05:24] 4 LL |     let x = vec![];
+[01:05:24] -    |         -   ^^^^^^ cannot infer type for `T`
+[01:05:24] +    |         -   ^^^^^^ cannot infer type
+[01:05:24] 6    |         |
+[01:05:24] 7    |         consider giving `x` a type
+[01:05:24] 
+[01:05:24] 
+[01:05:24] The actual stderr differed from the expected stderr.
+[01:05:24] Actual stderr saved to /checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/type/type-check/cannot_infer_local_or_vec/cannot_infer_local_or_vec.stderr
+[01:05:24] Actual stderr saved to /checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/type/type-check/cannot_infer_local_or_vec/cannot_infer_local_or_vec.stderr
+[01:05:24] To update references, rerun the tests and pass the `--bless` flag
+[01:05:24] To only update this specific test, also pass `--test-args type/type-check/cannot_infer_local_or_vec.rs`
+[01:05:24] error: 1 errors occurred comparing output.
+[01:05:24] status: exit code: 1
+[01:05:24] status: exit code: 1
+[01:05:24] command: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "/checkout/src/test/ui/type/type-check/cannot_infer_local_or_vec.rs" "-Zthreads=1" "--target=x86_64-unknown-linux-gnu" "--error-format" "json" "-Zui-testing" "-C" "prefer-dynamic" "-o" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/type/type-check/cannot_infer_local_or_vec/a" "-Crpath" "-O" "-Zunstable-options" "-Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/type/type-check/cannot_infer_local_or_vec/auxiliary" "-A" "unused"
+[01:05:24] ------------------------------------------
+[01:05:24] 
+[01:05:24] ------------------------------------------
+[01:05:24] stderr:
+[01:05:24] stderr:
+[01:05:24] ------------------------------------------
+[01:05:24] {"message":"type annotations needed","code":{"code":"E0282","explanation":"\nThis error indicates that type inference did not result in one unique possible\ntype, and extra information is required. In most cases this can be provided\nby adding a type annotation. Sometimes you need to specify a generic type\nparameter manually.\n\nA common example is the `collect` method on `Iterator`. It has a generic type\nparameter with a `FromIterator` bound, which for a `char` iterator is\nimplemented by `Vec` and `String` among others. Consider the following snippet\nthat reverses the characters of a string:\n\n

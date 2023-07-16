@@ -1,0 +1,7 @@
+
+error[E0275]: overflow evaluating the requirement `(Cons<_, _>, ()): Foo`
+  |
+  = help: consider adding a `#![recursion_limit="256"]` attribute to your crate (`playground`)
+  = note: required because of the requirements on the impl of `Foo` for `(Cons<_, Cons<_, _>>, ())`
+  = note: 127 redundant requirements hidden
+  = note: required because of the requirements on the impl of `Foo` for `(Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, Cons<_, _>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>, ())`

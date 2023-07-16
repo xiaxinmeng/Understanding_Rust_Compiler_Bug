@@ -1,0 +1,6 @@
+rust
+//...
+let b = widths[a]; // <-- (1)
+b.a;
+stack.push("idx"); 
+//...

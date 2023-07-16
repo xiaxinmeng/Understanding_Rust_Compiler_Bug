@@ -1,0 +1,3 @@
+` for doctests is somewhat overloaded. We currently mark these as [ignored](https://doc.rust-lang.org/nightly/test/struct.TestDesc.html#structfield.ignore) in the test runner, so that it shows the test but lists it as ignored. However, this also means that using the test runner argument of `--include-ignored` will attempt to compile the example, even if it's not intended to be valid Rust code.
+
+This is made worse by the fact that there is no other way to get Rust highlighting for an example block than use 

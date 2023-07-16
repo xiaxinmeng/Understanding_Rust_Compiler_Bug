@@ -1,0 +1,45 @@
+
+thread 'main' panicked at 'explicit panic', foo.rs:4:13
+stack backtrace:
+   0: backtrace::backtrace::libunwind::trace
+             at /home/alex/.cargo/registry/src/github.com-1ecc6299db9ec823/backtrace-0.3.19/src/backtrace/libunwind.rs:97
+   1: backtrace::backtrace::trace_unsynchronized
+             at /home/alex/.cargo/registry/src/github.com-1ecc6299db9ec823/backtrace-0.3.19/src/backtrace/mod.rs:66
+   2: std::sys_common::backtrace::_print
+             at src/libstd/sys_common/backtrace.rs:47
+   3: std::sys_common::backtrace::print
+             at src/libstd/sys_common/backtrace.rs:36
+   4: std::panicking::default_hook::{{closure}}
+             at src/libstd/panicking.rs:197
+   5: std::panicking::default_hook
+             at src/libstd/panicking.rs:211
+   6: std::panicking::rust_panic_with_hook
+             at src/libstd/panicking.rs:474
+   7: std::panicking::begin_panic
+             at ./src/libstd/panicking.rs:408
+   8: foo::main::{{closure}}::{{closure}}
+             at ./foo.rs:4
+   9: foo::main::{{closure}}
+             at ./foo.rs:3
+  10: foo::main
+             at ./foo.rs:2
+  11: std::rt::lang_start::{{closure}}
+             at ./src/libstd/rt.rs:64
+  12: std::rt::lang_start_internal::{{closure}}
+             at src/libstd/rt.rs:49
+  13: std::panicking::try::do_call
+             at src/libstd/panicking.rs:293
+  14: __rust_maybe_catch_panic
+             at src/libpanic_unwind/lib.rs:85
+  15: std::panicking::try
+             at src/libstd/panicking.rs:272
+  16: std::panic::catch_unwind
+             at src/libstd/panic.rs:388
+  17: std::rt::lang_start_internal
+             at src/libstd/rt.rs:48
+  18: std::rt::lang_start
+             at ./src/libstd/rt.rs:64
+  19: main
+  20: __libc_start_main
+  21: _start
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.

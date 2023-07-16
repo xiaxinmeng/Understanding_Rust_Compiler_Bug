@@ -1,0 +1,1 @@
+\n\nAnother way to provide the compiler with enough information, is to specify the\ngeneric type parameter:\n\n

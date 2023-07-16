@@ -1,0 +1,12 @@
+
+error: linking with `gcc` failed: exit code: 1
+note: gcc '-m32' '-L' 'C:\Program Files (x86)\Rust\bin\rustlib\i686-w64-mingw32\lib' '-o' 'test.exe' 'test.o' '-Wl,--whole-archive' '-lmorestack' '-Wl,--no-whole-archive' '-fno-lto' '-fno-use-linker-plugin' '-Wl,--gc-sections' '-shared-libgcc' '-Wl,--enable-long-section-names' '-Wl,--nxcompat' '-Wl,--large-address-aware' 'C:\Program Files (x86)\Rust\bin\rustlib\i686-w64-mingw32\lib\libnative-4e7c5e5c.rlib' 'C:\Program Files (x86)\Rust\bin\rustlib\i686-w64-mingw32\lib\libstd-4e7c5e5c.rlib' 'C:\Program Files (x86)\Rust\bin\rustlib\i686-w64-mingw32\lib\libsync-4e7c5e5c.rlib' 'C:\Program Files (x86)\Rust\bin\rustlib\i686-w64-mingw32\lib\librustrt-4e7c5e5c.rlib' 'C:\Program Files (x86)\Rust\bin\rustlib\i686-w64-mingw32\lib\libcollections-4e7c5e5c.rlib' 'C:\Program Files (x86)\Rust\bin\rustlib\i686-w64-mingw32\lib\liballoc-4e7c5e5c.rlib' 'C:\Program Files (x86)\Rust\bin\rustlib\i686-w64-mingw32\lib\liblibc-4e7c5e5c.rlib' 'C:\Program Files (x86)\Rust\bin\rustlib\i686-w64-mingw32\lib\librand-4e7c5e5c.rlib' 'C:\Program Files (x86)\Rust\bin\rustlib\i686-w64-mingw32\lib\libunicode-4e7c5e5c.rlib' 'C:\Program Files
+(x86)\Rust\bin\rustlib\i686-w64-mingw32\lib\libcore-4e7c5e5c.rlib' '-L' 'C:\Users\Nathan\Dropbox\code\in-progress\test\.rust' '-L' 'C:\Users\Nathan\Dropbox\code\in-progress\test' '-Wl,--whole-archive' '-Wl,-Bstatic' '-Wl,--no-whole-archive' '-Wl,-Bdynamic' '-lws2_32' '-lcompiler-rt'
+note: C:\Program Files (x86)\Rust\bin\rustlib\i686-w64-mingw32\lib\libstd-4e7c5e5c.rlib(r-rust_builtin-rust_builtin.o): In function `gmtime':
+c:/program files (x86)/mingw-w64/i686-4.8.1-win32-dwarf-rt_v3-rev2/mingw32/i686-w64-mingw32/include/time.h:240: undefined reference to `_gmtime32'
+C:\Program Files (x86)\Rust\bin\rustlib\i686-w64-mingw32\lib\libstd-4e7c5e5c.rlib(r-rust_builtin-rust_builtin.o): In function `localtime':
+c:/program files (x86)/mingw-w64/i686-4.8.1-win32-dwarf-rt_v3-rev2/mingw32/i686-w64-mingw32/include/time.h:238: undefined reference to `_localtime32'
+C:\Program Files (x86)\Rust\bin\rustlib\i686-w64-mingw32\lib\libstd-4e7c5e5c.rlib(r-rust_builtin-rust_builtin.o): In function `mktime':
+c:/program files (x86)/mingw-w64/i686-4.8.1-win32-dwarf-rt_v3-rev2/mingw32/i686-w64-mingw32/include/time.h:239: undefined reference to `_mktime32'
+c:/program files (x86)/mingw-w64/i686-4.8.1-win32-dwarf-rt_v3-rev2/mingw32/i686-w64-mingw32/include/time.h:239: undefined reference to `_mktime32'
+collect2.exe: error: ld returned 1 exit status

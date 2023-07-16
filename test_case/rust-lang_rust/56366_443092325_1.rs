@@ -1,0 +1,1 @@
+\n\nThe `Self` keyword represents the current type, which explains why it can only\nbe used inside an impl, trait, or type definition. It gives access to the\nassociated items of a type:\n\n

@@ -1,0 +1,52 @@
+text
+Removing src/tools/cargotest/lockfiles/iron-Cargo.lock
+Removing src/test/ui/thread-local-in-ctfe.nll.stderr
+Removing src/test/ui/pattern/pattern-bindings-after-at.nll.stderr
+Removing src/test/ui/issues/issue-49824.nll.stderr
+Removing src/test/ui/issues/issue-45696-scribble-on-boxed-borrow.migrate.stderr
+Auto-merging src/test/ui/issues/issue-40510-3.stderr
+Removing src/test/ui/issues/issue-40510-3.nll.stderr
+Auto-merging src/test/ui/issues/issue-40510-1.stderr
+Removing src/test/ui/issues/issue-40510-1.nll.stderr
+Removing src/test/ui/consts/min_const_fn/min_const_fn_dyn.nll.stderr
+Removing src/test/ui/consts/min_const_fn/min_const_fn.nll.stderr
+Removing src/test/ui/borrowck/borrowck-migrate-to-nll.zflag.stderr
+Removing src/test/ui/borrowck/borrowck-migrate-to-nll.rs
+Removing src/test/ui/borrowck/borrowck-migrate-to-nll.edition.stderr
+Removing src/test/ui/borrowck/borrowck-describe-lvalue.nll.stderr
+Removing src/test/ui/borrowck/borrowck-anon-fields-variant.nll.stderr
+Auto-merging src/librustdoc/clean/mod.rs
+Auto-merging src/librustc_typeck/collect.rs
+Auto-merging src/librustc_typeck/coherence/builtin.rs
+Auto-merging src/librustc_typeck/check/wfcheck.rs
+Auto-merging src/librustc_typeck/check/expr.rs
+Auto-merging src/librustc_typeck/astconv.rs
+Auto-merging src/librustc_traits/chalk_context/mod.rs
+Auto-merging src/librustc_mir/shim.rs
+Auto-merging src/librustc_mir/hair/cx/expr.rs
+Auto-merging src/librustc_mir/dataflow/drop_flag_effects.rs
+Auto-merging src/librustc_mir/borrow_check/nll/universal_regions.rs
+Auto-merging src/librustc_mir/borrow_check/nll/type_check/mod.rs
+Auto-merging src/librustc_mir/borrow_check/mod.rs
+Auto-merging src/librustc_mir/borrow_check/conflict_errors.rs
+Auto-merging src/librustc_metadata/encoder.rs
+Auto-merging src/librustc/ty/print/pretty.rs
+Auto-merging src/librustc/ty/mod.rs
+Auto-merging src/librustc/ty/layout.rs
+Auto-merging src/librustc/ty/instance.rs
+Auto-merging src/librustc/ty/error.rs
+Auto-merging src/librustc/ty/context.rs
+Auto-merging src/librustc/traits/specialize/specialization_graph.rs
+Auto-merging src/librustc/traits/select.rs
+Auto-merging src/librustc/traits/query/normalize.rs
+Auto-merging src/librustc/traits/query/dropck_outlives.rs
+Auto-merging src/librustc/traits/fulfill.rs
+Auto-merging src/librustc/traits/error_reporting.rs
+Auto-merging src/librustc/traits/auto_trait.rs
+Auto-merging src/librustc/middle/mem_categorization.rs
+Auto-merging src/librustc/middle/intrinsicck.rs
+CONFLICT (content): Merge conflict in src/librustc/middle/intrinsicck.rs
+Auto-merging src/librustc/infer/opaque_types/mod.rs
+Auto-merging src/librustc/infer/mod.rs
+Automatic merge failed; fix conflicts and then commit the result.
+

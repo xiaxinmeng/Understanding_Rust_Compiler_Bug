@@ -1,0 +1,4 @@
+rust
+    #[transparent]
+    mod m { ... }
+    

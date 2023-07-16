@@ -1,0 +1,1 @@
+compile_fail,E0626\n# #![feature(generators, generator_trait)]\n# use std::ops::Generator;\nlet mut b = || {\n    let a = &String::new(); // <-- This borrow...\n    yield (); // ...is still in scope here, when the yield occurs.\n    println!(\"{}\", a);\n};\nunsafe { b.resume() };\n

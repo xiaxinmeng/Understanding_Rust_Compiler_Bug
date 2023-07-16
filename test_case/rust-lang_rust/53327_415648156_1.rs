@@ -1,0 +1,1 @@
+\n\nIn the code above, the function is returning data borrowed from either `x` or\n`y`, but the `'a` annotation indicates that it is returning data only from `x`.\nTo fix the error, the signature and the body must be made to match. Typically,\nthis is done by updating the function signature. So, in this case, we change\nthe type of `y` to `&'a i32`, like so:\n\n

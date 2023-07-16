@@ -1,0 +1,1 @@
+\nstruct FancyNum {\n    num: u8,\n}\n\nfn main() {\n    let mut fancy_num = FancyNum { num: 5 };\n\n    print_fancy_ref(&fancy_num);\n\n    // Works because function borrow has ended\n    fancy_num = FancyNum { num: 6 };\n    println!(\"Num: {}\", fancy_num.num);\n}\n\nfn print_fancy_ref(fancy_ref: &FancyNum){\n    println!(\"Ref: {}\", fancy_ref.num);\n}\n

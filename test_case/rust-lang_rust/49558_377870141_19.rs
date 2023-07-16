@@ -1,0 +1,1 @@
+\nenum something_that_does_exist {\n    Foo,\n}\n

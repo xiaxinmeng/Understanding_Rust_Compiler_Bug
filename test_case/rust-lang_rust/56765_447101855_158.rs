@@ -1,0 +1,1 @@
+\n\nTry using type inference instead. Example:\n\n

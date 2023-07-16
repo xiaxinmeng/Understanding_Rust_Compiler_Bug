@@ -1,0 +1,1 @@
+\n#![feature(repr128)]\n\n#[repr(u12n#![feature(repr128)]\n\n#[repr(u128)] // ok!\nenum Foo {\n    Bar(u64),\n}\n

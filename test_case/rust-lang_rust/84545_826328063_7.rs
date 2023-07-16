@@ -1,0 +1,1 @@
+\n\nIf you're using a stable or a beta version of rustc, you won't be able to use\nany unstable features. In order to do so, please switch to a nightly version of\nrustc (by using [rustup]).\n\nIf you're using a nightly version of rustc, just add the corresponding feature\nto be able to use it:\n\n

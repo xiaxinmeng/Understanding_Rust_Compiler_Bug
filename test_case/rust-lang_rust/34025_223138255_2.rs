@@ -1,0 +1,4 @@
+
+extern "C" {
+#[doc(hidden)] pub fn cv_calib3d_cv_solvePnPRansac_InputArray_objectPoints_InputArray_imagePoints_InputArray_cameraMatrix_InputArray_distCoeffs_OutputArray_rvec_OutputArray_tvec_bool_useExtrinsicGuess_int_iterationsCount_float_reprojectionError_int_minInliersCount_OutputArray_inliers_int_flags();
+}

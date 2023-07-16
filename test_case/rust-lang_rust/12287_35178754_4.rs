@@ -1,0 +1,3 @@
+
+$ rustc -L. c.rs -Z print-link-args                       
+cc link args: '-m64' '-L/usr/lib/rustlib/x86_64-unknown-linux-gnu/lib' '-o' 'c' 'c.o' '-Wl,--as-needed' '-L.' '-L/home/alex/test/.rust' '-L/home/alex/test' '/usr/lib/rustlib/x86_64-unknown-linux-gnu/lib/libstd-966edb7e-0.10-pre.rlib' '/usr/lib/rustlib/x86_64-unknown-linux-gnu/lib/libgreen-80d9e76a-0.10-pre.rlib' '/usr/lib/rustlib/x86_64-unknown-linux-gnu/lib/librustuv-09e0b925-0.10-pre.rlib' 'liba-ca3f740d-0.0.rlib' 'libb-920859ee-0.0.rlib' '-ldl' '-lm' '-lpthread' '-lpthread' '-lrt' '-lmorestack' '-Wl,-rpath,$ORIGIN/../../../usr/lib/rustlib/x86_64-unknown-linux-gnu/lib' '-Wl,-rpath,/usr/lib/rustlib/x86_64-unknown-linux-gnu/lib'

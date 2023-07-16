@@ -1,0 +1,2 @@
+rust
+fun main() {}

@@ -1,0 +1,1 @@
+\ntrait A<T=Self> {}\n\nfn together_we_will_rule_the_galaxy(son: &A<i32>) {} // Ok!\n

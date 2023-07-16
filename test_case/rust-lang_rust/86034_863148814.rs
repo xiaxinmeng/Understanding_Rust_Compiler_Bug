@@ -1,0 +1,3 @@
+
+// ignore-wasm
+// ignore-emscripten

@@ -1,0 +1,49 @@
+
+thread 'main' panicked at 'Test', t.rs:6:5
+stack backtrace:
+   0: backtrace::backtrace::libunwind::trace
+             at /cargo/registry/src/github.com-1ecc6299db9ec823/backtrace-0.3.46/src/backtrace/libunwind.rs:86
+   1: backtrace::backtrace::trace_unsynchronized
+             at /cargo/registry/src/github.com-1ecc6299db9ec823/backtrace-0.3.46/src/backtrace/mod.rs:66
+   2: std::sys_common::backtrace::_print_fmt
+             at library/std/src/sys_common/backtrace.rs:78
+   3: <std::sys_common::backtrace::_print::DisplayBacktrace as core::fmt::Display>::fmt
+             at library/std/src/sys_common/backtrace.rs:59
+   4: core::fmt::write
+             at library/core/src/fmt/mod.rs:1117
+   5: std::io::Write::write_fmt
+             at library/std/src/io/mod.rs:1510
+   6: std::sys_common::backtrace::_print
+             at library/std/src/sys_common/backtrace.rs:62
+   7: std::sys_common::backtrace::print
+             at library/std/src/sys_common/backtrace.rs:49
+   8: std::panicking::default_hook::{{closure}}
+             at library/std/src/panicking.rs:198
+   9: std::panicking::default_hook
+             at library/std/src/panicking.rs:217
+  10: std::panicking::rust_panic_with_hook
+             at library/std/src/panicking.rs:526
+  11: std::panicking::begin_panic
+             at /rustc/cfc572cae2d1fc381cce476b5c787fd7221af98c/library/std/src/panicking.rs:456
+  12: t::bar
+             at ./t.rs:6
+  13: t::main
+             at ./t.rs:2
+  14: std::rt::lang_start::{{closure}}
+             at /rustc/cfc572cae2d1fc381cce476b5c787fd7221af98c/library/std/src/rt.rs:67
+  15: std::rt::lang_start_internal::{{closure}}
+             at library/std/src/rt.rs:52
+  16: std::panicking::try::do_call
+             at library/std/src/panicking.rs:348
+  17: std::panicking::try
+             at library/std/src/panicking.rs:325
+  18: std::panic::catch_unwind
+             at library/std/src/panic.rs:394
+  19: std::rt::lang_start_internal
+             at library/std/src/rt.rs:51
+  20: std::rt::lang_start
+             at /rustc/cfc572cae2d1fc381cce476b5c787fd7221af98c/library/std/src/rt.rs:67
+  21: main
+  22: __libc_start_main
+  23: _start
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.

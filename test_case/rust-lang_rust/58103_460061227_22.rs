@@ -1,0 +1,1 @@
+\n\nFunctions do not capture local variables. To fix this error, you can replace the\nfunction with a closure:\n\n

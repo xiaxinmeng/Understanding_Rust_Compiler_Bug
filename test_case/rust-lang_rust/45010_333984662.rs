@@ -1,0 +1,21 @@
+llvm
+$ rustc +1.11.0 -g line.rs --emit=llvm-ir && sed -n '/DIComp/,$p' line.ll
+!0 = distinct !DICompileUnit(language: DW_LANG_Rust, file: !1, producer: "rustc version 1.11.0 (9b21dcd6a 2016-08-15)", isOptimized: false, runtimeVersion: 0, emissionKind: 1, enums: !2, subprograms: !3)
+!1 = !DIFile(filename: "./line.rs", directory: "/tmp")
+!2 = !{}
+!3 = !{!4}
+!4 = distinct !DISubprogram(name: "foo", linkageName: "_ZN4line3fooE", scope: !6, file: !5, line: 2, type: !7, isLocal: false, isDefinition: true, scopeLine: 2, flags: DIFlagPrototyped, isOptimized: false, templateParams: !2, variables: !2)
+!5 = !DIFile(filename: "/tmp/line.rs", directory: "/tmp")
+!6 = !DINamespace(name: "line", scope: null)
+!7 = !DISubroutineType(types: !8)
+!8 = !{!9, !9, !9}
+!9 = !DIBasicType(name: "i32", size: 32, align: 32, encoding: DW_ATE_signed)
+!10 = !{i32 2, !"Debug Info Version", i32 3}
+!11 = !DILocalVariable(name: "x", arg: 1, scope: !4, file: !5, line: 3, type: !9)
+!12 = !DIExpression()
+!13 = !DILocation(line: 3, scope: !4)
+!14 = !DILocalVariable(name: "y", arg: 2, scope: !4, file: !5, line: 4, type: !9)
+!15 = !DILocation(line: 4, scope: !4)
+!16 = !DILocation(line: 6, scope: !17)
+!17 = distinct !DILexicalBlock(scope: !4, file: !5, line: 6)
+!18 = !DILocation(line: 6, scope: !4)

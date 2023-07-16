@@ -1,0 +1,4 @@
+css
+.warning::before {
+    content: "⚠️ ";
+}

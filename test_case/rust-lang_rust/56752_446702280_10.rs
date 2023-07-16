@@ -1,0 +1,1 @@
+\n\nThis could be called as `<Foo as Foo>::foo()`, which would not be able to pick\nan implementation.\n\nAdding a `Self: Sized` bound to these methods will generally make this compile.\n\n

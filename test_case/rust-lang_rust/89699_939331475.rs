@@ -1,0 +1,1 @@
+fn main() { ::rocket::async_main(async move { /* stuff */ }) }

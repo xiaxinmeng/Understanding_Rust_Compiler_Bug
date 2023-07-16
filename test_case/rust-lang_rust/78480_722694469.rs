@@ -1,0 +1,1 @@
+Unique::from(Box::leak(node)).cast()

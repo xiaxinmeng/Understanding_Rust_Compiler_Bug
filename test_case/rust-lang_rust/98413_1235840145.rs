@@ -1,0 +1,3 @@
+
+$ rustdoc --emit invocation-specific
+error: the `-Z unstable-options` flag must also be passed to enable the flag `emit`

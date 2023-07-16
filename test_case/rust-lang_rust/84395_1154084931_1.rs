@@ -1,0 +1,2 @@
+
+PM.add(createWriteThinLTOBitcodePass(OS));

@@ -1,0 +1,2 @@
+
+5591774Z error: the feature `track_caller` has been stable since 1.46.0 and no longer requires an attribute to enable 2020-07-01T01:17:30.5592649Z --> src/librustc_save_analysis/lib.rs:4:12 2020-07-01T01:17:30.5593212Z | 2020-07-01T01:17:30.5593754Z 4 | #![feature(track_caller)] 2020-07-01T01:17:30.5594342Z | ^^^^^^^^^^^^ 2020-07-01T01:17:30.5594848Z | 2020-07-01T01:17:30.5595424Z = note: `-D stable-features` implied by `-D warn

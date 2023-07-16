@@ -1,0 +1,25 @@
+plain
+  IMAGE: x86_64-gnu-tools
+##[endgroup]
+From https://github.com/rust-lang/rust
+ * branch              master     -> FETCH_HEAD
+Searching for toolstate changes between 385f8e2078b00282a7a7ffcd58aad17b405f57bf and 0eecaf019799f7fafb8ecd9887cbbe3993321c17
+Submodules were updated
+##[group]Run src/ci/scripts/verify-channel.sh
+src/ci/scripts/verify-channel.sh
+shell: /bin/bash --noprofile --norc -e -o pipefail {0}
+env:
+---
+Verifying status of edition-guide...
+Verifying status of rls...
+This PR updated 'src/tools/rls', verifying if status is 'test-pass'...
+
+We detected that this PR updated 'rls', but its tests failed.
+
+If you do intend to update 'rls', please check the error messages above and
+commit another update.
+
+If you do NOT intend to update 'rls', please ensure you did not accidentally
+change the submodule at 'src/tools/rls'. You may ask your reviewer for the
+proper steps.
+{"embedded-book":"test-pass","reference":"test-pass","book":"test-pass","nomicon":"test-pass","edition-guide":"test-pass","rust-by-example":"test-pass","rls":"build-fail","miri":"test-pass","cargo-miri":"test-fail","rustbook":"test-fail"}Build completed unsuccessfully in 0:00:00

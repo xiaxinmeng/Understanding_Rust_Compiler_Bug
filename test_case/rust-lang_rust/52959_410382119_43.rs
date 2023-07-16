@@ -1,0 +1,1 @@
+\nfn you_know_nothing(jon_snow: &mut i32) {\n    {\n        let nights_watch = || {\n            *jon_snow = 2;\n        };\n    } // At this point, `jon_snow` is free.\n    let starks = || {\n        *jon_snow = 3;\n    };\n}\n

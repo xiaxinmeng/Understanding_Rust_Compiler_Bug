@@ -1,0 +1,6 @@
+rust
+unsafe {
+    foo()
+}
+
+bar();

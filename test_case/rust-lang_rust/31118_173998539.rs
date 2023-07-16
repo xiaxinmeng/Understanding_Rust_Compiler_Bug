@@ -1,0 +1,6 @@
+
+"cc" "-Wl,--as-needed" "-m64" "-L" "/usr/local/lib/rustlib/x86_64-unknown-linux-gnu/lib" "main.0.o" "-o" "main" "-Wl,--gc-sections" "-pie" "-nodefaultlibs" "-L" "/usr/local/lib/rustlib/x86_64-unknown-linux-gnu/lib" "-Wl,-Bstatic" "-Wl,-Bdynamic" "/usr/local/lib/rustlib/x86_64-unknown-linux-gnu/lib/libstd-ca9f0d77.rlib" "/usr/local/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcollections-ca9f0d77.rlib" "/usr/local/lib/rustlib/x86_64-unknown-linux-gnu/lib/librustc_unicode-ca9f0d77.rlib" "/usr/local/lib/rustlib/x86_64-unknown-linux-gnu/lib/librand-ca9f0d77.rlib" "/usr/local/lib/rustlib/x86_64-unknown-linux-gnu/lib/liballoc-ca9f0d77.rlib" "/usr/local/lib/rustlib/x86_64-unknown-linux-gnu/lib/liballoc_jemalloc-ca9f0d77.rlib" "/usr/local/lib/rustlib/x86_64-unknown-linux-gnu/lib/liblibc-ca9f0d77.rlib" "/usr/local/lib/rustlib/x86_64-unknown-linux-gnu/lib/libcore-ca9f0d77.rlib" "-l" "dl" "-l" "pthread" "-l" "gcc_s" "-l" "pthread" "-l" "c" "-l" "m" "-l" "rt" "-l" "compiler-rt"
+/usr/bin/ld: /usr/lib/gcc/x86_64-redhat-linux/5.3.1/../../../../lib64/libc.a(libc-start.o): relocation R_X86_64_32 against `_dl_starting_up' can not be used when making a shared object; recompile with -fPIC
+/usr/lib/gcc/x86_64-redhat-linux/5.3.1/../../../../lib64/libc.a: error adding symbols: Bad value
+collect2: error: ld returned 1 exit status
+

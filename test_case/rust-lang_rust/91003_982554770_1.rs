@@ -1,0 +1,1 @@
+define void @structfloatlongfloat_input(%FloatLongFloat* noalias nocapture readnone dereferenceable(24) %a)

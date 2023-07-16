@@ -1,0 +1,4 @@
+
+trait Foo {
+    type Bar;
+}

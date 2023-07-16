@@ -1,0 +1,2 @@
+rust
+fn ignore(self) {}

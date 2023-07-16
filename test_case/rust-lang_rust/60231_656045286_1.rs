@@ -1,0 +1,2 @@
+
+$ ar -x liblib.rlib

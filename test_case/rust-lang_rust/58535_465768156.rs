@@ -1,0 +1,14 @@
+
+[2019-02-20T21:02:13Z ERROR rls::server] Can't read message
+test client_invalid_toml_manifest ... FAILED
+
+failures:
+---- client_invalid_toml_manifest stdout ----
+Sending: Object({"id": Number(0), "jsonrpc": String("2.0"), "method": String("initialize"), "params": Object({"capabilities": Object({}), "processId": Null, "rootPath": String("C:\\projects\\rust\\build\\x86_64-pc-windows-msvc\\stage2-tools\\x86_64-pc-windows-msvc\\rlsit\\t12\\invalid_toml"), "rootUri": Null})})
+Processing message: Object({"id": Number(0), "jsonrpc": String("2.0"), "result": Object({"capabilities": Object({"codeActionProvider": Bool(true), "codeLensProvider": Object({"resolveProvider": Bool(false)}), "completionProvider": Object({"resolveProvider": Bool(true), "triggerCharacters": Array([String("."), String(":")])}), "definitionProvider": Bool(true), "documentFormattingProvider": Bool(true), "documentHighlightProvider": Bool(true), "documentRangeFormattingProvider": Bool(false), "documentSymbolProvider": Bool(true), "executeCommandProvider": Object({"commands": Array([String("rls.applySuggestion-2792"), String("rls.deglobImports-2792")])}), "hoverProvider": Bool(true), "implementationProvider": Bool(true), "referencesProvider": Bool(true), "renameProvider": Bool(true), "textDocumentSync": Number(2), "workspaceSymbolProvider": Bool(true)})})})
+Processing message: Object({"jsonrpc": String("2.0"), "method": String("window/progress"), "params": Object({"id": String("progress_1"), "title": String("Building")})})
+Processing message: Object({"jsonrpc": String("2.0"), "method": String("window/progress"), "params": Object({"done": Bool(true), "id": String("progress_1"), "title": String("Building")})})
+Processing message: Object({"jsonrpc": String("2.0"), "method": String("window/progress"), "params": Object({"id": String("progress_0"), "title": String("Indexing")})})
+Processing message: Object({"jsonrpc": String("2.0"), "method": String("textDocument/publishDiagnostics"), "params": Object({"diagnostics": Array([Object({"message": String("failed to parse manifest at `C:\\projects\\rust\\build\\x86_64-pc-windows-msvc\\stage2-tools\\x86_64-pc-windows-msvc\\rlsit\\t12\\invalid_toml\\Cargo.toml`\ncould not parse input as TOML\nexpected a value, found an equals at line 3"), "range": Object({"end": Object({"character": Number(22), "line": Number(2)}), "start": Object({"character": Number(21), "line": Number(2)})}), "severity": Number(1)})]), "uri": String("file:///C:/projects/rust/build/x86_64-pc-windows-msvc/stage2-tools/x86_64-pc-windows-msvc/rlsit/t12/invalid_toml/Cargo.toml")})})
+Processing message: Object({"jsonrpc": String("2.0"), "method": String("window/progress"), "params": Object({"done": Bool(true), "id": String("progress_0"), "title": String("Indexing")})})
+thread 'client_invalid_toml_manifest' panicked at 'called `Result::unwrap()` on an `Err` value: Error(Elapsed)', src\libcore\result.rs:997:5

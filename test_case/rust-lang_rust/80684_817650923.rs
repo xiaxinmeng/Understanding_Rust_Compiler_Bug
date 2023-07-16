@@ -1,0 +1,2 @@
+
+dir:share/doc/rust/html

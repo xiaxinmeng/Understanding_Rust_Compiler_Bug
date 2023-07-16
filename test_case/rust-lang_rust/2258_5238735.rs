@@ -1,0 +1,15 @@
+
+#0  upcall_fail (expr=0x100db6ba0 "Assertion start <= end failed", file=0x100db6bc0 "../src/rustc/rustc.rc", line=1) at ../src/rt/rust_upcall.cpp:129
+#1  0x0000000100ae311d in _ZN3vec9slice464917_f62b7591e0e2c89d202E ()
+#2  0x0000000100aef53a in _ZN6middle5trans4impl26trans_monomorphized_callee17_80959984524c12f1202E ()
+#3  0x0000000100a83756 in _ZN6middle5trans4impl19trans_method_callee17_3476b385824cc24d202E ()
+#4  0x0000000100aa5e64 in _ZN6middle5trans4base12trans_callee17_3f4d9dc293cbbdc5202E ()
+#5  0x0000000100ab0c63 in middle::trans::base::trans_call_inner::anon ()
+#6  0x0000000100ab0ac7 in _ZN6middle5trans4base10with_scope17_cf15ce783fd372bb202E ()
+#7  0x0000000100a834f1 in _ZN6middle5trans4base16trans_call_inner17_7ad821cc9cd55abb202E ()
+#8  0x0000000100aad732 in _ZN6middle5trans4base10trans_call17_4a98d151c8dbbca3202E ()
+#9  0x0000000100a83ca3 in _ZN6middle5trans4base10trans_expr17_a862fdc15db97d54202E ()
+#10 0x0000000100a868a0 in _ZN6middle5trans4base18trans_expr_save_in17_b2e2d38c6cdcd25e202E ()
+#11 0x0000000100a87169 in _ZN6middle5trans4base15trans_temp_lval17_76a38ac4f9ff42a5202E ()
+#12 0x0000000100aa99f8 in _ZN6middle5trans4base14trans_arg_expr17_a99758df94e6b2c2202E ()
+#13 0x0000000100d5635b in __morestack ()

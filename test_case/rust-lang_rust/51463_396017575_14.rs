@@ -1,0 +1,1 @@
+\nlet x = &0u8;\nlet y: u32 = *x as u32; // We dereference it first and then cast it.\n

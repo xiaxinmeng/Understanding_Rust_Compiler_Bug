@@ -1,0 +1,1 @@
+\nlet unknown_variable = 12u32;\nlet x = unknown_variable; // ok!\n

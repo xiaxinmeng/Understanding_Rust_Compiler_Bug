@@ -1,0 +1,4 @@
+\n"},"level":"error","spans":[{"file_name":"/checkout/src/test/ui/rfc1598-generic-associated-types/iterable.rs","byte_start":1366,"byte_end":1368,"line_start":43,"line_end":43,"column_start":41,"column_end":43,"is_primary":true,"text":[{"text":"    fn iter<'a>(&'a self) -> Self::Iter<'a> {","highlight_start":41,"highlight_end":43}],"label":"lif---------
+[01:03:35] ------------------------------------------
+[01:03:35] ------------------------------------------
+[01:03:35] {"message":"lifetime parameters are not allowed on this type","code":{"code":"E0110","explanation":"\nYou tried to give a lifetime parameter to a type which doesn't need it.\nErroneous code example:\n\n

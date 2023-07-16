@@ -1,0 +1,1 @@
+ or leading whitespace: http://spec.commonmark.org/0.28/#indented-code-blocks

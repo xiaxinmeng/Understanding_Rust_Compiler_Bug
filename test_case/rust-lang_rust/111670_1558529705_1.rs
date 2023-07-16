@@ -1,0 +1,1 @@
+\n\nOnly structural-match types (that is, types that derive `PartialEq` and `Eq`)\nmay be used as the types of const generic parameters.\n\nTo fix the previous code example, we derive `PartialEq` and `Eq`:\n\n

@@ -1,0 +1,8 @@
+
+$ nm libhello.so | grep stdcall
+0000000000086630 T stdcall_export
+0000000000086610 T stdcall_nomangle
+0000000000086620 t _ZN16stdcall_nomangle10__rust_abiE
+0000000000086640 t _ZN18stdcall_exportname10__rust_abiE
+0000000000086600 t _ZN7stdcall10__rust_abiE
+00000000000865f0 T _ZN7stdcall20h92816bbf6494be08eaaE

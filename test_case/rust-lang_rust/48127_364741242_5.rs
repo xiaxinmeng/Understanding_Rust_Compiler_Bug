@@ -1,0 +1,1 @@
+\n\nTo use a namespace itself in addition to some of its members, `self` may appear\nas part of a brace-enclosed list of imports:\n\n

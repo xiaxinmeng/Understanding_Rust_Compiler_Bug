@@ -1,0 +1,2 @@
+
+    print(env["MAKEFLAGS"])

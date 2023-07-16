@@ -1,0 +1,6 @@
+
+error[E0433]: failed to resolve: could not find `xcrate` in `{{root}}`
+  --> $DIR/non-existent-2.rs:14:15
+   |
+LL |     let s = ::xcrate::S;
+   |               ^^^^^^ could not find `xcrate` in `{{root}}`

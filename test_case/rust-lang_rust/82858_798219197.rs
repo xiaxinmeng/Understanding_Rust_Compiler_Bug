@@ -1,0 +1,46 @@
+plain
+configure: rust.channel         := nightly
+configure: rust.debug-assertions := True
+configure: llvm.assertions      := True
+configure: dist.missing-tools   := True
+configure: build.configure-args := ['--enable-sccache', '--disable-manage-submodu ...
+configure: writing `config.toml` in current directory
+configure: 
+configure: run `python /checkout/x.py --help`
+configure: 
+---
+    Checking object v0.22.0
+    Checking hashbrown v0.9.0
+    Checking miniz_oxide v0.4.0
+    Checking addr2line v0.14.0
+error[E0599]: no method named `set_recvttl` found for struct `sys_common::net::UdpSocket` in the current scope
+    |
+    |
+159 |         self.0.set_recvttl(recvttl)
+    |                ^^^^^^^^^^^ method not found in `sys_common::net::UdpSocket`
+   ::: library/std/src/sys_common/net.rs:474:1
+    |
+474 | pub struct UdpSocket {
+474 | pub struct UdpSocket {
+    | -------------------- method `set_recvttl` not found for this
+
+error[E0599]: no method named `recvttl` found for struct `sys_common::net::UdpSocket` in the current scope
+    |
+    |
+170 |         self.0.recvttl()
+    |                ^^^^^^^ method not found in `sys_common::net::UdpSocket`
+   ::: library/std/src/sys_common/net.rs:474:1
+    |
+474 | pub struct UdpSocket {
+474 | pub struct UdpSocket {
+    | -------------------- method `recvttl` not found for this
+error: aborting due to 2 previous errors
+
+For more information about this error, try `rustc --explain E0599`.
+error: could not compile `std`
+error: could not compile `std`
+
+To learn more, run the command again with --verbose.
+command did not execute successfully: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage0/bin/cargo" "check" "--target" "i686-pc-windows-gnu" "-Zbinary-dep-depinfo" "-j" "16" "--release" "--locked" "--color" "always" "--features" "panic-unwind backtrace compiler-builtins-c" "--manifest-path" "/checkout/library/test/Cargo.toml" "--message-format" "json-render-diagnostics"
+failed to run: /checkout/obj/build/bootstrap/debug/bootstrap check --target=i686-pc-windows-gnu --host=i686-pc-windows-gnu --all-targets
+Build completed unsuccessfully in 0:00:29

@@ -1,0 +1,13 @@
+
+test small_vec::tests::fill_small_vec_1_10_with_cap  ... bench:          35 ns/iter (+/- 3)
+test small_vec::tests::fill_small_vec_1_10_wo_cap    ... bench:          32 ns/iter (+/- 2)
+test small_vec::tests::fill_small_vec_1_50_with_cap  ... bench:          40 ns/iter (+/- 2)
+test small_vec::tests::fill_small_vec_1_50_wo_cap    ... bench:          37 ns/iter (+/- 4)
+test small_vec::tests::fill_small_vec_32_10_with_cap ... bench:          34 ns/iter (+/- 5)
+test small_vec::tests::fill_small_vec_32_10_wo_cap   ... bench:          29 ns/iter (+/- 7)
+test small_vec::tests::fill_small_vec_32_50_with_cap ... bench:          54 ns/iter (+/- 3)
+test small_vec::tests::fill_small_vec_32_50_wo_cap   ... bench:          50 ns/iter (+/- 8)
+test small_vec::tests::fill_small_vec_8_10_with_cap  ... bench:          36 ns/iter (+/- 1)
+test small_vec::tests::fill_small_vec_8_10_wo_cap    ... bench:          32 ns/iter (+/- 2)
+test small_vec::tests::fill_small_vec_8_50_with_cap  ... bench:          41 ns/iter (+/- 34)
+test small_vec::tests::fill_small_vec_8_50_wo_cap    ... bench:          37 ns/iter (+/- 4)

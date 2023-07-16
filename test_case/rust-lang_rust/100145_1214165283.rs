@@ -1,0 +1,2 @@
+
+VAR=val command

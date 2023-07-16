@@ -1,0 +1,3 @@
+
+[12:36:02] <@nmatsakis> bstrie: in any case the error message is clearly... wrong-ish, because it's saying "I needed owned and you gave me owned but not durable".  (what version of rustc are you using? durable was replaced with &static at some point)
+[12:36:32] <@nmatsakis> bstrie: in any case, if it needs durable, it should say so.  This may have something to do with the fact that kinds are a kind of bit set and in fact owned should imply durable...

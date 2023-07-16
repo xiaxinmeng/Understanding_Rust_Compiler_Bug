@@ -1,0 +1,4 @@
+
+cd /home/farzeen/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-pc-windows-gnu/lib/
+mv crt2.o crt2.o.bak
+cp /usr/x86_64-w64-mingw32/lib/crt2.o ./

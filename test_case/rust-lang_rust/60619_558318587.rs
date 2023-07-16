@@ -1,0 +1,1 @@
+error: internal compiler error: src/librustc/ty/subst.rs:650: const parameter `LEN/#0` (Const { ty: usize, val: Param(LEN/#0) }/0) out of range when substituting substs=[]

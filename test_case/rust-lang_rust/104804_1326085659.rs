@@ -1,0 +1,19 @@
+plain
+  IMAGE: x86_64-gnu-tools
+##[endgroup]
+From https://github.com/rust-lang/rust
+ * branch              master     -> FETCH_HEAD
+Searching for toolstate changes between fd815a5091eb4d49cd317f8ad272f17b7a5f550d and 1a82ef004e5ff5dc29dedd3e4e520a66cf791891
+Tool subtrees were updated
+##[group]Run src/ci/scripts/verify-channel.sh
+src/ci/scripts/verify-channel.sh
+shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+env:
+---
+.......... (80/90)
+.......... (90/90)
+
+
+/checkout/src/test/rustdoc-gui/code-sidebar-toggle.goml code-sidebar-toggle... FAILED
+[ERROR] (line 4) Error: Execution context was destroyed, most likely because of a navigation.: for command `wait-for: "#sidebar-toggle"`
+Build completed unsuccessfully in 0:02:17

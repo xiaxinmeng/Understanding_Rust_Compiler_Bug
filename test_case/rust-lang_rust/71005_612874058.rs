@@ -1,0 +1,2 @@
+rust
+dest = move src;

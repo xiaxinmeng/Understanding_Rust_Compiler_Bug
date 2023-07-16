@@ -1,0 +1,1 @@
+\ntrait Super<A> {\n    fn get_a(&self) -> A; // note that this is object safe!\n}\n

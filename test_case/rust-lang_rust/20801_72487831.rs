@@ -1,0 +1,6 @@
+ rust
+pub extern "C" fn destroy(ptr:*mut Dramatic) {
+    // ...
+    let obj: Box<Dramatic> = unsafe { ::std::mem::transmute(*ptr) };
+    // ...
+}

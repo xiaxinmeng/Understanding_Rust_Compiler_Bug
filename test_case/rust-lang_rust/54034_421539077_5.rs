@@ -1,0 +1,1 @@
+\nmatch Some(\"hi\".to_string()) {\n    Some(ref s) if s.len() == 0 => {},\n    _ => {},\n}\n

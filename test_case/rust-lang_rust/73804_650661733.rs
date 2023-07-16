@@ -1,0 +1,1 @@
+/// [`None`]: option/enum.Option.html#variant.None

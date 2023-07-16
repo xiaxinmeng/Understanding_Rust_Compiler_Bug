@@ -1,0 +1,46 @@
+plain
+2019-11-01T10:03:51.3114564Z do so (now or later) by using -b with the checkout command again. Example:
+2019-11-01T10:03:51.3117158Z 
+2019-11-01T10:03:51.3117359Z   git checkout -b <new-branch-name>
+2019-11-01T10:03:51.3117432Z 
+2019-11-01T10:03:51.3117509Z HEAD is now at 7e2b84ee4 Auto merge of #64878 - XAMPPRocky:relnotes-1.39.0, r=XAMPPRocky
+2019-11-01T10:03:51.3490847Z ##[section]Starting: Decide whether to run this job
+2019-11-01T10:03:51.3614973Z ==============================================================================
+2019-11-01T10:03:51.3615073Z Task         : Bash
+2019-11-01T10:03:51.3615148Z Description  : Run a Bash script on macOS, Linux, or Windows
+---
+2019-11-01T10:03:52.8061158Z environment variables:
+2019-11-01T10:03:52.8061201Z 
+2019-11-01T10:03:52.8061231Z 
+2019-11-01T10:03:52.8061285Z 
+2019-11-01T10:03:52.8061353Z ### [Rendered](https://github.com/XAMPPRocky/rust/blob/relnotes-1.39.0/RELEASES.md)
+2019-11-01T10:03:52.8061517Z AGENT_DISABLELOGPLUGIN_TESTFILEPUBLISHERPLUGIN=true
+2019-11-01T10:03:52.8061604Z AGENT_DISABLELOGPLUGIN_TESTRESULTLOGPLUGIN=true
+2019-11-01T10:03:52.8061667Z AGENT_HOMEDIRECTORY=C:\agents\2.159.2
+2019-11-01T10:03:52.8061745Z AGENT_ID=517
+---
+2019-11-01T10:03:52.8067043Z BUILD_SOURCEBRANCHNAME=auto
+2019-11-01T10:03:52.8067118Z BUILD_SOURCESDIRECTORY=D:\a\1\s
+2019-11-01T10:03:52.8067194Z BUILD_SOURCEVERSION=7e2b84ee4e4d0b7fef834ea834822cb66d1be26e
+2019-11-01T10:03:52.8067279Z BUILD_SOURCEVERSIONAUTHOR=bors
+2019-11-01T10:03:52.8067357Z BUILD_SOURCEVERSIONMESSAGE=Auto merge of #64878 - XAMPPRocky:relnotes-1.39.0, r=XAMPPRocky
+2019-11-01T10:03:52.8067507Z COBERTURA_HOME=C:\cobertura-2.1.1
+2019-11-01T10:03:52.8067590Z COMMONPROGRAMFILES=C:\Program Files\Common Files
+2019-11-01T10:03:52.8067664Z COMMON_TESTRESULTSDIRECTORY=D:\a\1\TestResults
+2019-11-01T10:03:52.8067743Z COMPUTERNAME=fv-az425
+---
+2019-11-01T11:33:26.8152111Z 
+2019-11-01T11:33:26.8152169Z 
+2019-11-01T11:33:26.8829793Z failed to run: D:\a\1\s\build\bootstrap\debug\bootstrap test --exclude src/test/ui --exclude src/test/compile-fail
+2019-11-01T11:33:26.8829974Z Build completed unsuccessfully in 1:20:32
+2019-11-01T11:33:26.9392950Z make: *** [Makefile:89: ci-mingw-subset-1] Error 1
+2019-11-01T11:33:26.9979917Z   local time: Fri Nov  1 11:33:26 CUT 2019
+2019-11-01T11:33:27.4171119Z   network time: Fri, 01 Nov 2019 11:33:27 GMT
+2019-11-01T11:33:27.4171367Z == end clock drift check ==
+2019-11-01T11:33:27.4838195Z 
+2019-11-01T11:33:27.4838195Z 
+2019-11-01T11:33:27.7883367Z ##[error]Bash exited with code '2'.
+2019-11-01T11:33:27.8316371Z ##[section]Starting: Checkout
+2019-11-01T11:33:27.9239814Z ==============================================================================
+2019-11-01T11:33:27.9239920Z Task         : Get sources
+2019-11-01T11:33:27.9240031Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.

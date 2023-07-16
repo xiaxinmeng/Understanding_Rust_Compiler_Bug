@@ -1,0 +1,1 @@
+compile_fail,E658\n#[repr(u128)] // error: use of unstable library feature 'repr128'\nenum Foo {\n    Bar(u64),\n}\n

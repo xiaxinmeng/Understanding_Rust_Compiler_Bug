@@ -1,0 +1,6 @@
+
+...
+let builder = { let wrapper = &self.capmod; builder.field("capmod", &wrapper) };
+let builder = { let wrapper = &self.diomod; builder.field("diomod", &wrapper) };
+let builder = { let wrapper = &self.rdsmod; builder.field("rdsmod", &wrapper) };
+...

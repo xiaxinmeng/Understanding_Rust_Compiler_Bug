@@ -1,0 +1,2 @@
+
+rustup default nightly

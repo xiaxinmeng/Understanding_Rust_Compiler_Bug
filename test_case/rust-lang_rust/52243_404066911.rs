@@ -1,0 +1,3 @@
+
+   Doc-tests panic_unwind
+error: no global memory allocator found but one is required; link to std or add #[global_allocator] to a static item that implements the GlobalAlloc trait.

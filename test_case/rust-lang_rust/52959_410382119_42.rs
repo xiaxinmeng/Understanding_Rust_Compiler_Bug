@@ -1,0 +1,1 @@
+compile_fail\nfn you_know_nothing(jon_snow: &mut i32) {\n    let nights_watch = || {\n        *jon_snow = 2;\n    };\n    let starks = || {\n        *jon_snow = 3; // error: closure requires unique access to `jon_snow`\n                       //        but it is already borrowed\n    };\n}\n

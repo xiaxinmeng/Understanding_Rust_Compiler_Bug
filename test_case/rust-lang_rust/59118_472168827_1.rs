@@ -1,0 +1,1 @@
+\n\nMake sure that you have defined the associated type in the trait body.\nAlso, verify that you used the right trait or you didn't misspell the\nassociated type name. Example:\n\n

@@ -1,0 +1,1 @@
+\nuse std::cell::RefCell;\n\nstruct TheDarkKnight;\n\nimpl TheDarkKnight {\n    fn nothing_is_true(&self) {} // First case, we don't take ownership\n}\n\nfn main() {\n    let x = RefCell::new(TheDarkKnight);\n\n    x.borrow().nothing_is_true(); // ok!\n}\n

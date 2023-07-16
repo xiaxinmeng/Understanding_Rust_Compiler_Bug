@@ -1,0 +1,2 @@
+
+strust S;

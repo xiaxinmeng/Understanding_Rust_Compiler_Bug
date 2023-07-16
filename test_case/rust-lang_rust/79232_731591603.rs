@@ -1,0 +1,6 @@
+txt
+Checking "macro-print" ... FAILED
+==> '{"path":"std","name":"dbg"}' was supposed to be before '{"crate":"std","name":"dbg","path":"std","desc":"Prints and returns the value of a given expression for…","ty":14,"type":null,"is_alias":true,"alias":"macro:print","displayPath":"<span>std::</span>","fullPath":"<span>std::</span>dbg","href":"../std/macro.dbg.html"}'
+==> '{"path":"std","name":"eprint"}' was supposed to be before '{"crate":"std","name":"eprint","path":"std","desc":"Prints to the standard error.","ty":14,"type":null,"is_alias":true,"alias":"macro:print","displayPath":"<span>std::</span>","fullPath":"<span>std::</span>eprint","href":"../std/macro.eprint.html"}'
+==> '{"path":"std","name":"println"}' was supposed to be before '{"crate":"std","name":"println","path":"std","desc":"Prints to the standard output, with a newline.","ty":14,"type":null,"is_alias":true,"alias":"macro:print","displayPath":"<span>std::</span>","fullPath":"<span>std::</span>println","href":"../std/macro.println.html"}'
+==> '{"path":"std","name":"eprintln"}' was supposed to be before '{"crate":"std","name":"eprintln","path":"std","desc":"Prints to the standard error, with a newline.","ty":14,"type":null,"is_alias":true,"alias":"macro:print","displayPath":"<span>std::</span>","fullPath":"<span>std::</span>eprintln","href":"../std/macro.eprintln.html"}'

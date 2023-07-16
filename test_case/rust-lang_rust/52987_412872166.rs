@@ -1,0 +1,17 @@
+
+#3  0x00007ffff72b0c82 in __GI___assert_fail (assertion=0x7fffee6062d1 "GS != DefinedGlobals.end()", file=0x7fffee606580 "/home/demerigo/rust/src/llvm/lib/Transforms/IPO/FunctionImport.cpp", line=873, 
+    function=0x7fffee60a6a0 <llvm::thinLTOInternalizeModule(llvm::Module&, llvm::DenseMap<unsigned long, llvm::GlobalValueSummary*, llvm::DenseMapInfo<unsigned long>, llvm::detail::DenseMapPair<unsigned long, llvm::GlobalValueSummary*> > const&)::{lambda(llvm::GlobalValue const&)#1}::operator()(llvm::GlobalValue const&) const::__PRETTY_FUNCTION__> "llvm::thinLTOInternalizeModule(llvm::Module&, const GVSummaryMapTy&)::<lambda(const llvm::GlobalValue&)>") at assert.c:101
+#4  0x00007fffec5ce580 in std::_Function_handler<bool (llvm::GlobalValue const&), llvm::thinLTOInternalizeModule(llvm::Module&, llvm::DenseMap<unsigned long, llvm::GlobalValueSummary*, llvm::DenseMapInfo<unsigned long>, llvm::detail::DenseMapPair<unsigned long, llvm::GlobalValueSummary*> > const&)::{lambda(llvm::GlobalValue const&)#1}>::_M_invoke(std::_Any_data const&, llvm::GlobalValue const&) ()
+   from /home/demerigo/rust/build/x86_64-unknown-linux-gnu/stage1/lib/rustlib/x86_64-unknown-linux-gnu/codegen-backends/librustc_codegen_llvm-llvm.so
+#5  0x00007fffec5f8b8e in llvm::InternalizePass::maybeInternalize(llvm::GlobalValue&, std::set<llvm::Comdat const*, std::less<llvm::Comdat const*>, std::allocator<llvm::Comdat const*> > const&) ()
+   from /home/demerigo/rust/build/x86_64-unknown-linux-gnu/stage1/lib/rustlib/x86_64-unknown-linux-gnu/codegen-backends/librustc_codegen_llvm-llvm.so
+#6  0x00007fffec5f990b in llvm::InternalizePass::internalizeModule(llvm::Module&, llvm::CallGraph*) ()
+   from /home/demerigo/rust/build/x86_64-unknown-linux-gnu/stage1/lib/rustlib/x86_64-unknown-linux-gnu/codegen-backends/librustc_codegen_llvm-llvm.so
+#7  0x00007fffec5cd8ca in llvm::thinLTOInternalizeModule(llvm::Module&, llvm::DenseMap<unsigned long, llvm::GlobalValueSummary*, llvm::DenseMapInfo<unsigned long>, llvm::detail::DenseMapPair<unsigned long, llvm::GlobalValueSummary*> > const&) () from /home/demerigo/rust/build/x86_64-unknown-linux-gnu/stage1/lib/rustlib/x86_64-unknown-linux-gnu/codegen-backends/librustc_codegen_llvm-llvm.so
+#8  0x00007fffebc57856 in LLVMRustPrepareThinLTOInternalize () from /home/demerigo/rust/build/x86_64-unknown-linux-gnu/stage1/lib/rustlib/x86_64-unknown-linux-gnu/codegen-backends/librustc_codegen_llvm-llvm.so
+#9  0x00007fffebb31e06 in rustc_codegen_llvm::back::lto::ThinModule::optimize::h35ab17535aa17567 (self=<optimized out>, cgcx=0x7fffe2537168, timeline=0x7fffe2537010) at librustc_codegen_llvm/back/lto.rs:719
+#10 rustc_codegen_llvm::back::lto::LtoModuleCodegen::optimize::h4b5b75a4a7d765b2 (self=<optimized out>, cgcx=<optimized out>, timeline=<optimized out>) at librustc_codegen_llvm/back/lto.rs:85
+#11 0x00007fffebac6df0 in rustc_codegen_llvm::back::write::execute_work_item::h04ea6e82802c2dfe (cgcx=<optimized out>, timeline=<optimized out>, work_item=...) at librustc_codegen_llvm/back/write.rs:1277
+#12 rustc_codegen_llvm::back::write::spawn_work::_$u7b$$u7b$closure$u7d$$u7d$::hc2823251fe01cadd () at librustc_codegen_llvm/back/write.rs:2047
+#13 std::sys_common::backtrace::__rust_begin_short_backtrace::h6ca7e8b852ff4949 (f=...) at /home/demerigo/rust/src/libstd/sys_common/backtrace.rs:136
+#14 0x00007fffebbf83e8 in std::thread::Builder::spawn::_$u7b$$u7b$closure$u7d$$u7d$::_$u7b$$u7b$closure$u7d$$u7d$::h8f185bcb7fdc83bf () at /home/demerigo/rust/src/libstd/thread/mod.rs:409

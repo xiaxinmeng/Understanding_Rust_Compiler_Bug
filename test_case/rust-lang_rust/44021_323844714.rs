@@ -1,0 +1,52 @@
+
+thread 'rustc' panicked at 'index out of bounds: the len is 0 but the index is 1', /home/ariel/Rust/rust/src/liballoc/vec.rs:1564:14
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+stack backtrace:
+   0: std::sys::imp::backtrace::tracing::imp::unwind_backtrace
+             at /home/ariel/Rust/rust/src/libstd/sys/unix/backtrace/tracing/gcc_s.rs:49
+   1: std::sys_common::backtrace::_print
+             at /home/ariel/Rust/rust/src/libstd/sys_common/backtrace.rs:71
+   2: std::panicking::default_hook::{{closure}}
+             at /home/ariel/Rust/rust/src/libstd/sys_common/backtrace.rs:60
+             at /home/ariel/Rust/rust/src/libstd/panicking.rs:381
+   3: std::panicking::default_hook
+             at /home/ariel/Rust/rust/src/libstd/panicking.rs:391
+   4: std::panicking::rust_panic_with_hook
+             at /home/ariel/Rust/rust/src/libstd/panicking.rs:611
+   5: std::panicking::begin_panic
+             at /home/ariel/Rust/rust/src/libstd/panicking.rs:572
+   6: std::panicking::begin_panic_fmt
+             at /home/ariel/Rust/rust/src/libstd/panicking.rs:522
+   7: rust_begin_unwind
+             at /home/ariel/Rust/rust/src/libstd/panicking.rs:498
+   8: core::panicking::panic_fmt
+             at /home/ariel/Rust/rust/src/libcore/panicking.rs:71
+   9: core::panicking::panic_bounds_check
+             at /home/ariel/Rust/rust/src/libcore/panicking.rs:58
+  10: syntax::parse::parser::Parser::parse_impl_item
+             at /home/ariel/Rust/rust/src/liballoc/vec.rs:1564
+             at /home/ariel/Rust/rust/src/libsyntax/parse/parser.rs:6102
+             at /home/ariel/Rust/rust/src/libsyntax/parse/parser.rs:4760
+  11: syntax::parse::parser::Parser::parse_item_impl
+             at /home/ariel/Rust/rust/src/libsyntax/parse/parser.rs:5016
+  12: syntax::parse::parser::Parser::parse_item_
+             at /home/ariel/Rust/rust/src/libsyntax/parse/parser.rs:5954
+  13: syntax::parse::parser::Parser::parse_item
+             at /home/ariel/Rust/rust/src/libsyntax/parse/parser.rs:6125
+             at /home/ariel/Rust/rust/src/libsyntax/parse/parser.rs:6098
+             at /home/ariel/Rust/rust/src/libsyntax/parse/parser.rs:6124
+  14: syntax::parse::parser::Parser::parse_mod_items
+             at /home/ariel/Rust/rust/src/libsyntax/parse/parser.rs:5267
+  15: syntax::parse::parser::Parser::parse_crate_mod
+             at /home/ariel/Rust/rust/src/libsyntax/parse/parser.rs:6236
+  16: syntax::parse::parse_crate_from_file
+             at /home/ariel/Rust/rust/src/libsyntax/parse/mod.rs:101
+  17: rustc_driver::driver::phase_1_parse_input::{{closure}}
+             at /home/ariel/Rust/rust/src/librustc_driver/driver.rs:543
+  18: rustc_driver::driver::phase_1_parse_input
+             at /home/ariel/Rust/rust/src/librustc/util/common.rs:48
+             at /home/ariel/Rust/rust/src/librustc_driver/driver.rs:540
+  19: rustc_driver::driver::compile_input
+             at /home/ariel/Rust/rust/src/librustc_driver/driver.rs:112
+  20: rustc_driver::run_compiler
+             at /home/ariel/Rust/rust/src/librustc_driver/lib.rs:316

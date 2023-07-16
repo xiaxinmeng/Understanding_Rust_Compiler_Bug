@@ -1,0 +1,6 @@
+rust
+/// ...
+/// [`SharedBehavior`]
+/// [`HasAffiliatedKeywords`]
+/// ...
+/// [`SharedBehavior`]: ../rust_orgmode/types/trait.SharedBehavior.html

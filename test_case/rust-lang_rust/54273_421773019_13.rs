@@ -1,0 +1,1 @@
+\nconst FOO: usize = 42;\nlet a: [u8; FOO]; // ok!\n

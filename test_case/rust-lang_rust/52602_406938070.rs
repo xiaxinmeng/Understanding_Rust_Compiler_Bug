@@ -1,0 +1,19 @@
+plain
+[00:50:33] ....................................................................................................
+[00:50:35] ....................................................................................................
+[00:50:38] .................................i..................................................................
+[00:50:41] ....................................................................................................
+[00:50:44] ...........................F..F.....................................................................
+[00:50:49] .....................................................................................
+[00:50:49] failures:
+[00:50:49] 
+[00:50:49] ---- [compile-fail] compile-fail/try-block-in-match.rs stdout ----
+[00:50:49] ---- [compile-fail] compile-fail/try-block-in-match.rs stdout ----
+[00:50:49] 
+[00:50:49] error: /checkout/src/test/compile-fail/try-block-in-match.rs:16: unexpected error: '16:11: 16:14: expected expression, found reserved keyword `try`'
+[00:50:49] 
+[00:50:49] error: /checkout/src/test/compile-fail/try-block-in-match.rs:16: expected error not found: expected expression, found keyword `try`
+[00:50:49] error: 1 unexpected errors found, 1 expected errors not found
+[00:50:49] status: exit code: 1
+[00:50:49] command: "/checkout/obj/build/x86_64-unknown
+travis_time:end:12afcad0:start=1532318203408422412,finish=1532321252747076876,duration=3049338654464

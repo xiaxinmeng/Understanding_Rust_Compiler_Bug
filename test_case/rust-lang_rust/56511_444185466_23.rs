@@ -1,0 +1,1 @@
+compile_fail,E0432\nuse something::Foo; // error: unresolved import `something::Foo`.\n

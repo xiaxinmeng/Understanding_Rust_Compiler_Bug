@@ -1,0 +1,34 @@
+\n"},"level":"error","spans":[{"file_name":"/checkout/src/test/ui/parser/struct-literal-in-for.rs","byte_start":115,"byte_end":118,"line_start":12,"line_end":12,"column_start":14,"column_end":17,"is_primary":true,"text":[{"text":"    for x in Foo { //~ ERROR expected value, found struct `Foo`","highlight_start":14,"highlight_end":17}],"label":"did you mean `(Foo { /* fields */ })`?","suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[],"rendered":"error[E0423]: expected value, found struct `Foo`\n  --> /checkout/src/test/ui/parser/struct-literal-in-for.rs:12:14\n   |\nLL |     for x in Foo { //~ ERROR expected value, found struct `Foo`\n   |              ^^^ did you mean `(Foo { /* fields */ })`?\n\n"}
+[01:17:14] {"message":"For more information about this error, try `rustc --explain E0423`.","code":null,"level":"","spans":[],"children":[],"rendered":"For more information about this error, try `rustc --explain E0423`.\n"}
+[01:17:14] 
+[01:17:14] ------------------------------------------
+[01:17:14] 
+---
+[01:17:14] 
+[01:17:14] 10    |
+[01:17:14] 11 LL |         x: 3
+[01:17:14] 12    |         ^
+[01:17:14] - note: ...due to this, which is why a type is expected
+[01:17:14] + note: ...due to this, which is why a type is expected after
+[01:17:14] 15    |
+[01:17:14] 16 LL |         x: 3
+[01:17:14] 
+[01:17:14] 
+[01:17:14] 
+[01:17:14] The actual stderr differed from the expected stderr.
+[01:17:14] Actual stderr saved to /checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/parser/struct-literal-in-if/struct-literal-in-if.stderr
+[01:17:14] To update references, rerun the tests and pass the `--bless` flag
+[01:17:14] To only update this specific test, also pass `--test-args parser/struct-literal-in-if.rs`
+[01:17:14] error: 1 errors occurred comparing output.
+[01:17:14] status: exit code: 1
+[01:17:14] status: exit code: 1
+[01:17:14] command: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "/checkout/src/test/ui/parser/struct-literal-in-if.rs" "-Zthreads=1" "--target=x86_64-unknown-linux-gnu" "--error-format" "json" "-Zui-testing" "-C" "prefer-dynamic" "-o" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/parser/struct-literal-in-if/a" "-Crpath" "-O" "-Zunstable-options" "-Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/parser/struct-literal-in-if/auxiliary" "-A" "unused"
+[01:17:14] ------------------------------------------
+[01:17:14] 
+[01:17:14] ------------------------------------------
+[01:17:14] stderr:
+[01:17:14] stderr:
+[01:17:14] ------------------------------------------
+[01:17:14] {"message":"expected type, found `3`","code":null,"level":"error","spans":[{"file_name":"/checkout/src/test/ui/parser/struct-literal-in-if.rs","byte_start":171,"byte_end":172,"line_start":13,"line_end":13,"column_start":12,"column_end":13,"is_primary":true,"text":[{"text":"        x: 3    //~ ERROR expected type, found `3`","highlight_start":12,"highlight_end":13}],"label":"expecting a type here because of type ascription","suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"type ascription is a nightly only feature that lets you annotate expressions with a type: `<expr>: <type>`","code":null,"level":"note","spans":[],"children":[],"rendered":null},{"message":"this expression is annotated with type ascription...","code":null,"level":"note","spans":[{"file_name":"/checkout/src/test/ui/parser/struct-literal-in-if.rs","byte_start":168,"byte_end":169,"line_start":13,"line_end":13,"column_start":9,"column_end":10,"is_primary":true,"text":[{"text":"        x: 3    //~ ERROR expected type, found `3`","highlight_start":9,"highlight_end":10}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[],"rendered":null},{"message":"...due to this, which is why a type is expected after","code":null,"level":"note","spans":[{"file_name":"/checkout/src/test/ui/parser/struct-literal-in-if.rs","byte_start":169,"byte_end":170,"line_start":13,"line_end":13,"column_start":10,"column_end":11,"is_primary":true,"text":[{"text":"        x: 3    //~ ERROR expected type, found `3`","highlight_start":10,"highlight_end":11}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[],"rendered":null},{"message":"this might be indicative of a syntax error elsewhere","code":null,"level":"help","spans":[],"children":[],"rendered":null}],"rendered":"error: expected type, found `3`\n  --> /checkout/src/test/ui/parser/struct-literal-in-if.rs:13:12\n   |\nLL |         x: 3    //~ ERROR expected type, found `3`\n   |            ^ expecting a type here because of type ascription\n   |\n   = note: type ascription is a nightly only feature that lets you annotate expressions with a type: `<expr>: <type>`\nnote: this expression is annotated with type ascription...\n  --> /checkout/src/test/ui/parser/struct-literal-in-if.rs:13:9\n   |\nLL |         x: 3    //~ ERROR expected type, found `3`\n   |         ^\nnote: ...due to this, which is why a type is expected after\n  --> /checkout/src/test/ui/parser/struct-literal-in-if.rs:13:10\n   |\nLL |         x: 3    //~ ERROR expected type, found `3`\n   |          ^\n   = help: this might be indicative of a syntax error elsewhere\n\n"}
+[01:17:14] {"message":"expected one of `.`, `;`, `?`, `}`, or an operator, found `{`","code":null,"level":"error","spans":[{"file_name":"/checkout/src/test/ui/parser/struct-literal-in-if.rs","byte_start":222,"byte_end":223,"line_start":14,"line_end":14,"column_start":12,"column_end":13,"is_primary":true,"text":[{"text":"    }.hi() { //~ ERROR expected one of `.`, `;`, `?`, `}`, or an operator, found `{`","highlight_start":12,"highlight_end":13}],"label":"expected one of `.`, `;`, `?`, `}`, or an operator here","suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[],"rendered":"error: expected one of `.`, `;`, `?`, `}`, or an operator, found `{`\n  --> /checkout/src/test/ui/parser/struct-literal-in-if.rs:14:12\n   |\nLL |     }.hi() { //~ ERROR expected one of `.`, `;`, `?`, `}`, or an operator, found `{`\n   |            ^ expected one of `.`, `;`, `?`, `}`, or an operator here\n\n"}
+[01:17:14] {"message":"expected value, found struct `Foo`","code":{"code":"E0423","explanation":"\nAn identifier was used like a function name or a value was expected and the\nidentifier exists but it belongs to a different namespace.\n\nFor (an erroneous) example, here a `struct` variant name were used as a\nfunction:\n\n

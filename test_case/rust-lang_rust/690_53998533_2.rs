@@ -1,0 +1,2 @@
+
+undefined reference to `atexit'

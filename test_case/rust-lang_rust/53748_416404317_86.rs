@@ -1,0 +1,1 @@
+compile_fail,E0404\nstruct Foo;\n\nfn bar<T: Foo>(t: T) {} // error: `Foo` is not a trait\n

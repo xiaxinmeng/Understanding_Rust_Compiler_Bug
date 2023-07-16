@@ -1,0 +1,16 @@
+
+    --build=x86_64-unknown-linux-gnu \                                                                                               
+    --host=x86_64-unknown-linux-gnu \                                                                                                
+    --target=x86_64-unknown-linux-gnu \                                                                                              
+    --disable-option-checking \                                                                                                      
+    --libdir=/usr/lib \                                                                                                              
+    --enable-local-rust \                                                                                                            
+    --local-rust-root=/usr \                                                                                                         
+    --llvm-root=/usr \                                                                                                               
+    --disable-codegen-tests \                                                                                                        
+    --enable-llvm-link-shared \                                                                                                      
+    --disable-jemalloc \                                                                                                             
+    --disable-rpath \                                                                                                                
+    --enable-debuginfo \                                                                                                             
+    --enable-vendor \                                                                                                                
+    --release-channel=stable 

@@ -1,0 +1,31 @@
+
+stack backtrace:
+   1:     0x7f5363c08220 - rt::backtrace::imp::write::h64ddbb80732cebe7mft
+   2:     0x7f5363c0b2a0 - failure::on_fail::h94b40e248cb876efXAt
+   3:     0x7f53643da330 - unwind::begin_unwind_inner::h95c06af1b5484b5aE9c
+   4:     0x7f53647a7390 - unwind::begin_unwind::h2953665953488925265
+   5:     0x7f536500c360 - metadata::encoder::encode_info_for_item::h2fdf288e1d9b50a1X2u
+   6:     0x7f53650120b0 - metadata::encoder::my_visit_item::closure.140832
+   7:     0x7f5364a29320 - ast_map::Map<'ast>::with_path_next::h5678203148237041916
+   8:     0x7f5364a29320 - ast_map::Map<'ast>::with_path_next::h5678203148237041916
+   9:     0x7f53650140b0 - visit::walk_mod::h4122475244020002523
+  10:     0x7f53650187b0 - metadata::encoder::encode_metadata_inner::he495ee9af76720e0wbw
+  11:     0x7f5364bd25e0 - metadata::encoder::encode_metadata::h4800ccb08c786519Zaw
+  12:     0x7f5364bd1dc0 - middle::trans::base::write_metadata::ha68b38aa6474f49aRPi
+  13:     0x7f5364bd3b40 - middle::trans::base::trans_crate::hfdcd15c7cca1daefYXi
+  14:     0x7f536505eda0 - driver::driver::phase_4_translate_to_llvm::h6acbdd487716233dyjC
+  15:     0x7f5365054410 - driver::driver::compile_input::h6b78440b664993f7sQB
+  16:     0x7f53650db7c0 - driver::run_compiler::h1e6c21018535d044JGF
+  17:     0x7f53650db6b0 - driver::run::closure.146249
+  18:     0x7f53647dcd20 - task::TaskBuilder<S>::try_future::closure.104741
+  19:     0x7f53647dcb10 - task::TaskBuilder<S>::spawn_internal::closure.104712
+  20:     0x7f5365934b50 - task::NativeSpawner.Spawner::spawn::closure.2549
+  21:     0x7f536442f1e0 - rust_try_inner
+  22:     0x7f536442f1d0 - rust_try
+  23:     0x7f53643d7cb0 - unwind::try::h164a60eea6d3f88cmYc
+  24:     0x7f53643d7b40 - task::Task::run::had29636eca7af1a3u4b
+  25:     0x7f5365934890 - task::NativeSpawner.Spawner::spawn::closure.2475
+  26:     0x7f53643d9350 - thread::thread_start::h1833ce4dca7b1a7erpc
+  27:     0x7f535f3fae20 - start_thread
+  28:     0x7f53640a5b59 - clone
+  29:                0x0 - <unknown>

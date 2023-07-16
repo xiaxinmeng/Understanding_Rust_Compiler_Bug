@@ -1,0 +1,1 @@
+\ntrait Foo {\n    fn foo() -> u8;\n}\n

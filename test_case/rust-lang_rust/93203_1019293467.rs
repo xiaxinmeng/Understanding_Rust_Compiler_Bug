@@ -1,0 +1,9 @@
+rust
+thread::scope(|scope| {
+    …
+    scope.spawn(|| {
+        …
+        scope.spawn(|| { … });
+    });
+    …
+});

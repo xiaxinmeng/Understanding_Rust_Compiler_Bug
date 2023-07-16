@@ -1,0 +1,13 @@
+
+-rwxr-xr-x  1 fklock  wheel   253K Jun 27 13:35 /tmp/vecel.2017-06-18.bin
+-rwxr-xr-x  1 fklock  wheel   253K Jun 27 13:35 /tmp/vecel.2017-06-19.bin
+-rwxr-xr-x  1 fklock  wheel   266K Jun 27 13:35 /tmp/vecel.2017-06-20.bin
+-rwxr-xr-x  1 fklock  wheel   266K Jun 27 13:35 /tmp/vecel.2017-06-21.bin
+-rwxr-xr-x  1 fklock  wheel   274K Jun 27 13:35 /tmp/vecel.2017-06-22.bin
+-rwxr-xr-x  1 fklock  wheel   274K Jun 27 13:35 /tmp/vecel.2017-06-23.bin
+-rwxr-xr-x  1 fklock  wheel   274K Jun 27 13:35 /tmp/vecel.2017-06-24.bin
+-rwxr-xr-x  1 fklock  wheel   274K Jun 27 13:35 /tmp/vecel.2017-06-25.bin
+-rwxr-xr-x  1 fklock  wheel   274K Jun 27 13:35 /tmp/vecel.2017-06-26.bin
+-rwxr-xr-x  1 fklock  wheel   269K Jun 27 13:35 /tmp/vecel.beta.bin
+-rwxr-xr-x  1 fklock  wheel   274K Jun 27 13:35 /tmp/vecel.nightly.bin
+-rwxr-xr-x  1 fklock  wheel   253K Jun 27 13:35 /tmp/vecel.stable.bin

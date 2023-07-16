@@ -1,0 +1,4 @@
+rust
+extern {
+    fn ö();
+}

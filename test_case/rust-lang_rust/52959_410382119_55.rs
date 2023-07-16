@@ -1,0 +1,1 @@
+\nstruct Foo<'a> {\n    x: Option<&'a u32>,\n}\n\nlet y = 0;\nlet mut x = Foo { x: None };\nx.x = Some(&y);\n

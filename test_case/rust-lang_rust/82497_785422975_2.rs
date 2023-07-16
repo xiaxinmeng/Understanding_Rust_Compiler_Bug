@@ -1,0 +1,18 @@
+
+- struct Something;
+- 
+- 
+- impl Something {} // ok!
+- // or:
+- 
+- trait Foo {
+-     type N;
+-     type N;
+- 
+-     fn bar(_: Self::N); // ok!
+- 
+- // or:
+- 
+- 
+- fn foo<T>(x: T) {} // ok!
+- 

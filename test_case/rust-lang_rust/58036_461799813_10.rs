@@ -1,0 +1,1 @@
+\n"},"level":"error","spans":[{"file_name":"/checkout/src/test/ui/privacy/pblic. The type\ncan be made inaccessible if necessary by placing it into a private inner\nmodule, but it still has to be marked with `pub`.\nExample:\n\n

@@ -1,0 +1,4 @@
+
+$ cat source.properties
+Pkg.Desc = Android NDK
+Pkg.Revision = 21.0.6113669

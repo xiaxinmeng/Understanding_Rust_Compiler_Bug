@@ -1,0 +1,1 @@
+drop(mutex_lock); // Unlocking

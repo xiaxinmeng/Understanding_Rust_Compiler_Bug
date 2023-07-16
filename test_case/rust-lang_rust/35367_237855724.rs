@@ -1,0 +1,82 @@
+
+⇢ cat config.mk
+
+CFG_DISABLE_VALGRIND_RPASS := 1
+CFG_DISABLE_DOCS     := 1
+CFG_ENABLE_ORBIT     := 1
+CFG_LOCALSTATEDIR    := /Services/Rust/var
+CFG_SYSCONFDIR       := /Services/Rust/etc
+CFG_DATADIR          := /Services/Rust/share
+CFG_INFODIR          := /Services/Rust/share/info
+CFG_LLVM_ROOT        :=
+CFG_PYTHON           :=
+CFG_JEMALLOC_ROOT    :=
+CFG_BUILD            := x86_64-apple-darwin
+CFG_ANDROID_CROSS_PATH :=
+CFG_I686_LINUX_ANDROID_NDK :=
+CFG_ARM_LINUX_ANDROIDEABI_NDK :=
+CFG_ARMV7_LINUX_ANDROIDEABI_NDK :=
+CFG_AARCH64_LINUX_ANDROID_NDK :=
+CFG_NACL_CROSS_PATH  :=
+CFG_RELEASE_CHANNEL  := stable
+CFG_MUSL_ROOT        := /usr/local
+CFG_EXTRA_FILENAME   :=
+CFG_DEFAULT_LINKER   := cc
+CFG_DEFAULT_AR       := ar
+CFG_LIBDIR           := /Software/Rust/lib
+CFG_ENABLE_ORBIT     := 1
+CFG_CURLORWGET       := "/Software/Rust/bin/curl"
+CFG_PYTHON           := "/usr/bin/python2.7"
+CFG_GIT              := "/usr/bin/git"
+CFG_MD5              := "/sbin/md5"
+CFG_MD5SUM           :=
+CFG_HASH_COMMAND     := /sbin/md5 -q | cut -c 1-8
+CFG_CLANG            := "/usr/bin/clang++"
+CFG_CCACHE           := "/Software/Rust/bin/ccache"
+CFG_GCC              := "/usr/bin/gcc"
+CFG_LD               := "/usr/bin/ld"
+CFG_VALGRIND         :=
+CFG_PERF             :=
+CFG_ISCC             :=
+CFG_ANTLR4           :=
+CFG_GRUN             :=
+CFG_FLEX             := "/usr/bin/flex"
+CFG_BISON            := "/usr/bin/bison"
+CFG_GDB              :=
+CFG_LLDB             := "/usr/bin/lldb"
+CFG_DISABLE_VALGRIND_RPASS := 1
+CFG_LLDB_VERSION     := lldb-350.0.21.9
+CFG_LLDB_PYTHON_DIR  := /Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Resources/Python
+CFG_LLDB_PYTHON      := /usr/bin/python
+CFG_ADB              :=
+CFG_ENABLE_CLANG     := 1
+CFG_USING_CLANG      := 1
+
+CFG_CC               := /usr/bin/clang
+CFG_CXX              := /usr/bin/clang++
+CFG_CPP              := /usr/bin/clang -E
+CFG_CFLAGS           := -I/Software/Rust/include  -fPIC -w -fno-strict-overflow -fstack-protector-all -mmacosx-version-min=10.11 -arch=x86_64 -O2 -ffast-math
+CFG_CXXFLAGS         := -I/Software/Rust/include  -fPIC -w -fno-strict-overflow -fstack-protector-all -mmacosx-version-min=10.11 -arch=x86_64 -O2 -ffast-math
+CFG_LDFLAGS          := -L/Software/Rust/lib  -fPIC
+CFG_STDCPP_NAME      := stdc++
+CFG_SRC_DIR          := /Software/Rust/.src_1960695529c114c8af036eb3b91811f57d2b8f64/rustc-1.10.0/
+CFG_SRC_DIR_RELATIVE := ./
+CFG_BUILD_DIR        := /Software/Rust/.src_1960695529c114c8af036eb3b91811f57d2b8f64/rustc-1.10.0/
+CFG_OSTYPE           := apple-darwin
+CFG_CPUTYPE          := x86_64
+CFG_CONFIGURE_ARGS   := --disable-rustbuild --enable-clang --enable-orbit --enable-jemalloc --release-channel=stable --enable-optimize --enable-optimize-cxx --disable-valgrind --disable-valgrind-rpass --datadir=/Services/Rust/share --infodir=/Services/Rust/share/info --enable-manage-submodules --enable-optimize-llvm --disable-docs --prefix=/Software/Rust --sysconfdir=/Services/Rust/etc --localstatedir=/Services/Rust/var
+CFG_PREFIX           := /Software/Rust
+CFG_HOST             := x86_64-apple-darwin
+CFG_TARGET           := x86_64-apple-darwin
+CFG_LIBDIR_RELATIVE  := lib
+CFG_DISABLE_MANAGE_SUBMODULES := 1
+CFG_AARCH64_LINUX_ANDROID_NDK :=
+CFG_ARM_LINUX_ANDROIDEABI_NDK :=
+CFG_ARMV7_LINUX_ANDROIDEABI_NDK :=
+CFG_I686_LINUX_ANDROID_NDK :=
+CFG_NACL_CROSS_PATH  :=
+CFG_MANDIR           := /Software/Rust/share/man
+CFG_USING_LIBCPP     := 1
+CFG_LLVM_SRC_DIR     := /Software/Rust/.src_1960695529c114c8af036eb3b91811f57d2b8f64/rustc-1.10.0/src/llvm/
+CFG_LLVM_BUILD_DIR_x86_64_apple_darwin := /Software/Rust/.src_1960695529c114c8af036eb3b91811f57d2b8f64/rustc-1.10.0/x86_64-apple-darwin/llvm
+CFG_LLVM_INST_DIR_x86_64_apple_darwin := /Software/Rust/.src_1960695529c114c8af036eb3b91811f57d2b8f64/rustc-1.10.0/x86_64-apple-darwin/llvm/Release

@@ -1,0 +1,1 @@
+\nfn foo<T: Copy>(x: T) {\n    fn bar<T: Copy>(y: T) {\n        // ..\n    }\n    bar(x);\n}\n

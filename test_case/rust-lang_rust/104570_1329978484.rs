@@ -1,0 +1,20 @@
+xml
+<key>DEPLOYMENT_TARGET_SUGGESTED_VALUES</key>
+<array>
+	<string>10.9</string>
+	<string>10.10</string>
+	<string>10.11</string>
+	<string>10.12</string>
+	<string>10.13</string>
+	<string>10.14</string>
+	<string>10.15</string>
+	<string>11.0</string>
+	<string>11.1</string>
+	<string>11.2</string>
+	<string>11.3</string>
+	<string>11.4</string>
+	<string>11.5</string>
+	<string>12.0</string>
+	<string>12.2</string>
+	<string>12.3</string>
+</array>

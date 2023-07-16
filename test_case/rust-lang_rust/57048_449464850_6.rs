@@ -1,0 +1,1 @@
+compile_fail,E0441\n#![feature(repr_simd)]\n#![feature(platform_intrinsics)]\n\n#[repr(simd)]\nstruct i16x8(i16, i16, i16, i16, i16, i16, i16, i16);\n\nextern \"platform-intrinsic\" {\n    fn x86_mm_adds_ep16(x: i16x8, y: i16x8) -> i16x8;\n    // error: unrecognized platform-specific intrinsic function\n}\n

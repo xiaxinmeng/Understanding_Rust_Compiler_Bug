@@ -1,0 +1,7 @@
+
+DEBUG:rls::server: Language Server Starting up
+DEBUG:rls::server: response: "Content-Length: 483\r\n\r\n{\"jsonrpc\":\"2.0\",\"id\":0,\"result\":{\"capabilities\":{\"textDocumentSync\":2,\"hoverProvider\":true,\"completionProvider\":{\"resolveProvider\":true,\"triggerCharacters\":[\".\"]},\"signatureHelpProvider\":{\"triggerCharacters\":[]},\"definitionProvider\":true,\"referencesProvider\":true,\"documentHighlightProvider\":true,\"documentSymbolProvider\":true,\"workspaceSymbolProvider\":true,\"codeActionProvider\":false,\"documentFormattingProvider\":true,\"documentRangeFormattingProvider\":true,\"renameProvider\":true}}}"
+DEBUG:rls::server: response: "Content-Length: 72\r\n\r\n{\"jsonrpc\":\"2.0\",\"method\":\"rustDocument/diagnosticsBegin\",\"params\":null}"
+DEBUG:rls::actions: build "/home/sergey/projects/test_bug"
+DEBUG:rls::build: removing: `"test_bug-2e2cb212f13566c9.json"`
+{"message":"wrong number of type arguments: expected 1, found 0","code":{"code":"E0243","explanation":"\nThis error indicates that not enough type parameters were found in a type or\ntrait.\n\nFor example, the `Foo` struct below is defined to be generic in `T`, but the\ntype parameter is missing in the definition of `Bar`:\n\n

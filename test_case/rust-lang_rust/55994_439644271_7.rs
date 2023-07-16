@@ -1,0 +1,1 @@
+compile_fail,E0620\nlet x = &[1_usize, 2] as [usize]; // error: cast to unsized type: `&[usize; 2]`\n                                  //        as `[usize]`\n

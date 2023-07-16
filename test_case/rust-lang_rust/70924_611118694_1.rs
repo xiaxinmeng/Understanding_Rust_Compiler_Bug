@@ -1,0 +1,1 @@
+rustup target add arm-unknown-linux-gnueabihf

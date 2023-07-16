@@ -1,0 +1,12 @@
+
+test ringbuf::tests::bench_grow_1025                       ... bench:      4278 ns/iter (+/- 38)
+test ringbuf::tests::bench_iter_1000                       ... bench:      1074 ns/iter (+/- 15)
+test ringbuf::tests::bench_mut_iter_1000                   ... bench:      1074 ns/iter (+/- 7)
+test ringbuf::tests::bench_new                             ... bench:        19 ns/iter (+/- 0)
+test ringbuf::tests::bench_pop_100                         ... bench:       145 ns/iter (+/- 2)
+test ringbuf::tests::bench_pop_front_100                   ... bench:       229 ns/iter (+/- 1)
+test ringbuf::tests::bench_push_back_100                   ... bench:       178 ns/iter (+/- 0)
+test ringbuf::tests::bench_push_front_100                  ... bench:       171 ns/iter (+/- 0)
+test btree::map::bench::iter_1000                          ... bench:     14251 ns/iter (+/- 335)
+test btree::map::bench::iter_100000                        ... bench:   1463265 ns/iter (+/- 27330)
+test btree::map::bench::iter_20                            ... bench:       317 ns/iter (+/- 11)

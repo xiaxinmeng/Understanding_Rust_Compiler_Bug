@@ -1,0 +1,1 @@
+compile_fail,E0038\ntrait Foo {\n    const X: i32;\n}\n\nimpl Foo {}\n

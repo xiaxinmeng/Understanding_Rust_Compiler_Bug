@@ -1,0 +1,6 @@
+toml
+[profile.release]
+codegen-units = 1
+incremental = true
+lto = true
+opt-level = 3

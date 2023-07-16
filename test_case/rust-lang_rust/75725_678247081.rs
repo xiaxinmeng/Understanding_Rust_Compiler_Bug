@@ -1,0 +1,2 @@
+
+[`LinkedList::into_iter()`]

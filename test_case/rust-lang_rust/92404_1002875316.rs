@@ -1,0 +1,11 @@
+
+html {
+  font-size: 62.5%; /* font-size 1em = 10px on default browser settings */
+}
+span {
+  font-size: 1.6em;
+}
+
+<div>
+<span>Outer <span>inner</span> outer</span>
+</div>

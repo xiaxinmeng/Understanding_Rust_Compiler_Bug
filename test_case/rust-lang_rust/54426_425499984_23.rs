@@ -1,0 +1,1 @@
+\nstruct FancyNum {\n    num: u8,\n}\n\nfn main() {\n    let mut fancy_num = FancyNum { num: 5 };\n\n    {\n        let fancy_ref = &fancy_num;\n        println!(\"Ref: {}\", fancy_ref.num);\n    }\n\n    // Works because `fancy_ref` is no longer in scope\n    fancy_num = FancyNum { num: 6 };\n    println!(\"Num: {}\", fancy_num.num);\n}\n

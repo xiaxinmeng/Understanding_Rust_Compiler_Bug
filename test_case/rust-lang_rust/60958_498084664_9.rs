@@ -1,0 +1,6 @@
+
+ * Idein/actix-rate-limit: [start](https://crater-reports.s3.amazonaws.com/beta-1.36-2/1.35.0/gh/Idein.actix-rate-limit/log.txt) v. [end](https://crater-reports.s3.amazonaws.com/beta-1.36-2/beta-2019-05-30/gh/Idein.actix-rate-limit/log.txt); cc @Idein
+ * approveapi/actix-web-magic-link-auth: [start](https://crater-reports.s3.amazonaws.com/beta-1.36-2/1.35.0/gh/approveapi.actix-web-magic-link-auth/log.txt) v. [end](https://crater-reports.s3.amazonaws.com/beta-1.36-2/beta-2019-05-30/gh/approveapi.actix-web-magic-link-auth/log.txt); cc @approveapi
+ * sadkovoy/protego: [start](https://crater-reports.s3.amazonaws.com/beta-1.36-2/1.35.0/gh/sadkovoy.protego/log.txt) v. [end](https://crater-reports.s3.amazonaws.com/beta-1.36-2/beta-2019-05-30/gh/sadkovoy.protego/log.txt); cc @sadkovoy
+ * semyon2105/authsrv: [start](https://crater-reports.s3.amazonaws.com/beta-1.36-2/1.35.0/gh/semyon2105.authsrv/log.txt) v. [end](https://crater-reports.s3.amazonaws.com/beta-1.36-2/beta-2019-05-30/gh/semyon2105.authsrv/log.txt); cc @semyon2105
+ * yinyanlv/partner: [start](https://crater-reports.s3.amazonaws.com/beta-1.36-2/1.35.0/gh/yinyanlv.partner/log.txt) v. [end](https://crater-reports.s3.amazonaws.com/beta-1.36-2/beta-2019-05-30/gh/yinyanlv.partner/log.txt); cc @yinyanlv

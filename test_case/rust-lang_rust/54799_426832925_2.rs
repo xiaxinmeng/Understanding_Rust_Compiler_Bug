@@ -1,0 +1,1 @@
+compile_fail,E0309\n// This won't compile because the applicable impl of\n// `SomeTrait` (below) requires that `T: 'a`, but the struct does\n// not have a matching where-clause.\nstruct Foo<'a, T> {\n    foo: <T as SomeTrait<'a>>::Output,\n}\n\ntrait SomeTrait<'a> {\n    type Output;\n}\n\nimpl<'a, T> SomeTrait<'a> for T\nwhere\n    T: 'a,\n{\n    type Output = u32;\n}\n

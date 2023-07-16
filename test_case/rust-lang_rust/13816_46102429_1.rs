@@ -1,0 +1,7 @@
+
+rustc 0.11.0-pre (77453ac8511c2538ba299198f48268402186ce7e 2014-06-14 12:40:48 -0400)
+binary: rustc
+commit-hash: 77453ac8511c2538ba299198f48268402186ce7e
+commit-date: 2014-06-14 12:40:48 -0400
+host: x86_64-apple-darwin
+release: 0.11.0-pre

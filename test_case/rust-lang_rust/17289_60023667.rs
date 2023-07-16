@@ -1,0 +1,2 @@
+ bash
+export DYLD_LIBRARY_PATH=$RUST_PREFIX/lib

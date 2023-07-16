@@ -1,0 +1,6 @@
+
+$ echo 'fn main() { ' 'let _x: int; /*'{1..5000}'*/' '}'  |  /patched/rustc - -Z time-passes
+...
+time: 6.803 s   expansion
+...
+time: 0.029 s   resolution

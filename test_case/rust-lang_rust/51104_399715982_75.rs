@@ -1,0 +1,1 @@
+compile_fail,E0277\nfn some_func<T>(foo: T) {\n    println!(\"{:?}\", foo); // error: the trait `core::fmt::Debug` is not\ou're using does implement\nthe trait. Example:\n\n

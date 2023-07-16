@@ -1,0 +1,13 @@
+
+test rand_100000_parent ... bench:         172 ns/iter (+/- 9)
+test rand_100000_std    ... bench:         208 ns/iter (+/- 14)
+test rand_10000_parent  ... bench:         109 ns/iter (+/- 8)
+test rand_10000_std     ... bench:         146 ns/iter (+/- 8)
+test rand_100_parent    ... bench:          63 ns/iter (+/- 10)
+test rand_100_std       ... bench:          84 ns/iter (+/- 17)
+test seq_100000_parent  ... bench:          73 ns/iter (+/- 5)
+test seq_100000_std     ... bench:         115 ns/iter (+/- 7)
+test seq_10000_parent   ... bench:          58 ns/iter (+/- 3)
+test seq_10000_std      ... bench:          84 ns/iter (+/- 14)
+test seq_100_parent     ... bench:          21 ns/iter (+/- 2)
+test seq_100_std        ... bench:          44 ns/iter (+/- 5)

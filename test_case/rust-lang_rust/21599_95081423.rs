@@ -1,0 +1,30 @@
+
+stack backtrace:
+   1:     0x7f0b44c45b39 - sys::backtrace::write::hc94f8d9af2b8711fGUs
+   2:     0x7f0b44c4d7c6 - panicking::on_panic::hc9accb046dad794bVhx
+   3:     0x7f0b44c0b6f2 - rt::unwind::begin_unwind_inner::ha72df769ba895a835Ww
+   4:     0x7f0b4431937e - rt::unwind::begin_unwind::h5106877066291017917
+   5:     0x7f0b44366c26 - trans::callee::trans_lang_call::h18525ebc83fc18a5iYn
+   6:     0x7f0b4442b2bb - trans::expr::trans_uniq_expr::h6a032a77291fe948WRB
+   7:     0x7f0b4442bd76 - trans::expr::trans_unary::hc90e278c567e6845VMB
+   8:     0x7f0b4442239c - trans::expr::trans_unadjusted::hef36e85b12071ac58zA
+   9:     0x7f0b443f7d98 - trans::expr::trans_into::hd1fc0e2f51949c52W6z
+  10:     0x7f0b44477aca - trans::_match::mk_binding_alloca::h12461994849321920681
+  11:     0x7f0b4436c47e - trans::base::init_local::hb395d1fe1d0a10ffNVg
+  12:     0x7f0b4437cd2e - trans::controlflow::trans_block::h3006d43e68f8b11dZ2u
+  13:     0x7f0b4437baf1 - trans::base::trans_closure::h58b74be4b3f2d114KCh
+  14:     0x7f0b4437d62a - trans::base::trans_fn::h8b381b99cc95435dsNh
+  15:     0x7f0b443806c7 - trans::base::trans_item::h0f743e9af025fb97Ebi
+  16:     0x7f0b4438ea1d - trans::base::trans_crate::hc043d7f7defe4b48E0i
+  17:     0x7f0b451b6e0a - driver::phase_4_translate_to_llvm::h646ecc6a8cb7c383lOa
+  18:     0x7f0b4518f0ba - driver::compile_input::h3818778b4ba8e92bQba
+  19:     0x7f0b4524f331 - run_compiler::h474493aa09b9a3f5D4b
+  20:     0x7f0b4524cf82 - boxed::F.FnBox<A>::call_box::h16338820608853103440
+  21:     0x7f0b4524c4b9 - rt::unwind::try::try_fn::h1219638071771381846
+  22:     0x7f0b44cc4fd8 - rust_try_inner
+  23:     0x7f0b44cc4fc5 - rust_try
+  24:     0x7f0b4524c768 - boxed::F.FnBox<A>::call_box::h2630035671385432388
+  25:     0x7f0b44c4c6b1 - sys::thread::create::thread_start::h8a67470ee39a7f26cgw
+  26:     0x7f0b3ed03373 - start_thread
+  27:     0x7f0b4489427c - clone
+  28:                0x0 - <unknown>

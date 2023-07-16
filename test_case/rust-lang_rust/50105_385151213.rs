@@ -1,0 +1,25 @@
+
+$ cargo build
+   Compiling cc v1.0.13
+   Compiling test-crtbegin v0.1.0 (file:///home/mixi/data/installfiles/rust/test-crtbegin)
+error: linking with `cc` failed: exit code: 1
+  |
+  = note: "cc" "-Wl,--as-needed" "-Wl,-z,noexecstack" "-Wl,--eh-frame-hdr" "-Wl,-(" "-m64" "-nostdlib" "/home/mixi/data/applications/rust/nightly/lib/rustlib/x86_64-unknown-linux-musl/lib/crt1.o" "/home/mixi/data/applications/rust/nightly/lib/rustlib/x86_64-unknown-linux-musl/lib/crti.o" "-L" "/home/mixi/data/applications/rust/nightly/lib/rustlib/x86_64-unknown-linux-musl/lib" "/home/mixi/data/installfiles/rust/test-crtbegin/target/debug/deps/test_crtbegin-009798609cf383ac.1dugthth7hgw6f8k.rcgu.o" "/home/mixi/data/installfiles/rust/test-crtbegin/target/debug/deps/test_crtbegin-009798609cf383ac.1y16o1qfye96o7m0.rcgu.o" "/home/mixi/data/installfiles/rust/test-crtbegin/target/debug/deps/test_crtbegin-009798609cf383ac.3rngp6bm2u2q5z0y.rcgu.o" "/home/mixi/data/installfiles/rust/test-crtbegin/target/debug/deps/test_crtbegin-009798609cf383ac.4oc10dk278mpk1vy.rcgu.o" "/home/mixi/data/installfiles/rust/test-crtbegin/target/debug/deps/test_crtbegin-009798609cf383ac.4xq48u46a1pwiqn7.rcgu.o" "/home/mixi/data/installfiles/rust/test-crtbegin/target/debug/deps/test_crtbegin-009798609cf383ac.8xzrsc1ux72v29j.rcgu.o" "/home/mixi/data/installfiles/rust/test-crtbegin/target/debug/deps/test_crtbegin-009798609cf383ac.oa3rad818d8sgn4.rcgu.o" "-o" "/home/mixi/data/installfiles/rust/test-crtbegin/target/debug/deps/test_crtbegin-009798609cf383ac" "/home/mixi/data/installfiles/rust/test-crtbegin/target/debug/deps/test_crtbegin-009798609cf383ac.crate.allocator.rcgu.o" "-Wl,--gc-sections" "-no-pie" "-Wl,-z,relro,-z,now" "-nodefaultlibs" "-L" "/home/mixi/data/installfiles/rust/test-crtbegin/target/debug/deps" "-L" "/home/mixi/data/installfiles/rust/test-crtbegin/target/debug/build/test-crtbegin-41b077543b1e2255/out" "-L" "/home/mixi/data/applications/rust/nightly/lib/rustlib/x86_64-unknown-linux-musl/lib" "-Wl,-Bstatic" "-Wl,--whole-archive" "-l" "test" "-Wl,--no-whole-archive" "-Wl,--whole-archive" "-l"
+"stdc++" "-Wl,--no-whole-archive" "-Wl,--start-group" "/home/mixi/data/applications/rust/nightly/lib/rustlib/x86_64-unknown-linux-musl/lib/libstd-d2de561f734e7180.rlib" "/home/mixi/data/applications/rust/nightly/lib/rustlib/x86_64-unknown-linux-musl/lib/libpanic_unwind-8b065522657ddcab.rlib" "/home/mixi/data/applications/rust/nightly/lib/rustlib/x86_64-unknown-linux-musl/lib/libunwind-812c97ffb046a117.rlib" "/home/mixi/data/applications/rust/nightly/lib/rustlib/x86_64-unknown-linux-musl/lib/liballoc_system-65736dae08b20ddb.rlib" "/home/mixi/data/applications/rust/nightly/lib/rustlib/x86_64-unknown-linux-musl/lib/liblibc-9ae9616519ec780e.rlib" "/home/mixi/data/applications/rust/nightly/lib/rustlib/x86_64-unknown-linux-musl/lib/liballoc-c91b138db9486771.rlib" "/home/mixi/data/applications/rust/nightly/lib/rustlib/x86_64-unknown-linux-musl/lib/libcore-ac22a995c23de41b.rlib" "-Wl,--end-group" "/home/mixi/data/applications/rust/nightly/lib/rustlib/x86_64-unknown-linux-musl/lib/libcompiler_builtins-eecc1bbba99ad142.rlib" "-static" "-Wl,-Bdynamic" "/home/mixi/data/applications/rust/nightly/lib/rustlib/x86_64-unknown-linux-musl/lib/crtn.o" "-Wl,-)"
+  = note: /usr/lib/gcc/x86_64-alpine-linux-musl/6.4.0/../../../../lib/libstdc++.a(system_error.o): In function `_GLOBAL__sub_I_system_error.cc':
+          /home/buildozer/aports/main/gcc/src/gcc-6.4.0/libstdc++-v3/src/c++11/system_error.cc:70: undefined reference to `__dso_handle'
+          /home/buildozer/aports/main/gcc/src/gcc-6.4.0/libstdc++-v3/src/c++11/system_error.cc:71: undefined reference to `__dso_handle'
+          /home/mixi/data/installfiles/rust/test-crtbegin/target/debug/build/test-crtbegin-41b077543b1e2255/out/libtest.a(test.o): In function `__static_initialization_and_destruction_0(int, int)':
+          /usr/include/c++/6.4.0/iostream:74: undefined reference to `__dso_handle'
+          /home/mixi/data/applications/rust/nightly/lib/rustlib/x86_64-unknown-linux-musl/lib/libstd-d2de561f734e7180.rlib(std-d2de561f734e7180.std4-e9907248abb27c2ab1ea0b1a18ff25a0.rs.rcgu.o):(.data._rust_extern_with_linkage___dso_handle.llvm.1663720274966436130+0x0): undefined reference to `__dso_handle'
+          /usr/lib/gcc/x86_64-alpine-linux-musl/6.4.0/../../../../x86_64-alpine-linux-musl/bin/ld: /home/mixi/data/installfiles/rust/test-crtbegin/target/debug/deps/test_crtbegin-009798609cf383ac: hidden symbol `__dso_handle' isn't defined
+          /usr/lib/gcc/x86_64-alpine-linux-musl/6.4.0/../../../../x86_64-alpine-linux-musl/bin/ld: final link failed: Bad value
+          collect2: error: ld returned 1 exit status
+$ RUSTFLAGS="-C target-feature=-crt-included" cargo build
+   Compiling cc v1.0.13
+   Compiling test-crtbegin v0.1.0 (file:///home/mixi/data/installfiles/rust/test-crtbegin)
+    Finished dev [unoptimized + debuginfo] target(s) in 2.95 secs
+$ file ./target/debug/test-crtbegin
+./target/debug/test-crtbegin: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), statically linked, with debug_info, not stripped
+$ ./target/debug/test-crtbegin
+N = 123

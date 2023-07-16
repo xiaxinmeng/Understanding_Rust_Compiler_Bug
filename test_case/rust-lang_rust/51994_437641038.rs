@@ -1,0 +1,4 @@
+rust
+match Self {
+    Self => ...
+}

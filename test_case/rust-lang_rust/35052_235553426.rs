@@ -1,0 +1,9 @@
+
+0000000000002ad0 T _emacs_module_init
+0000000000007090 S _plugin_is_GPL_compatible
+00000000000016a0 T _socket_option_to_c
+0000000000000fc0 T _socket_option_to_elisp
+0000000000000f80 T _socket_option_valid
+0000000000000a50 T _socket_type_to_c
+0000000000000810 T _socket_type_to_elisp
+00000000000007e0 T _socket_type_valid

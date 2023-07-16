@@ -1,0 +1,1 @@
+ignore (cannot-doctest-multicrate-project)\n#[macro_reexport(some_macro, another_macro)]\nextern crate macros_for_good;\n

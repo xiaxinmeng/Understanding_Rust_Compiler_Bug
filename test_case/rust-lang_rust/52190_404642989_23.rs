@@ -1,0 +1,1 @@
+compile_fail,E0506\nstruct FancyNum {\n    num: u8,\n}\n\nfn main() {\n    let mut fancy_num = FancyNum { num: 5 };\n    let fancy_ref = &fancy_num;\n    fancy_num = FancyNum { num: 6 };\n    // error: cannot assign to `fancy_num` because it is borrowed\n\n    println!(\"Num: {}, Ref: {}\", fancy_num.num, fancy_ref.num);\n}\n

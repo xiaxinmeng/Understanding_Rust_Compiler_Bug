@@ -1,0 +1,2 @@
+rust
+opt.map(Self)

@@ -1,0 +1,3 @@
+console
+  = note: "/usr/local/bin/mold" "-m64" "/tmp/rustcQNhAzy/symbols.o"  ............
+  = note: mold: fatal: unknown -m argument: 64

@@ -1,0 +1,13 @@
+
+              cb50 _ZN6goblin3elf6strtab6impure59_$LT$impl$u20$goblin..elf..strtab..Strtab$LT$$u27$a$GT$$GT$6to_vec17hdbf1bbe1ad89f74dE (647)
+            cde0 _ZN6goblin3elf6strtab6Strtab3get17h4e1ff1cea99b9c84E (879)
+            d150 _ZN6goblin7archive6Member4size17h7103fd83ad14eda4E (26)
+            d170 _ZN6goblin7archive6Member4trim17h734eb39b897ffff1E (98)
+            d1e0 _ZN6goblin7archive6Member4name17h0906ce07ce1df4d7E (51)
+            d220 _ZN6goblin7archive9NameIndex3get17h7ba57fa8352ea2feE (1007)
+            d610 _ZN6goblin7archive7Archive3get17he1d4efb334604e52E (167)
+            d6c0 wow_so_meta_doge_symbol (58)
+            d700 _ZN6goblin5elf643dyn6impure10get_needed17hc46910f8ab7ca190E (503)
+            d900 _ZN6goblin5elf643dyn11DynamicInfo3new17h555342b13899d36fE (2089)
+            e400 _ZN6goblin5elf323dyn6impure10get_needed17h5bfa48fbc82bee6bE (508)
+            e600 _ZN6goblin5elf323dyn11DynamicInfo3new17h86756cec6fd0af4aE (2070)

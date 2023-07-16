@@ -1,0 +1,2 @@
+
+ struct MyPrivateUint(uint);

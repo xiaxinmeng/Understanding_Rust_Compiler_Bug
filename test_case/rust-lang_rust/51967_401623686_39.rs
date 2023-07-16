@@ -1,0 +1,1 @@
+compile_fail,E0603\nmod SomeModule {\n    const PRIVATE: u32 = 0x_a_bad_1dea_u32; // This const is private, so we      // `SomeModule` module.\n}\n\nprintln!(\"const value: {}\", SomeModule::PRIVATE); // error: constant `PRIVATE`\n                                                  //        is private\n

@@ -1,0 +1,1 @@
+\nstruct FancyNum {\n    num: u8,\n}\n\nfn main() {\n    let mut fancy_num = FancyNum { num: 5 };\n    let moved_num = fancy_num;\n    fancy_num = FancyNum { num: 6 };\n\n    println!(\"Num: {}, Moved num: {}\", fancy_num.num, moved_num.num);\n}\n

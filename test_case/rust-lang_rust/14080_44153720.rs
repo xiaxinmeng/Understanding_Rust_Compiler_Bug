@@ -1,0 +1,3 @@
+
+#define __MINGW_VERSION 4.0
+#define __MINGW32_VERSION 3.20

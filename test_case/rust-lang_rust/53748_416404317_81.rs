@@ -1,0 +1,1 @@
+\ntrait Foo {\n    // some functions\n}\nstruct Bar;\n\nimpl Foo for Bar { // ok!\n    // functions implementation\n}\n

@@ -1,0 +1,1 @@
+\n\nIf this temporary expression is assigned directly into a let,\nor into a tuple or struct that is assigned into a let,\nit lives until the end of the block:\n\nExample:\n\n

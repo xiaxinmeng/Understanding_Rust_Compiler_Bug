@@ -1,0 +1,2 @@
+
+objdump -r binary.o

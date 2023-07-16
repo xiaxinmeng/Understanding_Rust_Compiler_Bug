@@ -1,0 +1,2 @@
+rust
+ print!("\n")

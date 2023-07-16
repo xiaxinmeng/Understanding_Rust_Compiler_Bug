@@ -1,0 +1,6 @@
+
+mod m {
+    #![attr]
+    
+    /* items */
+}

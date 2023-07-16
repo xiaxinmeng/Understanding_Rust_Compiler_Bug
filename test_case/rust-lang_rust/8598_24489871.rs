@@ -1,0 +1,8 @@
+ C
+#if (_WIN32_WINNT >= _WIN32_WINNT_WIN2K)
+...
+#if (NTDDK_VERSION >= NTDDI_WIN2KSP2)
+#define FILE_FLAG_FIRST_PIPE_INSTANCE   524288
+#endif
+...
+#endif

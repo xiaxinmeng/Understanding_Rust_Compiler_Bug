@@ -1,0 +1,1 @@
+\n\nOr by cloning `value` before borrowing it:\n\n

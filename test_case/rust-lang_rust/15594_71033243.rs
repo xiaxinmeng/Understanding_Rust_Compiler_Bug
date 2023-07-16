@@ -1,0 +1,7 @@
+
+                 SINGLE   DOUBLE    DIFF    SPANS (% of total max memory)
+LIBSYNTAX        696764   721728   24964     3.6%
+LIBRUSTC        1154900  1394124  239224    20.7%
+LIBRUSTC_TRANS   518424   547904   29480     5.7%
+LIBRUSTC_TYPECK  446160   482856   36696     8.2%
+LIBSTD           243796   260420   16624     6.8%

@@ -1,0 +1,10 @@
+toml
+[target.riscv32imac-unknown-none-elf]
+runner = "riscv64-unknown-elf-gdb -q -x gdb_init"
+rustflags = [
+  "-C", "link-arg=-Thifive1-link.x",
+  "-Cforce-frame-pointers=no",
+]
+
+[build]
+target = "riscv32imac-unknown-none-elf"

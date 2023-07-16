@@ -1,0 +1,2 @@
+fsharp
+let! result = task()

@@ -1,0 +1,22 @@
+\n\nRust only looks at the signature of the called function, as such it must\nalready specify all requirements that will be used for every type parameter.\n"},"level":"error","spans":[{"file_name":"/checkout/src/test/ui/rfc-1937-termination-trait/termination-trait-test-wrong-type.rs","byte_start":64,"byte_end":150,"line_start":6,"line_end":8,"column_start":1,"column_end":2,"is_primary":true,"text":[{"text":"fn can_parse_zero_as_f32() -> Result<f32, ParseIntError> { //~ ERROR","highlight_start":1,"highlight_end":69},{"text":"    \"0\".parse()","highlight_start":1,"highlight_end":16},{"text":"}","highlight_start":1,"highlight_end":2}],"label":"`main` can only return types that implement `std::process::Termination`","suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[{"message":"the trait `std::process::Termination` is not implemented for `std::result::Result<f32, std::num::ParseIntError>`","code":null,"level":"help","spans":[],"children":[],"rendered":null},{"message":"required by `test::assert_test_result`","code":null,"level":"note","spans":[],"children":[],"rendered":null}],"rendered":"error[E0277]: `main` has invalid return type `std::result::Result<f32, std::num::ParseIntError>`\n  --> /checkout/src/test/ui/rfc-1937-termination-trait/termination-trait-test-wrong-type.rs:6:1\n   |\nLL | / fn can_parse_zero_as_f32() -> Result<f32, ParseIntError> { //~ ERROR\nLL | |     \"0\".parse()\nLL | | }\n   | |_^ `main` can only return types that implement `std::process::Termination`\n   |\n   = help: the trait `std::process::Termination` is not implemented for `std::result::Result<f32, std::num::ParseIntError>`\n   = note: required by `test::assert_test_result`\n\n"}
+[01:14:36] {"message":"aborting due to 3 previous errors","code":null,"level":"error","spans":[],"children":[],"rendered":"error: aborting due to 3 previous errors\n\n"}
+[01:14:36] {"message":"Some errors occurred: E0277, E0658.","code":null,"level":"","spans":[],"children":[],"rendered":"Some errors occurred: E0277, E0658.\n"}
+[01:14:36] 
+[01:14:36] ------------------------------------------
+[01:14:36] 
+[01:14:36] thread '[ui] ui/rfc-1937-termination-trait/termination-trait-test-wrong-type.rs' panicked at 'explicit panic', src/tools/compiletest/src/runtest.rs:3422:9
+[01:14:36] thread '[ui] ui/rfc-1937-termination-trait/termination-trait-test-wrong-type.rs' panicked at 'explicit panic', src/tools/compiletest/src/runtest.rs:3422:9
+[01:14:36] 
+[01:14:36] ---- [ui] ui/test-on-macro.rs stdout ----
+[01:14:36] 
+[01:14:36] error: test compilation failed although it shouldn't!
+[01:14:36] status: exit code: 1
+[01:14:36] command: "/checkout/obj/build/x86_64-unknown-linux-gnu/stage2/bin/rustc" "/checkout/src/test/ui/test-on-macro.rs" "-Zthreads=1" "--target=x86_64-unknown-linux-gnu" "--error-format" "json" "-Zui-testing" "-C" "prefer-dynamic" "-o" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/test-on-macro/a" "-Crpath" "-O" "-Zunstable-options" "-Lnative=/checkout/obj/build/x86_64-unknown-linux-gnu/native/rust-test-helpers" "--test" "-L" "/checkout/obj/build/x86_64-unknown-linux-gnu/test/ui/test-on-macro/auxiliary" "-A" "unused"
+[01:14:36] ------------------------------------------
+[01:14:36] 
+[01:14:36] ------------------------------------------
+[01:14:36] stderr:
+[01:14:36] stderr:
+[01:14:36] ------------------------------------------
+[01:14:36] {"message":"#[test] attribute should not be used on macros. Use #[cfg(test)] instead.","code":null,"level":"warning","spans":[{"file_name":"/checkout/src/test/ui/test-on-macro.rs","byte_start":114,"byte_end":121,"line_start":11,"line_end":11,"column_start":1,"column_end":8,"is_primary":true,"text":[{"text":"foo!();","highlight_start":1,"highlight_end":8}],"label":null,"suggested_replacement":null,"suggestion_applicability":null,"expansion":null}],"children":[],"rendered":"warning: #[test] attribute should not be used on macros. Use #[cfg(test)] instead.\n  --> /checkout/src/test/ui/test-on-macro.rs:11:1\n   |\nLL | foo!();\n   | ^^^^^^^\n\n"}
+[01:14:36] {"message":"use of unstable library feature 'rustc_private': this crate is being loaded from the sysroot, an unstable location; did you mean to load this crate from crates.io via `Cargo.toml` instead? (see issue #27812)","code":{"code":"E0658","explanation":"\nAn unstable feature was used.\n\nErroneous code example:\n\n

@@ -1,0 +1,4 @@
+bash
+$ nm out/rel/rust_odr_test | grep crate1
+00000000001f23d7 T _ZN20rust_odr_test_crate113sub_in_crate117h56a8a4a969227185E
+00000000001f2422 T _ZN20rust_odr_test_crate113sub_in_crate117hf5a81c2f183f301cE

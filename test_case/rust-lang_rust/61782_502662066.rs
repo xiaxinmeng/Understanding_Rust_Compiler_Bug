@@ -1,0 +1,1 @@
+use function constructor MyFoo(u32, String)

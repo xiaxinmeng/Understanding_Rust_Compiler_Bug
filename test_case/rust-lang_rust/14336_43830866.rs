@@ -1,0 +1,2 @@
+
+rustc -O foo.rs

@@ -1,0 +1,1 @@
+compile_fail,E0423\nstruct Foo { a: bool };\n\nlet f = Foo();\n// error: `Foo` is a struct variant name, but this expression uses\n//        it like a function name\n

@@ -1,0 +1,1 @@
+assert_eq!(tcx.def_kind(parent), DefKind::Trait);

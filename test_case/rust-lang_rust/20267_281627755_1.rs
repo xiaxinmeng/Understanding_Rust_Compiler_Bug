@@ -1,0 +1,6 @@
+
+# Cargo.toml
+...
+[lib]
+crate_type = ["rlib", "cdylib"]
+...

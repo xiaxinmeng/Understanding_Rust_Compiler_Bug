@@ -1,0 +1,23 @@
+`:
+
+- 13× only-for-syntax-highlighting or syntax-highlighting-only (obvious `no_compile` candidate)
+- 10× pseudo-rust (obvious `no_compile` candidate)
+- 3× illustrative (obvious `no_compile` candidate)
+- 5× incomplete (obvious `no_compile` candidate)
+- 6× hypothetical (obvious `no_compile` candidate)
+- 2× exposition (obvious `no_compile` candidate... or just actually compile)
+- 1× pacify the merciless tidy (should be `no_compile`)
+- 2× not-usage-example (maybe should be `ignore`, maybe should just be tested)
+- 1× ignore future compatibility warning
+- 9× needs multiple files/crates
+- 8× no longer emitted error code
+- 2× feature got removed
+- 5× platform dependent
+- 1× requries external plugin
+- 2× depends on release channel
+- 1× can't specify compiler flags
+- 1× needs dependency
+- 12× cannot test private items
+- 6× diagnostic (should be `text` imho)
+- 10× extern declaration (should maybe be `no_run`?)
+- 14× 

@@ -1,0 +1,20 @@
+
+test [run-make] run-make-fulldeps/coverage-reports-base ... ok
+test [run-make] run-make-fulldeps/issue-22131 ... ok
+test [run-make] run-make-fulldeps/issue-26006 ... ok
+test [run-make] run-make-fulldeps/issue-33329 ... ok
+test [run-make] run-make-fulldeps/issue-25581 ... ok
+test [run-make] run-make-fulldeps/issue-28766 ... ok
+test [run-make] run-make-fulldeps/issue-24445 ... ok
+test [run-make] run-make-fulldeps/issue-35164 ... ok
+test [run-make] run-make-fulldeps/issue-28595 ... ok
+test [run-make] run-make-fulldeps/issue-36710 ... ok
+test [run-make] run-make-fulldeps/issue-37839 ... ok
+test [run-make] run-make-fulldeps/issue-51671 ... ok
+test [run-make] run-make-fulldeps/issue-40535 ... ok
+test [run-make] run-make-fulldeps/issue-53964 ... ok
+test [run-make] run-make-fulldeps/issue-37893 ... ok
+test [run-make] run-make-fulldeps/issue-46239 ... ok
+test [run-make] run-make-fulldeps/issue-7349 ... ok
+test [run-make] run-make-fulldeps/issues-41478-43796 ... ok
+test [run-make] run-make-fulldeps/coverage-reports-deadcode ... ok

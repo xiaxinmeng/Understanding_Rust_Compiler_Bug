@@ -1,0 +1,1 @@
+condvar.wait_block(mutex_lock) // blocking thread

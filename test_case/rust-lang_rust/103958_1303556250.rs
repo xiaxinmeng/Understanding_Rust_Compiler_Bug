@@ -1,0 +1,12 @@
+console
+add path: "/home/cat/rust/.gitignore"
+dir_for_ignorefile: "/home/cat/rust/.git"
+add path: "/home/cat/rust/.git/info/exclude"
+dir_for_ignorefile: "/home/cat/rust/src"
+dir_for_ignorefile: "/home/cat/rust/src"
+dir_for_ignorefile: "/home/cat/rust/src/.git"
+dir_for_ignorefile: "/home/cat/rust/src/test"
+dir_for_ignorefile: "/home/cat/rust/src/test"
+dir_for_ignorefile: "/home/cat/rust/src/test/.git"
+dir_for_ignorefile: "/home/cat/rust/src/test/ui"
+dir_for_ignorefile: "/home/cat/rust/src/test/ui"

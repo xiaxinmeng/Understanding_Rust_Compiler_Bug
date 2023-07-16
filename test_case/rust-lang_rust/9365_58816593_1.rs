@@ -1,0 +1,31 @@
+
+$ RUST_LOG=rustc::metadata::loader rustc foo.rs -Lrlib -Lcommon 2>&1 | grep 'reading.*=>'  
+INFO:rustc::metadata::loader: reading libstd-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading liballoc-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading libcore-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading liblibc-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading libunicode-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading libcollections-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading librand-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading libsync-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading librustrt-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading libnative-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading libarena-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading libdebug-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading libflate-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading libgetopts-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading libglob-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading libgraphviz-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading libgreen-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading liblog-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading libregex-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading libnum-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading librbml-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading libserialize-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading librlibc-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading libsemver-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading libterm-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading libtest-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading libtime-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading liburl-4e7c5e5c.rlib => 0ms
+INFO:rustc::metadata::loader: reading libuuid-4e7c5e5c.rlib => 0ms

@@ -1,0 +1,2 @@
+ rust
+Arc::new(f())

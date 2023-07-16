@@ -1,0 +1,8 @@
+console
+$ RUSTDOCFLAGS="-Z unstable-options --static-root-path /" cargo +nightly doc --target x86_64-pc-windows-gnu --verbose
+(...cutting out other crate builds...)
+ Documenting rstest v0.4.1
+     Running `rustdoc --edition=2018 --crate-type proc-macro --crate-name rstest /home/misdreavus/.cargo/registry/src/github.com-1ecc6299db9ec823/rstest-0.4.1/src/lib.rs --cap-lints allow -o /home/misdreavus/git/asdf/target/doc --error-format=json --json=diagnostic-rendered-ansi -L dependency=/home/misdreavus/git/asdf/target/debug/deps --extern cfg_if=/home/misdreavus/git/asdf/target/debug/deps/libcfg_if-e81fd561ea5d778d.rmeta --extern itertools=/home/misdreavus/git/asdf/target/debug/deps/libitertools-fc795270e0118033.rmeta --extern proc_macro2=/home/misdreavus/git/asdf/target/debug/deps/libproc_macro2-28ac7b73e9431dcd.rmeta --extern quote=/home/misdreavus/git/asdf/target/debug/deps/libquote-c3d8fb0ee445b121.rmeta --extern syn=/home/misdreavus/git/asdf/target/debug/deps/libsyn-3cb4f46f3856d11c.rmeta --cfg use_proc_macro_diagnostic`
+ Documenting asdf v0.1.0 (/home/misdreavus/git/asdf)
+     Running `rustdoc --edition=2018 --crate-type lib --crate-name asdf src/lib.rs --target x86_64-pc-windows-gnu -o /home/misdreavus/git/asdf/target/x86_64-pc-windows-gnu/doc --error-format=json --json=diagnostic-rendered-ansi -L dependency=/home/misdreavus/git/asdf/target/x86_64-pc-windows-gnu/debug/deps -L dependency=/home/misdreavus/git/asdf/target/debug/deps --extern qwop=/home/misdreavus/git/asdf/target/x86_64-pc-windows-gnu/debug/deps/libqwop-00f1cec7bc7f8935.rmeta --extern rstest=/home/misdreavus/git/asdf/target/debug/deps/librstest-4735249459e3b68f.so -Z unstable-options --static-root-path /`
+    Finished dev [unoptimized + debuginfo] target(s) in 21.89s

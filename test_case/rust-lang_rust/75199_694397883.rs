@@ -1,0 +1,2 @@
+
+@anon.569a0850a1907b404e03061989c3aa67.0 = private unnamed_addr constant { void ({ [0 x i8]*, i64 }*)*, i64, i64, i64 ({ [0 x i8]*, i64 }*)* } { void ({ [0 x i8]*, i64 }*)* @_RINvNtCsao6lDGRMLmD_4core3ptr13drop_in_placeReECs4fqI2P2rA04_33cgu_invalidated_when_export_added, i64 16, i64 8, i64 ({ [0 x i8]*, i64 }*)* @_RNvXNtCsao6lDGRMLmD_4core3anyReNtB2_3Any7type_idCs4fqI2P2rA04_33cgu_invalidated_when_export_added }, align 8

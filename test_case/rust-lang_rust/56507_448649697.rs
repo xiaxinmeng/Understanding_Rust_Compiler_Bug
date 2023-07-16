@@ -1,0 +1,23 @@
+
+00000013`76426600 00007ff7`ed543171 ntdll!KiUserExceptionDispatch+0x3a
+00000013`76426d30 00007ff7`ed53ff7f cargo!git_openssl_set_locking+0xd1a11
+00000013`76427090 00007ff7`ed53819c cargo!git_openssl_set_locking+0xce81f
+00000013`764270e0 00007ff7`ed537b28 cargo!git_openssl_set_locking+0xc6a3c
+00000013`76427300 00007ff7`ed52a1d9 cargo!git_openssl_set_locking+0xc63c8
+00000013`76427400 00007ff7`ed0c5e53 cargo!git_openssl_set_locking+0xb8a79
+00000013`76427430 00007ff7`ed179d10 cargo!git_filter_source_path+0x29c53
+00000013`76427530 00007ff7`ecf94aff cargo!git_index_checksum+0x9d620
+00000013`764296a0 00007ff7`ecf8fad4 cargo!git_filter_source_repo+0x35e9f
+00000013`7642a0a0 00007ff7`ed1843ef cargo!git_filter_source_repo+0x30e74
+00000013`7642ba50 00007ff7`ed180a3a cargo!git_index_checksum+0xa7cff
+00000013`7642dba0 00007ff7`ecfb41fb cargo!git_index_checksum+0xa434a
+00000013`7642dc10 00007ff7`ecf0d6ed cargo!git_filter_source_repo+0x5559b
+00000013`7642e7b0 00007ff7`ecec65a0 cargo+0x4d6ed
+00000013`7642f020 00007ff7`eceea00b cargo+0x65a0
+00000013`7642f610 00007ff7`ecee0296 cargo+0x2a00b
+00000013`7642fba0 00007ff7`ed5f7eb7 cargo+0x20296
+00000013`7642fbd0 00007ff7`ed603ec2 cargo!git_openssl_set_locking+0x186757
+00000013`7642fc00 00007ff7`ed5f8872 cargo!git_openssl_set_locking+0x192762
+00000013`7642fc60 00007ff7`eceece07 cargo!git_openssl_set_locking+0x187112
+00000013`7642fd00 00007ff7`ed613834 cargo+0x2ce07
+00000013`7642fd30 00007ff9`83e913d2 cargo!git_openssl_set_locking+0x1a20d4

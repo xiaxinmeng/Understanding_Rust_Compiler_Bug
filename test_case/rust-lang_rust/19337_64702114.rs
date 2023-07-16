@@ -1,0 +1,33 @@
+
+stack backtrace:
+   1:     0x7f1548a63ed0 - rt::backtrace::imp::write::h1c9c1ea877e5edc5K9x
+   2:     0x7f1548a65f40 - failure::on_fail::h284073a486443c413By
+   3:     0x7f15486c7c30 - unwind::begin_unwind_inner::hb0b35e2abeecf1a6YQc
+   4:     0x7f15467e4d90 - unwind::begin_unwind::h10120921747425399695
+   5:     0x7f15467e5340 - diagnostic::Handler::bug::he23fca87e418c598W9F
+   6:     0x7f15475a1ee0 - session::Session::bug::h0bef21eaae734aa1BV3
+   7:     0x7f15475d1f30 - middle::ty::node_id_to_type::ha1dec8b17686be2aux6
+   8:     0x7f1547767690 - middle::ty::expr_kind::h2dfd650c41f03ea7N26
+   9:     0x7f154787b870 - middle::typeck::check::check_expr_with_unifier::h8851395bac412942sZo
+  10:     0x7f15478a9410 - middle::typeck::check::check_stmt::h09bff7b86c2f7383TUq
+  11:     0x7f154783d3d0 - middle::typeck::check::check_block_with_expected::hdf2f1eaf1eed2e398Yq
+  12:     0x7f154781a740 - middle::typeck::check::check_fn::h6f9e6e1dfabffe15Tpl
+  13:     0x7f1547838cd0 - middle::typeck::check::check_bare_fn::hd8e6e1e72f752c55Yel
+  14:     0x7f15478354f0 - middle::typeck::check::check_item::hf04c986f355a71328yl
+  15:     0x7f1547838a10 - middle::typeck::check::check_item_types::he31957e62cc70b4d8dl
+  16:     0x7f1547b32ab0 - util::common::time::h12934209058077514157
+  17:     0x7f1547b31fa0 - middle::typeck::check_crate::h771a6cf74a1cf458PVO
+  18:     0x7f154903bea0 - driver::driver::phase_3_run_analysis_passes::h23fb9d0bb1403e07VlS
+  19:     0x7f1549032980 - driver::driver::compile_input::h776cb21295573b2712R
+  20:     0x7f15490b9550 - driver::run::closure.59799
+  21:     0x7f1548eebde0 - task::TaskBuilder::try_future::closure.38979
+  22:     0x7f1548a3e1b0 - task::TaskBuilder::spawn_internal::closure.30287
+  23:     0x7f15486c6220 - task::Task::spawn::closure.5717
+  24:     0x7f15487286b0 - rust_try_inner
+  25:     0x7f15487286a0 - rust_try
+  26:     0x7f15486c6120 - task::Task::run::hdca98e8b61eea237cOb
+  27:     0x7f15486c5d70 - task::Task::spawn::closure.5693
+  28:     0x7f15486c7200 - thread::thread_start::hbd8823507422f48cf6b
+  29:     0x7f15439fafe0 - start_thread
+  30:     0x7f1548395c99 - __clone
+  31:                0x0 - <unknown>

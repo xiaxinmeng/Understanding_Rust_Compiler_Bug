@@ -1,0 +1,2 @@
+
+Input: TokenStream [Ident { ident: "pub", span: #3 bytes(114..117) }, Ident { ident: "fn", span: #3 bytes(118..120) }, Group { delimiter: None, stream: TokenStream [Ident { ident: "foo", span: #0 bytes(154..157) }], span: #3 bytes(121..126) }, Group { delimiter: Parenthesis, stream: TokenStream [], span: #3 bytes(126..128) }, Group { delimiter: Brace, stream: TokenStream [], span: #3 bytes(129..131) }]

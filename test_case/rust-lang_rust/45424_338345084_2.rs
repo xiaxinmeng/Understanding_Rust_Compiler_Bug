@@ -1,0 +1,5 @@
+
+CONST_ERR // ?
+UNKNOWN_CRATE_TYPES // Deny-by-default
+NO_MANGLE_CONST_ITEMS // Deny-by-default
+NO_MANGLE_GENERIC_ITEMS

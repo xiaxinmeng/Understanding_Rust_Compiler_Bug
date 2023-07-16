@@ -1,0 +1,1 @@
+\nuse std::marker::PhantomData;\n\n#[repr(transparent)]\nstruct LengthWithUnit<U> {\n    value: f32,\n    unit: PhantomData<U>,\n}\n

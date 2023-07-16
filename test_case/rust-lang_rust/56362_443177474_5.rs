@@ -1,0 +1,1 @@
+\nlet x = Some(1);\n\nmatch x {\n    Some(y) => {\n        // do something\n    },\n    None => {}\n}\n\n// or:\n\nif let Some(y) = x {\n    // do something\n}\n

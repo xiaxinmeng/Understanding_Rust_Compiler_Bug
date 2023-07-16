@@ -1,0 +1,30 @@
+
+stack backtrace:
+   1: 0xb72eaee0 - sys::backtrace::write::hd817a303213a89c3Sws
+   2: 0xb72f4090 - panicking::on_panic::h7a02169f9432305bclx
+   3: 0xb72b0a61 - rt::unwind::begin_unwind_inner::h48154f91ae6f6ed5Q0w
+   4: 0xb6aa951a - rt::unwind::begin_unwind::h2710919888498253672
+   5: 0xb6b8c5c0 - trans::debuginfo::metadata::vec_slice_metadata::h1830ebfd90bf1646CGx
+   6: 0xb6b8a140 - trans::debuginfo::metadata::type_metadata::h2648f426ad2ac74cVOx
+   7: 0xb6afac6f - trans::debuginfo::create_function_debug_context::h08d8c7facfa94772vVz
+   8: 0xb6af86bf - trans::base::new_fn_ctxt::hdee0c565c2428ddcEdi
+   9: 0xb6b04597 - trans::base::trans_closure::h5edb680ad908f55ajxi
+  10: 0xb6b08486 - trans::base::trans_fn::h958058ddc7c313246Gi
+  11: 0xb6b0b8ea - trans::base::trans_item::hf3d1d3047a9fc247h6i
+  12: 0xb6b18dd2 - trans::base::trans_crate::h089a808187a5b003eUj
+  13: 0xb764eb9c - driver::phase_4_translate_to_llvm::h8438b1d41574c31f5Oa
+  14: 0xb764928c - driver::phase_3_run_analysis_passes::closure.16370
+  15: 0xb764351c - middle::ty::ctxt<'tcx>::create_and_enter::h715714199811497514
+  16: 0xb763e04d - driver::phase_3_run_analysis_passes::h17597039431132956485
+  17: 0xb7624640 - driver::compile_input::h5014aac93408544aTba
+  18: 0xb77133ed - run_compiler::h77b31ce882f200a2A7b
+  19: 0xb771090e - boxed::F.FnBox<A>::call_box::h12138022694166688879
+  20: 0xb7710221 - rt::unwind::try::try_fn::h9887116421262948572
+  21: 0xb738073a - rust_try_inner
+  22: 0xb7380713 - rust_try
+  23: 0xb72dd8ec - rt::unwind::try::inner_try::h59ce709208f4b3feJWw
+  24: 0xb771042d - boxed::F.FnBox<A>::call_box::h13050231780628061829
+  25: 0xb72f2b34 - sys::thread::Thread::new::thread_start::h08638e0fe4db24abw6v
+  26: 0xb2ee2f6f - start_thread
+  27: 0xb716cbed - clone
+  28:        0x0 - <unknown>

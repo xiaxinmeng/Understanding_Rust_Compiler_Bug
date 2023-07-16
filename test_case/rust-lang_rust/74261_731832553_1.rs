@@ -1,0 +1,2 @@
+
+error: internal compiler error: compiler/rustc_trait_selection/src/traits/codegen/mod.rs:75:17: Encountered error `OutputTypeParameterMismatch(Binder(<[closure@src/main.rs:19:22: 19:29] as std::ops::FnMut<(&<i32 as main::Ref<'_>>::Type,)>>), Binder(<[closure@src/main.rs:19:22: 19:29] as std::ops::FnMut<(&i32,)>>), Sorts(ExpectedFound { expected: i32, found: <i32 as main::Ref<'_>>::Type }))` selecting `Binder(<[closure@src/main.rs:19:22: 19:29] as std::ops::FnMut<(&i32,)>>)` during codegen

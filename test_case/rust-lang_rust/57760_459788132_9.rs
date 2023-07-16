@@ -1,0 +1,1 @@
+\n\nUsing this declaration, it must be called with at least one argument, so\nsimply calling `printf()` is invalid. But the following uses are allowed:\n\n

@@ -1,0 +1,2 @@
+rust
+OtherIllegalMove { original_path: (*_5), use_spans: FnSelfUse { var_span: test.rs:18:28: 18:53 (#0), fn_call_span: test.rs:18:40: 18:53 (#0), fn_span: /home/gh-fee1-dead/rust/library/std/src/collections/hash/map.rs:487:5: 487:49 (#0), kind: Normal { self_arg: Some(self#0), desugaring: None, method_did: DefId(1:755 ~ std[cc42]::collections::hash::map::{impl#1}::into_values), method_substs: [T, U, Hash128_1] } }, kind: BorrowedContent { target_place: (*_5) } 

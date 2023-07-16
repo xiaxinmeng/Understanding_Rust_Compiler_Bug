@@ -1,0 +1,5 @@
+
+C:\>uname
+MSYS_NT-6.3
+C:\>set MSYSTEM=MINGW32&uname
+MINGW32-NT-6.3

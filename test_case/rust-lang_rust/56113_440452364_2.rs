@@ -1,0 +1,1 @@
+\nfn inside_closure(x: &mut i32) {}\nfn outside_closure(x: &mut i32) {}\n\nfn foo(a: &mut i32) {\n    {\n        let bar = || {\n            inside_closure(a)\n        };\n    } // borrow on `a` ends.\n    outside_closure(a); // ok!\n}\n

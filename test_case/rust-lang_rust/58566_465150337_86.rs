@@ -1,0 +1,1 @@
+\n\nAlternatively, if we don't control the struct's definition, or mutable shared\nownership is truly required, we can use `Rc` and `RefCell`:\n\n

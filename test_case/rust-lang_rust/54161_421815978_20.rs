@@ -1,0 +1,1 @@
+\n"},"level":"error","spans":[{"file_name":"/checkout/src/test/ui/traits/trait-item-privacy.rs","byte_start":2802,"byte_end":2806,"line_start":111,"line_end":115i32); // error: the trait bound `i32 : Foo` is not satisfied\n}\n

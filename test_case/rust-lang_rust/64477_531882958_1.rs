@@ -1,0 +1,17 @@
+
+error[E0277]: `*mut (dyn std::ops::Fn() + 'static)` cannot be shared between threads safely
+ --> src/lib.rs:4:13
+  |
+4 | fn bar() -> impl Send {
+  |             ^^^^^^^^^ `*mut (dyn std::ops::Fn() + 'static)` cannot be shared between threads safely
+  |
+  = help: within `core::fmt::Void`, the trait `std::marker::Sync` is not implemented for `*mut (dyn std::ops::Fn() + 'static)`
+  = note: required because it appears within the type `std::marker::PhantomData<*mut (dyn std::ops::Fn() + 'static)>`
+  = note: required because it appears within the type `core::fmt::Void`
+  = note: required because of the requirements on the impl of `std::marker::Send` for `&core::fmt::Void`
+  = note: required because it appears within the type `std::fmt::ArgumentV1<'_>`
+  = note: required because it appears within the type `[std::fmt::ArgumentV1<'_>; 2]`
+  = note: required because it appears within the type `for<'r, 's, 't0, 't1, 't2, 't3, 't4, 't5, 't6, 't7, 't8, 't9, 't10, 't11, 't12, 't13, 't14, 't15, 't16, 't17, 't18, 't19> {fn(std::string::String) -> impl std::future::Future {foo}, for<'t20> fn(std::fmt::Arguments<'t20>) -> std::string::String {std::fmt::format}, fn(&'r [&'r str], &'r [std::fmt::ArgumentV1<'r>]) -> std::fmt::Arguments<'r> {std::fmt::Arguments::<'r>::new_v1}, &'s str, str, &'t0 str, [&'t1 str; 2], &'t2 [&'t3 str; 2], &'t4 [&'t5 str; 2], &'t6 [&'t7 str], i32, &'t8 i32, &'t9 i32, (&'t10 i32, &'t11 i32), [std::fmt::ArgumentV1<'t12>; 2], &'t13 [std::fmt::ArgumentV1<'t14>; 2], &'t15 [std::fmt::ArgumentV1<'t16>; 2], &'t17 [std::fmt::ArgumentV1<'t18>], std::fmt::Arguments<'t19>, std::string::String, impl std::future::Future, ()}`
+  = note: required because it appears within the type `[static generator@src/lib.rs:5:16: 7:6 for<'r, 's, 't0, 't1, 't2, 't3, 't4, 't5, 't6, 't7, 't8, 't9, 't10, 't11, 't12, 't13, 't14, 't15, 't16, 't17, 't18, 't19> {fn(std::string::String) -> impl std::future::Future {foo}, for<'t20> fn(std::fmt::Arguments<'t20>) -> std::string::String {std::fmt::format}, fn(&'r [&'r str], &'r [std::fmt::ArgumentV1<'r>]) -> std::fmt::Arguments<'r> {std::fmt::Arguments::<'r>::new_v1}, &'s str, str, &'t0 str, [&'t1 str; 2], &'t2 [&'t3 str; 2], &'t4 [&'t5 str; 2], &'t6 [&'t7 str], i32, &'t8 i32, &'t9 i32, (&'t10 i32, &'t11 i32), [std::fmt::ArgumentV1<'t12>; 2], &'t13 [std::fmt::ArgumentV1<'t14>; 2], &'t15 [std::fmt::ArgumentV1<'t16>; 2], &'t17 [std::fmt::ArgumentV1<'t18>], std::fmt::Arguments<'t19>, std::string::String, impl std::future::Future, ()}]`
+  = note: required because it appears within the type `std::future::GenFuture<[static generator@src/lib.rs:5:16: 7:6 for<'r, 's, 't0, 't1, 't2, 't3, 't4, 't5, 't6, 't7, 't8, 't9, 't10, 't11, 't12, 't13, 't14, 't15, 't16, 't17, 't18, 't19> {fn(std::string::String) -> impl std::future::Future {foo}, for<'t20> fn(std::fmt::Arguments<'t20>) -> std::string::String {std::fmt::format}, fn(&'r [&'r str], &'r [std::fmt::ArgumentV1<'r>]) -> std::fmt::Arguments<'r> {std::fmt::Arguments::<'r>::new_v1}, &'s str, str, &'t0 str, [&'t1 str; 2], &'t2 [&'t3 str; 2], &'t4 [&'t5 str; 2], &'t6 [&'t7 str], i32, &'t8 i32, &'t9 i32, (&'t10 i32, &'t11 i32), [std::fmt::ArgumentV1<'t12>; 2], &'t13 [std::fmt::ArgumentV1<'t14>; 2], &'t15 [std::fmt::ArgumentV1<'t16>; 2], &'t17 [std::fmt::ArgumentV1<'t18>], std::fmt::Arguments<'t19>, std::string::String, impl std::future::Future, ()}]>`
+  = note: required because it appears within the type `impl std::future::Future`

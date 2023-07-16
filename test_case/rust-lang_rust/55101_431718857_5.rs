@@ -1,0 +1,1 @@
+\ntrait Generator {\n    fn create() -> u32;\n}\n\nstruct AnotherImpl;\n\nimpl Generator for AnotherImpl {\n    fn create() -> u32 { 2 }\n}\n\nfn main() {\n    let gen1 = AnotherImpl::create();\n\n    // if there are multiple methods with same name (different traits)\n    let gen2 = <AnotherImpl as Generator>::create();\n}\n

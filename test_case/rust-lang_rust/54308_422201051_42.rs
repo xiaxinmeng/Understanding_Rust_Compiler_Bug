@@ -1,0 +1,2 @@
+\n\nSimi------------------
+[01:05:24] {"message":"expected value, found struct `xcrate_unit_struct::StructWithFields`","code":{"code":"E0423","explanation":"\nAn identifier was used like a function name or a value was expected and the\nidentifier exists but it belongs to a different namespace.\n\nFor (an erroneous) example, here a `struct` variant name were used as a\nfunction:\n\n

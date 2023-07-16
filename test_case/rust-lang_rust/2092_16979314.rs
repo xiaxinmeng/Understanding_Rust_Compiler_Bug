@@ -1,0 +1,5 @@
+
+enum Errors {
+    AliasedMutableLocationError,
+    etc.
+}

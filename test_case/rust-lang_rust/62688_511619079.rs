@@ -1,0 +1,15 @@
+
+2019-07-15T22:05:45.0661177Z test print_config ... FAILED
+2019-07-15T22:05:45.0661246Z 
+2019-07-15T22:05:45.0661341Z failures:
+2019-07-15T22:05:45.0661378Z 
+2019-07-15T22:05:45.0661893Z ---- print_config stdout ----
+2019-07-15T22:05:45.0662191Z thread 'print_config' panicked at 'stdout:
+2019-07-15T22:05:45.0662318Z stderr:
+2019-07-15T22:05:45.0662318Z stderr:
+2019-07-15T22:05:45.0662577Z Read-only file system (os error 30)
+2019-07-15T22:05:45.0662897Z ', src/tools/rustfmt/tests/rustfmt/main.rs:70:5
+2019-07-15T22:05:45.0663059Z 
+2019-07-15T22:05:45.0663103Z 
+2019-07-15T22:05:45.0663161Z failures:
+2019-07-15T22:05:45.0663236Z     print_config

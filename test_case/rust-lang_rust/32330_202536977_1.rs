@@ -1,0 +1,3 @@
+
+alpha -> 'S
+alpha -> 'T

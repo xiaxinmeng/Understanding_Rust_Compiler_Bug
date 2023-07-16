@@ -1,0 +1,15 @@
+
+                        },
+                        span: lib.rs:1:26: 1:32 (#0),
+                    },
+                    Maybe,
+                ),
+            ],
+            span: lib.rs:1:10: 1:11 (#0),
+            pure_wrt_drop: false,
+            kind: Type {
+                default: None,
+                synthetic: None,
+            },
+        },
+    ],

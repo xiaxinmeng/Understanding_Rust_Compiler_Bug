@@ -1,0 +1,2 @@
+ rust
+trait Pod: Copy { }

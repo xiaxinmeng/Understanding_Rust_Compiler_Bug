@@ -1,0 +1,2 @@
+
+rustc: /home/cmr/hacking/rust/src/llvm/include/llvm/Support/Casting.h:237: typename llvm::enable_if<llvm::is_same<Y, typename llvm::simplify_type<From>::SimpleType>, typename llvm::cast_retty<X, Y*>::ret_type>::type llvm::cast(Y*) [with X = llvm::Function; Y = llvm::Value; typename llvm::enable_if<llvm::is_same<Y, typename llvm::simplify_type<From>::SimpleType>, typename llvm::cast_retty<X, Y*>::ret_type>::type = llvm::Function*]: Assertion `isa<X>(Val) && "cast<Ty>() argument of incompatible type!"' failed.

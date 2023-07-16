@@ -1,0 +1,28 @@
+
+[0x00045900 [xAdvc]0 17% 225 target/release/world]> pd $r @ sym.world::main::he9131e46183fafc1                                                                                                                      
+            ;-- world::main::he9131e46183fafc1:                                                                                                                                                                     
+            0x00045900      53             push rbx                    ; main.rs:3 fn main() {    ; world::main::he9131e46183fafc1                                                                                  
+            0x00045901      4883ec30       sub rsp, 0x30                                                                                                                                                            
+            0x00045905      488d054c3500.  lea rax, [0x00048e58]       ; mod.rs:316         Arguments { pieces, fmt: None, args }                                                                                   
+            0x0004590c      48890424       mov qword [rsp], rax                                                                                                                                                     
+            0x00045910      48c744240801.  mov qword [rsp + 8], 1                                                                                                                                                   
+            0x00045919      48c744241000.  mov qword [rsp + 0x10], 0                                                                                                                                                
+            0x00045922      488d057f61fc.  lea rax, obj.anon.75e17c1ffad1640085e148809e4cb2ae.1.llvm.9665257743853010144    ; 0xbaa8 ; "other module\n"                                                             
+            0x00045929      4889442420     mov qword [rsp + 0x20], rax                                                                                                                                              
+            0x0004592e      48c744242800.  mov qword [rsp + 0x28], 0                                                                                                                                                
+            0x00045937      488d1d52c1fe.  lea rbx, sym.std::io::stdio::_print::h07b709dab9341524 ; main.rs:4     println!("Hello, world!");    ; 0x31a90 ; "UAWAVAUATSH\x81\xec\xb8"                               
+            0x0004593e      4889e7         mov rdi, rsp                                                                                                                                                             
+            0x00045941      ffd3           call rbx                                                                                                                                                                 
+            0x00045943      488d054e3500.  lea rax, obj.anon.75e17c1ffad1640085e148809e4cb2ae.2.llvm.9665257743853010144 ; mod.rs:316         Arguments { pieces, fmt: None, args }    ; 0x48e98                    
+            0x0004594a      48890424       mov qword [rsp], rax                                                                                                                                                     
+            0x0004594e      48c744240801.  mov qword [rsp + 8], 1                                                                                                                                                   
+            0x00045957      48c744241000.  mov qword [rsp + 0x10], 0                                                                                                                                                
+            0x00045960      488d055161fc.  lea rax, obj.__rustc_debug_gdb_scripts_section    ; obj.anon.75e17c1ffad1640085e148809e4cb2ae.3.llvm.9665257743853010144                                                 
+                                                                       ; 0xbab8                                                                                                                                     
+            0x00045967      4889442420     mov qword [rsp + 0x20], rax                                                                                                                                              
+            0x0004596c      48c744242800.  mov qword [rsp + 0x28], 0                                                                                                                                                
+            0x00045975      4889e7         mov rdi, rsp                                                                                                                                                             
+            0x00045978      ffd3           call rbx                    ; other.rs:2     println!("other module");                                                                                                   
+            0x0004597a      4883c430       add rsp, 0x30               ; main.rs:6 }                                                                                                                                
+            0x0004597e      5b             pop rbx                                                                                                                                                                  
+            0x0004597f      c3             ret

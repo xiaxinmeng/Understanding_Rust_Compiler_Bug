@@ -1,0 +1,1 @@
+\nmod SomeModule {\n    pub const PRIVATE: u32 = 0x_a_bad_1dea_u32; // We set it public by using the\n                                                // `pub` keyword.\n}\n\nprintln!(\"const value: {}\", SomeModule::PRIVATE); // ok!\n

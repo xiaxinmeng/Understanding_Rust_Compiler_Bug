@@ -1,0 +1,1 @@
+\ntrait MyTrait {type X; }\nstruct MyStruct;\n\nimpl MyTrait for MyStruct {\n    type X = u32;\n}\n\nfn main() {\n    let foo: <MyStruct as MyTrait>::X;\n}\n

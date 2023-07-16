@@ -1,0 +1,1 @@
+compile_fail,E0309\nstruct Foo<'a, T> {\n    foo: &'a T\n}\n\nfn main() {\n    let v = \"42\".to_string();\n    let f = Foo{foo: &v};\n    drop(v);\n    println!(\"{}\", f.foo); // but we've already dropped v!\n}\n

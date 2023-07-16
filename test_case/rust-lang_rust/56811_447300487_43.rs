@@ -1,0 +1,1 @@
+\nfn main() {\n    let x: i32 = 0;\n    let y = x; // ok!\n}\n

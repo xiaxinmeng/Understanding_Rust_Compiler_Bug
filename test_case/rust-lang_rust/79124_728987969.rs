@@ -1,0 +1,3 @@
+toml
+[build]
+profiler = true

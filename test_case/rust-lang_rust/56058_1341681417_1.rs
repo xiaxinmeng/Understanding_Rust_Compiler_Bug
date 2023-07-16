@@ -1,0 +1,5 @@
+
+enum SomeEnum {
+    A,
+    B,
+}

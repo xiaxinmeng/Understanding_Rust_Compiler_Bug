@@ -1,0 +1,1 @@
+RUSTFLAGS="-C link_arg=-lgcc -C link_arg=-specs -C link_arg=/usr/lib/aarch64-linux-musl/musl-gcc.specs" cargo build --release --target aarch64-unknown-linux-musl --no-default-features --features mmio

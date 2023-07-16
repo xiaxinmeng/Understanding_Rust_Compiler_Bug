@@ -1,0 +1,1 @@
+\n\n(Note that `&self` and `&mut self` are okay, it's additional `Self` types which\ncause this problem.)\n\nIn such a case, the compiler cannot predict the return type of `foo()` in a\nsituation like the following:\n\n

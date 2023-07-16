@@ -1,0 +1,1 @@
+\n\nIt is common to forget the trailing `!` on macro invocations, which would also\nyield this error:\n\n

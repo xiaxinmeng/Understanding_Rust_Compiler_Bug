@@ -1,0 +1,1 @@
+If either iterator returns [`None`], [`next`] will return [`None`].

@@ -1,0 +1,12 @@
+
+-    2.54%     0.00%  rustc  librustc_driver-3de5a075e28cbed1.so  [.] rustc_resolve::diagnostics::<impl rustc_resolve::Resolver>::find_unique_symbols                                                                        ◆
+   - rustc_resolve::diagnostics::<impl rustc_resolve::Resolver>::find_unique_symbols                                                                                                                                         ▒
+      - 2.50% rustc_resolve::diagnostics::<impl rustc_resolve::Resolver>::lookup_import_candidates (inlined)                                                                                                                 ▒
+           rustc_resolve::diagnostics::<impl rustc_resolve::Resolver>::lookup_import_candidates_from_module                                                                                                                  ▒
+         - rustc_resolve::ModuleData::for_each_child (inlined)                                                                                                                                                               ▒
+            - 2.18% rustc_resolve::Resolver::resolutions                                                                                                                                                                     ▒
+               - rustc_resolve::build_reduced_graph::<impl rustc_resolve::Resolver>::build_reduced_graph_external (inlined)                                                                                                  ▒
+                  - 1.17% rustc_metadata::rmeta::decoder::cstore_impl::<impl rustc_metadata::creader::CStore>::item_children_untracked                                                                                       ▒
+                       rustc_metadata::rmeta::decoder::<impl rustc_metadata::creader::CrateMetadataRef>::each_child_of_item (inlined)                                                                                        ▒
+                    1.01% rustc_resolve::build_reduced_graph::BuildReducedGraphVisitor::build_reduced_graph_for_external_crate_res                                                                                           ▒
+     0.12%     0.00%  rustc  librustc_driver-3de5a075e28cbed1.so  [.] rustc_resolve::diagnostics::_$LT$impl$u20$rustc_resolve..Resolver$GT$::find_unique_symbols::_$u7b$$u7b$closure$u7d$$u7d$::h583030594edeb63a (inlined) 

@@ -1,0 +1,25 @@
+ llvm
+bb3:
+  %a = alloca %"2.std::result::Result<std::string::String, std::option::Option<std::string::String>>", align 8
+  %a1 = alloca %"2.std::result::Result<std::string::String, std::option::Option<std::string::String>>", align 8
+  %0 = bitcast %"2.std::result::Result<std::string::String, std::option::Option<std::string::String>>"* %a to i8*
+  call void @llvm.lifetime.start(i64 32, i8* %0)
+  call fastcc void @_ZN4test8err_none17h78cf98032df7f4e6E(%"2.std::result::Result<std::string::String, std::option::Option<std::string::String>>"* noalias nocapture nonnull dereferenceable(32) %a)
+  %1 = getelementptr inbounds %"2.std::result::Result<std::string::String, std::option::Option<std::string::String>>", %"2.std::result::Result<std::string::String, std::option::Option<std::string::String>>"* %a, i64 0, i32 0
+  %2 = load i64, i64* %1, align 8, !range !1
+  %switch = icmp eq i64 %2, 1
+  %3 = getelementptr inbounds %"2.std::result::Result<std::string::String, std::option::Option<std::string::String>>", %"2.std::result::Result<std::string::String, std::option::Option<std::string::String>>"* %a, i64 0, i32 2
+  %4 = getelementptr inbounds [3 x i64], [3 x i64]* %3, i64 0, i64 0
+
+; This is the load for the Ok case specifically.
+  %5 = load i64, i64* %4, align 8, !range !2, !alias.scope !3
+
+  %6 = getelementptr inbounds %"2.std::result::Result<std::string::String, std::option::Option<std::string::String>>", %"2.std::result::Result<std::string::String, std::option::Option<std::string::String>>"* %a, i64 0, i32 2, i64 2
+  %7 = load i64, i64* %6, align 8, !alias.scope !10
+  %b.sroa.7.097 = select i1 %switch, i64 undef, i64 %7
+  %tmp6.sroa.0.0 = select i1 %switch, i64 0, i64 %5
+  %8 = inttoptr i64 %tmp6.sroa.0.0 to i8*
+  %switch5tmp = icmp ne i64 %tmp6.sroa.0.0, 0
+  %9 = icmp eq i64 %b.sroa.7.097, 1
+  %or.cond = and i1 %switch5tmp, %9
+  br i1 %or.cond, label %bb4.i.i.i.i.i, label %bb10

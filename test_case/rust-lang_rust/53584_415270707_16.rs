@@ -1,0 +1,1 @@
+compile_fail,E0107\nstruct Foo<T> { x: T }\n\nstruct Bar { x: Foo }             // error: wrong number of type arguments:\n                                  //        expected 1, found 0\nstruct Baz<S, T> { x: Foo<S, T> } // error: wrong number of type arugemtns:\n                                  //        expected 1, found 2\n

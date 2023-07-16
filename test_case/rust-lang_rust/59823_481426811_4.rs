@@ -1,0 +1,1 @@
+\n\nAgain, you need not specify the full type if the compiler can infer it:\n\n

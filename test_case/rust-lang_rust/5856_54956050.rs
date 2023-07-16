@@ -1,0 +1,13 @@
+
+==32331== Conditional jump or move depends on uninitialised value(s)
+==32331==    at 0x5AAFF0B: driver::monitor::h67fd9ec99e612659CVF (in /usr/local/lib/librustc-4e7c5e5c.so)
+==32331==    by 0x5AAFADE: driver::main_args::h758a33c73a229584LQE (in /usr/local/lib/librustc-4e7c5e5c.so)
+==32331==    by 0x5B34BA5: main::ha773b68016fefe22HVM (in /usr/local/lib/librustc-4e7c5e5c.so)
+==32331==    by 0x4E77792: start::closure.8433 (in /usr/local/lib/libnative-4e7c5e5c.so)
+==32331==    by 0x65B449B: rust_try_inner (in /usr/local/lib/librustrt-4e7c5e5c.so)
+==32331==    by 0x65B4485: rust_try (in /usr/local/lib/librustrt-4e7c5e5c.so)
+==32331==    by 0x6558D32: unwind::try::hea1640d217ab7457H7d (in /usr/local/lib/librustrt-4e7c5e5c.so)
+==32331==    by 0x6558B0E: task::Task::run::hb52aad40b24ebf23Ndd (in /usr/local/lib/librustrt-4e7c5e5c.so)
+==32331==    by 0x4E77609: start::h020d729b3953296bsoe (in /usr/local/lib/libnative-4e7c5e5c.so)
+==32331==    by 0x4E77448: lang_start::hde2f1b6d366575e3Lne (in /usr/local/lib/libnative-4e7c5e5c.so)
+==32331==    by 0x689CB44: (below main) (libc-start.c:287)

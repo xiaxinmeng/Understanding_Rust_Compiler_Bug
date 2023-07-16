@@ -1,0 +1,3 @@
+ rust
+asm!("nop;"
+     "nop;");

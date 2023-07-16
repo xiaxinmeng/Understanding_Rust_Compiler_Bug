@@ -1,0 +1,2 @@
+
+tag void { VOID(void); }

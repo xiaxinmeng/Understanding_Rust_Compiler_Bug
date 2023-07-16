@@ -1,0 +1,3 @@
+
+$ rls +beta
+<never exits>

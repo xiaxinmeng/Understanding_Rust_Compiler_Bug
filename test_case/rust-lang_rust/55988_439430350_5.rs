@@ -1,0 +1,1 @@
+\n\nYou ca borrow\n    // lives until the end of this function.\n    let _borrow = &mut value;\n    let _sum = value + 1; // error: cannot use `value` because\n                          //        it was mutably borrowed\n}\n

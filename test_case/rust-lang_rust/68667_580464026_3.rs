@@ -1,0 +1,11 @@
+
+[DEBUG rustc_mir::transform::inline] checking whether to inline callsite CallSite { callee: DefId(2:5043 ~ core[ca81]::option[0]::{{impl}}[0]::map[0]), substs: [i32, bool, [closure@slow.rs:3:11: 3:21 b:&i32]], bb: bb0, location: SourceInfo { span: slow.rs:3:5: 3:22, scope: scope[0] } }
+[DEBUG rustc_mir::transform::inline] consider_optimizing(CallSite { callee: DefId(2:5043 ~ core[ca81]::option[0]::{{impl}}[0]::map[0]), substs: [i32, bool, [closure@slow.rs:3:11: 3:21 b:&i32]], bb: bb0, location: SourceInfo { span: slow.rs:3:5: 3:22, scope: scope[0] } })
+[DEBUG rustc_mir::transform::inline] should_inline(CallSite { callee: DefId(2:5043 ~ core[ca81]::option[0]::{{impl}}[0]::map[0]), substs: [i32, bool, [closure@slow.rs:3:11: 3:21 b:&i32]], bb: bb0, location: SourceInfo { span: slow.rs:3:5: 3:22, scope: scope[0] } })
+[DEBUG rustc_mir::transform::inline]     final inline threshold = 100
+[DEBUG rustc_mir::transform::inline] NOT inlining CallSite { callee: DefId(2:5043 ~ core[ca81]::option[0]::{{impl}}[0]::map[0]), substs: [i32, bool, [closure@slow.rs:3:11: 3:21 b:&i32]], bb: bb0, location: SourceInfo { span: slow.rs:3:5: 3:22, scope: scope[0] } } [cost=204 > threshold=100]
+[DEBUG rustc_mir::transform::inline] checking whether to inline callsite CallSite { callee: DefId(2:5040 ~ core[ca81]::option[0]::{{impl}}[0]::unwrap_or[0]), substs: [bool], bb: bb1, location: SourceInfo { span: slow.rs:3:5: 4:23, scope: scope[0] } }
+[DEBUG rustc_mir::transform::inline] consider_optimizing(CallSite { callee: DefId(2:5040 ~ core[ca81]::option[0]::{{impl}}[0]::unwrap_or[0]), substs: [bool], bb: bb1, location: SourceInfo { span: slow.rs:3:5: 4:23, scope: scope[0] } })
+[DEBUG rustc_mir::transform::inline] should_inline(CallSite { callee: DefId(2:5040 ~ core[ca81]::option[0]::{{impl}}[0]::unwrap_or[0]), substs: [bool], bb: bb1, location: SourceInfo { span: slow.rs:3:5: 4:23, scope: scope[0] } })
+[DEBUG rustc_mir::transform::inline]     final inline threshold = 100
+[DEBUG rustc_mir::transform::inline] NOT inlining CallSite { callee: DefId(2:5040 ~ core[ca81]::option[0]::{{impl}}[0]::unwrap_or[0]), substs: [bool], bb: bb1, location: SourceInfo { span: slow.rs:3:5: 4:23, scope: scope[0] } } [cost=123 > threshold=100]

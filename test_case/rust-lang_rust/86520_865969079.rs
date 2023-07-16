@@ -1,0 +1,31 @@
+cargo-benchcmp.exe benchcmp old new --threshold 4
+ name                                         old ns/iter  new ns/iter  diff ns/iter   diff %  speedup
+ btree::map::find_rand_100                    9            10                      1   11.11%   x 0.90
+ btree::map::find_seq_100                     10           11                      1   10.00%   x 0.91
+ btree::map::find_seq_10_000                  35           37                      2    5.71%   x 0.95
+ btree::map::first_and_last_0_nightly         9            10                      1   11.11%   x 0.90
+ btree::map::first_and_last_0_stable          24           25                      1    4.17%   x 0.96
+ btree::map::first_and_last_100_nightly       34           48                     14   41.18%   x 0.71
+ btree::map::first_and_last_100_stable        235          213                   -22   -9.36%   x 1.10
+ btree::map::first_and_last_10k_nightly       70           60                    -10  -14.29%   x 1.17
+ btree::map::first_and_last_10k_stable        253          236                   -17   -6.72%   x 1.07
+ btree::map::iter_100                         5,021        4,449                -572  -11.39%   x 1.13
+ btree::map::iter_10k                         6,526        5,968                -558   -8.55%   x 1.09
+ btree::map::iteration_1000                   4,226        3,620                -606  -14.34%   x 1.17
+ btree::map::iteration_100000                 522,710      477,615           -45,095   -8.63%   x 1.09
+ btree::map::iteration_20                     65           56                     -9  -13.85%   x 1.16
+ btree::map::iteration_mut_1000               4,248        4,013                -235   -5.53%   x 1.06
+ btree::map::iteration_mut_100000             535,530      482,090           -53,440   -9.98%   x 1.11
+ btree::map::range_unbounded_vs_iter          51,598       46,388             -5,210  -10.10%   x 1.11
+ btree::set::clone_100                        1,400        1,456                  56    4.00%   x 0.96
+ btree::set::clone_10k                        162,162      174,200            12,038    7.42%   x 0.93
+ btree::set::difference_random_10k_vs_100     71,871       65,456             -6,415   -8.93%   x 1.10
+ btree::set::intersection_100_neg_vs_10k_pos  18           17                     -1   -5.56%   x 1.06
+ btree::set::intersection_100_pos_vs_100_neg  16           17                      1    6.25%   x 0.94
+ btree::set::intersection_100_pos_vs_10k_neg  17           18                      1    5.88%   x 0.94
+ btree::set::intersection_10k_neg_vs_100_pos  17           18                      1    5.88%   x 0.94
+ btree::set::intersection_10k_pos_vs_10k_neg  18           19                      1    5.56%   x 0.95
+ btree::set::intersection_random_100_vs_100   718          585                  -133  -18.52%   x 1.23
+ btree::set::intersection_random_10k_vs_10k   165,430      150,646           -14,784   -8.94%   x 1.10
+ btree::set::is_subset_100_vs_100             622          597                   -25   -4.02%   x 1.04
+ btree::set::is_subset_10k_vs_10k             62,971       59,005             -3,966   -6.30%   x 1.07

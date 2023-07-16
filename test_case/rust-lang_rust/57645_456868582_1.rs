@@ -1,0 +1,2 @@
+\n\nPlease verify you didn't misspell the typamespace of this module\n\n"}
+[01:05:43] {"message":"the name `Test3` is defined multiple times","code":{"code":"E0428","explanation":"\nA type or module has been defined more than once.\n\nErroneous code example:\n\n

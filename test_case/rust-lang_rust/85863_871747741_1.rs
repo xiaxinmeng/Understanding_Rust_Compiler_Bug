@@ -1,0 +1,2 @@
+
+MyEmptyIterator::<fn(&())>

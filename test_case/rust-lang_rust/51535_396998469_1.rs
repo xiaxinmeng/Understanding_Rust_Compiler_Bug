@@ -1,0 +1,2 @@
+bash
+cargo install xargo
